@@ -10,23 +10,23 @@ Everything publicly released by EHCOnomics for the EHCOsystem should be reachabl
 
 ## Architecture
 
-- [Immutable Runtime Baseline](docs/runtime-baseline.md)
+- [Immutable Runtime Baseline](architecture/runtime-baseline.md)
 - [Ecosystem Governance Discovery](architecture/ecosystem-governance-discovery.md)
 - [Proof Classes](architecture/proof-classes.md)
 - [Glossary](architecture/glossary.md)
 
 ## Dossiers
 
-Public dossiers and controlled public architecture releases will be indexed in `dossiers/`.
+Public dossiers and controlled public architecture releases are indexed in `dossiers/`.
 
 ## Evidence
 
 - [Public Evidence Companion](evidence/README.md)
-- Packet manifests, receipts, verification results, claim records, and public boundaries will be published under `evidence/public-evidence-companion/`.
+- Packet manifests, receipts, verification results, claim records, and public boundaries are published under `evidence/public-evidence-companion/` as approved.
 
 ## Papers
 
-Publication-ready technical papers and monographs will be indexed under `papers/`.
+Publication-ready technical papers and monographs are indexed under `papers/`.
 
 ## EHCO Insights
 
@@ -34,27 +34,28 @@ Publication-ready technical papers and monographs will be indexed under `papers/
 
 ## External references
 
-Standards, legislation, incident reports, legal decisions, and technical sources will be indexed under `references/external/`.
+Standards, legislation, incident reports, legal decisions, and technical sources are indexed under `references/external/`.
 
 ## Presentations
 
-Approved public decks, technical presentations, talks, and visual explainers will be indexed under `presentations/`.
+Approved public decks, technical presentations, talks, and visual explainers are indexed under `presentations/`.
 
 ## Diagrams
 
-Publication-safe architecture diagrams will be indexed under `diagrams/`.
+Publication-safe architecture diagrams are indexed under `diagrams/`.
 
 ## Media
 
-Interviews, articles, videos, podcasts, press, and public coverage will be indexed under `media/`.
+Interviews, articles, videos, podcasts, press, and public coverage are indexed under `media/`.
 
 ## History
 
-Public architectural milestones, publications, and releases will be recorded under `history/`.
+Public architectural milestones, publications, and releases are recorded under `history/`.
 
-## Release notes
+## Release control
 
-Versioned public releases will be recorded under `release-notes/`.
+- [Canonical Public Release Register](releases/PUBLIC-RELEASE-REGISTER.md)
+- Versioned public releases are recorded under `release-notes/`.
 
 ## Verification
 
