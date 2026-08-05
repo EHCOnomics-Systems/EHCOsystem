@@ -1,0 +1,17 @@
+{
+    "packet_id":  "03_TIER1_AUTHORITY_ENFORCEMENT",
+    "self_reference":  false,
+    "file_count":  2,
+    "files":  [
+                  {
+                      "path":  "TIER1_AUTHORITY_ENFORCEMENT.json",
+                      "bytes":  8948,
+                      "sha256":  "CE51894CB5557217DB0585B4517C09DD0EB8C1FDD20064773B9418B625029047"
+                  },
+                  {
+                      "path":  "README.txt",
+                      "bytes":  470,
+                      "sha256":  "7A0994185D140131F0A0844901099827EDF12451F806774EAA67E7136DBDDE5E"
+                  }
+              ]
+}

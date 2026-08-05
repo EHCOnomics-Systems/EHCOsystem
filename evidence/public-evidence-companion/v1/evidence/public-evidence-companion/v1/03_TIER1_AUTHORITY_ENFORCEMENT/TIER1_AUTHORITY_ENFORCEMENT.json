@@ -1,0 +1,139 @@
+{
+    "packet_id":  "03_TIER1_AUTHORITY_ENFORCEMENT",
+    "created_at_utc":  "2026-07-16T21:40:48.6600137Z",
+    "authority_manifest":  {
+                               "schema":  "EHCO1_AUTHORITY_MANIFEST_V2",
+                               "authority_root":  "EHCO1",
+                               "sha256":  "C253B04E7D0945CC62B156E75170B930BE2881295DE126EB45E3D4E6CC22F3A7"
+                           },
+    "sealed_set":  {
+                       "required_count":  7,
+                       "resolved_count":  7,
+                       "files":  [
+                                     {
+                                         "path":  "EHCO1/authority/EHCO_AI_OS_CONSTITUTION.md",
+                                         "role":  "authority",
+                                         "required":  true,
+                                         "sha256":  "42DD302B6B421E3FBDD559F6C53C05C02B116727ED9167A2FECEA12EDA6D6479",
+                                         "hash_match":  true
+                                     },
+                                     {
+                                         "path":  "EHCO1/authority/admission_policy.json",
+                                         "role":  "authority",
+                                         "required":  true,
+                                         "sha256":  "401C069418E7E577C18D7A404EB9C307CCB55C878CFFA20A92E33469FC5A2929",
+                                         "hash_match":  true
+                                     },
+                                     {
+                                         "path":  "chat_routes.py",
+                                         "role":  "enforcement",
+                                         "required":  true,
+                                         "sha256":  "24C80969E6478D85135E96E006544F1C1D5C83D23A5D65CF66C2978726C0C367",
+                                         "hash_match":  true
+                                     },
+                                     {
+                                         "path":  "main.py",
+                                         "role":  "enforcement",
+                                         "required":  true,
+                                         "sha256":  "EC60F5A0EBC5F5F4829632B65448698C38FD9EEF2F77948D6ECAFF540479DB6A",
+                                         "hash_match":  true
+                                     },
+                                     {
+                                         "path":  "chat_engine.py",
+                                         "role":  "enforcement",
+                                         "required":  true,
+                                         "sha256":  "4E9A25B9304180A8D1ADEA135F295448BC45CD06763C4EE8667AD6AAF80F1340",
+                                         "hash_match":  true
+                                     },
+                                     {
+                                         "path":  "primordia_verify.py",
+                                         "role":  "enforcement",
+                                         "required":  true,
+                                         "sha256":  "6C11063F965877059C8A0E21EF69D57E0E3363F742A288BFE083A77919B5FBBC",
+                                         "hash_match":  true
+                                     },
+                                     {
+                                         "path":  "ehco1_authority.py",
+                                         "role":  "enforcement",
+                                         "required":  true,
+                                         "sha256":  "11D8023FB127F621AC64076AED9D4BC32EDCC0FDC7EA14887D9DAC5428543B8E",
+                                         "hash_match":  true
+                                     }
+                                 ]
+                   },
+    "enforcement_anchors":  [
+                                {
+                                    "file":  "ehco1_authority.py",
+                                    "line":  324,
+                                    "symbol":  "enforce_startup_authority",
+                                    "role":  "Startup authority enforcement",
+                                    "observed":  "def enforce_startup_authority() -\u003e None:",
+                                    "source_sha256":  "11D8023FB127F621AC64076AED9D4BC32EDCC0FDC7EA14887D9DAC5428543B8E",
+                                    "declaration_match":  true
+                                },
+                                {
+                                    "file":  "ehco1_authority.py",
+                                    "line":  338,
+                                    "symbol":  "evaluate_runtime_admission",
+                                    "role":  "Runtime admission evaluation",
+                                    "observed":  "def evaluate_runtime_admission(packet: Dict[str, Any]) -\u003e AdmissionReport:",
+                                    "source_sha256":  "11D8023FB127F621AC64076AED9D4BC32EDCC0FDC7EA14887D9DAC5428543B8E",
+                                    "declaration_match":  true
+                                },
+                                {
+                                    "file":  "ehco1_authority.py",
+                                    "line":  414,
+                                    "symbol":  "force_fail_closed_packet",
+                                    "role":  "Fail-closed packet enforcement",
+                                    "observed":  "def force_fail_closed_packet(packet: Dict[str, Any], reason: str) -\u003e Dict[str, Any]:",
+                                    "source_sha256":  "11D8023FB127F621AC64076AED9D4BC32EDCC0FDC7EA14887D9DAC5428543B8E",
+                                    "declaration_match":  true
+                                },
+                                {
+                                    "file":  "ehco1_authority.py",
+                                    "line":  447,
+                                    "symbol":  "apply_runtime_admission",
+                                    "role":  "Admission decision application",
+                                    "observed":  "def apply_runtime_admission(reply: str, packet: Dict[str, Any]) -\u003e Tuple[str, Dict[str, Any]]:",
+                                    "source_sha256":  "11D8023FB127F621AC64076AED9D4BC32EDCC0FDC7EA14887D9DAC5428543B8E",
+                                    "declaration_match":  true
+                                },
+                                {
+                                    "file":  "ehco1_authority.py",
+                                    "line":  488,
+                                    "symbol":  "validate_authority_manifest",
+                                    "role":  "Authority-manifest validation",
+                                    "observed":  "def validate_authority_manifest() -\u003e Dict[str, Any]:",
+                                    "source_sha256":  "11D8023FB127F621AC64076AED9D4BC32EDCC0FDC7EA14887D9DAC5428543B8E",
+                                    "declaration_match":  true
+                                },
+                                {
+                                    "file":  "chat_routes.py",
+                                    "line":  1321,
+                                    "symbol":  "_build_release_gate",
+                                    "role":  "Release-gate construction",
+                                    "observed":  "def _build_release_gate(",
+                                    "source_sha256":  "24C80969E6478D85135E96E006544F1C1D5C83D23A5D65CF66C2978726C0C367",
+                                    "declaration_match":  true
+                                },
+                                {
+                                    "file":  "freeze_gate.py",
+                                    "line":  179,
+                                    "symbol":  "evaluate_freeze_gate",
+                                    "role":  "Freeze-gate evaluation",
+                                    "observed":  "def evaluate_freeze_gate(",
+                                    "source_sha256":  "B4894FA1AC7BDA7C7C7463D314C4D78F2960794821818B0C5B6248A80A54E6AC",
+                                    "declaration_match":  true
+                                }
+                            ],
+    "boundary":  {
+                     "proves_sealed_file_identity":  true,
+                     "proves_named_declarations_exist":  true,
+                     "claims_live_runtime_execution":  false,
+                     "claims_new_runtime_realization":  false,
+                     "changes_authority":  false,
+                     "changes_standing":  false,
+                     "authority_effect":  "NONE",
+                     "standing_effect":  "NONE"
+                 }
+}

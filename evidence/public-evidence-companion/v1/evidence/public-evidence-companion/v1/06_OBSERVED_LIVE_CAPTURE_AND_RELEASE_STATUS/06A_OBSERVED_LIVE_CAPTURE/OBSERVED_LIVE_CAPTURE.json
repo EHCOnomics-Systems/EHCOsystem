@@ -1,0 +1,100 @@
+{
+    "packet_id":  "06_OBSERVED_LIVE_CAPTURE_AND_RELEASE_STATUS",
+    "evidence_class":  "HASH_BOUND_LOCAL_LIVE_CAPTURE",
+    "capture_identity":  {
+                             "schema":  "EHCO_LIVE_DEPLOYMENT_CAPTURE_MANIFEST_V1",
+                             "capture_schema":  "live_capture",
+                             "captured_at_utc":  "2026-05-01T02:48:46.2604099Z",
+                             "environment_label":  "local_live",
+                             "external_emission":  true,
+                             "captured_files":  5,
+                             "captured_file_hash_matches":  5
+                         },
+    "observed_service_surface":  {
+                                     "compose_service_rows":  3,
+                                     "healthy_service_rows":  3,
+                                     "all_observed_service_rows_healthy":  true
+                                 },
+    "observed_admission":  {
+                               "source":  "api_mechanics.json",
+                               "schema":  "EHCO_MECHANICS_PUBLIC_V1",
+                               "verification_status":  "pass",
+                               "authority_root_ok":  true,
+                               "authority_ok":  true,
+                               "admission_reason":  "authority_admitted"
+                           },
+    "observed_packet":  {
+                            "source":  "api_chat_probe.json",
+                            "schema":  "EHCO_CHAT_PACKET_PUBLIC_V1",
+                            "verification_status":  "pass",
+                            "authority_ok":  true,
+                            "packet_status":  "valid",
+                            "continuity_status":  "valid",
+                            "range_status":  "valid",
+                            "proof_status":  "valid"
+                        },
+    "observed_proof":  {
+                           "schema":  "EHCO_PROOF_HOOK_RECORD_V1",
+                           "status":  "valid",
+                           "proof_validation_status":  "valid",
+                           "proof_class":  "verified",
+                           "authority_admitted":  true,
+                           "verified":  true,
+                           "chain_status":  "valid",
+                           "sufficient_for_release":  true,
+                           "sufficient_for_freeze":  true,
+                           "live_evidence_status":  "valid"
+                       },
+    "observed_quarantine":  {
+                                "schema":  "EHCO_QUARANTINE_STATE_V2",
+                                "active":  true,
+                                "allowed":  true,
+                                "reason":  "explicit_recovery",
+                                "lane":  "recovery",
+                                "release_scope":  "recovery_only",
+                                "validation_status":  "degraded"
+                            },
+    "observed_release_gate":  {
+                                  "schema":  "EHCO_RELEASE_GATE_V5",
+                                  "gate_result":  "bounded_release",
+                                  "release_authority_class":  "bounded_release",
+                                  "readiness_band":  "bounded_not_ready",
+                                  "closure_allowed":  false,
+                                  "readiness_language_allowed":  false,
+                                  "freeze_deserved":  false,
+                                  "freeze_denied":  true,
+                                  "freeze_reason":  "deployment_evidence_not_live_capture;quarantine_active",
+                                  "active_bounded_codes":  [
+                                                               "deployment_evidence_not_live_capture",
+                                                               "quarantine_active"
+                                                           ]
+                              },
+    "observed_receipt_surface":  {
+                                     "schema":  "EHCO_RECEIPTS_SUMMARY_V1",
+                                     "timestamp":  "1777603696",
+                                     "summary_counts":  {
+                                                            "events":  3,
+                                                            "commands":  3,
+                                                            "reports":  1,
+                                                            "capsules":  200
+                                                        }
+                                 },
+    "bounded_interpretation":  {
+                                   "positive_admission_observed":  true,
+                                   "valid_packet_observed":  true,
+                                   "valid_continuity_observed":  true,
+                                   "valid_proof_chain_observed":  true,
+                                   "recovery_quarantine_state_observed":  true,
+                                   "bounded_release_observed":  true,
+                                   "closure_withheld_observed":  true,
+                                   "readiness_language_withheld_observed":  true,
+                                   "freeze_withheld_observed":  true
+                               },
+    "explicit_non_claims":  {
+                                "universal_behavioral_validation":  false,
+                                "negative_control_suite_executed":  false,
+                                "production_activation_authorized":  false,
+                                "external_release_authorized":  false,
+                                "authoritative_standing_changed":  false
+                            }
+}

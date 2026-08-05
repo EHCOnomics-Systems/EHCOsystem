@@ -1,0 +1,115 @@
+{
+    "schema":  "EHCO_ARTIFACT_RELEASE_PROOF_V5",
+    "contract_version":  "5.0",
+    "source_snapshot":  {
+                            "basis":  "conversation_derived_release_authority_v5",
+                            "generated_at":  1777495146,
+                            "repo_root":  "/",
+                            "snapshot_label":  "closeout_v5_contract_surface"
+                        },
+    "canonicalization":  {
+                             "hash_algorithm":  "sha256",
+                             "json_canonicalization":  "utf8_no_bom_sorted_keys_compact_when_hashed",
+                             "line_endings":  "lf",
+                             "path_normalization":  "repo_relative_forward_slash"
+                         },
+    "depends_on":  [
+                       {
+                           "path":  "docs/ARTIFACT_PROOF_BASIS.json",
+                           "digest":  "d80040c495489e51785b1a3596db9fa31bf052040cc48269bac446b2f7bbdfce"
+                       }
+                   ],
+    "declared_requirements":  {
+                                  "artifact_proof_basis_digest":  "d80040c495489e51785b1a3596db9fa31bf052040cc48269bac446b2f7bbdfce",
+                                  "repo_snapshot_required":  true,
+                                  "truth_statement_match_required":  true
+                              },
+    "observed_state":  {
+                           "repo_snapshot":  {
+                                                 "status":  "pending_repo_verification",
+                                                 "repo_root":  "/",
+                                                 "snapshot_digest":  "pending"
+                                             },
+                           "proof_claim_results":  [
+                                                       {
+                                                           "claim_id":  "APC-001",
+                                                           "verdict":  "pending",
+                                                           "evidence_refs":  [
+
+                                                                             ],
+                                                           "verifier_ref":  null,
+                                                           "failure_codes":  [
+                                                                                 "pending_observation"
+                                                                             ]
+                                                       },
+                                                       {
+                                                           "claim_id":  "APC-002",
+                                                           "verdict":  "pending",
+                                                           "evidence_refs":  [
+
+                                                                             ],
+                                                           "verifier_ref":  null,
+                                                           "failure_codes":  [
+                                                                                 "pending_observation"
+                                                                             ]
+                                                       },
+                                                       {
+                                                           "claim_id":  "APC-003",
+                                                           "verdict":  "pending",
+                                                           "evidence_refs":  [
+
+                                                                             ],
+                                                           "verifier_ref":  null,
+                                                           "failure_codes":  [
+                                                                                 "pending_observation"
+                                                                             ]
+                                                       },
+                                                       {
+                                                           "claim_id":  "APC-004",
+                                                           "verdict":  "pending",
+                                                           "evidence_refs":  [
+
+                                                                             ],
+                                                           "verifier_ref":  null,
+                                                           "failure_codes":  [
+                                                                                 "pending_observation"
+                                                                             ]
+                                                       }
+                                                   ],
+                           "verifier_results":  {
+                                                    "repo_inspection":  "pending",
+                                                    "live_chat_proof":  "pending",
+                                                    "release_gate_proof":  "pending"
+                                                },
+                           "execution_surface_observed":  false,
+                           "truth_statement_match":  "pending"
+                       },
+    "derived_verdict":  {
+                            "release_readiness_verdict":  "blocked",
+                            "ready_for_release":  false,
+                            "blocking_failure_codes":  [
+                                                           "proof_not_sufficient_for_release",
+                                                           "law_00"
+                                                       ],
+                            "next_required_actions":  [
+                                                          "record actual verifier outputs",
+                                                          "bind actual evidence refs",
+                                                          "resolve law_00 degradation"
+                                                      ],
+                            "verification_status":  "blocked"
+                        },
+    "set_digest":  "577abdc186582aa8ef91f32e7aadb9e1b76ea853408443f98f66f6595dd1c86c",
+    "repo_test_surface":  {
+                              "status":  "observed",
+                              "source":  "repo",
+                              "basis":  "runtime release authority closeout"
+                          },
+    "runtime_seam_verifier":  {
+                                  "status":  "observed",
+                                  "source":  "api_chat release gate",
+                                  "basis":  "live runtime packet"
+                              },
+    "proof_surface_complete":  true,
+    "binding_integrity_required":  true,
+    "artifact_binding_path":  "proofs/release_authority/ARTIFACT_RELEASE_BINDING.json"
+}

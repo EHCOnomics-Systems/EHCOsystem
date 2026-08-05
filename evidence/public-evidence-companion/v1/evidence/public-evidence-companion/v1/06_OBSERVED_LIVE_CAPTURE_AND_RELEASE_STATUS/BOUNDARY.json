@@ -1,0 +1,18 @@
+{
+    "packet_id":  "06_OBSERVED_LIVE_CAPTURE_AND_RELEASE_STATUS",
+    "packet_integrity_can_pass":  true,
+    "live_local_capture_observed":  true,
+    "exact_raw_evidence_included":  true,
+    "positive_admission_observed":  true,
+    "bounded_release_observed":  true,
+    "closure_withholding_observed":  true,
+    "freeze_withholding_observed":  true,
+    "universal_behavioral_validation_proven":  false,
+    "negative_control_suite_proven":  false,
+    "production_activation_authorized":  false,
+    "external_release_authorized":  false,
+    "raw_evidence_may_contain_historical_environment_paths":  true,
+    "raw_evidence_files_are_hash_preserved":  true,
+    "authority_effect":  "NONE",
+    "standing_effect":  "NONE"
+}

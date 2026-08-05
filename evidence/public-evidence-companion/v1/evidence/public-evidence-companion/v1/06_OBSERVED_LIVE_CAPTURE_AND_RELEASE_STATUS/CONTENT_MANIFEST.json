@@ -1,0 +1,85 @@
+{
+    "packet_id":  "06_OBSERVED_LIVE_CAPTURE_AND_RELEASE_STATUS",
+    "hash_algorithm":  "SHA256",
+    "manifest_self_reference":  false,
+    "verification_result_in_manifest":  false,
+    "packet_receipt_in_manifest":  false,
+    "file_count":  15,
+    "files":  [
+                  {
+                      "path":  "06A_OBSERVED_LIVE_CAPTURE/OBSERVED_LIVE_CAPTURE.json",
+                      "bytes":  5889,
+                      "sha256":  "18023AF83E0260CD625C11FB8A7539E4EF95BE5D796C7BF45C6FF228186B3E8E"
+                  },
+                  {
+                      "path":  "06A_OBSERVED_LIVE_CAPTURE/raw/api_chat_probe.json",
+                      "bytes":  32825,
+                      "sha256":  "C307CAED5EFF51E41E9D6B9E865F389EA77B04A8B8BBDE84EDD626E9F53AAA69"
+                  },
+                  {
+                      "path":  "06A_OBSERVED_LIVE_CAPTURE/raw/api_mechanics.json",
+                      "bytes":  525,
+                      "sha256":  "A72D0FF91C59F2F9976EA1B6CCF4984D21F21AFC2DD69AC25593B333B0228BFB"
+                  },
+                  {
+                      "path":  "06A_OBSERVED_LIVE_CAPTURE/raw/api_receipts_summary.json",
+                      "bytes":  135,
+                      "sha256":  "72A7CBC149799E18F5082C6EAB39F661430B0DDC3D00A016D1611C5B88FEFEE1"
+                  },
+                  {
+                      "path":  "06A_OBSERVED_LIVE_CAPTURE/raw/capture_manifest.json",
+                      "bytes":  678,
+                      "sha256":  "A506FA43C879E7B4EEEC0F9B31650E6D547F9CD6A9C0ACCD57300DC3E56E9727"
+                  },
+                  {
+                      "path":  "06A_OBSERVED_LIVE_CAPTURE/raw/docker_compose_ps.txt",
+                      "bytes":  694,
+                      "sha256":  "257138DE7FBD9C938B5DFFB8932AF8FD276A5686EB10E485C3E9771E24E52C93"
+                  },
+                  {
+                      "path":  "06B_RELEASE_RECORD_STATUS/raw/ARTIFACT_RELEASE_BINDING.json",
+                      "bytes":  5290,
+                      "sha256":  "9BE15D9CC3ABBF21BC3228043F15F2F3061667CE782390DE5DF4B1F81B4FCF02"
+                  },
+                  {
+                      "path":  "06B_RELEASE_RECORD_STATUS/raw/ARTIFACT_RELEASE_PROOF.json",
+                      "bytes":  7217,
+                      "sha256":  "7C60B70E716E2521867CE416E0ABC54FF821B85A3017457704D320394D6D2A3E"
+                  },
+                  {
+                      "path":  "06B_RELEASE_RECORD_STATUS/raw/DEPLOYMENT_EVIDENCE_BINDING.json",
+                      "bytes":  4547,
+                      "sha256":  "1120800EA2DE00793E6D0917234387743B08BE08EA4D446640ADA36E01524AA6"
+                  },
+                  {
+                      "path":  "06B_RELEASE_RECORD_STATUS/raw/DISTRIBUTION_RELEASE_BINDING.json",
+                      "bytes":  1963,
+                      "sha256":  "106786F5750DF1B9E235C49ADC0A9FC2E4B5830AFD321C118890A3021553D878"
+                  },
+                  {
+                      "path":  "06B_RELEASE_RECORD_STATUS/RELEASE_RECORD_STATUS.json",
+                      "bytes":  5321,
+                      "sha256":  "C9995F5AE0D10C11AC138BD8EBE8B344FCBFED3F994AB205D9E387707B2DFBCF"
+                  },
+                  {
+                      "path":  "06C_DISCREPANCY_AND_GAP_REGISTER/DISCREPANCY_AND_GAP_REGISTER.json",
+                      "bytes":  13230,
+                      "sha256":  "1D76BD2B1985A67653BC5AAB9B8601174F8EF04F4B502E7CE5E23FA8C656BE84"
+                  },
+                  {
+                      "path":  "BOUNDARY.json",
+                      "bytes":  749,
+                      "sha256":  "10814A6C4C503CFE321F2230511FEBB2365F4EB94E327919E417C3DC9BC16CE0"
+                  },
+                  {
+                      "path":  "PARENT_BINDING.json",
+                      "bytes":  390,
+                      "sha256":  "D9E95E3695CAD9FCE4555744AAC3F1B6B347AD0E2981F18CB34EE482E9F9DD2C"
+                  },
+                  {
+                      "path":  "README.txt",
+                      "bytes":  1311,
+                      "sha256":  "28E05B8029BF31F52744040389F38894D0D0A5EEC0675660B696F3A02E9C8019"
+                  }
+              ]
+}

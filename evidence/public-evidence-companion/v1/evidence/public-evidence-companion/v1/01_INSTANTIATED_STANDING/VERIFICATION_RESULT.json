@@ -1,0 +1,57 @@
+{
+    "schema":  "EHCO_PACKET_VERIFICATION_RESULT_V1",
+    "packet_id":  "01_INSTANTIATED_STANDING",
+    "verified_at_utc":  "2026-07-16T20:13:26.8335559Z",
+    "status":  "PASS",
+    "checked_file_count":  7,
+    "checked_files":  [
+                          {
+                              "path":  "CLAIM_REGISTRY.json",
+                              "status":  "PASS",
+                              "bytes":  5272,
+                              "sha256":  "3F48D3BD935641C6DF0E2F73654C843E35B83FD677C6142B0BD06A3C57AB5B3E"
+                          },
+                          {
+                              "path":  "COVERAGE_AND_EXCLUSIONS.json",
+                              "status":  "PASS",
+                              "bytes":  1460,
+                              "sha256":  "B264FD74D3A6E1D1AB10205BFCC6F61495DE58FB81C915490F8F850D03E9323E"
+                          },
+                          {
+                              "path":  "PARENT_BINDING.json",
+                              "status":  "PASS",
+                              "bytes":  928,
+                              "sha256":  "BEC21340B1511B7CA1649CDBEB0B0D5E5999A866FBB7C04D768915E45638B35B"
+                          },
+                          {
+                              "path":  "README.txt",
+                              "status":  "PASS",
+                              "bytes":  656,
+                              "sha256":  "AFEDD14E8A24CF3E0E13C3564E332CB035057B029622DDF41A0B04F8A75B8BDA"
+                          },
+                          {
+                              "path":  "STANDING_RECORD.json",
+                              "status":  "PASS",
+                              "bytes":  2833,
+                              "sha256":  "CA4D80ECE055066FC3BE9964463E10D5A7845DE5580281DE3DBE04513AE66C9B"
+                          },
+                          {
+                              "path":  "STANDING_SCOPE_AND_DELIVERY_SEPARATION.json",
+                              "status":  "PASS",
+                              "bytes":  3033,
+                              "sha256":  "C78950D1DFA8E954CC482E895D052E163A70607B60B85AB4136B6313174390FA"
+                          },
+                          {
+                              "path":  "VERIFY_PACKET_01.ps1",
+                              "status":  "PASS",
+                              "bytes":  6595,
+                              "sha256":  "7C4F60C8DA4A6E3D9524FBDD04307A64CCA6E5C2F5975631469B8EF9292B93C0"
+                          }
+                      ],
+    "errors":  [
+
+               ],
+    "authority_effect":  "NONE",
+    "standing_effect":  "NONE",
+    "live_runtime_reobservation_performed":  false
+}

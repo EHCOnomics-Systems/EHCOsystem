@@ -1,0 +1,13 @@
+{
+    "packet_id":  "02_CANONICAL_RUNTIME_SOURCE_BINDING",
+    "verified_at_utc":  "2026-07-16T20:37:57.8846005Z",
+    "status":  "PASS",
+    "source_files_checked":  7,
+    "source_hash_matches":  7,
+    "packet_manifest_sha256":  "53A2031238B2EBAFE52BBCDA7DE5009575CD45E5B7C94B8A75FD4963D2FD0F1B",
+    "errors":  [
+
+               ],
+    "authority_effect":  "NONE",
+    "standing_effect":  "NONE"
+}

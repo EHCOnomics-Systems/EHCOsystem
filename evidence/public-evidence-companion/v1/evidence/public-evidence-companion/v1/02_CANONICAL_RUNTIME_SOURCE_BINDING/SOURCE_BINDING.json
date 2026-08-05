@@ -1,0 +1,79 @@
+{
+    "packet_id":  "02_CANONICAL_RUNTIME_SOURCE_BINDING",
+    "created_at_utc":  "2026-07-16T20:37:55.3085996Z",
+    "dossier":  {
+                    "version":  "1.8",
+                    "sha256":  "F489BA01961A12CF101B1F1DF57E6958456A0840BEB798B862FA97ACB030892D"
+                },
+    "parent_packet":  {
+                          "packet_id":  "01_INSTANTIATED_STANDING",
+                          "manifest_sha256":  "1C8CF094D2A8EE437335278EBA0B5FE26BC5E8C2876162BF18AB8A72A7090E3E",
+                          "verification_sha256":  "0F4407EDDCE56A851C919A3B902D712C4569CC828DDEBA75D07BBE9B3FADB789",
+                          "verification_status":  "PASS"
+                      },
+    "source_binding":  {
+                           "source_root_identifier":  "EHCO_CANONICAL_SOURCE_WORKTREE_20260703",
+                           "source_file_count":  7,
+                           "source_content_included":  false,
+                           "source_paths_are_relative":  true,
+                           "files":  [
+                                         {
+                                             "relative_path":  "ehco/chat_routes.py",
+                                             "sha256":  "24C80969E6478D85135E96E006544F1C1D5C83D23A5D65CF66C2978726C0C367",
+                                             "bytes":  167428,
+                                             "hash_match":  true,
+                                             "content_included":  false
+                                         },
+                                         {
+                                             "relative_path":  "ehco/chat_engine.py",
+                                             "sha256":  "4E9A25B9304180A8D1ADEA135F295448BC45CD06763C4EE8667AD6AAF80F1340",
+                                             "bytes":  21760,
+                                             "hash_match":  true,
+                                             "content_included":  false
+                                         },
+                                         {
+                                             "relative_path":  "ehco/ehco1_authority.py",
+                                             "sha256":  "11D8023FB127F621AC64076AED9D4BC32EDCC0FDC7EA14887D9DAC5428543B8E",
+                                             "bytes":  16574,
+                                             "hash_match":  true,
+                                             "content_included":  false
+                                         },
+                                         {
+                                             "relative_path":  "ehco/ehco1-recursion-engine/support_roots.py",
+                                             "sha256":  "82E065AB6A1C427B6E435FF6B0550DF14373B9811CCE32F7005B9BECA15AC7E9",
+                                             "bytes":  7422,
+                                             "hash_match":  true,
+                                             "content_included":  false
+                                         },
+                                         {
+                                             "relative_path":  "ehco/core/ehco_node/runtime/recursion_bridge.py",
+                                             "sha256":  "EADE2F7F32620840DCA8CF243E79689E4A73EF62B4ABAFADA7FA64BEC12871A2",
+                                             "bytes":  1944,
+                                             "hash_match":  true,
+                                             "content_included":  false
+                                         },
+                                         {
+                                             "relative_path":  "ehco/EHCO1/authority/authority_manifest.json",
+                                             "sha256":  "C253B04E7D0945CC62B156E75170B930BE2881295DE126EB45E3D4E6CC22F3A7",
+                                             "bytes":  2535,
+                                             "hash_match":  true,
+                                             "content_included":  false
+                                         },
+                                         {
+                                             "relative_path":  "ehco/freeze_gate.py",
+                                             "sha256":  "B4894FA1AC7BDA7C7C7463D314C4D78F2960794821818B0C5B6248A80A54E6AC",
+                                             "bytes":  19234,
+                                             "hash_match":  true,
+                                             "content_included":  false
+                                         }
+                                     ]
+                       },
+    "claim_boundary":  {
+                           "proves_exact_source_identity":  true,
+                           "claims_gate_chain_coverage":  false,
+                           "claims_live_runtime_observation":  false,
+                           "claims_new_runtime_realization":  false,
+                           "authority_effect":  "NONE",
+                           "standing_effect":  "NONE"
+                       }
+}

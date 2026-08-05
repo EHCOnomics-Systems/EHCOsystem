@@ -1,0 +1,160 @@
+{
+  "schema": "EHCO_ARTIFACT_RELEASE_BINDING_V5",
+  "contract_version": "5.0",
+  "source_snapshot": {
+    "basis": "conversation_derived_release_authority_v5",
+    "generated_at": 1777495146,
+    "repo_root": "/",
+    "snapshot_label": "closeout_v5_contract_surface"
+  },
+  "canonicalization": {
+    "hash_algorithm": "sha256",
+    "json_canonicalization": "utf8_no_bom_sorted_keys_compact_when_hashed",
+    "line_endings": "lf",
+    "path_normalization": "repo_relative_forward_slash"
+  },
+  "depends_on": [
+    {
+      "path": "docs/ARTIFACT_PROOF_BASIS.json",
+      "digest": "d80040c495489e51785b1a3596db9fa31bf052040cc48269bac446b2f7bbdfce"
+    },
+    {
+      "path": "proofs/release_authority/ARTIFACT_RELEASE_PROOF.json",
+      "digest": "577abdc186582aa8ef91f32e7aadb9e1b76ea853408443f98f66f6595dd1c86c"
+    }
+  ],
+  "declared_requirements": {
+    "binding_nodes_required": [
+      "ehco/chat_engine.py",
+      "ehco/ehco1_authority.py",
+      "ehco/chat_routes.py",
+      "ehco/proof_authority.py",
+      "ehco/freeze_gate.py",
+      "docs/ARTIFACT_PROOF_BASIS.json",
+      "proofs/release_authority/ARTIFACT_RELEASE_PROOF.json"
+    ],
+    "binding_graph_rule": "all required nodes hash-bound into artifact release proof and carryover chain"
+  },
+  "observed_state": {
+    "binding_nodes": [
+      {
+        "path": "ehco/chat_engine.py",
+        "sha256": "73C938C574C0F1906E49DCD741DB8BB186BFF66D90995CC98F8106FA958D764F",
+        "status": "bound",
+        "kind": "source"
+      },
+      {
+        "path": "ehco/ehco1_authority.py",
+        "sha256": "0A1D40DF12D15A1AAA6467A4FA168C0D8F36EA5CC3EF85BE4179081F3AFBA5A9",
+        "status": "bound",
+        "kind": "source"
+      },
+      {
+        "path": "ehco/chat_routes.py",
+        "sha256": "9B2662575DB4630E4BBCE0C68EB92E1166B7D7FE5074AA62888031AE07BB9CCA",
+        "status": "bound",
+        "kind": "source"
+      },
+      {
+        "path": "ehco/proof_authority.py",
+        "sha256": "6E9E9969F37F71147EA544E0E2986FA3C25CD91083B53F1304D97A769DF9ADB8",
+        "status": "bound",
+        "kind": "source"
+      },
+      {
+        "path": "ehco/freeze_gate.py",
+        "sha256": "AD17F569501C92D1C5DE1202338CDB82514DD2325EC60C5D146E18C8DD05DD0D",
+        "status": "bound",
+        "kind": "source"
+      },
+      {
+        "path": "docs/ARTIFACT_PROOF_BASIS.json",
+        "sha256": "d80040c495489e51785b1a3596db9fa31bf052040cc48269bac446b2f7bbdfce",
+        "status": "bound",
+        "kind": "basis"
+      },
+      {
+        "path": "proofs/release_authority/ARTIFACT_RELEASE_PROOF.json",
+        "sha256": "577abdc186582aa8ef91f32e7aadb9e1b76ea853408443f98f66f6595dd1c86c",
+        "status": "bound",
+        "kind": "proof_result"
+      }
+    ],
+    "binding_edges": [
+      {
+        "from": "docs/ARTIFACT_PROOF_BASIS.json",
+        "to": "proofs/release_authority/ARTIFACT_RELEASE_PROOF.json",
+        "status": "bound"
+      },
+      {
+        "from": "ehco/chat_engine.py",
+        "to": "proofs/release_authority/ARTIFACT_RELEASE_PROOF.json",
+        "status": "bound"
+      },
+      {
+        "from": "ehco/ehco1_authority.py",
+        "to": "proofs/release_authority/ARTIFACT_RELEASE_PROOF.json",
+        "status": "bound"
+      },
+      {
+        "from": "ehco/chat_routes.py",
+        "to": "proofs/release_authority/ARTIFACT_RELEASE_PROOF.json",
+        "status": "bound"
+      },
+      {
+        "from": "ehco/proof_authority.py",
+        "to": "proofs/release_authority/ARTIFACT_RELEASE_PROOF.json",
+        "status": "bound"
+      },
+      {
+        "from": "ehco/freeze_gate.py",
+        "to": "proofs/release_authority/ARTIFACT_RELEASE_PROOF.json",
+        "status": "bound"
+      }
+    ],
+    "unbound_required_items": []
+  },
+  "derived_verdict": {
+    "binding_graph_complete": true,
+    "binding_integrity_complete": true,
+    "blocking_failure_codes": [
+      "artifact_release_authority_not_valid"
+    ],
+    "next_required_actions": [
+      "add execution surface evidence",
+      "complete artifact proof surface"
+    ],
+    "verification_status": "bound"
+  },
+  "set_digest": "740c17f8a0a7d2504d981ca29e4e6a97eb494d4e0f960b7f43393887df2c5370",
+  "bindings": [
+    {
+      "path": "ehco/chat_engine.py",
+      "sha256": "73c938c574c0f1906e49dcd741db8bb186bff66d90995cc98f8106fa958d764f"
+    },
+    {
+      "path": "ehco/ehco1_authority.py",
+      "sha256": "d0b2bfd5c26fe1453a75b3f2254f005a3578d20dec38e7d4a48329890da06d6f"
+    },
+    {
+      "path": "ehco/chat_routes.py",
+      "sha256": "9b2662575db4630e4bbce0c68eb92e1166b7d7fe5074aa62888031ae07bb9cca"
+    },
+    {
+      "path": "ehco/proof_authority.py",
+      "sha256": "6e9e9969f37f71147ea544e0e2986fa3c25cd91083b53f1304d97a769df9adb8"
+    },
+    {
+      "path": "ehco/freeze_gate.py",
+      "sha256": "ad17f569501c92d1c5de1202338cdb82514dd2325ec60c5d146e18c8dd05dd0d"
+    },
+    {
+      "path": "ehco/range_constitution.py",
+      "sha256": "b56be19e746ed438c1a6bea4ab8c4a8618c4fd0c9d2fdc733a43c27e7691c3cc"
+    },
+    {
+      "path": "ehco/deployment_evidence_authority.py",
+      "sha256": "a9e26d9cc91044b1d33d23e07bbc07552756edfc28512fcb12a0fde58819716b"
+    }
+  ]
+}

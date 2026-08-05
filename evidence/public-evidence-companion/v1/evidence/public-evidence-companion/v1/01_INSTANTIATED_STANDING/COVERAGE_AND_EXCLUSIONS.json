@@ -1,0 +1,31 @@
+{
+    "schema":  "EHCO_PUBLIC_EVIDENCE_COVERAGE_V1",
+    "packet_id":  "01_INSTANTIATED_STANDING",
+    "covered":  [
+                    "Accepted operational standing baseline",
+                    "Five standing classes",
+                    "Tier 1 authority location",
+                    "52/53 standing lineage",
+                    "V23 runtime authority route",
+                    "Standing-versus-delivery separation",
+                    "Packet non-authority boundary"
+                ],
+    "excluded":  [
+                     "New runtime realization",
+                     "New standing transition",
+                     "Live runtime health certification",
+                     "Full pre-execution cost enforcement validation",
+                     "Independent product release certification",
+                     "Kubernetes package completion",
+                     "Cluster deployment validation",
+                     "Production authorization",
+                     "Commercial activation",
+                     "Public ingress authorization",
+                     "Release or go-live authorization"
+                 ],
+    "exclusion_effect":  {
+                             "excluded_items_are_not_claimed":  true,
+                             "exclusion_changes_existing_standing":  false,
+                             "packet_incompleteness_changes_existing_standing":  false
+                         }
+}

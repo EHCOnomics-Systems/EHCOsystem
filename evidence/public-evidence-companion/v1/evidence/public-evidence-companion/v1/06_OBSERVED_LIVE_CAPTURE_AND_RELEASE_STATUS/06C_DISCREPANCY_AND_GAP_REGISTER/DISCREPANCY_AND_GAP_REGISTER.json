@@ -1,0 +1,141 @@
+{
+    "packet_id":  "06_OBSERVED_LIVE_CAPTURE_AND_RELEASE_STATUS",
+    "direct_discrepancies":  {
+                                 "count":  3,
+                                 "interpretation":  "COMPARABLE_VALUES_WITHIN_THE_SAME_BOUND_RECORD_OR_CAPTURE_SET",
+                                 "items":  [
+                                               {
+                                                   "discrepancy_id":  "D06-001",
+                                                   "class":  "INTRA_RECORD_VERDICT_DIVERGENCE",
+                                                   "source":  "DEPLOYMENT_EVIDENCE_BINDING.json",
+                                                   "subject":  "ready_for_external_freeze",
+                                                   "observed_state_value":  true,
+                                                   "derived_verdict_value":  false,
+                                                   "resolution_status":  "UNRESOLVED"
+                                               },
+                                               {
+                                                   "discrepancy_id":  "D06-002",
+                                                   "class":  "INTRA_RECORD_HASH_DIVERGENCE",
+                                                   "source":  "ARTIFACT_RELEASE_BINDING.json",
+                                                   "subject":  "ehco/ehco1_authority.py",
+                                                   "observed_state_sha256":  "0A1D40DF12D15A1AAA6467A4FA168C0D8F36EA5CC3EF85BE4179081F3AFBA5A9",
+                                                   "bindings_sha256":  "D0B2BFD5C26FE1453A75B3F2254F005A3578D20DEC38E7D4A48329890DA06D6F",
+                                                   "resolution_status":  "UNRESOLVED"
+                                               },
+                                               {
+                                                   "discrepancy_id":  "D06-003",
+                                                   "class":  "BOUND_CAPTURE_CLASSIFICATION_DIVERGENCE",
+                                                   "source_a":  "capture_manifest.json",
+                                                   "source_a_capture_schema":  "live_capture",
+                                                   "source_a_external_emission":  true,
+                                                   "source_b":  "api_chat_probe.json",
+                                                   "source_b_freeze_reason":  "deployment_evidence_not_live_capture;quarantine_active",
+                                                   "resolution_status":  "UNRESOLVED"
+                                               }
+                                           ]
+                             },
+    "cross_snapshot_divergences":  {
+                                       "count":  3,
+                                       "interpretation":  "NOT_CLASSIFIED_AS_LOGICAL_CONTRADICTIONS",
+                                       "items":  [
+                                                     {
+                                                         "divergence_id":  "L06-001",
+                                                         "class":  "CROSS_SNAPSHOT_STATUS_DIVERGENCE",
+                                                         "earlier_source":  "ARTIFACT_RELEASE_PROOF.json",
+                                                         "earlier_value":  {
+                                                                               "execution_surface_observed":  false,
+                                                                               "verification_status":  "blocked"
+                                                                           },
+                                                         "later_capture_source":  "api_chat_probe.json",
+                                                         "later_capture_value":  {
+                                                                                     "execution_surface_evidenced":  true,
+                                                                                     "validation_status":  "valid"
+                                                                                 },
+                                                         "interpretation":  "TEMPORAL_OR_SNAPSHOT_DIVERGENCE_NOT_RESOLVED_HERE"
+                                                     },
+                                                     {
+                                                         "divergence_id":  "L06-002",
+                                                         "class":  "CROSS_SNAPSHOT_SCOPE_OR_STATUS_DIVERGENCE",
+                                                         "release_record_source":  "DISTRIBUTION_RELEASE_BINDING.json",
+                                                         "release_record_ready":  false,
+                                                         "release_record_status":  "blocked",
+                                                         "capture_source":  "api_chat_probe.json",
+                                                         "capture_distribution_authority_ready":  true,
+                                                         "interpretation":  "DIFFERENT_SNAPSHOT_OR_SCOPE_NOT_TREATED_AS_DIRECT_CONTRADICTION"
+                                                     },
+                                                     {
+                                                         "divergence_id":  "L06-003",
+                                                         "class":  "SOURCE_LINEAGE_DIVERGENCE",
+                                                         "release_snapshot":  "closeout_v5_contract_surface",
+                                                         "current_canonical_root":  "EHCO_CANONICAL_SOURCE_WORKTREE_20260703",
+                                                         "differing_files":  [
+                                                                                 {
+                                                                                     "relative_path":  "ehco/ehco1_authority.py",
+                                                                                     "release_snapshot_sha256":  "0A1D40DF12D15A1AAA6467A4FA168C0D8F36EA5CC3EF85BE4179081F3AFBA5A9",
+                                                                                     "current_canonical_sha256":  "11D8023FB127F621AC64076AED9D4BC32EDCC0FDC7EA14887D9DAC5428543B8E",
+                                                                                     "interpretation":  "DIFFERENT_HASH_LINEAGE_NOT_LOGICAL_CONTRADICTION"
+                                                                                 },
+                                                                                 {
+                                                                                     "relative_path":  "ehco/chat_routes.py",
+                                                                                     "release_snapshot_sha256":  "9B2662575DB4630E4BBCE0C68EB92E1166B7D7FE5074AA62888031AE07BB9CCA",
+                                                                                     "current_canonical_sha256":  "24C80969E6478D85135E96E006544F1C1D5C83D23A5D65CF66C2978726C0C367",
+                                                                                     "interpretation":  "DIFFERENT_HASH_LINEAGE_NOT_LOGICAL_CONTRADICTION"
+                                                                                 },
+                                                                                 {
+                                                                                     "relative_path":  "ehco/chat_engine.py",
+                                                                                     "release_snapshot_sha256":  "73C938C574C0F1906E49DCD741DB8BB186BFF66D90995CC98F8106FA958D764F",
+                                                                                     "current_canonical_sha256":  "4E9A25B9304180A8D1ADEA135F295448BC45CD06763C4EE8667AD6AAF80F1340",
+                                                                                     "interpretation":  "DIFFERENT_HASH_LINEAGE_NOT_LOGICAL_CONTRADICTION"
+                                                                                 },
+                                                                                 {
+                                                                                     "relative_path":  "ehco/freeze_gate.py",
+                                                                                     "release_snapshot_sha256":  "AD17F569501C92D1C5DE1202338CDB82514DD2325EC60C5D146E18C8DD05DD0D",
+                                                                                     "current_canonical_sha256":  "B4894FA1AC7BDA7C7C7463D314C4D78F2960794821818B0C5B6248A80A54E6AC",
+                                                                                     "interpretation":  "DIFFERENT_HASH_LINEAGE_NOT_LOGICAL_CONTRADICTION"
+                                                                                 }
+                                                                             ],
+                                                         "interpretation":  "RELEASE_RECORD_AND_CURRENT_CANONICAL_SET_ARE_DIFFERENT_HASH_LINEAGES"
+                                                     }
+                                                 ]
+                                   },
+    "not_directly_observed_behavioral_gaps":  {
+                                                  "count":  5,
+                                                  "items":  [
+                                                                {
+                                                                    "gap_id":  "G06-001",
+                                                                    "behavioral_lane":  "INVALID_ADMISSION",
+                                                                    "disposition":  "NOT_DIRECTLY_OBSERVED",
+                                                                    "required_evidence":  "Bounded invalid-admission execution result"
+                                                                },
+                                                                {
+                                                                    "gap_id":  "G06-002",
+                                                                    "behavioral_lane":  "MANIFEST_MISMATCH_FAIL_CLOSED",
+                                                                    "disposition":  "NOT_DIRECTLY_OBSERVED",
+                                                                    "required_evidence":  "Manifest-mismatch execution with fail-closed disposition"
+                                                                },
+                                                                {
+                                                                    "gap_id":  "G06-003",
+                                                                    "behavioral_lane":  "PROOF_MISSING_NEGATIVE_CONTROL",
+                                                                    "disposition":  "NOT_DIRECTLY_OBSERVED",
+                                                                    "required_evidence":  "Execution with absent or invalid proof reference"
+                                                                },
+                                                                {
+                                                                    "gap_id":  "G06-004",
+                                                                    "behavioral_lane":  "DISCRETE_PUBLIC_PROJECTION_DENIAL",
+                                                                    "disposition":  "NOT_DIRECTLY_OBSERVED",
+                                                                    "required_evidence":  "Explicit projection-denial execution receipt"
+                                                                },
+                                                                {
+                                                                    "gap_id":  "G06-005",
+                                                                    "behavioral_lane":  "PROCESS_RESTART_AND_READMISSION_RECOVERY",
+                                                                    "disposition":  "NOT_DIRECTLY_OBSERVED",
+                                                                    "required_evidence":  "Restart, persisted-state recovery, and re-admission result"
+                                                                }
+                                                            ]
+                                              },
+    "evidence_disposition":  "MIXED_STATUS_WITH_DIRECT_DISCREPANCIES_AND_OPEN_GAPS",
+    "discrepancies_resolved_by_packet":  false,
+    "release_authorized":  false,
+    "authority_effect":  "NONE",
+    "standing_effect":  "NONE"
+}

@@ -1,0 +1,16 @@
+{
+    "packet_id":  "07_PUBLIC_BOUNDARIES_AND_DELIVERY_STATUS",
+    "verified_at_utc":  "2026-07-17T01:47:43.6107179Z",
+    "status":  "PASS",
+    "verification_scope":  "PACKET_INTEGRITY",
+    "dossier_sha256":  "F489BA01961A12CF101B1F1DF57E6958456A0840BEB798B862FA97ACB030892D",
+    "parent_manifest_sha256":  "379E16571EE8A2C5451D0C46610B34E5AC2835C5E1879B6AF77E4F2B009BD5F3",
+    "boundary_rules_checked":  10,
+    "external_release_authorized":  false,
+    "production_activation_authorized":  false,
+    "errors":  [
+
+               ],
+    "authority_effect":  "NONE",
+    "standing_effect":  "NONE"
+}

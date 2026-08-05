@@ -1,0 +1,112 @@
+{
+  "schema": "EHCO_DEPLOYMENT_EVIDENCE_BINDING_V6",
+  "contract_version": "6.0",
+  "source_snapshot": {
+    "basis": "live_capture_external_freeze_closeout",
+    "generated_at": 1777603904,
+    "repo_root": "C:\\EHCO1 Prime Deploy Ready",
+    "snapshot_label": "external_freeze_live_capture"
+  },
+  "canonicalization": {
+    "hash_algorithm": "sha256",
+    "json_canonicalization": "utf8_no_bom_sorted_keys_compact_when_hashed",
+    "line_endings": "lf",
+    "path_normalization": "repo_relative_forward_slash"
+  },
+  "depends_on": [
+    {
+      "path": "docs/DEPLOYMENT_EVIDENCE_BASIS.json",
+      "digest": "771f3ad92d488dbc991616f12e3efa577ca53dfc807b64d0dec393ee6ed32e58"
+    }
+  ],
+  "declared_requirements": {
+    "deployment_evidence_basis_digest": "771f3ad92d488dbc991616f12e3efa577ca53dfc807b64d0dec393ee6ed32e58",
+    "capture_manifest_required": true,
+    "bound_evidence_required": true,
+    "external_emission_required": true,
+    "capture_schema_required": "live_capture",
+    "required_evidence_files": [
+      "proofs/release_authority/live_deployment_capture/api_chat_probe.json",
+      "proofs/release_authority/live_deployment_capture/api_mechanics.json",
+      "proofs/release_authority/live_deployment_capture/api_receipts_summary.json",
+      "proofs/release_authority/live_deployment_capture/capture_manifest.json",
+      "proofs/release_authority/live_deployment_capture/docker_compose_ps.txt"
+    ]
+  },
+  "observed_state": {
+    "evidence_root": "proofs/release_authority/live_deployment_capture",
+    "capture_timestamp": "2026-05-01T02:48:46.2604099Z",
+    "environment_label": "local_live",
+    "capture_schema": "live_capture",
+    "external_emission": true,
+    "bound_evidence": [
+      {
+        "path": "proofs/release_authority/live_deployment_capture/api_chat_probe.json",
+        "sha256": "c307caed5eff51e41e9d6b9e865f389ea77b04a8b8bbde84edd626e9f53aaa69",
+        "required": true,
+        "present": true
+      },
+      {
+        "path": "proofs/release_authority/live_deployment_capture/api_mechanics.json",
+        "sha256": "a72d0ff91c59f2f9976ea1b6ccf4984d21f21afc2dd69ac25593b333b0228bfb",
+        "required": true,
+        "present": true
+      },
+      {
+        "path": "proofs/release_authority/live_deployment_capture/api_receipts_summary.json",
+        "sha256": "72a7cbc149799e18f5082c6eab39f661430b0ddc3d00a016d1611c5b88fefee1",
+        "required": true,
+        "present": true
+      },
+      {
+        "path": "proofs/release_authority/live_deployment_capture/capture_manifest.json",
+        "sha256": "a506fa43c879e7b4eeec0f9b31650e6d547f9cd6a9c0accd57300dc3e56e9727",
+        "required": true,
+        "present": true
+      },
+      {
+        "path": "proofs/release_authority/live_deployment_capture/docker_compose_ps.txt",
+        "sha256": "257138de7fbd9c938b5dffb8932af8fd276a5686eb10e485c3e9771e24e52c93",
+        "required": true,
+        "present": true
+      }
+    ],
+    "deployment_binding_complete": true,
+    "ready_for_external_freeze": true,
+    "blocking_failure_codes": [],
+    "next_required_actions": [],
+    "verification_status": "live_capture_bound"
+  },
+  "derived_verdict": {
+    "deployment_binding_complete": true,
+    "ready_for_external_freeze": false,
+    "blocking_failure_codes": [],
+    "next_required_actions": [
+      "update final verdict from observed deployment evidence"
+    ],
+    "verification_status": "bound"
+  },
+  "set_digest": "51f0f1f5ed27ae3ac6602b92e615d37f4c392e97206577d911aa6c09210985db",
+  "bindings": [
+    {
+      "path": "proofs/release_authority/live_deployment_capture/api_chat_probe.json",
+      "sha256": "c307caed5eff51e41e9d6b9e865f389ea77b04a8b8bbde84edd626e9f53aaa69"
+    },
+    {
+      "path": "proofs/release_authority/live_deployment_capture/api_mechanics.json",
+      "sha256": "a72d0ff91c59f2f9976ea1b6ccf4984d21f21afc2dd69ac25593b333b0228bfb"
+    },
+    {
+      "path": "proofs/release_authority/live_deployment_capture/api_receipts_summary.json",
+      "sha256": "72a7cbc149799e18f5082c6eab39f661430b0ddc3d00a016d1611c5b88fefee1"
+    },
+    {
+      "path": "proofs/release_authority/live_deployment_capture/capture_manifest.json",
+      "sha256": "a506fa43c879e7b4eeec0f9b31650e6d547f9cd6a9c0accd57300dc3e56e9727"
+    },
+    {
+      "path": "proofs/release_authority/live_deployment_capture/docker_compose_ps.txt",
+      "sha256": "257138de7fbd9c938b5dffb8932af8fd276a5686eb10e485c3e9771e24e52c93"
+    }
+  ]
+}

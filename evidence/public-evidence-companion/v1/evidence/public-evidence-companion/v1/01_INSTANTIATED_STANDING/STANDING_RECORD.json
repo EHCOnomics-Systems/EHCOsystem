@@ -1,0 +1,52 @@
+{
+    "schema":  "EHCO_INSTANTIATED_STANDING_RECORD_V1",
+    "packet_id":  "01_INSTANTIATED_STANDING",
+    "record_created_at_utc":  "2026-07-16T20:13:08.1985268Z",
+    "standing_identity":  {
+                              "system":  "EHCO AI-OS",
+                              "standing_status":  "ACCEPTED_OPERATIONAL_BASELINE",
+                              "standing_corridor":  "52/53",
+                              "runtime_authority_route":  "V23",
+                              "runtime_authority_tier":  "TIER1"
+                          },
+    "accepted_baseline":  [
+                              "RUNTIME",
+                              "GOVERNANCE",
+                              "PERSISTENCE",
+                              "OBSERVABILITY",
+                              "RECOVERY"
+                          ],
+    "status_classification":  {
+                                  "standing_basis":  "ACCEPTED_CANONICAL_STANDING",
+                                  "packet_observation_class":  "CANONICAL_BASELINE_PROJECTION",
+                                  "live_runtime_reobservation_performed":  false,
+                                  "live_runtime_reobservation_required_to_preserve_standing":  false,
+                                  "packet_is_new_instantiation":  false,
+                                  "packet_is_standing_transition":  false
+                              },
+    "authority_boundary":  {
+                               "packet_is_runtime_authority":  false,
+                               "packet_can_create_standing":  false,
+                               "packet_can_promote_standing":  false,
+                               "packet_can_demote_standing":  false,
+                               "packet_failure_changes_standing":  false,
+                               "authority_effect":  "NONE",
+                               "standing_effect":  "NONE"
+                           },
+    "dossier_binding":  {
+                            "version":  "1.8",
+                            "sha256":  "F489BA01961A12CF101B1F1DF57E6958456A0840BEB798B862FA97ACB030892D",
+                            "relevant_pages":  [
+                                                   2,
+                                                   6,
+                                                   9,
+                                                   12,
+                                                   13,
+                                                   14,
+                                                   34,
+                                                   38,
+                                                   39,
+                                                   40
+                                               ]
+                        }
+}

@@ -1,0 +1,36 @@
+{
+    "packet_id":  "08_SUITE_VERIFICATION_AND_FINAL_ZIP",
+    "policy_class":  "PUBLIC_EVIDENCE_DISCLOSURE_CONTROL",
+    "historical_raw_evidence":  {
+                                    "allowed":  true,
+                                    "relative_path":  "06_OBSERVED_LIVE_CAPTURE_AND_RELEASE_STATUS/06B_RELEASE_RECORD_STATUS/raw/DEPLOYMENT_EVIDENCE_BINDING.json",
+                                    "sha256":  "1120800EA2DE00793E6D0917234387743B08BE08EA4D446640ADA36E01524AA6",
+                                    "absolute_environment_path_occurrences":  1,
+                                    "path_value":  "C:\\EHCO1 Prime Deploy Ready",
+                                    "classification":  "HISTORICAL_CAPTURE_ATTRIBUTE",
+                                    "active_instruction":  false,
+                                    "redaction_applied":  false,
+                                    "rationale":  "Redaction would alter the exact hash-preserved evidence file."
+                                },
+    "verification_tooling":  {
+                                 "allowed":  true,
+                                 "relative_path":  "01_INSTANTIATED_STANDING/VERIFY_PACKET_01.ps1",
+                                 "sha256":  "7C4F60C8DA4A6E3D9524FBDD04307A64CCA6E5C2F5975631469B8EF9292B93C0",
+                                 "classification":  "BOUNDED_PACKET_VERIFICATION_TOOL",
+                                 "runtime_implementation_source":  false,
+                                 "authority_effect":  "NONE",
+                                 "standing_effect":  "NONE"
+                             },
+    "implementation_source_disclosure":  {
+                                             "included":  false,
+                                             "policy":  "Runtime implementation source is excluded; bounded verification tooling is permitted."
+                                         },
+    "secret_indicator_scan":  {
+                                  "status":  "PASS",
+                                  "findings":  0
+                              },
+    "release_authorization":  {
+                                  "external_release_authorized":  false,
+                                  "production_activation_authorized":  false
+                              }
+}

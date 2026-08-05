@@ -1,0 +1,60 @@
+{
+  "schema": "EHCO_DISTRIBUTION_RELEASE_BINDING_V5",
+  "contract_version": "5.0",
+  "source_snapshot": {
+    "basis": "conversation_derived_release_authority_v5",
+    "generated_at": 1777495146,
+    "repo_root": "/",
+    "snapshot_label": "closeout_v5_contract_surface"
+  },
+  "canonicalization": {
+    "hash_algorithm": "sha256",
+    "json_canonicalization": "utf8_no_bom_sorted_keys_compact_when_hashed",
+    "line_endings": "lf",
+    "path_normalization": "repo_relative_forward_slash"
+  },
+  "depends_on": [
+    {
+      "path": "docs/DISTRIBUTION_PROOF_BASIS.json",
+      "digest": "b33f9dc76179faf067b0e5a88a2b500a8e0a93e48550a3f31c68126fd3b73e21"
+    },
+    {
+      "path": "proofs/release_authority/ARTIFACT_RELEASE_BINDING.json",
+      "digest": "740c17f8a0a7d2504d981ca29e4e6a97eb494d4e0f960b7f43393887df2c5370"
+    }
+  ],
+  "declared_requirements": {
+    "distribution_proof_basis_digest": "b33f9dc76179faf067b0e5a88a2b500a8e0a93e48550a3f31c68126fd3b73e21",
+    "bundle_binding_required": true,
+    "member_completeness_required": true
+  },
+  "observed_state": {
+    "bundle_path": null,
+    "bundle_sha256": null,
+    "bundle_manifest_digest": null,
+    "bundle_members": [],
+    "member_hashes": [],
+    "unexpected_members": [],
+    "missing_members": [
+      "EHCO_Fusion_Dev/chat_routes.py",
+      "docs/CARRYOVER_FULL_SET.json",
+      "proofs/release_authority/ARTIFACT_RELEASE_PROOF.json",
+      "proofs/release_authority/ARTIFACT_RELEASE_BINDING.json"
+    ]
+  },
+  "derived_verdict": {
+    "distribution_binding_complete": false,
+    "ready_for_external_release": false,
+    "blocking_failure_codes": [
+      "distribution_authority_not_ready",
+      "binding_not_valid"
+    ],
+    "next_required_actions": [
+      "provide actual release bundle path",
+      "compute bundle sha",
+      "bind required members"
+    ],
+    "verification_status": "blocked"
+  },
+  "set_digest": "285b67b673c29dbb9be8ec5a92e57e744d4625bdcf0a17e3092b1767292e7fa2"
+}

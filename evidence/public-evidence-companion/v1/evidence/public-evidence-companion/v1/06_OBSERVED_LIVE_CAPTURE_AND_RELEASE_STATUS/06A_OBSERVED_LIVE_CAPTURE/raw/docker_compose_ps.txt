@@ -1,0 +1,4 @@
+﻿NAME                                IMAGE                             COMMAND                  SERVICE     CREATED          STATUS                    PORTS
+ehco1primedeployready-bridge-1      ehco1primedeployready-bridge      "sh -lc 'set -euo piΓÇª"   bridge      30 minutes ago   Up 30 minutes (healthy)   127.0.0.1:8000->8000/tcp
+ehco1primedeployready-codexbox-1    ehco1primedeployready-codexbox    "python -m agency.coΓÇª"   codexbox    31 minutes ago   Up 30 minutes (healthy)   
+ehco1primedeployready-dashboard-1   ehco1primedeployready-dashboard   "/docker-entrypoint.ΓÇª"   dashboard   30 minutes ago   Up 30 minutes (healthy)   0.0.0.0:8080->80/tcp, [::]:8080->80/tcp

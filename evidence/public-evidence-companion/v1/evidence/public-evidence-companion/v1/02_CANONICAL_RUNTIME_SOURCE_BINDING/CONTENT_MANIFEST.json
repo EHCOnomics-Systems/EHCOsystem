@@ -1,0 +1,23 @@
+{
+    "packet_id":  "02_CANONICAL_RUNTIME_SOURCE_BINDING",
+    "hash_algorithm":  "SHA256",
+    "self_reference":  false,
+    "file_count":  3,
+    "files":  [
+                  {
+                      "path":  "README.txt",
+                      "bytes":  403,
+                      "sha256":  "0CE452C1BA2C803346E8DD5D9E46D514D3334256B8E5BE5F169E811DCED9D977"
+                  },
+                  {
+                      "path":  "SOURCE_BINDING.json",
+                      "bytes":  5164,
+                      "sha256":  "007A66B4A2F0BC879E5C9D9B4BBE13C00A959EFBE11EE318D9447E5746C315B8"
+                  },
+                  {
+                      "path":  "SOURCE_HASHES.sha256",
+                      "bytes":  691,
+                      "sha256":  "9727E4CEC31B4FD77ED4094BE4C4AFA55A06E396CE73F82A25F25FAA6AEDEE0B"
+                  }
+              ]
+}

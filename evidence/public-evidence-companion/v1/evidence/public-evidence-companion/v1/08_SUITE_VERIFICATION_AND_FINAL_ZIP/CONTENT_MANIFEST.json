@@ -1,0 +1,30 @@
+{
+    "packet_id":  "08_SUITE_VERIFICATION_AND_FINAL_ZIP",
+    "hash_algorithm":  "SHA256",
+    "manifest_self_reference":  false,
+    "verification_result_in_manifest":  false,
+    "packet_receipt_in_manifest":  false,
+    "file_count":  4,
+    "files":  [
+                  {
+                      "path":  "PUBLIC_DISCLOSURE_POLICY.json",
+                      "bytes":  2339,
+                      "sha256":  "454BF75F986311E6A82F4ADBEF68EDB28263C3D5D6BBC23E71698961434A6317"
+                  },
+                  {
+                      "path":  "README.txt",
+                      "bytes":  1387,
+                      "sha256":  "F13A6EABAFCC4677000F11B9B8D7849F798472D19E86C487D24C860491854F84"
+                  },
+                  {
+                      "path":  "SUITE_BOUNDARY.json",
+                      "bytes":  869,
+                      "sha256":  "450F1E7FCB6B141507C5421875CF7CD0C4CC5591C50DB091611EE3207CFF669B"
+                  },
+                  {
+                      "path":  "SUITE_MANIFEST.json",
+                      "bytes":  9009,
+                      "sha256":  "BC542FAFDA13055B0D7C0AD1531514B3C90CAA78E15363A100C9EF69DC54C2AE"
+                  }
+              ]
+}
