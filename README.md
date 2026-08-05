@@ -2,9 +2,17 @@
 
 **Public system, evidence, research, and release repository for EHCO AI-OS and the EHCOsystem.**
 
-EHCO AI-OS instantiates authority, standing, continuity, consequence, evidence, proof, recovery, withholding, and release before language-model participation can create operational consequence.
+EHCO AI-OS is the realized Tier 1 Runtime of the EHCOsystem. Its accepted standing baseline is **52/53**. It instantiates authority, standing, continuity, consequence, evidence, proof, recovery, withholding, and release before language-model participation can create operational consequence.
 
-The EHCOsystem extends that foundation through portability, source and manifest control, EHCO Prime, EHCO Agent Connect, EHCO RAG, the EHCO language-model system, governed applications, participant structures, continuity systems, and proof-bearing release controls.
+This GitHub repository is the approved public architecture, evidence, provenance, research, and release surface for EHCO AI-OS and the EHCOsystem. It is not the Runtime execution environment, does not hold Runtime authority, and does not independently create, promote, demote, calculate, or alter Runtime standing.
+
+The EHCOsystem extends the realized Runtime foundation through portability, source and manifest control, EHCO Prime, EHCO Agent Connect, EHCO RAG, the EHCO language-model system, governed applications, participant structures, continuity systems, and proof-bearing release controls.
+
+## Current source and provenance boundary
+
+The current canonical source owner for EHCO AI-OS is the controlled `ehconomics/EHCO_AI-OS` repository. Source-root and worktree identifiers retained inside the Public Evidence Companion identify the exact snapshots bound by those packets. They preserve provenance and must not be interpreted as the current source owner, a separate Runtime, or an authority location.
+
+Runtime realization is distinct from production hosting, environment-specific deployment, public ingress, commercial activation, operational external release, and go-live authorization. Those states remain separately controlled and must be stated according to their own evidence.
 
 ## Start here
 
@@ -19,6 +27,7 @@ The EHCOsystem extends that foundation through portability, source and manifest 
 ## Canonical public record
 
 - **System description:** EHCO AI-OS Governed Operational Architecture — Public Edition v1.8
+- **Accepted Runtime standing:** 52/53
 - **Public evidence:** Public Evidence Companion, Packets 00–08, and the canonical dossier PDF
 - **Current completion track:** EHCO language-model and EHCO RAG finalization
 - **Public lineage:** not projected in this repository yet
@@ -42,8 +51,8 @@ The EHCOsystem extends that foundation through portability, source and manifest 
 
 ## Public boundary
 
-This repository publishes approved public architecture, evidence, provenance, status, research, IP, and release artifacts that are visibly present in the repository. Planned or approved-but-unpublished material is not represented as currently released.
+This repository publishes approved public architecture, evidence, provenance, status, research, and release artifacts that are visibly present in the repository. Planned or approved-but-unpublished material is not represented as currently released.
 
-Proprietary source, protected implementation mechanics, private control anchors, credentials, active endpoints, internal evidence locators, and production infrastructure remain in the controlled EHCO estate, except where an approved hash-preserved public evidence packet expressly records a bounded historical capture attribute or approved public source-lineage identifier.
+Proprietary source, protected implementation mechanics, private control anchors, credentials, active endpoints, internal evidence locators, and production infrastructure remain in the controlled EHCO estate, except where an approved hash-preserved public evidence packet expressly records a bounded capture attribute or approved public source-origin identifier.
 
 © EHCOnomics. All rights reserved.
