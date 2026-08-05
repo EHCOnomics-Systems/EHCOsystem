@@ -1,58 +1,71 @@
 ---
 title: EHCO AI-OS Instantiated System
-version: 1.1
+version: 1.2
 status: accepted-public-system-record
 published: 2026-08-05
 maintainer: EHCOnomics
 evidence_class: controlled-ehco-system-record
-supersedes: version 1.0
+supersedes: version 1.1
 ---
 
 # EHCO AI-OS Instantiated System
 
-EHCO AI-OS is the realized Tier 1 Runtime and governing system foundation of the EHCOsystem. Its accepted standing baseline is **52/53**. It binds authority, standing, identity, participation, transaction state, continuity, consequence, evidence, proof, withholding, release, correction, recovery, persistence, and Runtime truth into an instantiated operational structure.
+EHCO AI-OS is the realized Tier 1 Runtime and governing system foundation of the EHCOsystem. Its accepted standing baseline is **52/53**. It binds authority, standing, identity, participation, recognized state, transition, consequence, continuity, proof, persistence, withholding, release, closure, correction, recovery, and Runtime truth into an instantiated operational structure.
 
-The established Runtime foundations, proof packets, and portability evidence carry the demonstrated authority, continuity, consequence, persistence, recovery, release, and proof relationships. Public evidence preserves their bounded provenance without becoming Runtime authority.
+The public dossier, standing record, packets, captures, manifests, receipts, and verification records project bounded evidence about that system. They do not become Runtime authority and do not replace Runtime-originated state or proof.
+
+## Runtime identity
+
+The Runtime is the governing operational system. It is not a Git repository, source tree, folder, file collection, build artifact, container image, test harness, workflow, dashboard, ledger, or evidence packet.
+
+The Runtime owns the authoritative decisions and state effects of:
+
+- admission and standing;
+- authority and scope;
+- recognized current state;
+- lawful transition and consequence;
+- persistence and continuity;
+- withholding, release, closure, correction, and recovery;
+- Runtime truth and Runtime-originated proof.
+
+## Controlled test and support artifacts
+
+Controlled private repositories and runtime-support folders contain bounded artifacts used to test, compare, package, deploy, observe, and reproduce specified EHCO behavior. They may contain source files, compatibility contracts, manifests, tests, container definitions, deployment-support records, and evidence-generation tools.
+
+Those repositories, folders, and files are not the Runtime and do not hold Runtime authority, standing, authoritative state, persistence, consequence, release authority, or Runtime truth. Repository activity does not independently create or alter the accepted 52/53 standing baseline.
+
+An artifact may support a claim only to the extent established by its exact identity, hash, declaration, test, observation, receipt, and proof ceiling. File presence is not execution. A declaration is not enforcement. A passing test is not Runtime admission. A captured environment is not current Runtime state.
 
 ## System range
 
 The EHCOsystem includes:
 
-- EHCO AI-OS cross-system architecture and Runtime governance;
-- Runtime continuity and recovery controls;
-- Docker portability, deployment, recovery, packet, seal, proof, route, script, manifest, and image relationships;
-- canonical source, repository, manifest, and physical-localization control;
+- EHCO AI-OS Runtime authority and governance;
+- Runtime continuity, persistence, proof, and recovery;
+- bounded portability, packaging, deployment-support, and environment evidence;
 - EHCO Prime;
 - EHCO Agent Connect;
 - EHCO RAG;
 - the EHCO language-model system;
-- Tier 2 and Tier 3 governed applications;
+- governed Tier 2 and Tier 3 applications;
 - participant, ownership, role, communication, packet, receipt, source, and lifecycle relationships;
-- proof packets, bounded capture records, release gates, and Runtime-originated evidence.
-
-## Authority and participation
-
-EHCO AI-OS controls executable participation, authoritative transaction state, consequence, persistence, recovery, withholding, release, closure, and Runtime truth.
-
-Applications, models, agents, retrieval systems, interfaces, dashboards, ledgers, repositories, control documents, and local validators participate through assigned roles. Their outputs do not independently create authoritative state, consequence, or standing.
-
-## Source estate
-
-The current source and evidence estate is distributed by function:
-
-- **Controlled documentation estate** — control anchors, project decisions, architecture, evidence indexes, status coordination, and project documentation.
-- **`ehconomics/EHCO_AI-OS`** — current canonical source, build, verification, deployment-control, and compatibility estate for EHCO AI-OS.
-- **Docker and infrastructure** — image execution, immutable image digests, environment configuration, persistence, health, recovery, deployment, and operational evidence.
-- **EHCO AI-OS Runtime** — authoritative Runtime state, authority, standing effects, active bindings, persistence, recovery, withholding, release, revocation, and Runtime-originated proof.
-
-Source-origin and packet-time identifiers preserved in public evidence establish provenance for their bound snapshots. They are not current source ownership or separate Runtime authority.
+- public architecture, evidence, provenance, validation, and release projections.
 
 ## Ecosystem extension boundary
 
-Prime, Agent Connect, the EHCO language-model system, EHCO RAG, governed applications, source owners, participants, lifecycle controls, portability controls, and release controls may continue to advance through their owning controlled estates. Their moving private workstream state is not projected through this system record and does not independently change the accepted 52/53 Runtime standing.
+Models, agents, applications, retrieval systems, interfaces, repositories, test estates, validators, dashboards, and public evidence participate through assigned roles. Their outputs do not independently create authoritative state, standing, consequence, persistence, or release authority.
+
+Runtime realization is distinct from production hosting, environment-specific deployment, public ingress, commercial activation, operational external release, and go-live authorization. Those dimensions remain separately controlled.
+
+## Public proof boundary
+
+The accepted 52/53 standing baseline is an EHCOnomics-controlled operational standing record projected through the public evidence estate. Independent third-party certification is not claimed unless an identified public record expressly states it.
+
+See [Runtime, Repository, and Test-Estate Boundary](runtime-repository-and-test-estate-boundary.md) before interpreting source-binding or capture packets.
 
 ## Related material
 
+- [Runtime, Repository, and Test-Estate Boundary](runtime-repository-and-test-estate-boundary.md)
 - [Instantiated Proof Range](instantiated-proof-range.md)
 - [Ecosystem Components and Participation](ecosystem-components-and-participation.md)
 - [EHCO Language-Model System Boundary](../language-model/README.md)
@@ -62,5 +75,6 @@ Prime, Agent Connect, the EHCO language-model system, EHCO RAG, governed applica
 
 | Version | Date | Change |
 |---|---|---|
-| 1.1 | 2026-08-05 | Clarified realized Runtime identity, current source ownership, packet-time provenance, and stable public workstream boundaries. |
+| 1.2 | 2026-08-05 | Separated the realized Runtime from private repositories, runtime-support folders, tests, and public evidence projections. |
+| 1.1 | 2026-08-05 | Clarified realized Runtime identity and stable public workstream boundaries. |
 | 1.0 | 2026-08-04 | Initial public EHCO AI-OS instantiated system record. |

@@ -1,18 +1,19 @@
 # The EHCOsystem Library
 
-This page indexes the artifacts that are visibly published in the EHCOsystem repository and distinguishes them from planned or controlled material that is not projected here.
+This page indexes the artifacts visibly published in the `EHCOsystem` repository. The repository is a public architecture, evidence, provenance, research, verification, and publication surface. It is not the EHCO AI-OS Runtime and does not hold Runtime authority or authoritative Runtime state.
 
 ## Start here
 
+- [Runtime, Repository, and Test-Estate Boundary](architecture/runtime-repository-and-test-estate-boundary.md)
 - [Start Here](getting-started/START-HERE.md)
 - [Reading Order](getting-started/reading-order.md)
 - [Repository Map](getting-started/repository-map.md)
 
 ## Canonical public dossier
 
-- [EHCO AI-OS Governed Operational Architecture — Public Edition v1.8](dossiers/README.md)
+- [EHCO AI-OS Governed Operational Architecture - Public Edition v1.8](dossiers/README.md)
 
-## System records
+## System and proof records
 
 - [EHCO AI-OS Instantiated System](architecture/EHCO-AI-OS-INSTANTIATED-SYSTEM.md)
 - [Instantiated Proof Range](architecture/instantiated-proof-range.md)
@@ -23,32 +24,27 @@ This page indexes the artifacts that are visibly published in the EHCOsystem rep
 ## Public evidence
 
 - [Public Evidence Companion](evidence/README.md)
-- [Version 1 Packets 00–08](evidence/public-evidence-companion/v1/)
+- [Version 1 Packets 00-08](evidence/public-evidence-companion/v1/)
 - [Public Evidence Validation](verification/README.md)
 
-## Release control
+Packets 00-08 remain hash-preserved. Packet 02 binds packet-time runtime-support test/source artifacts, not a Runtime repository. Packet 06 is a historical bounded capture; packet-integrity `PASS` is not universal behavioral `PASS` or current Runtime state.
+
+## Release and publication control
 
 - [Canonical Public Release Register](releases/PUBLIC-RELEASE-REGISTER.md)
-
-The repository currently has no tagged GitHub Release. Packet manifests, detached hashes, the suite manifest, and automated validation provide the visible integrity controls for the published evidence package.
+- [Repository Governance](GOVERNANCE.md)
+- [Security and Responsible Disclosure](SECURITY.md)
+- [Proprietary Public Inspection License](LICENSE)
+- [Notice](NOTICE.md)
 
 ## Not projected here
 
-The following areas may be planned, controlled, or subject to separate approval, but they are not represented as currently published repository sections:
+The following are not represented as current public repository state:
 
-- moving private language-model workstream state, exact private commits, pull requests, and activation controls;
-- EHCO Insights and external reference indexes;
-- public IP portfolio artifacts;
-- public papers and diagrams;
-- release-note history beyond the canonical release register;
-- controlled review policy materials.
+- moving private test/source-estate state;
+- moving private language-model commits, pull requests, gap ledgers, and activation controls;
+- current Runtime state beyond approved public Runtime-originated records;
+- production activation, public ingress, operational external release, commercial activation, and go-live;
+- proprietary implementation mechanics, credentials, active endpoints, protected topology, and confidential records.
 
-## Publication control
-
-- [Governance](GOVERNANCE.md)
-- [Security](SECURITY.md)
-- [Notice](NOTICE.md)
-
-## Public boundary
-
-This library indexes approved public architecture, evidence, provenance, status, research, and release artifacts that are visible in this repository. Proprietary source, protected implementation mechanics, private control anchors, credentials, active endpoints, internal evidence locators, production infrastructure, and moving private development controls remain in the controlled EHCO estate, subject only to expressly approved evidence and public source-origin boundaries.
+Their absence is a publication-scope fact, not a Runtime state change.
