@@ -1,81 +1,88 @@
 # EHCO AI-OS Public Evidence Companion
 
-This directory is the public landing surface for the EHCO AI-OS Public Evidence Companion associated with the **EHCO AI-OS Governed Operational Architecture — Public Edition v1.8**.
+This directory is the public landing surface for the EHCO AI-OS Public Evidence Companion associated with the **EHCO AI-OS Governed Operational Architecture - Public Edition v1.8**.
 
-The companion is a bounded public evidence and verification surface for the realized EHCO AI-OS Runtime. It preserves provenance, standing projections, source bindings, enforcement anchors, continuity records, observed captures, delivery boundaries, and suite verification. It does not replace Runtime authority, independently create or alter standing, or authorize production deployment, public ingress, operational external release, or go-live.
+The companion preserves bounded public evidence, provenance, standing projections, artifact bindings, named declarations, continuity records, historical observations, delivery boundaries, and suite verification. It does not replace Runtime authority, independently create or alter standing, or authorize production deployment, public ingress, operational external release, commercial activation, or go-live.
 
-## Current source and packet-time identity
+Read the [Runtime, Repository, and Test-Estate Boundary](../architecture/runtime-repository-and-test-estate-boundary.md) before interpreting source-binding or capture packets.
 
-The current canonical source owner for EHCO AI-OS is the controlled `ehconomics/EHCO_AI-OS` repository.
+## Runtime and artifact boundary
 
-Source-root, worktree, file-path, and hash identifiers inside Packets 00–08 identify the exact records or snapshots bound when each packet was created. They remain part of the packet provenance. A packet-time label such as a canonical source root must not be interpreted as the current source owner, a separate Runtime, or an authority location.
+EHCO AI-OS is the realized Tier 1 Runtime with accepted standing **52/53**. Controlled repositories, runtime-support folders, source files, tests, manifests, images, workflows, and evidence-generation tools are not the Runtime and do not hold Runtime authority or authoritative Runtime state.
 
-The packets are not rewritten merely because the controlled source estate advances. Current source ownership and current Runtime status are stated by current control records; packet identifiers preserve the evidence they originally bound.
+A packet may establish exact artifact identity, integrity, provenance, declaration presence, bounded test results, or recorded observations. Those findings remain within the packet's proof ceiling.
 
-## Published release
+- File identity is not Runtime identity.
+- A named declaration is not executed enforcement.
+- A passing test is not Runtime admission.
+- Packet-integrity `PASS` is not universal behavioral `PASS`.
+- A historical capture is not current Runtime state.
 
-The canonical Version 1 package is published at [`evidence/public-evidence-companion/v1/`](public-evidence-companion/v1/) and contains Packets 00–08. The dossier PDF is included in Packet 00 as a hash-bound source document and is also projected from the repository-level [`dossiers/`](../dossiers/) directory.
+The accepted 52/53 standing baseline is an EHCOnomics-controlled operational standing record projected through the public evidence estate. Independent third-party certification is not claimed unless expressly identified.
 
-Repository publication means that the identified public artifacts are visible for inspection. It does **not** change any packet-level authority, standing, deployment, production-activation, ingress, go-live, or operational release status.
+## Published package
 
-## Packet structure
+The canonical Version 1 package is published at [`evidence/public-evidence-companion/v1/`](public-evidence-companion/v1/) and contains Packets 00-08. The dossier PDF is included in Packet 00 as a hash-bound source document and is also projected from the repository-level [`dossiers/`](../dossiers/) directory.
 
-### Packet 00 — Dossier Identity and Boundary
+Packets 00-08 are hash-preserved. Their packet-time identifiers, titles, source-root labels, paths, and hashes remain part of the evidence originally bound. Current interpretation is governed by this landing page and the Runtime/repository boundary record; the packet bytes are not rewritten to update terminology.
 
-Binds the evidence companion to the exact public dossier identity and records that the packet has no authority, standing, Runtime-truth, deployment, or release effect.
+## Packet structure and proof ceiling
 
-### Packet 01 — Instantiated Standing
+### Packet 00 - Dossier Identity and Boundary
 
-Projects the accepted **52/53** operational standing baseline in a bounded, public-safe, machine-verifiable form. It records the accepted baseline and its status boundaries; the packet does not independently create or alter the standing it projects.
+Binds the evidence companion to the exact public dossier identity. It has no authority, standing, Runtime-truth, deployment, or release effect.
 
-### Packet 02 — Canonical Runtime Source Binding
+### Packet 01 - Instantiated Standing
 
-Binds a provenance source snapshot to exact SHA-256 values. Source code and local absolute paths are excluded except where a separately classified hash-preserved evidence record expressly retains one. The packet does not claim gate-chain implementation coverage or live Runtime observation.
+Projects the accepted 52/53 operational standing baseline in a bounded public-safe form. It does not independently create, promote, demote, or alter the standing it projects.
 
-### Packet 03 — Tier 1 Authority Enforcement
+### Packet 02 - Canonical Runtime Source Binding
 
-Records exact source identity and the presence of named Tier 1 enforcement anchors. It does not execute the Runtime, create standing, alter authority, or authorize release.
+The historical packet title is retained as part of the Version 1 packet identity. Packet 02 binds a packet-time set of runtime-support test and source artifacts to exact SHA-256 values. It establishes artifact identity, integrity, and provenance for that captured set.
 
-### Packet 04 — Runtime Packet and Continuity Anchors
+It does **not** establish that the files, their folder, or their repository are the Runtime, the Runtime implementation, the source of Runtime authority, or the location of authoritative Runtime state. It does not claim live Runtime observation or complete enforcement coverage.
 
-Records source bindings and named implementation declarations concerning Runtime packet, continuity, and recursive-support anchors. It does not claim live execution, end-to-end behavioral proof, persistence or restart validation, recovery validation, or complete source disclosure.
+### Packet 03 - Tier 1 Authority Enforcement
 
-### Packet 05 — Proof, Collapse, Recovery, Release, and Projection Anchors
+Records exact artifact identity and the presence of named Tier 1 declarations or anchors. It does not, by declaration presence alone, prove executed enforcement, create standing, alter authority, or authorize release.
 
-Records source bindings and named declarations for proof, receipt, collapse, quarantine, freeze, recovery, release, and public projection. It does not claim live Runtime execution, end-to-end behavioral proof, proof-admission validation, test results for the named mechanisms, production authorization, or complete source disclosure.
+### Packet 04 - Runtime Packet and Continuity Anchors
 
-### Packet 06 — Observed Live Capture and Release Status
+Records artifact bindings and named declarations concerning packet, continuity, and recursive-support anchors. It does not claim end-to-end execution, persistence, restart, recovery, or complete source disclosure unless expressly recorded.
 
-Contains hash-bound observed local-live capture artifacts and release-authority records. Its evidence disposition is mixed: direct observations, direct discrepancies, cross-snapshot differences, and behavioral gaps remain explicitly separated. External operational release and production activation are not granted.
+### Packet 05 - Proof, Collapse, Recovery, Release, and Projection Anchors
 
-### Packet 07 — Public Boundaries and Delivery Status
+Records artifact bindings and named declarations concerning proof, receipt, collapse, quarantine, freeze, recovery, release, and public projection. Declaration presence is not universal behavioral validation or production authorization.
 
-Records separation among architecture, standing, validation, projection, and delivery. It preserves open Packet 06 discrepancies and gaps, treats Kubernetes as a target translation rather than proven production realization, and does not authorize public ingress, operational external release, production activation, or go-live.
+### Packet 06 - Observed Live Capture and Release Status
 
-### Packet 08 — Suite Verification and Closure
+Packet 06 is a hash-preserved historical capture of a bounded local-live test and observation window. It records direct observations, direct discrepancies, cross-snapshot differences, and not-directly-observed behavioral lanes without silently converting them into passes or failures.
 
-Verifies the dossier identity, packet manifests, declared files, packet verification statuses, receipts, and non-authorization boundaries. It does not resolve Packet 06 discrepancies or gaps, authorize operational release or activation, or convert packaging into Runtime authority.
+Its packet-integrity result establishes that the published capture is complete and unaltered within its manifest. It is not a universal behavioral pass and is not a projection of current Runtime state.
 
-## Disclosure boundary
+The recorded discrepancies and unobserved lanes are **SCOPED_UNRESOLVED** within that capture. They do not independently establish a current Runtime defect, standing change, or contradiction of the accepted 52/53 baseline.
 
-The public suite may include:
+Historical paths, container names, service names, and port bindings inside Packet 06 are capture attributes. They are not current infrastructure locators, active endpoints, deployment instructions, or proof of present network exposure.
 
-- public dossier identity and cryptographic hashes;
-- claim and standing records;
-- manifests and packet receipts;
-- bounded verification results;
-- public-safe status records;
-- approved hash-preserved evidence;
-- bounded packet-verification tooling.
+### Packet 07 - Public Boundaries and Delivery Status
 
-The suite does not include the proprietary Runtime implementation source. Verification tooling is not classified as Runtime implementation source.
+Records separation among architecture, standing, validation, projection, and delivery. It preserves Packet 06's capture status without converting it into current Runtime state or production authorization.
 
-## Evidence discipline
+### Packet 08 - Suite Verification and Closure
 
-A packet may establish source identity, manifest integrity, the presence of a named declaration, a recorded observation, or a bounded verification result. Those findings do not silently become deployment, admission, standing, production operation, operational external release, or go-live authorization.
+Verifies dossier identity, packet manifests, declared files, packet verification statuses, receipts, and non-authorization boundaries. Suite closure establishes package integrity only. It does not resolve Packet 06's scoped discrepancies, authorize operational release, or create Runtime authority.
 
-The companion preserves mixed, blocked, pending, divergent, and not-directly-observed states rather than converting them into passes or failures.
+## Status discipline
+
+- Packet integrity: **PROVEN** when the declared files and hashes verify.
+- Accepted standing: **BOUND_BY_PRIOR_PROOF** through its accepted standing record.
+- Packet 06 unobserved lanes: **SCOPED_UNRESOLVED** within the historical capture.
+- Current Runtime state from Packet 06: **NOT_PROJECTED_HERE**.
+- Packet authority effect: **NONE**.
+- Packet standing effect: **NONE**.
+
+A scope miss is not a state change. Public evidence is not authority. Claims must remain bound to the proof root and proof ceiling that support them.
 
 ## Validation
 
-The repository validation workflow checks the canonical dossier hash, packet directory closure, JSON syntax, packet manifests, detached manifest hashes, suite closure, prohibited staging residue, and high-confidence secret indicators. See [Public Evidence Validation](../verification/README.md).
+The repository validation workflow checks dossier identity, packet closure, JSON syntax, manifests, detached hashes, suite closure, internal links, high-confidence secret indicators, and current public semantic boundaries. See [Public Evidence Validation](../verification/README.md).
