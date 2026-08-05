@@ -23,7 +23,7 @@ The EHCOsystem extends that foundation through portability, source and manifest 
 - **Current completion track:** EHCO language-model and EHCO RAG finalization
 - **Public lineage:** not projected in this repository yet
 - **Public IP portfolio:** not projected in this repository yet
-- **Release control:** canonical release register, manifests, and SHA-256 checksums; no tagged GitHub Release is currently declared
+- **Release control:** canonical release register, manifests, SHA-256 checksums, and automated package validation; no tagged GitHub Release is currently declared
 
 ## Core records
 
@@ -33,16 +33,17 @@ The EHCOsystem extends that foundation through portability, source and manifest 
 - [Proof and Status Classes](architecture/proof-and-status-classes.md)
 - [EHCO Language-Model Finalization](language-model/README.md)
 
-## Evidence and release
+## Evidence, verification, and release
 
 - [Canonical Public Dossier](dossiers/README.md)
 - [Public Evidence Companion](evidence/README.md)
+- [Public Evidence Validation](verification/README.md)
 - [Canonical Public Release Register](releases/PUBLIC-RELEASE-REGISTER.md)
 
 ## Public boundary
 
 This repository publishes approved public architecture, evidence, provenance, status, research, IP, and release artifacts that are visibly present in the repository. Planned or approved-but-unpublished material is not represented as currently released.
 
-Proprietary source, protected implementation mechanics, private control anchors, credentials, endpoints, internal evidence locators, and production infrastructure remain in the controlled EHCO estate, except where an approved hash-preserved public evidence packet expressly records a bounded historical capture attribute.
+Proprietary source, protected implementation mechanics, private control anchors, credentials, active endpoints, internal evidence locators, and production infrastructure remain in the controlled EHCO estate, except where an approved hash-preserved public evidence packet expressly records a bounded historical capture attribute or approved public source-lineage identifier.
 
 © EHCOnomics. All rights reserved.
