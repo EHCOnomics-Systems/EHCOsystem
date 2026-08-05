@@ -1,0 +1,48 @@
+name: Validate public evidence
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "dossiers/**"
+      - "evidence/**"
+      - "verification/**"
+      - "README.md"
+      - "LIBRARY.md"
+      - "GOVERNANCE.md"
+      - "SECURITY.md"
+      - "getting-started/**"
+      - "releases/**"
+      - ".github/workflows/validate-public-evidence.yml"
+  pull_request:
+    paths:
+      - "dossiers/**"
+      - "evidence/**"
+      - "verification/**"
+      - "README.md"
+      - "LIBRARY.md"
+      - "GOVERNANCE.md"
+      - "SECURITY.md"
+      - "getting-started/**"
+      - "releases/**"
+      - ".github/workflows/validate-public-evidence.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Validate canonical dossier and packets
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Validate public evidence estate
+        run: python3 verification/validate_public_evidence.py
