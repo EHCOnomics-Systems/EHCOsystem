@@ -1,18 +1,18 @@
 ---
 title: Instantiated Proof Range
-version: 1.0
+version: 1.1
 status: accepted-public-proof-record
-published: 2026-08-04
+published: 2026-08-05
 maintainer: EHCOnomics
 evidence_class: controlled-ehco-proof-record
-supersedes: none
+supersedes: version 1.0
 ---
 
 # Instantiated Proof Range
 
-EHCO AI-OS has instantiated and demonstrated governed continuity, consequence, standing, state, proof, withholding, release, recovery, persistence, and evidence while using an external language model without granting that model epistemic authority.
+EHCO AI-OS has instantiated and demonstrated governed continuity, consequence, standing, state, proof, withholding, release, recovery, persistence, and evidence while using an external language model without granting that model epistemic authority. Its accepted standing baseline is **52/53**.
 
-The established proof range is carried through the hardened EHCO Runtime lineage, V23–V29 Runtime Foundations, proof packets, Docker portability projection, source-binding records, live-capture evidence, continuity controls, release controls, and Runtime-originated proof.
+The established proof range is carried through the EHCO AI-OS Runtime foundations, proof packets, portability evidence, source-binding records, bounded capture evidence, continuity controls, release controls, and Runtime-originated proof.
 
 ## Proven system relationships
 
@@ -31,23 +31,26 @@ The instantiated proof estate establishes the operational relationship among:
 
 ## Language-model position
 
-The external language model participated downstream of the governing system. It did not originate authority, establish standing, create authoritative transaction state, promote its own output into consequence, or control release.
+An external language model participated downstream of the governing system. It did not originate authority, establish standing, create authoritative transaction state, promote its own output into consequence, or control release.
 
-The proof range therefore precedes completion of the EHCO-owned language-model system. The current language-model program extends the instantiated system through sovereign language capability, linguistic breadth, bounded mathematics, RAG alignment, and final ecosystem integration.
+The separately controlled EHCO language-model system extends the realized system through sovereign language capability while remaining downstream of EHCO AI-OS Runtime authority. Detailed private development state is not projected through this proof-range record.
 
 ## Public evidence
 
-The Public Evidence Companion records the public-safe proof estate through Packets 00–08, including dossier identity, instantiated standing, canonical source binding, Tier 1 enforcement anchors, continuity anchors, proof and recovery anchors, observed live capture, delivery boundaries, and suite verification.
+The Public Evidence Companion records the public-safe proof estate through Packets 00–08, including dossier identity, instantiated standing, packet-bound source provenance, Tier 1 enforcement anchors, continuity anchors, proof and recovery anchors, observed captures, delivery boundaries, and suite verification.
+
+Source-root and worktree identifiers within the packets identify the exact snapshots bound by those records. They do not become current source ownership, separate Runtime identity, or authority location.
 
 ## Related material
 
 - [EHCO AI-OS Instantiated System](EHCO-AI-OS-INSTANTIATED-SYSTEM.md)
 - [Ecosystem Components and Participation](ecosystem-components-and-participation.md)
-- [EHCO Language-Model Finalization](../language-model/README.md)
+- [EHCO Language-Model System Boundary](../language-model/README.md)
 - [Public Evidence Companion](../evidence/README.md)
 
 ## Revision history
 
 | Version | Date | Change |
 |---|---|---|
+| 1.1 | 2026-08-05 | Clarified accepted standing, packet-time provenance, and stable language-model participation boundaries. |
 | 1.0 | 2026-08-04 | Initial public instantiated proof-range record. |
