@@ -18,16 +18,13 @@ This page indexes the artifacts that are visibly published in the EHCOsystem rep
 - [Instantiated Proof Range](architecture/instantiated-proof-range.md)
 - [Ecosystem Components and Participation](architecture/ecosystem-components-and-participation.md)
 - [Proof and Status Classes](architecture/proof-and-status-classes.md)
+- [EHCO Language-Model System Boundary](language-model/README.md)
 
 ## Public evidence
 
 - [Public Evidence Companion](evidence/README.md)
 - [Version 1 Packets 00–08](evidence/public-evidence-companion/v1/)
 - [Public Evidence Validation](verification/README.md)
-
-## Language-model finalization
-
-- [EHCO Language-Model Finalization](language-model/README.md)
 
 ## Release control
 
@@ -39,6 +36,7 @@ The repository currently has no tagged GitHub Release. Packet manifests, detache
 
 The following areas may be planned, controlled, or subject to separate approval, but they are not represented as currently published repository sections:
 
+- moving private language-model workstream state, exact private commits, pull requests, and activation controls;
 - EHCO Insights and external reference indexes;
 - public IP portfolio artifacts;
 - public papers and diagrams;
@@ -53,4 +51,4 @@ The following areas may be planned, controlled, or subject to separate approval,
 
 ## Public boundary
 
-This library indexes approved public architecture, evidence, provenance, status, research, IP, and release artifacts that are visible in this repository. Proprietary source, protected implementation mechanics, private control anchors, credentials, active endpoints, internal evidence locators, and production infrastructure remain in the controlled EHCO estate, subject only to expressly approved historical-evidence and public-lineage exceptions.
+This library indexes approved public architecture, evidence, provenance, status, research, and release artifacts that are visible in this repository. Proprietary source, protected implementation mechanics, private control anchors, credentials, active endpoints, internal evidence locators, production infrastructure, and moving private development controls remain in the controlled EHCO estate, subject only to expressly approved evidence and public source-origin boundaries.

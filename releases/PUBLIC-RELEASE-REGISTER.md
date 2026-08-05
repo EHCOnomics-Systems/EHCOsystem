@@ -28,14 +28,14 @@ A dashboard, ledger, branch, package, assistant interpretation, or scoped search
 | Instantiated Proof Range | VISIBLE_CURRENTLY | `architecture/instantiated-proof-range.md` | Accepted public proof-range record |
 | Ecosystem Components and Participation | VISIBLE_CURRENTLY | `architecture/ecosystem-components-and-participation.md` | Accepted public system record |
 | Proof and Status Classes | VISIBLE_CURRENTLY | `architecture/proof-and-status-classes.md` | Public proof/status distinctions |
-| EHCO language-model finalization | VISIBLE_CURRENTLY | `language-model/README.md` | Controlled public development and source-lineage record |
+| EHCO language-model system boundary | VISIBLE_CURRENTLY | `language-model/README.md` | Stable public system relationship; moving private development state is not projected |
 | Public architecture dossier landing page | VISIBLE_CURRENTLY | `dossiers/README.md` | Dossier identity, navigation, and proof boundary |
 | Public architecture dossier PDF | VISIBLE_CURRENTLY | `dossiers/EHCO_AI_OS_Governed_Operational_Architecture_Public_Edition_v1_8_LOCK_FINAL.pdf` | Controlled public architecture; SHA-256 `F489BA01961A12CF101B1F1DF57E6958456A0840BEB798B862FA97ACB030892D` |
 | Public Evidence Companion overview | VISIBLE_CURRENTLY | `evidence/README.md` | Navigation and packet proof ceilings |
 | Public Evidence Companion Version 1 | VISIBLE_CURRENTLY | `evidence/public-evidence-companion/v1/` | Bounded public evidence and verification surface |
 | Packet 00 — Dossier Identity and Boundary | VISIBLE_CURRENTLY | `evidence/public-evidence-companion/v1/00_DOSSIER_IDENTITY_AND_BOUNDARY/` | Dossier identity and boundary only |
 | Packet 01 — Instantiated Standing | VISIBLE_CURRENTLY | `evidence/public-evidence-companion/v1/01_INSTANTIATED_STANDING/` | Accepted baseline projection and status boundary |
-| Packet 02 — Canonical Runtime Source Binding | VISIBLE_CURRENTLY | `evidence/public-evidence-companion/v1/02_CANONICAL_RUNTIME_SOURCE_BINDING/` | Source identity and SHA-256 binding |
+| Packet 02 — Canonical Runtime Source Binding | VISIBLE_CURRENTLY | `evidence/public-evidence-companion/v1/02_CANONICAL_RUNTIME_SOURCE_BINDING/` | Source identity and SHA-256 binding for the packet-bound snapshot |
 | Packet 03 — Tier 1 Authority Enforcement | VISIBLE_CURRENTLY | `evidence/public-evidence-companion/v1/03_TIER1_AUTHORITY_ENFORCEMENT/` | Presence of named enforcement anchors |
 | Packet 04 — Runtime Packet and Continuity Anchors | VISIBLE_CURRENTLY | `evidence/public-evidence-companion/v1/04_RUNTIME_PACKET_AND_CONTINUITY_ANCHORS/` | Source bindings and named declarations |
 | Packet 05 — Proof, Collapse, Recovery, Release, and Projection Anchors | VISIBLE_CURRENTLY | `evidence/public-evidence-companion/v1/05_PROOF_COLLAPSE_RECOVERY_AND_RELEASE_ANCHORS/` | Source bindings and named declarations |
@@ -64,6 +64,7 @@ Packet 08 records `external_release_authorized: false`, `production_activation_a
 
 | Area | Status | Intended or previously discussed path | Current determination |
 |---|---|---|---|
+| Moving private language-model workstream state | NOT_PROJECTED_HERE | controlled language-model estate | Exact private commits, pull requests, gap ledgers, activation decisions, and next-operation controls are intentionally not mirrored here |
 | Immutable Runtime baseline document | SCOPED_UNRESOLVED | `architecture/runtime-baseline.md` | No canonical file is visible at this path; do not describe it as published here |
 | Ecosystem governance discovery | NOT_PROJECTED_HERE | `architecture/ecosystem-governance-discovery.md` | Requires separate approval and publication |
 | Public glossary | NOT_PROJECTED_HERE | `architecture/glossary.md` | Requires separate approval and publication |
@@ -83,6 +84,7 @@ The following remain excluded unless a separately approved public edition is cre
 - proprietary Runtime and participant source;
 - Instantiation Bridge implementation mechanics;
 - private control anchors, schemas, verifier internals, credentials, tokens, keys, active privileged endpoints, and protected topology;
+- moving private development ledgers and workstream controls not expressly approved for public projection;
 - customer, financial, tax, debt, management, and confidential commercial records;
 - investor-only or controlled materials not expressly approved for unrestricted publication.
 

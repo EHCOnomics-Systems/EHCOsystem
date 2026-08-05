@@ -28,16 +28,16 @@ The same byte-identical PDF is bound inside Packet 00 at `evidence/public-eviden
 
 ## Role in the public record
 
-The dossier presents the governed operational architecture of EHCO AI-OS and anchors the public reading path into the instantiated system, proof range, ecosystem components, language-model finalization, and Public Evidence Companion.
+The dossier presents the governed operational architecture of EHCO AI-OS and anchors the public reading path into the instantiated system, proof range, ecosystem components, stable language-model system boundary, and Public Evidence Companion.
 
-Repository publication establishes the visible identity and integrity of this public artifact. It does not independently establish deployment, production activation, public ingress, operational external release, or go-live authorization.
+Repository publication establishes the visible identity and integrity of this public artifact. It does not independently establish or alter Runtime standing, production activation, public ingress, operational external release, or go-live authorization.
 
 ## Related material
 
 - [EHCO AI-OS Instantiated System](../architecture/EHCO-AI-OS-INSTANTIATED-SYSTEM.md)
 - [Instantiated Proof Range](../architecture/instantiated-proof-range.md)
 - [Ecosystem Components and Participation](../architecture/ecosystem-components-and-participation.md)
-- [EHCO Language-Model Finalization](../language-model/README.md)
+- [EHCO Language-Model System Boundary](../language-model/README.md)
 - [Public Evidence Companion](../evidence/README.md)
 - [Public Evidence Validation](../verification/README.md)
 

@@ -21,7 +21,7 @@ Runtime realization is distinct from production hosting, environment-specific de
 3. [Instantiated Proof Range](architecture/instantiated-proof-range.md)
 4. [Ecosystem Components and Participation](architecture/ecosystem-components-and-participation.md)
 5. [Public Evidence Companion](evidence/README.md)
-6. [EHCO Language-Model Finalization](language-model/README.md)
+6. [EHCO Language-Model System Boundary](language-model/README.md)
 7. [EHCOsystem Library](LIBRARY.md)
 
 ## Canonical public record
@@ -29,7 +29,7 @@ Runtime realization is distinct from production hosting, environment-specific de
 - **System description:** EHCO AI-OS Governed Operational Architecture — Public Edition v1.8
 - **Accepted Runtime standing:** 52/53
 - **Public evidence:** Public Evidence Companion, Packets 00–08, and the canonical dossier PDF
-- **Current completion track:** EHCO language-model and EHCO RAG finalization
+- **Language-model and RAG relationship:** stable public system boundary; detailed private workstream status is not projected here
 - **Public lineage:** not projected in this repository yet
 - **Public IP portfolio:** not projected in this repository yet
 - **Release control:** canonical release register, manifests, SHA-256 checksums, and automated package validation; no tagged GitHub Release is currently declared
@@ -40,7 +40,7 @@ Runtime realization is distinct from production hosting, environment-specific de
 - [Instantiated Proof Range](architecture/instantiated-proof-range.md)
 - [Ecosystem Components and Participation](architecture/ecosystem-components-and-participation.md)
 - [Proof and Status Classes](architecture/proof-and-status-classes.md)
-- [EHCO Language-Model Finalization](language-model/README.md)
+- [EHCO Language-Model System Boundary](language-model/README.md)
 
 ## Evidence, verification, and release
 

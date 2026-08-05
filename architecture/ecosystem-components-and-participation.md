@@ -1,50 +1,56 @@
 ---
 title: Ecosystem Components and Participation
-version: 1.0
+version: 1.1
 status: accepted-public-system-record
-published: 2026-08-04
+published: 2026-08-05
 maintainer: EHCOnomics
 evidence_class: controlled-ehco-system-record
-supersedes: none
+supersedes: version 1.0
 ---
 
 # Ecosystem Components and Participation
 
-The EHCOsystem is organized as a governed ecosystem of source owners, participants, applications, language systems, retrieval systems, evidence systems, portability controls, and Runtime relationships aligned to EHCO AI-OS.
+The EHCOsystem is a governed ecosystem of Runtime authority, source owners, participants, applications, language systems, retrieval systems, evidence systems, portability controls, deployment environments, and public projections aligned to EHCO AI-OS.
 
 ## Core system components
 
 ### EHCO AI-OS
 
-Cross-system governance, source-to-Runtime controls, intelligence layers, security boundaries, participation, continuity, consequence, proof, and integration.
+EHCO AI-OS is the realized Tier 1 Runtime of the EHCOsystem with accepted standing **52/53**. It governs authority, admission, authoritative transaction state, authorized transition, consequence, persistence, recovery, withholding, release, closure, and Runtime truth.
 
-### Runtime Foundations and portability
+### Canonical source and deployment control
 
-The hardened Runtime lineage and V23–V29 Runtime Foundations carry the established authority, standing, continuity, consequence, persistence, recovery, release, and proof relationships. The Docker portability estate carries deployment, recovery, packet, seal, probe, route, script, manifest, image, and execution relationships.
+The controlled `ehconomics/EHCO_AI-OS` repository is the current canonical source, build, verification, deployment-control, and compatibility estate for EHCO AI-OS. Repository activity does not independently create or alter Runtime standing.
+
+Docker and infrastructure carry bounded image, configuration, execution, persistence, health, recovery, and deployment evidence. Runtime realization remains distinct from production hosting, public ingress, external release, and go-live authorization.
 
 ### EHCO Prime
 
-EHCO Prime provides the governed interface and coordination layer for requests, framing, capability selection, and interaction across the ecosystem while preserving EHCO AI-OS control over executable participation and consequence.
+EHCO Prime provides governed interface and coordination functions for requests, framing, capability selection, and interaction while preserving EHCO AI-OS control over executable participation and consequence.
 
 ### EHCO Agent Connect
 
-Agent Connect provides extension, registry, routing, compatibility, and handoff control across governed participants. Registration, routing, and handoff remain bound to the participation and authority relationships of the EHCOsystem.
+EHCO Agent Connect provides extension, registry, routing, compatibility, and handoff controls across governed participants. Registration and routing do not independently create admission or authority.
 
 ### EHCO RAG
 
-EHCO RAG is the governed retrieval foundation. Its architecture includes model-gateway, prompt-provider, context-isolation, data-flow, control-flow, and build-completion controls. Retrieval participates through bounded source, context, evidence, and release relationships.
+EHCO RAG is the governed retrieval foundation. Retrieval participates through bounded source, context, evidence, model-gateway, prompt-provider, isolation, and release relationships. Retrieved information does not become truth or authority merely because it is available to a model or application.
 
 ### EHCO language-model system
 
-The EHCO language-model system is the sovereign language capability estate operating inside the established EHCO AI-OS structure. Its current accepted estate includes the Runtime-boundary capability baseline, language-kernel progression, linguistic breadth, and bounded mathematics work described in the language-model completion record.
+The EHCO language-model system is a separately controlled sovereign language-capability estate operating downstream of the realized EHCO AI-OS Runtime. It contributes model capability but does not independently create Tier 1 authority, Runtime participation, operational consequence, or standing. Detailed private development status is not projected through this public repository.
 
 ### Governed applications
 
-Tier 2 and Tier 3 applications participate through their own source ownership, control anchors, schemas, roles, evidence, release gates, and Runtime relationships. Active application lanes include HTPI, Noble Law, EHCO Core / NRC Permit Prototype, Grasp Safety Intelligence, EHCO Energy, and EHCO War Room.
+Tier 2 and Tier 3 applications participate through their own source ownership, contracts, schemas, roles, evidence, release gates, and Runtime relationships. An application may interpret, coordinate, or project governed information without becoming Tier 1 authority.
+
+### Public evidence and projection
+
+The Public Evidence Companion, dossier, repository documents, dashboards, metrics, and other public-safe projections provide bounded evidence and visibility. They do not replace Runtime authority or independently alter the accepted standing baseline.
 
 ## Participation relationship
 
-Each component retains its own function while remaining aligned to the common system relationships of:
+Each component retains its own function while remaining aligned to common system relationships of:
 
 - identity;
 - source ownership;
@@ -59,23 +65,37 @@ Each component retains its own function while remaining aligned to the common sy
 - continuity;
 - correction;
 - recovery;
+- withholding;
 - release.
 
-EHCO AI-OS / Runtime Authority controls executable participation, authoritative transaction state, consequence, persistence, release, closure, and Runtime truth across the ecosystem.
+EHCO AI-OS controls executable participation, authoritative transaction state, consequence, persistence, recovery, withholding, release, closure, and Runtime truth across the ecosystem.
 
-## Source and lifecycle alignment
+## Status boundaries
 
-The ecosystem is being finalized through explicit source-owner, repository, manifest, package, participant, communication, packet, receipt, lifecycle, portability, and release crosswalks. Each active project lane is aligned to the established Runtime Foundations and the canonical source estate.
+The following dimensions remain distinct:
+
+- Runtime realization;
+- Runtime standing;
+- source acceptance;
+- build and test verification;
+- container or environment deployment;
+- production activation;
+- public ingress;
+- operational external release;
+- go-live authorization.
+
+Evidence in one dimension must not be promoted into another without the required governing record.
 
 ## Related material
 
 - [EHCO AI-OS Instantiated System](EHCO-AI-OS-INSTANTIATED-SYSTEM.md)
 - [Instantiated Proof Range](instantiated-proof-range.md)
-- [EHCO Language-Model Finalization](../language-model/README.md)
+- [EHCO Language-Model System Boundary](../language-model/README.md)
 - [Public Evidence Companion](../evidence/README.md)
 
 ## Revision history
 
 | Version | Date | Change |
 |---|---|---|
+| 1.1 | 2026-08-05 | Stabilized current component roles, source ownership, language-model boundaries, and distinct deployment/release states. |
 | 1.0 | 2026-08-04 | Initial public ecosystem components and participation record. |

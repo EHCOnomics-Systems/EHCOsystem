@@ -15,7 +15,7 @@ This map identifies the role of each section that is visibly present in the EHCO
 ## System records
 
 - `architecture/` — public EHCO AI-OS system, instantiated proof range, ecosystem participation, and proof/status records.
-- `language-model/` — current EHCO language-model and EHCO RAG finalization record.
+- `language-model/` — stable public boundary for the separately controlled EHCO language-model capability estate; it is not a live projection of private development state.
 
 ## Public evidence
 
@@ -36,16 +36,17 @@ No tagged GitHub Release is currently declared. Repository publication and packe
 
 ## Not projected here
 
-The following sections are not currently present and must not be inferred from repository navigation or earlier plans:
+The following sections or control classes are not currently present and must not be inferred from repository navigation or earlier plans:
 
-- `references/`
-- `ip/`
-- `papers/`
-- `diagrams/`
-- `release-notes/`
+- moving private language-model commits, pull requests, gap ledgers, activation controls, and next-operation state;
+- `references/`;
+- `ip/`;
+- `papers/`;
+- `diagrams/`;
+- `release-notes/`.
 
 Their absence is a publication-scope fact, not a Runtime state change or contradiction of accepted proof roots.
 
 ## Controlled EHCO estate
 
-Proprietary source, protected implementation mechanics, private control anchors, credentials, active endpoints, internal evidence locators, and production infrastructure remain outside the public repository, except for expressly approved bounded historical evidence and public source-lineage identifiers.
+Proprietary source, protected implementation mechanics, private control anchors, credentials, active endpoints, internal evidence locators, production infrastructure, and moving private workstream state remain outside the public repository, except for expressly approved bounded evidence and public source-origin identifiers.
