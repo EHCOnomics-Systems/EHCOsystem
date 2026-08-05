@@ -1,12 +1,12 @@
 ---
 title: EHCOsystem Reading Order
-version: 1.0
+version: 1.1
 status: current-public-navigation
 published: 2026-08-04
 maintainer: EHCOnomics
 evidence_class: navigation
 proof_ceiling: none; navigation only
-supersedes: none
+supersedes: version 1.0
 ---
 
 # Reading Order
@@ -15,31 +15,32 @@ supersedes: none
 
 1. [Repository README](../README.md)
 2. [Start Here](START-HERE.md)
-3. [Immutable Runtime Baseline](../architecture/runtime-baseline.md)
+3. [Canonical Public Dossier](../dossiers/README.md)
 
-## Architectural understanding
+## System record
 
-4. [Ecosystem Governance Discovery](../architecture/ecosystem-governance-discovery.md)
-5. [Proof Classes](../architecture/proof-classes.md)
-6. [Glossary](../architecture/glossary.md)
+4. [EHCO AI-OS Instantiated System](../architecture/EHCO-AI-OS-INSTANTIATED-SYSTEM.md)
+5. [Instantiated Proof Range](../architecture/instantiated-proof-range.md)
+6. [Ecosystem Components and Participation](../architecture/ecosystem-components-and-participation.md)
+7. [Proof and Status Classes](../architecture/proof-and-status-classes.md)
 
-## Evidence and verification
+## Evidence and completion
 
-7. [Public Evidence Companion](../evidence/README.md)
-8. [Canonical Public Release Register](../releases/PUBLIC-RELEASE-REGISTER.md)
-9. [Controlled Review Policy](../verification/controlled-review-policy.md)
+8. [Public Evidence Companion](../evidence/README.md)
+9. [EHCO Language-Model Finalization](../language-model/README.md)
+10. [Canonical Public Release Register](../releases/PUBLIC-RELEASE-REGISTER.md)
 
-## Public lineage
+## Full index
 
-10. [EHCO Insights: Instantiated Governance Series](../references/ehco-insights/instantiated-governance-series.md)
 11. [EHCOsystem Library](../LIBRARY.md)
 
-## Status and proof ceiling
+## Status
 
-This page defines reading sequence only. It does not enlarge the proof ceiling of any linked artifact.
+This page establishes the reading sequence for the public record. Each linked artifact retains its own version, status, evidence class, and release identity.
 
 ## Revision history
 
 | Version | Date | Change |
 |---|---|---|
+| 1.1 | 2026-08-04 | Replaced obsolete reading path with the canonical dossier, system, evidence, and completion sequence. |
 | 1.0 | 2026-08-04 | Initial public reading order. |
