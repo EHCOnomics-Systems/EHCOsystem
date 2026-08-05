@@ -36,7 +36,9 @@
                               "sha256":  "F489BA01961A12CF101B1F1DF57E6958456A0840BEB798B862FA97ACB030892D"
                           }
                       ],
-    "errors":  [],
+    "errors":  [
+
+               ],
     "authority_effect":  "NONE",
     "standing_effect":  "NONE"
 }
