@@ -1,12 +1,12 @@
 ---
 title: Start Here
-version: 1.2
+version: 1.3
 status: current-public-navigation
 published: 2026-08-05
 maintainer: EHCOnomics
 evidence_class: navigation
 proof_ceiling: none; navigation only
-supersedes: version 1.1
+supersedes: version 1.2
 ---
 
 # Start Here
@@ -24,7 +24,7 @@ The current canonical source owner for EHCO AI-OS is the controlled `ehconomics/
 3. Review the [Instantiated Proof Range](../architecture/instantiated-proof-range.md).
 4. Review [Ecosystem Components and Participation](../architecture/ecosystem-components-and-participation.md).
 5. Open the [Public Evidence Companion](../evidence/README.md).
-6. Review [EHCO Language-Model Finalization](../language-model/README.md).
+6. Review the [EHCO Language-Model System Boundary](../language-model/README.md).
 7. Continue into the [EHCOsystem Library](../LIBRARY.md).
 
 ## Canonical records
@@ -32,7 +32,7 @@ The current canonical source owner for EHCO AI-OS is the controlled `ehconomics/
 - **System description:** EHCO AI-OS Governed Operational Architecture — Public Edition v1.8
 - **Accepted Runtime standing:** 52/53
 - **Public proof estate:** Public Evidence Companion and Packets 00–08
-- **Current completion track:** EHCO language-model and EHCO RAG finalization
+- **Language-model and RAG relationship:** stable public system boundary; detailed private workstream status is not projected here
 - **Release control:** versioned manifests, SHA-256 checksums, the canonical release register, and automated validation; no tagged GitHub Release is currently declared
 - **Public IP portfolio:** not projected in this repository
 
@@ -44,6 +44,7 @@ This repository publishes approved public architecture, evidence, provenance, st
 
 | Version | Date | Change |
 |---|---|---|
+| 1.3 | 2026-08-05 | Replaced moving language-model finalization status with a stable public system boundary. |
 | 1.2 | 2026-08-05 | Clarified realized Runtime standing, current source ownership, packet-time provenance, and actual release status. |
 | 1.1 | 2026-08-04 | Replaced obsolete navigation with the canonical EHCOsystem reading path. |
 | 1.0 | 2026-08-04 | Initial public entry path. |
