@@ -38,7 +38,15 @@ Packet 02 preserves packet-time runtime-support test/source-artifact provenance.
 - `LICENSE` - proprietary public-inspection permissions and restrictions.
 - `NOTICE.md` - public purpose, evidence, IP, and implementation boundary.
 
-No tagged GitHub Release is currently declared. Repository publication and packet verification do not independently authorize Runtime deployment, production activation, public ingress, operational external release, commercial activation, or go-live.
+## Canonical public release identity
+
+- Version: `1.0.0`
+- Tag: `v1.0.0-public`
+- Release title: `EHCOsystem Public Architecture and Evidence Baseline v1.0.0`
+
+These values define the canonical public release identity. They do not by themselves assert that the tag or GitHub Release has been published. The GitHub Releases surface determines live publication state.
+
+Repository publication and packet verification do not independently authorize Runtime deployment, production activation, public ingress, operational external release, commercial activation, or go-live.
 
 ## Not projected here
 

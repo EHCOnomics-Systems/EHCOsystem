@@ -14,6 +14,14 @@ The repository is not the EHCO AI-OS Runtime. Repository publication, commits, w
 
 A dashboard, ledger, branch, package, repository, assistant interpretation, or scoped search result is not authority. Claims remain bound to accepted proof roots and the artifact's own proof ceiling.
 
+## Canonical public release identity
+
+- Version: `1.0.0`
+- Tag: `v1.0.0-public`
+- Release title: `EHCOsystem Public Architecture and Evidence Baseline v1.0.0`
+
+These values define the canonical identity of the first public EHCOsystem architecture and evidence baseline. This register does not by itself assert that the tag or GitHub Release has been published. The GitHub Releases surface determines live publication state.
+
 ## Current visible public estate
 
 | Artifact | Status | Canonical path | Proof ceiling |
@@ -82,7 +90,6 @@ The accepted 52/53 standing baseline is an EHCOnomics-controlled operational sta
 | Moving private language-model workstream state | NOT_PROJECTED_HERE | Exact private commits, pull requests, gaps, activation decisions, and next-operation controls are intentionally not mirrored |
 | Current private test/source-estate state | NOT_PROJECTED_HERE | Public packets preserve approved packet-time artifact provenance only |
 | Current Runtime state beyond approved public records | NOT_PROJECTED_HERE | Repository and packets are not Runtime authority or live Runtime projection |
-| Tagged GitHub Release | NOT_PROJECTED_HERE | No tag or GitHub Release is currently declared |
 | Production activation, public ingress, operational external release, and go-live | NOT_PROJECTED_HERE | Each requires its own governing evidence and authorization |
 
 ## Excluded material

@@ -32,3 +32,6 @@ jobs:
 
       - name: Validate public evidence and semantic boundaries
         run: python3 verification/validate_public_evidence.py
+
+      - name: Validate canonical public release identity
+        run: python3 verification/validate_release_identity.py
