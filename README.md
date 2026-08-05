@@ -19,11 +19,11 @@ The EHCOsystem extends that foundation through portability, source and manifest 
 ## Canonical public record
 
 - **System description:** EHCO AI-OS Governed Operational Architecture — Public Edition v1.8
-- **Public evidence:** Public Evidence Companion and Packets 00–08
+- **Public evidence:** Public Evidence Companion, Packets 00–08, and the canonical dossier PDF
 - **Current completion track:** EHCO language-model and EHCO RAG finalization
-- **Public lineage:** EHCO Insights and external reference indexes
-- **Public IP:** fixed public portfolio release
-- **Release control:** manifests, SHA-256 checksums, release notes, and GitHub Releases
+- **Public lineage:** not projected in this repository yet
+- **Public IP portfolio:** not projected in this repository yet
+- **Release control:** canonical release register, manifests, and SHA-256 checksums; no tagged GitHub Release is currently declared
 
 ## Core records
 
@@ -41,6 +41,8 @@ The EHCOsystem extends that foundation through portability, source and manifest 
 
 ## Public boundary
 
-This repository publishes approved public architecture, evidence, provenance, status, research, IP, and release artifacts. Proprietary source, protected implementation mechanics, private control anchors, credentials, endpoints, internal evidence locators, and production infrastructure remain in the controlled EHCO estate.
+This repository publishes approved public architecture, evidence, provenance, status, research, IP, and release artifacts that are visibly present in the repository. Planned or approved-but-unpublished material is not represented as currently released.
+
+Proprietary source, protected implementation mechanics, private control anchors, credentials, endpoints, internal evidence locators, and production infrastructure remain in the controlled EHCO estate, except where an approved hash-preserved public evidence packet expressly records a bounded historical capture attribute.
 
 © EHCOnomics. All rights reserved.
