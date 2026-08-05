@@ -1,50 +1,51 @@
 ---
 title: Start Here
-version: 1.3
+version: 1.4
 status: current-public-navigation
 published: 2026-08-05
 maintainer: EHCOnomics
 evidence_class: navigation
 proof_ceiling: none; navigation only
-supersedes: version 1.2
+supersedes: version 1.3
 ---
 
 # Start Here
 
-The EHCOsystem repository is the approved public architecture, evidence, provenance, research, and release surface for EHCO AI-OS and the EHCOsystem.
+The `EHCOsystem` repository is the approved public architecture, evidence, provenance, research, verification, and publication surface for EHCO AI-OS and the EHCOsystem.
 
-EHCO AI-OS is the realized Tier 1 Runtime with accepted standing **52/53**. This GitHub repository is not the Runtime execution environment and does not independently create, calculate, promote, demote, or alter Runtime standing.
+EHCO AI-OS is the realized Tier 1 Runtime with accepted standing **52/53**. This GitHub repository is not the Runtime and does not hold Runtime authority, standing, authoritative state, consequence, persistence, release authority, or Runtime truth.
 
-The current canonical source owner for EHCO AI-OS is the controlled `ehconomics/EHCO_AI-OS` repository. Source-root and worktree identifiers inside the Public Evidence Companion identify packet-bound snapshots for provenance; they are not the current source owner, a separate Runtime, or an authority location.
+Controlled private repositories and their runtime-support folders are bounded test, compatibility, source-comparison, packaging, deployment-support, and evidence-generation estates. They are not the Runtime. Their files matter only within the identity, integrity, declaration, test, observation, and proof scope expressly established by the applicable record.
 
 ## Recommended path
 
-1. Open the [Canonical Public Dossier](../dossiers/README.md).
-2. Read the [EHCO AI-OS Instantiated System](../architecture/EHCO-AI-OS-INSTANTIATED-SYSTEM.md).
-3. Review the [Instantiated Proof Range](../architecture/instantiated-proof-range.md).
-4. Review [Ecosystem Components and Participation](../architecture/ecosystem-components-and-participation.md).
+1. Read the [Runtime, Repository, and Test-Estate Boundary](../architecture/runtime-repository-and-test-estate-boundary.md).
+2. Open the [Canonical Public Dossier](../dossiers/README.md).
+3. Read the [EHCO AI-OS Instantiated System](../architecture/EHCO-AI-OS-INSTANTIATED-SYSTEM.md).
+4. Review the [Instantiated Proof Range](../architecture/instantiated-proof-range.md).
 5. Open the [Public Evidence Companion](../evidence/README.md).
-6. Review the [EHCO Language-Model System Boundary](../language-model/README.md).
-7. Continue into the [EHCOsystem Library](../LIBRARY.md).
+6. Review [Proof and Status Classes](../architecture/proof-and-status-classes.md).
+7. Review the [EHCO Language-Model System Boundary](../language-model/README.md).
+8. Continue into the [EHCOsystem Library](../LIBRARY.md).
 
-## Canonical records
+## Packet interpretation
 
-- **System description:** EHCO AI-OS Governed Operational Architecture — Public Edition v1.8
-- **Accepted Runtime standing:** 52/53
-- **Public proof estate:** Public Evidence Companion and Packets 00–08
-- **Language-model and RAG relationship:** stable public system boundary; detailed private workstream status is not projected here
-- **Release control:** versioned manifests, SHA-256 checksums, the canonical release register, and automated validation; no tagged GitHub Release is currently declared
-- **Public IP portfolio:** not projected in this repository
+- Packet 02 preserves a hash-bound packet-time test/source-artifact set. It does not identify a Runtime repository or authority location.
+- Packets 03-05 establish bounded artifact identity and named declarations or anchors unless execution is expressly recorded.
+- Packet 06 preserves a historical bounded test and observation capture. Packet-integrity `PASS` does not mean universal behavioral `PASS`, and the capture is not current Runtime state.
 
 ## Public boundary
 
-This repository publishes approved public architecture, evidence, provenance, status, research, and release artifacts from the EHCO estate. Repository visibility is not Runtime authority, and packet integrity does not authorize production deployment, public ingress, operational external release, or go-live.
+The repository establishes visibility, artifact identity, integrity, provenance, and declared proof ceilings for its published records. It does not independently authorize production deployment, public ingress, operational external release, commercial activation, or go-live.
+
+The accepted 52/53 standing baseline is an EHCOnomics-controlled operational standing record. Independent third-party certification is not claimed unless expressly identified.
 
 ## Revision history
 
 | Version | Date | Change |
 |---|---|---|
+| 1.4 | 2026-08-05 | Corrected the Runtime, repository, private test-estate, and packet interpretation boundary. |
 | 1.3 | 2026-08-05 | Replaced moving language-model finalization status with a stable public system boundary. |
-| 1.2 | 2026-08-05 | Clarified realized Runtime standing, current source ownership, packet-time provenance, and actual release status. |
+| 1.2 | 2026-08-05 | Clarified realized Runtime standing, packet-time provenance, and release status. |
 | 1.1 | 2026-08-04 | Replaced obsolete navigation with the canonical EHCOsystem reading path. |
 | 1.0 | 2026-08-04 | Initial public entry path. |
