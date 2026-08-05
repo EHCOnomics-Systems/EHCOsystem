@@ -1,58 +1,59 @@
 # EHCOsystem
 
-**Public system, evidence, research, and release repository for EHCO AI-OS and the EHCOsystem.**
+**Public architecture, evidence, provenance, research, verification, and publication repository for EHCO AI-OS and the EHCOsystem.**
 
-EHCO AI-OS is the realized Tier 1 Runtime of the EHCOsystem. Its accepted standing baseline is **52/53**. It instantiates authority, standing, continuity, consequence, evidence, proof, recovery, withholding, and release before language-model participation can create operational consequence.
+EHCO AI-OS is the realized Tier 1 Runtime of the EHCOsystem. Its accepted standing baseline is **52/53**. The Runtime governs authority, standing, recognized state, transition, consequence, persistence, recovery, withholding, release, closure, and Runtime truth.
 
-This GitHub repository is the approved public architecture, evidence, provenance, research, and release surface for EHCO AI-OS and the EHCOsystem. It is not the Runtime execution environment, does not hold Runtime authority, and does not independently create, promote, demote, calculate, or alter Runtime standing.
+This GitHub repository is not the Runtime. It does not hold Runtime authority or authoritative Runtime state, and repository publication, commits, workflows, packets, manifests, tests, or public visibility do not independently create, promote, demote, calculate, revoke, or alter Runtime standing.
 
-The EHCOsystem extends the realized Runtime foundation through portability, source and manifest control, EHCO Prime, EHCO Agent Connect, EHCO RAG, the EHCO language-model system, governed applications, participant structures, continuity systems, and proof-bearing release controls.
+## Runtime, repository, and test-estate boundary
 
-## Current source and provenance boundary
+Controlled private repositories and their runtime-support folders contain bounded source, test, compatibility, packaging, deployment-support, and evidence-generation artifacts used to exercise and reproduce specified EHCO behavior. Those repositories, folders, and files are not the Runtime and are not authority locations.
 
-The current canonical source owner for EHCO AI-OS is the controlled `ehconomics/EHCO_AI-OS` repository. Source-root and worktree identifiers retained inside the Public Evidence Companion identify the exact snapshots bound by those packets. They preserve provenance and must not be interpreted as the current source owner, a separate Runtime, or an authority location.
+File identity does not establish Runtime identity. A named declaration does not establish executed enforcement. A passing build or test does not establish Runtime admission. A repository or evidence packet does not replace Runtime-originated state, consequence, persistence, or proof.
 
-Runtime realization is distinct from production hosting, environment-specific deployment, public ingress, commercial activation, operational external release, and go-live authorization. Those states remain separately controlled and must be stated according to their own evidence.
+Read the controlling boundary before interpreting source-binding or capture packets:
+
+- [Runtime, Repository, and Test-Estate Boundary](architecture/runtime-repository-and-test-estate-boundary.md)
+
+## Public evidence
+
+The Public Evidence Companion preserves the identity, integrity, provenance, observations, discrepancies, proof ceilings, and status boundaries of Packets 00-08.
+
+- Packet 02 binds a packet-time set of runtime-support test and source artifacts to exact hashes. Its historical title does not make those artifacts or their repository the Runtime.
+- Packets 03-05 establish bounded artifact identity and named declarations or anchors unless a packet expressly records executed behavior.
+- Packet 06 is a hash-preserved historical test and observation capture. Its integrity `PASS` is not a universal behavioral `PASS` and is not current Runtime state.
+
+The accepted 52/53 baseline is an EHCOnomics-controlled operational standing record projected through the public evidence estate. Independent third-party certification is not claimed unless an identified public record expressly states it.
 
 ## Start here
 
-1. [Canonical Public Dossier](dossiers/README.md)
-2. [EHCO AI-OS Instantiated System](architecture/EHCO-AI-OS-INSTANTIATED-SYSTEM.md)
-3. [Instantiated Proof Range](architecture/instantiated-proof-range.md)
-4. [Ecosystem Components and Participation](architecture/ecosystem-components-and-participation.md)
+1. [Runtime, Repository, and Test-Estate Boundary](architecture/runtime-repository-and-test-estate-boundary.md)
+2. [Canonical Public Dossier](dossiers/README.md)
+3. [EHCO AI-OS Instantiated System](architecture/EHCO-AI-OS-INSTANTIATED-SYSTEM.md)
+4. [Instantiated Proof Range](architecture/instantiated-proof-range.md)
 5. [Public Evidence Companion](evidence/README.md)
-6. [EHCO Language-Model System Boundary](language-model/README.md)
-7. [EHCOsystem Library](LIBRARY.md)
+6. [Proof and Status Classes](architecture/proof-and-status-classes.md)
+7. [EHCO Language-Model System Boundary](language-model/README.md)
+8. [EHCOsystem Library](LIBRARY.md)
 
 ## Canonical public record
 
-- **System description:** EHCO AI-OS Governed Operational Architecture — Public Edition v1.8
+- **System description:** EHCO AI-OS Governed Operational Architecture - Public Edition v1.8
 - **Accepted Runtime standing:** 52/53
-- **Public evidence:** Public Evidence Companion, Packets 00–08, and the canonical dossier PDF
-- **Language-model and RAG relationship:** stable public system boundary; detailed private workstream status is not projected here
-- **Public lineage:** not projected in this repository yet
-- **Public IP portfolio:** not projected in this repository yet
-- **Release control:** canonical release register, manifests, SHA-256 checksums, and automated package validation; no tagged GitHub Release is currently declared
+- **Public evidence:** Public Evidence Companion, Packets 00-08, and the canonical dossier PDF
+- **Validation:** bounded repository-integrity and semantic-boundary checks
+- **Release control:** canonical public release register, manifests, SHA-256 checksums, and automated validation
 
-## Core records
+Runtime realization remains distinct from production hosting, environment-specific deployment, public ingress, commercial activation, operational external release, and go-live authorization. Those states must be established by their own governing evidence and authorization.
 
-- [EHCO AI-OS Instantiated System](architecture/EHCO-AI-OS-INSTANTIATED-SYSTEM.md)
-- [Instantiated Proof Range](architecture/instantiated-proof-range.md)
-- [Ecosystem Components and Participation](architecture/ecosystem-components-and-participation.md)
-- [Proof and Status Classes](architecture/proof-and-status-classes.md)
-- [EHCO Language-Model System Boundary](language-model/README.md)
+## Publication and use
 
-## Evidence, verification, and release
+- [Repository Governance](GOVERNANCE.md)
+- [Security and Responsible Disclosure](SECURITY.md)
+- [Proprietary Public Inspection License](LICENSE)
+- [Notice](NOTICE.md)
 
-- [Canonical Public Dossier](dossiers/README.md)
-- [Public Evidence Companion](evidence/README.md)
-- [Public Evidence Validation](verification/README.md)
-- [Canonical Public Release Register](releases/PUBLIC-RELEASE-REGISTER.md)
+Proprietary implementation mechanics, private control anchors, credentials, active endpoints, confidential proof records, and production infrastructure remain outside this public repository except where an approved hash-preserved evidence record expressly retains a bounded historical capture attribute.
 
-## Public boundary
-
-This repository publishes approved public architecture, evidence, provenance, status, research, and release artifacts that are visibly present in the repository. Planned or approved-but-unpublished material is not represented as currently released.
-
-Proprietary source, protected implementation mechanics, private control anchors, credentials, active endpoints, internal evidence locators, and production infrastructure remain in the controlled EHCO estate, except where an approved hash-preserved public evidence packet expressly records a bounded capture attribute or approved public source-origin identifier.
-
-© EHCOnomics. All rights reserved.
+Copyright (c) 2026 EHCOnomics. All rights reserved.
