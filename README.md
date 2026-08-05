@@ -1,69 +1,46 @@
 # EHCOsystem
 
-**Public architecture, evidence, research, and publication repository for instantiated AI governance.**
+**Public system, evidence, research, and release repository for EHCO AI-OS and the EHCOsystem.**
 
-The EHCOsystem is built around one governing premise:
+EHCO AI-OS instantiates authority, standing, continuity, consequence, evidence, proof, recovery, withholding, and release before language-model participation can create operational consequence.
 
-> **AI governance begins when valid authority is instantiated before intelligence acts. It becomes end-to-end governance only when every consequential participant and transition preserves the authority, state, evidence, and consequence relationships appropriate to its role.**
-
-This repository is the canonical public technical record for the EHCOsystem.
+The EHCOsystem extends that foundation through portability, source and manifest control, EHCO Prime, EHCO Agent Connect, EHCO RAG, the EHCO language-model system, governed applications, participant structures, continuity systems, and proof-bearing release controls.
 
 ## Start here
 
-- [Start Here](getting-started/START-HERE.md)
-- [EHCOsystem Library](LIBRARY.md)
-- [Repository Map](getting-started/repository-map.md)
-- [Reading Order](getting-started/reading-order.md)
+1. [Canonical Public Dossier](dossiers/README.md)
+2. [EHCO AI-OS Instantiated System](architecture/EHCO-AI-OS-INSTANTIATED-SYSTEM.md)
+3. [Instantiated Proof Range](architecture/instantiated-proof-range.md)
+4. [Ecosystem Components and Participation](architecture/ecosystem-components-and-participation.md)
+5. [Public Evidence Companion](evidence/README.md)
+6. [EHCO Language-Model Finalization](language-model/README.md)
+7. [EHCOsystem Library](LIBRARY.md)
 
-## Core architecture
+## Canonical public record
 
-- [Immutable Runtime Baseline](architecture/runtime-baseline.md)
-- [Ecosystem Governance Discovery](architecture/ecosystem-governance-discovery.md)
-- [Proof Classes](architecture/proof-classes.md)
-- [Glossary](architecture/glossary.md)
+- **System description:** EHCO AI-OS Governed Operational Architecture — Public Edition v1.8
+- **Public evidence:** Public Evidence Companion and Packets 00–08
+- **Current completion track:** EHCO language-model and EHCO RAG finalization
+- **Public lineage:** EHCO Insights and external reference indexes
+- **Public IP:** fixed public portfolio release
+- **Release control:** manifests, SHA-256 checksums, release notes, and GitHub Releases
 
-## Public evidence
+## Core records
 
+- [EHCO AI-OS Instantiated System](architecture/EHCO-AI-OS-INSTANTIATED-SYSTEM.md)
+- [Instantiated Proof Range](architecture/instantiated-proof-range.md)
+- [Ecosystem Components and Participation](architecture/ecosystem-components-and-participation.md)
+- [Proof and Status Classes](architecture/proof-and-status-classes.md)
+- [EHCO Language-Model Finalization](language-model/README.md)
+
+## Evidence and release
+
+- [Canonical Public Dossier](dossiers/README.md)
 - [Public Evidence Companion](evidence/README.md)
 - [Canonical Public Release Register](releases/PUBLIC-RELEASE-REGISTER.md)
-- [Controlled Review Policy](verification/controlled-review-policy.md)
 
-## Public lineage
+## Public boundary
 
-- [EHCO Insights: Instantiated Governance Series](references/ehco-insights/instantiated-governance-series.md)
-
-## What this repository contains
-
-- the immutable Runtime baseline;
-- the later ecosystem-governance discovery;
-- public architecture and terminology;
-- public dossiers and papers;
-- the approved Public Evidence Companion and proof packets;
-- public verification boundaries and release records;
-- EHCO Insights lineage, external references, diagrams, presentations, media, and history as they are approved.
-
-## What this repository does not contain
-
-This repository does **not** contain the proprietary EHCO Runtime source, private participant implementations, protected Instantiation Bridge mechanics, internal control anchors, private proof-root mappings, protected schemas, verifier internals, credentials, endpoints, production topology, or non-public evidence records.
-
-Public availability does not convert a document, packet, test, observation, or release bundle into Runtime authority, deployment, admission, standing, production operation, external release, or go-live authorization.
-
-## Core distinctions
-
-- Capability is not authority.
-- Permission is not standing.
-- A proposal is not a disposition.
-- Execution is not authorization.
-- Evidence is not proof.
-- Testing is not deployment.
-- Deployment is not admission.
-- Generation is not Runtime recognition.
-- A ledger is evidence, not authority.
-- A dashboard is projection, not Runtime truth.
-- Observation and scope miss do not create state change.
-
-## Status
-
-This is a public technical and evidentiary repository. It is not a software distribution, production Runtime, implementation reference, or claim of complete ecosystem deployment.
+This repository publishes approved public architecture, evidence, provenance, status, research, IP, and release artifacts. Proprietary source, protected implementation mechanics, private control anchors, credentials, endpoints, internal evidence locators, and production infrastructure remain in the controlled EHCO estate.
 
 © EHCOnomics. All rights reserved.
