@@ -1,63 +1,41 @@
 ---
-title: EHCO Language-Model Finalization
-version: 1.0
-status: active-finalization-record
-published: 2026-08-04
+title: EHCO Language-Model System Boundary
+version: 1.1
+status: current-public-system-boundary
+published: 2026-08-05
 maintainer: EHCOnomics
-evidence_class: controlled-ehco-development-record
-supersedes: none
+evidence_class: controlled-ehco-system-record
+supersedes: version 1.0 active-finalization record
 ---
 
-# EHCO Language-Model Finalization
+# EHCO Language-Model System Boundary
 
-The EHCO language-model system is the sovereign language capability estate of the EHCOsystem. It operates inside the established EHCO AI-OS structure and extends the instantiated governing system through language-kernel progression, linguistic breadth, bounded mathematics, EHCO RAG alignment, source reconciliation, and final ecosystem integration.
+The EHCO language-model system is the separately controlled sovereign language-capability estate of the EHCOsystem. It operates downstream of the realized EHCO AI-OS Tier 1 Runtime and contributes language, linguistic, mathematical, and related model capability within governed participation relationships.
 
-The governing architecture, continuity, consequence, standing, evidence, proof, withholding, release, recovery, persistence, and Runtime relationships were already instantiated and demonstrated while an external language model participated without epistemic authority. The EHCO language-model program completes the owned language layer inside that established system.
+EHCO AI-OS retains Runtime authority, admission, invocation authority, authoritative transaction state, consequence, persistence, recovery, withholding, release, closure, and Runtime truth. The language-model system does not independently create or alter Tier 1 authority or the accepted EHCO AI-OS standing baseline of **52/53**.
 
-## Accepted source state
+## Public projection boundary
 
-The canonical source owner is `ehconomics/ehco_Language-Model_v1`.
+This public repository does not project the moving private development ledger of the language-model source estate. Exact private commit identifiers, pull-request numbers, gap ledgers, activation decisions, branch state, work-packet state, and next-operation controls remain in their owning controlled records.
 
-The accepted capability estate includes:
+Their omission here is intentional. It prevents a dated public snapshot from being mistaken for the current private source state or for Runtime state.
 
-- V0.5.1D;
-- language-kernel progression LK-1 through LK-12;
-- GAP-01 integration closure;
-- linguistic-breadth progression LB-01 through LB-15;
-- bounded mathematics MD-1 through MD-7;
-- the accepted Runtime-boundary capability baseline;
-- repository-control synchronization and continuation reconciliation on `main`.
+The public record establishes only the stable system relationship:
 
-The accepted Runtime-boundary capability baseline is carried through merge commit `bafd3560abe5f033202d65673452aedb947c7bc7`, including verified correction head `6cfcfc0971b6f85ac4f6f51171c986f13dea6a0a`.
-
-Post-merge repository-control synchronization was verified at `d7df1de4d3ded10d297c4e41a5c5832a015aa3d2` and merged through PR #41 at `904dc3e3566289b4f4e83fedce70d0ddaa290742`.
-
-MD-7 source head `28ebd39f58fa7a9da91b0bd8287b3cda130f7fcb` merged to `main` at `d56eb7741a587c574992cdd439abb184bbe8e661`. Continuation reconciliation was verified at `4511a09d993a61a72bc7c9a731c45343e63e5948` and integrated on `main` at `e27499f9866f148173140009c1483de5668c971c`.
-
-## Current completion state
-
-The current remaining accepted work is governed through the Master Delivery Control, the Five Principal Gaps Full Delivery Plan, and the EHCO Language-Model Principal Gap Ledger.
-
-Current state:
-
-- GAP-02 remains open;
-- GAP-03 remains open and not activated;
-- GAP-04 remains open with accepted MD-1 through MD-7 bounded implementation;
-- GAP-05 remains open and not activated;
-- D-0053 is exhausted;
-- LB-16 and any later breadth family are not activated;
-- MD-8 is not activated;
-- no next model-development operation is activated.
-
-The remaining work is finalization and closure across accepted integration, linguistic breadth, bounded mathematics, RAG alignment, source control, and ecosystem verification.
+- the language-model estate is a capability system, not Tier 1 authority;
+- model outputs remain candidates until governed admission and consequence;
+- repository activity does not establish Runtime participation or standing;
+- training, weights, qualification, deployment, and release retain their own evidence and authorization requirements;
+- EHCO RAG participates through governed source, context, retrieval, evidence, and release boundaries;
+- private language-model progress does not independently change the realized EHCO AI-OS Runtime standing.
 
 ## EHCO RAG relationship
 
-EHCO RAG provides the governed retrieval foundation for the language-model system. Its architecture includes model-gateway, prompt-provider, context-isolation, data-flow, control-flow, and build-completion controls. The language-model and RAG estates are aligned through governed source, context, evidence, participation, and release relationships.
+EHCO RAG provides the governed retrieval foundation for language-model participation. Its architecture includes model-gateway, prompt-provider, context-isolation, data-flow, control-flow, evidence, and release boundaries. Retrieval does not become authority merely because information is found or supplied to a model.
 
-## System relationship
+## Status discipline
 
-EHCO AI-OS / Runtime Authority retains executable admission, invocation, consequence, persistence, release, closure, and Runtime truth. The language-model system contributes sovereign language capability within those established relationships.
+No detailed language-model development status should be inferred from this page. Current source, qualification, activation, deployment, and release state must be resolved from the controlled language-model estate and its accepted records.
 
 ## Related material
 
@@ -70,4 +48,5 @@ EHCO AI-OS / Runtime Authority retains executable admission, invocation, consequ
 
 | Version | Date | Change |
 |---|---|---|
+| 1.1 | 2026-08-05 | Replaced the dated private-development projection with a stable public language-model system boundary. |
 | 1.0 | 2026-08-04 | Initial public language-model finalization record. |
