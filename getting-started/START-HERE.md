@@ -1,38 +1,42 @@
 ---
 title: Start Here
-version: 1.0
+version: 1.1
 status: current-public-navigation
 published: 2026-08-04
 maintainer: EHCOnomics
 evidence_class: navigation
 proof_ceiling: none; navigation only
-supersedes: none
+supersedes: version 1.0
 ---
 
 # Start Here
 
-The EHCOsystem repository is the canonical public library for EHCOnomics architecture, evidence, papers, public articles, presentations, history, and release records.
+The EHCOsystem repository is the canonical public record for EHCO AI-OS system architecture, public evidence, current completion records, intellectual lineage, public IP, and controlled releases.
 
 ## Recommended path
 
-1. Read the [Immutable Runtime Baseline](../architecture/runtime-baseline.md).
-2. Read the [Ecosystem Governance Discovery](../architecture/ecosystem-governance-discovery.md).
-3. Review [Proof Classes](../architecture/proof-classes.md).
-4. Review the [Glossary](../architecture/glossary.md).
+1. Open the [Canonical Public Dossier](../dossiers/README.md).
+2. Read the [EHCO AI-OS Instantiated System](../architecture/EHCO-AI-OS-INSTANTIATED-SYSTEM.md).
+3. Review the [Instantiated Proof Range](../architecture/instantiated-proof-range.md).
+4. Review [Ecosystem Components and Participation](../architecture/ecosystem-components-and-participation.md).
 5. Open the [Public Evidence Companion](../evidence/README.md).
-6. Review the [EHCO Insights Instantiated Governance Series](../references/ehco-insights/instantiated-governance-series.md).
+6. Review [EHCO Language-Model Finalization](../language-model/README.md).
 7. Continue into the [EHCOsystem Library](../LIBRARY.md).
 
-## Governing line
+## Canonical records
 
-> AI governance begins when valid authority is instantiated before intelligence acts. It becomes end-to-end governance only when every consequential participant and transition preserves the authority, state, evidence, and consequence relationships appropriate to its role.
+- **System description:** EHCO AI-OS Governed Operational Architecture — Public Edition v1.8
+- **Public proof estate:** Public Evidence Companion and Packets 00–08
+- **Current completion track:** EHCO language-model and EHCO RAG finalization
+- **Release control:** versioned manifests, checksums, release notes, and GitHub Releases
 
 ## Public boundary
 
-This repository publishes the architecture, public evidence, proof ceilings, technical papers, diagrams, and public history of the EHCOsystem. It does not publish proprietary Runtime source, protected implementation mechanics, internal schemas, private control anchors, credentials, endpoints, or production infrastructure.
+This repository publishes approved public architecture, evidence, provenance, status, research, IP, and release artifacts from the EHCO source estate.
 
 ## Revision history
 
 | Version | Date | Change |
 |---|---|---|
-| 1.0 | 2026-08-04 | Normalized public entry path. |
+| 1.1 | 2026-08-04 | Replaced obsolete navigation with the canonical EHCOsystem reading path. |
+| 1.0 | 2026-08-04 | Initial public entry path. |
