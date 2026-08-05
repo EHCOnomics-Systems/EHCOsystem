@@ -1,0 +1,39 @@
+EHCOnomics Proprietary Public Inspection License v1.0
+
+Copyright (c) 2026 EHCOnomics. All rights reserved.
+
+1. Scope
+
+This license applies to the architecture, documentation, terminology, evidence structures, manifests, verification materials, diagrams, records, and other content published in this repository, except where a file expressly states a different license.
+
+2. Limited permission
+
+EHCOnomics grants permission to:
+
+(a) view the repository through GitHub or another authorized publication surface;
+(b) link to the repository or an individual public artifact;
+(c) quote brief excerpts for good-faith commentary, review, journalism, scholarship, regulatory analysis, or citation, provided that EHCOnomics and the applicable artifact are identified and the excerpt is not presented as an endorsement, certification, or transfer of authority.
+
+3. Rights not granted
+
+No permission is granted to copy, reproduce, republish, distribute, mirror, sublicense, sell, commercialize, translate into an implementation, create derivative works, train or evaluate a model using the repository as a corpus, or use the materials to construct or market a competing or derived system, except with prior written permission from EHCOnomics or as required by applicable law.
+
+Public availability, GitHub visibility, cloning capability, or platform-permitted forking does not grant an intellectual-property license beyond the limited permission stated above.
+
+4. Runtime and evidence boundary
+
+This repository is a public architecture, evidence, provenance, research, verification, and publication surface. It is not the EHCO AI-OS Runtime and does not hold Runtime authority, standing, authoritative state, consequence, persistence, release authority, or Runtime truth.
+
+Published packets, manifests, checksums, test artifacts, captures, declarations, and verification results retain the proof ceiling stated by their controlling records. Publication does not authorize production deployment, public ingress, operational external release, go-live, or implementation of protected mechanics.
+
+5. Names and marks
+
+EHCOnomics, EHCOsystem, EHCO AI-OS, Primordia, and associated names, marks, terminology, and identifiers remain the property of EHCOnomics. No trademark or branding license is granted.
+
+6. No warranty
+
+THE MATERIALS ARE PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, ACCURACY, COMPLETENESS, SECURITY, OR FITNESS FOR DEPLOYMENT. EHCOnomics is not liable for any claim, loss, or damage arising from access to or use of the materials.
+
+7. Written permission
+
+Requests for rights beyond this license must be submitted through an official EHCOnomics contact channel. No waiver or additional permission is effective unless issued in writing by an authorized representative of EHCOnomics.
