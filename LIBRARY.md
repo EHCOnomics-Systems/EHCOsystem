@@ -1,6 +1,6 @@
 # The EHCOsystem Library
 
-Everything publicly released by EHCOnomics for EHCO AI-OS and the EHCOsystem is indexed from this page.
+This page indexes the artifacts that are visibly published in the EHCOsystem repository and distinguishes them from planned or controlled material that is not projected here.
 
 ## Start here
 
@@ -22,24 +22,28 @@ Everything publicly released by EHCOnomics for EHCO AI-OS and the EHCOsystem is 
 ## Public evidence
 
 - [Public Evidence Companion](evidence/README.md)
-- Versioned packet manifests, receipts, verification results, claim records, boundaries, source documents, and checksums are published under `evidence/public-evidence-companion/`.
+- [Version 1 Packets 00–08](evidence/public-evidence-companion/v1/)
+- [Public Evidence Validation](verification/README.md)
 
 ## Language-model finalization
 
 - [EHCO Language-Model Finalization](language-model/README.md)
 
-## Public lineage
-
-EHCO Insights articles and external primary sources are indexed under `references/` as they are approved and released.
-
-## Public IP
-
-The fixed public EHCOsystem IP portfolio is published under `ip/` in PDF form with valuation and protected implementation material removed.
-
 ## Release control
 
 - [Canonical Public Release Register](releases/PUBLIC-RELEASE-REGISTER.md)
-- Versioned release notes, manifests, checksums, and fixed release artifacts are published under `release-notes/` and `releases/`.
+
+The repository currently has no tagged GitHub Release. Packet manifests, detached hashes, the suite manifest, and automated validation provide the visible integrity controls for the published evidence package.
+
+## Not projected here
+
+The following areas may be planned, controlled, or subject to separate approval, but they are not represented as currently published repository sections:
+
+- EHCO Insights and external reference indexes;
+- public IP portfolio artifacts;
+- public papers and diagrams;
+- release-note history beyond the canonical release register;
+- controlled review policy materials.
 
 ## Publication control
 
@@ -49,4 +53,4 @@ The fixed public EHCOsystem IP portfolio is published under `ip/` in PDF form wi
 
 ## Public boundary
 
-This library indexes approved public architecture, evidence, provenance, status, research, IP, and release artifacts. Proprietary source, protected implementation mechanics, private control anchors, credentials, endpoints, internal evidence locators, and production infrastructure remain in the controlled EHCO estate.
+This library indexes approved public architecture, evidence, provenance, status, research, IP, and release artifacts that are visible in this repository. Proprietary source, protected implementation mechanics, private control anchors, credentials, active endpoints, internal evidence locators, and production infrastructure remain in the controlled EHCO estate, subject only to expressly approved historical-evidence and public-lineage exceptions.
