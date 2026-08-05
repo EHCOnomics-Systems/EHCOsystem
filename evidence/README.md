@@ -2,7 +2,13 @@
 
 This directory is the public landing surface for the EHCO AI-OS Public Evidence Companion associated with the **EHCO AI-OS Governed Operational Architecture — Public Edition v1.8**.
 
-The companion is a bounded public evidence and verification surface. It does not replace Runtime authority, create standing, authorize deployment, approve external release, or convert bundle completion into Runtime realization.
+The companion is a bounded public evidence and verification surface. It does not replace Runtime authority, create standing, authorize deployment, approve operational external release, or convert bundle completion into Runtime realization.
+
+## Published release
+
+The canonical Version 1 package is published at [`evidence/public-evidence-companion/v1/`](public-evidence-companion/v1/) and contains Packets 00–08. The dossier PDF is included in Packet 00 as a hash-bound source document and is also projected from the repository-level [`dossiers/`](../dossiers/) directory.
+
+Repository publication means that the identified public artifacts are visible for inspection. It does **not** change any packet-level authority, standing, deployment, production-activation, ingress, go-live, or operational release status.
 
 ## Packet structure
 
@@ -16,7 +22,7 @@ Projects the accepted operational standing baseline in a bounded, public-safe, m
 
 ### Packet 02 — Canonical Runtime Source Binding
 
-Binds canonical source artifacts to exact SHA-256 values. Source code and local absolute paths are excluded. The packet does not claim gate-chain implementation coverage or live Runtime observation.
+Binds canonical source artifacts to exact SHA-256 values. Source code and local absolute paths are excluded except where a separately classified hash-preserved historical evidence record expressly retains one. The packet does not claim gate-chain implementation coverage or live Runtime observation.
 
 ### Packet 03 — Tier 1 Authority Enforcement
 
@@ -32,15 +38,15 @@ Records source bindings and named declarations for proof, receipt, collapse, qua
 
 ### Packet 06 — Observed Live Capture and Release Status
 
-Contains hash-bound observed local-live capture artifacts and release-authority records. Its evidence disposition is mixed: direct observations, direct discrepancies, cross-snapshot lineage differences, and behavioral gaps remain explicitly separated. External release and production activation are not granted.
+Contains hash-bound observed local-live capture artifacts and release-authority records. Its evidence disposition is mixed: direct observations, direct discrepancies, cross-snapshot lineage differences, and behavioral gaps remain explicitly separated. External operational release and production activation are not granted.
 
 ### Packet 07 — Public Boundaries and Delivery Status
 
-Records separation among architecture, standing, validation, projection, and delivery. It preserves open Packet 06 discrepancies and gaps, treats Kubernetes as a target translation rather than proven production realization, and does not authorize public ingress, external release, production activation, or go-live.
+Records separation among architecture, standing, validation, projection, and delivery. It preserves open Packet 06 discrepancies and gaps, treats Kubernetes as a target translation rather than proven production realization, and does not authorize public ingress, operational external release, production activation, or go-live.
 
 ### Packet 08 — Suite Verification and Closure
 
-Verifies the dossier identity, packet manifests, declared files, packet verification statuses, receipts, and non-authorization boundaries before packaging. It does not resolve Packet 06 discrepancies or gaps, authorize release or activation, or convert packaging into Runtime realization.
+Verifies the dossier identity, packet manifests, declared files, packet verification statuses, receipts, and non-authorization boundaries. It does not resolve Packet 06 discrepancies or gaps, authorize operational release or activation, or convert packaging into Runtime realization.
 
 ## Disclosure boundary
 
@@ -51,17 +57,17 @@ The public suite may include:
 - manifests and packet receipts;
 - bounded verification results;
 - public-safe status records;
-- hash-preserved historical evidence;
+- approved hash-preserved historical evidence;
 - bounded packet-verification tooling.
 
 The suite does not include the proprietary Runtime implementation source. Verification tooling is not classified as Runtime implementation source.
 
 ## Evidence discipline
 
-A packet may establish source identity, manifest integrity, the presence of a named declaration, a recorded observation, or a bounded verification result. Those findings do not silently become deployment, admission, standing, production operation, external release, or go-live authorization.
+A packet may establish source identity, manifest integrity, the presence of a named declaration, a recorded observation, or a bounded verification result. Those findings do not silently become deployment, admission, standing, production operation, operational external release, or go-live authorization.
 
 The companion preserves mixed, blocked, pending, divergent, and not-directly-observed states rather than converting them into passes or failures.
 
-## Release status
+## Validation
 
-The canonical packet files are being audited against the approved Public Evidence Companion build before publication in this repository. Only the canonical, verified, non-duplicated release set will be added.
+The repository validation workflow checks the canonical dossier hash, packet directory closure, JSON syntax, packet manifests, detached manifest hashes, suite closure, prohibited staging residue, and high-confidence secret indicators. See [Public Evidence Validation](../verification/README.md).
