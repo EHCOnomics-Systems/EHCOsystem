@@ -1,66 +1,46 @@
 # Repository Map
 
-This map explains the role of each top-level section in the EHCOsystem Public Library.
+This map identifies the role of each public section in the EHCOsystem repository.
 
 ## Core navigation
 
-- `README.md` — public identity and first orientation.
-- `LIBRARY.md` — complete public-library index.
-- `getting-started/` — guided entry, reading order, and repository navigation.
+- `README.md` — public identity and primary entry path.
+- `LIBRARY.md` — complete public-record index.
+- `getting-started/` — Start Here, reading order, and repository map.
 
-## Architecture
+## Canonical dossier
 
-- `architecture/` — current public architecture, definitions, distinctions, and accepted engineering findings.
-- `docs/` — temporary location for material being migrated into the architecture section. No new canonical architecture should be added here.
+- `dossiers/` — the fixed EHCO AI-OS Governed Operational Architecture public dossier and its identity record.
 
-## Dossiers
+## System records
 
-- `dossiers/` — fixed public architecture releases, each with a landing page, version, date, status, hash, and proof ceiling.
+- `architecture/` — public EHCO AI-OS system, instantiated proof range, ecosystem participation, and proof/status records.
+- `language-model/` — current EHCO language-model and EHCO RAG finalization record.
 
-## Evidence
+## Public evidence
 
-- `evidence/` — Public Evidence Companion releases, packet indexes, manifests, receipts, verification records, and public boundary statements.
+- `evidence/` — Public Evidence Companion releases, Packets 00–08, source documents, manifests, claim registries, boundaries, receipts, verification results, and checksums.
 
-## Papers
+## Public lineage
 
-- `papers/` — formal public papers and monographs in readable Markdown and fixed PDF editions.
+- `references/ehco-insights/` — EHCO Insights authorship and publication lineage.
+- `references/external/` — external primary sources used in the public record.
 
-## References
+## Public IP
 
-- `references/ehco-insights/` — public EHCO authorship and intellectual lineage.
-- `references/external/` — external primary sources, standards, legislation, incidents, and legal decisions.
-
-## Verification
-
-- `verification/` — controlled-review policy and public explanation of how deeper evidence may be examined without publishing protected implementation.
-
-## Diagrams
-
-- `diagrams/` — publication-safe conceptual and architectural visuals.
-
-## Presentations
-
-- `presentations/` — approved public decks, talks, and technical overviews.
-
-## Media
-
-- `media/` — interviews, articles, videos, podcasts, press, and public coverage.
-
-## History
-
-- `history/` — dated public milestones, discoveries, publications, and architectural changes.
+- `ip/` — fixed public IP portfolio artifacts with valuation and protected implementation material removed.
 
 ## Releases
 
-- `releases/` — canonical public release register and release-control records.
-- `release-notes/` — human-readable summaries of each public release.
+- `releases/` — canonical public release register, release manifests, and checksum records.
+- `release-notes/` — human-readable release summaries.
 
-## Control files
+## Publication control
 
 - `GOVERNANCE.md` — publication and contribution control.
 - `SECURITY.md` — responsible disclosure and security boundary.
 - `NOTICE.md` — intellectual-property and evidence notice.
 
-## Governing separation
+## Controlled EHCO estate
 
-The repository is the public technical and evidentiary record. The proprietary engineering estate remains outside it. Public availability does not convert a document, packet, test, observation, or package into Runtime authority, deployment, admission, standing, production operation, or release authorization.
+Proprietary source, protected implementation mechanics, private control anchors, credentials, endpoints, internal evidence locators, and production infrastructure remain outside the public repository.
