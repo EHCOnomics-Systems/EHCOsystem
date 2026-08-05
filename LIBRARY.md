@@ -1,66 +1,52 @@
 # The EHCOsystem Library
 
-Everything publicly released by EHCOnomics for the EHCOsystem should be reachable from this index.
+Everything publicly released by EHCOnomics for EHCO AI-OS and the EHCOsystem is indexed from this page.
 
 ## Start here
 
 - [Start Here](getting-started/START-HERE.md)
-- [Repository Map](getting-started/repository-map.md)
 - [Reading Order](getting-started/reading-order.md)
+- [Repository Map](getting-started/repository-map.md)
 
-## Architecture
+## Canonical public dossier
 
-- [Immutable Runtime Baseline](architecture/runtime-baseline.md)
-- [Ecosystem Governance Discovery](architecture/ecosystem-governance-discovery.md)
-- [Proof Classes](architecture/proof-classes.md)
-- [Glossary](architecture/glossary.md)
+- [EHCO AI-OS Governed Operational Architecture — Public Edition v1.8](dossiers/README.md)
 
-## Dossiers
+## System records
 
-Public dossiers and controlled public architecture releases are indexed in `dossiers/`.
+- [EHCO AI-OS Instantiated System](architecture/EHCO-AI-OS-INSTANTIATED-SYSTEM.md)
+- [Instantiated Proof Range](architecture/instantiated-proof-range.md)
+- [Ecosystem Components and Participation](architecture/ecosystem-components-and-participation.md)
+- [Proof and Status Classes](architecture/proof-and-status-classes.md)
 
-## Evidence
+## Public evidence
 
 - [Public Evidence Companion](evidence/README.md)
-- Packet manifests, receipts, verification results, claim records, and public boundaries are published under `evidence/public-evidence-companion/` as approved.
+- Versioned packet manifests, receipts, verification results, claim records, boundaries, source documents, and checksums are published under `evidence/public-evidence-companion/`.
 
-## Papers
+## Language-model finalization
 
-Publication-ready technical papers and monographs are indexed under `papers/`.
+- [EHCO Language-Model Finalization](language-model/README.md)
 
-## EHCO Insights
+## Public lineage
 
-- [Instantiated Governance Series](references/ehco-insights/instantiated-governance-series.md)
+EHCO Insights articles and external primary sources are indexed under `references/` as they are approved and released.
 
-## External references
+## Public IP
 
-Standards, legislation, incident reports, legal decisions, and technical sources are indexed under `references/external/`.
-
-## Presentations
-
-Approved public decks, technical presentations, talks, and visual explainers are indexed under `presentations/`.
-
-## Diagrams
-
-Publication-safe architecture diagrams are indexed under `diagrams/`.
-
-## Media
-
-Interviews, articles, videos, podcasts, press, and public coverage are indexed under `media/`.
-
-## History
-
-Public architectural milestones, publications, and releases are recorded under `history/`.
+The fixed public EHCOsystem IP portfolio is published under `ip/` in PDF form with valuation and protected implementation material removed.
 
 ## Release control
 
 - [Canonical Public Release Register](releases/PUBLIC-RELEASE-REGISTER.md)
-- Versioned public releases are recorded under `release-notes/`.
+- Versioned release notes, manifests, checksums, and fixed release artifacts are published under `release-notes/` and `releases/`.
 
-## Verification
+## Publication control
 
-- [Controlled Review Policy](verification/controlled-review-policy.md)
+- [Governance](GOVERNANCE.md)
+- [Security](SECURITY.md)
+- [Notice](NOTICE.md)
 
-## Boundary
+## Public boundary
 
-This library is the public record. Proprietary Runtime source, protected implementation mechanics, internal schemas, private control anchors, credentials, endpoints, and production infrastructure remain outside this repository unless expressly released by EHCOnomics.
+This library indexes approved public architecture, evidence, provenance, status, research, IP, and release artifacts. Proprietary source, protected implementation mechanics, private control anchors, credentials, endpoints, internal evidence locators, and production infrastructure remain in the controlled EHCO estate.
