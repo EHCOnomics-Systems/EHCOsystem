@@ -16,6 +16,9 @@ This page indexes the artifacts visibly published in the `EHCOsystem` repository
 ## System and proof records
 
 - [EHCO AI-OS Instantiated System](architecture/EHCO-AI-OS-INSTANTIATED-SYSTEM.md)
+- [EHCO AI-OS Public System Card](architecture/EHCO-AI-OS-SYSTEM-CARD.md)
+- [Governed Runtime Architecture](architecture/GOVERNED-RUNTIME-ARCHITECTURE.md)
+- [System Invariants](architecture/SYSTEM-INVARIANTS.md)
 - [Instantiated Proof Range](architecture/instantiated-proof-range.md)
 - [Ecosystem Components and Participation](architecture/ecosystem-components-and-participation.md)
 - [Proof and Status Classes](architecture/proof-and-status-classes.md)
