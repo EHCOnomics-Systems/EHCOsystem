@@ -1,12 +1,12 @@
 ---
 title: Start Here
-version: 1.4
+version: 1.5
 status: current-public-navigation
-published: 2026-08-05
+published: 2026-08-08
 maintainer: EHCOnomics
 evidence_class: navigation
 proof_ceiling: none; navigation only
-supersedes: version 1.3
+supersedes: version 1.4
 ---
 
 # Start Here
@@ -22,11 +22,14 @@ Controlled private repositories and their runtime-support folders are bounded te
 1. Read the [Runtime, Repository, and Test-Estate Boundary](../architecture/runtime-repository-and-test-estate-boundary.md).
 2. Open the [Canonical Public Dossier](../dossiers/README.md).
 3. Read the [EHCO AI-OS Instantiated System](../architecture/EHCO-AI-OS-INSTANTIATED-SYSTEM.md).
-4. Review the [Instantiated Proof Range](../architecture/instantiated-proof-range.md).
-5. Open the [Public Evidence Companion](../evidence/README.md).
-6. Review [Proof and Status Classes](../architecture/proof-and-status-classes.md).
-7. Review the [EHCO Language-Model System Boundary](../language-model/README.md).
-8. Continue into the [EHCOsystem Library](../LIBRARY.md).
+4. Read the [EHCO AI-OS Public System Card](../architecture/EHCO-AI-OS-SYSTEM-CARD.md).
+5. Review the [Governed Runtime Architecture](../architecture/GOVERNED-RUNTIME-ARCHITECTURE.md).
+6. Review the [System Invariants](../architecture/SYSTEM-INVARIANTS.md).
+7. Review the [Instantiated Proof Range](../architecture/instantiated-proof-range.md).
+8. Open the [Public Evidence Companion](../evidence/README.md).
+9. Review [Proof and Status Classes](../architecture/proof-and-status-classes.md).
+10. Review the [EHCO Language-Model System Boundary](../language-model/README.md).
+11. Continue into the [EHCOsystem Library](../LIBRARY.md).
 
 ## Packet interpretation
 
@@ -44,6 +47,7 @@ The accepted 52/53 standing baseline is an EHCOnomics-controlled operational sta
 
 | Version | Date | Change |
 |---|---|---|
+| 1.5 | 2026-08-08 | Added the accepted EHCO AI-OS System Card, Governed Runtime Architecture, and System Invariants to the canonical reading path. |
 | 1.4 | 2026-08-05 | Corrected the Runtime, repository, private test-estate, and packet interpretation boundary. |
 | 1.3 | 2026-08-05 | Replaced moving language-model finalization status with a stable public system boundary. |
 | 1.2 | 2026-08-05 | Clarified realized Runtime standing, packet-time provenance, and release status. |
