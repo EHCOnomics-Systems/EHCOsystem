@@ -1,10 +1,10 @@
 ---
 title: EHCO AI-OS Public System Invariants
-version: 1.0-draft
-status: proposed-public-reference
+version: 1.0
+status: accepted-public-reference
 published: 2026-08-08
 maintainer: EHCOnomics
-evidence_class: explanatory-public-architecture
+evidence_class: controlled-ehco-architecture
 proof_ceiling: public invariant reference; not implementation evidence or Runtime proof
 ---
 
