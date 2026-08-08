@@ -37,6 +37,9 @@ These values define the canonical identity of the first public EHCOsystem archit
 | Proprietary license | VISIBLE_CURRENTLY | `LICENSE` | Repository-use permissions and restrictions |
 | Notice | VISIBLE_CURRENTLY | `NOTICE.md` | Public purpose, evidence, IP, and implementation boundary |
 | EHCO AI-OS Instantiated System | VISIBLE_CURRENTLY | `architecture/EHCO-AI-OS-INSTANTIATED-SYSTEM.md` | Accepted controlled public system record |
+| EHCO AI-OS Public System Card | VISIBLE_CURRENTLY | `architecture/EHCO-AI-OS-SYSTEM-CARD.md` | Accepted controlled public architecture; explanatory synthesis only, not Runtime proof |
+| EHCO AI-OS Governed Runtime Architecture | VISIBLE_CURRENTLY | `architecture/GOVERNED-RUNTIME-ARCHITECTURE.md` | Accepted conceptual public architecture; not an implementation map or Runtime proof |
+| EHCO AI-OS Public System Invariants | VISIBLE_CURRENTLY | `architecture/SYSTEM-INVARIANTS.md` | Accepted public invariant reference; not implementation evidence or Runtime proof |
 | Instantiated Proof Range | VISIBLE_CURRENTLY | `architecture/instantiated-proof-range.md` | Accepted public proof-range record |
 | Ecosystem Components and Participation | VISIBLE_CURRENTLY | `architecture/ecosystem-components-and-participation.md` | Accepted public component record |
 | Proof and Status Classes | VISIBLE_CURRENTLY | `architecture/proof-and-status-classes.md` | Public proof/status distinctions |
