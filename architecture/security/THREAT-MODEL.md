@@ -1,7 +1,7 @@
 ---
 title: EHCO AI-OS Public Threat Model
 version: 1.0
-status: proposed-public-security-reference
+status: accepted-public-security-reference
 published: 2026-08-08
 maintainer: EHCOnomics
 evidence_class: controlled-ehco-architecture
