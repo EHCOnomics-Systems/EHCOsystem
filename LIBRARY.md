@@ -19,6 +19,7 @@ This page indexes the artifacts visibly published in the `EHCOsystem` repository
 - [EHCO AI-OS Public System Card](architecture/EHCO-AI-OS-SYSTEM-CARD.md)
 - [Governed Runtime Architecture](architecture/GOVERNED-RUNTIME-ARCHITECTURE.md)
 - [System Invariants](architecture/SYSTEM-INVARIANTS.md)
+- [Public Threat Model](architecture/security/THREAT-MODEL.md)
 - [Instantiated Proof Range](architecture/instantiated-proof-range.md)
 - [Ecosystem Components and Participation](architecture/ecosystem-components-and-participation.md)
 - [Proof and Status Classes](architecture/proof-and-status-classes.md)
@@ -31,13 +32,17 @@ This page indexes the artifacts visibly published in the `EHCOsystem` repository
 
 The assurance layer maps selected public claims to existing public sources and their existing proof ceilings. It creates no new Runtime proof, authority, standing, deployment state, or independent certification.
 
-## Public evidence
+## Public evidence and conformance
 
 - [Public Evidence Companion](evidence/README.md)
 - [Version 1 Packets 00-08](evidence/public-evidence-companion/v1/)
 - [Public Evidence Validation](verification/README.md)
+- [Public Conformance](verification/conformance/README.md)
+- [Public Black-Box Contracts](verification/conformance/PUBLIC-CONTRACTS.md)
 
 Packets 00-08 remain hash-preserved. Packet 02 binds packet-time runtime-support test/source artifacts, not a Runtime repository. Packet 06 is a historical bounded capture; packet-integrity `PASS` is not universal behavioral `PASS` or current Runtime state.
+
+The public conformance records define expected properties only. They do not claim that the Runtime, a private implementation, or a deployment has executed or passed those cases.
 
 ## Release and publication control
 
