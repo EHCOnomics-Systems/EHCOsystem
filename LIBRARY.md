@@ -24,6 +24,13 @@ This page indexes the artifacts visibly published in the `EHCOsystem` repository
 - [Proof and Status Classes](architecture/proof-and-status-classes.md)
 - [EHCO Language-Model System Boundary](language-model/README.md)
 
+## Public assurance
+
+- [Public Assurance Index](assurance/README.md)
+- [Claim → Evidence Matrix](assurance/CLAIM-EVIDENCE-MATRIX.md)
+
+The assurance layer maps selected public claims to existing public sources and their existing proof ceilings. It creates no new Runtime proof, authority, standing, deployment state, or independent certification.
+
 ## Public evidence
 
 - [Public Evidence Companion](evidence/README.md)
