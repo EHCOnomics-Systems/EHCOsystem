@@ -1,7 +1,7 @@
 ---
 title: EHCO AI-OS Public Black-Box Contracts
 version: 1.0
-status: proposed-public-conformance-reference
+status: accepted-public-conformance-reference
 published: 2026-08-08
 maintainer: EHCOnomics
 evidence_class: public-conformance-specification
