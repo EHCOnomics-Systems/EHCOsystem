@@ -20,7 +20,7 @@ The repository is not the EHCO AI-OS Runtime and does not hold Runtime authority
 
 ## System records
 
-- `architecture/` - public EHCO AI-OS system, proof range, ecosystem participation, proof/status, and Runtime/repository boundary records.
+- `architecture/` - public EHCO AI-OS system records, including the instantiated-system record, Public System Card, Governed Runtime Architecture, System Invariants, proof range, ecosystem participation, proof/status classes, and Runtime/repository boundary records.
 - `language-model/` - stable public boundary for the separately controlled language-model capability estate; it is not a live projection of private development state.
 
 ## Public evidence

@@ -31,11 +31,14 @@ The accepted 52/53 baseline is an EHCOnomics-controlled operational standing rec
 1. [Runtime, Repository, and Test-Estate Boundary](architecture/runtime-repository-and-test-estate-boundary.md)
 2. [Canonical Public Dossier](dossiers/README.md)
 3. [EHCO AI-OS Instantiated System](architecture/EHCO-AI-OS-INSTANTIATED-SYSTEM.md)
-4. [Instantiated Proof Range](architecture/instantiated-proof-range.md)
-5. [Public Evidence Companion](evidence/README.md)
-6. [Proof and Status Classes](architecture/proof-and-status-classes.md)
-7. [EHCO Language-Model System Boundary](language-model/README.md)
-8. [EHCOsystem Library](LIBRARY.md)
+4. [EHCO AI-OS Public System Card](architecture/EHCO-AI-OS-SYSTEM-CARD.md)
+5. [Governed Runtime Architecture](architecture/GOVERNED-RUNTIME-ARCHITECTURE.md)
+6. [System Invariants](architecture/SYSTEM-INVARIANTS.md)
+7. [Instantiated Proof Range](architecture/instantiated-proof-range.md)
+8. [Public Evidence Companion](evidence/README.md)
+9. [Proof and Status Classes](architecture/proof-and-status-classes.md)
+10. [EHCO Language-Model System Boundary](language-model/README.md)
+11. [EHCOsystem Library](LIBRARY.md)
 
 ## Canonical public record
 
