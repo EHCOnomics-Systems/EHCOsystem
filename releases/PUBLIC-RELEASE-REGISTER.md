@@ -44,6 +44,8 @@ These values define the canonical identity of the first public EHCOsystem archit
 | Ecosystem Components and Participation | VISIBLE_CURRENTLY | `architecture/ecosystem-components-and-participation.md` | Accepted public component record |
 | Proof and Status Classes | VISIBLE_CURRENTLY | `architecture/proof-and-status-classes.md` | Public proof/status distinctions |
 | Language-model system boundary | VISIBLE_CURRENTLY | `language-model/README.md` | Stable public system relationship only |
+| Public assurance index | VISIBLE_CURRENTLY | `assurance/README.md` | Assurance navigation only; no Runtime authority or proof effect |
+| Public Claim → Evidence Matrix | VISIBLE_CURRENTLY | `assurance/CLAIM-EVIDENCE-MATRIX.md` | Maps selected public claims to existing public sources and proof ceilings; creates no new Runtime proof |
 | Public dossier landing page | VISIBLE_CURRENTLY | `dossiers/README.md` | Dossier identity, navigation, and proof boundary |
 | Public dossier PDF | VISIBLE_CURRENTLY | `dossiers/EHCO_AI_OS_Governed_Operational_Architecture_Public_Edition_v1_8_LOCK_FINAL.pdf` | Controlled public architecture; SHA-256 `F489BA01961A12CF101B1F1DF57E6958456A0840BEB798B862FA97ACB030892D` |
 | Public Evidence Companion overview | VISIBLE_CURRENTLY | `evidence/README.md` | Navigation and current packet interpretation |
