@@ -1,7 +1,7 @@
 ---
 title: EHCO AI-OS Public Claim-Evidence Matrix
 version: 1.0
-status: proposed-public-assurance-reference
+status: accepted-public-assurance-reference
 published: 2026-08-08
 maintainer: EHCOnomics
 evidence_class: public-assurance-mapping
