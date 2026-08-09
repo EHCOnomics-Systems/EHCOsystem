@@ -40,6 +40,7 @@ These values define the canonical identity of the first public EHCOsystem archit
 | EHCO AI-OS Public System Card | VISIBLE_CURRENTLY | `architecture/EHCO-AI-OS-SYSTEM-CARD.md` | Accepted controlled public architecture; explanatory synthesis only, not Runtime proof |
 | EHCO AI-OS Governed Runtime Architecture | VISIBLE_CURRENTLY | `architecture/GOVERNED-RUNTIME-ARCHITECTURE.md` | Accepted conceptual public architecture; not an implementation map or Runtime proof |
 | EHCO AI-OS Public System Invariants | VISIBLE_CURRENTLY | `architecture/SYSTEM-INVARIANTS.md` | Accepted public invariant reference; not implementation evidence or Runtime proof |
+| EHCO AI-OS Public Threat Model | VISIBLE_CURRENTLY | `architecture/security/THREAT-MODEL.md` | Public threat classes, security objectives, mitigation categories, and conceptual trust boundaries only; not an implementation map or security certification |
 | Instantiated Proof Range | VISIBLE_CURRENTLY | `architecture/instantiated-proof-range.md` | Accepted public proof-range record |
 | Ecosystem Components and Participation | VISIBLE_CURRENTLY | `architecture/ecosystem-components-and-participation.md` | Accepted public component record |
 | Proof and Status Classes | VISIBLE_CURRENTLY | `architecture/proof-and-status-classes.md` | Public proof/status distinctions |
@@ -51,6 +52,8 @@ These values define the canonical identity of the first public EHCOsystem archit
 | Public Evidence Companion overview | VISIBLE_CURRENTLY | `evidence/README.md` | Navigation and current packet interpretation |
 | Public Evidence Companion Version 1 | VISIBLE_CURRENTLY | `evidence/public-evidence-companion/v1/` | Hash-preserved bounded evidence and verification surface |
 | Public validation | VISIBLE_CURRENTLY | `verification/` and `.github/workflows/validate-public-evidence.yml` | Repository integrity and semantic-boundary checks only |
+| Public conformance index | VISIBLE_CURRENTLY | `verification/conformance/README.md` | Navigation and conformance-result interpretation only; no Runtime proof effect |
+| Public Black-Box Contracts | VISIBLE_CURRENTLY | `verification/conformance/PUBLIC-CONTRACTS.md` | Expected public properties only; not evidence that a Runtime or implementation passed them |
 | Public release register | VISIBLE_CURRENTLY | `releases/PUBLIC-RELEASE-REGISTER.md` | Publication-state record only |
 
 ## Packet register
