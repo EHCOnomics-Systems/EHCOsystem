@@ -1,0 +1,38 @@
+name: Public documentation or evidence correction
+description: Report a bounded issue in public architecture, evidence, navigation, provenance, or verification records.
+title: "[Public record] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form for public-record corrections only. Do not publish vulnerabilities, secrets, private implementation details, private repository locators, credentials, privileged endpoints, or protected infrastructure information here.
+  - type: input
+    id: record
+    attributes:
+      label: Affected public record
+      description: Provide the public repository path or public URL.
+      placeholder: architecture/example.md
+    validations:
+      required: true
+  - type: textarea
+    id: issue
+    attributes:
+      label: What appears incorrect or unclear?
+      description: Describe the bounded public-record issue.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Public evidence or source
+      description: Identify the public source that supports the correction, if available.
+  - type: dropdown
+    id: effect
+    attributes:
+      label: Does this report claim a Runtime or standing change?
+      options:
+        - No
+        - Unsure — requires controlled review
+    validations:
+      required: true
