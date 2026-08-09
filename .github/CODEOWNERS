@@ -1,0 +1,13 @@
+# Public repository ownership
+* @ehconomics
+
+# Publication-sensitive records
+/architecture/ @ehconomics
+/assurance/ @ehconomics
+/evidence/ @ehconomics
+/releases/ @ehconomics
+/verification/ @ehconomics
+/SECURITY.md @ehconomics
+/GOVERNANCE.md @ehconomics
+/ehco.repository.yaml @ehconomics
+/.github/ @ehconomics
