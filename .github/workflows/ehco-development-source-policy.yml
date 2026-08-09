@@ -1,0 +1,28 @@
+name: EHCO Development Source Policy
+on: {pull_request: {}, push: {branches: [main]}, workflow_dispatch: {}}
+permissions: {contents: read}
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - name: Verify organization policy adoption
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p=json.loads(Path('.ehco/development-source-policy.json').read_text())
+          assert p['organization_policy']['revision']=='6649d92e48674fad93c0d7ca213344fbf43f3fb7'
+          assert p['default_source_order']==['GOOGLE_DRIVE','GIT_GITHUB']
+          assert p['other_source_mode']=='EXPLICIT_EDWARD_HENRY_INSTRUCTION_ONLY'
+          assert p['other_source_authorization_scope']=='EXACT_OPERATION_OR_QUESTION_ONLY'
+          assert p['unauthorized_source_fallback']=='PROHIBITED_FAIL_CLOSED'
+          assert p['durable_external_finding_promotion']=='GOOGLE_DRIVE_OR_GIT_REQUIRED'
+          assert p['local_override']=='MAY_TIGHTEN_NOT_WEAKEN'
+          assert p['model_private_or_backend_as_development_evidence']=='PROHIBITED'
+          assert p['accepted_ehco_standing']=='52/53'
+          a=Path('AGENTS.md').read_text()
+          for m in ('DEFAULT_DEVELOPMENT_SOURCE_1=GOOGLE_DRIVE','DEFAULT_DEVELOPMENT_SOURCE_2=GIT_GITHUB','OTHER_SOURCE_MODE=EXPLICIT_EDWARD_HENRY_INSTRUCTION_ONLY','OTHER_SOURCE_AUTHORIZATION_SCOPE=EXACT_OPERATION_OR_QUESTION_ONLY','UNAUTHORIZED_SOURCE_FALLBACK=PROHIBITED_FAIL_CLOSED','DURABLE_EXTERNAL_FINDING_PROMOTION=GOOGLE_DRIVE_OR_GIT_REQUIRED','LOCAL_OVERRIDE=MAY_TIGHTEN_NOT_WEAKEN','NOT_ESTABLISHED_FOR_DEVELOPMENT','6649d92e48674fad93c0d7ca213344fbf43f3fb7'):
+              assert m in a,m
+          assert '52/52' not in a
+          PY
