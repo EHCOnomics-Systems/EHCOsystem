@@ -1,17 +1,27 @@
 ---
 title: EHCOsystem Reading Order
-version: 1.4
+version: 1.5
 status: current-public-navigation
-published: 2026-08-08
+published: 2026-08-10
 maintainer: EHCOnomics
 evidence_class: navigation
 proof_ceiling: none; navigation only
-supersedes: version 1.3
+supersedes: version 1.4
 ---
 
 # Reading Order
 
-## Five-minute orientation
+## Technical diligence — recommended first for technical and security reviewers
+
+1. [Technical Diligence — Start Here](../TECHNICAL-DILIGENCE.md)
+2. [Packet 06 observed capture](../evidence/public-evidence-companion/v1/06_OBSERVED_LIVE_CAPTURE_AND_RELEASE_STATUS/06A_OBSERVED_LIVE_CAPTURE/OBSERVED_LIVE_CAPTURE.json)
+3. [Packet 03 authority-enforcement anchors](../evidence/public-evidence-companion/v1/03_TIER1_AUTHORITY_ENFORCEMENT/TIER1_AUTHORITY_ENFORCEMENT.json)
+4. [Packet 06 discrepancy and gap register](../evidence/public-evidence-companion/v1/06_OBSERVED_LIVE_CAPTURE_AND_RELEASE_STATUS/06C_DISCREPANCY_AND_GAP_REGISTER/DISCREPANCY_AND_GAP_REGISTER.json)
+5. [Public Claim → Evidence Matrix](../assurance/CLAIM-EVIDENCE-MATRIX.md)
+
+This route is designed to expose the bounded technical mechanism, observed behavior, implementation anchors, and current public evidence limits before the broader explanatory architecture.
+
+## Five-minute general orientation
 
 1. [Repository README](../README.md)
 2. [Runtime, Repository, and Test-Estate Boundary](../architecture/runtime-repository-and-test-estate-boundary.md)
@@ -34,12 +44,13 @@ supersedes: version 1.3
 13. [Public Evidence Companion](../evidence/README.md)
 14. [Canonical Public Release Register](../releases/PUBLIC-RELEASE-REGISTER.md)
 15. [Public Evidence Validation](../verification/README.md)
+16. [Public Documentation and Evidence Provenance](../PROVENANCE.md)
 
 ## Full index and use terms
 
-16. [EHCOsystem Library](../LIBRARY.md)
-17. [Repository Governance](../GOVERNANCE.md)
-18. [Proprietary Public Inspection License](../LICENSE)
+17. [EHCOsystem Library](../LIBRARY.md)
+18. [Repository Governance](../GOVERNANCE.md)
+19. [Proprietary Public Inspection License](../LICENSE)
 
 ## Status
 
@@ -49,6 +60,7 @@ This page establishes navigation only. Each linked artifact retains its own vers
 
 | Version | Date | Change |
 |---|---|---|
+| 1.5 | 2026-08-10 | Added a technical-diligence-first route and public provenance reference while preserving the broader architecture sequence. |
 | 1.4 | 2026-08-08 | Added the accepted EHCO AI-OS System Card, Governed Runtime Architecture, and System Invariants to the system-record sequence. |
 | 1.3 | 2026-08-05 | Made the Runtime/repository/test-estate boundary the first controlling record and added licensing and validation navigation. |
 | 1.2 | 2026-08-05 | Replaced moving language-model status with a stable public system boundary. |
