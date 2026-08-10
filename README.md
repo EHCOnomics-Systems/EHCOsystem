@@ -16,7 +16,7 @@ The shortest public diligence path is:
 2. **Packet 03 — implementation anchors:** exact source identities and named enforcement functions for authority admission, fail-closed behavior, manifest validation, release-gate construction, and freeze-gate evaluation.
 3. **Packet 06 gap register — evidence limits:** three direct unresolved discrepancies and five behavioral lanes not directly observed are retained explicitly rather than represented as passes.
 
-The public repository intentionally excludes the complete proprietary Runtime implementation. Qualified technical diligence can include controlled access to additional implementation and verification material under the applicable diligence process.
+The public repository intentionally excludes the complete proprietary Runtime implementation. Qualified technical diligence is evidence-first: it may use exact source/revision identities, hashes or digests, bounded execution records, reviewer-selected safe test cases, witnessed build or execution, written verification findings, and—only where materially necessary and specifically authorized—narrow supervised inspection that does not transfer the proprietary implementation.
 
 See also [Public Documentation and Evidence Provenance](PROVENANCE.md) for the distinction among explanatory/AI-assisted material, architecture, hash-bound evidence, observations, and repository verification tooling.
 
