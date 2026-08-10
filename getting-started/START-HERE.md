@@ -1,12 +1,12 @@
 ---
 title: Start Here
-version: 1.5
+version: 1.6
 status: current-public-navigation
-published: 2026-08-08
+published: 2026-08-10
 maintainer: EHCOnomics
 evidence_class: navigation
 proof_ceiling: none; navigation only
-supersedes: version 1.4
+supersedes: version 1.5
 ---
 
 # Start Here
@@ -17,7 +17,15 @@ EHCO AI-OS is the realized Tier 1 Runtime with accepted standing **52/53**. This
 
 Controlled private repositories and their runtime-support folders are bounded test, compatibility, source-comparison, packaging, deployment-support, and evidence-generation estates. They are not the Runtime. Their files matter only within the identity, integrity, declaration, test, observation, and proof scope expressly established by the applicable record.
 
-## Recommended path
+## If you are here for technical diligence
+
+Start with [Technical Diligence — Start Here](../TECHNICAL-DILIGENCE.md).
+
+That route puts the observed Packet 06 run first, pairs it with the exact Packet 03 implementation anchors, and points directly to Packet 06's unresolved discrepancies and unobserved negative-control lanes. It is intended to answer the technical-mechanism question before asking a reviewer to read the broader architecture estate.
+
+For documentation and evidence authorship/provenance distinctions, see [Public Documentation and Evidence Provenance](../PROVENANCE.md).
+
+## General recommended path
 
 1. Read the [Runtime, Repository, and Test-Estate Boundary](../architecture/runtime-repository-and-test-estate-boundary.md).
 2. Open the [Canonical Public Dossier](../dossiers/README.md).
@@ -47,6 +55,7 @@ The accepted 52/53 standing baseline is an EHCOnomics-controlled operational sta
 
 | Version | Date | Change |
 |---|---|---|
+| 1.6 | 2026-08-10 | Added a dedicated technical-diligence route and public documentation/evidence provenance reference while preserving the general architecture path. |
 | 1.5 | 2026-08-08 | Added the accepted EHCO AI-OS System Card, Governed Runtime Architecture, and System Invariants to the canonical reading path. |
 | 1.4 | 2026-08-05 | Corrected the Runtime, repository, private test-estate, and packet interpretation boundary. |
 | 1.3 | 2026-08-05 | Replaced moving language-model finalization status with a stable public system boundary. |
