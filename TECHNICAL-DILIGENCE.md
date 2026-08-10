@@ -75,11 +75,13 @@ It also lists five behavioral lanes that were not directly observed:
 
 These are presented as open evidence lanes, not as passes and not as evidence of failure.
 
-## 4. What is public and what is private
+## 4. What is public and what is protected
 
-This repository is a public architecture, evidence, provenance, verification, and publication surface. Complete proprietary Runtime implementation, protected control mechanics, credentials, active production infrastructure, and confidential proof material are intentionally excluded.
+This repository is a public architecture, evidence, provenance, verification, and publication surface. Complete proprietary Runtime implementation, private control logic, protected schemas, credentials, detailed deployment configuration, proprietary integration mechanics, bypass details, active production infrastructure, and confidential private-core evidence are intentionally excluded.
 
-For qualified technical diligence, EHCOnomics can provide controlled access to additional Runtime source and verification material under the applicable diligence process. The public evidence should be used to identify the exact implementation and behavioral questions to inspect in that private review.
+For qualified technical diligence, EHCOnomics may provide additional controlled verification material and, where necessary, narrowly scoped supervised inspection sufficient to establish a stated technical proposition. The default diligence method is evidence-first and non-transferable: exact source/revision identity, hashes or digests, bounded observed results, reviewer-selected safe test cases, witnessed build or execution where appropriate, and written verification findings. Source-code archives, repository clones, downloadable private implementation packages, credentials, protected schemas, and production topology are not part of the default diligence package.
+
+The public evidence should be used to identify the exact implementation and behavioral questions to test or verify in controlled review, not as an invitation to disclose the proprietary implementation itself.
 
 ## 5. Suggested reviewer path
 
