@@ -6,6 +6,20 @@ EHCO AI-OS is the realized Tier 1 Runtime of the EHCOsystem. Its accepted standi
 
 This GitHub repository is not the Runtime. It does not hold Runtime authority or authoritative Runtime state, and repository publication, commits, workflows, packets, manifests, tests, or public visibility do not independently create, promote, demote, calculate, revoke, or alter Runtime standing.
 
+## Technical diligence
+
+If you are evaluating the differentiated technical work, start with **[Technical Diligence — Start Here](TECHNICAL-DILIGENCE.md)** rather than reading the repository front to back.
+
+The shortest public diligence path is:
+
+1. **Packet 06 — observed behavior:** a hash-bound `local_live` capture records authority admission, packet/continuity/range/proof state, recovery quarantine, and bounded release/freeze gating. The raw capture records the configured LLM as **not invoked and not used** in that bounded run.
+2. **Packet 03 — implementation anchors:** exact source identities and named enforcement functions for authority admission, fail-closed behavior, manifest validation, release-gate construction, and freeze-gate evaluation.
+3. **Packet 06 gap register — evidence limits:** three direct unresolved discrepancies and five behavioral lanes not directly observed are retained explicitly rather than represented as passes.
+
+The public repository intentionally excludes the complete proprietary Runtime implementation. Qualified technical diligence can include controlled access to additional implementation and verification material under the applicable diligence process.
+
+See also [Public Documentation and Evidence Provenance](PROVENANCE.md) for the distinction among explanatory/AI-assisted material, architecture, hash-bound evidence, observations, and repository verification tooling.
+
 ## Runtime, repository, and test-estate boundary
 
 Controlled private repositories and their runtime-support folders contain bounded source, test, compatibility, packaging, deployment-support, and evidence-generation artifacts used to exercise and reproduce specified EHCO behavior. Those repositories, folders, and files are not the Runtime and are not authority locations.
@@ -26,7 +40,9 @@ The Public Evidence Companion preserves the identity, integrity, provenance, obs
 
 The accepted 52/53 baseline is an EHCOnomics-controlled operational standing record projected through the public evidence estate. Independent third-party certification is not claimed unless an identified public record expressly states it.
 
-## Start here
+## General reading path
+
+For broader architecture, governance, and publication context:
 
 1. [Runtime, Repository, and Test-Estate Boundary](architecture/runtime-repository-and-test-estate-boundary.md)
 2. [Canonical Public Dossier](dossiers/README.md)
@@ -56,6 +72,7 @@ Runtime realization remains distinct from production hosting, environment-specif
 - [Security and Responsible Disclosure](SECURITY.md)
 - [Proprietary Public Inspection License](LICENSE)
 - [Notice](NOTICE.md)
+- [Public Documentation and Evidence Provenance](PROVENANCE.md)
 
 Proprietary implementation mechanics, private control anchors, credentials, active endpoints, confidential proof records, and production infrastructure remain outside this public repository except where an approved hash-preserved evidence record expressly retains a bounded historical capture attribute.
 
