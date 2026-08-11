@@ -162,11 +162,14 @@ def validate_semantic_boundaries() -> None:
     # Hash-preserved Packets 00-08 are intentionally outside this scan.
     prohibited = {
         "deleted Runtime repository name": "ehco_runtime",
-        "private repository locator": "ehconomics/EHCO_AI-OS",
         "current-source-owner claim": "current canonical source owner for EHCO AI-OS",
         "pending Runtime promotion claim": "runtime promotion remains pending",
         "pending-promotion machine state": "source_current_runtime_promotion_pending",
     }
+    personal_repository_locator = re.compile(
+        r"\behconomics/[A-Za-z0-9_.-]+\b",
+        re.IGNORECASE,
+    )
     for relative, text in texts.items():
         lowered = text.lower()
         for label, phrase in prohibited.items():
@@ -174,6 +177,10 @@ def validate_semantic_boundaries() -> None:
                 phrase.lower() not in lowered,
                 f"Prohibited {label} in current public text: {relative}",
             )
+        checked(
+            personal_repository_locator.search(text) is None,
+            f"Prohibited personal-account repository locator in current public text: {relative}",
+        )
 
     boundary = texts["architecture/runtime-repository-and-test-estate-boundary.md"]
     required_boundary_statements = [
