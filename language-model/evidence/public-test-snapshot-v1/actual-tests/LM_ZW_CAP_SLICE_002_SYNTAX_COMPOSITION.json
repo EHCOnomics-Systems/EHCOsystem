@@ -1,0 +1,18 @@
+{
+  "schema": "EHCO_ZERO_WEIGHT_CAPABILITY_SLICE_FIXTURE_V1",
+  "operation_id": "LM-ZW-CAP-SLICE-002",
+  "purpose": "SYNTAX_COMPOSITION_BOUNDED_CAPABILITY_PROBES_ONLY",
+  "cases": [
+    {"case_id":"syntax-pass-singular","probe":"syntax","input":{"surface":"the cat walks","locale":"en"},"expected":{"disposition":"PASS","failure_class":null}},
+    {"case_id":"syntax-pass-plural","probe":"syntax","input":{"surface":"the cats walk","locale":"en"},"expected":{"disposition":"PASS","failure_class":null}},
+    {"case_id":"syntax-retain-number-ambiguity","probe":"syntax","input":{"surface":"the sheep went","locale":"en"},"expected":{"disposition":"RETAIN_AMBIGUITY","failure_class":"MISSING_DISAMBIGUATION_RULE"}},
+    {"case_id":"syntax-withhold-agreement","probe":"syntax","input":{"surface":"the cat walk","locale":"en"},"expected":{"disposition":"WITHHOLD","failure_class":"MISSING_COMPOSITION_RULE"}},
+    {"case_id":"syntax-withhold-locale","probe":"syntax","input":{"surface":"the cat walks","locale":"fr-FR"},"expected":{"disposition":"WITHHOLD","failure_class":"GENERALIZATION_NOT_ESTABLISHED"}},
+    {"case_id":"composition-pass-declarative","probe":"composition","input":{"surface":"the city walks","locale":"en"},"expected":{"disposition":"PASS","failure_class":null}},
+    {"case_id":"composition-pass-imperative","probe":"composition","input":{"surface":"walk","locale":"en"},"expected":{"disposition":"PASS","failure_class":null}},
+    {"case_id":"composition-retain-number-ambiguity","probe":"composition","input":{"surface":"the sheep went","locale":"en"},"expected":{"disposition":"RETAIN_AMBIGUITY","failure_class":"MISSING_DISAMBIGUATION_RULE"}},
+    {"case_id":"composition-withhold-syntax-failure","probe":"composition","input":{"surface":"the cat walk","locale":"en"},"expected":{"disposition":"WITHHOLD","failure_class":"MISSING_COMPOSITION_RULE"}},
+    {"case_id":"composition-withhold-locale","probe":"composition","input":{"surface":"the city walks","locale":"fr-FR"},"expected":{"disposition":"WITHHOLD","failure_class":"GENERALIZATION_NOT_ESTABLISHED"}},
+    {"case_id":"unsupported-probe-fails-typed","probe":"unknown","input":{"surface":"the cat walks","locale":"en"},"expected":{"disposition":"CAPABILITY_FAILURE","failure_class":"MISSING_REPRESENTATION"}}
+  ]
+}

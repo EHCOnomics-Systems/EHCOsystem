@@ -1,0 +1,13 @@
+{
+  "schema": "EHCO_ZERO_WEIGHT_CAPABILITY_EVALUATION_FIXTURE_V1",
+  "operation_id": "LM-ZW-CAP-SLICE-008",
+  "cases": [
+    {"case_id":"unseen-known-lexemes-1","probe":"unseen_construction","input":{"locale":"en","surface":"the cat went"},"expected":{"disposition":"WITHHOLD","failure_class":"GENERALIZATION_NOT_ESTABLISHED"}},
+    {"case_id":"unseen-known-lexemes-2","probe":"unseen_construction","input":{"locale":"en","surface":"the city went"},"expected":{"disposition":"WITHHOLD","failure_class":"GENERALIZATION_NOT_ESTABLISHED"}},
+    {"case_id":"unseen-known-lexemes-3","probe":"unseen_construction","input":{"locale":"en","surface":"the sheep walks"},"expected":{"disposition":"WITHHOLD","failure_class":"GENERALIZATION_NOT_ESTABLISHED"}},
+    {"case_id":"registered-surface-not-generalization-proof","probe":"unseen_construction","input":{"locale":"en","surface":"the cat walks"},"expected":{"disposition":"WITHHOLD","failure_class":"GENERALIZATION_NOT_ESTABLISHED"}},
+    {"case_id":"missing-surface","probe":"unseen_construction","input":{"locale":"en","surface":""},"expected":{"disposition":"WITHHOLD","failure_class":"MISSING_EVIDENCE_INPUT"}},
+    {"case_id":"unsupported-locale","probe":"unseen_construction","input":{"locale":"fr","surface":"le chat marche"},"expected":{"disposition":"WITHHOLD","failure_class":"GENERALIZATION_NOT_ESTABLISHED"}},
+    {"case_id":"unknown-probe","probe":"productive_grammar","input":{"locale":"en","surface":"the cat went"},"expected":{"disposition":"CAPABILITY_FAILURE","failure_class":"MISSING_REPRESENTATION"}}
+  ]
+}

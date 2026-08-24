@@ -1,0 +1,78 @@
+{
+  "schema": "EHCO_ZERO_WEIGHT_WHOLE_PATH_COMPOSITIONAL_EVALUATION_FIXTURE_V1",
+  "operation_id": "LM-ZW-WHOLE-PATH-COMPOSITIONAL-EVAL-001",
+  "cases": [
+    {
+      "case_id": "WPATH-001-ALL-PASS",
+      "stages": {
+        "lexical_identity": {"case_id": "w1-lex", "probe": "morphology", "input": {"surface": "cats", "locale": "en"}},
+        "sense": {"case_id": "w1-sense", "probe": "sense", "input": {"surface": "cat", "locale": "en"}},
+        "syntax": {"case_id": "w1-syntax", "probe": "syntax", "input": {"surface": "the cat walks", "locale": "en"}},
+        "semantic_composition": {"case_id": "w1-sem", "probe": "composition", "input": {"surface": "the city walks", "locale": "en"}},
+        "reference_context": {"case_id": "w1-context", "probe": "context", "input": {"surface": "the cat walks", "context_id": "ehco:lk:ehco.lk.lb05:context:fixture-report@1.0.0", "locale": "en"}},
+        "deterministic_relations_language_math": {"case_id": "w1-math", "probe": "md4_bounded_language_math", "input": {"statements": ["prove x plus 0 equals x"]}}
+      },
+      "expected": {"disposition": "PASS", "failure_class": null, "first_failure_stage": null, "evaluated_stage_count": 7}
+    },
+    {
+      "case_id": "WPATH-002-LEXICAL-AMBIGUITY",
+      "stages": {
+        "lexical_identity": {"case_id": "w2-lex", "probe": "morphology", "input": {"surface": "sheep", "locale": "en"}},
+        "sense": {"case_id": "w2-sense", "probe": "sense", "input": {"surface": "cat", "locale": "en"}},
+        "syntax": {"case_id": "w2-syntax", "probe": "syntax", "input": {"surface": "the cat walks", "locale": "en"}},
+        "semantic_composition": {"case_id": "w2-sem", "probe": "composition", "input": {"surface": "the city walks", "locale": "en"}},
+        "reference_context": {"case_id": "w2-context", "probe": "context", "input": {"surface": "the cat walks", "context_id": "ehco:lk:ehco.lk.lb05:context:fixture-report@1.0.0", "locale": "en"}},
+        "deterministic_relations_language_math": {"case_id": "w2-math", "probe": "md4_bounded_language_math", "input": {"statements": ["prove x plus 0 equals x"]}}
+      },
+      "expected": {"disposition": "RETAIN_AMBIGUITY", "failure_class": "MISSING_DISAMBIGUATION_RULE", "first_failure_stage": "lexical_identity", "evaluated_stage_count": 1}
+    },
+    {
+      "case_id": "WPATH-003-SYNTAX-FAILURE",
+      "stages": {
+        "lexical_identity": {"case_id": "w3-lex", "probe": "morphology", "input": {"surface": "cats", "locale": "en"}},
+        "sense": {"case_id": "w3-sense", "probe": "sense", "input": {"surface": "cat", "locale": "en"}},
+        "syntax": {"case_id": "w3-syntax", "probe": "syntax", "input": {"surface": "the cat walk", "locale": "en"}},
+        "semantic_composition": {"case_id": "w3-sem", "probe": "composition", "input": {"surface": "the city walks", "locale": "en"}},
+        "reference_context": {"case_id": "w3-context", "probe": "context", "input": {"surface": "the cat walks", "context_id": "ehco:lk:ehco.lk.lb05:context:fixture-report@1.0.0", "locale": "en"}},
+        "deterministic_relations_language_math": {"case_id": "w3-math", "probe": "md4_bounded_language_math", "input": {"statements": ["prove x plus 0 equals x"]}}
+      },
+      "expected": {"disposition": "WITHHOLD", "failure_class": "MISSING_COMPOSITION_RULE", "first_failure_stage": "syntax", "evaluated_stage_count": 3}
+    },
+    {
+      "case_id": "WPATH-004-REFERENCE-FAILURE",
+      "stages": {
+        "lexical_identity": {"case_id": "w4-lex", "probe": "morphology", "input": {"surface": "cats", "locale": "en"}},
+        "sense": {"case_id": "w4-sense", "probe": "sense", "input": {"surface": "cat", "locale": "en"}},
+        "syntax": {"case_id": "w4-syntax", "probe": "syntax", "input": {"surface": "the cat walks", "locale": "en"}},
+        "semantic_composition": {"case_id": "w4-sem", "probe": "composition", "input": {"surface": "the city walks", "locale": "en"}},
+        "reference_context": {"case_id": "w4-context", "probe": "context", "input": {"surface": "walk", "context_id": "ehco:lk:ehco.lk.lb05:context:fixture-report@1.0.0", "locale": "en"}},
+        "deterministic_relations_language_math": {"case_id": "w4-math", "probe": "md4_bounded_language_math", "input": {"statements": ["prove x plus 0 equals x"]}}
+      },
+      "expected": {"disposition": "WITHHOLD", "failure_class": "MISSING_REFERENCE_RESOLUTION", "first_failure_stage": "reference_context", "evaluated_stage_count": 5}
+    },
+    {
+      "case_id": "WPATH-005-MATH-REPRESENTATION-FAILURE",
+      "stages": {
+        "lexical_identity": {"case_id": "w5-lex", "probe": "morphology", "input": {"surface": "cats", "locale": "en"}},
+        "sense": {"case_id": "w5-sense", "probe": "sense", "input": {"surface": "cat", "locale": "en"}},
+        "syntax": {"case_id": "w5-syntax", "probe": "syntax", "input": {"surface": "the cat walks", "locale": "en"}},
+        "semantic_composition": {"case_id": "w5-sem", "probe": "composition", "input": {"surface": "the city walks", "locale": "en"}},
+        "reference_context": {"case_id": "w5-context", "probe": "context", "input": {"surface": "the cat walks", "context_id": "ehco:lk:ehco.lk.lb05:context:fixture-report@1.0.0", "locale": "en"}},
+        "deterministic_relations_language_math": {"case_id": "w5-math", "probe": "symbolic_surface", "input": {"statements": ["prove 2 + 2 equals 4"]}}
+      },
+      "expected": {"disposition": "WITHHOLD", "failure_class": "MISSING_REPRESENTATION", "first_failure_stage": "deterministic_relations_language_math", "evaluated_stage_count": 6}
+    },
+    {
+      "case_id": "WPATH-006-TYPED-CAPABILITY-FAILURE",
+      "stages": {
+        "lexical_identity": {"case_id": "w6-lex", "probe": "morphology", "input": {"surface": "cats", "locale": "en"}},
+        "sense": {"case_id": "w6-sense", "probe": "sense", "input": {"surface": "cat", "locale": "en"}},
+        "syntax": {"case_id": "w6-syntax", "probe": "syntax", "input": {"surface": "the cat walks", "locale": "en"}},
+        "semantic_composition": {"case_id": "w6-sem", "probe": "composition", "input": {"surface": "the city walks", "locale": "en"}},
+        "reference_context": {"case_id": "w6-context", "probe": "context", "input": {"surface": "the cat walks", "context_id": "ehco:lk:ehco.lk.lb05:context:fixture-report@1.0.0", "locale": "en"}},
+        "deterministic_relations_language_math": {"case_id": "w6-math", "probe": "unsupported_probe", "input": {}}
+      },
+      "expected": {"disposition": "CAPABILITY_FAILURE", "failure_class": "MISSING_REPRESENTATION", "first_failure_stage": "deterministic_relations_language_math", "evaluated_stage_count": 6}
+    }
+  ]
+}

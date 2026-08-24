@@ -1,11 +1,11 @@
 ---
 title: EHCO Language-Model System Boundary
-version: 1.2
+version: 1.3
 status: current-public-system-boundary
-published: 2026-08-05
+published: 2026-08-24
 maintainer: EHCOnomics
 evidence_class: controlled-ehco-system-record
-supersedes: version 1.1
+supersedes: version 1.2
 ---
 
 # EHCO Language-Model System Boundary
@@ -37,6 +37,14 @@ The public record establishes only the stable system relationship:
 - EHCO RAG participates through governed source, context, retrieval, evidence, and release boundaries;
 - private language-model progress does not independently change the realized EHCO AI-OS Runtime standing.
 
+## Frozen public test snapshot
+
+A bounded public test snapshot is available at [Language Model Public Test Snapshot v1](evidence/public-test-snapshot-v1/README.md).
+
+That snapshot publishes selected actual synthetic repository test fixtures whose public artifact identities were verified against their controlled source artifacts at publication review. It also contains a dated public-safe index of selected qualification test names and dimensions for cases where publishing the complete executable harness would disclose protected implementation details.
+
+The snapshot is evidence of the selected test artifacts and test design within its stated proof ceiling. It is not a live projection of private development state, not an external benchmark, not independent certification, not a claim of global language completeness, and not Runtime admission or Runtime-state evidence.
+
 ## EHCO RAG relationship
 
 EHCO RAG provides governed retrieval capability for language-model participation. Retrieval does not become authority merely because information is found, ranked, or supplied to a model.
@@ -52,11 +60,13 @@ No detailed language-model development status should be inferred from this page.
 - [Instantiated Proof Range](../architecture/instantiated-proof-range.md)
 - [Ecosystem Components and Participation](../architecture/ecosystem-components-and-participation.md)
 - [Public Evidence Companion](../evidence/README.md)
+- [Language Model Public Test Snapshot v1](evidence/public-test-snapshot-v1/README.md)
 
 ## Revision history
 
 | Version | Date | Change |
 |---|---|---|
+| 1.3 | 2026-08-24 | Added a bounded frozen public test snapshot without projecting moving private development state. |
 | 1.2 | 2026-08-05 | Separated language-model repositories, test artifacts, and model output from Runtime identity and authority. |
 | 1.1 | 2026-08-05 | Replaced the dated private-development projection with a stable public system boundary. |
 | 1.0 | 2026-08-04 | Initial public language-model finalization record. |

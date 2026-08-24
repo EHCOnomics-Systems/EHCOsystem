@@ -1,0 +1,62 @@
+{
+  "schema": "EHCO_PUBLIC_LANGUAGE_MODEL_TEST_SNAPSHOT_MANIFEST_V1",
+  "snapshot_id": "EHCO-LM-PUBLIC-TEST-SNAPSHOT-V1",
+  "source_review_date": "2026-08-24",
+  "evidence_class": "BOUNDED_TEST_ARTIFACT_IDENTITY_AND_PUBLIC_TEST_DESIGN",
+  "fixture_count": 7,
+  "case_count": 62,
+  "copy_rule": "EACH_LISTED_PUBLIC_FIXTURE_GIT_BLOB_IDENTITY_MATCHED_ITS_CONTROLLED_SOURCE_ARTIFACT_AT_PUBLICATION_REVIEW",
+  "proof_ceiling": [
+    "SELECTED_ACTUAL_EHCO_REPOSITORY_TEST_FIXTURE_IDENTITY",
+    "SELECTED_TEST_INPUT_AND_EXPECTED_DISPOSITION_TRANSPARENCY",
+    "NO_EXTERNAL_BENCHMARK_CLAIM",
+    "NO_INDEPENDENT_CERTIFICATION_CLAIM",
+    "NO_GLOBAL_LANGUAGE_COMPLETENESS_CLAIM",
+    "NO_RUNTIME_ADMISSION_OR_AUTHORITY_CLAIM",
+    "NO_CURRENT_RUNTIME_STATE_CLAIM"
+  ],
+  "fixtures": [
+    {
+      "path": "actual-tests/LM_ZW_CAP_SLICE_001_LEXICAL_MORPHOLOGY.json",
+      "case_count": 8,
+      "git_blob_sha1": "c30b4a522963e5d63dec4d2171b33ce570bbc411",
+      "scope": "lexical identity, morphology, sense, ambiguity, withholding and locale boundary"
+    },
+    {
+      "path": "actual-tests/LM_ZW_CAP_SLICE_002_SYNTAX_COMPOSITION.json",
+      "case_count": 11,
+      "git_blob_sha1": "cc0a690dc57dfb5c44123c6668d2c9c1eb1b2fbb",
+      "scope": "syntax, semantic composition, agreement, ambiguity, withholding and typed unsupported probes"
+    },
+    {
+      "path": "actual-tests/LM_ZW_CAP_SLICE_003_REFERENCE_CONTEXT.json",
+      "case_count": 11,
+      "git_blob_sha1": "501e73dad98927165cba83e00d361b770b44afdf",
+      "scope": "reference, context, two-utterance inputs, ambiguity, missing resolution and locale boundary"
+    },
+    {
+      "path": "actual-tests/LM_ZW_CAP_SLICE_004_AMBIGUITY_WITHHOLDING.json",
+      "case_count": 9,
+      "git_blob_sha1": "263f4bcf505d3f99c5f16918fdef8406456be775",
+      "scope": "deterministic disposition precedence, ambiguity retention, withholding and fail-closed unsupported adapters"
+    },
+    {
+      "path": "actual-tests/LM_ZW_CAP_SLICE_008_UNSEEN_CONSTRUCTIONS.json",
+      "case_count": 7,
+      "git_blob_sha1": "30d063bc4a44acab532102f4dfa2288376badd0e",
+      "scope": "historical unseen-construction and generalization boundary negative controls"
+    },
+    {
+      "path": "actual-tests/LM_ZW_CAP_SLICE_012_MATHEMATICAL_LANGUAGE.json",
+      "case_count": 10,
+      "git_blob_sha1": "535695ec27b5324e974f704b6a7edcc7b3ffc793",
+      "scope": "bounded mathematical language, unsupported surfaces, evidence eligibility and typed failure"
+    },
+    {
+      "path": "actual-tests/LM_ZW_WHOLE_PATH_COMPOSITIONAL_EVAL_001.json",
+      "case_count": 6,
+      "git_blob_sha1": "caaac9e61724b75090b8e40876685bc353e5a47a",
+      "scope": "whole-path lexical, sense, syntax, semantic composition, reference/context, deterministic language math and candidate-resolution disposition"
+    }
+  ]
+}
