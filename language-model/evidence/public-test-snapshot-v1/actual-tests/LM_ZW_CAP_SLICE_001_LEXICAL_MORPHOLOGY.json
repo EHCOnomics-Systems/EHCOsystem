@@ -1,0 +1,15 @@
+{
+  "schema": "EHCO_ZERO_WEIGHT_LEXICAL_MORPHOLOGY_FIXTURE_V1",
+  "operation_id": "LM-ZW-CAP-SLICE-001",
+  "purpose": "FIRST_STEP4_SLICE_ONLY",
+  "cases": [
+    {"case_id":"lmzw-s1-001","probe":"morphology","input":{"surface":"cats","locale":"en"},"expected_disposition":"PASS","expected_candidate_count":1,"expected_failure_class":null},
+    {"case_id":"lmzw-s1-002","probe":"morphology","input":{"surface":"sheep","locale":"en"},"expected_disposition":"RETAIN_AMBIGUITY","expected_candidate_count":2,"expected_failure_class":"MISSING_DISAMBIGUATION_RULE"},
+    {"case_id":"lmzw-s1-003","probe":"morphology","input":{"surface":"dogs","locale":"en"},"expected_disposition":"WITHHOLD","expected_candidate_count":0,"expected_failure_class":"MISSING_REPRESENTATION"},
+    {"case_id":"lmzw-s1-004","probe":"morphology","input":{"surface":"cats","locale":"fr-FR"},"expected_disposition":"WITHHOLD","expected_candidate_count":0,"expected_failure_class":"GENERALIZATION_NOT_ESTABLISHED"},
+    {"case_id":"lmzw-s1-005","probe":"sense","input":{"surface":"cat","locale":"en"},"expected_disposition":"PASS","expected_candidate_count":1,"expected_failure_class":null},
+    {"case_id":"lmzw-s1-006","probe":"sense","input":{"surface":"café","locale":"en"},"expected_disposition":"RETAIN_AMBIGUITY","expected_candidate_count":2,"expected_failure_class":"MISSING_DISAMBIGUATION_RULE"},
+    {"case_id":"lmzw-s1-007","probe":"sense","input":{"surface":"dog","locale":"en"},"expected_disposition":"WITHHOLD","expected_candidate_count":0,"expected_failure_class":"MISSING_REPRESENTATION"},
+    {"case_id":"lmzw-s1-008","probe":"sense","input":{"surface":"cat","locale":"fr-FR"},"expected_disposition":"WITHHOLD","expected_candidate_count":0,"expected_failure_class":"GENERALIZATION_NOT_ESTABLISHED"}
+  ]
+}
