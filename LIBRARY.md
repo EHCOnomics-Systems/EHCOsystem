@@ -28,11 +28,11 @@ This page indexes the current public records visibly published in `EHCOsystem`.
 - [EHCO AI-OS Public System Card](architecture/EHCO-AI-OS-SYSTEM-CARD.md)
 - [Governed Runtime Architecture](architecture/GOVERNED-RUNTIME-ARCHITECTURE.md)
 - [Instantiated Proof Range](architecture/instantiated-proof-range.md)
-- [Ecosystem Components and Participation](architecture/ecosystem-components-and-participation.md)
+- [Ecosystem Components and Runtime Relationships](architecture/ecosystem-components-and-participation.md)
 
 ## Component architecture and evidence
 
-- [EHCO Language Model System Boundary](language-model/README.md)
+- [EHCO Language Model](language-model/README.md)
 - [Language Model Public Test Snapshot v1](language-model/evidence/public-test-snapshot-v1/README.md)
 
 ## Public assurance

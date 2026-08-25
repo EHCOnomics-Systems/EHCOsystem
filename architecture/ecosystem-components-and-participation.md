@@ -1,7 +1,7 @@
 ---
 title: Ecosystem Components and Runtime Relationships
 version: 2.0
-status: public-system-architecture-candidate
+status: current-public-system-architecture
 published: 2026-08-25
 maintainer: EHCOnomics
 evidence_class: controlled-ehco-system-record
@@ -10,13 +10,13 @@ supersedes: version 1.2
 
 # Ecosystem Components and Runtime Relationships
 
-The EHCOsystem separates persistent component identity from Runtime participation. **EHCO AI-OS** is the Tier One Runtime system identity. Tier Two software identities are **downstream governed components**. A Runtime participation relationship is separate and is asserted only where owning Runtime evidence establishes it for a scoped corridor.
+The EHCOsystem separates persistent component identity from Runtime participation. **EHCO AI-OS is the realized Tier One Runtime system identity.** Tier Two software identities are **downstream governed components**. A Runtime participation relationship is separate and is asserted only where owning Runtime evidence establishes it for a scoped corridor.
 
 ## Tier One
 
 ### EHCO AI-OS
 
-EHCO AI-OS is the governing Runtime foundation with accepted standing baseline **52/53**. It owns the governing relationships for authority, admission, recognized state, transition, consequence, persistence, correction/recovery, withholding/release, and Runtime-originated proof.
+EHCO AI-OS is the realized Tier One Runtime and governing foundation with accepted standing baseline **52/53**. It owns the governing relationships for authority, admission, recognized state, transition, consequence, persistence, correction/recovery, withholding/release, and Runtime-originated proof.
 
 ## Downstream governed components
 

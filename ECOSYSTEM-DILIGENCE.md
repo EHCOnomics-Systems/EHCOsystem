@@ -1,7 +1,7 @@
 ---
 title: EHCOnomics Ecosystem Technical Diligence
 version: 1.0
-status: public-diligence-navigation-candidate
+status: current-public-diligence-navigation
 published: 2026-08-25
 maintainer: EHCOnomics
 evidence_class: navigation-and-bounded-technical-summary
@@ -25,7 +25,7 @@ The existing [EHCO AI-OS Technical Diligence](TECHNICAL-DILIGENCE.md) route rema
 
 ### 1. Governing foundation
 
-Review EHCO AI-OS as the Tier One Runtime foundation, then use the Technology Estate to see how downstream governed components own separate computational and application functions.
+Review EHCO AI-OS as the **realized Tier One Runtime**, then use the Technology Estate to see how downstream governed components own separate computational and application functions.
 
 ### 2. Computational ownership
 

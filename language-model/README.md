@@ -41,6 +41,7 @@ For the controlling Runtime/repository/test-estate interpretation, see the [cano
 - [EHCOnomics Technology Estate](../architecture/EHCO-TECHNOLOGY-ESTATE.md)
 - [Language Model Public Test Snapshot v1](evidence/public-test-snapshot-v1/README.md)
 - [Ecosystem Claim → Evidence Matrix](../assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md)
+- [Ecosystem Components and Runtime Relationships](../architecture/ecosystem-components-and-participation.md)
 - [EHCO AI-OS Technical Diligence](../TECHNICAL-DILIGENCE.md)
 
 ## Revision history

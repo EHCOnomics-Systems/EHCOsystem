@@ -2,7 +2,7 @@
 
 **Public architecture, technical evidence, provenance, research, and verification for the EHCOnomics technology estate.**
 
-EHCOnomics is organized as a governed computational technology estate. **EHCO AI-OS** provides the Tier One Runtime foundation. **Downstream governed components** own distinct language, range/reasoning, retrieval/evidence, memory/continuity, relationship, coordination, research, and domain-application capabilities. **Tier Three** provides interfaces and public-safe projections.
+EHCOnomics is organized as a governed computational technology estate. **EHCO AI-OS is the realized Tier One Runtime** of the EHCOsystem and provides its governing Runtime foundation. **Downstream governed components** own distinct language, range/reasoning, retrieval/evidence, memory/continuity, relationship, coordination, research, and domain-application capabilities. **Tier Three** provides interfaces and public-safe projections.
 
 The purpose of this repository is to make that architecture and selected underlying technical evidence inspectable without turning the public repository into the proprietary implementation itself.
 
@@ -40,7 +40,7 @@ For the focused EHCO AI-OS Tier One architecture, implementation-anchor, and bou
 
 ### Tier One Runtime foundation
 
-**EHCO AI-OS** — governing Runtime foundation for authority, scope, recognized state, transition, consequence, continuity, persistence, withholding/release, correction/recovery, and Runtime-originated proof relationships.
+**EHCO AI-OS** — realized Tier One Runtime and governing foundation for authority, scope, recognized state, transition, consequence, continuity, persistence, withholding/release, correction/recovery, and Runtime-originated proof relationships.
 
 ### Computational and evidence foundations
 

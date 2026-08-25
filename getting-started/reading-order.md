@@ -53,5 +53,5 @@ The detailed Runtime/repository/test-estate interpretation is centralized in the
 
 | Version | Date | Change |
 |---|---|---|
-| 2.0 | 2026-08-25 | Added estate-first and ecosystem evidence routes while preserving the focused AI-OS diligence path. |
+| 2.0 | 2026-08-25 | Added estate-first and ecosystem evidence/diligence routes while preserving the focused AI-OS diligence path. |
 | 1.5 | 2026-08-10 | Added technical-diligence-first navigation and provenance reference. |

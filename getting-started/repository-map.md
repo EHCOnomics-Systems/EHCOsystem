@@ -44,4 +44,4 @@ This map identifies the role of each section visibly present in the public `EHCO
 - Tag: `v1.0.0-public`
 - Release title: `EHCOsystem Public Architecture and Evidence Baseline v1.0.0`
 
-These values define the canonical public release identity. They do not by themselves assert that a GitHub Release has been published; the GitHub Releases surface determines live publication state.
+These values define the canonical public release identity. They do not by themselves assert that a GitHub Release has been published. The GitHub Releases surface determines live publication state.
