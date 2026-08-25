@@ -38,18 +38,22 @@ EXPECTED_PACKETS = [
 CURRENT_PUBLIC_TEXT = [
     "README.md",
     "LIBRARY.md",
+    "ECOSYSTEM-DILIGENCE.md",
     "GOVERNANCE.md",
     "SECURITY.md",
     "NOTICE.md",
     "getting-started/START-HERE.md",
     "getting-started/reading-order.md",
     "getting-started/repository-map.md",
+    "architecture/EHCO-TECHNOLOGY-ESTATE.md",
     "architecture/EHCO-AI-OS-INSTANTIATED-SYSTEM.md",
     "architecture/instantiated-proof-range.md",
     "architecture/ecosystem-components-and-participation.md",
     "architecture/proof-and-status-classes.md",
     "architecture/runtime-repository-and-test-estate-boundary.md",
     "language-model/README.md",
+    "assurance/README.md",
+    "assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md",
     "dossiers/README.md",
     "evidence/README.md",
     "verification/README.md",
@@ -158,8 +162,6 @@ def validate_required_public_controls() -> None:
 def validate_semantic_boundaries() -> None:
     texts = {relative: read_public_text(relative) for relative in CURRENT_PUBLIC_TEXT}
 
-    # These phrases are prohibited in current public interpretation documents.
-    # Hash-preserved Packets 00-08 are intentionally outside this scan.
     prohibited = {
         "deleted Runtime repository name": "ehco_runtime",
         "current-source-owner claim": "current canonical source owner for EHCO AI-OS",
@@ -196,15 +198,39 @@ def validate_semantic_boundaries() -> None:
             f"Boundary record missing required statement: {statement}",
         )
 
-    readme = texts["README.md"]
+    required_navigation_links = {
+        "README.md": [
+            "architecture/EHCO-TECHNOLOGY-ESTATE.md",
+            "assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md",
+            "ECOSYSTEM-DILIGENCE.md",
+            "architecture/runtime-repository-and-test-estate-boundary.md",
+            "(LICENSE)",
+        ],
+        "getting-started/START-HERE.md": [
+            "../architecture/EHCO-TECHNOLOGY-ESTATE.md",
+            "../assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md",
+            "../ECOSYSTEM-DILIGENCE.md",
+            "../TECHNICAL-DILIGENCE.md",
+            "../architecture/runtime-repository-and-test-estate-boundary.md",
+        ],
+        "architecture/EHCO-TECHNOLOGY-ESTATE.md": [
+            "runtime-repository-and-test-estate-boundary.md",
+            "../assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md",
+        ],
+    }
+    for relative, required_links in required_navigation_links.items():
+        text = texts[relative]
+        for link in required_links:
+            checked(link in text, f"Required navigation/boundary link missing in {relative}: {link}")
+
+    estate = texts["architecture/EHCO-TECHNOLOGY-ESTATE.md"]
     checked(
-        "architecture/runtime-repository-and-test-estate-boundary.md" in readme,
-        "README does not link the controlling Runtime/repository boundary",
+        "Downstream governed components" in estate,
+        "Technology Estate does not use current downstream governed component terminology",
     )
-    checked("(LICENSE)" in readme, "README does not link the root LICENSE")
     checked(
-        "This GitHub repository is not the Runtime." in readme,
-        "README does not state the repository/Runtime separation",
+        "does not assert a rename, equivalence, or successor relationship" in estate,
+        "Permit Trace historical alias boundary is missing",
     )
 
     evidence_readme = texts["evidence/README.md"]

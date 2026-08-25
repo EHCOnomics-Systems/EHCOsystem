@@ -1,6 +1,6 @@
 # Public Repository Validation
 
-This directory contains bounded repository-side validation tooling for the canonical public dossier, the EHCO AI-OS Public Evidence Companion Version 1, the proprietary license, and the current public Runtime/repository/test-estate boundary.
+This directory contains bounded repository-side validation tooling for the canonical public dossier, Public Evidence Companion, public architecture/navigation surfaces, proprietary license, semantic/disclosure boundaries, and component evidence snapshots.
 
 ## Run locally
 
@@ -8,53 +8,26 @@ From the repository root:
 
 ```bash
 python3 verification/validate_public_evidence.py
+python3 verification/validate_public_lm_test_snapshot.py
+python3 verification/validate_release_identity.py
 ```
 
-The GitHub Actions workflow at `.github/workflows/validate-public-evidence.yml` runs the same validator on every pull request and every push to `main`.
+The public validation workflow runs the applicable validators on pull requests and on pushes covered by its workflow triggers.
 
-## Integrity checks
+## Repository and evidence integrity
 
-The validator confirms:
+`validate_public_evidence.py` checks canonical dossier identity, Packets 00-08 structure and manifests, JSON syntax, suite closure, repository residue, Markdown-link closure, high-confidence secret indicators, license presence, public semantic/disclosure boundaries, and required navigation links.
 
-- both canonical dossier PDF paths exist and share the declared SHA-256;
-- Packets 00-08 are present at their canonical paths;
-- all JSON files in the Version 1 evidence estate parse successfully;
-- each packet content manifest matches declared files, byte counts, and SHA-256 values;
-- each detached `CONTENT_MANIFEST.sha256` matches its manifest;
-- the suite manifest closes Packets 00-07 and identifies Packet 08 as the closure packet;
-- accidental ZIPs, upload helpers, staging chunks, and repeated nested evidence paths are absent;
-- internal Markdown links resolve;
-- high-confidence secret indicators are absent from eligible text files.
+Hash-preserved Packets 00-08 remain outside stylistic rewriting. Evidence-specific interpretation remains with the evidence landing pages and applicable packet records.
 
-## Semantic-boundary checks
+## Language Model snapshot validation
 
-The validator also requires:
+`validate_public_lm_test_snapshot.py` checks the bounded Language Model public snapshot, including the seven exact fixtures / 62 cases, manifest identities, JSON structure, disclosure boundary, and public proof-limit language. It does not execute the private Language Model engine.
 
-- a root `LICENSE` with the expected proprietary public-inspection identity;
-- the controlling `architecture/runtime-repository-and-test-estate-boundary.md` record;
-- current public documents to state that the repository and controlled private test/source estates are not the Runtime;
-- Packet 02 to remain bounded to packet-time runtime-support artifact identity, integrity, and provenance;
-- Packet 06 integrity `PASS` to remain distinct from universal behavioral proof and current Runtime state;
-- historical paths, service names, container names, and port bindings to remain classified as capture attributes rather than current locators;
-- the public release register to inventory the license and corrected packet proof ceilings;
-- obsolete repository names, private repository locators, current-source-owner claims, and pending-Runtime-promotion language to remain absent from current public interpretation documents.
+## Semantic-boundary design
 
-Hash-preserved Packets 00-08 are intentionally excluded from current-prose semantic rewriting. Their bytes and hashes remain fixed; current interpretation is supplied by the public boundary records.
-
-## Workflow integrity
-
-The workflow uses immutable action commit SHAs and read-only repository permissions. It runs without incomplete path filters so changes to architecture, language-model, licensing, notice, governance, security, evidence, validation, or navigation files cannot bypass the check.
+Shared Runtime/repository/test-estate semantics are owned by the canonical boundary record. Primary navigation pages are required to link that record rather than repeat its full prose. The validator continues to prohibit obsolete/private source locators and other known semantic-boundary regressions across active public interpretation surfaces.
 
 ## Proof ceiling
 
-Passing validation establishes bounded repository integrity and compliance with the current public semantic boundary for the checked commit.
-
-It does not:
-
-- execute or observe the EHCO AI-OS Runtime;
-- create or alter Runtime authority or standing;
-- convert declaration presence into executed enforcement;
-- convert test success into Runtime admission;
-- convert packet integrity into universal behavioral proof;
-- establish production activation, public ingress, operational external release, commercial activation, or go-live;
-- constitute independent third-party certification.
+Passing repository validation establishes the checked repository-integrity and semantic/disclosure conditions for that commit. Individual technical propositions retain the proof ceilings of their own evidence records.

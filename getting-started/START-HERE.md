@@ -1,64 +1,49 @@
 ---
 title: Start Here
-version: 1.6
+version: 2.0
 status: current-public-navigation
-published: 2026-08-10
+published: 2026-08-25
 maintainer: EHCOnomics
 evidence_class: navigation
 proof_ceiling: none; navigation only
-supersedes: version 1.5
+supersedes: version 1.6
 ---
 
 # Start Here
 
-The `EHCOsystem` repository is the approved public architecture, evidence, provenance, research, verification, and publication surface for EHCO AI-OS and the EHCOsystem.
+EHCOsystem has four primary review routes. Choose the question you are trying to answer rather than reading the repository front to back.
 
-EHCO AI-OS is the realized Tier 1 Runtime with accepted standing **52/53**. This GitHub repository is not the Runtime and does not hold Runtime authority, standing, authoritative state, consequence, persistence, release authority, or Runtime truth.
+## 1. What is the EHCOnomics technology estate?
 
-Controlled private repositories and their runtime-support folders are bounded test, compatibility, source-comparison, packaging, deployment-support, and evidence-generation estates. They are not the Runtime. Their files matter only within the identity, integrity, declaration, test, observation, and proof scope expressly established by the applicable record.
+Read **[EHCOnomics Technology Estate](../architecture/EHCO-TECHNOLOGY-ESTATE.md)**.
 
-## If you are here for technical diligence
+Use this route for the Tier One / downstream governed component / Tier Three structure, computational ownership, research foundations, and domain applications.
 
-Start with [Technical Diligence — Start Here](../TECHNICAL-DILIGENCE.md).
+## 2. What evidence supports the technical claims?
 
-That route puts the observed Packet 06 run first, pairs it with the exact Packet 03 implementation anchors, and points directly to Packet 06's unresolved discrepancies and unobserved negative-control lanes. It is intended to answer the technical-mechanism question before asking a reviewer to read the broader architecture estate.
+Read **[Ecosystem Claim → Evidence Matrix](../assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md)**.
 
-For documentation and evidence authorship/provenance distinctions, see [Public Documentation and Evidence Provenance](../PROVENANCE.md).
+Then follow the relevant evidence link. For Language Model test evidence, start with **[Public Test Snapshot v1](../language-model/evidence/public-test-snapshot-v1/README.md)**.
 
-## General recommended path
+## 3. How do I perform a broad technical review?
 
-1. Read the [Runtime, Repository, and Test-Estate Boundary](../architecture/runtime-repository-and-test-estate-boundary.md).
-2. Open the [Canonical Public Dossier](../dossiers/README.md).
-3. Read the [EHCO AI-OS Instantiated System](../architecture/EHCO-AI-OS-INSTANTIATED-SYSTEM.md).
-4. Read the [EHCO AI-OS Public System Card](../architecture/EHCO-AI-OS-SYSTEM-CARD.md).
-5. Review the [Governed Runtime Architecture](../architecture/GOVERNED-RUNTIME-ARCHITECTURE.md).
-6. Review the [System Invariants](../architecture/SYSTEM-INVARIANTS.md).
-7. Review the [Instantiated Proof Range](../architecture/instantiated-proof-range.md).
-8. Open the [Public Evidence Companion](../evidence/README.md).
-9. Review [Proof and Status Classes](../architecture/proof-and-status-classes.md).
-10. Review the [EHCO Language-Model System Boundary](../language-model/README.md).
-11. Continue into the [EHCOsystem Library](../LIBRARY.md).
+Read **[Ecosystem Technical Diligence](../ECOSYSTEM-DILIGENCE.md)**.
 
-## Packet interpretation
+This route moves from estate architecture to representative component evidence and then to deeper controlled review where a proposition cannot be established from unrestricted public evidence alone.
 
-- Packet 02 preserves a hash-bound packet-time test/source-artifact set. It does not identify a Runtime repository or authority location.
-- Packets 03-05 establish bounded artifact identity and named declarations or anchors unless execution is expressly recorded.
-- Packet 06 preserves a historical bounded test and observation capture. Packet-integrity `PASS` does not mean universal behavioral `PASS`, and the capture is not current Runtime state.
+## 4. How do I review EHCO AI-OS specifically?
 
-## Public boundary
+Read **[EHCO AI-OS Technical Diligence](../TECHNICAL-DILIGENCE.md)**.
 
-The repository establishes visibility, artifact identity, integrity, provenance, and declared proof ceilings for its published records. It does not independently authorize production deployment, public ingress, operational external release, commercial activation, or go-live.
+This remains the focused Tier One path through observed evidence, implementation anchors, discrepancies, and the existing public evidence estate.
 
-The accepted 52/53 standing baseline is an EHCOnomics-controlled operational standing record. Independent third-party certification is not claimed unless expressly identified.
+## Canonical interpretation
+
+For Runtime/repository/test-estate interpretation, use the [canonical boundary record](../architecture/runtime-repository-and-test-estate-boundary.md). For the complete public index, use the [EHCOsystem Library](../LIBRARY.md).
 
 ## Revision history
 
 | Version | Date | Change |
 |---|---|---|
-| 1.6 | 2026-08-10 | Added a dedicated technical-diligence route and public documentation/evidence provenance reference while preserving the general architecture path. |
-| 1.5 | 2026-08-08 | Added the accepted EHCO AI-OS System Card, Governed Runtime Architecture, and System Invariants to the canonical reading path. |
-| 1.4 | 2026-08-05 | Corrected the Runtime, repository, private test-estate, and packet interpretation boundary. |
-| 1.3 | 2026-08-05 | Replaced moving language-model finalization status with a stable public system boundary. |
-| 1.2 | 2026-08-05 | Clarified realized Runtime standing, packet-time provenance, and release status. |
-| 1.1 | 2026-08-04 | Replaced obsolete navigation with the canonical EHCOsystem reading path. |
-| 1.0 | 2026-08-04 | Initial public entry path. |
+| 2.0 | 2026-08-25 | Replaced packet-first navigation with four capability/evidence review routes and added the Technology Estate and ecosystem assurance paths. |
+| 1.6 | 2026-08-10 | Added a dedicated technical-diligence route and provenance reference. |
