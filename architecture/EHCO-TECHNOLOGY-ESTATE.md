@@ -116,11 +116,11 @@ EHCO Project Construct is the construction and built-asset intelligence family. 
 
 ### EHCO Luminis
 
-EHCO Luminis is the governed Tier Two media application suite. Current source maturity includes a schema/record-oriented foundation with 37 controlled JSON Schemas, matched positive and fail-closed fixtures, schema-bound records, and deterministic content identities. This does not imply deployment or Runtime participation.
+EHCO Luminis is a downstream governed media application suite. Current source maturity includes a schema/record-oriented foundation with 37 controlled JSON Schemas, matched positive and fail-closed fixtures, schema-bound records, and deterministic content identities. This does not imply deployment or Runtime participation.
 
 ### EHCO Nexus
 
-EHCO Nexus is a bounded commercial Tier Two application foundation for business-relationship and operations capability. Public representation is limited to the governed application/source foundation; production CRM/ERP integration, deployment, and Runtime participation are not asserted here.
+EHCO Nexus is a bounded commercial downstream governed application foundation for business-relationship and operations capability. Public representation is limited to the governed application/source foundation; production CRM/ERP integration, deployment, and Runtime participation are not asserted here.
 
 ### EHCO Permit Trace
 
@@ -130,7 +130,7 @@ This page does not assert a rename, equivalence, or successor relationship to hi
 
 ### Pegasus IT
 
-Pegasus IT is the governed Tier Two IT-services domain/application. Its accepted source foundation includes canonical domain identities, evidence/time/lifecycle/relationship semantics, tenant-scoped customer-environment graph structures, bounded rules, synthetic fixtures, and deterministic tests. Build, release, deployment, external-action, and Runtime effects remain separate evidence dimensions.
+Pegasus IT is a downstream governed IT-services domain/application. Its accepted source foundation includes canonical domain identities, evidence/time/lifecycle/relationship semantics, tenant-scoped customer-environment graph structures, bounded rules, synthetic fixtures, and deterministic tests. Build, release, deployment, external-action, and Runtime effects remain separate evidence dimensions.
 
 ## Tier Three — interfaces and projections
 
