@@ -1,12 +1,12 @@
 ---
 title: Start Here
-version: 1.6
+version: 1.7
 status: current-public-navigation
-published: 2026-08-10
+published: 2026-08-26
 maintainer: EHCOnomics
 evidence_class: navigation
 proof_ceiling: none; navigation only
-supersedes: version 1.5
+supersedes: version 1.6
 ---
 
 # Start Here
@@ -16,6 +16,14 @@ The `EHCOsystem` repository is the approved public architecture, evidence, prove
 EHCO AI-OS is the realized Tier 1 Runtime with accepted standing **52/53**. This GitHub repository is not the Runtime and does not hold Runtime authority, standing, authoritative state, consequence, persistence, release authority, or Runtime truth.
 
 Controlled private repositories and their runtime-support folders are bounded test, compatibility, source-comparison, packaging, deployment-support, and evidence-generation estates. They are not the Runtime. Their files matter only within the identity, integrity, declaration, test, observation, and proof scope expressly established by the applicable record.
+
+## If you are here to understand the category
+
+Start with [Instantiated AI — Public Architecture Definition](../architecture/INSTANTIATED-AI.md).
+
+The category definition explains the architectural dependency inversion: identity, authority, state, memory, source, scope, permissible action, evidence, and consequence are established independently of the intelligence they govern before consequential operation. It also defines computational standing, the Standing Baseline concept, source and memory standing, model independence, and the category qualification questions.
+
+“Lawful operation” in that definition means operation admitted within governing computational conditions that have standing in the system. It is not a blanket statement of statutory, regulatory, contractual, or jurisdictional compliance.
 
 ## If you are here for technical diligence
 
@@ -27,17 +35,18 @@ For documentation and evidence authorship/provenance distinctions, see [Public D
 
 ## General recommended path
 
-1. Read the [Runtime, Repository, and Test-Estate Boundary](../architecture/runtime-repository-and-test-estate-boundary.md).
-2. Open the [Canonical Public Dossier](../dossiers/README.md).
-3. Read the [EHCO AI-OS Instantiated System](../architecture/EHCO-AI-OS-INSTANTIATED-SYSTEM.md).
-4. Read the [EHCO AI-OS Public System Card](../architecture/EHCO-AI-OS-SYSTEM-CARD.md).
-5. Review the [Governed Runtime Architecture](../architecture/GOVERNED-RUNTIME-ARCHITECTURE.md).
-6. Review the [System Invariants](../architecture/SYSTEM-INVARIANTS.md).
-7. Review the [Instantiated Proof Range](../architecture/instantiated-proof-range.md).
-8. Open the [Public Evidence Companion](../evidence/README.md).
-9. Review [Proof and Status Classes](../architecture/proof-and-status-classes.md).
-10. Review the [EHCO Language-Model System Boundary](../language-model/README.md).
-11. Continue into the [EHCOsystem Library](../LIBRARY.md).
+1. Read [Instantiated AI — Public Architecture Definition](../architecture/INSTANTIATED-AI.md).
+2. Read the [Runtime, Repository, and Test-Estate Boundary](../architecture/runtime-repository-and-test-estate-boundary.md).
+3. Open the [Canonical Public Dossier](../dossiers/README.md).
+4. Read the [EHCO AI-OS Instantiated System](../architecture/EHCO-AI-OS-INSTANTIATED-SYSTEM.md).
+5. Read the [EHCO AI-OS Public System Card](../architecture/EHCO-AI-OS-SYSTEM-CARD.md).
+6. Review the [Governed Runtime Architecture](../architecture/GOVERNED-RUNTIME-ARCHITECTURE.md).
+7. Review the [System Invariants](../architecture/SYSTEM-INVARIANTS.md).
+8. Review the [Instantiated Proof Range](../architecture/instantiated-proof-range.md).
+9. Open the [Public Evidence Companion](../evidence/README.md).
+10. Review [Proof and Status Classes](../architecture/proof-and-status-classes.md).
+11. Review the [EHCO Language-Model System Boundary](../language-model/README.md).
+12. Continue into the [EHCOsystem Library](../LIBRARY.md).
 
 ## Packet interpretation
 
@@ -55,6 +64,7 @@ The accepted 52/53 standing baseline is an EHCOnomics-controlled operational sta
 
 | Version | Date | Change |
 |---|---|---|
+| 1.7 | 2026-08-26 | Made Instantiated AI the category-level entry point while preserving the Runtime/repository, evidence, standing, and legal-compliance boundaries. |
 | 1.6 | 2026-08-10 | Added a dedicated technical-diligence route and public documentation/evidence provenance reference while preserving the general architecture path. |
 | 1.5 | 2026-08-08 | Added the accepted EHCO AI-OS System Card, Governed Runtime Architecture, and System Invariants to the canonical reading path. |
 | 1.4 | 2026-08-05 | Corrected the Runtime, repository, private test-estate, and packet interpretation boundary. |
