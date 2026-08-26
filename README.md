@@ -6,6 +6,16 @@ EHCO AI-OS is the realized Tier 1 Runtime of the EHCOsystem. Its accepted standi
 
 This GitHub repository is not the Runtime. It does not hold Runtime authority or authoritative Runtime state, and repository publication, commits, workflows, packets, manifests, tests, or public visibility do not independently create, promote, demote, calculate, revoke, or alter Runtime standing.
 
+## Instantiated AI
+
+EHCOsystem development is organized around **Instantiated AI**: the computational conditions governing identity, authority, state, memory, source, scope, permissible action, evidence, and consequence are established independently of the intelligence they govern before that intelligence is permitted to operate consequentially.
+
+The intelligence may reason about those conditions, interpret them, and propose or perform actions within their established range. It cannot make those conditions true for itself by assertion, inference, generation, or representation.
+
+Read **[Instantiated AI — Public Architecture Definition](architecture/INSTANTIATED-AI.md)** for the category definition, computational standing, Standing Baseline, source and memory standing, model independence, qualification questions, and the distinction between supporting controls and the category itself.
+
+In this architecture, **lawful operation** means operation admitted within governing computational conditions that have standing in the system. It is not a blanket claim of statutory, regulatory, contractual, or jurisdictional compliance.
+
 ## Overall Status
 
 **Established Technical Baseline · Current Public Record · Continuing Ecosystem Advancement**
@@ -54,17 +64,18 @@ The accepted 52/53 baseline is an EHCOnomics-controlled operational standing rec
 
 For broader architecture, governance, and publication context:
 
-1. [Runtime, Repository, and Test-Estate Boundary](architecture/runtime-repository-and-test-estate-boundary.md)
-2. [Canonical Public Dossier](dossiers/README.md)
-3. [EHCO AI-OS Instantiated System](architecture/EHCO-AI-OS-INSTANTIATED-SYSTEM.md)
-4. [EHCO AI-OS Public System Card](architecture/EHCO-AI-OS-SYSTEM-CARD.md)
-5. [Governed Runtime Architecture](architecture/GOVERNED-RUNTIME-ARCHITECTURE.md)
-6. [System Invariants](architecture/SYSTEM-INVARIANTS.md)
-7. [Instantiated Proof Range](architecture/instantiated-proof-range.md)
-8. [Public Evidence Companion](evidence/README.md)
-9. [Proof and Status Classes](architecture/proof-and-status-classes.md)
-10. [EHCO Language-Model System Boundary](language-model/README.md)
-11. [EHCOsystem Library](LIBRARY.md)
+1. [Instantiated AI — Public Architecture Definition](architecture/INSTANTIATED-AI.md)
+2. [Runtime, Repository, and Test-Estate Boundary](architecture/runtime-repository-and-test-estate-boundary.md)
+3. [Canonical Public Dossier](dossiers/README.md)
+4. [EHCO AI-OS Instantiated System](architecture/EHCO-AI-OS-INSTANTIATED-SYSTEM.md)
+5. [EHCO AI-OS Public System Card](architecture/EHCO-AI-OS-SYSTEM-CARD.md)
+6. [Governed Runtime Architecture](architecture/GOVERNED-RUNTIME-ARCHITECTURE.md)
+7. [System Invariants](architecture/SYSTEM-INVARIANTS.md)
+8. [Instantiated Proof Range](architecture/instantiated-proof-range.md)
+9. [Public Evidence Companion](evidence/README.md)
+10. [Proof and Status Classes](architecture/proof-and-status-classes.md)
+11. [EHCO Language-Model System Boundary](language-model/README.md)
+12. [EHCOsystem Library](LIBRARY.md)
 
 ## Canonical public record
 
