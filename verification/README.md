@@ -28,9 +28,13 @@ The validator checks that:
 
 - the category record identifies EHCOsystem as EHCOnomics' Instantiated AI ecosystem;
 - the Technology Estate preserves current downstream-governed-component terminology and established Tier One maturity;
+- persistent downstream governed component identity remains separate from scoped Runtime participation;
+- active public narrative uses current `Tier One`, `downstream governed component`, and `Tier Three` terminology rather than legacy spaced `Tier 1`, `Tier 2`, or `Tier 3` labels;
 - the estate represents `EHCO_DOCKER_PORTABILITY` only through its bounded `PRIMARY_ACCESSIBLE_RUNTIME_PROJECTION` classification;
 - the diagram record contains all four selected WP-05 explanatory views and preserves its non-implementation/non-deployment proof ceiling; and
 - the release register inventories the category, ecosystem, and diagram artifacts.
+
+Immutable historical packet identifiers such as `TIER1` remain byte-preserved. Active interpretation layers translate those historical identifiers into current terminology without rewriting packet bytes.
 
 These checks validate repository consistency and publication semantics only. They do not self-certify that prose or diagrams constitute implementation, deployment, Runtime participation, market validation, legal compliance, or Runtime proof.
 
@@ -40,7 +44,11 @@ These checks validate repository consistency and publication semantics only. The
 
 ## Semantic-boundary design
 
-Shared Runtime/repository/test-estate semantics are owned by the canonical boundary record. Primary navigation pages are required to link that record rather than repeat its full prose. The validator continues to prohibit obsolete/private source locators and other known semantic-boundary regressions across active public interpretation surfaces.
+Shared Runtime/repository/test-estate semantics are owned by the canonical boundary record. Primary navigation pages are required to link that record rather than repeat its full prose. The validator prohibits obsolete/private source locators, legacy active tier terminology, stale publication vocabulary, and other known semantic-boundary regressions across active public interpretation surfaces.
+
+## Acceptance governance
+
+Repository-side validation is only one acceptance input. Before acceptance or merge, the current repository and organization rulesets must be read from GitHub and every then-applicable required status check, code-scanning condition, and review condition must be satisfied on the exact candidate relationship. The repository documentation does not freeze a historical required-check list, and technical bypass capability is not acceptance evidence.
 
 ## Proof ceiling
 
