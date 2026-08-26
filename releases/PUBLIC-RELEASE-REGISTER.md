@@ -22,8 +22,9 @@ These values define the canonical identity of the first public EHCOsystem archit
 
 | Artifact | Status | Canonical path | Proof ceiling |
 |---|---|---|---|
-| Repository identity and front door | PRESENT_IN_REVISION | `README.md` | Public purpose, estate orientation, evidence/diligence navigation, and canonical boundary linkage |
-| EHCOnomics Technology Estate | PRESENT_IN_REVISION | `architecture/EHCO-TECHNOLOGY-ESTATE.md` | Controlled technology-estate architecture and bounded source/evidence representation |
+| Repository identity and front door | PRESENT_IN_REVISION | `README.md` | Public category-to-ecosystem orientation, evidence/diligence navigation, and canonical boundary linkage |
+| Instantiated AI — Public Architecture Definition | PRESENT_IN_REVISION | `architecture/INSTANTIATED-AI.md` | Controlled category and ecosystem architecture definition; not implementation evidence, legal certification, deployment evidence, or Runtime proof |
+| EHCOsystem — An Instantiated AI Ecosystem | PRESENT_IN_REVISION | `architecture/EHCO-TECHNOLOGY-ESTATE.md` | Controlled category-to-ecosystem architecture and bounded source/evidence representation |
 | Ecosystem Components and Runtime Relationships | PRESENT_IN_REVISION | `architecture/ecosystem-components-and-participation.md` | Component identity and scoped Runtime-relationship architecture |
 | Ecosystem Claim → Evidence Matrix | PRESENT_IN_REVISION | `assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md` | Claim/evidence navigation; inherits cited/reviewed source proof ceilings |
 | Ecosystem Technical Diligence | PRESENT_IN_REVISION | `ECOSYSTEM-DILIGENCE.md` | Navigation and bounded source/evidence review method only |

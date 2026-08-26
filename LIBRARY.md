@@ -1,16 +1,30 @@
 # The EHCOsystem Library
 
-This page indexes the current public records visibly published in `EHCOsystem`.
+This page indexes the current public records visibly published in `EHCOsystem`, EHCOnomics' public technical representation of its Instantiated AI ecosystem.
 
 ## Start here
 
-- [EHCOnomics Technology Estate](architecture/EHCO-TECHNOLOGY-ESTATE.md)
+- [Instantiated AI — Public Architecture Definition](architecture/INSTANTIATED-AI.md)
+- [EHCOsystem — An Instantiated AI Ecosystem](architecture/EHCO-TECHNOLOGY-ESTATE.md)
 - [Ecosystem Claim → Evidence Matrix](assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md)
 - [Ecosystem Technical Diligence](ECOSYSTEM-DILIGENCE.md)
 - [EHCO AI-OS Technical Diligence](TECHNICAL-DILIGENCE.md)
 - [Start Here](getting-started/START-HERE.md)
 - [Reading Order](getting-started/reading-order.md)
 - [Repository Map](getting-started/repository-map.md)
+
+## Category architecture
+
+- [Instantiated AI — Public Architecture Definition](architecture/INSTANTIATED-AI.md)
+
+This record defines the category-level dependency inversion: governing computational conditions are established independently of the intelligence before consequential operation. It also defines computational standing, Standing Baseline, source and memory standing, model independence, and category qualification questions.
+
+## Ecosystem architecture
+
+- [EHCOsystem — An Instantiated AI Ecosystem](architecture/EHCO-TECHNOLOGY-ESTATE.md)
+- [Ecosystem Components and Runtime Relationships](architecture/ecosystem-components-and-participation.md)
+
+These records show how the Instantiated AI category is expressed across the realized Tier One Runtime foundation, downstream governed computational/application components, research foundations, and Tier Three projections while keeping Runtime participation separate from persistent component identity.
 
 ## Canonical interpretation
 
@@ -28,7 +42,6 @@ This page indexes the current public records visibly published in `EHCOsystem`.
 - [EHCO AI-OS Public System Card](architecture/EHCO-AI-OS-SYSTEM-CARD.md)
 - [Governed Runtime Architecture](architecture/GOVERNED-RUNTIME-ARCHITECTURE.md)
 - [Instantiated Proof Range](architecture/instantiated-proof-range.md)
-- [Ecosystem Components and Runtime Relationships](architecture/ecosystem-components-and-participation.md)
 
 ## Component architecture and evidence
 

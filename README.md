@@ -1,24 +1,30 @@
 # EHCOsystem
 
-**Public architecture, technical evidence, provenance, research, and verification for the EHCOnomics technology estate.**
+**Public technical representation and evidence surface for EHCOnomics' Instantiated AI ecosystem.**
 
-EHCOnomics is organized as a governed computational technology estate. **EHCO AI-OS is the realized Tier One Runtime** of the EHCOsystem and provides its governing Runtime foundation. **Downstream governed components** own distinct language, range/reasoning, retrieval/evidence, memory/continuity, relationship, coordination, research, and domain-application capabilities. **Tier Three** provides interfaces and public-safe projections.
+**Instantiated AI** is the architectural category. **EHCOsystem** is EHCOnomics' Instantiated AI ecosystem: a governed computational architecture in which identity, authority, state, memory, source, permissible range, evidence, release, and consequence are established independently of the intelligence they govern before consequential operation.
 
-The purpose of this repository is to make that architecture and selected underlying technical evidence inspectable without turning the public repository into the proprietary implementation itself.
+**EHCO AI-OS is the realized Tier One Runtime** of EHCOsystem and provides its governing Runtime foundation. **Downstream governed components** own distinct language, range/reasoning, retrieval/evidence, memory/continuity, relationship, coordination, research, and domain-application capabilities. **Tier Three** provides interfaces and public-safe projections without becoming the underlying source of authority or technical truth.
 
-EHCO AI-OS has an accepted standing baseline of **52/53**. The detailed distinction among the instantiated Runtime, repositories, test estates, evidence artifacts, and public projection is maintained in the canonical [Runtime, Repository, and Test-Estate Boundary](architecture/runtime-repository-and-test-estate-boundary.md).
+The public repository makes that architecture and selected underlying technical evidence inspectable without becoming the proprietary Runtime implementation itself. EHCO AI-OS has an accepted standing baseline of **52/53**. Runtime participation of any downstream component remains a separate scoped relationship established by owning Runtime evidence.
 
 ## Start here
 
-### Explore the Technology Estate
+### 1. Understand Instantiated AI
 
-Understand the major technology families, computational owners, research foundations, and application estate.
+Start with the category definition and qualification surface: identity, authority, standing, state, source, memory, range, consequence, proof, and model independence.
 
-**[EHCOnomics Technology Estate](architecture/EHCO-TECHNOLOGY-ESTATE.md)**
+**[Instantiated AI — Public Architecture Definition](architecture/INSTANTIATED-AI.md)**
 
-### Inspect the Evidence
+### 2. Explore the EHCOsystem
 
-Move from selected technical propositions to the public evidence that supports them and see the applicable evidence class and proof ceiling.
+See how the category is expressed across the realized Tier One Runtime, downstream governed computational and application components, research foundations, and Tier Three projections.
+
+**[EHCOsystem — An Instantiated AI Ecosystem](architecture/EHCO-TECHNOLOGY-ESTATE.md)**
+
+### 3. Inspect the Evidence
+
+Move from selected technical propositions to the public evidence or approved reference that supports them, with evidence class, verification method, currentness, and proof ceiling kept distinct.
 
 **[Ecosystem Claim → Evidence Matrix](assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md)**
 
@@ -26,9 +32,9 @@ Current component evidence includes the **EHCO Language Model public test snapsh
 
 **[Inspect the Language Model test evidence](language-model/evidence/public-test-snapshot-v1/README.md)**
 
-### Technical Diligence
+### 4. Technical Diligence
 
-For a broad review of what EHCOnomics has built across the estate:
+For a broad review of the Instantiated AI ecosystem:
 
 **[Ecosystem Technical Diligence](ECOSYSTEM-DILIGENCE.md)**
 
@@ -36,7 +42,7 @@ For the focused EHCO AI-OS Tier One architecture, implementation-anchor, and bou
 
 **[EHCO AI-OS Technical Diligence](TECHNICAL-DILIGENCE.md)**
 
-## Technology families
+## The ecosystem at a glance
 
 ### Tier One Runtime foundation
 
@@ -62,9 +68,9 @@ For the focused EHCO AI-OS Tier One architecture, implementation-anchor, and bou
 
 ### Domain applications
 
-The application estate turns the shared architecture into bounded domain capability across safety/construction, energy/data-centre operations, legal decision support, strategy/simulation, prevention intelligence, construction/built-asset intelligence, media, business operations, permit compliance, and IT-services intelligence.
+The application estate turns the shared instantiated architecture into bounded domain capability across safety/construction, energy/data-centre operations, legal decision support, strategy/simulation, prevention intelligence, construction/built-asset intelligence, media, business operations, permit compliance, and IT-services intelligence.
 
-[Explore the full Technology Estate →](architecture/EHCO-TECHNOLOGY-ESTATE.md)
+[Explore the full EHCOsystem →](architecture/EHCO-TECHNOLOGY-ESTATE.md)
 
 ## Public evidence
 
@@ -76,7 +82,8 @@ Evidence classes remain distinct. A reviewer should be able to see both **what i
 
 ## Canonical interpretation and use
 
-- [Runtime, Repository, and Test-Estate Boundary](architecture/runtime-repository-and-test-estate-boundary.md)
+The detailed distinction among the instantiated Runtime, repositories, test estates, evidence artifacts, and public projection is maintained in the canonical [Runtime, Repository, and Test-Estate Boundary](architecture/runtime-repository-and-test-estate-boundary.md).
+
 - [Repository Governance](GOVERNANCE.md)
 - [Security and Responsible Disclosure](SECURITY.md)
 - [Public Documentation and Evidence Provenance](PROVENANCE.md)

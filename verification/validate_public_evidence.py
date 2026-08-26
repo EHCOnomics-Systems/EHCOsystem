@@ -45,6 +45,7 @@ CURRENT_PUBLIC_TEXT = [
     "getting-started/START-HERE.md",
     "getting-started/reading-order.md",
     "getting-started/repository-map.md",
+    "architecture/INSTANTIATED-AI.md",
     "architecture/EHCO-TECHNOLOGY-ESTATE.md",
     "architecture/EHCO-AI-OS-INSTANTIATED-SYSTEM.md",
     "architecture/instantiated-proof-range.md",
@@ -200,6 +201,7 @@ def validate_semantic_boundaries() -> None:
 
     required_navigation_links = {
         "README.md": [
+            "architecture/INSTANTIATED-AI.md",
             "architecture/EHCO-TECHNOLOGY-ESTATE.md",
             "assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md",
             "ECOSYSTEM-DILIGENCE.md",
@@ -207,6 +209,7 @@ def validate_semantic_boundaries() -> None:
             "(LICENSE)",
         ],
         "getting-started/START-HERE.md": [
+            "../architecture/INSTANTIATED-AI.md",
             "../architecture/EHCO-TECHNOLOGY-ESTATE.md",
             "../assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md",
             "../ECOSYSTEM-DILIGENCE.md",
@@ -214,6 +217,7 @@ def validate_semantic_boundaries() -> None:
             "../architecture/runtime-repository-and-test-estate-boundary.md",
         ],
         "architecture/EHCO-TECHNOLOGY-ESTATE.md": [
+            "INSTANTIATED-AI.md",
             "runtime-repository-and-test-estate-boundary.md",
             "../assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md",
         ],
@@ -223,7 +227,25 @@ def validate_semantic_boundaries() -> None:
         for link in required_links:
             checked(link in text, f"Required navigation/boundary link missing in {relative}: {link}")
 
+    instantiated_ai = texts["architecture/INSTANTIATED-AI.md"]
+    checked(
+        "EHCOsystem is EHCOnomics' Instantiated AI ecosystem." in instantiated_ai,
+        "Instantiated AI record does not identify EHCOsystem as the Instantiated AI ecosystem",
+    )
+    checked(
+        "representation != instantiation" in instantiated_ai,
+        "Instantiated AI record does not preserve representation/instantiation distinction",
+    )
+    checked(
+        "capability != standing" in instantiated_ai,
+        "Instantiated AI record does not preserve capability/standing distinction",
+    )
+
     estate = texts["architecture/EHCO-TECHNOLOGY-ESTATE.md"]
+    checked(
+        "Instantiated AI ecosystem" in estate,
+        "Technology Estate does not state the Instantiated AI ecosystem identity",
+    )
     checked(
         "Downstream governed components" in estate,
         "Technology Estate does not use current downstream governed component terminology",
@@ -249,6 +271,10 @@ def validate_semantic_boundaries() -> None:
 
     release_register = texts["releases/PUBLIC-RELEASE-REGISTER.md"]
     checked("`LICENSE`" in release_register, "Release register does not inventory LICENSE")
+    checked(
+        "`architecture/INSTANTIATED-AI.md`" in release_register,
+        "Release register does not inventory Instantiated AI category architecture",
+    )
     checked(
         "not a Runtime repository" in release_register,
         "Release register does not bound Packet 02",

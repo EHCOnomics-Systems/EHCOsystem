@@ -1,6 +1,6 @@
 # Public Repository Validation
 
-This directory contains bounded repository-side validation tooling for the canonical public dossier, Public Evidence Companion, public architecture/navigation surfaces, proprietary license, semantic/disclosure boundaries, and component evidence snapshots.
+This directory contains bounded repository-side validation tooling for the canonical public dossier, Public Evidence Companion, Instantiated AI category architecture, EHCOsystem ecosystem architecture/navigation surfaces, proprietary license, semantic/disclosure boundaries, and component evidence snapshots.
 
 ## Run locally
 
@@ -16,9 +16,15 @@ The public validation workflow runs the applicable validators on pull requests a
 
 ## Repository and evidence integrity
 
-`validate_public_evidence.py` checks canonical dossier identity, Packets 00-08 structure and manifests, JSON syntax, suite closure, repository residue, Markdown-link closure, high-confidence secret indicators, license presence, public semantic/disclosure boundaries, and required navigation links.
+`validate_public_evidence.py` checks canonical dossier identity, Packets 00-08 structure and manifests, JSON syntax, suite closure, repository residue, Markdown-link closure, high-confidence secret indicators, license presence, public semantic/disclosure boundaries, required category/architecture navigation, and the active public narrative surfaces.
 
 Hash-preserved Packets 00-08 remain outside stylistic rewriting. Evidence-specific interpretation remains with the evidence landing pages and applicable packet records.
+
+## Category and ecosystem validation
+
+The validator treats `architecture/INSTANTIATED-AI.md` as an active public architecture surface. Primary navigation must route from the Instantiated AI category to the EHCOsystem ecosystem architecture, then to evidence and diligence. The validator checks that the category record identifies EHCOsystem as EHCOnomics' Instantiated AI ecosystem and that the Technology Estate preserves current downstream-governed-component terminology and the established Tier One maturity.
+
+These checks validate repository consistency and publication semantics only. They do not self-certify that prose statements constitute implementation, deployment, Runtime participation, legal compliance, or Runtime proof.
 
 ## Language Model snapshot validation
 

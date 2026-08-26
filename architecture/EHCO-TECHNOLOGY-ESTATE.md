@@ -1,22 +1,28 @@
 ---
-title: EHCOnomics Technology Estate
-version: 1.0
+title: EHCOsystem — An Instantiated AI Ecosystem
+version: 1.1
 status: current-public-architecture
-published: 2026-08-25
+published: 2026-08-26
 maintainer: EHCOnomics
 evidence_class: controlled-technology-estate-architecture
-proof_ceiling: architecture and bounded source/evidence representation only
+proof_ceiling: category-to-ecosystem architecture and bounded source/evidence representation only
 ---
 
-# EHCOnomics Technology Estate
+# EHCOsystem — An Instantiated AI Ecosystem
 
-EHCOnomics is organized as a governed computational technology estate rather than a single model or application. **EHCO AI-OS is the realized Tier One Runtime** of the EHCOsystem and provides its governing Runtime foundation. **Downstream governed components** own distinct language, range/reasoning, retrieval/evidence, memory/continuity, relationship, coordination, research, and domain-application functions. **Tier Three** interfaces and projections make governed information visible without becoming the underlying source of authority or technical truth.
+**Instantiated AI is the architectural category. EHCOsystem is EHCOnomics' Instantiated AI ecosystem.**
+
+In this category, the computational conditions governing identity, authority, state, memory, source, scope, permissible action, evidence, release, and consequence are established independently of the intelligence they govern before consequential operation. Read the [Instantiated AI — Public Architecture Definition](INSTANTIATED-AI.md) for the category definition, standing concepts, dependency inversion, and qualification questions.
+
+EHCOsystem expresses that category as a governed computational estate rather than a single model or application. **EHCO AI-OS is the realized Tier One Runtime** of EHCOsystem and provides its governing Runtime foundation. **Downstream governed components** own distinct language, range/reasoning, retrieval/evidence, memory/continuity, relationship, coordination, research, and domain-application functions. **Tier Three** interfaces and projections make governed information visible without becoming the underlying source of authority or technical truth.
 
 The architecture is ownership-based: each major computational function has an identified owner, evidence class, and lifecycle. Architecture, accepted source, build/artifact state, deployment, execution, application realization, and Runtime participation remain distinct evidence dimensions.
 
+This ecosystem framing does not claim that every component is a current Runtime participant. Persistent software identity and application-local realization are separate from scoped Runtime participation, which requires owning Runtime evidence.
+
 ## Tier One — EHCO AI-OS
 
-EHCO AI-OS is the realized Tier One Runtime and governing foundation of the EHCOsystem. Its accepted standing baseline is **52/53**. It owns the Tier One relationships through which authority, scope, recognized state, transition, consequence, continuity, persistence, withholding, release, correction, recovery, and Runtime-originated proof acquire operational meaning.
+EHCO AI-OS is the realized Tier One Runtime and governing foundation of EHCOsystem. Its accepted standing baseline is **52/53**. It owns the Tier One relationships through which authority, scope, recognized state, transition, consequence, continuity, persistence, withholding, release, correction, recovery, and Runtime-originated proof acquire operational meaning.
 
 For the detailed distinction among Runtime, repositories, test estates, and public evidence, use the canonical [Runtime, Repository, and Test-Estate Boundary](runtime-repository-and-test-estate-boundary.md).
 
