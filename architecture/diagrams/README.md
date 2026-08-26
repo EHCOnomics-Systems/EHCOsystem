@@ -12,7 +12,7 @@ proof_ceiling: explanatory architecture only; diagrams do not create implementat
 
 These diagrams are original public-safe explanatory views of the architecture described in [Instantiated AI](../INSTANTIATED-AI.md), [EHCOsystem — An Instantiated AI Ecosystem](../EHCO-TECHNOLOGY-ESTATE.md), and the [Ecosystem Claim → Evidence Matrix](../../assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md).
 
-They intentionally show **relationships and ownership**, not private topology, deployment configuration, protected implementation mechanics, current Runtime participation, or confidential investment material.
+They intentionally show **relationships and ownership**, not private topology, deployment configuration, protected implementation mechanics, current Runtime participation, or confidential investment material. This diagram record does not create implementation, deployment, Runtime participation, market validation, or Runtime proof.
 
 ## 1. Category, Runtime, components, portability, and projection
 
