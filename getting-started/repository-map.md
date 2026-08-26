@@ -7,6 +7,7 @@ This map identifies the role of each section visibly present in the public `EHCO
 - `README.md` — public identity and primary category-to-ecosystem entry path.
 - `architecture/INSTANTIATED-AI.md` — Instantiated AI category definition and qualification surface.
 - `architecture/EHCO-TECHNOLOGY-ESTATE.md` — EHCOsystem Instantiated AI ecosystem architecture and computational ownership.
+- `architecture/diagrams/README.md` — four original public-safe architecture diagrams covering system layers, computational ownership, shared foundations-to-applications, and the technical-to-market evidence ladder.
 - `assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md` — ecosystem claim-to-evidence map.
 - `ECOSYSTEM-DILIGENCE.md` — broad Instantiated AI ecosystem technical-diligence route.
 - `TECHNICAL-DILIGENCE.md` — focused EHCO AI-OS diligence route.
@@ -21,7 +22,8 @@ This map identifies the role of each section visibly present in the public `EHCO
 ## Architecture and research
 
 - `architecture/INSTANTIATED-AI.md` — category-level architecture.
-- `architecture/EHCO-TECHNOLOGY-ESTATE.md` — category-to-ecosystem realization map.
+- `architecture/EHCO-TECHNOLOGY-ESTATE.md` — category-to-ecosystem realization map, including the bounded `EHCO_DOCKER_PORTABILITY` Runtime-projection classification.
+- `architecture/diagrams/` — public-safe explanatory relationship diagrams; not private topology or deployment diagrams.
 - `architecture/` — EHCO AI-OS records, proof/status records, ecosystem/component architecture, and research relationships.
 - `language-model/` — capability-first public Language Model boundary and bounded public test snapshot.
 
@@ -29,7 +31,7 @@ This map identifies the role of each section visibly present in the public `EHCO
 
 - `assurance/` — AI-OS-specific and ecosystem-wide claim-to-evidence navigation.
 - `evidence/` — Public Evidence Companion landing page and hash-preserved Version 1 Packets 00-08.
-- `verification/` — bounded repository-integrity, semantic-boundary, category/navigation, and component-snapshot validation tooling.
+- `verification/` — bounded repository-integrity, semantic-boundary, category/navigation/diagram, and component-snapshot validation tooling.
 
 ## Dossier, release, and use controls
 

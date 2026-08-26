@@ -1,6 +1,6 @@
 ---
 title: EHCOsystem — An Instantiated AI Ecosystem
-version: 1.1
+version: 1.2
 status: current-public-architecture
 published: 2026-08-26
 maintainer: EHCOnomics
@@ -20,11 +20,19 @@ The architecture is ownership-based: each major computational function has an id
 
 This ecosystem framing does not claim that every component is a current Runtime participant. Persistent software identity and application-local realization are separate from scoped Runtime participation, which requires owning Runtime evidence.
 
+For four first-read architecture views, see the [EHCOsystem Public Architecture Diagrams](diagrams/README.md).
+
 ## Tier One — EHCO AI-OS
 
 EHCO AI-OS is the realized Tier One Runtime and governing foundation of EHCOsystem. Its accepted standing baseline is **52/53**. It owns the Tier One relationships through which authority, scope, recognized state, transition, consequence, continuity, persistence, withholding, release, correction, recovery, and Runtime-originated proof acquire operational meaning.
 
 For the detailed distinction among Runtime, repositories, test estates, and public evidence, use the canonical [Runtime, Repository, and Test-Estate Boundary](runtime-repository-and-test-estate-boundary.md).
+
+## Runtime projection and portability
+
+`EHCO_DOCKER_PORTABILITY` is the **PRIMARY_ACCESSIBLE_RUNTIME_PROJECTION** within the established hardened Runtime/root-image lineage. It is related to the same EHCO AI-OS Runtime lineage, but it is distinct from the `EHCOnomics-Systems/EHCO_AI-OS` source/control repository, distinct from repository-local Docker or Compose test realizations, and is not an independent authority owner.
+
+This is an architectural/source classification. It does not assert a present deployment, current host state, Runtime execution event, release, admission, binding, invocation, persistence effect, or standing change. Those effects remain separate and require their applicable owning technical or Runtime evidence.
 
 ## Computational and evidence foundations
 

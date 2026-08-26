@@ -1,6 +1,6 @@
 # Public Repository Validation
 
-This directory contains bounded repository-side validation tooling for the canonical public dossier, Public Evidence Companion, Instantiated AI category architecture, EHCOsystem ecosystem architecture/navigation surfaces, proprietary license, semantic/disclosure boundaries, and component evidence snapshots.
+This directory contains bounded repository-side validation tooling for the canonical public dossier, Public Evidence Companion, Instantiated AI category architecture, EHCOsystem ecosystem architecture/diagrams/navigation surfaces, proprietary license, semantic/disclosure boundaries, and component evidence snapshots.
 
 ## Run locally
 
@@ -16,15 +16,23 @@ The public validation workflow runs the applicable validators on pull requests a
 
 ## Repository and evidence integrity
 
-`validate_public_evidence.py` checks canonical dossier identity, Packets 00-08 structure and manifests, JSON syntax, suite closure, repository residue, Markdown-link closure, high-confidence secret indicators, license presence, public semantic/disclosure boundaries, required category/architecture navigation, and the active public narrative surfaces.
+`validate_public_evidence.py` checks canonical dossier identity, Packets 00-08 structure and manifests, JSON syntax, suite closure, repository residue, Markdown-link closure, high-confidence secret indicators, license presence, public semantic/disclosure boundaries, required category/architecture/diagram navigation, and the active public narrative surfaces.
 
 Hash-preserved Packets 00-08 remain outside stylistic rewriting. Evidence-specific interpretation remains with the evidence landing pages and applicable packet records.
 
-## Category and ecosystem validation
+## Category, ecosystem, and diagram validation
 
-The validator treats `architecture/INSTANTIATED-AI.md` as an active public architecture surface. Primary navigation must route from the Instantiated AI category to the EHCOsystem ecosystem architecture, then to evidence and diligence. The validator checks that the category record identifies EHCOsystem as EHCOnomics' Instantiated AI ecosystem and that the Technology Estate preserves current downstream-governed-component terminology and the established Tier One maturity.
+The validator treats `architecture/INSTANTIATED-AI.md`, `architecture/EHCO-TECHNOLOGY-ESTATE.md`, and `architecture/diagrams/README.md` as active public architecture surfaces. Primary navigation must route from the Instantiated AI category to the EHCOsystem ecosystem architecture and its public-safe diagrams, then to evidence and diligence.
 
-These checks validate repository consistency and publication semantics only. They do not self-certify that prose statements constitute implementation, deployment, Runtime participation, legal compliance, or Runtime proof.
+The validator checks that:
+
+- the category record identifies EHCOsystem as EHCOnomics' Instantiated AI ecosystem;
+- the Technology Estate preserves current downstream-governed-component terminology and established Tier One maturity;
+- the estate represents `EHCO_DOCKER_PORTABILITY` only through its bounded `PRIMARY_ACCESSIBLE_RUNTIME_PROJECTION` classification;
+- the diagram record contains all four selected WP-05 explanatory views and preserves its non-implementation/non-deployment proof ceiling; and
+- the release register inventories the category, ecosystem, and diagram artifacts.
+
+These checks validate repository consistency and publication semantics only. They do not self-certify that prose or diagrams constitute implementation, deployment, Runtime participation, market validation, legal compliance, or Runtime proof.
 
 ## Language Model snapshot validation
 

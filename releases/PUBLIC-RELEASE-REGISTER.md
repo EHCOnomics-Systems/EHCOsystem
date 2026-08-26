@@ -25,6 +25,7 @@ These values define the canonical identity of the first public EHCOsystem archit
 | Repository identity and front door | PRESENT_IN_REVISION | `README.md` | Public category-to-ecosystem orientation, evidence/diligence navigation, and canonical boundary linkage |
 | Instantiated AI — Public Architecture Definition | PRESENT_IN_REVISION | `architecture/INSTANTIATED-AI.md` | Controlled category and ecosystem architecture definition; not implementation evidence, legal certification, deployment evidence, or Runtime proof |
 | EHCOsystem — An Instantiated AI Ecosystem | PRESENT_IN_REVISION | `architecture/EHCO-TECHNOLOGY-ESTATE.md` | Controlled category-to-ecosystem architecture and bounded source/evidence representation |
+| EHCOsystem Public Architecture Diagrams | PRESENT_IN_REVISION | `architecture/diagrams/README.md` | Original explanatory relationship diagrams only; not implementation, private topology, deployment, Runtime participation, market validation, or Runtime proof |
 | Ecosystem Components and Runtime Relationships | PRESENT_IN_REVISION | `architecture/ecosystem-components-and-participation.md` | Component identity and scoped Runtime-relationship architecture |
 | Ecosystem Claim → Evidence Matrix | PRESENT_IN_REVISION | `assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md` | Claim/evidence navigation; inherits cited/reviewed source proof ceilings |
 | Ecosystem Technical Diligence | PRESENT_IN_REVISION | `ECOSYSTEM-DILIGENCE.md` | Navigation and bounded source/evidence review method only |

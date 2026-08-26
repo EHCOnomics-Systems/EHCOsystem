@@ -47,6 +47,7 @@ CURRENT_PUBLIC_TEXT = [
     "getting-started/repository-map.md",
     "architecture/INSTANTIATED-AI.md",
     "architecture/EHCO-TECHNOLOGY-ESTATE.md",
+    "architecture/diagrams/README.md",
     "architecture/EHCO-AI-OS-INSTANTIATED-SYSTEM.md",
     "architecture/instantiated-proof-range.md",
     "architecture/ecosystem-components-and-participation.md",
@@ -203,6 +204,7 @@ def validate_semantic_boundaries() -> None:
         "README.md": [
             "architecture/INSTANTIATED-AI.md",
             "architecture/EHCO-TECHNOLOGY-ESTATE.md",
+            "architecture/diagrams/README.md",
             "assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md",
             "ECOSYSTEM-DILIGENCE.md",
             "architecture/runtime-repository-and-test-estate-boundary.md",
@@ -211,6 +213,7 @@ def validate_semantic_boundaries() -> None:
         "getting-started/START-HERE.md": [
             "../architecture/INSTANTIATED-AI.md",
             "../architecture/EHCO-TECHNOLOGY-ESTATE.md",
+            "../architecture/diagrams/README.md",
             "../assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md",
             "../ECOSYSTEM-DILIGENCE.md",
             "../TECHNICAL-DILIGENCE.md",
@@ -218,6 +221,7 @@ def validate_semantic_boundaries() -> None:
         ],
         "architecture/EHCO-TECHNOLOGY-ESTATE.md": [
             "INSTANTIATED-AI.md",
+            "diagrams/README.md",
             "runtime-repository-and-test-estate-boundary.md",
             "../assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md",
         ],
@@ -251,8 +255,38 @@ def validate_semantic_boundaries() -> None:
         "Technology Estate does not use current downstream governed component terminology",
     )
     checked(
+        "EHCO_DOCKER_PORTABILITY" in estate
+        and "PRIMARY_ACCESSIBLE_RUNTIME_PROJECTION" in estate,
+        "Technology Estate does not preserve the bounded Docker Portability classification",
+    )
+    checked(
         "does not assert a rename, equivalence, or successor relationship" in estate,
         "Permit Trace historical alias boundary is missing",
+    )
+
+    diagrams = texts["architecture/diagrams/README.md"]
+    required_diagram_sections = [
+        "## 1. Category, Runtime, components, portability, and projection",
+        "## 2. Computational ownership across the ecosystem",
+        "## 3. Shared foundations to domain applications",
+        "## 4. Technical evidence to market evidence ladder",
+    ]
+    for section in required_diagram_sections:
+        checked(section in diagrams, f"Public diagram record missing required section: {section}")
+    checked(
+        "EHCO_DOCKER_PORTABILITY" in diagrams
+        and "PRIMARY_ACCESSIBLE_RUNTIME_PROJECTION" in diagrams,
+        "Public diagram record does not preserve the bounded Docker Portability classification",
+    )
+    checked(
+        "does not create implementation, deployment, Runtime participation, market validation, or Runtime proof" in diagrams,
+        "Public diagram proof ceiling is missing or weakened",
+    )
+
+    evidence_matrix = texts["assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md"]
+    checked(
+        "| EHCO_DOCKER_PORTABILITY |" in evidence_matrix,
+        "Ecosystem matrix does not contain a bounded Docker Portability row",
     )
 
     evidence_readme = texts["evidence/README.md"]
@@ -274,6 +308,10 @@ def validate_semantic_boundaries() -> None:
     checked(
         "`architecture/INSTANTIATED-AI.md`" in release_register,
         "Release register does not inventory Instantiated AI category architecture",
+    )
+    checked(
+        "`architecture/diagrams/README.md`" in release_register,
+        "Release register does not inventory public architecture diagrams",
     )
     checked(
         "not a Runtime repository" in release_register,

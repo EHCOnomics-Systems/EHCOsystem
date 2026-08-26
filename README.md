@@ -18,9 +18,11 @@ Start with the category definition and qualification surface: identity, authorit
 
 ### 2. Explore the EHCOsystem
 
-See how the category is expressed across the realized Tier One Runtime, downstream governed computational and application components, research foundations, and Tier Three projections.
+See how the category is expressed across the realized Tier One Runtime, the bounded Runtime-portability relationship, downstream governed computational and application components, research foundations, and Tier Three projections.
 
 **[EHCOsystem — An Instantiated AI Ecosystem](architecture/EHCO-TECHNOLOGY-ESTATE.md)**
+
+**[View the public architecture diagrams](architecture/diagrams/README.md)**
 
 ### 3. Inspect the Evidence
 

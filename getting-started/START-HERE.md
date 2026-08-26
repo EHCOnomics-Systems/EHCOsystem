@@ -1,12 +1,12 @@
 ---
 title: Start Here
-version: 2.1
+version: 2.2
 status: current-public-navigation
 published: 2026-08-26
 maintainer: EHCOnomics
 evidence_class: navigation
 proof_ceiling: none; navigation only
-supersedes: version 2.0
+supersedes: version 2.1
 ---
 
 # Start Here
@@ -23,7 +23,7 @@ Use this route for the category definition, dependency inversion, computational 
 
 Read **[EHCOsystem — An Instantiated AI Ecosystem](../architecture/EHCO-TECHNOLOGY-ESTATE.md)**.
 
-Use this route for the realized Tier One Runtime / downstream governed component / Tier Three structure, computational ownership, research foundations, and domain applications.
+Then use the **[Public Architecture Diagrams](../architecture/diagrams/README.md)** for the Tier One / Runtime-portability / downstream governed component / Tier Three relationship, computational ownership, shared foundations-to-applications relationship, and evidence ladder.
 
 ## 3. What evidence supports the technical claims?
 
@@ -47,6 +47,7 @@ For Runtime/repository/test-estate interpretation, use the [canonical boundary r
 
 | Version | Date | Change |
 |---|---|---|
+| 2.2 | 2026-08-26 | Added the public-safe diagram route and explicit Runtime-portability relationship. |
 | 2.1 | 2026-08-26 | Made Instantiated AI the category-level entry point and EHCOsystem the Instantiated AI ecosystem route. |
 | 2.0 | 2026-08-25 | Replaced packet-first navigation with capability/evidence/diligence routes and added the Technology Estate and ecosystem assurance paths. |
 | 1.6 | 2026-08-10 | Added a dedicated technical-diligence route and provenance reference. |

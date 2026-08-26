@@ -6,6 +6,7 @@ This page indexes the current public records visibly published in `EHCOsystem`, 
 
 - [Instantiated AI — Public Architecture Definition](architecture/INSTANTIATED-AI.md)
 - [EHCOsystem — An Instantiated AI Ecosystem](architecture/EHCO-TECHNOLOGY-ESTATE.md)
+- [Public Architecture Diagrams](architecture/diagrams/README.md)
 - [Ecosystem Claim → Evidence Matrix](assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md)
 - [Ecosystem Technical Diligence](ECOSYSTEM-DILIGENCE.md)
 - [EHCO AI-OS Technical Diligence](TECHNICAL-DILIGENCE.md)
@@ -22,9 +23,10 @@ This record defines the category-level dependency inversion: governing computati
 ## Ecosystem architecture
 
 - [EHCOsystem — An Instantiated AI Ecosystem](architecture/EHCO-TECHNOLOGY-ESTATE.md)
+- [Public Architecture Diagrams](architecture/diagrams/README.md)
 - [Ecosystem Components and Runtime Relationships](architecture/ecosystem-components-and-participation.md)
 
-These records show how the Instantiated AI category is expressed across the realized Tier One Runtime foundation, downstream governed computational/application components, research foundations, and Tier Three projections while keeping Runtime participation separate from persistent component identity.
+These records show how the Instantiated AI category is expressed across the realized Tier One Runtime foundation, the `EHCO_DOCKER_PORTABILITY` Runtime-projection relationship, downstream governed computational/application components, research foundations, and Tier Three projections while keeping Runtime participation separate from persistent component identity.
 
 ## Canonical interpretation
 
