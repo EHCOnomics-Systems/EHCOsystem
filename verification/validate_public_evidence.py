@@ -42,6 +42,9 @@ CURRENT_PUBLIC_TEXT = [
     "GOVERNANCE.md",
     "SECURITY.md",
     "NOTICE.md",
+    "PROVENANCE.md",
+    "TECHNICAL-DILIGENCE.md",
+    ".github/pull_request_template.md",
     "getting-started/START-HERE.md",
     "getting-started/reading-order.md",
     "getting-started/repository-map.md",
@@ -49,12 +52,16 @@ CURRENT_PUBLIC_TEXT = [
     "architecture/EHCO-TECHNOLOGY-ESTATE.md",
     "architecture/diagrams/README.md",
     "architecture/EHCO-AI-OS-INSTANTIATED-SYSTEM.md",
+    "architecture/EHCO-AI-OS-SYSTEM-CARD.md",
+    "architecture/GOVERNED-RUNTIME-ARCHITECTURE.md",
+    "architecture/SYSTEM-INVARIANTS.md",
     "architecture/instantiated-proof-range.md",
     "architecture/ecosystem-components-and-participation.md",
     "architecture/proof-and-status-classes.md",
     "architecture/runtime-repository-and-test-estate-boundary.md",
     "language-model/README.md",
     "assurance/README.md",
+    "assurance/CLAIM-EVIDENCE-MATRIX.md",
     "assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md",
     "dossiers/README.md",
     "evidence/README.md",
@@ -174,6 +181,8 @@ def validate_semantic_boundaries() -> None:
         r"\behconomics/[A-Za-z0-9_.-]+\b",
         re.IGNORECASE,
     )
+    legacy_spaced_tier_label = re.compile(r"\bTier [123]\b", re.IGNORECASE)
+
     for relative, text in texts.items():
         lowered = text.lower()
         for label, phrase in prohibited.items():
@@ -185,11 +194,16 @@ def validate_semantic_boundaries() -> None:
             personal_repository_locator.search(text) is None,
             f"Prohibited personal-account repository locator in current public text: {relative}",
         )
+        checked(
+            legacy_spaced_tier_label.search(text) is None,
+            f"Legacy spaced tier terminology in current public text: {relative}",
+        )
 
     boundary = texts["architecture/runtime-repository-and-test-estate-boundary.md"]
     required_boundary_statements = [
-        "EHCO AI-OS is the realized Tier 1 Runtime",
+        "EHCO AI-OS is the realized Tier One Runtime",
         "Those repositories, folders, and files are not the Runtime.",
+        "Persistent downstream governed component identity is also distinct from scoped Runtime participation.",
         "Packet 02",
         "Packet 06",
         "Independent third-party certification or validation is not claimed",
@@ -199,6 +213,10 @@ def validate_semantic_boundaries() -> None:
             statement in boundary,
             f"Boundary record missing required statement: {statement}",
         )
+    checked(
+        "VISIBLE_CURRENTLY" not in boundary,
+        "Boundary record retains superseded VISIBLE_CURRENTLY publication vocabulary",
+    )
 
     required_navigation_links = {
         "README.md": [
@@ -289,10 +307,20 @@ def validate_semantic_boundaries() -> None:
         "Ecosystem matrix does not contain a bounded Docker Portability row",
     )
 
+    ai_os_matrix = texts["assurance/CLAIM-EVIDENCE-MATRIX.md"]
+    checked(
+        "Downstream governed components and Tier Three projections" in ai_os_matrix,
+        "AI-OS matrix does not preserve current downstream-component/Tier Three terminology",
+    )
+
     evidence_readme = texts["evidence/README.md"]
     checked(
         "It does **not** establish that the files" in evidence_readme,
         "Evidence landing page does not bound Packet 02 artifact identity",
+    )
+    checked(
+        "Current interpretation uses **Tier One** terminology" in evidence_readme,
+        "Evidence landing page does not reconcile historical TIER1 packet identity to current Tier One terminology",
     )
     checked(
         "Packet-integrity `PASS` is not universal behavioral `PASS`." in evidence_readme,
@@ -301,6 +329,16 @@ def validate_semantic_boundaries() -> None:
     checked(
         "Historical paths, container names, service names, and port bindings" in evidence_readme,
         "Evidence landing page does not classify historical capture locators",
+    )
+
+    pr_template = texts[".github/pull_request_template.md"]
+    checked(
+        "current repository and organization rulesets" in pr_template,
+        "PR template does not require fresh repository/organization ruleset readback",
+    )
+    checked(
+        "No required governance condition is treated as optional merely because a bypass capability exists." in pr_template,
+        "PR template does not preserve bypass/authorization separation",
     )
 
     release_register = texts["releases/PUBLIC-RELEASE-REGISTER.md"]

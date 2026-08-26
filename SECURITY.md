@@ -2,9 +2,9 @@
 
 ## Scope
 
-This repository contains approved public architecture, evidence, provenance, research, verification, and publication materials. It is not the EHCO AI-OS Runtime and does not contain or hold Runtime authority, standing, authoritative state, consequence, persistence, release authority, or Runtime truth.
+This repository contains approved public architecture, evidence, provenance, research, verification, and publication materials for EHCOsystem. It is not the EHCO AI-OS Runtime and does not hold Runtime authority or authoritative Runtime state.
 
-Controlled private repositories and runtime-support folders are bounded test, compatibility, source-comparison, packaging, deployment-support, and evidence-generation estates. They are not the Runtime.
+Downstream governed component source, controlled test/source estates, and supporting artifacts remain distinct from the Runtime and from scoped Runtime participation relationships.
 
 ## Public evidence boundary
 
@@ -28,7 +28,7 @@ Report security concerns through an official EHCOnomics contact channel and incl
 
 Public material must not disclose:
 
-- proprietary Runtime or participant implementation source;
+- proprietary Runtime or downstream-component implementation source;
 - unapproved private repository names, internal file paths, commits, schemas, or control anchors;
 - protected Runtime transition logic or Instantiation Bridge mechanics;
 - credentials, tokens, private keys, privileged endpoints, or protected infrastructure details;

@@ -2,24 +2,15 @@
 
 ## Purpose
 
-This repository publishes approved public architecture, evidence, provenance, research, verification, and publication materials of the EHCOsystem.
+This repository publishes approved public architecture, evidence, provenance, research, verification, and publication materials for **EHCOsystem, EHCOnomics' Instantiated AI ecosystem**.
 
-EHCO AI-OS is the realized Tier 1 Runtime. This repository is not the Runtime and does not govern Runtime authority, standing, authoritative state, transition, consequence, persistence, recovery, withholding, release, closure, or Runtime truth.
+**EHCO AI-OS is the realized Tier One Runtime foundation.** This repository is a public technical representation and evidence surface; it does not hold Runtime authority or authoritative Runtime state.
 
 ## Controlling boundary
 
-All public material must conform to the [Runtime, Repository, and Test-Estate Boundary](architecture/runtime-repository-and-test-estate-boundary.md).
+All public material must conform to the [Runtime, Repository, and Test-Estate Boundary](architecture/runtime-repository-and-test-estate-boundary.md) and the canonical [System Invariants](architecture/SYSTEM-INVARIANTS.md).
 
-The following distinctions are mandatory:
-
-- repository is not Runtime;
-- file identity is not Runtime identity;
-- declaration presence is not executed enforcement;
-- build or test success is not Runtime admission;
-- packet integrity is not universal behavioral proof;
-- historical observation is not current Runtime state;
-- public visibility is not Runtime authority;
-- scope miss is not state change.
+Publication must preserve the distinctions material to the claim being made, including component identity versus scoped Runtime participation, evidence versus authority, artifact identity versus Runtime identity, and public projection versus Runtime truth. Shared invariant language should be linked rather than repeatedly restated across public pages.
 
 ## Publication control
 
@@ -71,13 +62,13 @@ Proposed changes must not introduce:
 
 ## Change control
 
-Changes to the accepted public standing and architecture records require explicit EHCOnomics approval. The applicable records are hash-bound or version-controlled public baselines; Git repository mutability must not be described as physical immutability.
-
-Later research, testing, development, deployment, and ecosystem findings remain distinguishable from accepted Runtime standing. A dashboard, ledger, branch, package, assistant interpretation, repository status, or scoped search result does not independently change accepted standing or Runtime truth.
+Changes to accepted public architecture and standing records require explicit EHCOnomics approval. Git repository mutability must not be described as physical immutability, and repository activity does not independently alter Runtime standing or Runtime truth.
 
 ## Validation
 
-Every pull request and every push to `main` must run the repository validation workflow. Validation confirms bounded repository integrity and current semantic-boundary compliance. It does not create authority, standing, deployment, production activation, operational release, or go-live authorization.
+Every pull request and every push to `main` must run the repository validation workflow. Before acceptance, the then-current repository and organization rulesets must also be re-read and every applicable required check must be satisfied on the exact candidate relationship. Bypass capability is not acceptance evidence.
+
+Validation confirms bounded repository integrity and current semantic-boundary compliance. It does not create authority, standing, deployment, production activation, operational release, or go-live authorization.
 
 ## Licensing
 

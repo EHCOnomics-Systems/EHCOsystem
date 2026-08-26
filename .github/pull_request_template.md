@@ -13,6 +13,7 @@ Describe the bounded public-repository change and why it is needed.
 
 - [ ] Every material claim is classified by its applicable public evidence class.
 - [ ] Every material claim stays within the proof ceiling of its cited source.
+- [ ] Persistent downstream governed component identity is not represented as Runtime participation unless owning Runtime evidence establishes that scoped relationship.
 - [ ] Artifact identity is not represented as Runtime identity.
 - [ ] Declaration presence is not represented as executed enforcement.
 - [ ] Test success or packet integrity is not represented as Runtime admission or universal behavioral proof.
@@ -21,14 +22,16 @@ Describe the bounded public-repository change and why it is needed.
 ## Publication control
 
 - [ ] Canonical navigation is updated if this adds or removes a public record.
-- [ ] `releases/PUBLIC-RELEASE-REGISTER.md` is updated when the visible public estate changes.
+- [ ] `releases/PUBLIC-RELEASE-REGISTER.md` is updated when the public estate represented by the candidate revision changes.
 - [ ] Hash-preserved Packets 00–08 and canonical dossier bytes are unchanged unless an explicitly authorized evidence-version operation requires otherwise.
 - [ ] Security/confidentiality/IP disclosure review is complete.
 
-## Validation
+## Validation and governance
 
-- [ ] `Validate public repository` passes on the exact PR head.
-- [ ] CodeQL passes on the exact PR head when applicable.
+- [ ] Repository validation passes on the exact PR head.
+- [ ] CodeQL/code-scanning requirements applicable to the exact PR head are satisfied.
+- [ ] The current repository and organization rulesets have been re-read before acceptance, and every then-required status check or review condition is satisfied on the exact candidate relationship.
+- [ ] No required governance condition is treated as optional merely because a bypass capability exists.
 
 ## Effects
 
