@@ -4,10 +4,17 @@ This page indexes the artifacts visibly published in the `EHCOsystem` repository
 
 ## Start here
 
+- [Instantiated AI — Public Architecture Definition](architecture/INSTANTIATED-AI.md)
 - [Runtime, Repository, and Test-Estate Boundary](architecture/runtime-repository-and-test-estate-boundary.md)
 - [Start Here](getting-started/START-HERE.md)
 - [Reading Order](getting-started/reading-order.md)
 - [Repository Map](getting-started/repository-map.md)
+
+## Category architecture
+
+- [Instantiated AI — Public Architecture Definition](architecture/INSTANTIATED-AI.md)
+
+This category record defines the dependency inversion at the center of Instantiated AI: governing computational conditions are established independently of the intelligence before consequential operation. It also defines computational standing, Standing Baseline, source and memory standing, model independence, and the qualification questions used to distinguish category claims from implementation evidence.
 
 ## Canonical public dossier
 
