@@ -62,7 +62,7 @@ These values define the canonical identity of the first public EHCOsystem archit
 | 00 - Dossier Identity and Boundary | PRESENT_IN_REVISION | Exact dossier identity and boundary only |
 | 01 - Instantiated Standing | PRESENT_IN_REVISION | Bounded projection of the accepted 52/53 standing record; packet authority and standing effects are `NONE` |
 | 02 - Canonical Runtime Source Binding | PRESENT_IN_REVISION | Packet-time runtime-support test/source-artifact identity, integrity, and SHA-256 provenance; not a Runtime repository, Runtime implementation, authority location, or current Runtime state |
-| 03 - Tier 1 Authority Enforcement | PRESENT_IN_REVISION | Exact artifact identity and named declaration/anchor presence; declaration presence is not executed enforcement |
+| 03 - Tier One Authority Enforcement | PRESENT_IN_REVISION | Exact artifact identity and named declaration/anchor presence; declaration presence is not executed enforcement |
 | 04 - Runtime Packet and Continuity Anchors | PRESENT_IN_REVISION | Artifact bindings and named declarations within the packet ceiling |
 | 05 - Proof, Collapse, Recovery, Release, and Projection Anchors | PRESENT_IN_REVISION | Artifact bindings and named declarations within the packet ceiling |
 | 06 - Observed Live Capture and Release Status | PRESENT_IN_REVISION | Hash-preserved historical bounded test/observation capture; integrity `PASS` is not universal behavioral `PASS`; current Runtime state is NOT_PROJECTED_HERE |

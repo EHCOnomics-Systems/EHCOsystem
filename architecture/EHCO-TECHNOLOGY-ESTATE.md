@@ -1,6 +1,6 @@
 ---
 title: EHCOsystem — An Instantiated AI Ecosystem
-version: 1.2
+version: 1.3
 status: current-public-architecture
 published: 2026-08-26
 maintainer: EHCOnomics
@@ -30,7 +30,7 @@ For the detailed distinction among Runtime, repositories, test estates, and publ
 
 ## Runtime projection and portability
 
-`EHCO_DOCKER_PORTABILITY` is the **PRIMARY_ACCESSIBLE_RUNTIME_PROJECTION** within the established hardened Runtime/root-image lineage. It is related to the same EHCO AI-OS Runtime lineage, but it is distinct from the `EHCOnomics-Systems/EHCO_AI-OS` source/control repository, distinct from repository-local Docker or Compose test realizations, and is not an independent authority owner.
+`EHCO_DOCKER_PORTABILITY` is the **PRIMARY_ACCESSIBLE_RUNTIME_PROJECTION** within the established EHCO AI-OS Runtime lineage. It is distinct from the controlled EHCO AI-OS source repository, distinct from repository-local Docker or Compose test realizations, and is not an independent authority owner.
 
 This is an architectural/source classification. It does not assert a present deployment, current host state, Runtime execution event, release, admission, binding, invocation, persistence effect, or standing change. Those effects remain separate and require their applicable owning technical or Runtime evidence.
 
@@ -40,13 +40,11 @@ This is an architectural/source classification. It does not assert a present dep
 
 The EHCO Language Model is the deterministic computational-language component. Its architecture is single-path and zero-weight: language computation is performed through explicit computational structures and operators rather than learned-weight inference or delegation to an external language model.
 
-Its controlled source estate covers lexical and morphological processing, syntax and semantic composition, reference and context, evidence binding, Language Math, deterministic candidate search and resolution, ambiguity and withholding, bounded reasoning, and a deterministic component-service boundary.
-
-A bounded portion of the actual test estate is publicly inspectable today: seven exact synthetic fixtures covering 62 cases, with expected dispositions, a qualification-test index, manifest, and validation tooling. [Inspect the Language Model test evidence](../language-model/evidence/public-test-snapshot-v1/README.md).
+Its controlled source estate establishes deterministic language-processing, context/evidence binding, ambiguity/withholding, bounded reasoning, and component-service capabilities. A bounded portion of the actual test estate is publicly inspectable today: seven exact synthetic fixtures covering 62 cases, with expected dispositions, a qualification-test index, manifest, and validation tooling. [Inspect the Language Model test evidence](../language-model/evidence/public-test-snapshot-v1/README.md).
 
 ### EHCO Range Reactor
 
-EHCO Range Reactor owns bounded range and reasoning computation. Its controlled source estate includes deterministic reference semantics, finite reference evaluation, collapse and quotient semantics, verification/conformance machinery, service interfaces, schemas, and qualification tooling.
+EHCO Range Reactor owns bounded deterministic range and reasoning computation, with controlled source establishing its reference, evaluation, verification/conformance, service, and qualification capabilities.
 
 No dedicated public Range Reactor evidence snapshot is published in this repository yet. A future evidence package would require its own disclosure and verification operation.
 
@@ -62,23 +60,21 @@ EHCO Memory is the governed memory and continuity research foundation. Its publi
 
 ### Primordia
 
-Primordia is the governed research estate for computational substrate, specification/language, semantics, and engineering-system research. Its governed research program includes grammar and typed constructs, parsing/intermediate representation, deterministic-evaluation research, computational-sense mathematics, and cross-system mapping.
-
-The public claim is limited to that governed research identity. Present acceptance of the larger governed specimen in the current source repository is not asserted here.
+Primordia is the governed research estate for computational substrate, specification/language, semantics, and engineering-system research. The public claim is limited to that governed research identity; stronger current implementation maturity is not asserted here.
 
 ### EHCO Recursion
 
-EHCO Recursion is the governed research estate for recursion families, trust/coherence, collapse/failure behavior, bounded re-entry, carriers, seams, support roots, orchestration relationships, and cross-system composition.
+EHCO Recursion is the governed research estate for recursion, trust/coherence, collapse/failure behavior, bounded re-entry, and cross-system composition.
 
 ### EHCO Fractal Systems
 
-EHCO Fractal Systems is the governed research estate for structural and form preservation, admissibility, continuity, drift, scale, projection, and lineage.
+EHCO Fractal Systems is the governed research estate for structural/form preservation, admissibility, continuity, drift, scale, projection, and lineage.
 
 ## Relationship and coordination components
 
 ### EHCO Prime
 
-EHCO Prime is the persistent individual-facing relationship service. Prime owns relationship continuity, intent reception and clarification, activity framing, bounded proposals and capability requests, evidence/result intake, and individual-facing explanation.
+EHCO Prime is the persistent individual-facing relationship service. Prime owns relationship continuity, intent reception and clarification, bounded proposals and capability requests, evidence/result intake, and individual-facing explanation.
 
 Prime is intentionally distinct from whichever model, provider, application, department, deployment, or session may be involved in an activity.
 
@@ -92,15 +88,15 @@ EHCOnomics applications are downstream governed components with their own domain
 
 ### Grasp Safety Intelligence
 
-Grasp Safety owns construction and field-safety application functions including inspections, incidents, corrective actions, deterministic safety logic, immutable records, evidence relationships, and business/time-graph structures. Current source includes deterministic kernels, fail-closed validation, deterministic receipts, synthetic regression material, and source/evidence graph structures.
+Grasp Safety owns construction and field-safety application functions including inspections, incidents, corrective actions, deterministic safety logic, records, and evidence relationships. Controlled source establishes deterministic and fail-closed application foundations with bounded verification material.
 
 ### EHCO Energy
 
-EHCO Energy is the data-centre management and efficiency application. Its standalone core includes deterministic energy-and-cost calculation over explicit inputs with formulas, provenance, assumptions, rounding rules, and deterministic receipts.
+EHCO Energy is the data-centre management and efficiency application. Its standalone core establishes deterministic energy-and-cost calculation over explicit inputs, assumptions, and provenance-bearing outputs.
 
 ### Noble Law
 
-Noble Law is a bounded legal decision-support application. It owns matter-scoped analysis, source and citation processing, provenance, authority-state representation, and non-binding adoption-candidate workflows while professional and institutional decisions remain externally owned.
+Noble Law is a bounded legal decision-support application. It owns matter-scoped analysis, source/citation processing, provenance, authority-state representation, and non-binding adoption-candidate workflows while professional and institutional decisions remain externally owned.
 
 ### EHCO War Room
 
@@ -116,7 +112,7 @@ EHCO Project Construct is the construction and built-asset intelligence family. 
 
 ### EHCO Luminis
 
-EHCO Luminis is a downstream governed media application suite. Current source maturity includes a schema/record-oriented foundation with 37 controlled JSON Schemas, matched positive and fail-closed fixtures, schema-bound records, and deterministic content identities. This does not imply deployment or Runtime participation.
+EHCO Luminis is a downstream governed media application suite. Current source maturity establishes a controlled schema/record-oriented foundation with deterministic content identities and bounded positive/fail-closed verification material. This does not imply deployment or Runtime participation.
 
 ### EHCO Nexus
 
@@ -124,13 +120,13 @@ EHCO Nexus is a bounded commercial downstream governed application foundation fo
 
 ### EHCO Permit Trace
 
-EHCO Permit Trace is the current permit-domain application identity. Its source estate covers permit identity and revisions, source-bound observations, normalization, deterministic applicability/rule execution, typed findings, human review, audit custody, persistence, and replay surfaces.
+EHCO Permit Trace is the current permit-domain application identity. Its source estate establishes permit/revision handling, source-bound observations, deterministic applicability/rule processing, typed findings, human review, audit custody, persistence, and replay capability.
 
 This page does not assert a rename, equivalence, or successor relationship to historical CodeProof, PermaTrace, NRC, or other legacy labels.
 
 ### Pegasus IT
 
-Pegasus IT is a downstream governed IT-services domain/application. Its accepted source foundation includes canonical domain identities, evidence/time/lifecycle/relationship semantics, tenant-scoped customer-environment graph structures, bounded rules, synthetic fixtures, and deterministic tests. Build, release, deployment, external-action, and Runtime effects remain separate evidence dimensions.
+Pegasus IT is a downstream governed IT-services domain/application. Its accepted source foundation establishes canonical domain identities, evidence/time/lifecycle relationships, bounded rules, fixtures, and deterministic tests. Build, release, deployment, external-action, and Runtime effects remain separate evidence dimensions.
 
 ## Tier Three — interfaces and projections
 
@@ -141,3 +137,10 @@ Tier Three contains interfaces, dashboards, reports, metrics, public-safe views,
 EHCOsystem uses evidence appropriate to the proposition being examined: controlled architecture, exact artifact identity, manifests and hashes, selected actual test fixtures, source anchors, bounded observations, discrepancy records, receipts, and verification tooling.
 
 Use the [Ecosystem Claim → Evidence Matrix](../assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md) to see the public reference, verification method, source/currentness basis, evidence class, and proof ceiling for individual propositions. For a broader reviewer route, use [Ecosystem Technical Diligence](../ECOSYSTEM-DILIGENCE.md).
+
+## Revision history
+
+| Version | Date | Change |
+|---|---|---|
+| 1.3 | 2026-08-26 | Minimized private-source and implementation-specific disclosure while preserving category, ownership, capability, maturity, and evidence-class claims. |
+| 1.2 | 2026-08-26 | Category-first public architecture candidate. |

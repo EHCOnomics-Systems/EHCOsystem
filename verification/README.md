@@ -29,7 +29,7 @@ The validator checks that:
 - the category record identifies EHCOsystem as EHCOnomics' Instantiated AI ecosystem;
 - the Technology Estate preserves current downstream-governed-component terminology and established Tier One maturity;
 - persistent downstream governed component identity remains separate from scoped Runtime participation;
-- active public narrative uses current `Tier One`, `downstream governed component`, and `Tier Three` terminology rather than legacy spaced `Tier 1`, `Tier 2`, or `Tier 3` labels;
+- active public narrative uses current `Tier One`, `downstream governed component`, and `Tier Three` terminology rather than legacy numeric tier labels;
 - the estate represents `EHCO_DOCKER_PORTABILITY` only through its bounded `PRIMARY_ACCESSIBLE_RUNTIME_PROJECTION` classification;
 - the diagram record contains all four selected WP-05 explanatory views and preserves its non-implementation/non-deployment proof ceiling; and
 - the release register inventories the category, ecosystem, and diagram artifacts.
