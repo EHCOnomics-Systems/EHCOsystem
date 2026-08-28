@@ -164,7 +164,7 @@ bridge:
   participation_binding_status: NOT_ESTABLISHED
   canonical_runtime_receipt_status: NOT_ESTABLISHED
 evidence:
-  evidence_class: REPOSITORY_SOURCE_DIFF_AND_CURRENT_SOURCE_RECONCILIATION
+  evidence_class: REPOSITORY_SOURCE_AND_DIFF_VALIDATION
   required_checks:
     - Exact public source base remains a7af6e9ec74c00cd6ce7a076394c4a0376e8a487.
     - Changed paths remain within the declared operation scope.
