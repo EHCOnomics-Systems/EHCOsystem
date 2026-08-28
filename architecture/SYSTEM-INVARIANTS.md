@@ -1,112 +1,108 @@
 ---
 title: EHCO AI-OS Public System Invariants
-version: 1.1
+version: 1.2
 status: accepted-public-reference
-published: 2026-08-25
+published: 2026-08-28
 maintainer: EHCOnomics
 evidence_class: controlled-ehco-architecture
-proof_ceiling: public invariant reference; not implementation evidence or Runtime proof
-supersedes: version 1.0
+evidence_scope: canonical public separation principles
+supersedes: version 1.1
 ---
 
 # EHCO AI-OS Public System Invariants
 
-## Purpose
-
-These invariants are the canonical concise public interpretation controls for the EHCOsystem. The accepted standing baseline remains **52/53**.
+The accepted standing baseline is **52/53**.
 
 ## Runtime and authority
 
-### 1. Runtime != repository
-A repository can preserve source, evidence, documentation, tests, manifests, and release history without becoming the Runtime.
+### 1. Runtime authority has an explicit owner
+`INSTANTIATED_EHCO_RUNTIME` owns Tier One Runtime authority and current Runtime state.
 
-### 2. Capability != authority
-A component's technical ability to perform work does not independently establish authority for that work to acquire governed Runtime consequence.
+### 2. Capability and authority are separate dimensions
+A component's technical capability describes the work it can perform. Authority describes the governing basis under which work can acquire Runtime consequence.
 
-### 3. Component identity != Runtime participation
-Persistent Tier Two software identities are downstream governed components. Runtime participation is a separate scoped relationship established only by applicable Runtime evidence.
+### 3. Component identity and Runtime participation are separate dimensions
+Persistent Tier Two software identities are downstream governed components. Runtime participation is scoped to an applicable Runtime corridor and owning Runtime evidence.
 
-### 4. Participation != Tier One authority
-A model, agent, application, service, or other component may participate within governed scope without becoming the source of Tier One Runtime authority.
+### 4. Tier One authority remains centralized
+Models, agents, applications and services operate under the governing relationships owned by EHCO AI-OS.
 
-### 5. Proposal != commit
-A proposed change, generated plan, model output, or draft does not become an accepted system change merely because it has been produced.
+### 5. Proposals follow an acceptance lifecycle
+Generated plans, model output, drafts and proposed changes move through their applicable review, acceptance and commit controls.
 
-### 6. Code generation != Runtime execution
-Generated or stored code is an artifact until execution is established within the applicable operational context.
+### 6. Code artifacts and execution evidence have separate custody
+Source/code identity is established by source evidence. Execution is established by execution evidence.
 
-### 7. Package completion != Runtime realization
-A package, build, image, or deployment-support artifact can be complete without becoming the realized Runtime.
+### 7. Package completion and Runtime realization are separate lifecycle states
+Packages, builds, images and deployment-support artifacts retain their own completion state. Runtime realization retains its Runtime evidence state.
 
 ## Evidence and proof
 
-### 8. Claim != proof
-A claim asserts or represents. Proof is bounded to the conditions, evidence, scope, authority, and operational state under which the claim can stand.
+### 8. Claims map to proof
+A claim states a proposition. Proof binds that proposition to evidence, scope, authority, time and operational state.
 
-### 9. Evidence != authority
-Evidence can support a governed determination without becoming the authority that makes the determination.
+### 9. Evidence supports governed determination
+Evidence provides the basis for a determination. The designated authority owner issues the governed determination.
 
-### 10. Artifact identity != Runtime identity
-An exact path, hash, revision, package, file set, or manifest can identify an artifact without identifying the Runtime itself.
+### 10. Artifact identity identifies artifacts
+Paths, hashes, revisions, packages, file sets and manifests identify the artifacts they bind.
 
-### 11. File presence != execution
-The existence of a source file, declaration, rule, schema, or control artifact does not prove that the corresponding behavior executed.
+### 11. Execution is established by execution evidence
+Source presence and declaration presence are source facts. Execution records establish executed behavior.
 
-### 12. Declaration != enforcement
-A declared control establishes presence within its evidence scope. It does not, by itself, prove enforcement.
+### 12. Enforcement is established by enforcement evidence
+Declarations identify control constructs. Enforcement records establish their executed effect.
 
-### 13. Test success != Runtime admission
-A passing test can establish bounded test behavior. It does not independently establish Runtime participation, authority, standing, or universal behavioral correctness.
+### 13. Tests establish bounded behavior
+A passing test establishes behavior for the identified source, inputs, environment, method and time.
 
-### 14. Packet integrity != universal behavioral proof
-A packet can be complete and hash-valid while containing bounded observations, scoped discrepancies, or lanes that were not directly observed.
+### 14. Packet integrity establishes package integrity
+Manifest and hash verification establishes the identity and integrity of the declared packet contents.
 
-### 15. Ledger != authority
-A ledger can preserve evidence and history without automatically acquiring Runtime authority.
+### 15. Ledgers preserve evidence and history
+Ledger authority remains explicit in the governing architecture.
 
-### 16. Dashboard != Runtime truth
-A dashboard or projection can display governed information without becoming authoritative Runtime state.
+### 16. Dashboards project governed information
+Dashboard state carries the evidence/source relationship of the information it displays.
 
 ## State and standing
 
-### 17. Scope miss != state change
-Failure to retrieve or observe something within a bounded scope does not independently establish that underlying Runtime state changed.
+### 17. Scope findings remain scope-specific
+Retrieval and observation results retain their stated scope and time.
 
-### 18. Missing retrieval != contradiction
-Failure to retrieve an applicable source or record is not itself evidence that the source or record is false.
+### 18. Retrieval state and source truth are independently evaluated
+Source authority and applicability are established through their governing evidence chain.
 
-### 19. Non-observation != demotion
-A bounded test or capture that does not observe a lane does not independently demote accepted Runtime standing.
+### 19. Unobserved lanes retain their owning evidence state
+New evidence can extend, supersede or contradict that state through the applicable proof path.
 
-### 20. Local artifact status != global Runtime state
-The status of a local file, test environment, package, repository, or capture does not automatically establish global Runtime state.
+### 20. Local artifact state and global Runtime state have separate owners
+Repository, package, test and capture state remain source/evidence facts; Runtime state remains Runtime-owned.
 
-### 21. Typed status != numerical standing
-Descriptive status classes do not replace the accepted numerical standing baseline.
+### 21. Typed status and numerical standing are separate dimensions
+Typed lifecycle/status labels describe their governed object. Numerical standing remains the accepted Runtime standing measure.
 
-### 22. Repository activity does not change standing
-A commit, pull request, workflow result, documentation change, or publication event does not independently calculate, promote, demote, revoke, or alter Runtime standing.
-
-The accepted standing baseline remains **52/53** unless changed by the applicable Runtime authority and proof path.
+### 22. Runtime authority owns standing transitions
+The accepted standing baseline remains **52/53** until an applicable Runtime authority and proof path establishes a transition.
 
 ## Projection and publication
 
-### 23. Projection != authority
-Public views, reports, models, dashboards, and repository documents can make governed information visible without acquiring the authority of the system they describe.
+### 23. Projections present governed information
+Public views, reports, models and dashboards carry source/evidence attribution alongside their projected state.
 
-### 24. Public artifact release != Runtime release
-Publishing a document, dossier, evidence packet, or repository release is a publication event. It is not equivalent to operational Runtime release.
+### 24. Public artifact release is a publication lifecycle
+Documents, dossiers, evidence packets and repository releases follow their own publication controls.
 
-### 25. Runtime realization != production activation
-A realized Runtime is distinct from environment-specific hosting, public ingress, operational external release, commercial activation, and go-live authorization.
+### 25. Runtime realization and production activation are independent lifecycle dimensions
+Environment hosting, public ingress, operational external release, commercial activation and go-live each retain their own governing record.
 
 ## Interpretation rule
 
-When two public records appear to differ, identify the governed object, source owner, evidence class, proof ceiling, relevant time/scope, and whether the apparent conflict is actually a scope difference. A scope difference should not be promoted into a Runtime contradiction without applicable proof.
+When two records differ, identify the governed object, source owner, evidence class, time/scope, and lifecycle dimension. This resolves scope differences and identifies any genuine superseding or contradictory proof.
 
 ## Revision history
 
 | Version | Date | Change |
 |---|---|---|
-| 1.1 | 2026-08-25 | Added the component-identity/Runtime-participation invariant and reconciled persistent Tier Two terminology. |
-| 1.0 | 2026-08-08 | Initial accepted public invariant reference. |
+| 1.2 | 2026-08-28 | Recast the canonical invariants as affirmative ownership, lifecycle and evidence principles. |
+| 1.1 | 2026-08-25 | Added the component-identity/Runtime-participation invariant. |

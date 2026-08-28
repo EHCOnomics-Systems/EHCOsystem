@@ -1,97 +1,67 @@
-# Canonical Public Release Register
+# Canonical Public Publication Register
 
-This register records public artifact identity, revision visibility, and proof ceiling for `EHCOsystem`. Shared Runtime/repository interpretation is maintained in the [Runtime, Repository, and Test-Estate Boundary](../architecture/runtime-repository-and-test-estate-boundary.md); this register remains focused on publication state.
+This register records public source visibility, artifact identity and evidence scope for `EHCOsystem`.
 
-## Status vocabulary
+## Publication vocabulary
 
-- **PRESENT_IN_REVISION** - present at the stated path in the Git revision containing this register. When that revision is canonical `main`, this is canonical repository visibility.
-- **APPROVED_PENDING_PUBLICATION** - approved for a future public projection but not present in the revision being interpreted.
-- **SCOPED_UNRESOLVED** - unresolved within a declared packet, capture, test, or publication scope.
-- **NOT_PROJECTED_HERE** - not represented by the revision or record being interpreted; absence is not a Runtime state change.
-- **EXCLUDED** - intentionally outside the public repository.
+- **PRESENT_IN_REVISION** — present in the stated Git revision.
+- **REGISTERED_RELEASE_IDENTITY** — declared release identity reserved for publication lifecycle use.
+- **HASH_PRESERVED_EVIDENCE** — byte-preserved evidence with cryptographic identity.
+- **CURRENT_RUNTIME_EVIDENCE_REQUIRED** — current Runtime evidence owns the proposition.
 
-## Canonical public release identity
+## Registered public release identity
 
 - Version: `1.0.0`
-- Tag: `v1.0.0-public`
+- Tag identity: `v1.0.0-public`
 - Release title: `EHCOsystem Public Architecture and Evidence Baseline v1.0.0`
 
-These values define the canonical identity of the first public EHCOsystem architecture and evidence baseline. This register does not by itself assert that the tag or GitHub Release has been published. The GitHub Releases surface determines live publication state.
+Canonical `main` is the active public source stream. The registered release identity is tracked as a separate publication-lifecycle record.
 
-## Public estate in this revision
+## Public estate in the current revision
 
-| Artifact | Status | Canonical path | Proof ceiling |
+| Artifact | Status | Canonical path | Evidence scope |
 |---|---|---|---|
-| Repository identity, qualitative maturity posture, and front door | PRESENT_IN_REVISION | `README.md` | Public category-to-ecosystem orientation, percentage-free core/remaining-work posture, evidence/diligence navigation, and canonical boundary linkage |
-| Instantiated AI — Public Architecture Definition | PRESENT_IN_REVISION | `architecture/INSTANTIATED-AI.md` | Controlled category and ecosystem architecture definition; not implementation evidence, legal certification, deployment evidence, or Runtime proof |
-| EHCOsystem — An Instantiated AI Ecosystem | PRESENT_IN_REVISION | `architecture/EHCO-TECHNOLOGY-ESTATE.md` | Controlled category-to-ecosystem architecture, Runtime-projection/Dashboard hierarchy, differentiated component maturity, estate lanes, and bounded source/evidence representation |
-| EHCOsystem Public Architecture Diagrams | PRESENT_IN_REVISION | `architecture/diagrams/README.md` | Original explanatory relationship and maturity/estate-lane diagrams only; not implementation, private topology, deployment, Runtime participation, market validation, or Runtime proof |
-| Ecosystem Components and Runtime Relationships | PRESENT_IN_REVISION | `architecture/ecosystem-components-and-participation.md` | Component identity, differentiated maturity, estate lanes, and scoped Runtime-relationship architecture |
-| Ecosystem Claim → Evidence Matrix | PRESENT_IN_REVISION | `assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md` | Claim/evidence navigation with estate lane, maturity, currentness, verification, and proof-ceiling separation; inherits cited/reviewed source ceilings |
-| Ecosystem Technical Diligence | PRESENT_IN_REVISION | `ECOSYSTEM-DILIGENCE.md` | Navigation and bounded source/evidence review method only |
-| Runtime/repository/test-estate boundary | PRESENT_IN_REVISION | `architecture/runtime-repository-and-test-estate-boundary.md` | Controlling public interpretation boundary |
-| Public library | PRESENT_IN_REVISION | `LIBRARY.md` | Navigation only |
-| Start Here | PRESENT_IN_REVISION | `getting-started/START-HERE.md` | Navigation only |
-| Reading order | PRESENT_IN_REVISION | `getting-started/reading-order.md` | Navigation only |
-| Repository map | PRESENT_IN_REVISION | `getting-started/repository-map.md` | Visible repository structure and provider-metadata disposition boundary only |
-| Repository governance | PRESENT_IN_REVISION | `GOVERNANCE.md` | Publication and contribution control |
-| Security policy | PRESENT_IN_REVISION | `SECURITY.md` | Public disclosure and reporting boundary |
-| Proprietary license | PRESENT_IN_REVISION | `LICENSE` | Repository-use permissions and restrictions |
-| Notice | PRESENT_IN_REVISION | `NOTICE.md` | Public purpose, evidence, IP, and implementation boundary |
-| EHCO AI-OS Instantiated System | PRESENT_IN_REVISION | `architecture/EHCO-AI-OS-INSTANTIATED-SYSTEM.md` | Accepted controlled public system record |
-| EHCO AI-OS Public System Card | PRESENT_IN_REVISION | `architecture/EHCO-AI-OS-SYSTEM-CARD.md` | Accepted explanatory public architecture; not Runtime proof |
-| EHCO AI-OS Governed Runtime Architecture | PRESENT_IN_REVISION | `architecture/GOVERNED-RUNTIME-ARCHITECTURE.md` | Accepted conceptual public architecture; not an implementation map or Runtime proof |
-| EHCO AI-OS Public System Invariants | PRESENT_IN_REVISION | `architecture/SYSTEM-INVARIANTS.md` | Canonical public invariant reference |
-| Instantiated Proof Range | PRESENT_IN_REVISION | `architecture/instantiated-proof-range.md` | Accepted public proof-range record |
-| Proof and Status Classes | PRESENT_IN_REVISION | `architecture/proof-and-status-classes.md` | Public proof/status vocabulary |
-| EHCO Language Model | PRESENT_IN_REVISION | `language-model/README.md` | Controlled component architecture/source representation and public-test routing |
-| Language Model Public Test Snapshot v1 | PRESENT_IN_REVISION | `language-model/evidence/public-test-snapshot-v1/` | Selected exact test-artifact identity and public test design |
-| Public assurance index | PRESENT_IN_REVISION | `assurance/README.md` | Assurance navigation only |
-| EHCO AI-OS Claim → Evidence Matrix | PRESENT_IN_REVISION | `assurance/CLAIM-EVIDENCE-MATRIX.md` | Maps selected AI-OS claims to existing public sources/proof ceilings |
-| Public dossier landing page | PRESENT_IN_REVISION | `dossiers/README.md` | Dossier identity, navigation, and proof boundary |
-| Public dossier PDF | PRESENT_IN_REVISION | `dossiers/EHCO_AI_OS_Governed_Operational_Architecture_Public_Edition_v1_8_LOCK_FINAL.pdf` | Controlled public architecture; SHA-256 `F489BA01961A12CF101B1F1DF57E6958456A0840BEB798B862FA97ACB030892D` |
-| Public Evidence Companion overview | PRESENT_IN_REVISION | `evidence/README.md` | Navigation and packet-specific interpretation |
-| Public Evidence Companion Version 1 | PRESENT_IN_REVISION | `evidence/public-evidence-companion/v1/` | Hash-preserved bounded evidence and verification surface |
-| Public validation | PRESENT_IN_REVISION | `verification/` and `.github/workflows/validate-public-evidence.yml` | Repository integrity, semantic/disclosure, qualitative maturity, and estate-lane checks only |
-| Public release register | PRESENT_IN_REVISION | `releases/PUBLIC-RELEASE-REGISTER.md` | Publication-state record only |
+| Repository identity and front door | PRESENT_IN_REVISION | `README.md` | Category-to-ecosystem orientation and current maturity |
+| Instantiated AI | PRESENT_IN_REVISION | `architecture/INSTANTIATED-AI.md` | Category architecture |
+| EHCOsystem Technology Estate | PRESENT_IN_REVISION | `architecture/EHCO-TECHNOLOGY-ESTATE.md` | Ecosystem architecture and source-grounded maturity |
+| Public Architecture Diagrams | PRESENT_IN_REVISION | `architecture/diagrams/README.md` | Public explanatory relationships |
+| Ecosystem Components and Runtime Relationships | PRESENT_IN_REVISION | `architecture/ecosystem-components-and-participation.md` | Component identity, maturity and Runtime relationships |
+| Ecosystem Claim → Evidence Matrix | PRESENT_IN_REVISION | `assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md` | Claim/evidence navigation |
+| Ecosystem Technical Diligence | PRESENT_IN_REVISION | `ECOSYSTEM-DILIGENCE.md` | Reviewer evidence route |
+| Runtime/Repository/Test-Estate Boundary | PRESENT_IN_REVISION | `architecture/runtime-repository-and-test-estate-boundary.md` | Evidence-domain ownership |
+| EHCO AI-OS Instantiated System | PRESENT_IN_REVISION | `architecture/EHCO-AI-OS-INSTANTIATED-SYSTEM.md` | Tier One public system record |
+| EHCO AI-OS Public System Card | PRESENT_IN_REVISION | `architecture/EHCO-AI-OS-SYSTEM-CARD.md` | Tier One public synthesis |
+| Governed Runtime Architecture | PRESENT_IN_REVISION | `architecture/GOVERNED-RUNTIME-ARCHITECTURE.md` | Conceptual Runtime architecture |
+| System Invariants | PRESENT_IN_REVISION | `architecture/SYSTEM-INVARIANTS.md` | Canonical separation principles |
+| Instantiated Proof Range | PRESENT_IN_REVISION | `architecture/instantiated-proof-range.md` | Proof/evidence classes |
+| EHCO Language Model | PRESENT_IN_REVISION | `language-model/README.md` | Deterministic language architecture and current maturity |
+| Language Model Public Test Snapshot v1 | PRESENT_IN_REVISION | `language-model/evidence/public-test-snapshot-v1/` | Seven exact fixtures / 62 cases and qualification index |
+| Public dossier PDF | HASH_PRESERVED_EVIDENCE | `dossiers/EHCO_AI_OS_Governed_Operational_Architecture_Public_Edition_v1_8_LOCK_FINAL.pdf` | Controlled public architecture; SHA-256 `F489BA01961A12CF101B1F1DF57E6958456A0840BEB798B862FA97ACB030892D` |
+| Public Evidence Companion Version 1 | HASH_PRESERVED_EVIDENCE | `evidence/public-evidence-companion/v1/` | Packets 00-08 and their packet-specific evidence classes |
+| Public validation | PRESENT_IN_REVISION | `verification/` | Repository integrity and public-representation validation |
 
 ## Packet register
 
-| Packet | Status | Proof ceiling |
+| Packet | Status | Evidence scope |
 |---|---|---|
-| 00 - Dossier Identity and Boundary | PRESENT_IN_REVISION | Exact dossier identity and boundary only |
-| 01 - Instantiated Standing | PRESENT_IN_REVISION | Bounded projection of the accepted 52/53 standing record; packet authority and standing effects are `NONE` |
-| 02 - Canonical Runtime Source Binding | PRESENT_IN_REVISION | Packet-time runtime-support test/source-artifact identity, integrity, and SHA-256 provenance; not a Runtime repository, Runtime implementation, authority location, or current Runtime state |
-| 03 - Tier One Authority Enforcement | PRESENT_IN_REVISION | Exact artifact identity and named declaration/anchor presence; declaration presence is not executed enforcement |
-| 04 - Runtime Packet and Continuity Anchors | PRESENT_IN_REVISION | Artifact bindings and named declarations within the packet ceiling |
-| 05 - Proof, Collapse, Recovery, Release, and Projection Anchors | PRESENT_IN_REVISION | Artifact bindings and named declarations within the packet ceiling |
-| 06 - Observed Live Capture and Release Status | PRESENT_IN_REVISION | Hash-preserved historical bounded test/observation capture; integrity `PASS` is not universal behavioral `PASS`; current Runtime state is NOT_PROJECTED_HERE |
-| 07 - Public Boundaries and Delivery Status | PRESENT_IN_REVISION | Architecture, standing, validation, projection, and delivery separation |
-| 08 - Suite Verification and Closure | PRESENT_IN_REVISION | Package identity, manifest, receipt, and closure verification only |
-
-Packets 00-08 remain byte-preserved. Current packet interpretation is controlled by `evidence/README.md` and the canonical boundary record; packet bytes are not rewritten to update historical terminology.
+| 00 — Dossier Identity and Boundary | HASH_PRESERVED_EVIDENCE | Exact dossier identity |
+| 01 — Instantiated Standing | HASH_PRESERVED_EVIDENCE | Accepted 52/53 standing projection |
+| 02 — Canonical Runtime Source Binding | HASH_PRESERVED_EVIDENCE | Packet-time source/artifact identity and provenance |
+| 03 — Tier One Authority Enforcement | HASH_PRESERVED_EVIDENCE | Artifact identity and named authority constructs |
+| 04 — Runtime Packet and Continuity Anchors | HASH_PRESERVED_EVIDENCE | Artifact bindings and continuity constructs |
+| 05 — Proof, Collapse, Recovery, Release and Projection Anchors | HASH_PRESERVED_EVIDENCE | Artifact bindings and named proof/recovery/release constructs |
+| 06 — Observed Live Capture and Release Status | HASH_PRESERVED_EVIDENCE | Historical bounded test/observation capture |
+| 07 — Public Boundaries and Delivery Status | HASH_PRESERVED_EVIDENCE | Architecture, standing, validation, projection and delivery relationships |
+| 08 — Suite Verification and Closure | HASH_PRESERVED_EVIDENCE | Package identity, manifests, receipts and closure |
 
 ## Evidence package identity
 
-The canonical dossier is intentionally present in two byte-identical locations:
-
-1. `dossiers/EHCO_AI_OS_Governed_Operational_Architecture_Public_Edition_v1_8_LOCK_FINAL.pdf`
-2. `evidence/public-evidence-companion/v1/00_DOSSIER_IDENTITY_AND_BOUNDARY/source_document/EHCO_AI_OS_Governed_Operational_Architecture_Public_Edition_v1_8_LOCK_FINAL.pdf`
-
-Both retain SHA-256:
+The canonical dossier appears in two byte-identical locations and retains SHA-256:
 
 ```text
 F489BA01961A12CF101B1F1DF57E6958456A0840BEB798B862FA97ACB030892D
 ```
 
-## Live publication interpretation
+## Publication lifecycle
 
-Revision presence, canonical-main visibility, and GitHub Release publication are separate publication facts. The GitHub repository/branch surface determines revision and canonical-main visibility; the GitHub Releases surface determines live Release publication state.
-
-Moving private source/workstream state, current Runtime state beyond approved public records, and production/public-ingress/go-live state remain outside this publication register unless separately established and approved for projection.
-
-## Required release checks
-
-Before a revision is accepted into canonical `main`, confirm accepted authority/version, correct evidence class/proof ceiling, disclosure safety, preserved identity/integrity where applicable, correct navigation/licensing, and successful repository validation. Re-read the then-current repository and organization rulesets; any required assistant-control/provider gate remains a separate owner-selected operation rather than a reason to weaken controls or rewrite stable repository identity.
-
-Public artifact visibility is a publication state. Runtime, deployment, operational release, and standing effects remain separate governed dimensions.
+Revision visibility, canonical-main publication and registered release identity are tracked as separate publication records. Current Runtime state remains owned by current Runtime evidence.

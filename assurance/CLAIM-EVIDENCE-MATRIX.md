@@ -1,56 +1,42 @@
 ---
 title: EHCO AI-OS Public Claim-Evidence Matrix
-version: 1.1
+version: 1.2
 status: accepted-public-assurance-reference
-published: 2026-08-26
+published: 2026-08-28
 maintainer: EHCOnomics
 evidence_class: public-assurance-mapping
-proof_ceiling: maps public claims to existing public sources and their existing proof ceilings; creates no new Runtime proof
-supersedes: version 1.0
+evidence_scope: Tier One public claim-to-evidence relationships
+supersedes: version 1.1
 ---
 
 # EHCO AI-OS Public Claim → Evidence Matrix
 
-## Purpose
+Accepted EHCO AI-OS standing is **52/53**.
 
-This matrix binds selected public EHCO AI-OS claims to the public records that support them and states the proof ceiling that applies to each relationship.
-
-The matrix does not create a new proof class. It does not convert architecture, repository records, packet integrity, declarations, tests, captures, dashboards, ledgers, or assistant output into Runtime authority or Runtime-originated proof.
-
-Accepted EHCO AI-OS standing remains **52/53**.
-
-## Matrix
-
-| Public claim | Governed object | Claim / evidence class | Public source | Verification method | Proof ceiling / non-claim |
+| Public proposition | Governed object | Evidence class | Public source | Verification method | Evidence scope |
 |---|---|---|---|---|---|
-| EHCO AI-OS is the realized **Tier One Runtime** with accepted standing **52/53**. | EHCO AI-OS Runtime standing | Controlled EHCO architecture + controlled operational standing projection | `architecture/EHCO-AI-OS-INSTANTIATED-SYSTEM.md`; `architecture/instantiated-proof-range.md`; Public Evidence Companion Packet 01 | Read accepted public system/proof records; verify Packet 01 through repository validation | Public projection of the accepted standing record. Repository publication does not create, recalculate, promote, demote, revoke, or replace standing. |
-| The public `EHCOsystem` repository is not the Runtime and does not hold Runtime authority or authoritative Runtime state. | Runtime/repository boundary | Controlled EHCO architecture | `architecture/runtime-repository-and-test-estate-boundary.md`; `README.md`; `GOVERNANCE.md` | Read controlling boundary and repository governance; run semantic-boundary validation | Establishes the accepted public interpretation boundary. It does not locate or expose Runtime implementation or authority. |
-| Persistent downstream governed component identity is separate from scoped Runtime participation. | Component identity versus Runtime participation | Controlled EHCO architecture | `architecture/ecosystem-components-and-participation.md`; `architecture/SYSTEM-INVARIANTS.md`; `architecture/GOVERNED-RUNTIME-ARCHITECTURE.md` | Read accepted public component/Runtime relationship records | Repository presence, build, deployment, execution, registration, health, or public representation does not by itself establish Runtime participation. |
-| File, repository, package, or artifact identity is not Runtime identity. | Artifact identity versus Runtime identity | Controlled architecture + artifact identity/provenance | `architecture/runtime-repository-and-test-estate-boundary.md`; `architecture/instantiated-proof-range.md`; Packet 02 | Verify packet manifests/hashes and read proof-range classification | Exact identity/integrity/provenance of captured artifacts only; not Runtime identity, authority location, or current Runtime state. |
-| A named declaration or anchor is not executed enforcement. | Declaration/enforcement distinction | Controlled architecture + declaration/anchor presence | `architecture/instantiated-proof-range.md`; Packets 03–05 | Verify exact artifact bindings and declaration presence under packet manifests | Presence of named constructs only unless execution is expressly recorded. Does not prove universal enforcement, Runtime admission, or consequence. |
-| A passing build or test is not Runtime admission. | Test evidence versus Runtime participation | Controlled architecture + bounded test/observation | `architecture/instantiated-proof-range.md`; `evidence/README.md`; Packet 06 | Review exact test/capture scope and packet integrity; preserve observation bounds | Establishes behavior only for identified inputs/environment/version/time. Does not independently establish Runtime admission or universal behavior. |
-| Packet-integrity `PASS` is not universal behavioral `PASS`. | Evidence-package integrity | Hash-preserved historical evidence | `evidence/README.md`; Packet 06; Packet 08 | Run repository manifest/hash/suite-closure validation | Proves package integrity within the declared manifest. Does not prove universal Runtime behavior or current Runtime state. |
-| Packet 06 is a historical bounded capture, not a projection of current Runtime state. | Historical observation | Bounded test or observation | `evidence/README.md`; Packet 06; `releases/PUBLIC-RELEASE-REGISTER.md` | Review capture scope/time and current interpretation records | Historical bounded observation only. Discrepancies/unobserved lanes remain scoped to that capture and do not independently establish current Runtime defect or standing change. |
-| Scope miss, missing retrieval, or non-observation does not independently change Runtime state or standing. | State/standing interpretation | Controlled EHCO architecture | `architecture/SYSTEM-INVARIANTS.md`; `architecture/runtime-repository-and-test-estate-boundary.md` | Read accepted invariant/boundary records | Interpretation rule only. It does not suppress valid contradictory Runtime-originated proof if such proof exists. |
-| Evidence is not authority; ledger and dashboard projections do not become Runtime truth merely by recording or displaying information. | Evidence/projection boundary | Controlled EHCO architecture | `architecture/EHCO-AI-OS-SYSTEM-CARD.md`; `architecture/SYSTEM-INVARIANTS.md` | Read accepted public architecture/invariants | Architectural distinction. Does not assert that every ledger/dashboard implementation is correct or secure. |
-| Downstream governed components and Tier Three projections do not independently acquire Tier One Runtime authority. | System-role relationships | Controlled EHCO architecture | `architecture/EHCO-AI-OS-SYSTEM-CARD.md`; `architecture/GOVERNED-RUNTIME-ARCHITECTURE.md`; `architecture/ecosystem-components-and-participation.md` | Read accepted public architecture | Conceptual public architecture only; not an implementation map, source disclosure, Runtime-participation claim, or Runtime execution trace. |
-| Runtime realization is distinct from production activation, public ingress, operational external release, commercial activation, and go-live. | Runtime realization versus deployment/release states | Controlled architecture + release boundary | `README.md`; `architecture/SYSTEM-INVARIANTS.md`; `releases/PUBLIC-RELEASE-REGISTER.md`; Packet 07; Packet 08 | Read public release boundary and packet non-authorization records | Does not establish any current production/deployment/release state unless a separately applicable governing record does so. |
-| The public evidence estate does not claim independent third-party certification absent a specifically identified third-party record. | Independent validation | Public governance/proof boundary | `GOVERNANCE.md`; `architecture/instantiated-proof-range.md`; `releases/PUBLIC-RELEASE-REGISTER.md` | Inspect public register and proof classifications for an identified independent record | No independent certification is inferred from EHCOnomics-controlled evidence, automated validation, or repository publication. |
-| Repository validation establishes bounded repository integrity and semantic-boundary compliance for the checked commit. | Public repository validation | Repository-side validation evidence | `verification/README.md`; `.github/workflows/validate-public-evidence.yml` | Run `python3 verification/validate_public_evidence.py` and `python3 verification/validate_release_identity.py` via GitHub Actions | Does not execute the Runtime, create standing, prove production security, authorize deployment/release, or constitute independent certification. |
+| EHCO AI-OS is the realized **Tier One Runtime** with accepted standing **52/53**. | EHCO AI-OS Runtime standing | Controlled architecture + operational standing projection | `architecture/EHCO-AI-OS-INSTANTIATED-SYSTEM.md`; `architecture/instantiated-proof-range.md`; Packet 01 | Inspect accepted public system/proof records and verify Packet 01 | Tier One Runtime identity and accepted standing projection |
+| The public `EHCOsystem` repository owns public architecture, evidence, provenance, verification and publication. | Public repository | Controlled architecture + repository governance | `architecture/runtime-repository-and-test-estate-boundary.md`; `GOVERNANCE.md` | Inspect boundary and governance records | Public technical representation and evidence custody |
+| Persistent downstream component identity and scoped Runtime participation are separately governed dimensions. | Component / Runtime relationship | Controlled architecture | `architecture/ecosystem-components-and-participation.md`; `architecture/SYSTEM-INVARIANTS.md` | Inspect component and invariant records | Persistent component identity and Runtime relationship semantics |
+| Artifact identity/provenance establishes exact source, path, revision, hash and manifest relationships. | Artifact identity | Artifact identity/provenance | `architecture/instantiated-proof-range.md`; Packet 02 | Verify packet manifests and hashes | Exact captured artifact identity and provenance |
+| Declaration/anchor evidence establishes named construct presence in identified artifacts. | Declaration presence | Declaration/anchor presence | `architecture/instantiated-proof-range.md`; Packets 03–05 | Verify exact artifact bindings and declaration presence | Named construct presence |
+| Bounded build/test evidence establishes behavior for identified source, inputs, environment and time. | Test evidence | Bounded test/observation | `architecture/instantiated-proof-range.md`; `evidence/README.md`; Packet 06 | Inspect test/capture scope and packet integrity | Bounded observed behavior |
+| Packet-integrity `PASS` establishes declared package integrity. | Evidence package | Hash-preserved evidence | `evidence/README.md`; Packets 06 and 08 | Run manifest/hash/suite-closure validation | Package identity, integrity and closure |
+| Packet 06 records a historical bounded local-live observation window. | Historical observation | Bounded observation | `evidence/README.md`; Packet 06 | Inspect capture scope, time, observations and discrepancy register | Historical captured behavior and evidence lanes |
+| Scope findings retain the scope and time of their originating record. | Evidence interpretation | Controlled architecture | `architecture/SYSTEM-INVARIANTS.md`; boundary record | Inspect scope and evidence-owner fields | Scope/currentness discipline |
+| Evidence supports governed determinations; authority owners issue authoritative state and consequence. | Evidence / authority | Controlled architecture | System Card; System Invariants | Inspect architecture and ownership map | Evidence/authority relationship |
+| Downstream components own their capabilities; Tier Three owns projection; EHCO AI-OS owns Tier One Runtime authority. | System roles | Controlled architecture | System Card; Runtime Architecture; Component map | Inspect current public architecture | Computational ownership |
+| Runtime realization, production activation, public ingress and operational release are independently governed lifecycle dimensions. | Lifecycle relationships | Controlled architecture + release control | System Invariants; Public Release Register | Inspect lifecycle and publication records | Lifecycle-state separation |
+| Independent validation is established by an identified third-party record with stated method and scope. | Independent validation | Independent validation | Governance; proof records | Inspect identified third-party validation records | Third-party validation class |
+| Repository validation establishes public repository integrity and semantic alignment for the checked revision. | Repository validation | Repository-side validation | `verification/README.md`; validation workflow | Run repository validators and GitHub checks | Checked repository revision |
 
 ## Reading the matrix
 
-A row is not a substitute for its cited source. Where the claim concerns Runtime standing, current Runtime state, authoritative consequence, persistence, recovery, release, revocation, or Runtime truth, the applicable Runtime-originated evidence remains the controlling proof class.
-
-A later accepted source may supersede an earlier interpretation. Scope differences must not be promoted into contradictions without applicable proof.
-
-## Public/private boundary
-
-This matrix intentionally references public canonical paths and public packet identifiers only. It does not expose private source roots, private repository names, private revisions, internal schemas, protected control paths, privileged endpoints, production topology, credentials, or private proof records.
+Each row identifies the proposition, owner, evidence class and scope that establish it. Runtime-originated records remain the controlling evidence class for Runtime state, consequence, persistence, recovery, release and proof.
 
 ## Revision history
 
 | Version | Date | Change |
 |---|---|---|
-| 1.1 | 2026-08-26 | Reconciled Tier One/downstream governed component/Tier Three terminology with the category-first architecture. |
-| 1.0 | 2026-08-08 | Initial accepted AI-OS public claim-to-evidence mapping. |
+| 1.2 | 2026-08-28 | Recast the matrix as affirmative ownership and evidence-scope relationships. |
+| 1.1 | 2026-08-26 | Reconciled current tier/component terminology. |

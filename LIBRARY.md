@@ -1,6 +1,6 @@
 # The EHCOsystem Library
 
-This page indexes the current public records visibly published in `EHCOsystem`, EHCOnomics' public technical representation of its Instantiated AI ecosystem.
+This page indexes the current public technical records for **EHCOsystem, EHCOnomics' Instantiated AI ecosystem**.
 
 ## Start here
 
@@ -18,7 +18,7 @@ This page indexes the current public records visibly published in `EHCOsystem`, 
 
 - [Instantiated AI — Public Architecture Definition](architecture/INSTANTIATED-AI.md)
 
-This record defines the category-level dependency inversion: governing computational conditions are established independently of the intelligence before consequential operation. It also defines computational standing, Standing Baseline, source and memory standing, model independence, and category qualification questions.
+The category record defines governing computational conditions, computational standing, source/memory standing, dependency inversion, model independence, and the qualification surface.
 
 ## Ecosystem architecture and maturity
 
@@ -26,9 +26,7 @@ This record defines the category-level dependency inversion: governing computati
 - [Public Architecture Diagrams](architecture/diagrams/README.md)
 - [Ecosystem Components and Runtime Relationships](architecture/ecosystem-components-and-participation.md)
 
-These records show the public hierarchy from EHCO AI-OS as the realized Tier One Runtime foundation through `EHCO_DOCKER_PORTABILITY` as the `PRIMARY_ACCESSIBLE_RUNTIME_PROJECTION` to the current accepted working EHCO Dashboard Tier Three projection baseline. They then separate the principal shared downstream component spine with differentiated maturity from governed research/foundation estates, continuing downstream governed domain/application expansion, and substantial project/pilot programs.
-
-The architecture includes the source-grounded qualitative posture that the foundational/shared EHCOsystem spine is substantially established while remaining work is increasingly concentrated rather than foundational. It does not assert a universal completion percentage or equal maturity across components.
+These records present EHCO AI-OS as the realized Tier One Runtime foundation, `EHCO_DOCKER_PORTABILITY` as the `PRIMARY_ACCESSIBLE_RUNTIME_PROJECTION`, the current accepted working EHCO Dashboard as the principal Tier Three projection baseline, the differentiated shared component spine, research/foundation estates, and continuing domain/application expansion.
 
 ## Canonical interpretation
 
@@ -38,7 +36,7 @@ The architecture includes the source-grounded qualitative posture that the found
 
 ## Canonical public dossier
 
-- [EHCO AI-OS Governed Operational Architecture - Public Edition v1.8](dossiers/README.md)
+- [EHCO AI-OS Governed Operational Architecture — Public Edition v1.8](dossiers/README.md)
 
 ## Tier One system and proof records
 
@@ -58,15 +56,13 @@ The architecture includes the source-grounded qualitative posture that the found
 - [Ecosystem Claim → Evidence Matrix](assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md)
 - [AI-OS Claim → Evidence Matrix](assurance/CLAIM-EVIDENCE-MATRIX.md)
 
-The ecosystem matrix records estate lane, positive bounded claim, current development/maturity posture, evidence class, public reference, verification method, source-review date, and proof ceiling without publishing private source locators.
-
 ## Public evidence
 
 - [Public Evidence Companion](evidence/README.md)
 - [Version 1 Packets 00-08](evidence/public-evidence-companion/v1/)
 - [Public Evidence Validation](verification/README.md)
 
-## Release and publication control
+## Publication and governance
 
 - [Canonical Public Release Register](releases/PUBLIC-RELEASE-REGISTER.md)
 - [Repository Governance](GOVERNANCE.md)
