@@ -134,7 +134,7 @@ jobs:
         run: |
           set -euo pipefail
           python canonical/scripts/validate_public_safe_ai_assisted_operation.py \
-            --operation candidate/ehco.operation.yaml \
+            --operation ehco.operation.yaml \
             --repository-root candidate \
             --canonical-root canonical \
             --canonical-repository "$CANONICAL_REPOSITORY" \
