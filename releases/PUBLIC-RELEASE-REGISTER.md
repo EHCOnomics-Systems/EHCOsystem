@@ -12,10 +12,10 @@ This register records public source visibility, artifact identity and evidence s
 ## Registered public release identity
 
 - Version: `1.0.0`
-- Tag identity: `v1.0.0-public`
+- Tag: `v1.0.0-public`
 - Release title: `EHCOsystem Public Architecture and Evidence Baseline v1.0.0`
 
-Canonical `main` is the active public source stream. The registered release identity is tracked as a separate publication-lifecycle record.
+Canonical `main` is the active public source stream. The GitHub Releases surface determines live publication state. The registered release identity is tracked as a separate publication-lifecycle record.
 
 ## Public estate in the current revision
 
