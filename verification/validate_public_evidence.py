@@ -3,8 +3,9 @@
 
 The validator uses only the Python standard library. Its result is bounded to
 repository identity, structure, manifest integrity, JSON syntax, navigation,
-high-confidence secret indicators, licensing presence, and current public
-semantic-boundary compliance. It does not execute or observe the Runtime.
+high-confidence secret indicators, licensing presence, current public
+semantic-boundary compliance, and v1.4 maturity/estate-lane representation.
+It does not execute or observe the Runtime.
 """
 
 from __future__ import annotations
@@ -38,18 +39,31 @@ EXPECTED_PACKETS = [
 CURRENT_PUBLIC_TEXT = [
     "README.md",
     "LIBRARY.md",
+    "ECOSYSTEM-DILIGENCE.md",
     "GOVERNANCE.md",
     "SECURITY.md",
     "NOTICE.md",
+    "PROVENANCE.md",
+    "TECHNICAL-DILIGENCE.md",
+    ".github/pull_request_template.md",
     "getting-started/START-HERE.md",
     "getting-started/reading-order.md",
     "getting-started/repository-map.md",
+    "architecture/INSTANTIATED-AI.md",
+    "architecture/EHCO-TECHNOLOGY-ESTATE.md",
+    "architecture/diagrams/README.md",
     "architecture/EHCO-AI-OS-INSTANTIATED-SYSTEM.md",
+    "architecture/EHCO-AI-OS-SYSTEM-CARD.md",
+    "architecture/GOVERNED-RUNTIME-ARCHITECTURE.md",
+    "architecture/SYSTEM-INVARIANTS.md",
     "architecture/instantiated-proof-range.md",
     "architecture/ecosystem-components-and-participation.md",
     "architecture/proof-and-status-classes.md",
     "architecture/runtime-repository-and-test-estate-boundary.md",
     "language-model/README.md",
+    "assurance/README.md",
+    "assurance/CLAIM-EVIDENCE-MATRIX.md",
+    "assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md",
     "dossiers/README.md",
     "evidence/README.md",
     "verification/README.md",
@@ -158,8 +172,6 @@ def validate_required_public_controls() -> None:
 def validate_semantic_boundaries() -> None:
     texts = {relative: read_public_text(relative) for relative in CURRENT_PUBLIC_TEXT}
 
-    # These phrases are prohibited in current public interpretation documents.
-    # Hash-preserved Packets 00-08 are intentionally outside this scan.
     prohibited = {
         "deleted Runtime repository name": "ehco_runtime",
         "current-source-owner claim": "current canonical source owner for EHCO AI-OS",
@@ -170,6 +182,18 @@ def validate_semantic_boundaries() -> None:
         r"\behconomics/[A-Za-z0-9_.-]+\b",
         re.IGNORECASE,
     )
+    protected_organization_aios_locator = re.compile(
+        r"\bEHCOnomics-Systems/[A-Za-z0-9_.-]*(?:AI[-_]?OS|AIOS)"
+        r"[A-Za-z0-9_.-]*\b",
+        re.IGNORECASE,
+    )
+    legacy_spaced_tier_label = re.compile(r"\bTier [123]\b", re.IGNORECASE)
+    universal_completion_percentage = re.compile(
+        r"\b(?:EHCOsystem|ecosystem)\b[^\n.]{0,120}"
+        r"\b\d{1,3}\s*%\s*(?:complete|completed|completion)\b",
+        re.IGNORECASE,
+    )
+
     for relative, text in texts.items():
         lowered = text.lower()
         for label, phrase in prohibited.items():
@@ -181,11 +205,24 @@ def validate_semantic_boundaries() -> None:
             personal_repository_locator.search(text) is None,
             f"Prohibited personal-account repository locator in current public text: {relative}",
         )
+        checked(
+            protected_organization_aios_locator.search(text) is None,
+            f"Prohibited private AI-OS repository locator pattern in current public text: {relative}",
+        )
+        checked(
+            legacy_spaced_tier_label.search(text) is None,
+            f"Legacy spaced tier terminology in current public text: {relative}",
+        )
+        checked(
+            universal_completion_percentage.search(text) is None,
+            f"Unsupported universal completion percentage in current public text: {relative}",
+        )
 
     boundary = texts["architecture/runtime-repository-and-test-estate-boundary.md"]
     required_boundary_statements = [
-        "EHCO AI-OS is the realized Tier 1 Runtime",
+        "EHCO AI-OS is the realized Tier One Runtime",
         "Those repositories, folders, and files are not the Runtime.",
+        "Persistent downstream governed component identity is also distinct from scoped Runtime participation.",
         "Packet 02",
         "Packet 06",
         "Independent third-party certification or validation is not claimed",
@@ -195,22 +232,191 @@ def validate_semantic_boundaries() -> None:
             statement in boundary,
             f"Boundary record missing required statement: {statement}",
         )
+    checked(
+        "VISIBLE_CURRENTLY" not in boundary,
+        "Boundary record retains superseded VISIBLE_CURRENTLY publication vocabulary",
+    )
+
+    required_navigation_links = {
+        "README.md": [
+            "architecture/INSTANTIATED-AI.md",
+            "architecture/EHCO-TECHNOLOGY-ESTATE.md",
+            "architecture/diagrams/README.md",
+            "assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md",
+            "ECOSYSTEM-DILIGENCE.md",
+            "architecture/runtime-repository-and-test-estate-boundary.md",
+            "(LICENSE)",
+        ],
+        "getting-started/START-HERE.md": [
+            "../architecture/INSTANTIATED-AI.md",
+            "../architecture/EHCO-TECHNOLOGY-ESTATE.md",
+            "../architecture/diagrams/README.md",
+            "../assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md",
+            "../ECOSYSTEM-DILIGENCE.md",
+            "../TECHNICAL-DILIGENCE.md",
+            "../architecture/runtime-repository-and-test-estate-boundary.md",
+        ],
+        "architecture/EHCO-TECHNOLOGY-ESTATE.md": [
+            "INSTANTIATED-AI.md",
+            "diagrams/README.md",
+            "runtime-repository-and-test-estate-boundary.md",
+            "../assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md",
+        ],
+    }
+    for relative, required_links in required_navigation_links.items():
+        text = texts[relative]
+        for link in required_links:
+            checked(link in text, f"Required navigation/boundary link missing in {relative}: {link}")
+
+    instantiated_ai = texts["architecture/INSTANTIATED-AI.md"]
+    checked(
+        "EHCOsystem is EHCOnomics' Instantiated AI ecosystem." in instantiated_ai,
+        "Instantiated AI record does not identify EHCOsystem as the Instantiated AI ecosystem",
+    )
+    checked(
+        "representation != instantiation" in instantiated_ai,
+        "Instantiated AI record does not preserve representation/instantiation distinction",
+    )
+    checked(
+        "capability != standing" in instantiated_ai,
+        "Instantiated AI record does not preserve capability/standing distinction",
+    )
 
     readme = texts["README.md"]
+    required_readme_statements = [
+        "Current qualitative maturity posture",
+        "foundational/shared EHCOsystem spine is substantially established",
+        "remaining work is increasingly concentrated rather than foundational",
+        "current accepted working EHCO Dashboard baseline",
+        "Principal shared downstream component spine",
+        "Substantial project/pilot expansion outside the public core-completion denominator",
+    ]
+    for statement in required_readme_statements:
+        checked(
+            statement in readme,
+            f"README missing required v1.4 maturity/projection statement: {statement}",
+        )
+
+    estate = texts["architecture/EHCO-TECHNOLOGY-ESTATE.md"]
     checked(
-        "architecture/runtime-repository-and-test-estate-boundary.md" in readme,
-        "README does not link the controlling Runtime/repository boundary",
+        "Instantiated AI ecosystem" in estate,
+        "Technology Estate does not state the Instantiated AI ecosystem identity",
     )
-    checked("(LICENSE)" in readme, "README does not link the root LICENSE")
     checked(
-        "This GitHub repository is not the Runtime." in readme,
-        "README does not state the repository/Runtime separation",
+        "Downstream governed components" in estate,
+        "Technology Estate does not use current downstream governed component terminology",
+    )
+    checked(
+        "EHCO_DOCKER_PORTABILITY" in estate
+        and "PRIMARY_ACCESSIBLE_RUNTIME_PROJECTION" in estate,
+        "Technology Estate does not preserve the bounded Docker Portability classification",
+    )
+    required_estate_statements = [
+        "foundational/shared EHCOsystem spine is substantially established",
+        "remaining work is increasingly concentrated rather than foundational",
+        "bounded finalization/hardening",
+        "EHCO RAG implementation",
+        "research/foundation reconciliation",
+        "continuing downstream governed domain/application expansion",
+        "current accepted working EHCO Dashboard baseline",
+        "principal presently established",
+        "Tier Three projection baseline",
+        "Principal shared downstream component spine",
+        "Governed research and foundation estates",
+        "Continuing downstream governed domain/application expansion",
+        "Substantial project/pilot expansion outside the public core-completion denominator",
+        "No universal ecosystem completion percentage is asserted.",
+    ]
+    for statement in required_estate_statements:
+        checked(
+            statement in estate,
+            f"Technology Estate missing required v1.4 statement: {statement}",
+        )
+    checked(
+        "does not assert a rename, equivalence, or successor relationship" in estate,
+        "Permit Trace historical alias boundary is missing",
+    )
+
+    component_record = texts["architecture/ecosystem-components-and-participation.md"]
+    required_component_statements = [
+        "Primary accessible Runtime projection and Tier Three baseline",
+        "Principal shared downstream component spine",
+        "Governed research and foundation estates",
+        "Continuing downstream governed domain/application expansion",
+        "Substantial project/pilot expansion outside the public core-completion denominator",
+        "current accepted working EHCO Dashboard",
+        "components listed in the same lane do not automatically share one maturity",
+    ]
+    for statement in required_component_statements:
+        checked(
+            statement.lower() in component_record.lower(),
+            f"Component/Runtime record missing v1.4 lane or maturity statement: {statement}",
+        )
+
+    diagrams = texts["architecture/diagrams/README.md"]
+    required_diagram_sections = [
+        "## 1. Category, Runtime, components, portability, and projection",
+        "## 2. Computational ownership across the ecosystem",
+        "## 3. Shared foundations to domain applications",
+        "## 4. Technical evidence to market evidence ladder",
+    ]
+    for section in required_diagram_sections:
+        checked(section in diagrams, f"Public diagram record missing required section: {section}")
+    checked(
+        "EHCO_DOCKER_PORTABILITY" in diagrams
+        and "PRIMARY_ACCESSIBLE_RUNTIME_PROJECTION" in diagrams,
+        "Public diagram record does not preserve the bounded Docker Portability classification",
+    )
+    for statement in [
+        "EHCO Dashboard",
+        "current accepted working",
+        "Substantial project/pilot expansion",
+        "outside the public core-completion denominator",
+        "remaining work is increasingly concentrated rather than foundational",
+    ]:
+        checked(
+            statement in diagrams,
+            f"Public diagram record missing v1.4 projection/maturity statement: {statement}",
+        )
+    checked(
+        "does not create implementation, deployment, Runtime participation, market validation, or Runtime proof" in diagrams,
+        "Public diagram proof ceiling is missing or weakened",
+    )
+
+    evidence_matrix = texts["assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md"]
+    required_matrix_statements = [
+        "| Governed object | Estate lane / core relationship | Positive bounded claim | Current development / maturity posture | Evidence class | Public source / approved public reference | Verification method | Source-review date | Proof ceiling / explicit nonclaim |",
+        "| EHCOsystem qualitative maturity posture |",
+        "| EHCO_DOCKER_PORTABILITY |",
+        "| EHCO Dashboard |",
+        "| EHCO Language Model |",
+        "| EHCO Range Reactor |",
+        "| EHCO RAG |",
+        "| Grasp Safety |",
+        "| Pegasus IT |",
+        "outside the public core-completion denominator",
+        "No universal percentage",
+    ]
+    for statement in required_matrix_statements:
+        checked(
+            statement in evidence_matrix,
+            f"Ecosystem matrix missing required v1.4 column, row, or boundary: {statement}",
+        )
+
+    ai_os_matrix = texts["assurance/CLAIM-EVIDENCE-MATRIX.md"]
+    checked(
+        "Downstream governed components and Tier Three projections" in ai_os_matrix,
+        "AI-OS matrix does not preserve current downstream-component/Tier Three terminology",
     )
 
     evidence_readme = texts["evidence/README.md"]
     checked(
         "It does **not** establish that the files" in evidence_readme,
         "Evidence landing page does not bound Packet 02 artifact identity",
+    )
+    checked(
+        "Current interpretation uses **Tier One** terminology" in evidence_readme,
+        "Evidence landing page does not reconcile historical TIER1 packet identity to current Tier One terminology",
     )
     checked(
         "Packet-integrity `PASS` is not universal behavioral `PASS`." in evidence_readme,
@@ -221,8 +427,32 @@ def validate_semantic_boundaries() -> None:
         "Evidence landing page does not classify historical capture locators",
     )
 
+    pr_template = texts[".github/pull_request_template.md"]
+    for statement in [
+        "current repository and organization rulesets",
+        "No required governance condition is treated as optional merely because a bypass capability exists.",
+        "Public source/control provenance is expressed generically",
+        "qualitative maturity posture",
+        "current accepted working Dashboard baseline",
+        "Repository description, topics, homepage",
+        "assistant-control/provider adoption",
+        "outside the public core-completion denominator",
+    ]:
+        checked(
+            statement in pr_template,
+            f"PR template missing required v1.4 publication/governance check: {statement}",
+        )
+
     release_register = texts["releases/PUBLIC-RELEASE-REGISTER.md"]
     checked("`LICENSE`" in release_register, "Release register does not inventory LICENSE")
+    checked(
+        "`architecture/INSTANTIATED-AI.md`" in release_register,
+        "Release register does not inventory Instantiated AI category architecture",
+    )
+    checked(
+        "`architecture/diagrams/README.md`" in release_register,
+        "Release register does not inventory public architecture diagrams",
+    )
     checked(
         "not a Runtime repository" in release_register,
         "Release register does not bound Packet 02",
@@ -230,6 +460,10 @@ def validate_semantic_boundaries() -> None:
     checked(
         "integrity `PASS` is not universal behavioral `PASS`" in release_register,
         "Release register does not bound Packet 06",
+    )
+    checked(
+        "qualitative maturity posture" in release_register,
+        "Release register does not inventory the v1.4 qualitative maturity representation",
     )
 
 
@@ -292,17 +526,17 @@ def validate_packets_and_manifests() -> dict[str, str]:
             fail(f"Manifest is not an object: {manifest_path.relative_to(REPO_ROOT)}")
             continue
 
-        files = manifest.get("files")
-        checked(isinstance(files, list), f"Manifest files is not a list: {manifest_path.relative_to(REPO_ROOT)}")
-        if not isinstance(files, list):
+        entries = manifest.get("files")
+        checked(isinstance(entries, list), f"Manifest files is not a list: {manifest_path.relative_to(REPO_ROOT)}")
+        if not isinstance(entries, list):
             continue
 
-        checked(manifest.get("file_count") == len(files), f"Manifest file_count mismatch: {packet_name}")
+        checked(manifest.get("file_count") == len(entries), f"Manifest file_count mismatch: {packet_name}")
         self_reference = manifest.get("manifest_self_reference", manifest.get("self_reference"))
         checked(self_reference is False, f"Manifest self-reference must be false: {packet_name}")
 
         seen: set[str] = set()
-        for entry in files:
+        for entry in entries:
             if not isinstance(entry, dict):
                 fail(f"Invalid manifest entry in {packet_name}")
                 continue

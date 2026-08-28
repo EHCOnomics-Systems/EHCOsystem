@@ -1,89 +1,114 @@
 # EHCOsystem
 
-**Public architecture, evidence, provenance, research, verification, and publication repository for EHCO AI-OS and the EHCOsystem.**
+**Public technical representation and evidence surface for EHCOnomics' Instantiated AI ecosystem.**
 
-EHCO AI-OS is the realized Tier 1 Runtime of the EHCOsystem. Its accepted standing baseline is **52/53**. The Runtime governs authority, standing, recognized state, transition, consequence, persistence, recovery, withholding, release, closure, and Runtime truth.
+**Instantiated AI** is the architectural category. **EHCOsystem** is EHCOnomics' Instantiated AI ecosystem: a governed computational architecture in which identity, authority, state, memory, source, permissible range, evidence, release, and consequence are established independently of the intelligence they govern before consequential operation.
 
-This GitHub repository is not the Runtime. It does not hold Runtime authority or authoritative Runtime state, and repository publication, commits, workflows, packets, manifests, tests, or public visibility do not independently create, promote, demote, calculate, revoke, or alter Runtime standing.
+**EHCO AI-OS is the realized Tier One Runtime** of EHCOsystem and provides its governing Runtime foundation. `EHCO_DOCKER_PORTABILITY` is the **PRIMARY_ACCESSIBLE_RUNTIME_PROJECTION** of that established Runtime lineage. The **current accepted working EHCO Dashboard baseline** is the principal presently established **Tier Three projection baseline** within the portability estate. **Downstream governed components** own distinct language, range/reasoning, retrieval/evidence, relationship, coordination, research, and domain-application capabilities.
 
-## Overall Status
+The public repository makes that architecture and selected underlying technical evidence inspectable without becoming the proprietary Runtime implementation itself. EHCO AI-OS has an accepted standing baseline of **52/53**. Runtime participation of any downstream component remains a separate scoped relationship established by owning Runtime evidence. A repository, container, dashboard, projection, or assistant output does not become Runtime authority or present Runtime truth.
 
-**Established Technical Baseline · Current Public Record · Continuing Ecosystem Advancement**
+## Current qualitative maturity posture
 
-EHCOsystem presents the current public architecture, evidence, provenance, research, verification, and publication record for EHCO AI-OS and the broader EHCOnomics ecosystem. **EHCO AI-OS is the realized Tier 1 Runtime of the EHCOsystem, with an accepted standing baseline of 52/53.**
+Current source review supports a qualitative—not percentage-based—posture: the **foundational/shared EHCOsystem spine is substantially established**, while **remaining work is increasingly concentrated rather than foundational**.
 
-The ecosystem continues to advance through expanded capabilities, integrations, verification, evidence, documentation, and domain development. **Continuing development builds upon the established baseline.** Established technical lineage, accepted standing, and validated records remain established unless they are expressly superseded or changed through their applicable governing evidence and authority.
+That remaining work is concentrated across four separately governed areas:
 
-This repository is the public technical and evidence projection of that work. It is **not the Runtime** and does not hold Runtime authority or authoritative Runtime state. Repository publication, commits, validation, or public visibility do not independently create or alter Runtime standing, deployment, release, or operational state.
+- bounded finalization and hardening of established components and services;
+- EHCO RAG implementation progression;
+- research/foundation reconciliation; and
+- continuing downstream governed domain/application expansion.
 
-## Technical diligence
+This is not a claim that every component has identical maturity or that every application is complete. The Language Model, Range Reactor, Prime, and Agent Connect have stronger accepted source/qualification or hardening posture than RAG's current controlled implementation posture; Memory, Primordia, Recursion, and Fractal Systems remain research/foundation estates; and each domain application retains its own source, evidence, release, deployment, and execution state.
 
-If you are evaluating the differentiated technical work, start with **[Technical Diligence — Start Here](TECHNICAL-DILIGENCE.md)** rather than reading the repository front to back.
+## Start here
 
-The shortest public diligence path is:
+### 1. Understand Instantiated AI
 
-1. **Packet 06 — observed behavior:** a hash-bound `local_live` capture records authority admission, packet/continuity/range/proof state, recovery quarantine, and bounded release/freeze gating. The raw capture records the configured LLM as **not invoked and not used** in that bounded run.
-2. **Packet 03 — implementation anchors:** exact source identities and named enforcement functions for authority admission, fail-closed behavior, manifest validation, release-gate construction, and freeze-gate evaluation.
-3. **Packet 06 gap register — evidence limits:** three direct unresolved discrepancies and five behavioral lanes not directly observed are retained explicitly rather than represented as passes.
+Start with the category definition and qualification surface: identity, authority, standing, state, source, memory, range, consequence, proof, and model independence.
 
-The public repository intentionally excludes the complete proprietary Runtime implementation. Qualified technical diligence is evidence-first: it may use exact source/revision identities, hashes or digests, bounded execution records, reviewer-selected safe test cases, witnessed build or execution, written verification findings, and—only where materially necessary and specifically authorized—narrow supervised inspection that does not transfer the proprietary implementation.
+**[Instantiated AI — Public Architecture Definition](architecture/INSTANTIATED-AI.md)**
 
-See also [Public Documentation and Evidence Provenance](PROVENANCE.md) for the distinction among explanatory/AI-assisted material, architecture, hash-bound evidence, observations, and repository verification tooling.
+### 2. Explore EHCOsystem
 
-## Runtime, repository, and test-estate boundary
+See how the category is expressed across the realized Tier One Runtime foundation, the primary accessible Runtime projection, the current accepted working Tier Three projection baseline, the principal shared downstream component spine, research foundations, continuing application expansion, and separately tracked project/pilot programs.
 
-Controlled private repositories and their runtime-support folders contain bounded source, test, compatibility, packaging, deployment-support, and evidence-generation artifacts used to exercise and reproduce specified EHCO behavior. Those repositories, folders, and files are not the Runtime and are not authority locations.
+**[EHCOsystem — An Instantiated AI Ecosystem](architecture/EHCO-TECHNOLOGY-ESTATE.md)**
 
-File identity does not establish Runtime identity. A named declaration does not establish executed enforcement. A passing build or test does not establish Runtime admission. A repository or evidence packet does not replace Runtime-originated state, consequence, persistence, or proof.
+**[View the public architecture diagrams](architecture/diagrams/README.md)**
 
-Read the controlling boundary before interpreting source-binding or capture packets:
+### 3. Inspect the Evidence
 
-- [Runtime, Repository, and Test-Estate Boundary](architecture/runtime-repository-and-test-estate-boundary.md)
+Move from selected technical propositions to the public evidence or approved reference that supports them, with estate lane, maturity posture, evidence class, verification method, currentness, and proof ceiling kept distinct.
+
+**[Ecosystem Claim → Evidence Matrix](assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md)**
+
+Current component evidence includes the **EHCO Language Model public test snapshot**, with seven exact synthetic fixtures covering 62 cases, expected dispositions, qualification index, provenance manifest, and validation tooling.
+
+**[Inspect the Language Model test evidence](language-model/evidence/public-test-snapshot-v1/README.md)**
+
+### 4. Technical Diligence
+
+For a broad review of the Instantiated AI ecosystem:
+
+**[Ecosystem Technical Diligence](ECOSYSTEM-DILIGENCE.md)**
+
+For the focused EHCO AI-OS Tier One architecture, implementation-anchor, and bounded observed-evidence route:
+
+**[EHCO AI-OS Technical Diligence](TECHNICAL-DILIGENCE.md)**
+
+## The ecosystem at a glance
+
+### Tier One Runtime foundation
+
+**EHCO AI-OS** — realized Tier One Runtime and governing foundation for authority, scope, recognized state, transition, consequence, continuity, persistence, withholding/release, correction/recovery, and Runtime-originated proof relationships.
+
+### Primary accessible Runtime projection and Tier Three baseline
+
+- **EHCO_DOCKER_PORTABILITY** — `PRIMARY_ACCESSIBLE_RUNTIME_PROJECTION` of the established hardened Runtime/root-image lineage. It is not an independent authority owner.
+- **EHCO Dashboard** — current accepted working Tier Three projection baseline within the portability estate. This working-baseline status does not establish present public hosting, public ingress, production operation, or dashboard authority.
+
+### Principal shared downstream component spine
+
+- **EHCO Language Model** — mature deterministic computational-language component. Current accepted source has progressed through bounded staging and staging-verification reconciliation; production verification and complete production operation are not claimed.
+- **EHCO Range Reactor** — mature deterministic range/reasoning computational owner with qualified accepted lineage integrated into current source; release, deployment, production realization, and Runtime effects remain separately evidenced.
+- **EHCO RAG** — governed retrieval, context, source custody, provenance, and evidence component with an accepted control/specification baseline and controlled implementation posture.
+- **EHCO Prime** — advanced/mature individual-facing relationship and assistant-coordination service at the source/control layer.
+- **EHCO Agent Connect** — advanced/mature registry, discovery, compatibility, and candidate-routing coordination service at the source/control layer.
+
+### Research and foundation estates
+
+- **EHCO Memory** — governed memory/continuity research foundation.
+- **Primordia** — computational-substrate, specification/language, semantics, and engineering-system research.
+- **EHCO Recursion** — recursion, trust/coherence, collapse/failure, and bounded composition research.
+- **EHCO Fractal Systems** — structural/form preservation, continuity, scale, drift, projection, and lineage research.
+
+### Continuing downstream governed domain/application expansion
+
+The ordinary application estate turns the shared instantiated architecture into bounded domain capability across energy and data-centre operations, legal decision support, strategy and simulation, prevention intelligence, construction and built-asset intelligence, media, business operations, permit compliance, and other governed application domains. Each application has its own maturity and evidence posture.
+
+### Substantial project/pilot expansion outside the public core-completion denominator
+
+**Grasp Safety Intelligence** and **Pegasus IT** remain downstream governed components. For this public completion model they are tracked as substantial project/pilot expansion programs outside the public core-completion denominator. That lane treatment changes neither component identity nor authority, evidence class, Runtime relationship, or development obligations.
+
+[Explore the full EHCOsystem →](architecture/EHCO-TECHNOLOGY-ESTATE.md)
 
 ## Public evidence
 
-The Public Evidence Companion preserves the identity, integrity, provenance, observations, discrepancies, proof ceilings, and status boundaries of Packets 00-08.
+EHCOsystem publishes evidence appropriate to the proposition being examined: controlled architecture, exact artifact identity, manifests and hashes, selected actual test fixtures, source anchors, bounded observations, discrepancy records, receipts, and verification tooling.
 
-- Packet 02 binds a packet-time set of runtime-support test and source artifacts to exact hashes. Its historical title does not make those artifacts or their repository the Runtime.
-- Packets 03-05 establish bounded artifact identity and named declarations or anchors unless a packet expressly records executed behavior.
-- Packet 06 is a hash-preserved historical test and observation capture. Its integrity `PASS` is not a universal behavioral `PASS` and is not current Runtime state.
+Evidence classes remain distinct. A reviewer should be able to see both **what is established** and **what kind of evidence establishes it**.
 
-The accepted 52/53 baseline is an EHCOnomics-controlled operational standing record projected through the public evidence estate. Independent third-party certification is not claimed unless an identified public record expressly states it.
+[Inspect the Ecosystem Claim → Evidence Matrix →](assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md)
 
-## General reading path
+## Canonical interpretation and use
 
-For broader architecture, governance, and publication context:
-
-1. [Runtime, Repository, and Test-Estate Boundary](architecture/runtime-repository-and-test-estate-boundary.md)
-2. [Canonical Public Dossier](dossiers/README.md)
-3. [EHCO AI-OS Instantiated System](architecture/EHCO-AI-OS-INSTANTIATED-SYSTEM.md)
-4. [EHCO AI-OS Public System Card](architecture/EHCO-AI-OS-SYSTEM-CARD.md)
-5. [Governed Runtime Architecture](architecture/GOVERNED-RUNTIME-ARCHITECTURE.md)
-6. [System Invariants](architecture/SYSTEM-INVARIANTS.md)
-7. [Instantiated Proof Range](architecture/instantiated-proof-range.md)
-8. [Public Evidence Companion](evidence/README.md)
-9. [Proof and Status Classes](architecture/proof-and-status-classes.md)
-10. [EHCO Language-Model System Boundary](language-model/README.md)
-11. [EHCOsystem Library](LIBRARY.md)
-
-## Canonical public record
-
-- **System description:** EHCO AI-OS Governed Operational Architecture - Public Edition v1.8
-- **Accepted Runtime standing:** 52/53
-- **Public evidence:** Public Evidence Companion, Packets 00-08, and the canonical dossier PDF
-- **Validation:** bounded repository-integrity and semantic-boundary checks
-- **Release control:** canonical public release register, manifests, SHA-256 checksums, and automated validation
-
-Runtime realization remains distinct from production hosting, environment-specific deployment, public ingress, commercial activation, operational external release, and go-live authorization. Those states must be established by their own governing evidence and authorization.
-
-## Publication and use
+The detailed distinction among the instantiated Runtime, repositories, test estates, evidence artifacts, and public projection is maintained in the canonical [Runtime, Repository, and Test-Estate Boundary](architecture/runtime-repository-and-test-estate-boundary.md).
 
 - [Repository Governance](GOVERNANCE.md)
 - [Security and Responsible Disclosure](SECURITY.md)
-- [Proprietary Public Inspection License](LICENSE)
-- [Notice](NOTICE.md)
 - [Public Documentation and Evidence Provenance](PROVENANCE.md)
-
-Proprietary implementation mechanics, private control anchors, credentials, active endpoints, confidential proof records, and production infrastructure remain outside this public repository except where an approved hash-preserved evidence record expressly retains a bounded historical capture attribute.
+- [Proprietary Public Inspection License](LICENSE)
+- [EHCOsystem Library](LIBRARY.md)
 
 Copyright (c) 2026 EHCOnomics. All rights reserved.

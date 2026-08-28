@@ -2,41 +2,51 @@
 
 This map identifies the role of each section visibly present in the public `EHCOsystem` repository.
 
-The repository is not the EHCO AI-OS Runtime and does not hold Runtime authority, standing, authoritative state, consequence, persistence, release authority, or Runtime truth.
+## Primary navigation
 
-## Core navigation
+- `README.md` — public identity, qualitative maturity posture, and primary category-to-ecosystem entry path.
+- `architecture/INSTANTIATED-AI.md` — Instantiated AI category definition and qualification surface.
+- `architecture/EHCO-TECHNOLOGY-ESTATE.md` — EHCOsystem architecture, Runtime-projection/Dashboard hierarchy, differentiated shared-component maturity, estate lanes, and computational ownership.
+- `architecture/diagrams/README.md` — four original public-safe architecture diagrams covering the Runtime/projection hierarchy, computational ownership, differentiated estate lanes, shared foundations-to-applications, and the technical-to-market evidence ladder.
+- `assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md` — ecosystem claim-to-evidence map with estate lane, maturity posture, evidence class, verification route, currentness, and proof ceiling.
+- `ECOSYSTEM-DILIGENCE.md` — broad Instantiated AI ecosystem technical-diligence route.
+- `TECHNICAL-DILIGENCE.md` — focused EHCO AI-OS diligence route.
+- `LIBRARY.md` — complete public-record index.
+- `getting-started/` — Start Here, reading order, and repository map.
 
-- `README.md` - public identity and primary entry path.
-- `LIBRARY.md` - current public-record index.
-- `getting-started/` - Start Here, reading order, and repository map.
+## Canonical interpretation
 
-## Controlling boundary
+- `architecture/runtime-repository-and-test-estate-boundary.md` — controlling distinction among the instantiated Runtime, public repository, controlled test/source estates, and packet-time artifacts.
+- `architecture/SYSTEM-INVARIANTS.md` — canonical public invariant reference.
 
-- `architecture/runtime-repository-and-test-estate-boundary.md` - controlling distinction among the realized Runtime, the public repository, controlled private test/source estates, and packet-time artifacts.
+## Architecture and research
 
-## Canonical dossier
+- `architecture/INSTANTIATED-AI.md` — category-level architecture.
+- `architecture/EHCO-TECHNOLOGY-ESTATE.md` — category-to-ecosystem realization map, including `EHCO_DOCKER_PORTABILITY` as `PRIMARY_ACCESSIBLE_RUNTIME_PROJECTION`, the current accepted working EHCO Dashboard Tier Three projection baseline, and the percentage-free qualitative maturity posture.
+- `architecture/diagrams/` — public-safe explanatory relationship diagrams; not private topology or deployment diagrams.
+- `architecture/ecosystem-components-and-participation.md` — component identity, differentiated maturity, estate lanes, and scoped Runtime relationship boundaries.
+- `architecture/` — EHCO AI-OS records, proof/status records, ecosystem/component architecture, and research relationships.
+- `language-model/` — capability-first public Language Model boundary and bounded public test snapshot.
 
-- `dossiers/` - the fixed EHCO AI-OS Governed Operational Architecture public dossier and its landing record.
+## Assurance and evidence
 
-## System records
+- `assurance/` — AI-OS-specific and ecosystem-wide claim-to-evidence navigation.
+- `evidence/` — Public Evidence Companion landing page and hash-preserved Version 1 Packets 00-08.
+- `verification/` — bounded repository-integrity, semantic-boundary, category/navigation/diagram/maturity-lane, and component-snapshot validation tooling.
 
-- `architecture/` - public EHCO AI-OS system records, including the instantiated-system record, Public System Card, Governed Runtime Architecture, System Invariants, proof range, ecosystem participation, proof/status classes, and Runtime/repository boundary records.
-- `language-model/` - stable public boundary for the separately controlled language-model capability estate; it is not a live projection of private development state.
+## Dossier, release, and use controls
 
-## Public evidence
+- `dossiers/` — fixed EHCO AI-OS public dossier and landing record.
+- `releases/` — canonical public release register.
+- `GOVERNANCE.md` — publication and contribution control.
+- `SECURITY.md` — responsible disclosure and security boundary.
+- `PROVENANCE.md` — documentation and evidence provenance.
+- `LICENSE` — proprietary public-inspection permissions and restrictions.
+- `NOTICE.md` — public purpose and implementation boundary.
 
-- `evidence/` - Public Evidence Companion landing page and hash-preserved Version 1 Packets 00-08.
-- `verification/` - bounded repository-integrity and semantic-boundary validation tooling.
+## Provider-side discoverability metadata
 
-Packet 02 preserves packet-time runtime-support test/source-artifact provenance. Packet 06 preserves a historical bounded test and observation capture. Neither packet makes a repository or folder the Runtime, and Packet 06 integrity `PASS` is not current Runtime state or universal behavioral proof.
-
-## Release and use control
-
-- `releases/` - canonical public release register.
-- `GOVERNANCE.md` - publication and contribution control.
-- `SECURITY.md` - responsible disclosure and security boundary.
-- `LICENSE` - proprietary public-inspection permissions and restrictions.
-- `NOTICE.md` - public purpose, evidence, IP, and implementation boundary.
+The repository description, topics, homepage, and analogous settings are provider-side metadata rather than files in this map. They must be read separately from GitHub and aligned to the category-first public target when the selected provider tooling and authorization permit. A tool or authorization limitation must be explicitly dispositioned rather than silently treated as completion.
 
 ## Canonical public release identity
 
@@ -44,17 +54,4 @@ Packet 02 preserves packet-time runtime-support test/source-artifact provenance.
 - Tag: `v1.0.0-public`
 - Release title: `EHCOsystem Public Architecture and Evidence Baseline v1.0.0`
 
-These values define the canonical public release identity. They do not by themselves assert that the tag or GitHub Release has been published. The GitHub Releases surface determines live publication state.
-
-Repository publication and packet verification do not independently authorize Runtime deployment, production activation, public ingress, operational external release, commercial activation, or go-live.
-
-## Not projected here
-
-The following are not current public repository state:
-
-- moving private test/source-estate commits, branches, tests, or deployment-support state;
-- moving private language-model commits, pull requests, gaps, and activation controls;
-- current Runtime state beyond expressly approved Runtime-originated public records;
-- proprietary implementation mechanics, active endpoints, credentials, protected topology, and confidential records.
-
-Their absence is a publication-scope fact, not a Runtime state change.
+These values define the canonical public release identity. They do not by themselves assert that a GitHub Release has been published. The GitHub Releases surface determines live publication state.

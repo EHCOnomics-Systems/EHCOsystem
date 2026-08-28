@@ -5,38 +5,39 @@ protocol_reference:
   profile_version: 1.0.0
   protocol_version: 1.0.0
 repository: EHCOnomics-Systems/EHCOsystem
-governed_object: PUBLIC_GITHUB_NATIVE_ASSISTANT_GATE_BOOTSTRAP_RETIREMENT
+governed_object: PUBLIC_EHCOSYSTEM_INSTANTIATED_AI_TECHNOLOGY_ESTATE_MODERNIZATION
 source_owner:
   repository: EHCOnomics-Systems/EHCOsystem
-  revision: eff9301e7c5ddfc0759ee0d7e3c026ad28c5670c
+  revision: e2bfe53e46aabcdee4dace67ee37b8147e575a04
   repository_manifest_path: ehco.repository.yaml
   controlling_source_reference: ehco.repository.yaml
 selection:
   selected_by: Edward Henry
   selection_class: EXPLICIT_OWNER_DIRECTION
-  durable_reference: EHCO-PUB-SOW-001 v1.5 WP-12 BOOTSTRAP_RETIREMENT=true DELETE_PATH:.github/workflows/ehco-assistant-operation-gate-bootstrap.yml OPERATION_STABLE_ENVELOPE_CHANGE=true
-  source_base_revision: eff9301e7c5ddfc0759ee0d7e3c026ad28c5670c
+  durable_reference: EHCO-PUB-SOW-001 v1.5 WP-01..WP-12 PR22_REQUALIFICATION=true OPERATION_STABLE_ENVELOPE_CHANGE=true NEW_PATH:ECOSYSTEM-DILIGENCE.md NEW_PATH:architecture/EHCO-TECHNOLOGY-ESTATE.md NEW_PATH:architecture/INSTANTIATED-AI.md NEW_PATH:architecture/diagrams/README.md NEW_PATH:assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md
+  source_base_revision: e2bfe53e46aabcdee4dace67ee37b8147e575a04
   expected_reviewed_head_revision: NOT_APPLICABLE_UNTIL_ACCEPT
 control_anchor: AGENTS.md
 status_owner_path: ehco.operation.yaml
 accepted_standing: 52/53
 active_operation:
-  operation_id: EHCO-PUBLIC-GITHUB-NATIVE-ASSISTANT-GATE-BOOTSTRAP-RETIREMENT-PUBLISH-001
+  operation_id: EHCO-PUBLIC-INSTANTIATED-AI-TECHNOLOGY-ESTATE-PUBLISH-001
   state: ACTIVE
   authorization_mode: PUBLISH
-  bounded_outcome: Remove the temporary first-adoption bootstrap workflow while preserving the accepted normal GitHub-native assistant gate.
+  bounded_outcome: Publish and qualify the source-grounded category-first EHCOsystem public architecture and technology-estate modernization on the accepted GitHub-native control baseline.
   remaining_bounded_work:
-  - Delete only the temporary bootstrap workflow.
-  - Qualify the exact cleanup candidate through repository validation, CodeQL, and the normal EHCO Assistant Operation Gate.
-  - Stop before owner acceptance, merge, PR #22 requalification, release, deployment, or Runtime action.
+  - Qualify the exact candidate through public validation, CodeQL, and the normal EHCO Assistant Operation Gate.
+  - Re-read exact base, head, rulesets, reviews, threads, comments, disclosure boundaries, and public metadata.
+  - Stop before owner acceptance, merge, release, deployment, Runtime action, or standing change.
   interaction_seams:
-  - Accepted public-safe assistant controls on canonical main and the normal pull-request-target gate.
-  - Read-only GitHub App authentication to the accepted private canonical control source.
-  - Cleanup acceptance before PR #22 is updated to the control-enabled main.
+  - Instantiated AI category and EHCOsystem public architecture front door.
+  - EHCO AI-OS system identity, EHCO_DOCKER_PORTABILITY primary accessible Runtime projection, and EHCO Dashboard Tier Three projection baseline.
+  - Principal shared downstream component spine, research/foundation estate, continuing domain/application expansion, and public claim-evidence assurance.
+  - Accepted public-safe assistant controls and privately resolved canonical operation validation.
   non_overlap:
-  - The normal assistant-gate workflow, AGENTS.md, and ehco.repository.yaml are not modified by this cleanup candidate.
-  - PR #22 technology-estate source is not modified by this cleanup candidate.
-  - No external hosting, deployment, Runtime, authority, participation, proof, release, or standing effect.
+  - Exact private source/control repository locators and protected implementation mechanics are not published.
+  - Accepted normal assistant-gate workflow, AGENTS.md, and stable ehco.repository.yaml identity/boundary fields are not modified by this modernization candidate.
+  - No artifact release, deployment, Runtime, authority, participation, proof-state, or standing effect.
   automatic_successor: PROHIBITED
   successor_operation: NOT_SELECTED
 execution_continuity:
@@ -51,29 +52,88 @@ execution_continuity:
   local_override: MAY_TIGHTEN_NOT_WEAKEN
 scope:
   permitted_paths:
+  - .github/pull_request_template.md
+  - ECOSYSTEM-DILIGENCE.md
+  - GOVERNANCE.md
+  - LIBRARY.md
+  - NOTICE.md
+  - README.md
+  - SECURITY.md
+  - architecture/EHCO-AI-OS-INSTANTIATED-SYSTEM.md
+  - architecture/EHCO-AI-OS-SYSTEM-CARD.md
+  - architecture/EHCO-TECHNOLOGY-ESTATE.md
+  - architecture/GOVERNED-RUNTIME-ARCHITECTURE.md
+  - architecture/INSTANTIATED-AI.md
+  - architecture/SYSTEM-INVARIANTS.md
+  - architecture/diagrams/README.md
+  - architecture/ecosystem-components-and-participation.md
+  - architecture/instantiated-proof-range.md
+  - architecture/proof-and-status-classes.md
+  - architecture/runtime-repository-and-test-estate-boundary.md
+  - assurance/CLAIM-EVIDENCE-MATRIX.md
+  - assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md
+  - assurance/README.md
+  - dossiers/README.md
   - ehco.operation.yaml
-  - .github/workflows/ehco-assistant-operation-gate-bootstrap.yml
+  - evidence/README.md
+  - getting-started/START-HERE.md
+  - getting-started/reading-order.md
+  - getting-started/repository-map.md
+  - language-model/README.md
+  - releases/PUBLIC-RELEASE-REGISTER.md
+  - verification/README.md
+  - verification/validate_public_evidence.py
   controlled_paths:
+  - .github/pull_request_template.md
+  - ECOSYSTEM-DILIGENCE.md
+  - GOVERNANCE.md
+  - LIBRARY.md
+  - NOTICE.md
+  - README.md
+  - SECURITY.md
+  - architecture/EHCO-AI-OS-INSTANTIATED-SYSTEM.md
+  - architecture/EHCO-AI-OS-SYSTEM-CARD.md
+  - architecture/EHCO-TECHNOLOGY-ESTATE.md
+  - architecture/GOVERNED-RUNTIME-ARCHITECTURE.md
+  - architecture/INSTANTIATED-AI.md
+  - architecture/SYSTEM-INVARIANTS.md
+  - architecture/diagrams/README.md
+  - architecture/ecosystem-components-and-participation.md
+  - architecture/instantiated-proof-range.md
+  - architecture/proof-and-status-classes.md
+  - architecture/runtime-repository-and-test-estate-boundary.md
+  - assurance/CLAIM-EVIDENCE-MATRIX.md
+  - assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md
+  - assurance/README.md
+  - dossiers/README.md
   - ehco.operation.yaml
-  - .github/workflows/ehco-assistant-operation-gate-bootstrap.yml
+  - evidence/README.md
+  - getting-started/START-HERE.md
+  - getting-started/reading-order.md
+  - getting-started/repository-map.md
+  - language-model/README.md
+  - releases/PUBLIC-RELEASE-REGISTER.md
+  - verification/README.md
+  - verification/validate_public_evidence.py
   prohibited_paths:
   - AGENTS.md
   - ehco.repository.yaml
   - .github/workflows/ehco-assistant-operation-gate.yml
+  - .github/workflows/ehco-assistant-operation-gate-bootstrap.yml
 change_control:
   control_change_declared: true
-  delete_or_move_authorized: true
+  delete_or_move_authorized: false
   local_actions_authorized:
   - read_source
   - compare_source
   - audit
   - propose
+  - create_file
   - update_file
-  - delete_file
   - run_checks
   local_actions_prohibited:
-  - create_file
   - move_file
+  - delete_file
   - generate_artifact
   remote_actions_authorized:
   - create_branch
@@ -106,7 +166,7 @@ effects:
   external_effect: NONE
 bridge:
   applicability: NOT_APPLICABLE_NON_PARTICIPANT
-  non_applicability_reason: Public repository assistant-control cleanup is not Runtime participation.
+  non_applicability_reason: Public architecture and evidence publication is not Runtime participation.
   direct_invocation: PROHIBITED
   runtime_admission_status: NOT_ESTABLISHED
   participation_binding_status: NOT_ESTABLISHED
@@ -118,11 +178,11 @@ evidence:
   - CodeQL
   - EHCO Assistant Operation Gate
   proves:
-  - The temporary first-adoption bootstrap workflow is removed through an exact two-path cleanup candidate while the accepted normal gate remains unchanged.
+  - The exact public modernization candidate satisfies checked architecture, disclosure, terminology, evidence, operation, and exact-path invariants against the accepted control-enabled main.
   evidence_not_created:
   - owner acceptance
-  - accepted cleanup main
-  - PR #22 requalification or acceptance
+  - accepted modernization main
+  - artifact publication
   - deployment
   - Runtime state
   - authority
@@ -130,4 +190,4 @@ evidence:
   - proof-state change
   - standing change
 stop_condition:
-- Stop before Ready-for-Review, owner acceptance, merge, PR #22 mutation, release, deployment, or Runtime action.
+- Stop before Ready-for-Review, owner acceptance, merge, repository-settings mutation, release, deployment, or Runtime action.

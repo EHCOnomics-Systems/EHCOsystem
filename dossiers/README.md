@@ -28,21 +28,18 @@ The same byte-identical PDF is bound inside Packet 00 at `evidence/public-eviden
 
 ## Interpretation boundary
 
-EHCO AI-OS is the realized Tier 1 Runtime with accepted standing **52/53**. The dossier describes that system and its public architecture. The PDF, this landing page, the Git repository, controlled private repositories, runtime-support folders, tests, containers, and evidence packets are not the Runtime and do not hold Runtime authority or authoritative Runtime state.
+EHCO AI-OS is the realized Tier One Runtime with accepted standing **52/53**. The dossier is controlled public architecture. Repository publication establishes this artifact's visible identity and integrity within its stated proof ceiling.
 
-Read the [Runtime, Repository, and Test-Estate Boundary](../architecture/runtime-repository-and-test-estate-boundary.md) before interpreting source-binding, declaration, test, or capture evidence.
-
-Repository publication establishes the visible identity and integrity of this public artifact. It does not independently create or alter Runtime standing, prove every declared mechanism executed, authorize production activation, authorize public ingress, authorize operational external release, or create go-live status.
-
-The accepted 52/53 baseline is an EHCOnomics-controlled operational standing record. Independent third-party certification is not claimed unless an identified public record expressly states it.
+Use the [Runtime, Repository, and Test-Estate Boundary](../architecture/runtime-repository-and-test-estate-boundary.md) for the shared repository/Runtime interpretation and the [Public Evidence Companion](../evidence/README.md) for packet-specific evidence interpretation.
 
 ## Related material
 
 - [Runtime, Repository, and Test-Estate Boundary](../architecture/runtime-repository-and-test-estate-boundary.md)
 - [EHCO AI-OS Instantiated System](../architecture/EHCO-AI-OS-INSTANTIATED-SYSTEM.md)
+- [EHCOnomics Technology Estate](../architecture/EHCO-TECHNOLOGY-ESTATE.md)
+- [Ecosystem Components and Runtime Relationships](../architecture/ecosystem-components-and-participation.md)
 - [Instantiated Proof Range](../architecture/instantiated-proof-range.md)
-- [Ecosystem Components and Participation](../architecture/ecosystem-components-and-participation.md)
-- [EHCO Language-Model System Boundary](../language-model/README.md)
+- [EHCO Language Model](../language-model/README.md)
 - [Public Evidence Companion](../evidence/README.md)
 - [Public Evidence Validation](../verification/README.md)
 

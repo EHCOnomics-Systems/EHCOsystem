@@ -1,72 +1,52 @@
 ---
-title: EHCO Language-Model System Boundary
-version: 1.3
+title: EHCO Language Model
+version: 2.0
 status: current-public-system-boundary
-published: 2026-08-24
+published: 2026-08-25
 maintainer: EHCOnomics
 evidence_class: controlled-ehco-system-record
-supersedes: version 1.2
+supersedes: version 1.3
 ---
 
-# EHCO Language-Model System Boundary
+# EHCO Language Model
 
-The EHCO language-model system is a separately controlled language-capability estate of the EHCOsystem. It operates downstream of the realized EHCO AI-OS Tier 1 Runtime and contributes language, linguistic, mathematical, and related model capability within governed participation relationships.
+The EHCO Language Model is the deterministic computational-language component of the EHCOnomics technology estate. Its controlled architecture is **single-path** and **zero-weight**: language computation is expressed through explicit computational structures and operators rather than learned-weight inference or delegation to an external language model.
 
-EHCO AI-OS retains Runtime authority, admission, recognized transaction state, consequence, persistence, recovery, withholding, release, closure, and Runtime truth. A language model, model repository, training artifact, test harness, runtime-support folder, prompt, transcript, or model output does not independently create or alter Tier 1 authority or the accepted EHCO AI-OS standing baseline of **52/53**.
+Its controlled source estate covers lexical and morphological processing, syntax and semantic composition, reference and context, evidence binding, Language Math, deterministic candidate search and resolution, ambiguity and withholding, bounded reasoning, and a deterministic component-service boundary.
 
-## Repository and test-estate boundary
-
-Controlled repositories and runtime-support folders associated with language-model development, compatibility testing, packaging, deployment support, and evidence generation are not the Runtime. Their files and results matter only within the exact identity, integrity, declaration, test, observation, qualification, and release scope established by their controlling records.
-
-Repository activity does not establish Runtime participation. A passing test does not establish admission. A generated response does not establish consequence or Runtime truth.
-
-See [Runtime, Repository, and Test-Estate Boundary](../architecture/runtime-repository-and-test-estate-boundary.md).
-
-## Public projection boundary
-
-This public repository does not project the moving private development ledger of the language-model estate. Exact private commit identifiers, pull-request numbers, gap ledgers, activation decisions, branch state, work-packet state, and next-operation controls remain in their owning controlled records.
-
-Their omission is intentional. A dated public snapshot must not be mistaken for current private development state or current Runtime state.
-
-The public record establishes only the stable system relationship:
-
-- the language-model estate is a capability system, not Tier 1 authority;
-- model outputs remain candidates until governed admission and consequence;
-- repository activity does not establish Runtime participation or standing;
-- training, weights, qualification, deployment, and release retain separate evidence and authorization requirements;
-- EHCO RAG participates through governed source, context, retrieval, evidence, and release boundaries;
-- private language-model progress does not independently change the realized EHCO AI-OS Runtime standing.
-
-## Frozen public test snapshot
+## Public test evidence
 
 A bounded public test snapshot is available at [Language Model Public Test Snapshot v1](evidence/public-test-snapshot-v1/README.md).
 
-That snapshot publishes selected actual synthetic repository test fixtures whose public artifact identities were verified against their controlled source artifacts at publication review. It also contains a dated public-safe index of selected qualification test names and dimensions for cases where publishing the complete executable harness would disclose protected implementation details.
+The snapshot publishes seven selected exact synthetic repository fixtures covering **62 cases**, plus expected dispositions, artifact identity/provenance, a qualification-test index, and dedicated validation tooling.
 
-The snapshot is evidence of the selected test artifacts and test design within its stated proof ceiling. It is not a live projection of private development state, not an external benchmark, not independent certification, not a claim of global language completeness, and not Runtime admission or Runtime-state evidence.
+Its evidence class is bounded test-artifact identity and public test design. It is not an external benchmark, independent certification, reproduction of the complete private executable harness, proof of global language completeness, or proof of equivalence to a frontier LLM.
 
-## EHCO RAG relationship
+## Relationship to the technology estate
 
-EHCO RAG provides governed retrieval capability for language-model participation. Retrieval does not become authority merely because information is found, ranked, or supplied to a model.
+The Language Model is a downstream governed component. It owns computational-language capability; it does not acquire Tier One Runtime authority from model output, source presence, testing, packaging, or publication.
 
-## Status discipline
+EHCO RAG provides governed retrieval/evidence capability through separate contracts and provenance boundaries. EHCO Range Reactor owns separate bounded range/reasoning computation. Those responsibilities are not collapsed into the Language Model identity.
 
-No detailed language-model development status should be inferred from this page. Current source, qualification, activation, deployment, and release state must be resolved from the applicable controlled records. Current Runtime state is not projected by private repository activity.
+A scoped Runtime participation relationship, where established, is separate from the Language Model's persistent component identity and is owned by the applicable Runtime evidence.
+
+## Public/private boundary
+
+The complete proprietary executable harness, private implementation imports and module paths, protected schemas/control surfaces, moving development state, credentials, and private operational topology are not published here.
+
+For the controlling Runtime/repository/test-estate interpretation, see the [canonical boundary record](../architecture/runtime-repository-and-test-estate-boundary.md).
 
 ## Related material
 
-- [Runtime, Repository, and Test-Estate Boundary](../architecture/runtime-repository-and-test-estate-boundary.md)
-- [EHCO AI-OS Instantiated System](../architecture/EHCO-AI-OS-INSTANTIATED-SYSTEM.md)
-- [Instantiated Proof Range](../architecture/instantiated-proof-range.md)
-- [Ecosystem Components and Participation](../architecture/ecosystem-components-and-participation.md)
-- [Public Evidence Companion](../evidence/README.md)
+- [EHCOnomics Technology Estate](../architecture/EHCO-TECHNOLOGY-ESTATE.md)
 - [Language Model Public Test Snapshot v1](evidence/public-test-snapshot-v1/README.md)
+- [Ecosystem Claim → Evidence Matrix](../assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md)
+- [Ecosystem Components and Runtime Relationships](../architecture/ecosystem-components-and-participation.md)
+- [EHCO AI-OS Technical Diligence](../TECHNICAL-DILIGENCE.md)
 
 ## Revision history
 
 | Version | Date | Change |
 |---|---|---|
-| 1.3 | 2026-08-24 | Added a bounded frozen public test snapshot without projecting moving private development state. |
-| 1.2 | 2026-08-05 | Separated language-model repositories, test artifacts, and model output from Runtime identity and authority. |
-| 1.1 | 2026-08-05 | Replaced the dated private-development projection with a stable public system boundary. |
-| 1.0 | 2026-08-04 | Initial public language-model finalization record. |
+| 2.0 | 2026-08-25 | Reframed the public page capability-first while preserving the bounded test-evidence and Runtime relationship boundaries. |
+| 1.3 | 2026-08-24 | Added the bounded frozen public test snapshot. |

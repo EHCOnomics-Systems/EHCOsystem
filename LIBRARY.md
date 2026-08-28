@@ -1,35 +1,64 @@
 # The EHCOsystem Library
 
-This page indexes the artifacts visibly published in the `EHCOsystem` repository. The repository is a public architecture, evidence, provenance, research, verification, and publication surface. It is not the EHCO AI-OS Runtime and does not hold Runtime authority or authoritative Runtime state.
+This page indexes the current public records visibly published in `EHCOsystem`, EHCOnomics' public technical representation of its Instantiated AI ecosystem.
 
 ## Start here
 
-- [Runtime, Repository, and Test-Estate Boundary](architecture/runtime-repository-and-test-estate-boundary.md)
+- [Instantiated AI — Public Architecture Definition](architecture/INSTANTIATED-AI.md)
+- [EHCOsystem — An Instantiated AI Ecosystem](architecture/EHCO-TECHNOLOGY-ESTATE.md)
+- [Public Architecture Diagrams](architecture/diagrams/README.md)
+- [Ecosystem Claim → Evidence Matrix](assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md)
+- [Ecosystem Technical Diligence](ECOSYSTEM-DILIGENCE.md)
+- [EHCO AI-OS Technical Diligence](TECHNICAL-DILIGENCE.md)
 - [Start Here](getting-started/START-HERE.md)
 - [Reading Order](getting-started/reading-order.md)
 - [Repository Map](getting-started/repository-map.md)
+
+## Category architecture
+
+- [Instantiated AI — Public Architecture Definition](architecture/INSTANTIATED-AI.md)
+
+This record defines the category-level dependency inversion: governing computational conditions are established independently of the intelligence before consequential operation. It also defines computational standing, Standing Baseline, source and memory standing, model independence, and category qualification questions.
+
+## Ecosystem architecture and maturity
+
+- [EHCOsystem — An Instantiated AI Ecosystem](architecture/EHCO-TECHNOLOGY-ESTATE.md)
+- [Public Architecture Diagrams](architecture/diagrams/README.md)
+- [Ecosystem Components and Runtime Relationships](architecture/ecosystem-components-and-participation.md)
+
+These records show the public hierarchy from EHCO AI-OS as the realized Tier One Runtime foundation through `EHCO_DOCKER_PORTABILITY` as the `PRIMARY_ACCESSIBLE_RUNTIME_PROJECTION` to the current accepted working EHCO Dashboard Tier Three projection baseline. They then separate the principal shared downstream component spine with differentiated maturity from governed research/foundation estates, continuing downstream governed domain/application expansion, and substantial project/pilot programs.
+
+The architecture includes the source-grounded qualitative posture that the foundational/shared EHCOsystem spine is substantially established while remaining work is increasingly concentrated rather than foundational. It does not assert a universal completion percentage or equal maturity across components.
+
+## Canonical interpretation
+
+- [Runtime, Repository, and Test-Estate Boundary](architecture/runtime-repository-and-test-estate-boundary.md)
+- [System Invariants](architecture/SYSTEM-INVARIANTS.md)
+- [Proof and Status Classes](architecture/proof-and-status-classes.md)
 
 ## Canonical public dossier
 
 - [EHCO AI-OS Governed Operational Architecture - Public Edition v1.8](dossiers/README.md)
 
-## System and proof records
+## Tier One system and proof records
 
 - [EHCO AI-OS Instantiated System](architecture/EHCO-AI-OS-INSTANTIATED-SYSTEM.md)
 - [EHCO AI-OS Public System Card](architecture/EHCO-AI-OS-SYSTEM-CARD.md)
 - [Governed Runtime Architecture](architecture/GOVERNED-RUNTIME-ARCHITECTURE.md)
-- [System Invariants](architecture/SYSTEM-INVARIANTS.md)
 - [Instantiated Proof Range](architecture/instantiated-proof-range.md)
-- [Ecosystem Components and Participation](architecture/ecosystem-components-and-participation.md)
-- [Proof and Status Classes](architecture/proof-and-status-classes.md)
-- [EHCO Language-Model System Boundary](language-model/README.md)
+
+## Component architecture and evidence
+
+- [EHCO Language Model](language-model/README.md)
+- [Language Model Public Test Snapshot v1](language-model/evidence/public-test-snapshot-v1/README.md)
 
 ## Public assurance
 
 - [Public Assurance Index](assurance/README.md)
-- [Claim → Evidence Matrix](assurance/CLAIM-EVIDENCE-MATRIX.md)
+- [Ecosystem Claim → Evidence Matrix](assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md)
+- [AI-OS Claim → Evidence Matrix](assurance/CLAIM-EVIDENCE-MATRIX.md)
 
-The assurance layer maps selected public claims to existing public sources and their existing proof ceilings. It creates no new Runtime proof, authority, standing, deployment state, or independent certification.
+The ecosystem matrix records estate lane, positive bounded claim, current development/maturity posture, evidence class, public reference, verification method, source-review date, and proof ceiling without publishing private source locators.
 
 ## Public evidence
 
@@ -37,24 +66,11 @@ The assurance layer maps selected public claims to existing public sources and t
 - [Version 1 Packets 00-08](evidence/public-evidence-companion/v1/)
 - [Public Evidence Validation](verification/README.md)
 
-Packets 00-08 remain hash-preserved. Packet 02 binds packet-time runtime-support test/source artifacts, not a Runtime repository. Packet 06 is a historical bounded capture; packet-integrity `PASS` is not universal behavioral `PASS` or current Runtime state.
-
 ## Release and publication control
 
 - [Canonical Public Release Register](releases/PUBLIC-RELEASE-REGISTER.md)
 - [Repository Governance](GOVERNANCE.md)
 - [Security and Responsible Disclosure](SECURITY.md)
+- [Public Documentation and Evidence Provenance](PROVENANCE.md)
 - [Proprietary Public Inspection License](LICENSE)
 - [Notice](NOTICE.md)
-
-## Not projected here
-
-The following are not represented as current public repository state:
-
-- moving private test/source-estate state;
-- moving private language-model commits, pull requests, gap ledgers, and activation controls;
-- current Runtime state beyond approved public Runtime-originated records;
-- production activation, public ingress, operational external release, commercial activation, and go-live;
-- proprietary implementation mechanics, credentials, active endpoints, protected topology, and confidential records.
-
-Their absence is a publication-scope fact, not a Runtime state change.

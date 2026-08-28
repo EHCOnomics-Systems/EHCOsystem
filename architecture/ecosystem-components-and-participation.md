@@ -1,100 +1,94 @@
 ---
-title: Ecosystem Components and Participation
-version: 1.2
-status: accepted-public-system-record
-published: 2026-08-05
+title: Ecosystem Components and Runtime Relationships
+version: 2.1
+status: current-public-system-architecture
+published: 2026-08-28
 maintainer: EHCOnomics
 evidence_class: controlled-ehco-system-record
-supersedes: version 1.1
+supersedes: version 2.0
 ---
 
-# Ecosystem Components and Participation
+# Ecosystem Components and Runtime Relationships
 
-The EHCOsystem is a governed ecosystem of Runtime authority, participants, applications, language systems, retrieval systems, controlled test and source estates, evidence systems, portability controls, deployment environments, and public projections aligned to EHCO AI-OS.
+The EHCOsystem separates persistent component identity from Runtime participation. **EHCO AI-OS is the realized Tier One Runtime system identity.** Persistent downstream software identities are **downstream governed components**. A Runtime participation relationship is separate and is asserted only where owning Runtime evidence establishes it for a scoped corridor.
 
-## Core components
+Estate lane, component maturity, release/deployment state, currentness, and Runtime participation are also separate. Components listed in the same lane do not automatically share one maturity.
 
-### EHCO AI-OS Runtime
+## Tier One
 
-EHCO AI-OS is the realized Tier 1 Runtime with accepted standing **52/53**. It governs authority, admission, standing, recognized state, transition, consequence, persistence, recovery, withholding, release, closure, and Runtime truth.
+### EHCO AI-OS
 
-### Controlled test and source estates
+EHCO AI-OS is the realized Tier One Runtime and governing foundation with accepted standing baseline **52/53**. It owns the governing relationships for authority, admission, recognized state, transition, consequence, persistence, correction/recovery, withholding/release, and Runtime-originated proof.
 
-Controlled private repositories and their runtime-support folders contain bounded artifacts used for source comparison, compatibility testing, packaging, deployment support, observation, and evidence generation.
+## Primary accessible Runtime projection and Tier Three baseline
 
-They are not the Runtime. They do not hold Runtime authority, authoritative state, standing, consequence, persistence, release authority, or Runtime truth. Repository activity, build results, test results, image creation, or deployment-support records do not independently create or alter Runtime standing.
+- **`EHCO_DOCKER_PORTABILITY`** is the `PRIMARY_ACCESSIBLE_RUNTIME_PROJECTION` of the established Runtime lineage. It is not an independent authority owner.
+- **EHCO Dashboard** is the current accepted working Tier Three projection baseline within the portability estate. Its working-baseline status does not establish present public hosting, public ingress, production operation, or dashboard authority.
 
-### Docker and infrastructure
+## Principal shared downstream component spine
 
-Docker and infrastructure may carry bounded image, configuration, execution, persistence, health, recovery, and deployment evidence. A container or environment can exercise or host artifacts without becoming the source of Runtime authority. Runtime realization remains distinct from production hosting, public ingress, operational external release, and go-live authorization.
+### Mature / advanced source and qualification posture
 
-### EHCO Prime
+- **EHCO Language Model** — mature deterministic computational-language capability. Current accepted source has progressed through bounded staging and staging-verification reconciliation; production verification remains separate.
+- **EHCO Range Reactor** — mature bounded deterministic range/reasoning capability with qualified accepted lineage integrated into current source; release and deployment remain separate.
+- **EHCO Prime** — advanced/mature persistent individual-facing relationship and assistant-coordination service at the source/control layer.
+- **EHCO Agent Connect** — advanced/mature registry, discovery, compatibility, health-observation, and candidate-routing coordination service at the source/control layer.
 
-EHCO Prime provides governed interface, continuity, and coordination functions while preserving EHCO AI-OS control over executable participation and consequence.
+### Controlled implementation posture
 
-### EHCO Agent Connect
+- **EHCO RAG** — governed retrieval, context, source custody, provenance, and evidence capability with an accepted control/specification baseline and controlled implementation posture.
 
-EHCO Agent Connect provides extension, registry, routing, compatibility, and handoff controls across governed participants. Registration and routing do not independently create admission or authority.
+Production build execution/artifact, release, deployment, and Runtime participation remain separate evidence dimensions for the shared service components.
 
-### EHCO RAG
+## Governed research and foundation estates
 
-EHCO RAG provides governed retrieval capability. Retrieval participates through bounded source, context, evidence, gateway, isolation, and release relationships. Retrieved information does not become truth or authority merely because it is available to a model or application.
+- **EHCO Memory** — governed memory/continuity research foundation with a bounded source/research baseline.
+- **Primordia** — computational-substrate, specification/language, semantics, and engineering-system research with bootstrap/source-baseline maturity.
+- **EHCO Recursion** — recursion/trust/coherence/collapse research with source-baseline maturity.
+- **EHCO Fractal Systems** — structural/form/scale/continuity research with source-baseline maturity.
 
-### EHCO language-model system
+Research/foundation status is not ordinary application incompleteness and does not demote the established Runtime/shared-component spine.
 
-The EHCO language-model system is a separately controlled language-capability estate operating downstream of EHCO AI-OS Runtime authority. It contributes model capability but does not independently create Tier 1 authority, Runtime participation, operational consequence, or standing.
+## Continuing downstream governed domain/application expansion
 
-### Governed applications
+The ordinary application estate includes governed domain components such as EHCO Energy, Noble Law, EHCO War Room, HTPI, EHCO Project Construct, EHCO Luminis, EHCO Nexus, and EHCO Permit Trace. Each application owns its application-local logic, records, workflows, evidence, and lifecycle within its accepted scope, and each has its own maturity posture.
 
-Tier 2 and Tier 3 applications participate through their own contracts, schemas, roles, evidence, release gates, and Runtime relationships. An application may interpret, coordinate, execute bounded work, or project governed information without becoming Tier 1 authority.
+## Substantial project/pilot expansion outside the public core-completion denominator
 
-### Public evidence and projection
+- **Grasp Safety Intelligence** — remains a downstream governed construction/field-safety component with substantial deterministic/fail-closed source foundations.
+- **Pegasus IT** — remains a downstream governed IT-services domain/application component with an accepted domain/source foundation.
 
-The dossier, Public Evidence Companion, manifests, receipts, repository documents, dashboards, metrics, and public-safe views provide bounded evidence and visibility. They do not replace Runtime authority or independently alter standing.
+For the public completion model, these two components are tracked as substantial project/pilot expansion outside the public core-completion denominator. This lane treatment changes no persistent identity, authority, evidence class, Runtime relationship, or development obligation.
 
-## Participation relationship
+## Current qualitative completion posture
 
-Each component retains its own function while remaining aligned to common relationships of identity, role, eligibility, participation, transaction binding, invocation, return, evidence, consequence, continuity, correction, recovery, withholding, and release.
+Current source review supports a qualitative—not percentage-based—posture: the foundational/shared EHCOsystem spine is substantially established while remaining work is increasingly concentrated rather than foundational across bounded finalization/hardening, EHCO RAG implementation, research/foundation reconciliation, and continuing downstream governed domain/application expansion.
 
-Evidence from one component does not automatically establish another component's state. In particular:
+This statement does not make every component complete or equally mature.
 
-- repository files are not the Runtime;
-- file presence is not execution;
-- declared control is not observed enforcement;
-- test success is not Runtime admission;
-- packet integrity is not universal behavioral proof;
-- public visibility is not Runtime truth.
+## Runtime relationships
 
-## Status boundaries
+A downstream component can exist, be developed, be realized as an application/service, or execute in an application-local environment without that fact alone establishing EHCO Runtime participation.
 
-The following remain distinct:
+Where a Runtime corridor is separately established, the instantiated Runtime owns the applicable admission, binding, invocation, disposition, authoritative Runtime consequence/persistence, and canonical Runtime receipts. Registration, source presence, tests, image creation, container health, application execution, or public visibility do not substitute for the required Runtime evidence.
 
-- Runtime realization;
-- Runtime standing;
-- artifact identity and provenance;
-- build and test verification;
-- bounded observed behavior;
-- container or environment deployment;
-- production activation;
-- public ingress;
-- operational external release;
-- commercial activation;
-- go-live authorization.
+## Tier Three
 
-Evidence in one dimension must not be promoted into another without the required governing record.
+Tier Three contains interfaces, dashboards, reports, metrics, and public-safe projections. The current accepted working EHCO Dashboard is the principal presently established projection baseline. Tier Three surfaces make governed information visible while remaining separate from the components and evidence that own the underlying state or computation.
 
 ## Related material
 
+- [EHCOnomics Technology Estate](EHCO-TECHNOLOGY-ESTATE.md)
+- [Public Architecture Diagrams](diagrams/README.md)
 - [Runtime, Repository, and Test-Estate Boundary](runtime-repository-and-test-estate-boundary.md)
 - [EHCO AI-OS Instantiated System](EHCO-AI-OS-INSTANTIATED-SYSTEM.md)
-- [Instantiated Proof Range](instantiated-proof-range.md)
-- [EHCO Language-Model System Boundary](../language-model/README.md)
-- [Public Evidence Companion](../evidence/README.md)
+- [EHCO Language Model](../language-model/README.md)
+- [Ecosystem Claim → Evidence Matrix](../assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md)
 
 ## Revision history
 
 | Version | Date | Change |
 |---|---|---|
-| 1.2 | 2026-08-05 | Separated the realized Runtime from controlled repositories, runtime-support folders, tests, containers, and public projections. |
-| 1.1 | 2026-08-05 | Stabilized component roles and distinct deployment/release states. |
-| 1.0 | 2026-08-04 | Initial public ecosystem components and participation record. |
+| 2.1 | 2026-08-28 | Added the Runtime-projection/Dashboard hierarchy, differentiated shared-component maturity, research/application lanes, qualitative completion posture, and Grasp/Pegasus project-pilot treatment. |
+| 2.0 | 2026-08-25 | Replaced broad participant identity language with downstream governed component identity and separated scoped Runtime participation as an orthogonal relationship. |
+| 1.2 | 2026-08-05 | Separated realized Runtime from repositories, tests, containers, and public projections. |

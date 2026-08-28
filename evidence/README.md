@@ -8,7 +8,7 @@ Read the [Runtime, Repository, and Test-Estate Boundary](../architecture/runtime
 
 ## Runtime and artifact boundary
 
-EHCO AI-OS is the realized Tier 1 Runtime with accepted standing **52/53**. Controlled repositories, runtime-support folders, source files, tests, manifests, images, workflows, and evidence-generation tools are not the Runtime and do not hold Runtime authority or authoritative Runtime state.
+**EHCO AI-OS is the realized Tier One Runtime with accepted standing 52/53.** Controlled repositories, supporting source/test estates, manifests, images, workflows, and evidence-generation tools are distinct from the Runtime and do not hold Runtime authority or authoritative Runtime state.
 
 A packet may establish exact artifact identity, integrity, provenance, declaration presence, bounded test results, or recorded observations. Those findings remain within the packet's proof ceiling.
 
@@ -42,9 +42,9 @@ The historical packet title is retained as part of the Version 1 packet identity
 
 It does **not** establish that the files, their folder, or their repository are the Runtime, the Runtime implementation, the source of Runtime authority, or the location of authoritative Runtime state. It does not claim live Runtime observation or complete enforcement coverage.
 
-### Packet 03 - Tier 1 Authority Enforcement
+### Packet 03 - Authority Enforcement
 
-Records exact artifact identity and the presence of named Tier 1 declarations or anchors. It does not, by declaration presence alone, prove executed enforcement, create standing, alter authority, or authorize release.
+Packet 03 preserves the hash-bound Version 1 evidence whose historical directory/title uses `TIER1`. Current interpretation uses **Tier One** terminology while retaining the packet bytes unchanged. The packet records exact artifact identity and the presence of named authority-enforcement declarations or anchors. It does not, by declaration presence alone, prove executed enforcement, create standing, alter authority, or authorize release.
 
 ### Packet 04 - Runtime Packet and Continuity Anchors
 

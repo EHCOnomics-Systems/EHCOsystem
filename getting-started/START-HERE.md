@@ -1,64 +1,58 @@
 ---
 title: Start Here
-version: 1.6
+version: 2.3
 status: current-public-navigation
-published: 2026-08-10
+published: 2026-08-28
 maintainer: EHCOnomics
 evidence_class: navigation
 proof_ceiling: none; navigation only
-supersedes: version 1.5
+supersedes: version 2.2
 ---
 
 # Start Here
 
-The `EHCOsystem` repository is the approved public architecture, evidence, provenance, research, verification, and publication surface for EHCO AI-OS and the EHCOsystem.
+EHCOsystem has four primary review routes. Choose the question you are trying to answer rather than reading the repository front to back.
 
-EHCO AI-OS is the realized Tier 1 Runtime with accepted standing **52/53**. This GitHub repository is not the Runtime and does not hold Runtime authority, standing, authoritative state, consequence, persistence, release authority, or Runtime truth.
+## 1. What is Instantiated AI?
 
-Controlled private repositories and their runtime-support folders are bounded test, compatibility, source-comparison, packaging, deployment-support, and evidence-generation estates. They are not the Runtime. Their files matter only within the identity, integrity, declaration, test, observation, and proof scope expressly established by the applicable record.
+Read **[Instantiated AI — Public Architecture Definition](../architecture/INSTANTIATED-AI.md)**.
 
-## If you are here for technical diligence
+Use this route for the category definition, dependency inversion, computational standing, source and memory standing, model independence, and qualification questions.
 
-Start with [Technical Diligence — Start Here](../TECHNICAL-DILIGENCE.md).
+## 2. What is EHCOsystem?
 
-That route puts the observed Packet 06 run first, pairs it with the exact Packet 03 implementation anchors, and points directly to Packet 06's unresolved discrepancies and unobserved negative-control lanes. It is intended to answer the technical-mechanism question before asking a reviewer to read the broader architecture estate.
+Read **[EHCOsystem — An Instantiated AI Ecosystem](../architecture/EHCO-TECHNOLOGY-ESTATE.md)**.
 
-For documentation and evidence authorship/provenance distinctions, see [Public Documentation and Evidence Provenance](../PROVENANCE.md).
+This route presents the first-read hierarchy of EHCO AI-OS as the realized Tier One Runtime foundation, `EHCO_DOCKER_PORTABILITY` as the `PRIMARY_ACCESSIBLE_RUNTIME_PROJECTION`, and the current accepted working EHCO Dashboard as the principal presently established Tier Three projection baseline. It then separates the principal shared component spine with differentiated maturity from research/foundation reconciliation, continuing domain/application expansion, and substantial project/pilot programs.
 
-## General recommended path
+The architecture also records the source-grounded qualitative posture that the foundational/shared EHCOsystem spine is substantially established while remaining work is increasingly concentrated rather than foundational. It does not publish a universal completion percentage.
 
-1. Read the [Runtime, Repository, and Test-Estate Boundary](../architecture/runtime-repository-and-test-estate-boundary.md).
-2. Open the [Canonical Public Dossier](../dossiers/README.md).
-3. Read the [EHCO AI-OS Instantiated System](../architecture/EHCO-AI-OS-INSTANTIATED-SYSTEM.md).
-4. Read the [EHCO AI-OS Public System Card](../architecture/EHCO-AI-OS-SYSTEM-CARD.md).
-5. Review the [Governed Runtime Architecture](../architecture/GOVERNED-RUNTIME-ARCHITECTURE.md).
-6. Review the [System Invariants](../architecture/SYSTEM-INVARIANTS.md).
-7. Review the [Instantiated Proof Range](../architecture/instantiated-proof-range.md).
-8. Open the [Public Evidence Companion](../evidence/README.md).
-9. Review [Proof and Status Classes](../architecture/proof-and-status-classes.md).
-10. Review the [EHCO Language-Model System Boundary](../language-model/README.md).
-11. Continue into the [EHCOsystem Library](../LIBRARY.md).
+Use the **[Public Architecture Diagrams](../architecture/diagrams/README.md)** for the Runtime/projection hierarchy, computational ownership, estate lanes, differentiated maturity, and evidence ladder.
 
-## Packet interpretation
+## 3. What evidence supports the technical claims?
 
-- Packet 02 preserves a hash-bound packet-time test/source-artifact set. It does not identify a Runtime repository or authority location.
-- Packets 03-05 establish bounded artifact identity and named declarations or anchors unless execution is expressly recorded.
-- Packet 06 preserves a historical bounded test and observation capture. Packet-integrity `PASS` does not mean universal behavioral `PASS`, and the capture is not current Runtime state.
+Read **[Ecosystem Claim → Evidence Matrix](../assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md)**.
 
-## Public boundary
+The matrix separates estate lane, bounded claim, current development/maturity posture, evidence class, public reference, verification method, source-review date, and proof ceiling. For Language Model test evidence, start with **[Public Test Snapshot v1](../language-model/evidence/public-test-snapshot-v1/README.md)**.
 
-The repository establishes visibility, artifact identity, integrity, provenance, and declared proof ceilings for its published records. It does not independently authorize production deployment, public ingress, operational external release, commercial activation, or go-live.
+## 4. How do I perform technical diligence?
 
-The accepted 52/53 standing baseline is an EHCOnomics-controlled operational standing record. Independent third-party certification is not claimed unless expressly identified.
+For a broad Instantiated AI ecosystem review, read **[Ecosystem Technical Diligence](../ECOSYSTEM-DILIGENCE.md)**.
+
+For a focused EHCO AI-OS Tier One review, read **[EHCO AI-OS Technical Diligence](../TECHNICAL-DILIGENCE.md)**.
+
+The broad route moves from category to Runtime/projection hierarchy, differentiated component maturity, estate lanes, representative component evidence, and deeper controlled review where a proposition cannot be established from unrestricted public evidence alone. The focused route preserves the existing path through observed evidence, implementation anchors, discrepancies, and the public AI-OS evidence estate.
+
+## Canonical interpretation
+
+For Runtime/repository/test-estate interpretation, use the [canonical boundary record](../architecture/runtime-repository-and-test-estate-boundary.md). For the complete public index, use the [EHCOsystem Library](../LIBRARY.md).
 
 ## Revision history
 
 | Version | Date | Change |
 |---|---|---|
-| 1.6 | 2026-08-10 | Added a dedicated technical-diligence route and public documentation/evidence provenance reference while preserving the general architecture path. |
-| 1.5 | 2026-08-08 | Added the accepted EHCO AI-OS System Card, Governed Runtime Architecture, and System Invariants to the canonical reading path. |
-| 1.4 | 2026-08-05 | Corrected the Runtime, repository, private test-estate, and packet interpretation boundary. |
-| 1.3 | 2026-08-05 | Replaced moving language-model finalization status with a stable public system boundary. |
-| 1.2 | 2026-08-05 | Clarified realized Runtime standing, packet-time provenance, and release status. |
-| 1.1 | 2026-08-04 | Replaced obsolete navigation with the canonical EHCOsystem reading path. |
-| 1.0 | 2026-08-04 | Initial public entry path. |
+| 2.3 | 2026-08-28 | Added the accepted working Dashboard baseline, qualitative maturity posture, differentiated shared-component maturity, estate lanes, and project/pilot expansion route. |
+| 2.2 | 2026-08-26 | Added the public-safe diagram route and explicit Runtime-portability relationship. |
+| 2.1 | 2026-08-26 | Made Instantiated AI the category-level entry point and EHCOsystem the Instantiated AI ecosystem route. |
+| 2.0 | 2026-08-25 | Replaced packet-first navigation with capability/evidence/diligence routes and added the Technology Estate and ecosystem assurance paths. |
+| 1.6 | 2026-08-10 | Added a dedicated technical-diligence route and provenance reference. |

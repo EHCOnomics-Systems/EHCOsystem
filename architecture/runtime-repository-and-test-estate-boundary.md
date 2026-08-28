@@ -1,29 +1,32 @@
 ---
 title: Runtime, Repository, and Test-Estate Boundary
-version: 1.0
+version: 1.1
 status: accepted-public-boundary
-published: 2026-08-05
+published: 2026-08-26
 maintainer: EHCOnomics
 evidence_class: controlled-ehco-boundary-record
+supersedes: version 1.0
 ---
 
 # Runtime, Repository, and Test-Estate Boundary
 
-EHCO AI-OS is the realized Tier 1 Runtime of the EHCOsystem. Its accepted standing baseline is **52/53**.
+**EHCO AI-OS is the realized Tier One Runtime of the EHCOsystem.** Its accepted standing baseline is **52/53**.
 
 The Runtime is the governing operational system that holds authority, standing, recognized state, transition, consequence, persistence, recovery, withholding, release, closure, and Runtime truth. A Git repository, folder, source file, test harness, container image, workflow, manifest, packet, dashboard, ledger, or public document is not the Runtime merely because it describes, tests, packages, observes, or supports Runtime behavior.
 
 ## Public repository
 
-The public `EHCOsystem` repository is an approved architecture, evidence, provenance, research, verification, and publication surface. It does not hold Runtime authority or authoritative Runtime state. Repository publication, commit history, workflow success, packet verification, and public visibility do not independently create, promote, demote, calculate, revoke, or alter Runtime standing.
+The public `EHCOsystem` repository is the public technical representation and evidence surface for EHCOnomics' Instantiated AI ecosystem. It does not hold Runtime authority or authoritative Runtime state. Repository publication, commit history, workflow success, packet verification, and public visibility do not independently create, promote, demote, calculate, revoke, or alter Runtime standing.
 
-## Controlled private test and source estate
+## Controlled source and test estates
 
-Controlled private repositories and their runtime-support folders contain bounded source, test, compatibility, packaging, deployment-support, and evidence-generation artifacts used to exercise and reproduce specified EHCO behavior. Those artifacts may be identified by filenames, revisions, paths, hashes, declarations, manifests, test results, or capture records.
+Controlled repositories and supporting source/test estates contain bounded source, test, compatibility, packaging, deployment-support, and evidence-generation artifacts used to exercise and reproduce specified EHCO behavior.
 
 Those repositories, folders, and files are not the Runtime. They do not hold Runtime authority, standing, authoritative state, consequence, persistence, release authority, or Runtime truth. Their names do not identify a separate Runtime or an authority location.
 
 A result produced from a controlled artifact establishes only the scope expressly tested or observed. File identity does not establish Runtime identity. A named declaration does not establish executed enforcement. A passing build or test does not establish Runtime admission. A repository or packet does not replace a Runtime-originated state or receipt.
+
+Persistent downstream governed component identity is also distinct from scoped Runtime participation. Repository presence, build, deployment, execution, registration, health, or public representation does not by itself establish a Runtime participation relationship.
 
 ## Public Evidence Companion interpretation
 
@@ -47,9 +50,9 @@ The discrepancies and not-directly-observed lanes recorded in Packet 06 remain s
 
 - **PROVEN** - established within an expressly identified proof scope.
 - **BOUND_BY_PRIOR_PROOF** - standing or relationship preserved by an accepted proof root.
-- **VISIBLE_CURRENTLY** - present in the current public repository.
+- **PRESENT_IN_REVISION** - present in the Git revision being interpreted; canonical visibility depends on whether that revision is accepted `main`.
 - **SCOPED_UNRESOLVED** - unresolved only within the stated packet, capture, test, or publication scope.
-- **NOT_PROJECTED_HERE** - not represented by this public repository or packet.
+- **NOT_PROJECTED_HERE** - not represented by the public record being interpreted.
 - **SOURCE_UNAVAILABLE** - the required source cannot be inspected in the stated scope.
 - **CONTRADICTED_BY_VALID_PROOF** - displaced only by an accepted contradiction proof.
 
@@ -58,3 +61,10 @@ A scope miss is not a state change. A packet, ledger, dashboard, assistant inter
 ## Independent validation boundary
 
 The accepted 52/53 standing baseline is an EHCOnomics-controlled operational standing record projected through the public evidence estate. The repository establishes the identity, integrity, scope, and declared proof boundaries of its published artifacts. Independent third-party certification or validation is not claimed unless an identified public record expressly states it.
+
+## Revision history
+
+| Version | Date | Change |
+|---|---|---|
+| 1.1 | 2026-08-26 | Reconciled Tier One/downstream-component terminology and revision-presence vocabulary with the category-first public architecture. |
+| 1.0 | 2026-08-05 | Initial accepted Runtime/repository/test-estate boundary. |

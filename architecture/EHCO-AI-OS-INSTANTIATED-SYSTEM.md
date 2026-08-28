@@ -1,16 +1,16 @@
 ---
 title: EHCO AI-OS Instantiated System
-version: 1.2
+version: 1.3
 status: accepted-public-system-record
-published: 2026-08-05
+published: 2026-08-25
 maintainer: EHCOnomics
 evidence_class: controlled-ehco-system-record
-supersedes: version 1.1
+supersedes: version 1.2
 ---
 
 # EHCO AI-OS Instantiated System
 
-EHCO AI-OS is the realized Tier 1 Runtime and governing system foundation of the EHCOsystem. Its accepted standing baseline is **52/53**. It binds authority, standing, identity, participation, recognized state, transition, consequence, continuity, proof, persistence, withholding, release, closure, correction, recovery, and Runtime truth into an instantiated operational structure.
+EHCO AI-OS is the realized Tier One Runtime and governing system foundation of the EHCOsystem. Its accepted standing baseline is **52/53**. It binds authority, standing, identity, participation, recognized state, transition, consequence, continuity, proof, persistence, withholding, release, closure, correction, recovery, and Runtime truth into an instantiated operational structure.
 
 The public dossier, standing record, packets, captures, manifests, receipts, and verification records project bounded evidence about that system. They do not become Runtime authority and do not replace Runtime-originated state or proof.
 
@@ -43,17 +43,15 @@ The EHCOsystem includes:
 - EHCO AI-OS Runtime authority and governance;
 - Runtime continuity, persistence, proof, and recovery;
 - bounded portability, packaging, deployment-support, and environment evidence;
-- EHCO Prime;
-- EHCO Agent Connect;
-- EHCO RAG;
-- the EHCO language-model system;
-- governed Tier 2 and Tier 3 applications;
-- participant, ownership, role, communication, packet, receipt, source, and lifecycle relationships;
+- downstream governed components including EHCO Prime, EHCO Agent Connect, EHCO RAG, the EHCO Language Model, Range Reactor, memory/continuity research, research foundations, and governed domain applications;
+- scoped Runtime participation relationships where established by owning Runtime evidence;
+- Tier Three interfaces and projections;
+- ownership, role, communication, packet, receipt, source, and lifecycle relationships;
 - public architecture, evidence, provenance, validation, and release projections.
 
 ## Ecosystem extension boundary
 
-Models, agents, applications, retrieval systems, interfaces, repositories, test estates, validators, dashboards, and public evidence participate through assigned roles. Their outputs do not independently create authoritative state, standing, consequence, persistence, or release authority.
+Downstream governed components can provide models, agents, applications, retrieval, coordination, research, and domain capability without independently acquiring Tier One authority. Runtime participation is a separate scoped relationship owned by the instantiated Runtime and its applicable evidence.
 
 Runtime realization is distinct from production hosting, environment-specific deployment, public ingress, commercial activation, operational external release, and go-live authorization. Those dimensions remain separately controlled.
 
@@ -67,14 +65,16 @@ See [Runtime, Repository, and Test-Estate Boundary](runtime-repository-and-test-
 
 - [Runtime, Repository, and Test-Estate Boundary](runtime-repository-and-test-estate-boundary.md)
 - [Instantiated Proof Range](instantiated-proof-range.md)
-- [Ecosystem Components and Participation](ecosystem-components-and-participation.md)
-- [EHCO Language-Model System Boundary](../language-model/README.md)
+- [Ecosystem Components and Runtime Relationships](ecosystem-components-and-participation.md)
+- [EHCOnomics Technology Estate](EHCO-TECHNOLOGY-ESTATE.md)
+- [EHCO Language Model](../language-model/README.md)
 - [Public Evidence Companion](../evidence/README.md)
 
 ## Revision history
 
 | Version | Date | Change |
 |---|---|---|
+| 1.3 | 2026-08-25 | Reconciled downstream governed component, Runtime-participation, and Tier Three terminology with the current public technology-estate architecture. |
 | 1.2 | 2026-08-05 | Separated the realized Runtime from private repositories, runtime-support folders, tests, and public evidence projections. |
 | 1.1 | 2026-08-05 | Clarified realized Runtime identity and stable public workstream boundaries. |
 | 1.0 | 2026-08-04 | Initial public EHCO AI-OS instantiated system record. |

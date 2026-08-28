@@ -1,55 +1,50 @@
 ---
 title: EHCO AI-OS Governed Runtime Architecture
-version: 1.0
+version: 1.1
 status: accepted-public-reference
-published: 2026-08-08
+published: 2026-08-25
 maintainer: EHCOnomics
 evidence_class: controlled-ehco-architecture
 proof_ceiling: conceptual public architecture; not an implementation map or Runtime proof
+supersedes: version 1.0
 ---
 
 # EHCO AI-OS Governed Runtime Architecture
 
 ## Scope
 
-This document describes the public conceptual architecture of governed participation in EHCO AI-OS.
+This document describes the public conceptual architecture of EHCO AI-OS and its relationships with downstream governed components and Tier Three projections. It is a conceptual architecture, not an implementation sequence or deployment topology.
 
-It is **not** an implementation sequence, network diagram, deployment topology, source map, private schema, control-flow trace, or operational access guide.
-
-The accepted EHCO AI-OS standing baseline remains **52/53**. Nothing in this document changes Runtime standing or authority.
+The accepted EHCO AI-OS standing baseline remains **52/53**.
 
 ## Architectural objective
 
-EHCO AI-OS is designed around a distinction between systems that **represent** operational reality and a Runtime that establishes and maintains the governing conditions under which participation has operational meaning.
+EHCO AI-OS is the **realized Tier One Runtime** of the EHCOsystem. The architecture keeps identity, component capability, Runtime participation, authority, scope, state, consequence, continuity, evidence, and projection from collapsing into one another.
 
-Models can infer. Tools can execute. Identity systems can identify. Repositories can preserve artifacts. Dashboards can project status. Ledgers can preserve records.
-
-None of those capabilities, by themselves, establish the complete Runtime authority relationship.
-
-The governed Runtime architecture exists to keep identity, participation, authority, scope, state, consequence, continuity, evidence, and projection from collapsing into one another.
+Models can infer. Tools and applications can execute. Repositories can preserve artifacts. Dashboards can project status. Downstream governed components can own substantial computational and domain capability. Those capabilities remain distinct from the Tier One relationships through which authority and authoritative Runtime consequence acquire operational meaning.
 
 ## Conceptual model
 
-The following is a public conceptual model, not a literal internal processing pipeline:
-
 ```text
-PARTICIPANTS AND CAPABILITIES
+DOWNSTREAM GOVERNED COMPONENTS
+language / range / retrieval / memory / coordination / research / applications
           |
+          | scoped Runtime relationship where established
           v
 GOVERNING CONDITIONS
-identity / participation / authority / scope / context
+identity / admission / authority / scope / context
           |
           v
-TIER 1 — RUNTIME AUTHORITY
+TIER ONE — EHCO AI-OS RUNTIME
 recognized state / lawful transition / consequence
-withholding / release / continuity / recovery / proof
+continuity / persistence / withholding / release / recovery / proof
           |
           +----------------------+
           |                      |
           v                      v
-TIER 2 — EXECUTION         TIER 3 — PROJECTION
-bounded participation      visibility / reporting
-and operational work       dashboards / public views
+GOVERNED WORK               TIER THREE
+scoped execution            projection / reporting
+and component effects       dashboards / public views
           |                      |
           +----------+-----------+
                      |
@@ -58,149 +53,49 @@ and operational work       dashboards / public views
        bounded by source and proof ceiling
 ```
 
-The arrows describe conceptual relationships only. They do not reveal internal services, ordering guarantees, implementation components, private APIs, or control mechanics.
+The arrows describe conceptual relationships only. They do not reveal internal services, ordering guarantees, private APIs, or protected control mechanics.
 
-## Standing Baseline
+## Tier One — Runtime Authority
 
-EHCOnomics publicly describes a Standing Baseline as a continuously maintained foundation for the operational conditions under which people, systems, processes, services, and intelligent participants operate.
+Tier One owns the governing relationships for admission and standing, authority and scope, recognized Runtime state, lawful transition and consequence, persistence and continuity, withholding/release, correction/recovery, and Runtime-originated proof.
 
-A Standing Baseline is not merely an aggregation of data.
+## Downstream governed components
 
-Its role is to preserve the relationships needed to determine what participation means as conditions change, including:
+Persistent Tier Two software identities are downstream governed components. They can own computational language, reasoning/range, retrieval/evidence, memory/continuity, relationship, coordination, research, and domain-application capability.
 
-- who or what is participating;
-- which relationships are recognized;
-- what authority and scope apply;
-- what state is recognized;
-- which consequences may acquire operational effect;
-- what evidence can support a claim;
-- how continuity is maintained across change.
+A component may exist, be developed, be packaged, be realized as an application/service, or execute locally without that fact alone establishing EHCO Runtime participation. Where a Runtime corridor is established, participation is a separate scoped relationship owned by the instantiated Runtime and applicable Runtime evidence.
 
-The public architecture treats this maintained baseline as distinct from repeatedly reconstructing operational reality through inference alone.
+## Tier Three — Projection
 
-## Tier 1 — Runtime Authority
-
-Tier 1 is the authoritative Runtime layer.
-
-Public EHCO records assign Tier 1 responsibility for:
-
-- admission and standing;
-- authority and scope;
-- recognized Runtime state;
-- lawful transition and consequence;
-- persistence and continuity;
-- withholding and release;
-- correction, closure, and recovery;
-- Runtime truth and Runtime-originated proof.
-
-A downstream component can participate in these relationships without acquiring Tier 1 authority itself.
-
-## Tier 2 — Governed Execution
-
-Tier 2 is the execution domain for governed participants and applications.
-
-A Tier 2 participant can carry out bounded work when the applicable Runtime relationships permit that participation.
-
-Execution capability is therefore kept distinct from authority.
-
-Technical ability to perform an action does not, by itself, establish the governing authority for that action to acquire operational consequence.
-
-## Tier 3 — Projection
-
-Tier 3 exposes governed information through projections such as interfaces, dashboards, reports, metrics, and public-safe views.
-
-Projection is useful precisely because it makes operational information legible.
-
-It remains subordinate to the owning evidence and Runtime relationships.
-
-A projection can report state without creating state. It can display standing without calculating or changing standing. It can preserve visibility without becoming Runtime truth.
-
-## Models and intelligent participants
-
-Language models, agents, retrieval systems, and other intelligent components participate as bounded capabilities.
-
-Their outputs can contribute interpretation, inference, retrieval, coordination, or execution within assigned roles.
-
-They do not independently create:
-
-- Tier 1 authority;
-- Runtime standing;
-- authoritative Runtime state;
-- lawful consequence;
-- persistence;
-- release authority;
-- Runtime truth.
-
-This separation is central to the public EHCO distinction between intelligence and operational authority.
+Tier Three exposes governed information through interfaces, dashboards, reports, metrics, and public-safe views. Projection can report or explain governed information without becoming the component, evidence source, or Runtime relationship that owns the underlying state.
 
 ## Proof and evidence
 
-EHCO public records separate evidence from authority.
+EHCO public records keep evidence classes distinct. Architecture, artifact identity, declarations, tests, bounded observations, build/artifact evidence, deployment evidence, and Runtime-originated evidence establish different propositions.
 
-Evidence can support a claim only within its applicable source identity, integrity controls, scope, observation conditions, and proof ceiling.
-
-Examples of bounded public evidence include:
-
-- artifact hashes;
-- manifests;
-- declared controls;
-- test results;
-- bounded captures;
-- receipts;
-- dossier statements;
-- release records.
-
-No single evidence type should impersonate another proof class.
-
-A hash can establish integrity without establishing authority. A test can establish bounded behavior without establishing Runtime admission. A dashboard can project status without becoming Runtime truth.
+The canonical public invariant vocabulary is maintained in [System Invariants](SYSTEM-INVARIANTS.md), and the detailed repository/Runtime/test-estate distinction is maintained in the [Runtime, Repository, and Test-Estate Boundary](runtime-repository-and-test-estate-boundary.md).
 
 ## Change and continuity
 
-A governed Runtime must preserve meaningful distinctions as participants and conditions change.
-
-The public architecture therefore treats continuity as more than data retention. Continuity concerns the preservation of recognized relationships, evidence, state, and governing context across change.
-
-The implementation mechanics that realize continuity remain outside the public repository.
-
-## Withholding and uncertainty
-
-Where a governing condition is not established, the public architecture does not permit missing information to be silently promoted into authority or proof.
-
-This supports several public rules:
-
-- missing retrieval is not contradiction;
-- scope miss is not state change;
-- non-observation is not demotion;
-- assistant output is not technical evidence;
-- public projection is not Runtime truth.
-
-These rules prevent absence, uncertainty, or projection error from being mistaken for an authoritative Runtime transition.
+Continuity concerns preservation of recognized relationships, evidence, state, and governing context across change. The implementation mechanics that realize continuity remain outside the public repository.
 
 ## Public/private boundary
 
-This document intentionally exposes **architectural properties**, not **attack surface**.
-
-It does not publish:
-
-- private source;
-- internal control paths;
-- private repository structure;
-- exact internal schemas;
-- privileged APIs;
-- internal service identifiers;
-- production network topology;
-- decision thresholds;
-- secret material;
-- protected recovery procedures;
-- exploit-relevant failure conditions.
-
-The public architecture should remain sufficient to understand what EHCO AI-OS claims to govern without revealing how protected implementation mechanisms are constructed.
+Security and disclosure controls are maintained in [Security and Responsible Disclosure](../SECURITY.md) and [Repository Governance](../GOVERNANCE.md). This conceptual record intentionally omits protected implementation mechanics, private topology, credentials, and operational access detail.
 
 ## Related material
 
+- [EHCOnomics Technology Estate](EHCO-TECHNOLOGY-ESTATE.md)
 - [EHCO AI-OS Public System Card](EHCO-AI-OS-SYSTEM-CARD.md)
 - [System Invariants](SYSTEM-INVARIANTS.md)
 - [EHCO AI-OS Instantiated System](EHCO-AI-OS-INSTANTIATED-SYSTEM.md)
+- [Ecosystem Components and Runtime Relationships](ecosystem-components-and-participation.md)
 - [Runtime, Repository, and Test-Estate Boundary](runtime-repository-and-test-estate-boundary.md)
-- [Proof and Status Classes](proof-and-status-classes.md)
 - [Public Evidence Companion](../evidence/README.md)
+
+## Revision history
+
+| Version | Date | Change |
+|---|---|---|
+| 1.1 | 2026-08-25 | Reconciled persistent component identity with scoped Runtime participation and centralized duplicate boundary/security language. |
+| 1.0 | 2026-08-08 | Initial accepted conceptual Runtime architecture. |
