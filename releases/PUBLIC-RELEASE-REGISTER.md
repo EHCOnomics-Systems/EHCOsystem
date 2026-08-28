@@ -22,18 +22,18 @@ These values define the canonical identity of the first public EHCOsystem archit
 
 | Artifact | Status | Canonical path | Proof ceiling |
 |---|---|---|---|
-| Repository identity and front door | PRESENT_IN_REVISION | `README.md` | Public category-to-ecosystem orientation, evidence/diligence navigation, and canonical boundary linkage |
+| Repository identity, qualitative maturity posture, and front door | PRESENT_IN_REVISION | `README.md` | Public category-to-ecosystem orientation, percentage-free core/remaining-work posture, evidence/diligence navigation, and canonical boundary linkage |
 | Instantiated AI — Public Architecture Definition | PRESENT_IN_REVISION | `architecture/INSTANTIATED-AI.md` | Controlled category and ecosystem architecture definition; not implementation evidence, legal certification, deployment evidence, or Runtime proof |
-| EHCOsystem — An Instantiated AI Ecosystem | PRESENT_IN_REVISION | `architecture/EHCO-TECHNOLOGY-ESTATE.md` | Controlled category-to-ecosystem architecture and bounded source/evidence representation |
-| EHCOsystem Public Architecture Diagrams | PRESENT_IN_REVISION | `architecture/diagrams/README.md` | Original explanatory relationship diagrams only; not implementation, private topology, deployment, Runtime participation, market validation, or Runtime proof |
-| Ecosystem Components and Runtime Relationships | PRESENT_IN_REVISION | `architecture/ecosystem-components-and-participation.md` | Component identity and scoped Runtime-relationship architecture |
-| Ecosystem Claim → Evidence Matrix | PRESENT_IN_REVISION | `assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md` | Claim/evidence navigation; inherits cited/reviewed source proof ceilings |
+| EHCOsystem — An Instantiated AI Ecosystem | PRESENT_IN_REVISION | `architecture/EHCO-TECHNOLOGY-ESTATE.md` | Controlled category-to-ecosystem architecture, Runtime-projection/Dashboard hierarchy, differentiated component maturity, estate lanes, and bounded source/evidence representation |
+| EHCOsystem Public Architecture Diagrams | PRESENT_IN_REVISION | `architecture/diagrams/README.md` | Original explanatory relationship and maturity/estate-lane diagrams only; not implementation, private topology, deployment, Runtime participation, market validation, or Runtime proof |
+| Ecosystem Components and Runtime Relationships | PRESENT_IN_REVISION | `architecture/ecosystem-components-and-participation.md` | Component identity, differentiated maturity, estate lanes, and scoped Runtime-relationship architecture |
+| Ecosystem Claim → Evidence Matrix | PRESENT_IN_REVISION | `assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md` | Claim/evidence navigation with estate lane, maturity, currentness, verification, and proof-ceiling separation; inherits cited/reviewed source ceilings |
 | Ecosystem Technical Diligence | PRESENT_IN_REVISION | `ECOSYSTEM-DILIGENCE.md` | Navigation and bounded source/evidence review method only |
 | Runtime/repository/test-estate boundary | PRESENT_IN_REVISION | `architecture/runtime-repository-and-test-estate-boundary.md` | Controlling public interpretation boundary |
 | Public library | PRESENT_IN_REVISION | `LIBRARY.md` | Navigation only |
 | Start Here | PRESENT_IN_REVISION | `getting-started/START-HERE.md` | Navigation only |
 | Reading order | PRESENT_IN_REVISION | `getting-started/reading-order.md` | Navigation only |
-| Repository map | PRESENT_IN_REVISION | `getting-started/repository-map.md` | Visible repository structure only |
+| Repository map | PRESENT_IN_REVISION | `getting-started/repository-map.md` | Visible repository structure and provider-metadata disposition boundary only |
 | Repository governance | PRESENT_IN_REVISION | `GOVERNANCE.md` | Publication and contribution control |
 | Security policy | PRESENT_IN_REVISION | `SECURITY.md` | Public disclosure and reporting boundary |
 | Proprietary license | PRESENT_IN_REVISION | `LICENSE` | Repository-use permissions and restrictions |
@@ -52,7 +52,7 @@ These values define the canonical identity of the first public EHCOsystem archit
 | Public dossier PDF | PRESENT_IN_REVISION | `dossiers/EHCO_AI_OS_Governed_Operational_Architecture_Public_Edition_v1_8_LOCK_FINAL.pdf` | Controlled public architecture; SHA-256 `F489BA01961A12CF101B1F1DF57E6958456A0840BEB798B862FA97ACB030892D` |
 | Public Evidence Companion overview | PRESENT_IN_REVISION | `evidence/README.md` | Navigation and packet-specific interpretation |
 | Public Evidence Companion Version 1 | PRESENT_IN_REVISION | `evidence/public-evidence-companion/v1/` | Hash-preserved bounded evidence and verification surface |
-| Public validation | PRESENT_IN_REVISION | `verification/` and `.github/workflows/validate-public-evidence.yml` | Repository integrity and semantic-boundary checks only |
+| Public validation | PRESENT_IN_REVISION | `verification/` and `.github/workflows/validate-public-evidence.yml` | Repository integrity, semantic/disclosure, qualitative maturity, and estate-lane checks only |
 | Public release register | PRESENT_IN_REVISION | `releases/PUBLIC-RELEASE-REGISTER.md` | Publication-state record only |
 
 ## Packet register
@@ -92,6 +92,6 @@ Moving private source/workstream state, current Runtime state beyond approved pu
 
 ## Required release checks
 
-Before a revision is accepted into canonical `main`, confirm accepted authority/version, correct evidence class/proof ceiling, disclosure safety, preserved identity/integrity where applicable, correct navigation/licensing, and successful repository validation.
+Before a revision is accepted into canonical `main`, confirm accepted authority/version, correct evidence class/proof ceiling, disclosure safety, preserved identity/integrity where applicable, correct navigation/licensing, and successful repository validation. Re-read the then-current repository and organization rulesets; any required assistant-control/provider gate remains a separate owner-selected operation rather than a reason to weaken controls or rewrite stable repository identity.
 
 Public artifact visibility is a publication state. Runtime, deployment, operational release, and standing effects remain separate governed dimensions.

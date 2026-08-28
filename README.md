@@ -4,9 +4,22 @@
 
 **Instantiated AI** is the architectural category. **EHCOsystem** is EHCOnomics' Instantiated AI ecosystem: a governed computational architecture in which identity, authority, state, memory, source, permissible range, evidence, release, and consequence are established independently of the intelligence they govern before consequential operation.
 
-**EHCO AI-OS is the realized Tier One Runtime** of EHCOsystem and provides its governing Runtime foundation. **Downstream governed components** own distinct language, range/reasoning, retrieval/evidence, memory/continuity, relationship, coordination, research, and domain-application capabilities. **Tier Three** provides interfaces and public-safe projections without becoming the underlying source of authority or technical truth.
+**EHCO AI-OS is the realized Tier One Runtime** of EHCOsystem and provides its governing Runtime foundation. `EHCO_DOCKER_PORTABILITY` is the **PRIMARY_ACCESSIBLE_RUNTIME_PROJECTION** of that established Runtime lineage. The **current accepted working EHCO Dashboard baseline** is the principal presently established **Tier Three projection baseline** within the portability estate. **Downstream governed components** own distinct language, range/reasoning, retrieval/evidence, relationship, coordination, research, and domain-application capabilities.
 
-The public repository makes that architecture and selected underlying technical evidence inspectable without becoming the proprietary Runtime implementation itself. EHCO AI-OS has an accepted standing baseline of **52/53**. Runtime participation of any downstream component remains a separate scoped relationship established by owning Runtime evidence.
+The public repository makes that architecture and selected underlying technical evidence inspectable without becoming the proprietary Runtime implementation itself. EHCO AI-OS has an accepted standing baseline of **52/53**. Runtime participation of any downstream component remains a separate scoped relationship established by owning Runtime evidence. A repository, container, dashboard, projection, or assistant output does not become Runtime authority or present Runtime truth.
+
+## Current qualitative maturity posture
+
+Current source review supports a qualitative—not percentage-based—posture: the **foundational/shared EHCOsystem spine is substantially established**, while **remaining work is increasingly concentrated rather than foundational**.
+
+That remaining work is concentrated across four separately governed areas:
+
+- bounded finalization and hardening of established components and services;
+- EHCO RAG implementation progression;
+- research/foundation reconciliation; and
+- continuing downstream governed domain/application expansion.
+
+This is not a claim that every component has identical maturity or that every application is complete. The Language Model, Range Reactor, Prime, and Agent Connect have stronger accepted source/qualification or hardening posture than RAG's current controlled implementation posture; Memory, Primordia, Recursion, and Fractal Systems remain research/foundation estates; and each domain application retains its own source, evidence, release, deployment, and execution state.
 
 ## Start here
 
@@ -16,9 +29,9 @@ Start with the category definition and qualification surface: identity, authorit
 
 **[Instantiated AI — Public Architecture Definition](architecture/INSTANTIATED-AI.md)**
 
-### 2. Explore the EHCOsystem
+### 2. Explore EHCOsystem
 
-See how the category is expressed across the realized Tier One Runtime, the bounded Runtime-portability relationship, downstream governed computational and application components, research foundations, and Tier Three projections.
+See how the category is expressed across the realized Tier One Runtime foundation, the primary accessible Runtime projection, the current accepted working Tier Three projection baseline, the principal shared downstream component spine, research foundations, continuing application expansion, and separately tracked project/pilot programs.
 
 **[EHCOsystem — An Instantiated AI Ecosystem](architecture/EHCO-TECHNOLOGY-ESTATE.md)**
 
@@ -26,7 +39,7 @@ See how the category is expressed across the realized Tier One Runtime, the boun
 
 ### 3. Inspect the Evidence
 
-Move from selected technical propositions to the public evidence or approved reference that supports them, with evidence class, verification method, currentness, and proof ceiling kept distinct.
+Move from selected technical propositions to the public evidence or approved reference that supports them, with estate lane, maturity posture, evidence class, verification method, currentness, and proof ceiling kept distinct.
 
 **[Ecosystem Claim → Evidence Matrix](assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md)**
 
@@ -50,27 +63,33 @@ For the focused EHCO AI-OS Tier One architecture, implementation-anchor, and bou
 
 **EHCO AI-OS** — realized Tier One Runtime and governing foundation for authority, scope, recognized state, transition, consequence, continuity, persistence, withholding/release, correction/recovery, and Runtime-originated proof relationships.
 
-### Computational and evidence foundations
+### Primary accessible Runtime projection and Tier Three baseline
 
-- **EHCO Language Model** — deterministic computational language.
-- **EHCO Range Reactor** — bounded range/reasoning computation.
-- **EHCO RAG** — governed retrieval, context, source custody, provenance, and evidence services.
+- **EHCO_DOCKER_PORTABILITY** — `PRIMARY_ACCESSIBLE_RUNTIME_PROJECTION` of the established hardened Runtime/root-image lineage. It is not an independent authority owner.
+- **EHCO Dashboard** — current accepted working Tier Three projection baseline within the portability estate. This working-baseline status does not establish present public hosting, public ingress, production operation, or dashboard authority.
+
+### Principal shared downstream component spine
+
+- **EHCO Language Model** — mature deterministic computational-language component. Current accepted source has progressed through bounded staging and staging-verification reconciliation; production verification and complete production operation are not claimed.
+- **EHCO Range Reactor** — mature deterministic range/reasoning computational owner with qualified accepted lineage integrated into current source; release, deployment, production realization, and Runtime effects remain separately evidenced.
+- **EHCO RAG** — governed retrieval, context, source custody, provenance, and evidence component with an accepted control/specification baseline and controlled implementation posture.
+- **EHCO Prime** — advanced/mature individual-facing relationship and assistant-coordination service at the source/control layer.
+- **EHCO Agent Connect** — advanced/mature registry, discovery, compatibility, and candidate-routing coordination service at the source/control layer.
+
+### Research and foundation estates
+
 - **EHCO Memory** — governed memory/continuity research foundation.
-
-### Research foundations
-
 - **Primordia** — computational-substrate, specification/language, semantics, and engineering-system research.
 - **EHCO Recursion** — recursion, trust/coherence, collapse/failure, and bounded composition research.
 - **EHCO Fractal Systems** — structural/form preservation, continuity, scale, drift, projection, and lineage research.
 
-### Relationship and coordination
+### Continuing downstream governed domain/application expansion
 
-- **EHCO Prime** — persistent individual-facing relationship and assistant coordination service.
-- **EHCO Agent Connect** — registry, discovery, compatibility, and candidate-routing coordination.
+The ordinary application estate turns the shared instantiated architecture into bounded domain capability across energy and data-centre operations, legal decision support, strategy and simulation, prevention intelligence, construction and built-asset intelligence, media, business operations, permit compliance, and other governed application domains. Each application has its own maturity and evidence posture.
 
-### Domain applications
+### Substantial project/pilot expansion outside the public core-completion denominator
 
-The application estate turns the shared instantiated architecture into bounded domain capability across safety/construction, energy/data-centre operations, legal decision support, strategy/simulation, prevention intelligence, construction/built-asset intelligence, media, business operations, permit compliance, and IT-services intelligence.
+**Grasp Safety Intelligence** and **Pegasus IT** remain downstream governed components. For this public completion model they are tracked as substantial project/pilot expansion programs outside the public core-completion denominator. That lane treatment changes neither component identity nor authority, evidence class, Runtime relationship, or development obligations.
 
 [Explore the full EHCOsystem →](architecture/EHCO-TECHNOLOGY-ESTATE.md)
 

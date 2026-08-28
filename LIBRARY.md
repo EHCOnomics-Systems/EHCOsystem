@@ -20,13 +20,15 @@ This page indexes the current public records visibly published in `EHCOsystem`, 
 
 This record defines the category-level dependency inversion: governing computational conditions are established independently of the intelligence before consequential operation. It also defines computational standing, Standing Baseline, source and memory standing, model independence, and category qualification questions.
 
-## Ecosystem architecture
+## Ecosystem architecture and maturity
 
 - [EHCOsystem — An Instantiated AI Ecosystem](architecture/EHCO-TECHNOLOGY-ESTATE.md)
 - [Public Architecture Diagrams](architecture/diagrams/README.md)
 - [Ecosystem Components and Runtime Relationships](architecture/ecosystem-components-and-participation.md)
 
-These records show how the Instantiated AI category is expressed across the realized Tier One Runtime foundation, the `EHCO_DOCKER_PORTABILITY` Runtime-projection relationship, downstream governed computational/application components, research foundations, and Tier Three projections while keeping Runtime participation separate from persistent component identity.
+These records show the public hierarchy from EHCO AI-OS as the realized Tier One Runtime foundation through `EHCO_DOCKER_PORTABILITY` as the `PRIMARY_ACCESSIBLE_RUNTIME_PROJECTION` to the current accepted working EHCO Dashboard Tier Three projection baseline. They then separate the principal shared downstream component spine with differentiated maturity from governed research/foundation estates, continuing downstream governed domain/application expansion, and substantial project/pilot programs.
+
+The architecture includes the source-grounded qualitative posture that the foundational/shared EHCOsystem spine is substantially established while remaining work is increasingly concentrated rather than foundational. It does not assert a universal completion percentage or equal maturity across components.
 
 ## Canonical interpretation
 
@@ -55,6 +57,8 @@ These records show how the Instantiated AI category is expressed across the real
 - [Public Assurance Index](assurance/README.md)
 - [Ecosystem Claim → Evidence Matrix](assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md)
 - [AI-OS Claim → Evidence Matrix](assurance/CLAIM-EVIDENCE-MATRIX.md)
+
+The ecosystem matrix records estate lane, positive bounded claim, current development/maturity posture, evidence class, public reference, verification method, source-review date, and proof ceiling without publishing private source locators.
 
 ## Public evidence
 
