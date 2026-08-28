@@ -1,0 +1,157 @@
+name: EHCO Assistant Operation Gate Bootstrap
+
+on:
+  push:
+    branches:
+      - public/assistant-gate-adoption-v1
+
+permissions:
+  contents: read
+  pull-requests: read
+
+concurrency:
+  group: ehco-assistant-operation-gate-bootstrap-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  bootstrap:
+    name: EHCO Assistant Operation Gate
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Enforce owner-locked bootstrap identity
+        shell: bash
+        env:
+          EXPECTED_HEAD: ${{ vars.EHCO_GATE_BOOTSTRAP_HEAD }}
+          SELECTED_BRANCH: public/assistant-gate-adoption-v1
+          SELECTED_ACTOR: ehconomics
+        run: |
+          set -euo pipefail
+          test -n "$EXPECTED_HEAD"
+          test "$GITHUB_SHA" = "$EXPECTED_HEAD"
+          test "$GITHUB_REF_NAME" = "$SELECTED_BRANCH"
+          test "$GITHUB_ACTOR" = "$SELECTED_ACTOR"
+
+      - name: Resolve the single exact adoption pull request
+        id: adoption-pr
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SELECTED_BRANCH: public/assistant-gate-adoption-v1
+          EXPECTED_BASE: 1cceb89bf3bd4b4a5ab3b2ca00e02d383cd99195
+        run: |
+          set -euo pipefail
+          response="$(gh api \
+            -H 'Accept: application/vnd.github+json' \
+            "repos/${GITHUB_REPOSITORY}/pulls?state=open&head=${GITHUB_REPOSITORY_OWNER}:${SELECTED_BRANCH}&base=main")"
+          count="$(jq 'length' <<<"$response")"
+          test "$count" = "1"
+          pr_number="$(jq -r '.[0].number' <<<"$response")"
+          current_head="$(jq -r '.[0].head.sha' <<<"$response")"
+          current_base="$(jq -r '.[0].base.sha' <<<"$response")"
+          test "$current_head" = "$GITHUB_SHA"
+          test "$current_base" = "$EXPECTED_BASE"
+          echo "number=$pr_number" >> "$GITHUB_OUTPUT"
+          echo "base=$current_base" >> "$GITHUB_OUTPUT"
+
+      - name: Check out exact first-adoption candidate
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          ref: ${{ github.sha }}
+          path: candidate
+          fetch-depth: 0
+          persist-credentials: false
+          submodules: false
+          lfs: false
+
+      - name: Enforce the exact isolated bootstrap path set
+        shell: bash
+        env:
+          EXPECTED_BASE: ${{ steps.adoption-pr.outputs.base }}
+        run: |
+          set -euo pipefail
+          symlink="$(find candidate -path 'candidate/.git' -prune -o -type l -print -quit)"
+          test -z "$symlink"
+          git -C candidate cat-file -e "${EXPECTED_BASE}^{commit}"
+          actual="$(git -C candidate diff --name-only "${EXPECTED_BASE}...HEAD" | LC_ALL=C sort)"
+          expected="$(printf '%s\n' \
+            '.github/workflows/ehco-assistant-operation-gate-bootstrap.yml' \
+            '.github/workflows/ehco-assistant-operation-gate.yml' \
+            'AGENTS.md' \
+            'ehco.operation.yaml' \
+            'ehco.repository.yaml')"
+          if [[ "$actual" != "$expected" ]]; then
+            echo "Bootstrap path set is not the selected isolated control-adoption set."
+            exit 1
+          fi
+
+      - name: Create short-lived read token for accepted control source
+        id: control-token
+        uses: actions/create-github-app-token@bcd2ba49218906704ab6c1aa796996da409d3eb1
+        with:
+          client-id: ${{ vars.EHCO_GATE_APP_CLIENT_ID }}
+          private-key: ${{ secrets.EHCO_GATE_APP_PRIVATE_KEY }}
+          owner: ${{ github.repository_owner }}
+          repositories: ${{ secrets.EHCO_GATE_CONTROL_REPOSITORY }}
+          permission-contents: read
+
+      - name: Check out accepted canonical control source
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          repository: ${{ secrets.EHCO_GATE_CONTROL_REPOSITORY }}
+          ref: ${{ secrets.EHCO_GATE_CONTROL_REVISION }}
+          token: ${{ steps.control-token.outputs.token }}
+          path: canonical
+          fetch-depth: 1
+          persist-credentials: false
+          submodules: false
+          lfs: false
+
+      - name: Verify exact canonical source revision
+        shell: bash
+        env:
+          EXPECTED_CANONICAL_REVISION: ${{ secrets.EHCO_GATE_CONTROL_REVISION }}
+        run: |
+          set -euo pipefail
+          test "$(git -C canonical rev-parse HEAD)" = "$EXPECTED_CANONICAL_REVISION"
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: "3.12"
+
+      - name: Install pinned gate dependencies
+        shell: bash
+        run: python -m pip install --disable-pip-version-check --quiet PyYAML==6.0.2 jsonschema==4.23.0
+
+      - name: Validate the exact first-adoption operation
+        shell: bash
+        env:
+          CANONICAL_REPOSITORY: ${{ secrets.EHCO_GATE_CONTROL_REPOSITORY }}
+          CANONICAL_REVISION: ${{ secrets.EHCO_GATE_CONTROL_REVISION }}
+          BASE_SHA: ${{ steps.adoption-pr.outputs.base }}
+        run: |
+          set -euo pipefail
+          python canonical/scripts/validate_public_safe_ai_assisted_operation.py \
+            --operation ehco.operation.yaml \
+            --repository-root candidate \
+            --canonical-root canonical \
+            --canonical-repository "$CANONICAL_REPOSITORY" \
+            --canonical-source-revision "$CANONICAL_REVISION" \
+            --repository "$GITHUB_REPOSITORY" \
+            --base-ref "$BASE_SHA"
+
+      - name: Reject candidate drift before conclusion
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR_NUMBER: ${{ steps.adoption-pr.outputs.number }}
+          EXPECTED_HEAD: ${{ github.sha }}
+          EXPECTED_BASE: ${{ steps.adoption-pr.outputs.base }}
+        run: |
+          set -euo pipefail
+          current_head="$(gh api "repos/${GITHUB_REPOSITORY}/pulls/${PR_NUMBER}" --jq '.head.sha')"
+          current_base="$(gh api "repos/${GITHUB_REPOSITORY}/pulls/${PR_NUMBER}" --jq '.base.sha')"
+          test "$current_head" = "$EXPECTED_HEAD"
+          test "$current_base" = "$EXPECTED_BASE"
