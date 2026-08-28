@@ -94,6 +94,7 @@ scope:
     - evidence/README.md
     - verification/README.md
     - verification/validate_public_evidence.py
+    - verification/validate_public_lm_test_snapshot.py
     - releases/PUBLIC-RELEASE-REGISTER.md
   controlled_paths:
     - ehco.operation.yaml
@@ -104,6 +105,7 @@ scope:
     - assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md
     - language-model/README.md
     - verification/validate_public_evidence.py
+    - verification/validate_public_lm_test_snapshot.py
   prohibited_paths:
     - ehco.repository.yaml
     - LICENSE
