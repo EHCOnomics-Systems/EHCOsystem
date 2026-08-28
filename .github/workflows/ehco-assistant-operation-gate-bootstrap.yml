@@ -17,7 +17,7 @@ concurrency:
 
 jobs:
   bootstrap:
-    name: ${{ github.head_ref == 'public/assistant-gate-adoption-v1' && 'EHCO Assistant Operation Gate' || 'EHCO Assistant Operation Gate Bootstrap (inactive)' }}
+    name: EHCO Assistant Operation Gate
     if: >-
       github.event.pull_request.head.repo.full_name == github.repository &&
       github.head_ref == 'public/assistant-gate-adoption-v1' &&
