@@ -41,7 +41,7 @@ EHCOsystem tracks persistent component identity, source maturity, application/se
 
 ### EHCO RAG
 
-**Maturity:** accepted controlled baseline with active Stage 1 implementation.
+**Maturity:** accepted controlled baseline; Stage 1 implementation active.
 
 **Established source depth:** 23/23 controlled baseline, canonical contracts/generators, context, authority, retrieval/evidence services, stores, schemas, migration/reconstruction tooling, infrastructure, tests, fixtures, verification strategy, and release planning.
 
