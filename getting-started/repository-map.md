@@ -48,7 +48,7 @@ The repository description, homepage and topics provide the GitHub-native discov
 ## Registered public release identity
 
 - Version: `1.0.0`
-- Tag identity: `v1.0.0-public`
+- Tag: `v1.0.0-public`
 - Release title: `EHCOsystem Public Architecture and Evidence Baseline v1.0.0`
 
-Canonical `main` is the active public source stream. The release register tracks repository publication and registered release identity as distinct publication records.
+Canonical `main` is the active public source stream. The GitHub Releases surface determines live publication state. The release register tracks repository publication and registered release identity as distinct publication records.
