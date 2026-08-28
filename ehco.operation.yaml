@@ -14,7 +14,8 @@ source_owner:
 selection:
   selected_by: Edward Henry
   selection_class: EXPLICIT_OWNER_DIRECTION
-  durable_reference: Edward Henry owner acceptance 2026-08-28 selects ACCEPT and closeout of EHCOsystem PR #22 on exact reviewed PUBLISH head e0e73d50b7404a2fd483a636cc10234fc1a470a7 and accepted squash-merge main f8f75e5fc41e19174dca2dd771efa15075af6933. ACCEPT is limited to one-file operation-control transition, exact-head qualification, Ready-for-Review, expected-head squash merge, accepted-main readback, repository metadata disposition, and Drive reconciliation. OPERATION_STABLE_ENVELOPE_CHANGE=true. It does not select artifact release, deployment, Runtime action, authority, participation, proof-state, standing change, history rewrite, repository cutover, ruleset weakening, bypass, or automatic successor activation.
+  durable_reference: >-
+    Edward Henry owner acceptance 2026-08-28 selects ACCEPT and closeout of EHCOsystem PR #22 on exact reviewed PUBLISH head e0e73d50b7404a2fd483a636cc10234fc1a470a7 and accepted squash-merge main f8f75e5fc41e19174dca2dd771efa15075af6933. ACCEPT is limited to one-file operation-control transition, exact-head qualification, Ready-for-Review, expected-head squash merge, accepted-main readback, repository metadata disposition, and Drive reconciliation. It does not select artifact release, deployment, Runtime action, authority, participation, proof-state, standing change, history rewrite, repository cutover, ruleset weakening, bypass, or automatic successor activation. OPERATION_STABLE_ENVELOPE_CHANGE=true
   source_base_revision: f8f75e5fc41e19174dca2dd771efa15075af6933
   expected_reviewed_head_revision: e0e73d50b7404a2fd483a636cc10234fc1a470a7
 control_anchor: AGENTS.md
