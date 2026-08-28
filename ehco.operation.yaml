@@ -1,0 +1,136 @@
+schema: ehco.operation.public-safe.v1
+protocol_reference:
+  reference_mode: PUBLIC_SAFE_PROVIDER_RESOLVED
+  control_profile: EHCO_PUBLIC_SAFE_ASSISTANT_OPERATION_CONTROL_V1
+  profile_version: 1.0.0
+  protocol_version: 1.0.0
+repository: EHCOnomics-Systems/EHCOsystem
+governed_object: PUBLIC_GITHUB_NATIVE_ASSISTANT_GATE_CONTROL_ADOPTION
+source_owner:
+  repository: EHCOnomics-Systems/EHCOsystem
+  revision: 1cceb89bf3bd4b4a5ab3b2ca00e02d383cd99195
+  repository_manifest_path: ehco.repository.yaml
+  controlling_source_reference: ehco.repository.yaml
+selection:
+  selected_by: Edward Henry
+  selection_class: EXPLICIT_OWNER_DIRECTION
+  durable_reference: EHCO-PUB-SOW-001 v1.5 WP-12 FIRST_OPERATION_ADOPTION=true CONTROL_ADOPTION_ONLY=true STABLE_REPOSITORY_MANIFEST_CHANGE=true NEW_PATH:AGENTS.md NEW_PATH:ehco.operation.yaml NEW_PATH:.github/workflows/ehco-assistant-operation-gate.yml NEW_PATH:.github/workflows/ehco-assistant-operation-gate-bootstrap.yml
+  source_base_revision: 1cceb89bf3bd4b4a5ab3b2ca00e02d383cd99195
+  expected_reviewed_head_revision: NOT_APPLICABLE_UNTIL_ACCEPT
+control_anchor: AGENTS.md
+status_owner_path: ehco.operation.yaml
+accepted_standing: 52/53
+active_operation:
+  operation_id: EHCO-PUBLIC-GITHUB-NATIVE-ASSISTANT-GATE-ADOPTION-PUBLISH-001
+  state: ACTIVE
+  authorization_mode: PUBLISH
+  bounded_outcome: Publish the isolated public-safe GitHub-native assistant-gate adoption candidate.
+  remaining_bounded_work:
+  - Configure the selected GitHub App authentication and Actions settings from the owning GitHub surface.
+  - Qualify the exact first-adoption candidate through the owner-locked bootstrap gate.
+  - Stop before owner acceptance, merge, bootstrap retirement, or PR #22 requalification.
+  interaction_seams:
+  - Public-safe operation projection and privately resolved accepted canonical control binding.
+  - GitHub Actions required-check production and read-only GitHub App authentication.
+  - First-adoption bootstrap followed by normal-gate activation and bootstrap retirement.
+  non_overlap:
+  - PR #22 technology-estate source is not modified by this control-adoption candidate.
+  - No external hosting, webhook service, deployment, Runtime, authority, participation, proof, release, or standing effect.
+  automatic_successor: PROHIBITED
+  successor_operation: NOT_SELECTED
+execution_continuity:
+  policy_id: EHCO_EXECUTION_CONTINUITY_V1
+  model_scope: ALL_ASSISTANT_MODELS
+  work_unit: SELECTED_OPERATION_CHAIN
+  depth_policy: COMPLETE_DEPENDENT_STEPS_WITHIN_SCOPE
+  failure_policy: DIAGNOSE_CORRECT_REVERIFY_CONTINUE
+  intra_scope_reapproval: NOT_REQUIRED
+  cleanup_policy: RECONCILE_OPERATIONAL_DEBRIS_BEFORE_COMPLETE
+  stop_policy: REAL_SCOPE_AUTHORITY_SAFETY_OR_OWNER_BOUNDARY_ONLY
+  local_override: MAY_TIGHTEN_NOT_WEAKEN
+scope:
+  permitted_paths:
+  - AGENTS.md
+  - ehco.operation.yaml
+  - .github/workflows/ehco-assistant-operation-gate.yml
+  - .github/workflows/ehco-assistant-operation-gate-bootstrap.yml
+  - ehco.repository.yaml
+  controlled_paths:
+  - AGENTS.md
+  - ehco.operation.yaml
+  - .github/workflows/ehco-assistant-operation-gate.yml
+  - .github/workflows/ehco-assistant-operation-gate-bootstrap.yml
+  - ehco.repository.yaml
+  prohibited_paths: []
+change_control:
+  control_change_declared: true
+  delete_or_move_authorized: false
+  local_actions_authorized:
+  - read_source
+  - compare_source
+  - audit
+  - propose
+  - create_file
+  - update_file
+  - run_checks
+  local_actions_prohibited:
+  - move_file
+  - delete_file
+  - generate_artifact
+  remote_actions_authorized:
+  - create_branch
+  - commit
+  - push
+  - open_draft_pull_request
+  - update_draft_pull_request
+  remote_actions_prohibited:
+  - mark_pull_request_ready_for_review
+  - merge_pull_request
+  - record_owner_acceptance
+  - close_operation
+  - activate_selected_successor
+  - modify_repository_settings
+  - modify_drive_controls
+  - publish_image
+  - mutate_environment
+  - deploy
+  - trigger_workflow
+  - release
+  - invoke_runtime
+  - admit_runtime
+  - bind_runtime
+effects:
+  authority_effect: NONE
+  standing_effect: NONE
+  runtime_effect: NONE
+  deployment_effect: NONE
+  release_effect: NONE
+  external_effect: NONE
+bridge:
+  applicability: NOT_APPLICABLE_NON_PARTICIPANT
+  non_applicability_reason: Public repository assistant-control adoption is not Runtime participation.
+  direct_invocation: PROHIBITED
+  runtime_admission_status: NOT_ESTABLISHED
+  participation_binding_status: NOT_ESTABLISHED
+  canonical_runtime_receipt_status: NOT_ESTABLISHED
+evidence:
+  evidence_class: REPOSITORY_SOURCE_AND_DIFF_VALIDATION
+  required_checks:
+  - Validate evidence and public boundaries
+  - CodeQL
+  - EHCO Assistant Operation Gate
+  proves:
+  - The isolated public-safe control-adoption candidate satisfies checked source, disclosure, operation, and exact-path invariants.
+  evidence_not_created:
+  - owner acceptance
+  - accepted main
+  - bootstrap retirement
+  - PR #22 acceptance
+  - deployment
+  - Runtime state
+  - authority
+  - participation
+  - proof-state change
+  - standing change
+stop_condition:
+- Stop before Ready-for-Review, owner acceptance, merge, repository-settings mutation, bootstrap retirement, or PR #22 requalification.
