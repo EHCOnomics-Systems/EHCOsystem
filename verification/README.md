@@ -39,7 +39,9 @@ Hash-preserved Packets 00-08 and exact Language Model fixture artifacts retain t
 
 `validate_public_range_reactor_snapshot.py` verifies the dedicated Range Reactor component/evidence route, eight synthetic capability vectors, manifest/source-review identity, fixture SHA-256, public navigation/claim presence, disclosure boundaries, evidence ceilings, and absence of internal Range Reactor operation/stage mechanics from reader-facing Range Reactor maturity prose.
 
-The Range Reactor snapshot is source-reviewed synthetic capability evidence. It provides a bounded public inspection surface while controlled implementation source and technical-effect evidence remain with their owning evidence domains.
+It also enforces status-language integrity in both directions: Range Reactor must remain represented as a **mature deterministic proof-carrying implication, reachability, range and reasoning system** where accepted source and qualification evidence establish that capability, and the public representation must not collapse that system maturity into a source-only or qualification-only status. Deployment, production activation and Runtime participation remain separately owned evidence dimensions and are not promoted into unsupported claims.
+
+The Range Reactor snapshot itself is source-reviewed synthetic capability evidence. It provides a bounded public inspection surface while controlled implementation source and technical-effect evidence remain with their owning evidence domains.
 
 ## Acceptance governance
 
