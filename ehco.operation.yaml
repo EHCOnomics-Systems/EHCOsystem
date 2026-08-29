@@ -15,37 +15,38 @@ selection:
   selected_by: Edward Henry
   selection_class: EXPLICIT_OWNER_DIRECTION
   durable_reference: >-
-    Edward Henry direction 2026-08-29: Proceed with the images. Select the SOW-006 Dashboard visual-orientation BUILD + bounded PUBLISH lane against accepted EHCOsystem main 8208c897b7d1529a6aafa25992eb1a7b53850d1f. Create eight public-safe WebP derivatives from owner-supplied June 2026 EHCO Dashboard captures, integrate them minimally into README.md and architecture/EHCO-AI-OS-SYSTEM-CARD.md, extend public-evidence regression validation for the declared asset set and reader-facing projection captions, publish a draft pull request, and stop before Ready-for-Review, owner ACCEPT or merge. NEW_PATH:architecture/assets/dashboard/overview-june-2026-public.webp NEW_PATH:architecture/assets/dashboard/services-coordination-june-2026-public.webp NEW_PATH:architecture/assets/dashboard/authority-boundary-june-2026-public.webp NEW_PATH:architecture/assets/dashboard/receipts-evidence-june-2026-public.webp NEW_PATH:architecture/assets/dashboard/health-registry-june-2026-public.webp NEW_PATH:architecture/assets/dashboard/replacement-readiness-june-2026-public.webp NEW_PATH:architecture/assets/dashboard/prime-relationship-june-2026-public.webp NEW_PATH:architecture/assets/dashboard/agent-connect-coordination-june-2026-public.webp OPERATION_STABLE_ENVELOPE_CHANGE=true
+    Edward Henry owner direction 2026-08-29 selects EHCO-PUB-SOW-006 ACCEPT for the exact qualified Dashboard visual-orientation PUBLISH candidate at 2adfc7e26fbf95bf2c894e8ac8075ed765c2c05d on PR #31. That reviewed PUBLISH head completed EHCO Assistant Operation Gate, Validate evidence and public boundaries, CodeQL analysis, and GitHub Advanced Security CodeQL successfully, with no new alerts in code changed by the pull request and no unresolved review threads. This ACCEPT projection is bound to that exact reviewed PUBLISH head; the eight Dashboard assets, README.md, architecture/EHCO-AI-OS-SYSTEM-CARD.md, and verification/validate_public_evidence.py remain unchanged by the ACCEPT projection. Standing, Runtime, authority, deployment, production, release, component-owning-source, ruleset, history-purge, and successor effects remain NONE. OPERATION_STABLE_ENVELOPE_CHANGE=true
   source_base_revision: 8208c897b7d1529a6aafa25992eb1a7b53850d1f
-  expected_reviewed_head_revision: NOT_APPLICABLE_UNTIL_ACCEPT
+  expected_reviewed_head_revision: 2adfc7e26fbf95bf2c894e8ac8075ed765c2c05d
 control_anchor: AGENTS.md
 status_owner_path: ehco.operation.yaml
 accepted_standing: 52/53
 active_operation:
-  operation_id: EHCO-PUBLIC-DASHBOARD-VISUAL-ORIENTATION-PUBLISH-001
+  operation_id: EHCO-PUBLIC-DASHBOARD-VISUAL-ORIENTATION-ACCEPT-001
   state: ACTIVE
-  authorization_mode: PUBLISH
+  authorization_mode: ACCEPT
   bounded_outcome: >-
-    Publish and exact-head verify one public EHCOsystem candidate containing eight dated public-safe EHCO Dashboard Tier Three projection/interface views, minimal reader-facing integration and regression guards while preserving Runtime, authority, standing, deployment, release and component-owning-source boundaries.
+    Accept and merge the exact qualified SOW-006 Dashboard visual-orientation candidate after verifying the ACCEPT-control head preserves the reviewed public content and passes all required repository and security checks.
   remaining_bounded_work:
-    - Add the exact eight declared public-safe Dashboard WebP derivatives under architecture/assets/dashboard/.
-    - Integrate overview and services/coordination views into README.md and the remaining six views into architecture/EHCO-AI-OS-SYSTEM-CARD.md with accurate alt text, dated provenance captions and Tier Three projection/interface framing.
-    - Extend verification/validate_public_evidence.py to guard the exact asset set, WebP identity, reader-facing references and projection captions without weakening existing validation.
-    - Verify the exact candidate diff remains inside the declared SOW-006 image envelope and stable ehco.repository.yaml remains unchanged.
-    - Publish a draft pull request and inspect all required exact-head repository checks.
-    - Stop before owner ACCEPT, ready-for-review transition or merge.
+    - Verify the ACCEPT-control head changes only ehco.operation.yaml relative to exact reviewed PUBLISH head 2adfc7e26fbf95bf2c894e8ac8075ed765c2c05d.
+    - Verify the full base-to-ACCEPT-head changed-path set remains the exact twelve-path SOW-006 envelope.
+    - Qualify the exact ACCEPT-control head through required repository and security checks.
+    - Confirm pull request review threads remain clear.
+    - Mark PR 31 ready for review and squash-merge only the exact qualified ACCEPT-control head under repository rules.
+    - Read back accepted main and reconcile SOW-006 to the owning Git result.
   interaction_seams:
-    - Google Drive EHCO-PUB-SOW-006 owns the durable public first-contact and Dashboard visual-orientation meaning for this operation.
-    - EHCOsystem main@8208c897b7d1529a6aafa25992eb1a7b53850d1f is the exact selected public source base.
-    - The eight image derivatives are sourced from owner-supplied June 2026 EHCO Dashboard captures and are represented as dated Tier Three projection/interface views.
-    - Exact June capture bytes are not promoted to current Dashboard-baseline evidence by this operation; currentness requires owning Dashboard evidence.
+    - Google Drive EHCO-PUB-SOW-006 owns the durable public first-contact and Dashboard visual-orientation meaning and records this bounded ACCEPT selection.
+    - Exact reviewed PUBLISH head 2adfc7e26fbf95bf2c894e8ac8075ed765c2c05d owns the qualified public content presented for acceptance.
+    - EHCOsystem main@8208c897b7d1529a6aafa25992eb1a7b53850d1f remains the source base until merge.
+    - The eight image derivatives remain dated public-safe Tier Three projection/interface views sourced from owner-supplied June 2026 EHCO Dashboard captures.
     - INSTANTIATED_EHCO_RUNTIME retains Tier One Runtime authority and current Runtime state.
   non_overlap:
     - Dashboard owning source, controls, deployment, production state and Runtime participation remain outside this operation.
+    - Dashboard asset bytes, README.md, architecture/EHCO-AI-OS-SYSTEM-CARD.md and verification/validate_public_evidence.py from exact reviewed PUBLISH head 2adfc7e26fbf95bf2c894e8ac8075ed765c2c05d remain unchanged by this ACCEPT projection.
     - Language Model, Range Reactor and other component owning-source development remain outside this operation.
     - Stable ehco.repository.yaml identity and boundary fields remain unchanged.
     - Existing immutable public evidence packets, dossier bytes, accepted Language Model fixture bytes and accepted Range Reactor snapshot bytes remain unchanged.
-    - Artifact release, Git tag, GitHub Release, deployment, Runtime admission/binding/invocation/participation/authority/state/proof, standing transition, SOW-003 history purge and successor effects remain outside this operation.
+    - Artifact publication, Git tag, GitHub Release, deployment, Runtime admission/binding/invocation/participation/authority/state/proof, standing transition, SOW-003 history purge, repository-settings, ruleset and successor effects remain outside this operation.
   automatic_successor: PROHIBITED
   successor_operation: NOT_SELECTED
 execution_continuity:
@@ -95,28 +96,29 @@ change_control:
     - read_source
     - compare_source
     - audit
-    - propose
-    - create_file
     - update_file
-    - generate_artifact
     - run_checks
   local_actions_prohibited:
+    - propose
+    - create_file
     - move_file
     - delete_file
+    - generate_artifact
   remote_actions_authorized:
+    - mark_pull_request_ready_for_review
+    - merge_pull_request
+    - record_owner_acceptance
+    - close_operation
+  remote_actions_prohibited:
     - create_branch
     - commit
     - push
     - open_draft_pull_request
     - update_draft_pull_request
-  remote_actions_prohibited:
-    - mark_pull_request_ready_for_review
-    - merge_pull_request
-    - record_owner_acceptance
-    - close_operation
     - activate_selected_successor
     - modify_repository_settings
     - modify_drive_controls
+    - publish_image
     - mutate_environment
     - deploy
     - trigger_workflow
@@ -139,17 +141,18 @@ bridge:
   participation_binding_status: NOT_ESTABLISHED
   canonical_runtime_receipt_status: NOT_ESTABLISHED
 evidence:
-  evidence_class: REPOSITORY_SOURCE_AND_DIFF_VALIDATION
+  evidence_class: OWNER_ACCEPTANCE_RECORD
   required_checks:
-    - Exact candidate base is accepted EHCOsystem main 8208c897b7d1529a6aafa25992eb1a7b53850d1f.
-    - The exact eight declared WebP asset paths exist and remain bounded public-safe derivatives of owner-supplied June 2026 Dashboard captures.
-    - Reader-facing captions identify every image as an EHCO Dashboard Tier Three projection/interface view and preserve Runtime-owned Tier One authority and current Runtime-state ownership.
-    - README.md presents overview and services/coordination views and architecture/EHCO-AI-OS-SYSTEM-CARD.md presents authority, evidence/receipts, health registry, replacement readiness, Prime relationship and Agent Connect coordination views.
-    - Existing public repository validation, Language Model snapshot validation, Range Reactor snapshot validation, release identity validation, EHCO Assistant Operation Gate and CodeQL remain passing on the exact candidate head.
-    - Candidate changed paths are a subset of the exact declared SOW-006 permitted paths and stable ehco.repository.yaml remains unchanged.
+    - Exact reviewed PUBLISH head is 2adfc7e26fbf95bf2c894e8ac8075ed765c2c05d and has successful public validation, canonical assistant-operation validation, CodeQL analysis and GitHub Advanced Security CodeQL with no new alerts in code changed by PR 31.
+    - ACCEPT projection changes only ehco.operation.yaml relative to exact reviewed PUBLISH head 2adfc7e26fbf95bf2c894e8ac8075ed765c2c05d.
+    - Full base-to-ACCEPT-head changed-path set remains the exact twelve-path SOW-006 envelope.
+    - The exact eight reviewed Dashboard WebP assets and reader-facing Dashboard narrative/validator content remain unchanged on the ACCEPT-control head.
+    - Required GitHub checks pass on the exact ACCEPT-control head before merge.
+    - Pull request review threads remain clear before merge.
+    - Merge uses exact expected-head protection and accepted main is read back after merge.
   proves:
-    - The published candidate gives public reviewers eight distinct dated Dashboard interface perspectives with explicit Tier Three projection framing and public-safe disclosure treatment.
-    - The candidate improves architecture orientation without changing owning component source, Runtime state, standing, deployment or release state.
+    - Owner-selected acceptance applies to the exact reviewed SOW-006 Dashboard visual-orientation candidate.
+    - The accepted public representation preserves dated Tier Three projection/interface framing, public-safe disclosure treatment and Runtime-owned Tier One authority/current Runtime-state ownership.
   evidence_not_created:
     - Current Dashboard-baseline establishment for the exact June capture bytes
     - Dashboard owning-source acceptance or development effect
@@ -158,6 +161,8 @@ evidence:
     - Runtime admission binding invocation participation authority state proof or canonical Runtime receipt
     - Numerical standing transition
 stop_condition:
-  - Publish and exact-head verify EHCO-PUBLIC-DASHBOARD-VISUAL-ORIENTATION-PUBLISH-001 as a draft pull request.
-  - Stop at Edward Henry owner ACCEPT before ready-for-review transition or merge.
-  - Preserve automatic successor prohibition.
+  - Verify the ACCEPT-control head and exact relationship to reviewed PUBLISH head 2adfc7e26fbf95bf2c894e8ac8075ed765c2c05d.
+  - Mark PR 31 ready only after exact-head qualification succeeds and review threads are clear.
+  - Squash-merge only the exact qualified ACCEPT-control head under repository rules.
+  - Read back accepted main and reconcile Drive SOW-006.
+  - Stop with automatic successor prohibited.
