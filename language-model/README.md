@@ -38,7 +38,7 @@ The accepted source estate contains:
 
 The Language Model is in an **advanced near-final maturation cycle**. Its core deterministic linguistic, semantic, mathematical, evaluation, service and qualification foundations are substantially established. Current development strengthens and deepens that established architecture across computational meaning, linguistic productivity, context and discourse, deterministic reasoning and transformation, evidence/owner integration, and integrated qualification.
 
-This public maturity description is capability-based. Internal development stage numbers, unit identifiers, branch choreography and transient gate state remain within the controlled development estate rather than serving as the public maturity model.
+Public maturity is expressed through established capability and evidence. Internal development stage numbers, unit identifiers, branch choreography and transient gate state remain within the controlled development estate; the public maturity model is capability-based.
 
 Accepted capability claims are grounded in accepted owning source. Active candidate work informs the direction of current strengthening while remaining distinct from accepted-source claims.
 
