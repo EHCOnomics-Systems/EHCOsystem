@@ -62,14 +62,14 @@ scope:
     - ehco.repository.yaml
     - PROVENANCE.md
     - releases/PUBLIC-RELEASE-REGISTER.md
-    - verification/validate_public_evidence.py
+    - verification/validate_release_identity.py
     - verification/README.md
   controlled_paths:
     - ehco.operation.yaml
     - ehco.repository.yaml
     - PROVENANCE.md
     - releases/PUBLIC-RELEASE-REGISTER.md
-    - verification/validate_public_evidence.py
+    - verification/validate_release_identity.py
     - verification/README.md
   prohibited_paths:
     - AGENTS.md
