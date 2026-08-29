@@ -16,7 +16,7 @@ EHCO Range Reactor is EHCOnomics' mature deterministic **proof-carrying implicat
 
 Range Reactor owns bounded deterministic implication and reachability computation, typed range/reasoning evaluation, semantic result identity, and reusable reasoning capability for governed EHCO consumers.
 
-Its source-and-qualification estate is distinct from Tier One Runtime authority. Runtime admission, binding, invocation, authoritative consequence, Runtime proof and standing remain owned by their applicable Runtime evidence.
+That mature system capability is distinct from Tier One Runtime authority. Runtime admission, binding, invocation, authoritative consequence, Runtime proof and standing remain owned by their applicable Runtime evidence.
 
 ## Established capability
 
@@ -42,9 +42,9 @@ For finite supported collapse classes, equivalent semantic states can be represe
 
 ## Maturity
 
-**Maturity:** mature deterministic range/reasoning **source and qualification estate** with accepted current lineage.
+**Maturity:** mature deterministic proof-carrying implication, reachability, range and reasoning system with accepted current capability and qualification evidence.
 
-The mature claim applies to accepted source capability, deterministic qualification, service/container source and production/release control depth. Deployment, production activation and Runtime participation are separate lifecycle dimensions established only by their owning evidence.
+This mature status describes the established Range Reactor system capability demonstrated by accepted source and qualification evidence. Deployment, production activation and Runtime participation are separate lifecycle/effect dimensions established by their own evidence; they neither extend nor reduce the system-capability maturity claim.
 
 ## Public evidence
 
