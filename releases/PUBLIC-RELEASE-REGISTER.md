@@ -19,14 +19,14 @@ Canonical `main` is the active public source stream. The GitHub Releases surface
 
 ## Repository provenance basis
 
-The stable repository manifest uses non-circular provenance semantics:
+The stable repository manifest uses stable-baseline provenance semantics:
 
-- `provenance.accepted_commit` identifies the commit that accepted the stable `ehco.repository.yaml` boundary represented by the file, not current `main`;
+- `provenance.accepted_commit` identifies the commit that accepted the stable `ehco.repository.yaml` boundary represented by the file, independently from current `main`;
 - the current stable manifest baseline was accepted by `eff9301e7c5ddfc0759ee0d7e3c026ad28c5670c`;
 - `artifact_identifier` is `public-repository`;
-- `provenance.artifact_digest` is `NOT_APPLICABLE_SOURCE_ONLY_PUBLIC_PROJECTION_NO_SEPARATE_BUILD_ARTIFACT` because the public repository is a source-only projection and no separately built repository artifact is defined.
+- `provenance.artifact_digest` is `NOT_APPLICABLE_SOURCE_ONLY_PUBLIC_PROJECTION_NO_SEPARATE_BUILD_ARTIFACT`, explicitly classifying the repository publication object as source-only.
 
-Hash-bound dossiers, evidence packets, Dashboard derivatives, Language Model fixtures and Range Reactor evidence retain their own artifact identities and are not substituted into the repository-level provenance field.
+Hash-bound dossiers, evidence packets, Dashboard derivatives, Language Model fixtures and Range Reactor evidence retain their own artifact identities independently from repository-level provenance.
 
 The registered release identity above remains distinct from provider publication. Live materialization is established by the provider-owned Git tag and GitHub Release surfaces when those objects exist.
 
