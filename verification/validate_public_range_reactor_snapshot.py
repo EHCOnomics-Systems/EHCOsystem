@@ -97,11 +97,11 @@ def validate_public_representation() -> None:
         ],
         "architecture/EHCO-TECHNOLOGY-ESTATE.md": [
             "Range Reactor is a **mature deterministic proof-carrying implication, reachability, range and reasoning system**",
-            "those dimensions do not demote or redefine the established system-capability maturity",
+            "are orthogonal to the established system-capability maturity",
         ],
         "architecture/ecosystem-components-and-participation.md": [
             "**Maturity:** mature deterministic proof-carrying implication, reachability, range and reasoning system with accepted current capability and qualification evidence",
-            "does not reduce the established mature system-capability status",
+            "remain orthogonal to the established mature system-capability status",
         ],
         "assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md": [
             "EHCO Range Reactor public capability evidence",
