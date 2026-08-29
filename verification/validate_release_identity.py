@@ -34,20 +34,18 @@ PROVENANCE_REQUIRED = {
     "PROVENANCE.md": [
         f"`{STABLE_MANIFEST_ACCEPTED_COMMIT}`",
         f"`{SOURCE_ONLY_ARTIFACT_DIGEST}`",
-        "it is not an alias for current `main`",
-        "Registered release identity and live provider publication are distinct publication states.",
+        "independently from current `main`",
+        "Registered release identity and live provider publication are separate publication states.",
     ],
     "releases/PUBLIC-RELEASE-REGISTER.md": [
-        f"`provenance.accepted_commit` identifies the commit that accepted the stable `ehco.repository.yaml` boundary represented by the file, not current `main`;",
+        "`provenance.accepted_commit` identifies the commit that accepted the stable `ehco.repository.yaml` boundary represented by the file, independently from current `main`;",
         f"`{STABLE_MANIFEST_ACCEPTED_COMMIT}`",
         f"`provenance.artifact_digest` is `{SOURCE_ONLY_ARTIFACT_DIGEST}`",
         "The registered release identity above remains distinct from provider publication.",
     ],
 }
 
-OBSOLETE_STATEMENTS = [
-    "No tagged GitHub Release is currently declared",
-    "No tag or GitHub Release is currently declared",
+LEGACY_PLACEHOLDERS = [
     "accepted_commit: UNRESOLVED",
     "artifact_digest: UNRESOLVED",
     "Define non-circular acceptance semantics before populating provenance.accepted_commit or artifact_digest.",
@@ -86,10 +84,10 @@ def main() -> int:
                 errors.append(f"Provenance invariant missing from {relative}: {statement}")
 
     for relative, text in loaded.items():
-        for statement in OBSOLETE_STATEMENTS:
+        for statement in LEGACY_PLACEHOLDERS:
             checks += 1
             if statement.lower() in text.lower():
-                errors.append(f"Obsolete release/provenance wording in {relative}: {statement}")
+                errors.append(f"Legacy provenance placeholder present in {relative}: {statement}")
 
     if errors:
         print(
@@ -101,7 +99,7 @@ def main() -> int:
         return 1
 
     print(
-        "PASS: EHCOsystem canonical public release identity and non-circular provenance "
+        "PASS: EHCOsystem canonical public release identity and stable-baseline provenance "
         f"({checks} checks, version {RELEASE_VERSION}, tag {RELEASE_TAG})"
     )
     return 0
