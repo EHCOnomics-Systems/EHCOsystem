@@ -37,9 +37,11 @@ EHCOsystem tracks persistent component identity, source maturity, application/se
 
 ### EHCO Range Reactor
 
-**Maturity:** mature deterministic proof-carrying range/reasoning source and qualification estate.
+**Maturity:** mature deterministic proof-carrying implication, reachability, range and reasoning system with accepted current capability and qualification evidence.
 
 **Established source depth:** deterministic implication/reachability reasoning; executable reference semantics; typed query/event/proof/result custody; canonical identity/replay; contradiction, remainder and frontier preservation; possible/inevitable reachability distinctions; independently verified finite semantic collapse with retained witness fibers; service interfaces; contracts and schemas; container-source definitions; production-profile and release controls; Prime purification; Prime-purified Full-Range computation; and Primordia collapsed Full-Range producer interoperability.
+
+**Lifecycle separation:** deployment, production activation and Runtime participation are separate evidence dimensions. Their separately owned status does not reduce the established mature system-capability status.
 
 **Public evidence:** [component record](../range-reactor/README.md) and [Public Capability Snapshot v1](../range-reactor/evidence/public-capability-snapshot-v1/README.md).
 
