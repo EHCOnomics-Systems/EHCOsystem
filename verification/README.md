@@ -43,10 +43,22 @@ It also enforces status-language integrity in both directions. Range Reactor rem
 
 The Range Reactor snapshot itself is source-reviewed synthetic capability evidence. It provides a bounded public inspection surface while controlled implementation source and technical-effect evidence remain with their owning evidence domains.
 
+## Release identity and provenance validation
+
+`validate_release_identity.py` verifies the canonical registered public release identity together with the repository-level non-circular provenance semantics:
+
+- version `1.0.0`, tag `v1.0.0-public`, and release title `EHCOsystem Public Architecture and Evidence Baseline v1.0.0` remain aligned across the release documents;
+- `ehco.repository.yaml` binds `provenance.accepted_commit` to `eff9301e7c5ddfc0759ee0d7e3c026ad28c5670c`, the commit that accepted the current stable manifest/boundary bytes, rather than treating current `main` as the provenance baseline;
+- repository-level `provenance.artifact_digest` is `NOT_APPLICABLE_SOURCE_ONLY_PUBLIC_PROJECTION_NO_SEPARATE_BUILD_ARTIFACT`, preserving the source-only public-projection model without a circular self-hash;
+- stable-manifest provenance and registered release identity are documented consistently in `PROVENANCE.md` and `releases/PUBLIC-RELEASE-REGISTER.md`; and
+- legacy unresolved provenance wording does not recur in the active publication/provenance surfaces.
+
+The validator checks source semantics only. GitHub tag and GitHub Release existence are provider-owned publication facts and require provider-surface readback.
+
 ## Acceptance governance
 
 Repository validation is one acceptance input. Pull-request acceptance uses the current repository and organization rulesets, exact candidate relationship, required status checks, code-scanning conditions and review conditions.
 
 ## Validation evidence
 
-A successful repository validation establishes the checked repository-integrity, disclosure, architecture, currentness and public-representation conditions for that exact revision. Claim-specific technical propositions retain their applicable evidence owner and class.
+A successful repository validation establishes the checked repository-integrity, disclosure, architecture, currentness, publication-identity and public-representation conditions for that exact revision. Claim-specific technical propositions retain their applicable evidence owner and class.
