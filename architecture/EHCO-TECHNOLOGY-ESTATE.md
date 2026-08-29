@@ -1,12 +1,12 @@
 ---
 title: EHCOsystem — An Instantiated AI Ecosystem
-version: 1.6
+version: 1.7
 status: current-public-architecture
 published: 2026-08-28
 maintainer: EHCOnomics
 evidence_class: controlled-technology-estate-architecture
 evidence_scope: category-to-ecosystem architecture and source-grounded maturity representation
-supersedes: version 1.5
+supersedes: version 1.6
 ---
 
 # EHCOsystem — An Instantiated AI Ecosystem
@@ -60,9 +60,13 @@ Public maturity is expressed through established capability and evidence. Intern
 
 The public evidence estate includes seven exact synthetic fixtures covering **62 cases** plus a qualification index spanning replay, metamorphic, structural, adversarial, conformance, resource-bound, recursion, and service-boundary testing.
 
-### EHCO Range Reactor — mature deterministic range/reasoning owner
+### EHCO Range Reactor — mature deterministic proof-carrying range/reasoning system
 
-EHCO Range Reactor owns bounded deterministic implication, reachability, range, and reasoning computation. Its accepted source lineage includes canonical reference semantics, deterministic evaluation and verification, identity/replay controls, service interfaces, schemas, participant contracts, container-source definitions, production-profile controls, release controls, Prime purification, Prime-purified Full-Range work, and Primordia collapsed Full-Range producer interoperability.
+EHCO Range Reactor owns bounded deterministic implication, reachability, range, and reasoning computation. Its accepted source lineage includes executable reference semantics; typed query, event, proof, result and standing contracts; deterministic canonical identity and replay; explicit contradiction, remainder and frontier preservation; branch-modal reachability and zero classifications; finite semantic quotient/collapse computation with independent verification and retained witness fibers; service interfaces; container-source definitions; production-profile and release controls; Prime purification; Prime-purified Full-Range computation; and governed Primordia collapsed Full-Range producer interoperability.
+
+The component's public maturity is source-and-qualification maturity. Deployment, production activation and Runtime participation retain their own evidence owners and lifecycle dimensions.
+
+The [Range Reactor public component record](../range-reactor/README.md) provides the capability map. The [Public Capability Snapshot v1](../range-reactor/evidence/public-capability-snapshot-v1/README.md) provides eight public-safe synthetic vectors bound to accepted owning-source review.
 
 ### EHCO RAG — governed retrieval and evidence system
 
@@ -140,6 +144,6 @@ EHCOsystem maps material public propositions to their applicable evidence class.
 
 | Version | Date | Change |
 |---|---|---|
+| 1.7 | 2026-08-28 | Expanded Range Reactor capability depth and added its dedicated public evidence route while preserving lifecycle/evidence separation. |
 | 1.6 | 2026-08-28 | Recast Language Model maturity around established capability and advanced near-final strengthening while keeping internal development sequencing in controlled development sources. |
 | 1.5 | 2026-08-28 | Reconciled the estate to affirmative capability/maturity representation, refreshed Language Model depth from current owning source, and aligned the public component set to the current publication scope. |
-| 1.4 | 2026-08-28 | Added the source-grounded qualitative maturity posture and differentiated estate lanes. |

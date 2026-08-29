@@ -1,12 +1,12 @@
 ---
 title: EHCOnomics Instantiated AI Ecosystem Technical Diligence
-version: 1.4
+version: 1.5
 status: current-public-diligence-navigation
 published: 2026-08-28
 maintainer: EHCOnomics
 evidence_class: navigation-and-bounded-technical-summary
 evidence_scope: public reviewer route through current architecture and source-grounded evidence
-supersedes: version 1.3
+supersedes: version 1.4
 ---
 
 # EHCOnomics Instantiated AI Ecosystem Technical Diligence
@@ -24,7 +24,8 @@ The **foundational/shared EHCOsystem spine is substantially established**. Curre
 3. **[Public Architecture Diagrams](architecture/diagrams/README.md)** — first-read relationships, computational ownership, maturity lanes, and evidence progression.
 4. **[Ecosystem Claim → Evidence Matrix](assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md)** — maturity, evidence class, public reference, verification method, source-review date, and evidence scope.
 5. **[Language Model public test evidence](language-model/evidence/public-test-snapshot-v1/README.md)** — seven exact synthetic fixtures / 62 cases plus qualification index, manifest, and validation tooling.
-6. **[EHCO AI-OS Technical Diligence](TECHNICAL-DILIGENCE.md)** — focused Tier One route through observed evidence and implementation anchors.
+6. **[Range Reactor public capability evidence](range-reactor/evidence/public-capability-snapshot-v1/README.md)** — eight source-reviewed synthetic vectors plus manifest and dedicated validation.
+7. **[EHCO AI-OS Technical Diligence](TECHNICAL-DILIGENCE.md)** — focused Tier One route through observed evidence and implementation anchors.
 
 ## 30-minute review
 
@@ -43,7 +44,7 @@ Review the public hierarchy:
 ### 3. Principal shared component spine
 
 - **EHCO Language Model** — mature deterministic computational language under `ZERO_WEIGHT_ONLY / ZERO WEIGHTS TRAINED`, in an **advanced near-final maturation cycle** focused on strengthening computational meaning, linguistic and reasoning depth, evidence/owner integration, and integrated deterministic qualification.
-- **EHCO Range Reactor** — mature deterministic implication/reachability and range/reasoning owner with qualified accepted lineage and broad reference, verification, service, container, production-control, and interoperability source.
+- **EHCO Range Reactor** — mature deterministic proof-carrying implication/reachability and range/reasoning system with accepted executable reference semantics, typed evidence and result custody, deterministic identity/replay, contradiction/frontier preservation, independent finite collapse verification, service/container source, production/release controls, and Prime/Primordia interoperability.
 - **EHCO RAG** — governed retrieval/evidence/context component with an accepted 23/23 controlled baseline and active Stage 1 implementation.
 - **EHCO Prime** — advanced/mature relationship-service source/control with Stage 8 production-build/rehearsal hardening.
 - **EHCO Agent Connect** — advanced/mature coordination-service source/control with Stage 8 production-build/rehearsal hardening.
@@ -59,6 +60,8 @@ Review **EHCO Energy, Noble Law, EHCO War Room, HTPI, EHCO Project Construct, EH
 ### 6. Inspectable component evidence
 
 The Language Model snapshot provides an exact public component-test package. It includes seven byte-identical selected fixtures, 62 cases, expected dispositions, source/provenance bindings, and an index of deeper qualification dimensions.
+
+The Range Reactor snapshot provides a public-safe source-reviewed capability package. It includes eight synthetic vectors covering deterministic replay, contradiction and frontier preservation, possible-versus-inevitable classification, semantic collapse with retained witness fibers, independent rejection of forged collapse data, source-mutation identity sensitivity, and grounded proof custody. The snapshot deliberately represents bounded capability evidence rather than private implementation bytes.
 
 Public maturity is described by established capability and evidence rather than internal development stage identifiers. Controlled diligence can examine exact source identity and deeper development/qualification records when a proposition requires that level of inspection.
 
@@ -86,6 +89,6 @@ Use the [Runtime, Repository, and Test-Estate Boundary](architecture/runtime-rep
 
 | Version | Date | Change |
 |---|---|---|
+| 1.5 | 2026-08-28 | Added the dedicated Range Reactor capability/evidence review route and source-reviewed public snapshot. |
 | 1.4 | 2026-08-28 | Recast Language Model maturity around accepted capability and advanced near-final strengthening rather than internal development sequencing. |
 | 1.3 | 2026-08-28 | Recast diligence around affirmative system depth, refreshed shared-component maturity, and aligned the public application set to current publication scope. |
-| 1.2 | 2026-08-28 | Added differentiated maturity and estate-lane review. |

@@ -13,7 +13,7 @@ The **foundational and shared EHCOsystem spine is substantially established**. C
 The principal shared spine has differentiated maturity:
 
 - **EHCO Language Model** — mature deterministic computational-language system built as `DETERMINISTIC_COMPUTATIONAL_LANGUAGE / SINGLE_PATH / EXPLICIT_EHCO_COMPUTATION / ZERO_WEIGHT_ONLY / ZERO WEIGHTS TRAINED`. Its accepted source includes the Language Kernel, Language Math, deterministic tokenizer, evaluation, service boundary, schemas, registries, fixtures, deterministic tests, packaging, dependency locks, owner seams, and production-lifecycle source. The system is in an **advanced near-final maturation cycle** focused on strengthening computational meaning, deepening linguistic and reasoning capability, tightening evidence and owner integration, and extending integrated deterministic qualification across the established architecture.
-- **EHCO Range Reactor** — mature deterministic range/reasoning owner with accepted reference, conformance, service, qualification, container, and interoperability source lineage.
+- **EHCO Range Reactor** — mature deterministic proof-carrying implication, reachability, range and reasoning system with accepted executable reference semantics, identity/replay, contradiction and frontier preservation, independently verified finite semantic collapse, service/container boundaries, production/release controls, and Prime/Primordia interoperability.
 - **EHCO RAG** — governed retrieval, context, source-custody, provenance, and evidence component with an accepted controlled baseline and active Stage 1 implementation.
 - **EHCO Prime** — advanced individual-facing relationship and assistant-coordination service with mature source/control hardening.
 - **EHCO Agent Connect** — advanced registry, discovery, compatibility, health-observation, and candidate-routing coordination service with mature source/control hardening.
@@ -54,14 +54,19 @@ The application estate includes **EHCO Energy**, **Noble Law**, **EHCO War Room*
 
 ## Public evidence
 
-EHCOsystem publishes evidence according to the proposition being examined: controlled architecture, exact artifact identity, manifests and hashes, selected actual test fixtures, source anchors, bounded observations, discrepancy records, receipts, and verification tooling.
+EHCOsystem publishes evidence according to the proposition being examined: controlled architecture, exact artifact identity, manifests and hashes, selected test fixtures, source-reviewed synthetic capability evidence, source anchors, bounded observations, discrepancy records, receipts, and verification tooling.
 
 The **EHCO Language Model Public Test Snapshot v1** publishes seven exact synthetic fixtures covering **62 cases**, expected dispositions, a qualification-test index, provenance manifest, and validation tooling. It is one inspectable window into a substantially deeper controlled implementation and qualification estate.
 
 **[Inspect the Language Model test evidence](language-model/evidence/public-test-snapshot-v1/README.md)**
 
+The **EHCO Range Reactor Public Capability Snapshot v1** publishes eight public-safe synthetic capability vectors covering deterministic replay, contradiction/frontier preservation, modal distinction, semantic collapse with witness-fiber custody, independent collapse verification, source-mutation identity sensitivity, and grounded proof custody. Its manifest binds the snapshot to the accepted owning-source revision reviewed for publication while keeping controlled implementation source private.
+
+**[Inspect the Range Reactor capability evidence](range-reactor/evidence/public-capability-snapshot-v1/README.md)**
+
 ## Architecture, evidence, and governance
 
+- [EHCO Range Reactor](range-reactor/README.md)
 - [Runtime, Repository, and Test-Estate Boundary](architecture/runtime-repository-and-test-estate-boundary.md)
 - [Repository Governance](GOVERNANCE.md)
 - [Security and Responsible Disclosure](SECURITY.md)

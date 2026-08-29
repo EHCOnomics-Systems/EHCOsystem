@@ -1,12 +1,12 @@
 ---
 title: Start Here
-version: 2.4
+version: 2.5
 status: current-public-navigation
 published: 2026-08-28
 maintainer: EHCOnomics
 evidence_class: navigation
 evidence_scope: public review routing
-supersedes: version 2.3
+supersedes: version 2.4
 ---
 
 # Start Here
@@ -35,7 +35,9 @@ Use the **[Public Architecture Diagrams](../architecture/diagrams/README.md)** f
 
 Read **[Ecosystem Claim → Evidence Matrix](../assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md)** for claim, maturity, evidence class, public reference, verification method, source-review date, and evidence scope.
 
-For direct component-test material, inspect the **[EHCO Language Model Public Test Snapshot v1](../language-model/evidence/public-test-snapshot-v1/README.md)**.
+For direct component evidence, inspect the **[EHCO Language Model Public Test Snapshot v1](../language-model/evidence/public-test-snapshot-v1/README.md)** and the **[EHCO Range Reactor Public Capability Snapshot v1](../range-reactor/evidence/public-capability-snapshot-v1/README.md)**.
+
+For the Range Reactor capability map, read **[EHCO Range Reactor](../range-reactor/README.md)**.
 
 ## 4. Perform technical diligence
 
@@ -51,5 +53,6 @@ The [Runtime, Repository, and Test-Estate Boundary](../architecture/runtime-repo
 
 | Version | Date | Change |
 |---|---|---|
+| 2.5 | 2026-08-28 | Added first-class Range Reactor component and public capability-evidence routing. |
 | 2.4 | 2026-08-28 | Recast first-read navigation around affirmative identity, maturity, evidence, and current public scope. |
 | 2.3 | 2026-08-28 | Added qualitative maturity and differentiated component routing. |

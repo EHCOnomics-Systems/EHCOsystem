@@ -1,12 +1,13 @@
 # Public Repository Validation
 
-This directory contains repository-side validation tooling for the canonical public dossier, Public Evidence Companion, Instantiated AI architecture, EHCOsystem technology-estate architecture, diagrams, navigation, maturity representation, evidence matrices, public Language Model snapshot, disclosure controls and publication identity.
+This directory contains repository-side validation tooling for the canonical public dossier, Public Evidence Companion, Instantiated AI architecture, EHCOsystem technology-estate architecture, diagrams, navigation, maturity representation, evidence matrices, public Language Model snapshot, public Range Reactor capability snapshot, disclosure controls and publication identity.
 
 ## Run locally
 
 ```bash
 python3 verification/validate_public_evidence.py
 python3 verification/validate_public_lm_test_snapshot.py
+python3 verification/validate_public_range_reactor_snapshot.py
 python3 verification/validate_release_identity.py
 ```
 
@@ -33,6 +34,12 @@ Hash-preserved Packets 00-08 and exact Language Model fixture artifacts retain t
 ## Language Model snapshot validation
 
 `validate_public_lm_test_snapshot.py` verifies seven exact fixture artifacts / 62 cases, manifest identities, JSON structure and public evidence metadata.
+
+## Range Reactor capability validation
+
+`validate_public_range_reactor_snapshot.py` verifies the dedicated Range Reactor component/evidence route, eight synthetic capability vectors, manifest/source-review identity, fixture SHA-256, public navigation/claim presence, disclosure boundaries, evidence ceilings, and absence of internal Range Reactor operation/stage mechanics from reader-facing Range Reactor maturity prose.
+
+The Range Reactor snapshot is source-reviewed synthetic capability evidence. It provides a bounded public inspection surface while controlled implementation source and technical-effect evidence remain with their owning evidence domains.
 
 ## Acceptance governance
 

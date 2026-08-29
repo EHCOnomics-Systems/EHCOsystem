@@ -49,6 +49,8 @@ These records present EHCO AI-OS as the realized Tier One Runtime foundation, `E
 
 - [EHCO Language Model](language-model/README.md)
 - [Language Model Public Test Snapshot v1](language-model/evidence/public-test-snapshot-v1/README.md)
+- [EHCO Range Reactor](range-reactor/README.md)
+- [Range Reactor Public Capability Snapshot v1](range-reactor/evidence/public-capability-snapshot-v1/README.md)
 
 ## Public assurance
 
