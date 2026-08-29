@@ -15,35 +15,34 @@ selection:
   selected_by: Edward Henry
   selection_class: EXPLICIT_OWNER_DIRECTION
   durable_reference: >-
-    Edward Henry direction 2026-08-29 “proceed with next steps” selects the separately governed public release/provenance preparation lane after verified repository-cleanup closeout. This PUBLISH operation reconciles stable repository provenance semantics, public provenance/release explanation, deterministic validation, and the operation projection on exact base 8d34904db195103ff7e840d0fac86027b7de9b54. The canonical Repository Minimum Standard defines provenance.accepted_commit as the commit accepting the stable manifest/boundary baseline rather than current main; direct Git history establishes current ehco.repository.yaml bytes were last accepted by PR #24 merge eff9301e7c5ddfc0759ee0d7e3c026ad28c5670c. The public repository is source-only PUBLIC_EVIDENCE and has no separately built repository artifact, so provenance.artifact_digest is explicitly NOT_APPLICABLE_SOURCE_ONLY_PUBLIC_PROJECTION_NO_SEPARATE_BUILD_ARTIFACT rather than a self-hash. Provider creation of tag v1.0.0-public and GitHub Release remains outside this PUBLISH stage. STABLE_REPOSITORY_MANIFEST_CHANGE=true OPERATION_STABLE_ENVELOPE_CHANGE=true
+    Edward Henry direction 2026-08-29 “owner accept” explicitly selects ACCEPT and integration of EHCOnomics-Systems/EHCOsystem PR #34 after completed PUBLISH qualification. The reviewed PUBLISH basis is exact head 4bb4f97b8e4c3929ef030a8c602adc898a801d12 on source base 8d34904db195103ff7e840d0fac86027b7de9b54. That reviewed head passed Validate evidence and public boundaries, EHCO Assistant Operation Gate, CodeQL analysis, and GitHub Advanced Security CodeQL, with review threads clear. ACCEPT is limited to this operation-control transition, exact-head requalification, Ready-for-Review, expected-head squash merge, accepted-main readback, and Drive reconciliation. The five substantive release/provenance paths remain frozen at the reviewed PUBLISH basis throughout ACCEPT. Git tag v1.0.0-public and GitHub Release materialization remain a separate REALIZE effect. Deployment, production activation, Runtime action, authority/proof/participation effects, numerical standing transition, history rewrite, repository settings/rulesets, branch-retention policy change, and successor activation remain separate. STABLE_REPOSITORY_MANIFEST_CHANGE=true OPERATION_STABLE_ENVELOPE_CHANGE=true
   source_base_revision: 8d34904db195103ff7e840d0fac86027b7de9b54
-  expected_reviewed_head_revision: NOT_APPLICABLE_UNTIL_ACCEPT
+  expected_reviewed_head_revision: 4bb4f97b8e4c3929ef030a8c602adc898a801d12
 control_anchor: AGENTS.md
 status_owner_path: ehco.operation.yaml
 accepted_standing: 52/53
 active_operation:
-  operation_id: EHCO-PUBLIC-RELEASE-PROVENANCE-PREP-001
-  state: ACTIVE
-  authorization_mode: PUBLISH
+  operation_id: EHCO-PUBLIC-RELEASE-PROVENANCE-PREP-ACCEPT-001
+  state: COMPLETE
+  authorization_mode: ACCEPT
   bounded_outcome: >-
-    Resolve non-circular stable provenance semantics, align public release/provenance documentation and deterministic validation, and publish an exact qualified draft pull request without creating the provider release.
-  remaining_bounded_work:
-    - Reconcile stable provenance baseline and source-only artifact-digest semantics in ehco.repository.yaml.
-    - Align public provenance and release-register explanation.
-    - Extend deterministic validation and its documentation.
-    - Qualify the exact candidate under repository and organization checks.
-    - Publish the exact candidate as a draft pull request.
-    - After separately selected provider release materialization, reconcile live tag and GitHub Release evidence.
+    Owner-accept and integrate the already qualified public release/provenance source preparation while preserving the reviewed substantive release/provenance bytes and keeping provider publication as a separate REALIZE effect.
+  remaining_bounded_work: []
   interaction_seams:
-    - Canonical organization Repository Minimum Standard owns stable-manifest accepted_commit semantics.
-    - Direct Git history owns the exact commit that last accepted current ehco.repository.yaml bytes.
-    - GitHub tag and Releases surfaces own live release publication state.
-    - Hash-bound dossier, evidence packets, Dashboard assets, Language Model fixtures, and Range Reactor evidence retain their own artifact identities.
-    - INSTANTIATED_EHCO_RUNTIME retains Tier One Runtime authority and current Runtime-state ownership.
+    - Accepted public main 8d34904db195103ff7e840d0fac86027b7de9b54 is the exact source base for PR #34.
+    - Reviewed PUBLISH head 4bb4f97b8e4c3929ef030a8c602adc898a801d12 passed Validate evidence and public boundaries check 99178202537, EHCO Assistant Operation Gate check 99178200709, CodeQL analysis check 99178202613, and GitHub Advanced Security CodeQL check 99178273915 with no new alerts in changed code.
+    - Review threads were clear before ACCEPT selection.
+    - ehco.repository.yaml, PROVENANCE.md, releases/PUBLIC-RELEASE-REGISTER.md, verification/README.md, and verification/validate_release_identity.py are frozen at reviewed PUBLISH head 4bb4f97b8e4c3929ef030a8c602adc898a801d12 throughout ACCEPT.
+    - provenance.accepted_commit remains eff9301e7c5ddfc0759ee0d7e3c026ad28c5670c as the stable manifest/boundary acceptance baseline.
+    - provenance.artifact_digest remains NOT_APPLICABLE_SOURCE_ONLY_PUBLIC_PROJECTION_NO_SEPARATE_BUILD_ARTIFACT for this source-only public projection.
+    - Registered release identity remains version 1.0.0, tag v1.0.0-public, and title EHCOsystem Public Architecture and Evidence Baseline v1.0.0.
+    - GitHub tag and Releases surfaces retain ownership of live provider publication state.
+    - INSTANTIATED_EHCO_RUNTIME retains Tier One Runtime authority and current Runtime state.
   non_overlap:
-    - This PUBLISH operation does not create a Git tag or GitHub Release.
-    - No deployment, production activation, Runtime action, authority/proof/participation effect, standing transition, history rewrite, repository-settings mutation, ruleset mutation, or successor activation is selected.
-    - Stable manifest identity/classification/ownership/scope/security boundaries are preserved except for the explicitly selected provenance baseline and unresolved-item reconciliation.
+    - Total PR #34 diff remains bounded to the six SOW-007 paths.
+    - Post-review ACCEPT source delta is limited to ehco.operation.yaml.
+    - The five substantive release/provenance paths remain unchanged after reviewed PUBLISH head 4bb4f97b8e4c3929ef030a8c602adc898a801d12.
+    - Git tag/Release creation, deployment, production activation, Runtime admission/binding/invocation/participation/authority/state/proof, numerical standing transition, history rewrite, repository settings/rulesets, branch-retention policy change, and successor activation are separate.
   automatic_successor: PROHIBITED
   successor_operation: NOT_SELECTED
 execution_continuity:
@@ -104,16 +103,16 @@ change_control:
     - delete_file
     - generate_artifact
   remote_actions_authorized:
+    - mark_pull_request_ready_for_review
+    - merge_pull_request
+    - record_owner_acceptance
+    - close_operation
+  remote_actions_prohibited:
     - create_branch
     - commit
     - push
     - open_draft_pull_request
     - update_draft_pull_request
-  remote_actions_prohibited:
-    - mark_pull_request_ready_for_review
-    - merge_pull_request
-    - record_owner_acceptance
-    - close_operation
     - activate_selected_successor
     - modify_repository_settings
     - publish_image
@@ -133,34 +132,39 @@ effects:
   external_effect: NONE
 bridge:
   applicability: NOT_APPLICABLE_NON_PARTICIPANT
-  non_applicability_reason: Public repository release/provenance source preparation is separate from Runtime participation.
+  non_applicability_reason: Public repository release/provenance source acceptance is separate from Runtime participation.
   direct_invocation: PROHIBITED
   runtime_admission_status: NOT_ESTABLISHED
   participation_binding_status: NOT_ESTABLISHED
   canonical_runtime_receipt_status: NOT_ESTABLISHED
 evidence:
-  evidence_class: REPOSITORY_SOURCE_AND_DIFF_VALIDATION
+  evidence_class: OWNER_ACCEPTANCE_RECORD
   required_checks:
-    - Exact candidate changes only the six SOW-007 permitted paths relative to main 8d34904db195103ff7e840d0fac86027b7de9b54.
-    - provenance.accepted_commit is grounded to the commit accepting the stable manifest bytes rather than current main.
-    - provenance.artifact_digest records the source-only public-projection condition without self-reference.
-    - Registered release identity remains v1.0.0-public with the established release title and does not assert live publication.
-    - Validate evidence and public boundaries, CodeQL, and EHCO Assistant Operation Gate succeed on the exact candidate.
+    - Exact source base remains accepted main 8d34904db195103ff7e840d0fac86027b7de9b54.
+    - Reviewed PUBLISH head remains 4bb4f97b8e4c3929ef030a8c602adc898a801d12 and its qualification checks remain successful.
+    - Final changed-path set remains exactly the six SOW-007 paths.
+    - Post-review compare from 4bb4f97b8e4c3929ef030a8c602adc898a801d12 to the final COMPLETE ACCEPT head changes only ehco.operation.yaml.
+    - The five substantive release/provenance paths remain frozen at reviewed PUBLISH head 4bb4f97b8e4c3929ef030a8c602adc898a801d12.
+    - Exact final COMPLETE ACCEPT head passes Validate evidence and public boundaries, CodeQL, and EHCO Assistant Operation Gate; GitHub Advanced Security CodeQL remains successful where produced.
+    - Pull request review threads remain clear before merge.
+    - PR #34 is marked Ready only after final exact-head qualification and is squash-merged only with expected-head protection.
+    - Accepted public main is read back after merge and shows state COMPLETE, authorization_mode ACCEPT, remaining_bounded_work empty, and automatic successor prohibited.
   proves:
-    - Stable repository provenance semantics are explicit and non-circular.
-    - Source-only public-projection artifact-digest treatment is explicit without borrowing unrelated evidence digests.
-    - Registered release identity and live provider publication remain separate states.
-    - The exact source candidate is qualified for later owner acceptance without creating a release effect.
+    - Owner acceptance of the bounded public release/provenance source preparation on the exact reviewed and requalified source chain.
+    - Stable repository provenance semantics and registered release identity are accepted in public repository source.
+    - Substantive release/provenance bytes remained frozen throughout ACCEPT after the reviewed PUBLISH basis.
+    - Provider publication remains separately owned by GitHub tag and Releases surfaces.
+    - Accepted standing remains 52/53 and Runtime authority boundaries remain preserved.
   evidence_not_created:
-    - Git tag or GitHub Release
+    - Git tag or GitHub Release publication
     - Deployment or production activation
     - Runtime admission binding invocation participation authority state proof or canonical Runtime receipt
     - Numerical standing transition
     - Repository settings or ruleset mutation
-    - Git history rewrite
+    - Git history rewrite or branch-retention policy change
 stop_condition:
-  - Verify the exact source diff is limited to the six declared paths.
-  - Verify non-circular provenance and release-identity invariants through deterministic validation.
-  - Require exact-head repository validation, CodeQL, and EHCO Assistant Operation Gate success.
-  - Publish the exact qualified candidate as a draft pull request.
-  - Stop before Ready, merge, tag/Release creation, deployment, Runtime action, standing transition, or successor activation.
+  - Verify the exact final COMPLETE ACCEPT head passes required repository/security checks and review threads remain clear.
+  - Confirm the post-review compare changes only ehco.operation.yaml and all five substantive release/provenance paths remain frozen.
+  - Mark PR #34 Ready only after final exact-head qualification and squash-merge only with expected-head protection.
+  - Read back accepted public main and reconcile Drive SOW-007 to accepted closeout.
+  - Stop after accepted-main and Drive reconciliation with automatic successor prohibited and provider REALIZE remaining separate.
