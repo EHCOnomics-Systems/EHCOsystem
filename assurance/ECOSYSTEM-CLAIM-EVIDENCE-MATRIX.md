@@ -44,7 +44,7 @@ This matrix maps material EHCOsystem propositions to current maturity, evidence 
 
 Start with the proposition, identify its owner and lifecycle dimension, then inspect the evidence class that establishes that proposition. Public references and verification methods are tracked separately so reviewers can distinguish the published inspection surface from the underlying source or effect evidence.
 
-Language Model maturity is intentionally capability-based in public representation. Internal development-stage and unit identifiers remain controlled development information rather than public maturity claims.
+Language Model maturity is intentionally capability-based in public representation. Internal development-stage and unit identifiers remain controlled development information; public maturity claims derive from capability and evidence.
 
 ## Revision history
 
