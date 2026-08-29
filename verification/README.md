@@ -25,7 +25,7 @@ python3 verification/validate_release_identity.py
 - EHCO Dashboard current accepted working projection baseline;
 - affirmative capability/maturity representation across active reader-facing public text;
 - Language Model capability-based advanced near-final maturation representation;
-- active reader-facing Language Model maturity prose aligned to capability and evidence;
+- absence of internal Language Model stage/unit/program mechanics from active reader-facing maturity prose;
 - current owner-selected public component scope; and
 - claim/evidence matrix structure.
 
