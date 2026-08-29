@@ -36,5 +36,8 @@ jobs:
       - name: Validate public Language Model test snapshot
         run: python3 verification/validate_public_lm_test_snapshot.py
 
+      - name: Validate public Range Reactor capability snapshot
+        run: python3 verification/validate_public_range_reactor_snapshot.py
+
       - name: Validate canonical public release identity
         run: python3 verification/validate_release_identity.py

@@ -1,0 +1,159 @@
+#!/usr/bin/env python3
+"""Validate the EHCO Range Reactor public capability snapshot and representation."""
+
+from __future__ import annotations
+
+import hashlib
+import json
+import re
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+RR_ROOT = ROOT / "range-reactor"
+SNAPSHOT = RR_ROOT / "evidence" / "public-capability-snapshot-v1"
+MANIFEST = SNAPSHOT / "MANIFEST.json"
+VECTORS = SNAPSHOT / "capability-vectors.json"
+EXPECTED_SOURCE_REVISION = "2ab887e1e82c2c5422223fbd862b288c8c63ee27"
+EXPECTED_VECTOR_SHA256 = "612389A01DA53688CCB0276D0633A3CEA757517DAC736615D089D597424762D1"
+EXPECTED_CAPABILITIES = {
+    "deterministic_replay",
+    "contradiction_preservation",
+    "frontier_preservation",
+    "possible_vs_inevitable",
+    "collapse_with_witness_fibers",
+    "independent_collapse_verification",
+    "source_mutation_identity_sensitivity",
+    "proof_custody_and_grounded_discharge",
+}
+PUBLIC_SURFACES = [
+    "README.md",
+    "LIBRARY.md",
+    "ECOSYSTEM-DILIGENCE.md",
+    "getting-started/START-HERE.md",
+    "architecture/EHCO-TECHNOLOGY-ESTATE.md",
+    "architecture/ecosystem-components-and-participation.md",
+    "architecture/diagrams/README.md",
+    "assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md",
+    "verification/README.md",
+    "range-reactor/README.md",
+    "range-reactor/evidence/public-capability-snapshot-v1/README.md",
+]
+
+
+def require(condition: bool, message: str) -> None:
+    if not condition:
+        raise SystemExit(message)
+
+
+def read_text(relative: str) -> str:
+    path = ROOT / relative
+    require(path.is_file(), f"missing Range Reactor public surface: {relative}")
+    return path.read_text(encoding="utf-8")
+
+
+def load_json(path: Path) -> dict[str, object]:
+    try:
+        value = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, UnicodeError, json.JSONDecodeError) as exc:
+        raise SystemExit(f"unable to read Range Reactor public JSON {path}: {exc}") from exc
+    require(isinstance(value, dict), f"Range Reactor public JSON must be an object: {path}")
+    return value
+
+
+def validate_snapshot() -> None:
+    manifest = load_json(MANIFEST)
+    vectors = load_json(VECTORS)
+    require(manifest.get("schema") == "EHCO_PUBLIC_RANGE_REACTOR_CAPABILITY_SNAPSHOT_MANIFEST_V1", "RR manifest schema drift")
+    require(manifest.get("snapshot_id") == "EHCO-RR-PUBLIC-CAPABILITY-SNAPSHOT-V1", "RR snapshot identity drift")
+    require(manifest.get("owning_source_revision") == EXPECTED_SOURCE_REVISION, "RR accepted source-review revision drift")
+    require(manifest.get("evidence_class") == "SOURCE_REVIEWED_SYNTHETIC_CAPABILITY_EVIDENCE", "RR evidence class drift")
+    require(manifest.get("fixture_count") == 1 and manifest.get("case_count") == 8, "RR manifest count drift")
+    raw = VECTORS.read_bytes()
+    require(hashlib.sha256(raw).hexdigest().upper() == EXPECTED_VECTOR_SHA256, "RR capability vector SHA-256 drift")
+    cases = vectors.get("cases")
+    require(isinstance(cases, list) and len(cases) == 8, "RR capability vector count drift")
+    capabilities = {case.get("capability") for case in cases if isinstance(case, dict)}
+    require(capabilities == EXPECTED_CAPABILITIES, "RR capability category drift")
+    ids = [case.get("id") for case in cases if isinstance(case, dict)]
+    require(ids == [f"RR-PUB-{index:03d}" for index in range(1, 9)], "RR public vector identity drift")
+    fixtures = manifest.get("fixtures")
+    require(isinstance(fixtures, list) and len(fixtures) == 1, "RR fixture manifest structure drift")
+    entry = fixtures[0]
+    require(isinstance(entry, dict), "RR fixture manifest entry invalid")
+    require(entry.get("path") == "capability-vectors.json", "RR fixture path drift")
+    require(entry.get("sha256") == EXPECTED_VECTOR_SHA256, "RR manifest fixture hash drift")
+
+
+def validate_public_representation() -> None:
+    texts = {relative: read_text(relative) for relative in PUBLIC_SURFACES}
+    combined = "\n".join(texts.values())
+    required_phrases = {
+        "README.md": ["mature deterministic proof-carrying implication", "Range Reactor Public Capability Snapshot v1"],
+        "range-reactor/README.md": [
+            "proof-carrying implication, reachability, range and reasoning system",
+            "independent collapse-verification path",
+            "mature deterministic proof-carrying implication, reachability, range and reasoning system with accepted current capability and qualification evidence",
+            "neither extend nor reduce the system-capability maturity claim",
+        ],
+        "architecture/EHCO-TECHNOLOGY-ESTATE.md": [
+            "Range Reactor is a **mature deterministic proof-carrying implication, reachability, range and reasoning system**",
+            "are orthogonal to the established system-capability maturity",
+        ],
+        "architecture/ecosystem-components-and-participation.md": [
+            "**Maturity:** mature deterministic proof-carrying implication, reachability, range and reasoning system with accepted current capability and qualification evidence",
+            "remain orthogonal to the established mature system-capability status",
+        ],
+        "assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md": [
+            "EHCO Range Reactor public capability evidence",
+            "Source-reviewed synthetic capability evidence",
+            "**Mature established system capability** supported by accepted current source and qualification evidence",
+        ],
+        "verification/README.md": ["validate_public_range_reactor_snapshot.py", "eight synthetic capability vectors"],
+        "LIBRARY.md": ["Range Reactor Public Capability Snapshot v1"],
+        "getting-started/START-HERE.md": ["EHCO Range Reactor Public Capability Snapshot v1"],
+    }
+    for relative, phrases in required_phrases.items():
+        for phrase in phrases:
+            require(phrase in texts[relative], f"Range Reactor public representation missing in {relative}: {phrase}")
+
+    controlled_locator = re.compile(r"\bEHCOnomics-Systems/EHCO_Range_Reactor\b", re.IGNORECASE)
+    require(controlled_locator.search(combined) is None, "controlled Range Reactor repository locator present in reader-facing public text")
+
+    internal_identifier = re.compile(r"\bRR-(?:REF|COLLAPSE|MATH|SCHEMA|VAL|VERIFY|ID|HID|DEP|GHCR|REALWORLD|PRODUCTION|RELEASE|PRIME|PRIMORDIA|ACCEPTED)[A-Z0-9-]*-\d+\b", re.IGNORECASE)
+    require(internal_identifier.search(combined) is None, "internal Range Reactor operation/stage identifier present in reader-facing public text")
+    require("refs/heads/" not in combined and "PR #" not in combined, "Range Reactor branch/PR choreography present in public representation")
+
+    downward_qualifiers = (
+        "The component's public maturity is source-and-qualification maturity",
+        "mature deterministic proof-carrying range/reasoning source and qualification estate",
+        "mature deterministic proof-carrying range / reasoning source + qualification",
+    )
+    for phrase in downward_qualifiers:
+        require(phrase not in combined, f"Range Reactor maturity is being narrowed to an evidence/source dimension: {phrase}")
+
+    overclaims = (
+        "Range Reactor is a Runtime participant",
+        "Range Reactor is production deployed",
+        "Range Reactor is Runtime-admitted",
+        "Range Reactor owns Runtime authority",
+    )
+    for phrase in overclaims:
+        require(phrase not in combined, f"Range Reactor lifecycle/authority overclaim detected: {phrase}")
+
+
+def validate_disclosure_boundary() -> None:
+    combined = "\n".join((MANIFEST.read_text(encoding="utf-8"), VECTORS.read_text(encoding="utf-8"), read_text("range-reactor/evidence/public-capability-snapshot-v1/README.md")))
+    require("EHCOnomics-Systems/" not in combined, "controlled repository locator detected in RR snapshot")
+    for marker in ("BEGIN PRIVATE KEY", "api_key=", "password=", "github_pat_"):
+        require(marker not in combined, f"RR snapshot disclosure marker detected: {marker}")
+
+
+def main() -> None:
+    validate_snapshot()
+    validate_public_representation()
+    validate_disclosure_boundary()
+    print("public Range Reactor capability snapshot validation: PASS (8 vectors)")
+
+
+if __name__ == "__main__":
+    main()

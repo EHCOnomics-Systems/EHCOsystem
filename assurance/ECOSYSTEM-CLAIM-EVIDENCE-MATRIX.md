@@ -1,12 +1,12 @@
 ---
 title: Ecosystem Claim to Evidence Matrix
-version: 1.6
+version: 1.7
 status: current-public-assurance-reference
 published: 2026-08-28
 maintainer: EHCOnomics
 evidence_class: claim-to-evidence-navigation
 evidence_scope: public claim, maturity, evidence and verification mapping
-supersedes: version 1.5
+supersedes: version 1.6
 ---
 
 # Ecosystem Claim → Evidence Matrix
@@ -22,7 +22,8 @@ This matrix maps material EHCOsystem propositions to current maturity, evidence 
 | EHCO Dashboard | Tier Three projection baseline | Current accepted working Dashboard baseline and principal presently established Tier Three projection baseline within the portability estate | Accepted working projection baseline | Controlled portability baseline + ecosystem architecture | [EHCOsystem Architecture](../architecture/EHCO-TECHNOLOGY-ESTATE.md); [Diagrams](../architecture/diagrams/README.md) | Governed working-baseline and architecture review | 2026-08-28 | Tier Three projection baseline |
 | EHCO Language Model | Principal shared spine | Mature deterministic computational-language system using `SINGLE_PATH / EXPLICIT_EHCO_COMPUTATION / ZERO_WEIGHT_ONLY / ZERO WEIGHTS TRAINED` | **Advanced near-final maturation** focused on strengthening computational meaning, linguistic and reasoning depth, evidence/owner integration, and integrated deterministic qualification across an established source foundation | Governed architecture + accepted implementation/qualification source | [Language Model](../language-model/README.md); [EHCOsystem Architecture](../architecture/EHCO-TECHNOLOGY-ESTATE.md) | Current accepted owning-source and lifecycle-evidence review; active development direction reviewed separately from accepted capability | 2026-08-28 | Deterministic language implementation, qualification and capability-based maturation |
 | EHCO Language Model public test evidence | Shared-spine evidence package | Seven exact synthetic fixtures / 62 cases with expected dispositions and provenance bindings | Published exact test-artifact snapshot within deeper controlled qualification estate | Exact public artifact identity + repository validation | [Public Test Snapshot v1](../language-model/evidence/public-test-snapshot-v1/README.md) | Inspect exact fixtures/manifest and run snapshot validator | 2026-08-28 | Selected test-artifact identity and design |
-| EHCO Range Reactor | Principal shared spine | Mature deterministic implication, reachability, range and reasoning owner with reference, verification, service, container, production-control and interoperability source | Qualified accepted lineage integrated into current source | Governed architecture + accepted source/qualification identity | [EHCOsystem Architecture](../architecture/EHCO-TECHNOLOGY-ESTATE.md) | Current owning-source and accepted-lineage review | 2026-08-28 | Deterministic range/reasoning implementation and qualification maturity |
+| EHCO Range Reactor | Principal shared spine | Mature deterministic proof-carrying implication, reachability, range and reasoning system with executable reference semantics, identity/replay, contradiction/frontier preservation, independently verified finite semantic collapse, service/container source, production/release controls and Prime/Primordia interoperability | **Mature established system capability** supported by accepted current source and qualification evidence | Governed architecture + accepted source/qualification identity | [Range Reactor](../range-reactor/README.md); [EHCOsystem Architecture](../architecture/EHCO-TECHNOLOGY-ESTATE.md) | Current accepted owning-source review plus dedicated public capability validation; deployment and Runtime dimensions reviewed separately | 2026-08-28 | Deterministic range/reasoning implementation, qualification and capability maturity |
+| EHCO Range Reactor public capability evidence | Shared-spine evidence package | Eight public-safe source-reviewed synthetic capability vectors with manifest identity and bounded evidence ceiling | Published synthetic capability snapshot bound to accepted owning-source review | Source-reviewed synthetic capability evidence + repository validation | [Public Capability Snapshot v1](../range-reactor/evidence/public-capability-snapshot-v1/README.md) | Inspect vectors/manifest and run dedicated Range Reactor snapshot validator | 2026-08-28 | Selected Range Reactor capability propositions and public-safe evidence design |
 | EHCO RAG | Principal shared spine | Governed retrieval, context, source custody, provenance and evidence system | Accepted 23/23 controlled baseline; Stage 1 implementation active | Governed architecture + controlled implementation source | [EHCOsystem Architecture](../architecture/EHCO-TECHNOLOGY-ESTATE.md) | Current controlled source and governing-control review | 2026-08-28 | Retrieval/evidence architecture and Stage 1 implementation maturity |
 | EHCO Prime | Principal shared spine | Persistent individual-facing relationship and assistant-coordination service | Advanced/mature source/control; Stage 8 production-build/rehearsal hardening established in source/control | Governed component architecture + accepted source/control | [EHCOsystem Architecture](../architecture/EHCO-TECHNOLOGY-ESTATE.md) | Current source/control review | 2026-08-28 | Relationship-service source/control maturity |
 | EHCO Agent Connect | Principal shared spine | Registry, discovery, compatibility, health-observation, candidate-routing and route-evidence coordination service | Advanced/mature source/control; Stage 8 production-build/rehearsal hardening established in source/control | Governed component architecture + accepted source/control | [EHCOsystem Architecture](../architecture/EHCO-TECHNOLOGY-ESTATE.md) | Current source/control review | 2026-08-28 | Coordination-service source/control maturity |
@@ -46,10 +47,12 @@ Start with the proposition, identify its owner and lifecycle dimension, then ins
 
 Language Model maturity is intentionally capability-based in public representation. Internal development-stage and unit identifiers remain controlled development information; public maturity claims derive from capability and evidence.
 
+Range Reactor maturity is likewise capability-based in public representation: the system is represented as mature where accepted source and qualification evidence establish that capability. Its public snapshot exposes bounded source-reviewed synthetic evidence, while deployment, production activation and Runtime participation remain separate evidence classes rather than downward qualifiers on system maturity.
+
 ## Revision history
 
 | Version | Date | Change |
 |---|---|---|
+| 1.7 | 2026-08-28 | Added first-class Range Reactor capability and public evidence rows with dedicated verification routing. |
 | 1.6 | 2026-08-28 | Recast Language Model maturity as advanced near-final strengthening of an accepted deterministic capability foundation and separated public maturity from internal development sequencing. |
 | 1.5 | 2026-08-28 | Recast every row as an affirmative claim/evidence relationship, refreshed component maturity, and aligned the public component set to current publication scope. |
-| 1.4 | 2026-08-28 | Added differentiated maturity and source-review dates. |

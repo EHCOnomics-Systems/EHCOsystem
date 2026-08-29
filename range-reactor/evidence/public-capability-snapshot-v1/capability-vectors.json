@@ -1,0 +1,64 @@
+{
+  "schema": "EHCO_PUBLIC_RANGE_REACTOR_CAPABILITY_VECTORS_V1",
+  "snapshot_id": "EHCO-RR-PUBLIC-CAPABILITY-SNAPSHOT-V1",
+  "evidence_class": "SOURCE_REVIEWED_SYNTHETIC_CAPABILITY_EVIDENCE",
+  "case_count": 8,
+  "cases": [
+    {
+      "id": "RR-PUB-001",
+      "capability": "deterministic_replay",
+      "synthetic_setup": "Two evaluations receive the same normalized bounded input and the same source identity.",
+      "expected_property": "The evaluation identity and result identity remain equal across replay.",
+      "boundary": "This demonstrates the published deterministic-replay proposition only."
+    },
+    {
+      "id": "RR-PUB-002",
+      "capability": "contradiction_preservation",
+      "synthetic_setup": "A bounded state contains evidence supporting both a proposition and its negation.",
+      "expected_property": "The contradiction remains represented rather than being silently coerced into a clean true or false state.",
+      "boundary": "This vector does not establish generalized theorem proving."
+    },
+    {
+      "id": "RR-PUB-003",
+      "capability": "frontier_preservation",
+      "synthetic_setup": "Exploration reaches its declared finite bound while additional behavior may remain available.",
+      "expected_property": "A frontier is retained and completion is not manufactured from bounded non-observation.",
+      "boundary": "Global exhaustion is outside this vector."
+    },
+    {
+      "id": "RR-PUB-004",
+      "capability": "possible_vs_inevitable",
+      "synthetic_setup": "One complete branch reaches the requested predicate while another complete branch does not.",
+      "expected_property": "Possible reachability and inevitable reachability remain distinct classifications.",
+      "boundary": "The vector is branch-modal and finite."
+    },
+    {
+      "id": "RR-PUB-005",
+      "capability": "collapse_with_witness_fibers",
+      "synthetic_setup": "Two distinct concrete histories reach states that are equivalent under the selected finite semantic observation contract.",
+      "expected_property": "The semantic states may share one quotient class while both concrete histories remain retained in the witness fiber.",
+      "boundary": "Trace-sensitive and fairness-sensitive quotienting require their own evidence."
+    },
+    {
+      "id": "RR-PUB-006",
+      "capability": "independent_collapse_verification",
+      "synthetic_setup": "A proposed quotient contains a forged class membership or certificate identity.",
+      "expected_property": "Independent verification rejects the forged quotient rather than allowing the proposal to prove itself.",
+      "boundary": "This represents the accepted finite verification law, not generalized collapse completeness."
+    },
+    {
+      "id": "RR-PUB-007",
+      "capability": "source_mutation_identity_sensitivity",
+      "synthetic_setup": "A material source/rule identity changes while the visible request remains otherwise comparable.",
+      "expected_property": "The graph or result identity changes so materially different source is not replay-equivalent.",
+      "boundary": "Identity sensitivity is not Runtime authority."
+    },
+    {
+      "id": "RR-PUB-008",
+      "capability": "proof_custody_and_grounded_discharge",
+      "synthetic_setup": "An obligation is presented for discharge without the required grounded proof custody.",
+      "expected_property": "The obligation does not silently become discharged; the reasoning path fails closed or retains the unresolved obligation.",
+      "boundary": "Repository reasoning output does not create Runtime proof or standing."
+    }
+  ]
+}

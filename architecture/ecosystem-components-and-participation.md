@@ -1,11 +1,11 @@
 ---
 title: Ecosystem Components and Runtime Relationships
-version: 2.3
+version: 2.4
 status: current-public-system-architecture
 published: 2026-08-28
 maintainer: EHCOnomics
 evidence_class: controlled-ehco-system-record
-supersedes: version 2.2
+supersedes: version 2.3
 ---
 
 # Ecosystem Components and Runtime Relationships
@@ -37,9 +37,13 @@ EHCOsystem tracks persistent component identity, source maturity, application/se
 
 ### EHCO Range Reactor
 
-**Maturity:** mature deterministic range/reasoning source and qualification estate.
+**Maturity:** mature deterministic proof-carrying implication, reachability, range and reasoning system with accepted current capability and qualification evidence.
 
-**Established source depth:** deterministic implication/reachability reasoning, canonical reference semantics, identity/replay, independent verification, service interfaces, contracts, schemas, container-source definitions, production-profile controls, release controls, Prime purification, Prime-purified Full-Range work, and Primordia collapsed Full-Range producer interoperability.
+**Established source depth:** deterministic implication/reachability reasoning; executable reference semantics; typed query/event/proof/result custody; canonical identity/replay; contradiction, remainder and frontier preservation; possible/inevitable reachability distinctions; independently verified finite semantic collapse with retained witness fibers; service interfaces; contracts and schemas; container-source definitions; production-profile and release controls; Prime purification; Prime-purified Full-Range computation; and Primordia collapsed Full-Range producer interoperability.
+
+**Lifecycle separation:** deployment, production activation and Runtime participation are separate evidence dimensions and remain orthogonal to the established mature system-capability status.
+
+**Public evidence:** [component record](../range-reactor/README.md) and [Public Capability Snapshot v1](../range-reactor/evidence/public-capability-snapshot-v1/README.md).
 
 ### EHCO RAG
 
@@ -98,12 +102,13 @@ Tier Three contains interfaces, dashboards, reports, metrics, and public-safe pr
 - [Runtime, Repository, and Test-Estate Boundary](runtime-repository-and-test-estate-boundary.md)
 - [EHCO AI-OS Instantiated System](EHCO-AI-OS-INSTANTIATED-SYSTEM.md)
 - [EHCO Language Model](../language-model/README.md)
+- [EHCO Range Reactor](../range-reactor/README.md)
 - [Ecosystem Claim → Evidence Matrix](../assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md)
 
 ## Revision history
 
 | Version | Date | Change |
 |---|---|---|
+| 2.4 | 2026-08-28 | Expanded the Range Reactor source/qualification capability representation and added its dedicated public evidence route. |
 | 2.3 | 2026-08-28 | Recast Language Model maturity around established capability and advanced near-final strengthening rather than internal development sequencing. |
 | 2.2 | 2026-08-28 | Recast component maturity and Runtime relationships affirmatively, refreshed Language Model depth, and aligned the component set to the current public scope. |
-| 2.1 | 2026-08-28 | Added differentiated maturity and estate lanes. |

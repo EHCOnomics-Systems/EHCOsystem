@@ -1,12 +1,12 @@
 ---
 title: EHCOsystem Public Architecture Diagrams
-version: 1.3
+version: 1.4
 status: current-public-architecture-navigation
 published: 2026-08-28
 maintainer: EHCOnomics
 evidence_class: original-public-safe-architecture-diagrams
 evidence_scope: explanatory architecture relationships
-supersedes: version 1.2
+supersedes: version 1.3
 ---
 
 # EHCOsystem Public Architecture Diagrams
@@ -48,7 +48,7 @@ flowchart LR
     RP[Primary accessible Runtime projection] --> DP[EHCO_DOCKER_PORTABILITY]
     V[Working projection baseline] --> DASH[EHCO Dashboard]
     L[Deterministic computational language] --> LM[EHCO Language Model]
-    Q[Bounded range / reasoning computation] --> RR[EHCO Range Reactor]
+    Q[Proof-carrying implication / reachability<br/>range / reasoning computation] --> RR[EHCO Range Reactor]
     E[Retrieval / context / provenance / evidence] --> RAG[EHCO RAG]
     P[Persistent individual relationship] --> PRIME[EHCO Prime]
     C[Registry / discovery / candidate routing] --> AC[EHCO Agent Connect]
@@ -71,7 +71,7 @@ flowchart TD
 
     subgraph Spine[Principal shared downstream component spine]
         LM[Language Model<br/>mature deterministic computational language<br/>advanced near-final maturation]
-        RR[Range Reactor<br/>mature deterministic range / reasoning]
+        RR[Range Reactor<br/>mature deterministic proof-carrying<br/>implication / reachability / range / reasoning]
         RAG[RAG<br/>accepted controlled baseline<br/>Stage 1 implementation active]
         PRIME[Prime<br/>mature relationship-service source/control]
         AC[Agent Connect<br/>mature coordination-service source/control]
@@ -104,7 +104,7 @@ flowchart TD
     RT -->|governed Runtime relationships| Apps
 ```
 
-**Interpretation:** the foundational/shared spine is substantially established. The Language Model's mature deterministic foundation is in advanced near-final strengthening and qualification. Current ecosystem development also includes RAG implementation, research/foundation reconciliation, and continuing domain/application expansion.
+**Interpretation:** the foundational/shared spine is substantially established. The Language Model's mature deterministic foundation is in advanced near-final strengthening and qualification. Range Reactor is a mature deterministic proof-carrying implication/reachability and range/reasoning system, with accepted source and qualification evidence supporting that maturity and a dedicated public evidence route. Deployment and Runtime participation remain separate evidence dimensions. Current ecosystem development also includes RAG implementation, research/foundation reconciliation, and continuing domain/application expansion.
 
 ## 4. Technical evidence progression
 
@@ -125,12 +125,12 @@ flowchart LR
 
 ## Reading route
 
-Use these diagrams for orientation, then follow the [Ecosystem Claim → Evidence Matrix](../../assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md) for claim-specific evidence and the [Runtime, Repository, and Test-Estate Boundary](../runtime-repository-and-test-estate-boundary.md) for evidence-domain ownership.
+Use these diagrams for orientation, then follow the [Ecosystem Claim → Evidence Matrix](../../assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md) for claim-specific evidence, the [Range Reactor component record](../../range-reactor/README.md) for Range Reactor capability detail, and the [Runtime, Repository, and Test-Estate Boundary](../runtime-repository-and-test-estate-boundary.md) for evidence-domain ownership.
 
 ## Revision history
 
 | Version | Date | Change |
 |---|---|---|
+| 1.4 | 2026-08-28 | Expanded Range Reactor computational ownership and public evidence routing. |
 | 1.3 | 2026-08-28 | Recast Language Model maturity as advanced near-final strengthening of an established deterministic system rather than an internal development-stage projection. |
 | 1.2 | 2026-08-28 | Recast all diagrams around affirmative ownership, capability and maturity relationships and aligned the component set to the current public scope. |
-| 1.1 | 2026-08-28 | Added differentiated component maturity and the Dashboard projection baseline. |
