@@ -35,11 +35,11 @@ Executable verification tooling validates public repository structure, identity,
 
 ## Stable repository provenance baseline
 
-`ehco.repository.yaml` is the stable repository identity and boundary record. Its `provenance.accepted_commit` identifies the commit that accepted the stable manifest/boundary baseline represented by that file; it is not an alias for current `main`.
+`ehco.repository.yaml` is the stable repository identity and boundary record. Its `provenance.accepted_commit` identifies the commit that accepted the stable manifest/boundary baseline represented by that file, independently from current `main`.
 
 For the current stable EHCOsystem manifest baseline, the accepted commit is `eff9301e7c5ddfc0759ee0d7e3c026ad28c5670c`, the PR #24 merge that last changed and accepted the current manifest bytes.
 
-The public repository is a source-only `PUBLIC_EVIDENCE` projection and does not define a separately built repository artifact. Its repository-level `provenance.artifact_digest` therefore records `NOT_APPLICABLE_SOURCE_ONLY_PUBLIC_PROJECTION_NO_SEPARATE_BUILD_ARTIFACT`. This avoids a circular self-hash and does not borrow the digest of any unrelated dossier, evidence packet, Dashboard derivative, Language Model fixture or Range Reactor record.
+The public repository is a source-only `PUBLIC_EVIDENCE` projection. Its repository-level `provenance.artifact_digest` records `NOT_APPLICABLE_SOURCE_ONLY_PUBLIC_PROJECTION_NO_SEPARATE_BUILD_ARTIFACT`, explicitly classifying the repository publication object as source-only. Dossier, evidence-packet, Dashboard-derivative, Language Model fixture and Range Reactor digests remain independently bound to their respective evidence objects.
 
 Those public artifacts retain their own established identities and evidence classes.
 
@@ -47,7 +47,7 @@ Those public artifacts retain their own established identities and evidence clas
 
 The registered public release identity is version `1.0.0`, tag `v1.0.0-public`, with release title `EHCOsystem Public Architecture and Evidence Baseline v1.0.0`.
 
-Registered release identity and live provider publication are distinct publication states. The GitHub tag and GitHub Releases surfaces establish live release materialization when those provider objects exist; repository documentation alone does not create them.
+Registered release identity and live provider publication are separate publication states. The GitHub tag and GitHub Releases surfaces establish live release materialization when those provider objects exist; repository documentation records the registered publication identity.
 
 ## Protected implementation custody
 
@@ -70,6 +70,6 @@ For the shortest public route, see [EHCO AI-OS Technical Diligence](TECHNICAL-DI
 
 | Version | Date | Change |
 |---|---|---|
-| 1.2 | 2026-08-29 | Define the non-circular stable-manifest provenance baseline, source-only repository artifact-digest treatment and separation of registered release identity from live provider publication. |
+| 1.2 | 2026-08-29 | Define the stable-manifest provenance baseline, source-only repository artifact-digest treatment and separation of registered release identity from live provider publication. |
 | 1.1 | 2026-08-28 | Recast provenance around affirmative evidence ownership, classification and review routing. |
 | 1.0 | 2026-08-10 | Initial provenance reference. |
