@@ -5,40 +5,44 @@ protocol_reference:
   profile_version: 1.0.0
   protocol_version: 1.0.0
 repository: EHCOnomics-Systems/EHCOsystem
-governed_object: PUBLIC_EHCOSYSTEM_AFFIRMATIVE_REPRESENTATION_RECONCILIATION
+governed_object: PUBLIC_EHCOSYSTEM_LANGUAGE_MODEL_CAPABILITY_BASED_MATURITY_REPRESENTATION
 source_owner:
   repository: EHCOnomics-Systems/EHCOsystem
-  revision: 44758824682c87be74200c908ebc549137b9f458
+  revision: 2f87a39c801ddd1e7a582f7302fb9ec65cae57ea
   repository_manifest_path: ehco.repository.yaml
-  controlling_source_reference: Drive EHCO-PUB-SOW-002
+  controlling_source_reference: Drive EHCO-PUB-SOW-004
 selection:
   selected_by: Edward Henry
   selection_class: EXPLICIT_OWNER_DIRECTION
   durable_reference: >-
-    Edward Henry owner acceptance 2026-08-28 selects ACCEPT and closeout of EHCOsystem PR #27 on exact reviewed PUBLISH head 2584256bf5db2b1ffe35e2c99910143b1e1e1dc0 and accepted squash-merge main 44758824682c87be74200c908ebc549137b9f458. ACCEPT is limited to exact-head verification, owner acceptance, squash merge, one-file operation-control closeout, final exact-head qualification, accepted-main readback, and Drive reconciliation. It does not select artifact release, deployment, Runtime action, authority, participation, proof-state, standing change, history rewrite, repository settings change, ruleset weakening, bypass, or automatic successor activation. OPERATION_STABLE_ENVELOPE_CHANGE=true
-  source_base_revision: 44758824682c87be74200c908ebc549137b9f458
-  expected_reviewed_head_revision: 2584256bf5db2b1ffe35e2c99910143b1e1e1dc0
+    Edward Henry owner direction selects EHCO-PUB-SOW-004 to reconcile EHCOsystem public Language Model maturity to accepted owning-source capability and evidence. Public reader-facing representation shall describe the mature deterministic computational-language system through established capability and an advanced near-final maturation cycle focused on strengthening, deepening, integration and qualification, while internal Language Model stage/unit identifiers, branch choreography, ordered completion mechanics and transient gate state remain controlled development information. The Language Model owning repository is read-only evidence input and is not modified. Standing, Runtime, authority/proof, deployment, release and Language Model development effects remain NONE. OPERATION_STABLE_ENVELOPE_CHANGE=true
+  source_base_revision: 2f87a39c801ddd1e7a582f7302fb9ec65cae57ea
+  expected_reviewed_head_revision: NOT_APPLICABLE_UNTIL_ACCEPT
 control_anchor: AGENTS.md
 status_owner_path: ehco.operation.yaml
 accepted_standing: 52/53
 active_operation:
-  operation_id: EHCO-PUBLIC-AFFIRMATIVE-REPRESENTATION-ACCEPT-CLOSEOUT-001
-  state: COMPLETE
-  authorization_mode: ACCEPT
+  operation_id: EHCO-PUBLIC-LM-CAPABILITY-MATURITY-REPRESENTATION-001
+  state: ACTIVE
+  authorization_mode: PUBLISH
   bounded_outcome: >-
-    Owner-accept and close the exact qualified affirmative EHCOsystem public representation while preserving the accepted public source, evidence integrity, current component maturity representation, private-pilot exclusion, Language Model current-source depth, and GitHub-native control baseline.
-  remaining_bounded_work: []
+    Publish an exact-head-qualified EHCOsystem candidate whose active public Language Model narrative is capability-based, affirmative and source-grounded; removes stale internal stage/unit maturity presentation; preserves accepted capability/evidence distinctions; and machine-enforces the public representation rule.
+  remaining_bounded_work:
+    - Reconcile all selected reader-facing Language Model maturity surfaces.
+    - Strengthen public validation against internal-stage maturity presentation drift.
+    - Run exact-head qualification and reconcile any in-scope failures.
+    - Present the exact qualified candidate for Source ACCEPT and merge under repository rules when acceptance conditions are satisfied.
   interaction_seams:
-    - Reviewed PUBLISH head 2584256bf5db2b1ffe35e2c99910143b1e1e1dc0 passed Validate evidence and public boundaries, CodeQL analysis, CodeQL, and EHCO Assistant Operation Gate; the Ready-for-Review transition re-ran and passed the assistant gate before merge.
-    - Accepted affirmative-representation main 44758824682c87be74200c908ebc549137b9f458 is the exact source base for this one-file ACCEPT closeout.
-    - Google Drive EHCO-PUB-SOW-002 owns the affirmative public-representation direction, private-pilot exclusion, and owner ACCEPT selection.
-    - The accepted public source presents EHCOsystem capability and maturity affirmatively and refreshes the EHCO Language Model from accepted owning source main@39c8402f7f5a7bf18c404fa019aebc165dd0389f.
-    - Hash-bound Public Evidence Companion packets, dossier bytes, exact Language Model test fixtures, MANIFEST.json, stable ehco.repository.yaml, and workflow bytes remain unchanged by this closeout.
+    - Google Drive EHCO-PUB-SOW-004 owns capability-based public maturity meaning and the disclosure boundary.
+    - EHCOsystem main@2f87a39c801ddd1e7a582f7302fb9ec65cae57ea is the exact public source base.
+    - Direct EHCOnomics-Systems/ehco_Language-Model_v1 owning Git establishes accepted Language Model implementation currentness and may be inspected read-only for public representation evidence.
+    - Accepted Language Model main@1382974ee309451b8c242b675efe78a689626d89 establishes the accepted source basis used for this reconciliation.
+    - Active Language Model candidate development may inform qualitative strengthening direction but does not establish accepted source capability until accepted in its owning repository.
     - INSTANTIATED_EHCO_RUNTIME retains Tier One Runtime authority and current Runtime state.
   non_overlap:
-    - This ACCEPT closeout changes only ehco.operation.yaml after accepted affirmative-representation main 44758824682c87be74200c908ebc549137b9f458.
-    - README, architecture, assurance, diligence, navigation, evidence, release-register, validators, AGENTS.md, workflows, immutable evidence, and ehco.repository.yaml bytes remain unchanged during ACCEPT closeout.
-    - No artifact, Git tag, GitHub Release, deployment, Runtime, authority, participation, proof-state, standing, history, repository-settings, ruleset, or successor effect is selected.
+    - No Language Model source, controls, tests, branches, pull requests or lifecycle state are modified by this operation.
+    - No immutable public evidence packet, dossier, exact Language Model fixture artifact or stable ehco.repository.yaml identity/boundary field is rewritten for presentation.
+    - No artifact, Git tag, GitHub Release, deployment, Runtime, authority, participation, proof-state, standing, repository-settings, ruleset-weakening or successor effect is selected.
   automatic_successor: PROHIBITED
   successor_operation: NOT_SELECTED
 execution_continuity:
@@ -54,29 +58,33 @@ execution_continuity:
 scope:
   permitted_paths:
     - ehco.operation.yaml
+    - README.md
+    - ECOSYSTEM-DILIGENCE.md
+    - architecture/EHCO-TECHNOLOGY-ESTATE.md
+    - architecture/ecosystem-components-and-participation.md
+    - architecture/diagrams/README.md
+    - assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md
+    - language-model/README.md
+    - verification/README.md
+    - verification/validate_public_evidence.py
   controlled_paths:
     - ehco.operation.yaml
+    - verification/validate_public_evidence.py
   prohibited_paths:
     - AGENTS.md
     - ehco.repository.yaml
-    - .github/workflows/ehco-assistant-operation-gate.yml
-    - .github/workflows/ehco-assistant-operation-gate-bootstrap.yml
-    - README.md
+    - .github/workflows/**
     - LIBRARY.md
     - NOTICE.md
     - PROVENANCE.md
     - GOVERNANCE.md
     - SECURITY.md
-    - ECOSYSTEM-DILIGENCE.md
     - TECHNICAL-DILIGENCE.md
-    - architecture/**
-    - assurance/**
     - getting-started/**
-    - verification/**
     - releases/**
     - evidence/**
     - dossiers/**
-    - language-model/**
+    - language-model/evidence/**
 change_control:
   control_change_declared: true
   delete_or_move_authorized: false
@@ -87,22 +95,20 @@ change_control:
     - update_file
     - run_checks
   local_actions_prohibited:
-    - propose
-    - create_file
     - move_file
     - delete_file
     - generate_artifact
   remote_actions_authorized:
-    - mark_pull_request_ready_for_review
-    - merge_pull_request
-    - record_owner_acceptance
-    - close_operation
-  remote_actions_prohibited:
     - create_branch
     - commit
     - push
     - open_draft_pull_request
     - update_draft_pull_request
+    - mark_pull_request_ready_for_review
+    - merge_pull_request
+    - record_owner_acceptance
+    - close_operation
+  remote_actions_prohibited:
     - activate_selected_successor
     - modify_repository_settings
     - modify_drive_controls
@@ -123,34 +129,35 @@ effects:
   external_effect: NONE
 bridge:
   applicability: NOT_APPLICABLE_NON_PARTICIPANT
-  non_applicability_reason: Public repository source acceptance and operation closure is not Runtime participation.
+  non_applicability_reason: Public repository source representation is separate from Runtime participation.
   direct_invocation: PROHIBITED
   runtime_admission_status: NOT_ESTABLISHED
   participation_binding_status: NOT_ESTABLISHED
   canonical_runtime_receipt_status: NOT_ESTABLISHED
 evidence:
-  evidence_class: OWNER_ACCEPTANCE_RECORD
+  evidence_class: PUBLIC_SOURCE_REPRESENTATION_QUALIFICATION
   required_checks:
-    - Exact source base remains accepted affirmative-representation main 44758824682c87be74200c908ebc549137b9f458.
-    - Reviewed PUBLISH head remains 2584256bf5db2b1ffe35e2c99910143b1e1e1dc0 and its required evidence families remain successful.
-    - Final changed-path set remains exactly ehco.operation.yaml.
-    - Exact final COMPLETE head must pass Validate evidence and public boundaries, CodeQL, and EHCO Assistant Operation Gate.
-    - Post-acceptance compare from 44758824682c87be74200c908ebc549137b9f458 to final COMPLETE head must show ehco.operation.yaml as the sole delta.
-    - Closeout pull request must be merged only with expected-head protection after final exact-head qualification.
-    - Accepted public main must be read back after merge and reconciled to Drive.
+    - Changed paths remain within the exact SOW-004 permitted path set.
+    - Active reader-facing Language Model maturity uses capability-based affirmative representation and contains no internal DF stage/unit maturity projection.
+    - Accepted Language Model capability claims remain grounded in accepted owning source main@1382974ee309451b8c242b675efe78a689626d89.
+    - Active Language Model development direction is represented qualitatively and is not promoted to accepted capability.
+    - Existing affirmative public-representation, private-program exclusion, disclosure, dossier, evidence, link, secret-indicator and release-identity validations remain green.
+    - Exact reviewed head passes Validate evidence and public boundaries, CodeQL and EHCO Assistant Operation Gate before acceptance.
+    - Post-merge accepted main is read back and reconciled to Drive SOW-004.
   proves:
-    - Owner acceptance and closure of the bounded affirmative public-representation operation on the exact reviewed, qualified, merged, and closed source chain.
-    - Accepted public main presents EHCOsystem and its published component estate through affirmative capability and current maturity representation while preserving source ownership and evidence integrity.
-    - Owner-selected private pilot programs remain excluded from active public representation and the Language Model public narrative reflects the selected current source-supported depth.
+    - The EHCOsystem public Language Model story is capability-based, affirmative, source-grounded and resilient to internal stage-number churn.
+    - Public readers can understand established depth and current strengthening direction without exposure of internal development sequencing.
   evidence_not_created:
+    - Formal final Language Model completion
+    - Language Model Source ACCEPT for active owning-repository candidate work
     - Artifact publication or release
     - Deployment or production activation
     - Runtime participation admission binding invocation persistence or canonical Runtime receipt
     - Authority proof external operational consequence or numerical standing change
-    - Repository settings or ruleset mutation
 stop_condition:
-  - Verify the exact final COMPLETE head passes all required evidence families while preserving accepted affirmative-representation main as source base.
-  - Confirm the post-acceptance compare changes only ehco.operation.yaml.
-  - Merge the closeout pull request only with expected-head protection after exact-head qualification.
-  - Read back accepted public main and governing controls after merge.
-  - Reconcile the exact accepted source result to Drive and stop. Do not activate a successor automatically.
+  - Reconcile the exact bounded public surfaces and validator.
+  - Verify the exact candidate head passes all required repository evidence families.
+  - Present and accept only the exact qualified candidate under repository rules.
+  - Merge only with expected-head protection after qualification.
+  - Read back accepted public main and reconcile the exact source result to Drive SOW-004.
+  - Stop with automatic successor prohibited.
