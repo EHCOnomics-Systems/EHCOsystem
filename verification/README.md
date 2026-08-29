@@ -23,7 +23,8 @@ python3 verification/validate_release_identity.py
 - `EHCO_DOCKER_PORTABILITY` projection classification;
 - EHCO Dashboard current accepted working projection baseline;
 - affirmative capability/maturity representation across active reader-facing public text;
-- Language Model current Deep Final Completion representation;
+- Language Model capability-based advanced near-final maturation representation;
+- absence of internal Language Model stage/unit/program mechanics from active reader-facing maturity prose;
 - current owner-selected public component scope; and
 - claim/evidence matrix structure.
 
