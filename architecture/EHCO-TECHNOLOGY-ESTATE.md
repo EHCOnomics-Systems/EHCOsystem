@@ -56,7 +56,7 @@ Its accepted source estate includes the Language Kernel, Language Math, determin
 
 The component is in an **advanced near-final maturation cycle**. Its established deterministic implementation and qualification foundation is being strengthened through deeper computational meaning, linguistic productivity, context/discourse capability, deterministic reasoning and transformation, evidence/owner integration, and increasingly integrated qualification across the same single computational-language path.
 
-Public maturity is expressed through established capability and evidence. Internal development stage/unit mechanics remain in the controlled development estate and do not define the public maturity model.
+Public maturity is expressed through established capability and evidence. Internal development stage/unit mechanics remain in the controlled development estate; the public maturity model is capability-based.
 
 The public evidence estate includes seven exact synthetic fixtures covering **62 cases** plus a qualification index spanning replay, metamorphic, structural, adversarial, conformance, resource-bound, recursion, and service-boundary testing.
 
