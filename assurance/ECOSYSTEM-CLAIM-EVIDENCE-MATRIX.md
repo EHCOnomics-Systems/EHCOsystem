@@ -1,12 +1,12 @@
 ---
 title: Ecosystem Claim to Evidence Matrix
-version: 1.5
+version: 1.6
 status: current-public-assurance-reference
 published: 2026-08-28
 maintainer: EHCOnomics
 evidence_class: claim-to-evidence-navigation
 evidence_scope: public claim, maturity, evidence and verification mapping
-supersedes: version 1.4
+supersedes: version 1.5
 ---
 
 # Ecosystem Claim → Evidence Matrix
@@ -20,7 +20,7 @@ This matrix maps material EHCOsystem propositions to current maturity, evidence 
 | EHCO AI-OS | Tier One Runtime foundation | Realized Tier One Runtime and governing foundation with accepted standing **52/53** | `REALIZED / COMPLETE_IN_ACCEPTED_SCOPE` at the accepted public evidence level | Controlled architecture + accepted standing/proof projection | [Instantiated System](../architecture/EHCO-AI-OS-INSTANTIATED-SYSTEM.md); [Public Evidence Companion](../evidence/README.md) | Inspect public system/proof records and packet evidence | 2026-08-28 | Tier One architecture and accepted standing projection |
 | EHCO_DOCKER_PORTABILITY | Primary accessible Runtime projection | `PRIMARY_ACCESSIBLE_RUNTIME_PROJECTION` of the established EHCO AI-OS hardened Runtime/root-image lineage | Established lineage/projection classification | Controlled AI-OS architecture + governed portability baseline | [EHCOsystem Architecture](../architecture/EHCO-TECHNOLOGY-ESTATE.md); [Diagrams](../architecture/diagrams/README.md) | Governed architecture and portability-baseline review | 2026-08-28 | Runtime-projection lineage |
 | EHCO Dashboard | Tier Three projection baseline | Current accepted working Dashboard baseline and principal presently established Tier Three projection baseline within the portability estate | Accepted working projection baseline | Controlled portability baseline + ecosystem architecture | [EHCOsystem Architecture](../architecture/EHCO-TECHNOLOGY-ESTATE.md); [Diagrams](../architecture/diagrams/README.md) | Governed working-baseline and architecture review | 2026-08-28 | Tier Three projection baseline |
-| EHCO Language Model | Principal shared spine | Mature deterministic computational-language system using `SINGLE_PATH / EXPLICIT_EHCO_COMPUTATION / ZERO_WEIGHT_ONLY / ZERO WEIGHTS TRAINED` | Deep Final Completion active; DF-01 Units 1 and 2 integrated into accepted current source | Governed architecture + accepted implementation/qualification source | [Language Model](../language-model/README.md); [EHCOsystem Architecture](../architecture/EHCO-TECHNOLOGY-ESTATE.md) | Current owning-source and lifecycle-evidence review | 2026-08-28 | Deterministic language implementation, qualification and finalization maturity |
+| EHCO Language Model | Principal shared spine | Mature deterministic computational-language system using `SINGLE_PATH / EXPLICIT_EHCO_COMPUTATION / ZERO_WEIGHT_ONLY / ZERO WEIGHTS TRAINED` | **Advanced near-final maturation** focused on strengthening computational meaning, linguistic and reasoning depth, evidence/owner integration, and integrated deterministic qualification across an established source foundation | Governed architecture + accepted implementation/qualification source | [Language Model](../language-model/README.md); [EHCOsystem Architecture](../architecture/EHCO-TECHNOLOGY-ESTATE.md) | Current accepted owning-source and lifecycle-evidence review; active development direction reviewed separately from accepted capability | 2026-08-28 | Deterministic language implementation, qualification and capability-based maturation |
 | EHCO Language Model public test evidence | Shared-spine evidence package | Seven exact synthetic fixtures / 62 cases with expected dispositions and provenance bindings | Published exact test-artifact snapshot within deeper controlled qualification estate | Exact public artifact identity + repository validation | [Public Test Snapshot v1](../language-model/evidence/public-test-snapshot-v1/README.md) | Inspect exact fixtures/manifest and run snapshot validator | 2026-08-28 | Selected test-artifact identity and design |
 | EHCO Range Reactor | Principal shared spine | Mature deterministic implication, reachability, range and reasoning owner with reference, verification, service, container, production-control and interoperability source | Qualified accepted lineage integrated into current source | Governed architecture + accepted source/qualification identity | [EHCOsystem Architecture](../architecture/EHCO-TECHNOLOGY-ESTATE.md) | Current owning-source and accepted-lineage review | 2026-08-28 | Deterministic range/reasoning implementation and qualification maturity |
 | EHCO RAG | Principal shared spine | Governed retrieval, context, source custody, provenance and evidence system | Accepted 23/23 controlled baseline; Stage 1 implementation active | Governed architecture + controlled implementation source | [EHCOsystem Architecture](../architecture/EHCO-TECHNOLOGY-ESTATE.md) | Current controlled source and governing-control review | 2026-08-28 | Retrieval/evidence architecture and Stage 1 implementation maturity |
@@ -44,9 +44,12 @@ This matrix maps material EHCOsystem propositions to current maturity, evidence 
 
 Start with the proposition, identify its owner and lifecycle dimension, then inspect the evidence class that establishes that proposition. Public references and verification methods are tracked separately so reviewers can distinguish the published inspection surface from the underlying source or effect evidence.
 
+Language Model maturity is intentionally capability-based in public representation. Internal development-stage and unit identifiers remain controlled development information; public maturity claims derive from capability and evidence.
+
 ## Revision history
 
 | Version | Date | Change |
 |---|---|---|
+| 1.6 | 2026-08-28 | Recast Language Model maturity as advanced near-final strengthening of an accepted deterministic capability foundation and separated public maturity from internal development sequencing. |
 | 1.5 | 2026-08-28 | Recast every row as an affirmative claim/evidence relationship, refreshed component maturity, and aligned the public component set to current publication scope. |
 | 1.4 | 2026-08-28 | Added differentiated maturity and source-review dates. |

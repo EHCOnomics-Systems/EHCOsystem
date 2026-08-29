@@ -1,12 +1,12 @@
 ---
 title: EHCOsystem Public Architecture Diagrams
-version: 1.2
+version: 1.3
 status: current-public-architecture-navigation
 published: 2026-08-28
 maintainer: EHCOnomics
 evidence_class: original-public-safe-architecture-diagrams
 evidence_scope: explanatory architecture relationships
-supersedes: version 1.1
+supersedes: version 1.2
 ---
 
 # EHCOsystem Public Architecture Diagrams
@@ -70,7 +70,7 @@ flowchart TD
     RT[EHCO AI-OS<br/>Tier One Runtime foundation]
 
     subgraph Spine[Principal shared downstream component spine]
-        LM[Language Model<br/>mature deterministic computational language<br/>Deep Final Completion active]
+        LM[Language Model<br/>mature deterministic computational language<br/>advanced near-final maturation]
         RR[Range Reactor<br/>mature deterministic range / reasoning]
         RAG[RAG<br/>accepted controlled baseline<br/>Stage 1 implementation active]
         PRIME[Prime<br/>mature relationship-service source/control]
@@ -104,7 +104,7 @@ flowchart TD
     RT -->|governed Runtime relationships| Apps
 ```
 
-**Interpretation:** the foundational/shared spine is substantially established. Current development is concentrated in component finalization/hardening, RAG implementation, research/foundation reconciliation, and continuing domain/application expansion.
+**Interpretation:** the foundational/shared spine is substantially established. The Language Model's mature deterministic foundation is in advanced near-final strengthening and qualification. Current ecosystem development also includes RAG implementation, research/foundation reconciliation, and continuing domain/application expansion.
 
 ## 4. Technical evidence progression
 
@@ -131,5 +131,6 @@ Use these diagrams for orientation, then follow the [Ecosystem Claim → Evidenc
 
 | Version | Date | Change |
 |---|---|---|
+| 1.3 | 2026-08-28 | Recast Language Model maturity as advanced near-final strengthening of an established deterministic system rather than an internal development-stage projection. |
 | 1.2 | 2026-08-28 | Recast all diagrams around affirmative ownership, capability and maturity relationships and aligned the component set to the current public scope. |
 | 1.1 | 2026-08-28 | Added differentiated component maturity and the Dashboard projection baseline. |

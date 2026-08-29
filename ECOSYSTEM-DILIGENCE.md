@@ -1,12 +1,12 @@
 ---
 title: EHCOnomics Instantiated AI Ecosystem Technical Diligence
-version: 1.3
+version: 1.4
 status: current-public-diligence-navigation
 published: 2026-08-28
 maintainer: EHCOnomics
 evidence_class: navigation-and-bounded-technical-summary
 evidence_scope: public reviewer route through current architecture and source-grounded evidence
-supersedes: version 1.2
+supersedes: version 1.3
 ---
 
 # EHCOnomics Instantiated AI Ecosystem Technical Diligence
@@ -42,7 +42,7 @@ Review the public hierarchy:
 
 ### 3. Principal shared component spine
 
-- **EHCO Language Model** — mature deterministic computational language under `ZERO_WEIGHT_ONLY / ZERO WEIGHTS TRAINED`, with DF-01 Units 1 and 2 integrated into the owner-selected Deep Final Completion sequence.
+- **EHCO Language Model** — mature deterministic computational language under `ZERO_WEIGHT_ONLY / ZERO WEIGHTS TRAINED`, in an **advanced near-final maturation cycle** focused on strengthening computational meaning, linguistic and reasoning depth, evidence/owner integration, and integrated deterministic qualification.
 - **EHCO Range Reactor** — mature deterministic implication/reachability and range/reasoning owner with qualified accepted lineage and broad reference, verification, service, container, production-control, and interoperability source.
 - **EHCO RAG** — governed retrieval/evidence/context component with an accepted 23/23 controlled baseline and active Stage 1 implementation.
 - **EHCO Prime** — advanced/mature relationship-service source/control with Stage 8 production-build/rehearsal hardening.
@@ -59,6 +59,8 @@ Review **EHCO Energy, Noble Law, EHCO War Room, HTPI, EHCO Project Construct, EH
 ### 6. Inspectable component evidence
 
 The Language Model snapshot provides an exact public component-test package. It includes seven byte-identical selected fixtures, 62 cases, expected dispositions, source/provenance bindings, and an index of deeper qualification dimensions.
+
+Public maturity is described by established capability and evidence rather than internal development stage identifiers. Controlled diligence can examine exact source identity and deeper development/qualification records when a proposition requires that level of inspection.
 
 ## Deep review method
 
@@ -84,5 +86,6 @@ Use the [Runtime, Repository, and Test-Estate Boundary](architecture/runtime-rep
 
 | Version | Date | Change |
 |---|---|---|
+| 1.4 | 2026-08-28 | Recast Language Model maturity around accepted capability and advanced near-final strengthening rather than internal development sequencing. |
 | 1.3 | 2026-08-28 | Recast diligence around affirmative system depth, refreshed shared-component maturity, and aligned the public application set to current publication scope. |
 | 1.2 | 2026-08-28 | Added differentiated maturity and estate-lane review. |

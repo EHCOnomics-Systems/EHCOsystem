@@ -1,12 +1,12 @@
 ---
 title: EHCOsystem — An Instantiated AI Ecosystem
-version: 1.5
+version: 1.6
 status: current-public-architecture
 published: 2026-08-28
 maintainer: EHCOnomics
 evidence_class: controlled-technology-estate-architecture
 evidence_scope: category-to-ecosystem architecture and source-grounded maturity representation
-supersedes: version 1.4
+supersedes: version 1.5
 ---
 
 # EHCOsystem — An Instantiated AI Ecosystem
@@ -54,7 +54,9 @@ The EHCO Language Model is EHCOnomics' deterministic computational-language comp
 
 Its accepted source estate includes the Language Kernel, Language Math, deterministic tokenizer, lexical and morphological computation, syntax and semantic composition, reference and context, evidence binding, deterministic candidate search and resolution, ambiguity and withholding, bounded reasoning, evaluation, component service, schemas, registries, fixtures, deterministic tests, packaging, dependency locks, owner seams, and production-lifecycle source.
 
-The owner-selected **Deep Final Completion** sequence spans DF-01 through DF-10. Accepted current source has integrated **DF-01 Unit 1** and **DF-01 Unit 2**, placing the component in active-estate purification and finalization while preserving its mature deterministic implementation and qualification foundation.
+The component is in an **advanced near-final maturation cycle**. Its established deterministic implementation and qualification foundation is being strengthened through deeper computational meaning, linguistic productivity, context/discourse capability, deterministic reasoning and transformation, evidence/owner integration, and increasingly integrated qualification across the same single computational-language path.
+
+Public maturity is expressed through established capability and evidence. Internal development stage/unit mechanics remain in the controlled development estate; the public maturity model is capability-based.
 
 The public evidence estate includes seven exact synthetic fixtures covering **62 cases** plus a qualification index spanning replay, metamorphic, structural, adversarial, conformance, resource-bound, recursion, and service-boundary testing.
 
@@ -138,5 +140,6 @@ EHCOsystem maps material public propositions to their applicable evidence class.
 
 | Version | Date | Change |
 |---|---|---|
+| 1.6 | 2026-08-28 | Recast Language Model maturity around established capability and advanced near-final strengthening while keeping internal development sequencing in controlled development sources. |
 | 1.5 | 2026-08-28 | Reconciled the estate to affirmative capability/maturity representation, refreshed Language Model depth from current owning source, and aligned the public component set to the current publication scope. |
 | 1.4 | 2026-08-28 | Added the source-grounded qualitative maturity posture and differentiated estate lanes. |

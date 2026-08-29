@@ -63,6 +63,17 @@ AFFIRMATIVE_PUBLIC_TEXT = [
     "releases/PUBLIC-RELEASE-REGISTER.md",
 ]
 
+LM_MATURITY_PUBLIC_TEXT = [
+    "README.md",
+    "ECOSYSTEM-DILIGENCE.md",
+    "architecture/EHCO-TECHNOLOGY-ESTATE.md",
+    "architecture/ecosystem-components-and-participation.md",
+    "architecture/diagrams/README.md",
+    "language-model/README.md",
+    "assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md",
+    "verification/README.md",
+]
+
 TEXT_EXTENSIONS = {".md", ".txt", ".py", ".json", ".yaml", ".yml"}
 PRIVATE_PROGRAM_HASHES = {
     "a0ab87611e3650a456af99ece0ea7cb9f24e9a38f2135ba005f765b4d41c36ad",
@@ -332,12 +343,24 @@ def validate_affirmative_public_representation() -> None:
     checked(personal_locator.search(combined) is None, "Personal-account repository locator present in active public text")
     checked(legacy_tier.search(combined) is None, "Legacy numeric tier terminology present in active public text")
 
+    lm_internal_patterns = [
+        re.compile(r"\bDeep Final Completion\b", re.IGNORECASE),
+        re.compile(r"\bDF-\d+(?:\s+Unit\s+\d+)?\b", re.IGNORECASE),
+        re.compile(r"\bDF-\d+\s+through\s+DF-\d+\b", re.IGNORECASE),
+        re.compile(r"\bcurrent[_ -]?unit\b", re.IGNORECASE),
+        re.compile(r"\bcurrent[_ -]?stage\b", re.IGNORECASE),
+    ]
+    for relative in LM_MATURITY_PUBLIC_TEXT:
+        prose = prose_only(texts[relative])
+        for pattern in lm_internal_patterns:
+            checked(pattern.search(prose) is None, f"Internal Language Model development-stage maturity prose in {relative}: {pattern.pattern}")
+
     required = {
         "README.md": [
             "EHCO AI-OS is the realized Tier One Runtime",
             "foundational and shared EHCOsystem spine is substantially established",
             "ZERO_WEIGHT_ONLY / ZERO WEIGHTS TRAINED",
-            "DF-01 Units 1 and 2 integrated",
+            "advanced near-final maturation cycle",
         ],
         "architecture/INSTANTIATED-AI.md": [
             "Instantiated AI creates the computational conditions under which artificial intelligence may lawfully operate.",
@@ -347,33 +370,34 @@ def validate_affirmative_public_representation() -> None:
         "architecture/EHCO-TECHNOLOGY-ESTATE.md": [
             "EHCO AI-OS is the realized Tier One Runtime",
             "PRIMARY_ACCESSIBLE_RUNTIME_PROJECTION",
-            "Deep Final Completion",
-            "DF-01 Unit 1",
-            "DF-01 Unit 2",
+            "advanced near-final maturation cycle",
             "23 of 23",
         ],
         "architecture/ecosystem-components-and-participation.md": [
-            "Deep Final Completion active",
+            "advanced near-final maturation cycle",
             "Stage 1 implementation active",
             "Stage 8 production-build/rehearsal hardening",
         ],
         "language-model/README.md": [
             "DETERMINISTIC_COMPUTATIONAL_LANGUAGE / SINGLE_PATH / EXPLICIT_EHCO_COMPUTATION / ZERO_WEIGHT_ONLY / ZERO WEIGHTS TRAINED",
-            "Deep Final Completion",
-            "DF-01 Unit 1",
-            "DF-01 Unit 2",
+            "advanced near-final maturation cycle",
             "seven exact synthetic fixtures covering 62 cases",
+            "Public maturity is expressed through established capability and evidence",
         ],
         "assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md": [
             "Affirmative public claim",
             "Evidence scope",
-            "Deep Final Completion active",
+            "Advanced near-final maturation",
             "Accepted 23/23 controlled baseline",
         ],
         "architecture/diagrams/README.md": [
             "EHCO AI-OS",
             "PRIMARY_ACCESSIBLE_RUNTIME_PROJECTION",
-            "Deep Final Completion active",
+            "advanced near-final maturation",
+        ],
+        "verification/README.md": [
+            "Language Model capability-based advanced near-final maturation representation",
+            "absence of internal Language Model stage/unit/program mechanics",
         ],
     }
     for relative, phrases in required.items():

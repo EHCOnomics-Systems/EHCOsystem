@@ -1,16 +1,17 @@
 ---
 title: EHCO Language Model
-version: 2.1
+version: 2.2
 status: current-public-system-record
 published: 2026-08-28
 maintainer: EHCOnomics
 evidence_class: controlled-ehco-system-record
-supersedes: version 2.0
+evidence_scope: capability-based public architecture, maturity and evidence representation
+supersedes: version 2.1
 ---
 
 # EHCO Language Model
 
-The **EHCO Language Model** is EHCOnomics' deterministic computational-language system.
+The **EHCO Language Model** is EHCOnomics' mature deterministic computational-language system.
 
 Its governed architecture is:
 
@@ -33,22 +34,13 @@ The accepted source estate contains:
 - **component packaging** — Dockerfile, dependency locks and component packaging source; and
 - **production-lifecycle source** — governed artifact build, qualification, release, stage-readiness and stage-verification workflows.
 
-## Deep Final Completion
+## Current maturity
 
-The owner-selected finalization program is the **DF-01 through DF-10 Deep Final Completion sequence**:
+The Language Model is in an **advanced near-final maturation cycle**. Its core deterministic linguistic, semantic, mathematical, evaluation, service and qualification foundations are substantially established. Current development strengthens and deepens that established architecture across computational meaning, linguistic productivity, context and discourse, deterministic reasoning and transformation, evidence/owner integration, and integrated qualification.
 
-`DF-01 Active Estate Purification`
-→ `DF-02 Computational Meaning Canonicalization`
-→ `DF-03 Caller-Unstructured Deterministic Language Spine`
-→ `DF-04 Linguistic Depth and Productivity`
-→ `DF-05 Context, Reference, Discourse and Repair`
-→ `DF-06 Language Math, Reasoning, Search and Transformation`
-→ `DF-07 Evidence and Owner Seams`
-→ `DF-08 Full Capability Closure Qualification`
-→ `DF-09 Final Source Resting-State Seal`
-→ `DF-10 Final Artifact Rebuild and Verified Staging`.
+Public maturity is expressed through established capability and evidence. Internal development stage numbers, unit identifiers, branch choreography and transient gate state remain within the controlled development estate; the public maturity model is capability-based.
 
-Current accepted source has integrated **DF-01 Unit 1** and **DF-01 Unit 2**. The current program is purifying the active estate and preparing the deterministic implementation for the subsequent canonicalization, linguistic-depth, reasoning, evidence, closure, seal, and artifact stages.
+Accepted capability claims are grounded in accepted owning source. Active candidate work informs the direction of current strengthening while remaining distinct from accepted-source claims.
 
 ## Public test evidence
 
@@ -79,5 +71,6 @@ The public repository publishes the architecture record, exact selected test fix
 
 | Version | Date | Change |
 |---|---|---|
-| 2.1 | 2026-08-28 | Refreshed the public record from current owning source and represented the deterministic implementation, qualification estate, and Deep Final Completion depth affirmatively. |
+| 2.2 | 2026-08-28 | Recast current maturity around accepted capability and advanced near-final strengthening while keeping internal development sequencing in the controlled development estate. |
+| 2.1 | 2026-08-28 | Refreshed the public record from current owning source and represented the deterministic implementation and qualification estate affirmatively. |
 | 2.0 | 2026-08-25 | Established the capability-first public component record. |

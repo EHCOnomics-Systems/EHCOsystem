@@ -1,11 +1,11 @@
 ---
 title: Ecosystem Components and Runtime Relationships
-version: 2.2
+version: 2.3
 status: current-public-system-architecture
 published: 2026-08-28
 maintainer: EHCOnomics
 evidence_class: controlled-ehco-system-record
-supersedes: version 2.1
+supersedes: version 2.2
 ---
 
 # Ecosystem Components and Runtime Relationships
@@ -27,11 +27,13 @@ EHCOsystem tracks persistent component identity, source maturity, application/se
 
 ### EHCO Language Model
 
-**Maturity:** mature deterministic computational-language system; Deep Final Completion active.
+**Maturity:** mature deterministic computational-language system in an **advanced near-final maturation cycle**.
 
 **Architecture:** `DETERMINISTIC_COMPUTATIONAL_LANGUAGE / SINGLE_PATH / EXPLICIT_EHCO_COMPUTATION / ZERO_WEIGHT_ONLY / ZERO WEIGHTS TRAINED`.
 
-**Established source depth:** Language Kernel; Language Math; deterministic tokenizer; lexical/morphological computation; syntax/semantic composition; reference/context; evidence binding; deterministic search/resolution; ambiguity/withholding; bounded reasoning; evaluation; service boundary; schemas; registries; fixtures; deterministic tests; packaging; dependency locks; owner seams; production-lifecycle source. DF-01 Units 1 and 2 are integrated into accepted current source.
+**Established source depth:** Language Kernel; Language Math; deterministic tokenizer; lexical/morphological computation; syntax/semantic composition; reference/context; evidence binding; deterministic search/resolution; ambiguity/withholding; bounded reasoning; evaluation; service boundary; schemas; registries; fixtures; deterministic tests; packaging; dependency locks; owner seams; production-lifecycle source.
+
+**Current strengthening direction:** deeper computational meaning, linguistic productivity, context/discourse capability, deterministic reasoning/transformation, evidence/owner integration, and integrated deterministic qualification across the established single language path.
 
 ### EHCO Range Reactor
 
@@ -102,5 +104,6 @@ Tier Three contains interfaces, dashboards, reports, metrics, and public-safe pr
 
 | Version | Date | Change |
 |---|---|---|
+| 2.3 | 2026-08-28 | Recast Language Model maturity around established capability and advanced near-final strengthening rather than internal development sequencing. |
 | 2.2 | 2026-08-28 | Recast component maturity and Runtime relationships affirmatively, refreshed Language Model depth, and aligned the component set to the current public scope. |
 | 2.1 | 2026-08-28 | Added differentiated maturity and estate lanes. |
