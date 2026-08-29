@@ -64,7 +64,7 @@ The public evidence estate includes seven exact synthetic fixtures covering **62
 
 EHCO Range Reactor owns bounded deterministic implication, reachability, range, and reasoning computation. Its accepted source lineage includes executable reference semantics; typed query, event, proof, result and standing contracts; deterministic canonical identity and replay; explicit contradiction, remainder and frontier preservation; branch-modal reachability and zero classifications; finite semantic quotient/collapse computation with independent verification and retained witness fibers; service interfaces; container-source definitions; production-profile and release controls; Prime purification; Prime-purified Full-Range computation; and governed Primordia collapsed Full-Range producer interoperability.
 
-The component's public maturity is source-and-qualification maturity. Deployment, production activation and Runtime participation retain their own evidence owners and lifecycle dimensions.
+Range Reactor is a **mature deterministic proof-carrying implication, reachability, range and reasoning system**. Accepted source and qualification evidence establish that capability maturity. Deployment, production activation and Runtime participation remain separate lifecycle/effect dimensions with their own evidence owners; those dimensions do not demote or redefine the established system-capability maturity.
 
 The [Range Reactor public component record](../range-reactor/README.md) provides the capability map. The [Public Capability Snapshot v1](../range-reactor/evidence/public-capability-snapshot-v1/README.md) provides eight public-safe synthetic vectors bound to accepted owning-source review.
 
@@ -146,4 +146,4 @@ EHCOsystem maps material public propositions to their applicable evidence class.
 |---|---|---|
 | 1.7 | 2026-08-28 | Expanded Range Reactor capability depth and added its dedicated public evidence route while preserving lifecycle/evidence separation. |
 | 1.6 | 2026-08-28 | Recast Language Model maturity around established capability and advanced near-final strengthening while keeping internal development sequencing in controlled development sources. |
-| 1.5 | 2026-08-28 | Reconciled the estate to affirmative capability/maturity representation, refreshed Language Model depth from current owning source, and aligned the public component set to the current publication scope. |
+| 1.5 | 2026-08-28 | Reconciled the estate to affirmative capability/maturity representation, refreshed shared-component maturity, and aligned the public component set to the current publication scope. |
