@@ -71,7 +71,7 @@ flowchart TD
 
     subgraph Spine[Principal shared downstream component spine]
         LM[Language Model<br/>mature deterministic computational language<br/>advanced near-final maturation]
-        RR[Range Reactor<br/>mature deterministic proof-carrying<br/>range / reasoning source + qualification]
+        RR[Range Reactor<br/>mature deterministic proof-carrying<br/>implication / reachability / range / reasoning]
         RAG[RAG<br/>accepted controlled baseline<br/>Stage 1 implementation active]
         PRIME[Prime<br/>mature relationship-service source/control]
         AC[Agent Connect<br/>mature coordination-service source/control]
@@ -104,7 +104,7 @@ flowchart TD
     RT -->|governed Runtime relationships| Apps
 ```
 
-**Interpretation:** the foundational/shared spine is substantially established. The Language Model's mature deterministic foundation is in advanced near-final strengthening and qualification. Range Reactor provides mature deterministic proof-carrying implication/reachability and range/reasoning source/qualification capability with a dedicated public evidence route. Current ecosystem development also includes RAG implementation, research/foundation reconciliation, and continuing domain/application expansion.
+**Interpretation:** the foundational/shared spine is substantially established. The Language Model's mature deterministic foundation is in advanced near-final strengthening and qualification. Range Reactor is a mature deterministic proof-carrying implication/reachability and range/reasoning system, with accepted source and qualification evidence supporting that maturity and a dedicated public evidence route. Deployment and Runtime participation remain separate evidence dimensions. Current ecosystem development also includes RAG implementation, research/foundation reconciliation, and continuing domain/application expansion.
 
 ## 4. Technical evidence progression
 
