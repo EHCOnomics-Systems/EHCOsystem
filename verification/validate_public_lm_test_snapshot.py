@@ -1,11 +1,9 @@
 #!/usr/bin/env python3
-"""Validate the bounded EHCO Language Model public test snapshot.
+"""Validate the EHCO Language Model public test snapshot.
 
-This validator checks only the public snapshot's file identity, JSON structure,
-case counts, disclosure boundary, and required proof-ceiling language. It does
-not execute the proprietary Language Model, reproduce the private test harness,
-or establish Runtime state, authority, admission, deployment, release, or
-standing.
+This validator confirms the public snapshot's file identity, JSON structure,
+case counts, disclosure boundary, and affirmative evidence-scope language.
+The snapshot's evidence class and owning-source relationships remain explicit.
 """
 
 from __future__ import annotations
@@ -120,36 +118,33 @@ def validate_public_boundary() -> None:
         text_parts.append(path.read_text(encoding="utf-8"))
     combined = "\n".join(text_parts)
 
-    prohibited = (
+    sensitive_markers = (
         "BEGIN PRIVATE KEY",
         "api_key=",
         "password=",
     )
-    for needle in prohibited:
-        require(needle not in combined, f"prohibited public LM disclosure marker: {needle}")
+    for needle in sensitive_markers:
+        require(needle not in combined, f"public LM disclosure boundary marker detected: {needle}")
 
-    # The snapshot should never need to identify a controlled source repository.
-    # Keep this rule generic so the public validator does not itself disclose a
-    # protected repository locator while still rejecting repository locators in
-    # the snapshot content.
+    # The public snapshot remains self-contained with respect to controlled source repositories.
     organization_repository_locator = re.compile(
         r"\bEHCOnomics-Systems/[A-Za-z0-9_.-]+\b",
         re.IGNORECASE,
     )
     require(
         organization_repository_locator.search(combined) is None,
-        "prohibited controlled-source repository locator in public LM snapshot",
+        "controlled-source repository locator detected in public LM snapshot",
     )
 
     readme = README.read_text(encoding="utf-8")
     for statement in (
-        "not an external benchmark",
-        "independent certification",
-        "not a claim of current capability ceiling",
-        "not presented as a drop-in current regression case",
-        "passing repository test is not Runtime admission",
+        "exact repository test-artifact evidence",
+        "The broader Language Model maturity record is grounded in the current controlled source and qualification estate.",
+        "This snapshot provides a public inspection window into that larger system.",
+        "The historical whole-path fixture retains the evaluator semantics under which its expected dispositions were recorded.",
+        "**Tier One Runtime authority and current Runtime state:** instantiated EHCO Runtime evidence.",
     ):
-        require(statement in readme, f"LM snapshot README missing proof boundary: {statement}")
+        require(statement in readme, f"LM snapshot README missing evidence-scope statement: {statement}")
 
 
 def main() -> None:

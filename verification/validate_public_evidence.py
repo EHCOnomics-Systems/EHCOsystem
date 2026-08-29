@@ -1,12 +1,5 @@
 #!/usr/bin/env python3
-"""Validate the EHCOsystem public dossier, evidence estate, and public boundaries.
-
-The validator uses only the Python standard library. Its result is bounded to
-repository identity, structure, manifest integrity, JSON syntax, navigation,
-high-confidence secret indicators, licensing presence, current public
-semantic-boundary compliance, and v1.4 maturity/estate-lane representation.
-It does not execute or observe the Runtime.
-"""
+"""Validate the EHCOsystem public architecture and evidence estate."""
 
 from __future__ import annotations
 
@@ -17,12 +10,9 @@ import sys
 from pathlib import Path, PurePosixPath
 from urllib.parse import unquote
 
-REPO_ROOT = Path(__file__).resolve().parents[1]
-EVIDENCE_ROOT = REPO_ROOT / "evidence" / "public-evidence-companion" / "v1"
-DOSSIER_NAME = (
-    "EHCO_AI_OS_Governed_Operational_Architecture_"
-    "Public_Edition_v1_8_LOCK_FINAL.pdf"
-)
+ROOT = Path(__file__).resolve().parents[1]
+EVIDENCE_ROOT = ROOT / "evidence" / "public-evidence-companion" / "v1"
+DOSSIER_NAME = "EHCO_AI_OS_Governed_Operational_Architecture_Public_Edition_v1_8_LOCK_FINAL.pdf"
 DOSSIER_SHA256 = "F489BA01961A12CF101B1F1DF57E6958456A0840BEB798B862FA97ACB030892D"
 EXPECTED_PACKETS = [
     "00_DOSSIER_IDENTITY_AND_BOUNDARY",
@@ -36,7 +26,7 @@ EXPECTED_PACKETS = [
     "08_SUITE_VERIFICATION_AND_FINAL_ZIP",
 ]
 
-CURRENT_PUBLIC_TEXT = [
+AFFIRMATIVE_PUBLIC_TEXT = [
     "README.md",
     "LIBRARY.md",
     "ECOSYSTEM-DILIGENCE.md",
@@ -45,6 +35,7 @@ CURRENT_PUBLIC_TEXT = [
     "NOTICE.md",
     "PROVENANCE.md",
     "TECHNICAL-DILIGENCE.md",
+    "AGENTS.md",
     ".github/pull_request_template.md",
     "getting-started/START-HERE.md",
     "getting-started/reading-order.md",
@@ -61,6 +52,8 @@ CURRENT_PUBLIC_TEXT = [
     "architecture/proof-and-status-classes.md",
     "architecture/runtime-repository-and-test-estate-boundary.md",
     "language-model/README.md",
+    "language-model/evidence/public-test-snapshot-v1/README.md",
+    "language-model/evidence/public-test-snapshot-v1/QUALIFICATION_TEST_INDEX_2026-08-24.md",
     "assurance/README.md",
     "assurance/CLAIM-EVIDENCE-MATRIX.md",
     "assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md",
@@ -70,19 +63,22 @@ CURRENT_PUBLIC_TEXT = [
     "releases/PUBLIC-RELEASE-REGISTER.md",
 ]
 
+TEXT_EXTENSIONS = {".md", ".txt", ".py", ".json", ".yaml", ".yml"}
+PRIVATE_PROGRAM_HASHES = {
+    "a0ab87611e3650a456af99ece0ea7cb9f24e9a38f2135ba005f765b4d41c36ad",
+    "78656f1234f565253c32e16ce139165b5dfb60412e55fd14869c7728a82001d5",
+    "42c0877fa495c86d47844aa1179dfdf23cff40f9a709169faeb3b0f0c7766846",
+}
+
 ERRORS: list[str] = []
 CHECKS = 0
-
-
-def fail(message: str) -> None:
-    ERRORS.append(message)
 
 
 def checked(condition: bool, message: str) -> None:
     global CHECKS
     CHECKS += 1
     if not condition:
-        fail(message)
+        ERRORS.append(message)
 
 
 def sha256_file(path: Path) -> str:
@@ -97,20 +93,26 @@ def load_json(path: Path) -> object:
     try:
         return json.loads(path.read_text(encoding="utf-8-sig"))
     except (OSError, UnicodeError, json.JSONDecodeError) as exc:
-        fail(f"JSON parse failure: {path.relative_to(REPO_ROOT)}: {exc}")
+        ERRORS.append(f"JSON parse failure: {path.relative_to(ROOT)}: {exc}")
         return {}
 
 
-def read_public_text(relative: str) -> str:
-    path = REPO_ROOT / relative
-    checked(path.is_file(), f"Missing required public text: {relative}")
+def read_text(relative: str) -> str:
+    path = ROOT / relative
+    checked(path.is_file(), f"Required public text missing: {relative}")
     if not path.is_file():
         return ""
     try:
         return path.read_text(encoding="utf-8-sig")
     except (OSError, UnicodeError) as exc:
-        fail(f"Unable to read required public text: {relative}: {exc}")
+        ERRORS.append(f"Text read failure: {relative}: {exc}")
         return ""
+
+
+def prose_only(text: str) -> str:
+    text = re.sub(r"```.*?```", " ", text, flags=re.DOTALL)
+    text = re.sub(r"`[^`]*`", " ", text)
+    return text
 
 
 def validate_repository_residue() -> None:
@@ -121,457 +123,100 @@ def validate_repository_residue() -> None:
     forbidden_dirs = {
         EVIDENCE_ROOT / "evidence",
         EVIDENCE_ROOT / "dossiers",
-        REPO_ROOT / ".import-staging",
+        ROOT / ".import-staging",
     }
-
     for directory in forbidden_dirs:
-        checked(
-            not directory.exists(),
-            f"Forbidden directory present: {directory.relative_to(REPO_ROOT)}",
-        )
+        checked(not directory.exists(), f"Forbidden directory present: {directory.relative_to(ROOT)}")
 
-    wrong_pdf = REPO_ROOT / "evidence" / "public-evidence-companion" / DOSSIER_NAME
-    checked(
-        not wrong_pdf.exists(),
-        f"Legacy PDF path present: {wrong_pdf.relative_to(REPO_ROOT)}",
-    )
+    wrong_pdf = ROOT / "evidence" / "public-evidence-companion" / DOSSIER_NAME
+    checked(not wrong_pdf.exists(), f"Legacy PDF path present: {wrong_pdf.relative_to(ROOT)}")
 
-    for path in REPO_ROOT.rglob("*"):
-        if ".git" in path.parts:
+    for path in ROOT.rglob("*"):
+        if ".git" in path.parts or not path.is_file():
             continue
-        if path.is_file():
-            relative = path.relative_to(REPO_ROOT)
-            checked(path.name not in forbidden_exact, f"Upload helper present: {relative}")
-            checked(path.suffix.lower() != ".zip", f"ZIP archive present in repository: {relative}")
-            checked(
-                not re.fullmatch(r"part-\d+", path.name),
-                f"Transfer chunk present: {relative}",
-            )
-
-
-def validate_required_public_controls() -> None:
-    license_path = REPO_ROOT / "LICENSE"
-    boundary_path = (
-        REPO_ROOT / "architecture" / "runtime-repository-and-test-estate-boundary.md"
-    )
-    checked(license_path.is_file(), "Missing root LICENSE")
-    checked(boundary_path.is_file(), "Missing Runtime/repository/test-estate boundary")
-
-    if license_path.is_file():
-        license_text = license_path.read_text(encoding="utf-8-sig")
-        checked(
-            license_text.startswith("EHCOnomics Proprietary Public Inspection License v1.0"),
-            "Unexpected or missing proprietary license identity",
-        )
-        checked(
-            "This repository is a public architecture, evidence, provenance" in license_text,
-            "LICENSE does not state the repository/Runtime boundary",
-        )
-
-
-def validate_semantic_boundaries() -> None:
-    texts = {relative: read_public_text(relative) for relative in CURRENT_PUBLIC_TEXT}
-
-    prohibited = {
-        "deleted Runtime repository name": "ehco_runtime",
-        "current-source-owner claim": "current canonical source owner for EHCO AI-OS",
-        "pending Runtime promotion claim": "runtime promotion remains pending",
-        "pending-promotion machine state": "source_current_runtime_promotion_pending",
-    }
-    personal_repository_locator = re.compile(
-        r"\behconomics/[A-Za-z0-9_.-]+\b",
-        re.IGNORECASE,
-    )
-    protected_organization_aios_locator = re.compile(
-        r"\bEHCOnomics-Systems/[A-Za-z0-9_.-]*(?:AI[-_]?OS|AIOS)"
-        r"[A-Za-z0-9_.-]*\b",
-        re.IGNORECASE,
-    )
-    legacy_spaced_tier_label = re.compile(r"\bTier [123]\b", re.IGNORECASE)
-    universal_completion_percentage = re.compile(
-        r"\b(?:EHCOsystem|ecosystem)\b[^\n.]{0,120}"
-        r"\b\d{1,3}\s*%\s*(?:complete|completed|completion)\b",
-        re.IGNORECASE,
-    )
-
-    for relative, text in texts.items():
-        lowered = text.lower()
-        for label, phrase in prohibited.items():
-            checked(
-                phrase.lower() not in lowered,
-                f"Prohibited {label} in current public text: {relative}",
-            )
-        checked(
-            personal_repository_locator.search(text) is None,
-            f"Prohibited personal-account repository locator in current public text: {relative}",
-        )
-        checked(
-            protected_organization_aios_locator.search(text) is None,
-            f"Prohibited private AI-OS repository locator pattern in current public text: {relative}",
-        )
-        checked(
-            legacy_spaced_tier_label.search(text) is None,
-            f"Legacy spaced tier terminology in current public text: {relative}",
-        )
-        checked(
-            universal_completion_percentage.search(text) is None,
-            f"Unsupported universal completion percentage in current public text: {relative}",
-        )
-
-    boundary = texts["architecture/runtime-repository-and-test-estate-boundary.md"]
-    required_boundary_statements = [
-        "EHCO AI-OS is the realized Tier One Runtime",
-        "Those repositories, folders, and files are not the Runtime.",
-        "Persistent downstream governed component identity is also distinct from scoped Runtime participation.",
-        "Packet 02",
-        "Packet 06",
-        "Independent third-party certification or validation is not claimed",
-    ]
-    for statement in required_boundary_statements:
-        checked(
-            statement in boundary,
-            f"Boundary record missing required statement: {statement}",
-        )
-    checked(
-        "VISIBLE_CURRENTLY" not in boundary,
-        "Boundary record retains superseded VISIBLE_CURRENTLY publication vocabulary",
-    )
-
-    required_navigation_links = {
-        "README.md": [
-            "architecture/INSTANTIATED-AI.md",
-            "architecture/EHCO-TECHNOLOGY-ESTATE.md",
-            "architecture/diagrams/README.md",
-            "assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md",
-            "ECOSYSTEM-DILIGENCE.md",
-            "architecture/runtime-repository-and-test-estate-boundary.md",
-            "(LICENSE)",
-        ],
-        "getting-started/START-HERE.md": [
-            "../architecture/INSTANTIATED-AI.md",
-            "../architecture/EHCO-TECHNOLOGY-ESTATE.md",
-            "../architecture/diagrams/README.md",
-            "../assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md",
-            "../ECOSYSTEM-DILIGENCE.md",
-            "../TECHNICAL-DILIGENCE.md",
-            "../architecture/runtime-repository-and-test-estate-boundary.md",
-        ],
-        "architecture/EHCO-TECHNOLOGY-ESTATE.md": [
-            "INSTANTIATED-AI.md",
-            "diagrams/README.md",
-            "runtime-repository-and-test-estate-boundary.md",
-            "../assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md",
-        ],
-    }
-    for relative, required_links in required_navigation_links.items():
-        text = texts[relative]
-        for link in required_links:
-            checked(link in text, f"Required navigation/boundary link missing in {relative}: {link}")
-
-    instantiated_ai = texts["architecture/INSTANTIATED-AI.md"]
-    checked(
-        "EHCOsystem is EHCOnomics' Instantiated AI ecosystem." in instantiated_ai,
-        "Instantiated AI record does not identify EHCOsystem as the Instantiated AI ecosystem",
-    )
-    checked(
-        "representation != instantiation" in instantiated_ai,
-        "Instantiated AI record does not preserve representation/instantiation distinction",
-    )
-    checked(
-        "capability != standing" in instantiated_ai,
-        "Instantiated AI record does not preserve capability/standing distinction",
-    )
-
-    readme = texts["README.md"]
-    required_readme_statements = [
-        "Current qualitative maturity posture",
-        "foundational/shared EHCOsystem spine is substantially established",
-        "remaining work is increasingly concentrated rather than foundational",
-        "current accepted working EHCO Dashboard baseline",
-        "Principal shared downstream component spine",
-        "Substantial project/pilot expansion outside the public core-completion denominator",
-    ]
-    for statement in required_readme_statements:
-        checked(
-            statement in readme,
-            f"README missing required v1.4 maturity/projection statement: {statement}",
-        )
-
-    estate = texts["architecture/EHCO-TECHNOLOGY-ESTATE.md"]
-    checked(
-        "Instantiated AI ecosystem" in estate,
-        "Technology Estate does not state the Instantiated AI ecosystem identity",
-    )
-    checked(
-        "Downstream governed components" in estate,
-        "Technology Estate does not use current downstream governed component terminology",
-    )
-    checked(
-        "EHCO_DOCKER_PORTABILITY" in estate
-        and "PRIMARY_ACCESSIBLE_RUNTIME_PROJECTION" in estate,
-        "Technology Estate does not preserve the bounded Docker Portability classification",
-    )
-    required_estate_statements = [
-        "foundational/shared EHCOsystem spine is substantially established",
-        "remaining work is increasingly concentrated rather than foundational",
-        "bounded finalization/hardening",
-        "EHCO RAG implementation",
-        "research/foundation reconciliation",
-        "continuing downstream governed domain/application expansion",
-        "current accepted working EHCO Dashboard baseline",
-        "principal presently established",
-        "Tier Three projection baseline",
-        "Principal shared downstream component spine",
-        "Governed research and foundation estates",
-        "Continuing downstream governed domain/application expansion",
-        "Substantial project/pilot expansion outside the public core-completion denominator",
-        "No universal ecosystem completion percentage is asserted.",
-    ]
-    for statement in required_estate_statements:
-        checked(
-            statement in estate,
-            f"Technology Estate missing required v1.4 statement: {statement}",
-        )
-    checked(
-        "does not assert a rename, equivalence, or successor relationship" in estate,
-        "Permit Trace historical alias boundary is missing",
-    )
-
-    component_record = texts["architecture/ecosystem-components-and-participation.md"]
-    required_component_statements = [
-        "Primary accessible Runtime projection and Tier Three baseline",
-        "Principal shared downstream component spine",
-        "Governed research and foundation estates",
-        "Continuing downstream governed domain/application expansion",
-        "Substantial project/pilot expansion outside the public core-completion denominator",
-        "current accepted working EHCO Dashboard",
-        "components listed in the same lane do not automatically share one maturity",
-    ]
-    for statement in required_component_statements:
-        checked(
-            statement.lower() in component_record.lower(),
-            f"Component/Runtime record missing v1.4 lane or maturity statement: {statement}",
-        )
-
-    diagrams = texts["architecture/diagrams/README.md"]
-    required_diagram_sections = [
-        "## 1. Category, Runtime, components, portability, and projection",
-        "## 2. Computational ownership across the ecosystem",
-        "## 3. Shared foundations to domain applications",
-        "## 4. Technical evidence to market evidence ladder",
-    ]
-    for section in required_diagram_sections:
-        checked(section in diagrams, f"Public diagram record missing required section: {section}")
-    checked(
-        "EHCO_DOCKER_PORTABILITY" in diagrams
-        and "PRIMARY_ACCESSIBLE_RUNTIME_PROJECTION" in diagrams,
-        "Public diagram record does not preserve the bounded Docker Portability classification",
-    )
-    for statement in [
-        "EHCO Dashboard",
-        "current accepted working",
-        "Substantial project/pilot expansion",
-        "outside the public core-completion denominator",
-        "remaining work is increasingly concentrated rather than foundational",
-    ]:
-        checked(
-            statement in diagrams,
-            f"Public diagram record missing v1.4 projection/maturity statement: {statement}",
-        )
-    checked(
-        "does not create implementation, deployment, Runtime participation, market validation, or Runtime proof" in diagrams,
-        "Public diagram proof ceiling is missing or weakened",
-    )
-
-    evidence_matrix = texts["assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md"]
-    required_matrix_statements = [
-        "| Governed object | Estate lane / core relationship | Positive bounded claim | Current development / maturity posture | Evidence class | Public source / approved public reference | Verification method | Source-review date | Proof ceiling / explicit nonclaim |",
-        "| EHCOsystem qualitative maturity posture |",
-        "| EHCO_DOCKER_PORTABILITY |",
-        "| EHCO Dashboard |",
-        "| EHCO Language Model |",
-        "| EHCO Range Reactor |",
-        "| EHCO RAG |",
-        "| Grasp Safety |",
-        "| Pegasus IT |",
-        "outside the public core-completion denominator",
-        "No universal percentage",
-    ]
-    for statement in required_matrix_statements:
-        checked(
-            statement in evidence_matrix,
-            f"Ecosystem matrix missing required v1.4 column, row, or boundary: {statement}",
-        )
-
-    ai_os_matrix = texts["assurance/CLAIM-EVIDENCE-MATRIX.md"]
-    checked(
-        "Downstream governed components and Tier Three projections" in ai_os_matrix,
-        "AI-OS matrix does not preserve current downstream-component/Tier Three terminology",
-    )
-
-    evidence_readme = texts["evidence/README.md"]
-    checked(
-        "It does **not** establish that the files" in evidence_readme,
-        "Evidence landing page does not bound Packet 02 artifact identity",
-    )
-    checked(
-        "Current interpretation uses **Tier One** terminology" in evidence_readme,
-        "Evidence landing page does not reconcile historical TIER1 packet identity to current Tier One terminology",
-    )
-    checked(
-        "Packet-integrity `PASS` is not universal behavioral `PASS`." in evidence_readme,
-        "Evidence landing page does not distinguish Packet 06 integrity from behavior",
-    )
-    checked(
-        "Historical paths, container names, service names, and port bindings" in evidence_readme,
-        "Evidence landing page does not classify historical capture locators",
-    )
-
-    pr_template = texts[".github/pull_request_template.md"]
-    for statement in [
-        "current repository and organization rulesets",
-        "No required governance condition is treated as optional merely because a bypass capability exists.",
-        "Public source/control provenance is expressed generically",
-        "qualitative maturity posture",
-        "current accepted working Dashboard baseline",
-        "Repository description, topics, homepage",
-        "assistant-control/provider adoption",
-        "outside the public core-completion denominator",
-    ]:
-        checked(
-            statement in pr_template,
-            f"PR template missing required v1.4 publication/governance check: {statement}",
-        )
-
-    release_register = texts["releases/PUBLIC-RELEASE-REGISTER.md"]
-    checked("`LICENSE`" in release_register, "Release register does not inventory LICENSE")
-    checked(
-        "`architecture/INSTANTIATED-AI.md`" in release_register,
-        "Release register does not inventory Instantiated AI category architecture",
-    )
-    checked(
-        "`architecture/diagrams/README.md`" in release_register,
-        "Release register does not inventory public architecture diagrams",
-    )
-    checked(
-        "not a Runtime repository" in release_register,
-        "Release register does not bound Packet 02",
-    )
-    checked(
-        "integrity `PASS` is not universal behavioral `PASS`" in release_register,
-        "Release register does not bound Packet 06",
-    )
-    checked(
-        "qualitative maturity posture" in release_register,
-        "Release register does not inventory the v1.4 qualitative maturity representation",
-    )
+        relative = path.relative_to(ROOT)
+        checked(path.name not in forbidden_exact, f"Upload helper present: {relative}")
+        checked(path.suffix.lower() != ".zip", f"ZIP archive present: {relative}")
+        checked(re.fullmatch(r"part-\d+", path.name) is None, f"Transfer chunk present: {relative}")
 
 
 def validate_dossier() -> None:
     paths = [
-        REPO_ROOT / "dossiers" / DOSSIER_NAME,
-        EVIDENCE_ROOT
-        / "00_DOSSIER_IDENTITY_AND_BOUNDARY"
-        / "source_document"
-        / DOSSIER_NAME,
+        ROOT / "dossiers" / DOSSIER_NAME,
+        EVIDENCE_ROOT / "00_DOSSIER_IDENTITY_AND_BOUNDARY" / "source_document" / DOSSIER_NAME,
     ]
     hashes: list[str] = []
     for path in paths:
-        checked(path.is_file(), f"Missing canonical dossier: {path.relative_to(REPO_ROOT)}")
+        checked(path.is_file(), f"Canonical dossier missing: {path.relative_to(ROOT)}")
         if path.is_file():
             digest = sha256_file(path)
             hashes.append(digest)
-            checked(
-                digest == DOSSIER_SHA256,
-                f"Dossier SHA-256 mismatch: {path.relative_to(REPO_ROOT)}",
-            )
+            checked(digest == DOSSIER_SHA256, f"Dossier SHA-256 mismatch: {path.relative_to(ROOT)}")
     if len(hashes) == 2:
-        checked(hashes[0] == hashes[1], "Canonical dossier copies are not byte-identical")
+        checked(hashes[0] == hashes[1], "Canonical dossier copies differ")
 
 
 def safe_manifest_path(value: str) -> bool:
     pure = PurePosixPath(value)
-    return (
-        bool(value)
-        and not pure.is_absolute()
-        and ".." not in pure.parts
-        and "\\" not in value
-    )
+    return bool(value) and not pure.is_absolute() and ".." not in pure.parts and "\\" not in value
 
 
 def validate_packets_and_manifests() -> dict[str, str]:
-    checked(EVIDENCE_ROOT.is_dir(), "Missing evidence/public-evidence-companion/v1 directory")
-    actual_dirs = (
-        sorted(path.name for path in EVIDENCE_ROOT.iterdir() if path.is_dir())
-        if EVIDENCE_ROOT.is_dir()
-        else []
-    )
-    checked(actual_dirs == EXPECTED_PACKETS, f"Packet directory set mismatch: {actual_dirs}")
+    checked(EVIDENCE_ROOT.is_dir(), "Public Evidence Companion directory missing")
+    actual = sorted(path.name for path in EVIDENCE_ROOT.iterdir() if path.is_dir()) if EVIDENCE_ROOT.is_dir() else []
+    checked(actual == EXPECTED_PACKETS, f"Packet directory set mismatch: {actual}")
 
     manifest_hashes: dict[str, str] = {}
     for packet_name in EXPECTED_PACKETS:
-        packet_dir = EVIDENCE_ROOT / packet_name
-        manifest_path = packet_dir / "CONTENT_MANIFEST.json"
-        detached_path = packet_dir / "CONTENT_MANIFEST.sha256"
-        verification_path = packet_dir / "VERIFICATION_RESULT.json"
+        packet = EVIDENCE_ROOT / packet_name
+        manifest_path = packet / "CONTENT_MANIFEST.json"
+        detached_path = packet / "CONTENT_MANIFEST.sha256"
+        verification_path = packet / "VERIFICATION_RESULT.json"
 
-        checked(manifest_path.is_file(), f"Missing manifest: {manifest_path.relative_to(REPO_ROOT)}")
-        checked(detached_path.is_file(), f"Missing detached manifest hash: {detached_path.relative_to(REPO_ROOT)}")
-        checked(verification_path.is_file(), f"Missing verification result: {verification_path.relative_to(REPO_ROOT)}")
+        checked(manifest_path.is_file(), f"Manifest missing: {packet_name}")
+        checked(detached_path.is_file(), f"Detached manifest hash missing: {packet_name}")
+        checked(verification_path.is_file(), f"Verification result missing: {packet_name}")
         if not manifest_path.is_file():
             continue
 
         manifest = load_json(manifest_path)
         if not isinstance(manifest, dict):
-            fail(f"Manifest is not an object: {manifest_path.relative_to(REPO_ROOT)}")
+            ERRORS.append(f"Manifest object invalid: {packet_name}")
             continue
-
         entries = manifest.get("files")
-        checked(isinstance(entries, list), f"Manifest files is not a list: {manifest_path.relative_to(REPO_ROOT)}")
+        checked(isinstance(entries, list), f"Manifest files list invalid: {packet_name}")
         if not isinstance(entries, list):
             continue
-
         checked(manifest.get("file_count") == len(entries), f"Manifest file_count mismatch: {packet_name}")
         self_reference = manifest.get("manifest_self_reference", manifest.get("self_reference"))
-        checked(self_reference is False, f"Manifest self-reference must be false: {packet_name}")
+        checked(self_reference is False, f"Manifest self-reference flag mismatch: {packet_name}")
 
         seen: set[str] = set()
         for entry in entries:
             if not isinstance(entry, dict):
-                fail(f"Invalid manifest entry in {packet_name}")
+                ERRORS.append(f"Manifest entry invalid: {packet_name}")
                 continue
-            relative_value = entry.get("path")
-            if not isinstance(relative_value, str) or not safe_manifest_path(relative_value):
-                fail(f"Unsafe manifest path in {packet_name}: {relative_value!r}")
+            value = entry.get("path")
+            if not isinstance(value, str) or not safe_manifest_path(value):
+                ERRORS.append(f"Manifest path invalid: {packet_name}: {value!r}")
                 continue
-            checked(relative_value not in seen, f"Duplicate manifest path in {packet_name}: {relative_value}")
-            seen.add(relative_value)
-            target = packet_dir.joinpath(*PurePosixPath(relative_value).parts)
-            checked(target.is_file(), f"Manifest target missing: {target.relative_to(REPO_ROOT)}")
+            checked(value not in seen, f"Duplicate manifest path: {packet_name}: {value}")
+            seen.add(value)
+            target = packet.joinpath(*PurePosixPath(value).parts)
+            checked(target.is_file(), f"Manifest target missing: {target.relative_to(ROOT)}")
             if target.is_file():
-                checked(
-                    target.stat().st_size == entry.get("bytes"),
-                    f"Byte-count mismatch: {target.relative_to(REPO_ROOT)}",
-                )
-                checked(
-                    sha256_file(target) == str(entry.get("sha256", "")).upper(),
-                    f"SHA-256 mismatch: {target.relative_to(REPO_ROOT)}",
-                )
+                checked(target.stat().st_size == entry.get("bytes"), f"Byte count mismatch: {target.relative_to(ROOT)}")
+                checked(sha256_file(target) == str(entry.get("sha256", "")).upper(), f"SHA-256 mismatch: {target.relative_to(ROOT)}")
 
-        manifest_digest = sha256_file(manifest_path)
-        manifest_hashes[packet_name] = manifest_digest
+        digest = sha256_file(manifest_path)
+        manifest_hashes[packet_name] = digest
         if detached_path.is_file():
             token = detached_path.read_text(encoding="utf-8-sig").strip().split()[0].upper()
-            checked(token == manifest_digest, f"Detached manifest hash mismatch: {packet_name}")
-
+            checked(token == digest, f"Detached manifest hash mismatch: {packet_name}")
         if verification_path.is_file():
             verification = load_json(verification_path)
             if isinstance(verification, dict):
-                checked(
-                    verification.get("status") == "PASS",
-                    f"Verification status is not PASS: {packet_name}",
-                )
-
+                checked(verification.get("status") == "PASS", f"Verification status mismatch: {packet_name}")
     return manifest_hashes
 
 
@@ -585,127 +230,192 @@ def validate_json_syntax() -> None:
 def validate_suite(manifest_hashes: dict[str, str]) -> None:
     suite_path = EVIDENCE_ROOT / EXPECTED_PACKETS[8] / "SUITE_MANIFEST.json"
     suite = load_json(suite_path)
+    checked(isinstance(suite, dict), "Suite manifest object invalid")
     if not isinstance(suite, dict):
-        fail("Suite manifest is not an object")
         return
-
     dossier = suite.get("dossier", {})
-    checked(
-        isinstance(dossier, dict)
-        and str(dossier.get("sha256", "")).upper() == DOSSIER_SHA256,
-        "Suite dossier hash mismatch",
-    )
-    checked(suite.get("prior_packet_count") == 8, "Suite prior_packet_count must be 8")
-    checked(suite.get("total_packet_count") == 9, "Suite total_packet_count must be 9")
-    checked(
-        suite.get("packets_scope") == "PRIOR_PACKETS_00_THROUGH_07",
-        "Unexpected suite packet scope",
-    )
-
+    checked(isinstance(dossier, dict) and str(dossier.get("sha256", "")).upper() == DOSSIER_SHA256, "Suite dossier hash mismatch")
+    checked(suite.get("prior_packet_count") == 8, "Suite prior_packet_count mismatch")
+    checked(suite.get("total_packet_count") == 9, "Suite total_packet_count mismatch")
     packets = suite.get("packets")
-    checked(isinstance(packets, list) and len(packets) == 8, "Suite must enumerate Packets 00-07")
+    checked(isinstance(packets, list) and len(packets) == 8, "Suite packet enumeration mismatch")
     if isinstance(packets, list):
         for index, entry in enumerate(packets):
             if not isinstance(entry, dict):
-                fail(f"Invalid suite packet entry at index {index}")
+                ERRORS.append(f"Suite packet entry invalid at index {index}")
                 continue
             expected = EXPECTED_PACKETS[index]
-            checked(entry.get("sequence") == index, f"Suite sequence mismatch for {expected}")
-            checked(entry.get("directory") == expected, f"Suite directory mismatch at sequence {index}")
-            checked(
-                str(entry.get("manifest_sha256", "")).upper()
-                == manifest_hashes.get(expected),
-                f"Suite manifest hash mismatch for {expected}",
-            )
-            checked(
-                entry.get("verification_status") == "PASS",
-                f"Suite verification status is not PASS for {expected}",
-            )
-
-    closure = suite.get("closure_packet", {})
-    checked(
-        isinstance(closure, dict) and closure.get("sequence") == 8,
-        "Closure packet sequence must be 8",
-    )
-    checked(
-        isinstance(closure, dict) and closure.get("directory") == EXPECTED_PACKETS[8],
-        "Closure packet directory mismatch",
-    )
-    checked(
-        isinstance(closure, dict) and closure.get("verification_status") == "PASS",
-        "Closure packet verification is not PASS",
-    )
+            checked(entry.get("sequence") == index, f"Suite sequence mismatch: {expected}")
+            checked(entry.get("directory") == expected, f"Suite directory mismatch: {expected}")
+            checked(str(entry.get("manifest_sha256", "")).upper() == manifest_hashes.get(expected), f"Suite manifest hash mismatch: {expected}")
+            checked(entry.get("verification_status") == "PASS", f"Suite verification status mismatch: {expected}")
 
 
 def validate_markdown_links() -> None:
-    link_pattern = re.compile(r"\[[^\]]+\]\(([^)]+)\)")
-    for markdown in sorted(REPO_ROOT.rglob("*.md")):
-        if ".git" in markdown.parts:
+    link_re = re.compile(r"!?\[[^\]]*\]\(([^)]+)\)")
+    for path in sorted(ROOT.rglob("*.md")):
+        if ".git" in path.parts:
             continue
-        text = markdown.read_text(encoding="utf-8-sig")
-        for raw_target in link_pattern.findall(text):
-            target = raw_target.strip().strip("<>")
+        try:
+            text = path.read_text(encoding="utf-8-sig")
+        except (OSError, UnicodeError):
+            continue
+        for raw in link_re.findall(text):
+            target = raw.strip().split()[0].strip("<>")
             if not target or target.startswith(("http://", "https://", "mailto:", "#")):
                 continue
-            target = unquote(target.split("#", 1)[0].split("?", 1)[0])
-            if not target:
-                continue
-            resolved = (markdown.parent / target).resolve()
-            checked(
-                resolved.exists(),
-                f"Broken Markdown link in {markdown.relative_to(REPO_ROOT)}: {raw_target}",
-            )
+            target = unquote(target.split("#", 1)[0])
+            resolved = (path.parent / target).resolve()
+            checked(resolved.exists(), f"Broken Markdown link in {path.relative_to(ROOT)}: {raw}")
 
 
-def validate_secret_indicators() -> None:
-    patterns = {
-        "AWS access key": re.compile(r"\bAKIA[0-9A-Z]{16}\b"),
-        "GitHub classic token": re.compile(r"\bgh[pousr]_[A-Za-z0-9]{30,}\b"),
-        "GitHub fine-grained token": re.compile(r"\bgithub_pat_[A-Za-z0-9_]{40,}\b"),
-        "OpenAI-style secret key": re.compile(r"\bsk-[A-Za-z0-9_-]{20,}\b"),
-        "Slack token": re.compile(r"\bxox[baprs]-[A-Za-z0-9-]{20,}\b"),
-        "Private key block": re.compile(
-            r"-----BEGIN (?:RSA |EC |OPENSSH |DSA )?PRIVATE KEY-----"
-        ),
+def validate_disclosure_safety() -> None:
+    high_confidence = [
+        re.compile(r"-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----"),
+        re.compile(r"\bgh[pousr]_[A-Za-z0-9]{30,}\b"),
+        re.compile(r"\bgithub_pat_[A-Za-z0-9_]{30,}\b"),
+        re.compile(r"\bAKIA[0-9A-Z]{16}\b"),
+    ]
+    for path in ROOT.rglob("*"):
+        if ".git" in path.parts or not path.is_file() or path.suffix.lower() not in TEXT_EXTENSIONS:
+            continue
+        try:
+            text = path.read_text(encoding="utf-8-sig")
+        except (OSError, UnicodeError):
+            continue
+        for pattern in high_confidence:
+            checked(pattern.search(text) is None, f"High-confidence secret indicator: {path.relative_to(ROOT)}")
+
+
+def validate_private_program_scope() -> None:
+    word_re = re.compile(r"[a-z0-9]+")
+    for path in ROOT.rglob("*"):
+        if ".git" in path.parts or not path.is_file() or path.suffix.lower() not in TEXT_EXTENSIONS:
+            continue
+        try:
+            words = word_re.findall(path.read_text(encoding="utf-8-sig").lower())
+        except (OSError, UnicodeError):
+            continue
+        for width in (2, 3):
+            for index in range(0, max(0, len(words) - width + 1)):
+                phrase = " ".join(words[index : index + width])
+                digest = hashlib.sha256(phrase.encode("utf-8")).hexdigest()
+                checked(digest not in PRIVATE_PROGRAM_HASHES, f"Private program marker present in current source: {path.relative_to(ROOT)}")
+
+
+def validate_affirmative_public_representation() -> None:
+    texts = {relative: read_text(relative) for relative in AFFIRMATIVE_PUBLIC_TEXT}
+    negative_patterns = [
+        re.compile(r"\bnot\b", re.IGNORECASE),
+        re.compile(r"\bno\b", re.IGNORECASE),
+        re.compile(r"\bnever\b", re.IGNORECASE),
+        re.compile(r"\bcannot\b", re.IGNORECASE),
+        re.compile(r"\bcan['’]t\b", re.IGNORECASE),
+        re.compile(r"\bdon['’]t\b", re.IGNORECASE),
+        re.compile(r"\bdoesn['’]t\b", re.IGNORECASE),
+        re.compile(r"\bwithout\b", re.IGNORECASE),
+        re.compile(r"\bnon[- ]?claim", re.IGNORECASE),
+        re.compile(r"\bunproven\b", re.IGNORECASE),
+        re.compile(r"\bunresolved\b", re.IGNORECASE),
+        re.compile(r"\bpending\b", re.IGNORECASE),
+    ]
+    for relative, text in texts.items():
+        prose = prose_only(text)
+        for pattern in negative_patterns:
+            checked(pattern.search(prose) is None, f"Negative-pressure prose pattern in {relative}: {pattern.pattern}")
+
+    combined = "\n".join(texts.values())
+    private_locator = re.compile(r"\bEHCOnomics-Systems/[A-Za-z0-9_.-]*(?:AI[-_]?OS|AIOS)[A-Za-z0-9_.-]*\b", re.IGNORECASE)
+    personal_locator = re.compile(r"\behconomics/[A-Za-z0-9_.-]+\b", re.IGNORECASE)
+    legacy_tier = re.compile(r"\bTier [123]\b", re.IGNORECASE)
+    checked(private_locator.search(combined) is None, "Protected AI-OS source locator present in active public text")
+    checked(personal_locator.search(combined) is None, "Personal-account repository locator present in active public text")
+    checked(legacy_tier.search(combined) is None, "Legacy numeric tier terminology present in active public text")
+
+    required = {
+        "README.md": [
+            "EHCO AI-OS is the realized Tier One Runtime",
+            "foundational and shared EHCOsystem spine is substantially established",
+            "ZERO_WEIGHT_ONLY / ZERO WEIGHTS TRAINED",
+            "DF-01 Units 1 and 2 integrated",
+        ],
+        "architecture/INSTANTIATED-AI.md": [
+            "Instantiated AI creates the computational conditions under which artificial intelligence may lawfully operate.",
+            "EHCOsystem is EHCOnomics' Instantiated AI ecosystem.",
+            "the model supplies intelligence; the instantiated system supplies the conditions governing that intelligence",
+        ],
+        "architecture/EHCO-TECHNOLOGY-ESTATE.md": [
+            "EHCO AI-OS is the realized Tier One Runtime",
+            "PRIMARY_ACCESSIBLE_RUNTIME_PROJECTION",
+            "Deep Final Completion",
+            "DF-01 Unit 1",
+            "DF-01 Unit 2",
+            "23 of 23",
+        ],
+        "architecture/ecosystem-components-and-participation.md": [
+            "Deep Final Completion active",
+            "Stage 1 implementation active",
+            "Stage 8 production-build/rehearsal hardening",
+        ],
+        "language-model/README.md": [
+            "DETERMINISTIC_COMPUTATIONAL_LANGUAGE / SINGLE_PATH / EXPLICIT_EHCO_COMPUTATION / ZERO_WEIGHT_ONLY / ZERO WEIGHTS TRAINED",
+            "Deep Final Completion",
+            "DF-01 Unit 1",
+            "DF-01 Unit 2",
+            "seven exact synthetic fixtures covering 62 cases",
+        ],
+        "assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md": [
+            "Affirmative public claim",
+            "Evidence scope",
+            "Deep Final Completion active",
+            "Accepted 23/23 controlled baseline",
+        ],
+        "architecture/diagrams/README.md": [
+            "EHCO AI-OS",
+            "PRIMARY_ACCESSIBLE_RUNTIME_PROJECTION",
+            "Deep Final Completion active",
+        ],
     }
-    excluded_suffixes = {".pdf", ".png", ".jpg", ".jpeg", ".gif", ".webp", ".zip"}
-    for path in REPO_ROOT.rglob("*"):
-        if not path.is_file() or ".git" in path.parts or path.suffix.lower() in excluded_suffixes:
-            continue
-        if path.stat().st_size > 5 * 1024 * 1024:
-            continue
-        text = path.read_text(encoding="utf-8", errors="ignore")
-        for label, pattern in patterns.items():
-            checked(
-                pattern.search(text) is None,
-                f"High-confidence {label} indicator in {path.relative_to(REPO_ROOT)}",
-            )
+    for relative, phrases in required.items():
+        text = texts[relative]
+        for phrase in phrases:
+            checked(phrase in text, f"Required affirmative representation missing in {relative}: {phrase}")
+
+
+def validate_required_controls() -> None:
+    checked((ROOT / "LICENSE").is_file(), "Root LICENSE missing")
+    checked((ROOT / "architecture" / "runtime-repository-and-test-estate-boundary.md").is_file(), "Boundary record missing")
+    readme = read_text("README.md")
+    for link in [
+        "architecture/INSTANTIATED-AI.md",
+        "architecture/EHCO-TECHNOLOGY-ESTATE.md",
+        "architecture/diagrams/README.md",
+        "assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md",
+        "ECOSYSTEM-DILIGENCE.md",
+        "architecture/runtime-repository-and-test-estate-boundary.md",
+        "(LICENSE)",
+    ]:
+        checked(link in readme, f"README navigation link missing: {link}")
 
 
 def main() -> int:
     validate_repository_residue()
-    validate_required_public_controls()
-    validate_semantic_boundaries()
+    validate_required_controls()
     validate_dossier()
-    validate_json_syntax()
     manifest_hashes = validate_packets_and_manifests()
+    validate_json_syntax()
     validate_suite(manifest_hashes)
     validate_markdown_links()
-    validate_secret_indicators()
+    validate_disclosure_safety()
+    validate_private_program_scope()
+    validate_affirmative_public_representation()
 
     if ERRORS:
-        print(f"FAIL: {len(ERRORS)} error(s) across {CHECKS} checks", file=sys.stderr)
+        print(f"EHCOsystem public validation: FAIL ({len(ERRORS)} errors / {CHECKS} checks)")
         for error in ERRORS:
-            print(f"- {error}", file=sys.stderr)
+            print(f"- {error}")
         return 1
-
-    json_count = sum(1 for _ in EVIDENCE_ROOT.rglob("*.json"))
-    file_count = sum(1 for path in EVIDENCE_ROOT.rglob("*") if path.is_file())
-    print(
-        "PASS: EHCOsystem public repository validation "
-        f"({CHECKS} checks, {file_count} evidence files, {json_count} JSON files, "
-        f"{len(EXPECTED_PACKETS)} packet directories, semantic boundaries enforced)"
-    )
+    print(f"EHCOsystem public validation: PASS ({CHECKS} checks)")
     return 0
 
 

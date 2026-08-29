@@ -2,78 +2,65 @@
 
 ## Purpose
 
-This repository publishes approved public architecture, evidence, provenance, research, verification, and publication materials for **EHCOsystem, EHCOnomics' Instantiated AI ecosystem**.
+This repository publishes approved public architecture, evidence, provenance, research, verification and publication materials for **EHCOsystem, EHCOnomics' Instantiated AI ecosystem**.
 
-**EHCO AI-OS is the realized Tier One Runtime foundation.** This repository is a public technical representation and evidence surface; it does not hold Runtime authority or authoritative Runtime state.
+**EHCO AI-OS is the realized Tier One Runtime foundation.** Runtime authority and current Runtime state are owned by the instantiated Runtime. The public repository owns the public architecture/evidence projection.
 
-## Controlling boundary
+## Controlling architecture
 
-All public material must conform to the [Runtime, Repository, and Test-Estate Boundary](architecture/runtime-repository-and-test-estate-boundary.md) and the canonical [System Invariants](architecture/SYSTEM-INVARIANTS.md).
+Public material follows the [Runtime, Repository, and Test-Estate Boundary](architecture/runtime-repository-and-test-estate-boundary.md) and [System Invariants](architecture/SYSTEM-INVARIANTS.md).
 
-Publication must preserve the distinctions material to the claim being made, including component identity versus scoped Runtime participation, evidence versus authority, artifact identity versus Runtime identity, and public projection versus Runtime truth. Shared invariant language should be linked rather than repeatedly restated across public pages.
+Publication preserves explicit ownership across component identity, Runtime participation, evidence, authority, artifact identity, Runtime identity, projection and Runtime state.
 
 ## Publication control
 
-Material may be added only when it is:
+Public material enters the repository through a governed publication path that establishes:
 
-- expressly approved for public release;
-- derived from an accepted public architecture, evidence source, or controlled publication record;
-- stripped of unapproved implementation detail and active infrastructure information;
-- classified accurately by evidence class, status, and proof ceiling;
-- reviewed for security, confidentiality, personal information, and intellectual-property exposure;
-- placed at its canonical repository path with identity and integrity controls preserved;
-- consistent with the Runtime/repository/test-estate boundary;
-- covered by the repository validation workflow.
+- public-release approval;
+- accepted source or evidence lineage;
+- disclosure classification;
+- evidence class and scope;
+- security, confidentiality, personal-information and intellectual-property review;
+- canonical repository path and integrity controls; and
+- repository validation coverage.
 
 ## Evidence classes
 
-Public claims must identify one or more applicable classes:
-
-1. **Controlled EHCO architecture** - an accepted EHCO architectural position.
-2. **Controlled operational standing** - an EHCOnomics-controlled standing record projected publicly with its proof ceiling.
-3. **Artifact identity and provenance** - exact identity, revision, path, hash, manifest, or packet-time binding.
-4. **Declaration or anchor presence** - presence of a named construct in an identified artifact, without an implied execution claim.
-5. **Bounded test or observation** - behavior recorded for identified inputs, versions, environment, and time.
-6. **Runtime-originated evidence** - authoritative Runtime state, consequence, persistence, release, revocation, recovery, or proof record.
-7. **External fact or incident** - a documented event or requirement from an external primary source.
-8. **EHCO analysis or proposition** - an engineering conclusion advanced by EHCOnomics.
-9. **Independent validation** - an identified third-party validation under a published method and scope.
-10. **Hash-preserved historical evidence** - an approved historical capture retained byte-for-byte where alteration would break declared cryptographic identity.
-
-No class may be represented as another. EHCOnomics-controlled evidence is not described as independent certification unless a specific third-party record supports that description.
+1. **Controlled EHCO architecture** — accepted architectural position.
+2. **Controlled operational standing** — EHCOnomics-controlled standing record projected publicly.
+3. **Artifact identity and provenance** — exact identity, revision, path, hash, manifest or packet-time binding.
+4. **Declaration or anchor presence** — named construct presence in an identified artifact.
+5. **Bounded test or observation** — behavior recorded for identified inputs, source, environment, method and time.
+6. **Runtime-originated evidence** — authoritative Runtime state, consequence, persistence, release, revocation, recovery or proof record.
+7. **External fact or incident** — documented event or requirement from an external primary source.
+8. **EHCO analysis or proposition** — engineering conclusion advanced by EHCOnomics.
+9. **Independent validation** — identified third-party validation under a stated method and scope.
+10. **Hash-preserved historical evidence** — approved historical capture retained byte-for-byte with cryptographic identity.
 
 ## Hash-preserved evidence
 
-Packets 00-08 remain hash-preserved Version 1 evidence. Historical paths, source labels, container names, local ports, revisions, and similar attributes may remain inside those packets only under their applicable disclosure policy and proof ceiling.
-
-Retention preserves packet identity; it does not make the attribute current Runtime truth, an active endpoint, a current authority location, or deployment authorization. Current interpretation is provided by the repository boundary records without rewriting packet bytes.
+Packets 00-08 remain hash-preserved Version 1 evidence. Historical paths, source labels, container names, local ports, revisions and similar capture attributes retain their packet-time meaning. Current interpretation is supplied through the active architecture and evidence landing records.
 
 ## Contribution policy
 
-Public issues and corrections may be submitted. External implementation contributions are not currently accepted because this repository is documentation- and evidence-focused and is not an open-source implementation distribution.
+Public issues and corrections are welcome through the repository's public issue channels. Implementation contributions are managed through EHCOnomics' controlled development estate. Public publication focuses on architecture, evidence, verification, provenance and diligence material.
 
-Proposed changes must not introduce:
+## Protected publication classes
 
-- a statement that a repository, folder, file set, container, workflow, or packet is the Runtime;
-- unapproved private repository names or internal control locators;
-- credentials, secrets, privileged endpoints, protected topology, or current deployment details;
-- unsupported claims of independent certification, universal proof, exclusivity, or production completion;
-- semantic promotion of packet integrity into behavioral, Runtime, deployment, or release proof.
+Proprietary Runtime/component source, private source locators, protected schemas, credentials, privileged endpoints, production topology, control internals and private proof records remain under controlled custody. Public publication uses approved abstractions, exact safe evidence artifacts and public-safe source relationships.
 
 ## Change control
 
-Changes to accepted public architecture and standing records require explicit EHCOnomics approval. Git repository mutability must not be described as physical immutability, and repository activity does not independently alter Runtime standing or Runtime truth.
+Accepted public architecture and standing records move through explicit EHCOnomics change control. Repository mutability, Runtime standing and Runtime state each retain their own governing owner and evidence class.
 
 ## Validation
 
-Every pull request and every push to `main` must run the repository validation workflow. Before acceptance, the then-current repository and organization rulesets must also be re-read and every applicable required check must be satisfied on the exact candidate relationship. Bypass capability is not acceptance evidence.
-
-Validation confirms bounded repository integrity and current semantic-boundary compliance. It does not create authority, standing, deployment, production activation, operational release, or go-live authorization.
+Every pull request and push to `main` runs repository validation. Acceptance also uses the then-current repository and organization rulesets and their required status/review conditions on the exact candidate relationship.
 
 ## Licensing
 
-Repository use is governed by the root [LICENSE](LICENSE). Public availability grants only the rights expressly stated there.
+Repository use is governed by the root [LICENSE](LICENSE).
 
 ## Contact
 
-Questions concerning publication, review, licensing, security, or use should be directed through an official EHCOnomics contact channel.
+Questions concerning publication, review, licensing, security or use can be directed through an official EHCOnomics contact channel.

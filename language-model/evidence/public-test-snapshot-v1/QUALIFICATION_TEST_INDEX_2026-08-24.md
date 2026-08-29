@@ -2,9 +2,9 @@
 
 **Source-review date:** 2026-08-24  
 **Evidence class:** bounded public index of controlled repository test source  
-**Currentness rule:** this is a dated snapshot, not a live projection of private branch, pull-request or work-packet state
+**Currentness:** dated exact-source review snapshot
 
-This index records selected actual test names and qualification dimensions observed directly in the controlled Language Model source during the public-safety review. The names below are not invented examples. The executable harness is not copied here because it contains protected implementation imports, module paths, schemas and control surfaces.
+This index records selected exact test names and qualification dimensions observed in the controlled EHCO Language Model source. The complete executable harness remains in controlled technical custody and this public index exposes the qualification structure at a reviewer-usable level.
 
 ## Deterministic replay and metamorphic qualification
 
@@ -28,7 +28,7 @@ Observed test names include:
 - `test_schema_rejects_effect_promotion`
 - `test_schema_rejects_global_completeness_promotion`
 
-These tests distinguish `QUALIFIED`, `WITHHELD` and `REJECTED` outcomes and include explicit negative controls for missing evidence, relation loss, binding corruption, duplicate identity, attempted effect promotion and attempted global-completeness promotion.
+These tests exercise `QUALIFIED`, `WITHHELD` and `REJECTED` outcomes across missing evidence, relation loss, binding corruption, duplicate identity, effect-promotion attempts, and global-completeness-promotion attempts.
 
 ## Structural and property qualification
 
@@ -45,7 +45,7 @@ Observed test names include:
 - `test_s2_extension_binding_loss_rejects`
 - `test_s2_semantic_payload_version_provenance_and_proof_lineage_drift_reject`
 
-The inspected source exercises canonical ordering, provenance preservation, semantic-state drift, pairwise semantic preservation, round-trip preservation, extension-binding integrity and proof-lineage drift.
+The inspected source exercises canonical ordering, provenance preservation, semantic-state drift, pairwise semantic preservation, round-trip preservation, extension-binding integrity, and proof-lineage drift.
 
 ## Full-range qualification dimensions
 
@@ -64,7 +64,7 @@ Observed aggregate tests include:
 - `test_every_nonqualified_case_enters_failure_frontier`
 - `test_rejected_case_dominates_aggregate_disposition`
 
-The aggregate qualification keeps global completeness `NOT_ESTABLISHED` and its effect ceiling `NONE` within the inspected bounded source.
+These aggregate tests enforce deterministic campaign replay, explicit failure-frontier custody, disposition precedence, global-completeness bounding, and zero-effect qualification semantics.
 
 ## Deterministic component service boundary
 
@@ -76,10 +76,8 @@ Observed service-boundary tests include:
 - `test_http_boundary_fails_closed_for_missing_engine_case_identity`
 - `test_http_boundary_rejects_untyped_qualification_disposition`
 
-These tests examine deterministic replay through the component boundary, separation of semantic result from qualification disposition, transport equivalence, missing-identity failure and rejection of an untyped qualification value.
+These tests exercise deterministic replay through the component boundary, semantic-result/qualification separation, transport equivalence, identity validation, and typed qualification handling.
 
-## What this index does not establish
+## Evidence scope
 
-This index does not publish the complete executable test harness and does not establish an external benchmark, independent certification, global language completeness, deployment, Runtime admission, Runtime participation, Runtime authority or current Runtime state.
-
-The exact fixture files that are safe for full public inspection are provided separately in `actual-tests/` and are bound by `MANIFEST.json`.
+This index establishes selected source-reviewed test names and qualification dimensions. `actual-tests/` and `MANIFEST.json` establish the exact published fixture artifacts. The current Language Model architecture and maturity record is grounded through the owning controlled source and qualification estate.

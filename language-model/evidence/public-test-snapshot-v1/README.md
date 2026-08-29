@@ -2,44 +2,42 @@
 
 ## Purpose
 
-This snapshot publishes a bounded selection of actual EHCOnomics Language Model repository test fixtures for technical inspection.
+This snapshot publishes a selected set of **actual EHCO Language Model repository test fixtures** for direct technical inspection.
 
-The files under `actual-tests/` are not rewritten examples or marketing demonstrations. Each is a byte-identical copy of a selected synthetic test fixture from the controlled Language Model test estate. At publication review, each public Git blob identity matched the corresponding controlled source artifact identity recorded in `MANIFEST.json`.
+Every file under `actual-tests/` is a byte-identical selected synthetic fixture from the controlled Language Model test estate. `MANIFEST.json` binds public artifact identity, source identity, case count, scope, and provenance.
 
-The snapshot contains 7 fixture artifacts and 62 explicit test cases covering lexical and morphological behavior, syntax and semantic composition, reference and context, ambiguity and withholding, fail-closed unsupported inputs, bounded mathematical language, an historical unseen-construction boundary, and a whole-path compositional evaluation fixture.
+The package contains **7 fixture artifacts and 62 explicit test cases** spanning lexical and morphological behavior, syntax and semantic composition, reference and context, ambiguity and withholding, fail-closed unsupported inputs, bounded mathematical language, an historical unseen-construction boundary, and whole-path compositional evaluation.
 
-## Evidence class and proof ceiling
+## Evidence class
 
-This is bounded repository test-artifact evidence. It establishes the identity and contents of the selected test fixtures and makes their inputs and expected dispositions publicly inspectable.
+The snapshot is **exact repository test-artifact evidence**. It establishes the published fixture bytes, inputs, expected dispositions, case counts, identities, and provenance bindings.
 
-It is not an external benchmark, independent certification, proof of global language completeness, proof of equivalence to a frontier LLM, Runtime admission, Runtime authority, deployment evidence, production evidence, or current Runtime state.
+The broader Language Model maturity record is grounded in the current controlled source and qualification estate. This snapshot provides a public inspection window into that larger system.
 
-The historical repository regression counts discussed elsewhere, including the 1,268 and later 1,278 checkpoints, are not created or independently proven by this snapshot. Those counts are a different repository-evidence claim. This snapshot exists so reviewers can inspect real test material rather than being asked to infer test design from a count alone.
+## Historical fixture lineage
 
-## Historical fixture boundary
+Several fixtures preserve earlier zero-weight construction and evaluation stages. Their dispositions such as `WITHHOLD`, `RETAIN_AMBIGUITY`, `CAPABILITY_FAILURE`, and `GENERALIZATION_NOT_ESTABLISHED` are exact test expectations from their source lineage.
 
-Several exact fixtures in this snapshot come from earlier zero-weight construction and evaluation stages that intentionally tested bounded capability and explicit failure or withholding boundaries. A `WITHHOLD`, `RETAIN_AMBIGUITY`, `CAPABILITY_FAILURE`, or `GENERALIZATION_NOT_ESTABLISHED` expectation is part of the test, not a publication error.
+Later qualification expanded the deterministic test estate across replay, structural, metamorphic, adversarial, conformance, resource-bound, recursion, service-boundary, failure-frontier, and full-range dimensions. [QUALIFICATION_TEST_INDEX_2026-08-24.md](QUALIFICATION_TEST_INDEX_2026-08-24.md) publishes selected exact test names and categories observed during source review.
 
-This snapshot is not a claim of current capability ceiling. These historical fixtures must not be read as the current capability ceiling of the Language Model. Later strengthening and qualification added further deterministic language, replay, structural, metamorphic, adversarial, conformance, resource-bound and service-boundary testing. A public-safe index of selected qualification test names and categories observed at the source-review date is provided in `QUALIFICATION_TEST_INDEX_2026-08-24.md`.
+The historical whole-path fixture retains the evaluator semantics under which its expected dispositions were recorded. The fixture-local schema and operation identifiers remain byte-preserved as historical test metadata.
 
-The historical whole-path fixture is not presented as a drop-in current regression case. Its expected dispositions belong to the evaluator lineage under which that fixture was created. Later evaluator strengthening changed candidate-resolution requirements, so the preserved historical fixture must not be read as a claim that the unchanged fixture produces the same result under the later evaluator.
+## Controlled harness depth
 
-The exact fixture copies retain their fixture-local schema and operation identifiers because removing those fields would alter the artifacts. Within this public snapshot those identifiers are frozen historical test metadata only. They are not private repository locators, current branch or pull-request state, active work-packet selection, Runtime authority, or current Runtime state.
+The complete controlled test estate connects these fixtures to proprietary implementation modules, schemas, control objects, deterministic evaluators, qualification campaigns, replay checks, structural/property checks, adversarial campaigns, resource-bound checks, service-boundary checks, and lifecycle verification.
 
-## Why the complete harness is not published
-
-The complete private test harness includes proprietary implementation imports, internal module paths, schemas, control objects, source-development locators and implementation surfaces that are outside the disclosure boundary of the public EHCOsystem repository.
-
-For that reason, this snapshot publishes exact synthetic fixtures where the complete artifact is safe, and a bounded index where publishing the full executable harness would disclose protected implementation detail. This follows the repository's existing evidence-first diligence model: enough material to inspect the technical proposition without transferring the proprietary implementation.
+Public inspection uses exact safe fixture artifacts and a source-reviewed qualification index. Controlled technical diligence can extend the inspection through exact source/revision identity, selected safe execution, witnessed tests, and written verification findings.
 
 ## Files
 
-- `MANIFEST.json` records fixture identity, case counts, scopes and proof ceilings.
-- `actual-tests/` contains the exact selected test fixtures.
-- `QUALIFICATION_TEST_INDEX_2026-08-24.md` records public-safe qualification test names and categories observed at the source-review date.
+- `MANIFEST.json` — fixture identity, provenance, case counts, scopes and evidence metadata.
+- `actual-tests/` — seven exact selected test fixtures.
+- `QUALIFICATION_TEST_INDEX_2026-08-24.md` — selected qualification test names and dimensions observed in controlled source.
 
-## Interpretation boundary
+## Evidence relationships
 
-A test fixture is not a Runtime. A passing repository test is not Runtime admission. Test publication does not create authority, standing, deployment, release, consequence, persistence or Runtime truth. EHCO AI-OS Runtime authority and current Runtime state remain owned by the instantiated EHCO Runtime and its owning evidence.
+- **Selected test-artifact identity and contents:** this snapshot and manifest.
+- **Language Model implementation and maturity:** current controlled source and qualification estate.
+- **Tier One Runtime authority and current Runtime state:** instantiated EHCO Runtime evidence.
 
 Use of these materials is governed by the repository root `LICENSE`.

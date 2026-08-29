@@ -1,52 +1,83 @@
 ---
 title: EHCO Language Model
-version: 2.0
-status: current-public-system-boundary
-published: 2026-08-25
+version: 2.1
+status: current-public-system-record
+published: 2026-08-28
 maintainer: EHCOnomics
 evidence_class: controlled-ehco-system-record
-supersedes: version 1.3
+supersedes: version 2.0
 ---
 
 # EHCO Language Model
 
-The EHCO Language Model is the deterministic computational-language component of the EHCOnomics technology estate. Its controlled architecture is **single-path** and **zero-weight**: language computation is expressed through explicit computational structures and operators rather than learned-weight inference or delegation to an external language model.
+The **EHCO Language Model** is EHCOnomics' deterministic computational-language system.
 
-Its controlled source estate covers lexical and morphological processing, syntax and semantic composition, reference and context, evidence binding, Language Math, deterministic candidate search and resolution, ambiguity and withholding, bounded reasoning, and a deterministic component-service boundary.
+Its governed architecture is:
+
+> **DETERMINISTIC_COMPUTATIONAL_LANGUAGE / SINGLE_PATH / EXPLICIT_EHCO_COMPUTATION / ZERO_WEIGHT_ONLY / ZERO WEIGHTS TRAINED**
+
+Language intelligence is implemented through explicit EHCO computation across deterministic linguistic structures, mathematical operators, evidence bindings, search/resolution mechanisms, and service contracts.
+
+## Established implementation depth
+
+The accepted source estate contains:
+
+- **Language Kernel** — lexical, morphological, syntactic, semantic, reference, context, discourse, ambiguity, and withholding structures;
+- **Language Math** — explicit deterministic mathematical language and transformation structures;
+- **deterministic tokenizer** — governed tokenization and corpus lineage;
+- **evaluation** — deterministic candidate construction, resolution, qualification, replay, structural and compositional evaluation;
+- **service boundary** — deterministic component request/response handling and HTTP-boundary equivalence;
+- **evidence and owner seams** — typed contracts connecting language computation to governed evidence and owning systems;
+- **schemas, registries and fixtures** — machine-readable semantic, qualification and provenance structures;
+- **deterministic test estate** — replay, metamorphic, structural, adversarial, conformance, resource-bound, recursion, service-boundary, failure-frontier and full-range qualification material;
+- **component packaging** — Dockerfile, dependency locks and component packaging source; and
+- **production-lifecycle source** — governed artifact build, qualification, release, stage-readiness and stage-verification workflows.
+
+## Deep Final Completion
+
+The owner-selected finalization program is the **DF-01 through DF-10 Deep Final Completion sequence**:
+
+`DF-01 Active Estate Purification`
+→ `DF-02 Computational Meaning Canonicalization`
+→ `DF-03 Caller-Unstructured Deterministic Language Spine`
+→ `DF-04 Linguistic Depth and Productivity`
+→ `DF-05 Context, Reference, Discourse and Repair`
+→ `DF-06 Language Math, Reasoning, Search and Transformation`
+→ `DF-07 Evidence and Owner Seams`
+→ `DF-08 Full Capability Closure Qualification`
+→ `DF-09 Final Source Resting-State Seal`
+→ `DF-10 Final Artifact Rebuild and Verified Staging`.
+
+Current accepted source has integrated **DF-01 Unit 1** and **DF-01 Unit 2**. The current program is purifying the active estate and preparing the deterministic implementation for the subsequent canonicalization, linguistic-depth, reasoning, evidence, closure, seal, and artifact stages.
 
 ## Public test evidence
 
-A bounded public test snapshot is available at [Language Model Public Test Snapshot v1](evidence/public-test-snapshot-v1/README.md).
+The [Language Model Public Test Snapshot v1](evidence/public-test-snapshot-v1/README.md) publishes **seven exact synthetic fixtures covering 62 cases**, expected dispositions, artifact identity/provenance, a qualification-test index, and dedicated validation tooling.
 
-The snapshot publishes seven selected exact synthetic repository fixtures covering **62 cases**, plus expected dispositions, artifact identity/provenance, a qualification-test index, and dedicated validation tooling.
+The snapshot is one public inspection package within the larger controlled qualification estate. The qualification index exposes selected real test names and dimensions across deterministic replay, pairwise and round-trip preservation, canonical ordering, structural/property qualification, text-encoding adversarial cases, mutation/fuzz failure-frontier cases, cross-caller semantic conformance, semantic injection/evidence poisoning, performance/resource bounds, bounded complexity/recursion, and deterministic service-boundary behavior.
 
-Its evidence class is bounded test-artifact identity and public test design. It is not an external benchmark, independent certification, reproduction of the complete private executable harness, proof of global language completeness, or proof of equivalence to a frontier LLM.
+## Technology-estate relationships
 
-## Relationship to the technology estate
+- **EHCO Language Model** owns deterministic computational language.
+- **EHCO Range Reactor** owns bounded deterministic range/reasoning computation.
+- **EHCO RAG** owns governed retrieval, context, provenance, source custody, and evidence services.
+- **EHCO AI-OS** owns Tier One Runtime authority and current Runtime state.
+- **Scoped Runtime participation** is owned by the applicable Runtime evidence for the relevant corridor.
 
-The Language Model is a downstream governed component. It owns computational-language capability; it does not acquire Tier One Runtime authority from model output, source presence, testing, packaging, or publication.
+## Public and controlled evidence routes
 
-EHCO RAG provides governed retrieval/evidence capability through separate contracts and provenance boundaries. EHCO Range Reactor owns separate bounded range/reasoning computation. Those responsibilities are not collapsed into the Language Model identity.
-
-A scoped Runtime participation relationship, where established, is separate from the Language Model's persistent component identity and is owned by the applicable Runtime evidence.
-
-## Public/private boundary
-
-The complete proprietary executable harness, private implementation imports and module paths, protected schemas/control surfaces, moving development state, credentials, and private operational topology are not published here.
-
-For the controlling Runtime/repository/test-estate interpretation, see the [canonical boundary record](../architecture/runtime-repository-and-test-estate-boundary.md).
+The public repository publishes the architecture record, exact selected test fixtures, qualification index, provenance manifest, and public verification tooling. Controlled technical diligence can extend that inspection through exact source/revision identity, deeper qualification records, safe selected tests, witnessed execution, and written verification findings.
 
 ## Related material
 
-- [EHCOnomics Technology Estate](../architecture/EHCO-TECHNOLOGY-ESTATE.md)
+- [EHCOsystem Technology Estate](../architecture/EHCO-TECHNOLOGY-ESTATE.md)
 - [Language Model Public Test Snapshot v1](evidence/public-test-snapshot-v1/README.md)
 - [Ecosystem Claim → Evidence Matrix](../assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md)
 - [Ecosystem Components and Runtime Relationships](../architecture/ecosystem-components-and-participation.md)
-- [EHCO AI-OS Technical Diligence](../TECHNICAL-DILIGENCE.md)
 
 ## Revision history
 
 | Version | Date | Change |
 |---|---|---|
-| 2.0 | 2026-08-25 | Reframed the public page capability-first while preserving the bounded test-evidence and Runtime relationship boundaries. |
-| 1.3 | 2026-08-24 | Added the bounded frozen public test snapshot. |
+| 2.1 | 2026-08-28 | Refreshed the public record from current owning source and represented the deterministic implementation, qualification estate, and Deep Final Completion depth affirmatively. |
+| 2.0 | 2026-08-25 | Established the capability-first public component record. |

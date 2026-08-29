@@ -1,50 +1,46 @@
 ## Scope
 
-Describe the bounded public-repository change and why it is needed.
+Describe the bounded public-repository change and the result it establishes.
 
-## Public boundary
+## Public architecture
 
-- [ ] This change does not make the repository, branch, workflow, packet, dashboard, ledger, or artifact the EHCO AI-OS Runtime.
-- [ ] Accepted Runtime standing remains **52/53** unless a separately applicable Runtime authority/proof path establishes otherwise.
-- [ ] No private repository names, private revisions, internal schemas, protected control paths, credentials, privileged endpoints, production topology, or private proof records are introduced without explicit publication approval.
-- [ ] Public source/control provenance is expressed generically and no exact private source locator is introduced.
-- [ ] Historical paths/ports/service names retained in hash-preserved evidence are not represented as current infrastructure.
+- [ ] EHCO AI-OS remains represented as the realized Tier One Runtime with accepted standing **52/53**.
+- [ ] Runtime authority/current state, controlled source/test estates, downstream components, Tier Three projections and public evidence retain explicit owners.
+- [ ] Public source/control provenance uses approved public-safe references.
+- [ ] Published component set matches the current owner-selected public scope.
+- [ ] Current maturity statements are source-grounded and capability-first.
+- [ ] EHCO Dashboard is represented as the current accepted working Tier Three projection baseline.
 
 ## Claim and evidence discipline
 
-- [ ] Every material claim is classified by its applicable public evidence class.
-- [ ] Every material claim stays within the proof ceiling of its cited source.
-- [ ] Persistent downstream governed component identity is not represented as Runtime participation unless owning Runtime evidence establishes that scoped relationship.
-- [ ] Artifact identity is not represented as Runtime identity.
-- [ ] Declaration presence is not represented as executed enforcement.
-- [ ] Test success or packet integrity is not represented as Runtime admission or universal behavioral proof.
-- [ ] Projection, dashboard, ledger, repository, or assistant output is not represented as Runtime truth or authority.
-- [ ] Any qualitative maturity posture is source-grounded, percentage-free, and preserves component-specific maturity differences.
-- [ ] The current accepted working Dashboard baseline is represented only as a Tier Three projection baseline, not as present hosting, public ingress, production operation, or authority.
-- [ ] Estate-lane placement is not used to change persistent component identity, authority, evidence class, or Runtime relationship.
-- [ ] Grasp Safety and Pegasus IT remain downstream governed components even when tracked as substantial project/pilot expansion outside the public core-completion denominator.
+- [ ] Every material claim identifies its applicable evidence class and scope.
+- [ ] Component identity and scoped Runtime participation are represented as separate lifecycle dimensions.
+- [ ] Artifact identity, declaration presence, bounded test behavior, packet integrity, deployment evidence and Runtime evidence retain distinct evidence classes.
+- [ ] Maturity fields state maturity affirmatively.
+- [ ] Evidence-scope fields state the proposition established by the cited evidence.
 
 ## Publication control
 
-- [ ] Canonical navigation is updated if this adds or removes a public record.
-- [ ] `releases/PUBLIC-RELEASE-REGISTER.md` is updated when the public estate represented by the candidate revision changes.
-- [ ] Hash-preserved Packets 00–08 and canonical dossier bytes are unchanged unless an explicitly authorized evidence-version operation requires otherwise.
+- [ ] Canonical navigation reflects the candidate public record set.
+- [ ] `releases/PUBLIC-RELEASE-REGISTER.md` reflects the candidate public estate.
+- [ ] Hash-preserved Packets 00-08, canonical dossier bytes and exact Language Model fixture artifacts retain their accepted identities.
 - [ ] Security/confidentiality/IP disclosure review is complete.
-- [ ] Repository description, topics, homepage, and analogous provider-side discoverability metadata are aligned to the public target or have an explicit tool/authorization disposition.
+- [ ] Repository description, topics and homepage align with the public architecture.
 
 ## Validation and governance
 
 - [ ] Repository validation passes on the exact PR head.
-- [ ] CodeQL/code-scanning requirements applicable to the exact PR head are satisfied.
-- [ ] The current repository and organization rulesets have been re-read before acceptance, and every then-required status check or review condition is satisfied on the exact candidate relationship.
-- [ ] No required governance condition is treated as optional merely because a bypass capability exists.
-- [ ] Any assistant-control/provider adoption needed to produce a required organization gate remains a separately owner-selected operation and is not absorbed into an unrelated public modernization PR.
-- [ ] Stable repository identity/boundary fields are not rewritten merely to make a gate green.
+- [ ] Applicable CodeQL/code-scanning conditions pass on the exact PR head.
+- [ ] Current repository and organization rulesets have been read and their exact required checks/review conditions are satisfied.
+- [ ] `EHCO Assistant Operation Gate` passes on the exact candidate relationship.
+- [ ] Stable repository identity/boundary fields remain factual and stable.
 
 ## Effects
 
-Runtime authority effect: **NONE** unless separately established.
+Runtime authority effect: **NONE**
 
-Standing effect: **NONE** unless separately established.
+Standing effect: **NONE**
 
-Deployment/release effect: **NONE** unless separately established.
+Deployment effect: **NONE**
+
+Release effect: **NONE**
