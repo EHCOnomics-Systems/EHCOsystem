@@ -5,48 +5,40 @@ protocol_reference:
   profile_version: 1.0.0
   protocol_version: 1.0.0
 repository: EHCOnomics-Systems/EHCOsystem
-governed_object: PUBLIC_EHCOSYSTEM_DASHBOARD_VISUAL_ORIENTATION
+governed_object: PUBLIC_EHCOSYSTEM_CONTROL_AND_METADATA_CLEANUP_CLOSEOUT
 source_owner:
   repository: EHCOnomics-Systems/EHCOsystem
-  revision: 8208c897b7d1529a6aafa25992eb1a7b53850d1f
+  revision: 5fc322e0b3c291bd0c275be3bcfd07e8eff0c4aa
   repository_manifest_path: ehco.repository.yaml
-  controlling_source_reference: Drive EHCO-PUB-SOW-006
+  controlling_source_reference: Drive EHCO-PUB-SOW-004 and EHCO-PUB-SOW-006 accepted closeout evidence
 selection:
   selected_by: Edward Henry
   selection_class: EXPLICIT_OWNER_DIRECTION
   durable_reference: >-
-    Edward Henry owner direction 2026-08-29 selects EHCO-PUB-SOW-006 ACCEPT for the exact qualified Dashboard visual-orientation PUBLISH candidate at 2adfc7e26fbf95bf2c894e8ac8075ed765c2c05d on PR #31. That reviewed PUBLISH head completed EHCO Assistant Operation Gate, Validate evidence and public boundaries, CodeQL analysis, and GitHub Advanced Security CodeQL successfully, with no new alerts in code changed by the pull request and no unresolved review threads. This ACCEPT projection is bound to that exact reviewed PUBLISH head; the eight Dashboard assets, README.md, architecture/EHCO-AI-OS-SYSTEM-CARD.md, and verification/validate_public_evidence.py remain unchanged by the ACCEPT projection. Standing, Runtime, authority, deployment, production, release, component-owning-source, ruleset, history-purge, and successor effects remain NONE. NEW_PATH:architecture/assets/dashboard/overview-june-2026-public.webp NEW_PATH:architecture/assets/dashboard/services-coordination-june-2026-public.webp NEW_PATH:architecture/assets/dashboard/authority-boundary-june-2026-public.webp NEW_PATH:architecture/assets/dashboard/receipts-evidence-june-2026-public.webp NEW_PATH:architecture/assets/dashboard/health-registry-june-2026-public.webp NEW_PATH:architecture/assets/dashboard/replacement-readiness-june-2026-public.webp NEW_PATH:architecture/assets/dashboard/prime-relationship-june-2026-public.webp NEW_PATH:architecture/assets/dashboard/agent-connect-coordination-june-2026-public.webp OPERATION_STABLE_ENVELOPE_CHANGE=true
-  source_base_revision: 8208c897b7d1529a6aafa25992eb1a7b53850d1f
-  expected_reviewed_head_revision: 2adfc7e26fbf95bf2c894e8ac8075ed765c2c05d
+    Edward Henry owner direction 2026-08-29 selects the bounded public-repository cleanup identified by the completed audit: reconcile SOW-004 to its already accepted PR #29 result, normalize mutable historical pull-request descriptions that still projected superseded stage/unit or pending-operation state, and close the stale SOW-006 operation projection on accepted main 5fc322e0b3c291bd0c275be3bcfd07e8eff0c4aa. The cleanup changes only ehco.operation.yaml in repository source; mutable pull-request metadata reconciliation is provider-side historical-description cleanup. Release/provenance materialization, ehco.repository.yaml reconciliation, branch deletion, history rewrite, repository settings, rulesets, deployment, production, Runtime, authority, proof, standing, and successor effects remain outside scope. OPERATION_STABLE_ENVELOPE_CHANGE=true
+  source_base_revision: 5fc322e0b3c291bd0c275be3bcfd07e8eff0c4aa
+  expected_reviewed_head_revision: 58a3989986c24fa91fc6b39d6206e0dcb36c2032
 control_anchor: AGENTS.md
 status_owner_path: ehco.operation.yaml
 accepted_standing: 52/53
 active_operation:
-  operation_id: EHCO-PUBLIC-DASHBOARD-VISUAL-ORIENTATION-ACCEPT-001
-  state: ACTIVE
+  operation_id: EHCO-PUBLIC-CONTROL-METADATA-CLEANUP-CLOSEOUT-001
+  state: COMPLETE
   authorization_mode: ACCEPT
   bounded_outcome: >-
-    Accept and merge the exact qualified SOW-006 Dashboard visual-orientation candidate after verifying the ACCEPT-control head preserves the reviewed public content and passes all required repository and security checks.
-  remaining_bounded_work:
-    - Verify the ACCEPT-control head changes only ehco.operation.yaml relative to exact reviewed PUBLISH head 2adfc7e26fbf95bf2c894e8ac8075ed765c2c05d.
-    - Verify the full base-to-ACCEPT-head changed-path set remains the exact twelve-path SOW-006 envelope.
-    - Qualify the exact ACCEPT-control head through required repository and security checks.
-    - Confirm pull request review threads remain clear.
-    - Mark PR 31 ready for review and squash-merge only the exact qualified ACCEPT-control head under repository rules.
-    - Read back accepted main and reconcile SOW-006 to the owning Git result.
+    Close the stale public operation-state projection after accepted SOW-006 source merge, reconcile the completed SOW-004 control record, and normalize bounded mutable GitHub pull-request descriptions while preserving accepted public source and all evidence/effect boundaries.
+  remaining_bounded_work: []
   interaction_seams:
-    - Google Drive EHCO-PUB-SOW-006 owns the durable public first-contact and Dashboard visual-orientation meaning and records this bounded ACCEPT selection.
-    - Exact reviewed PUBLISH head 2adfc7e26fbf95bf2c894e8ac8075ed765c2c05d owns the qualified public content presented for acceptance.
-    - EHCOsystem main@8208c897b7d1529a6aafa25992eb1a7b53850d1f remains the source base until merge.
-    - The eight image derivatives remain dated public-safe Tier Three projection/interface views sourced from owner-supplied June 2026 EHCO Dashboard captures.
+    - EHCOsystem accepted main 5fc322e0b3c291bd0c275be3bcfd07e8eff0c4aa is the exact source base for this one-file repository-control closeout.
+    - SOW-006 PR #31 accepted exact head 58a3989986c24fa91fc6b39d6206e0dcb36c2032 and squash-merged to main 5fc322e0b3c291bd0c275be3bcfd07e8eff0c4aa after successful EHCO Assistant Operation Gate, Validate evidence and public boundaries, CodeQL analysis, and GitHub Advanced Security CodeQL qualification.
+    - SOW-004 PR #29 accepted exact head fce0dcafcc4c87db1fa399e1dbe5f195987bcc15 and squash-merged to main c90eea53a26ca4e568f130d595ed4671c2939873 after successful required repository and security checks; Drive EHCO-PUB-SOW-004 is reconciled COMPLETE / ACCEPTED AND CLOSED.
+    - Mutable historical pull-request descriptions for PRs #23, #24, #27, #29, #30, and #31 are reconciled to final historical disposition and no longer project superseded pending/open or Language Model stage/unit maturity state.
+    - Current public architecture, evidence, validators, Dashboard assets, Language Model material, Range Reactor material, immutable evidence packets, dossier bytes, workflows, AGENTS.md, and stable ehco.repository.yaml remain unchanged by this repository-source closeout.
     - INSTANTIATED_EHCO_RUNTIME retains Tier One Runtime authority and current Runtime state.
   non_overlap:
-    - Dashboard owning source, controls, deployment, production state and Runtime participation remain outside this operation.
-    - Dashboard asset bytes, README.md, architecture/EHCO-AI-OS-SYSTEM-CARD.md and verification/validate_public_evidence.py from exact reviewed PUBLISH head 2adfc7e26fbf95bf2c894e8ac8075ed765c2c05d remain unchanged by this ACCEPT projection.
-    - Language Model, Range Reactor and other component owning-source development remain outside this operation.
-    - Stable ehco.repository.yaml identity and boundary fields remain unchanged.
-    - Existing immutable public evidence packets, dossier bytes, accepted Language Model fixture bytes and accepted Range Reactor snapshot bytes remain unchanged.
-    - Artifact publication, Git tag, GitHub Release, deployment, Runtime admission/binding/invocation/participation/authority/state/proof, standing transition, SOW-003 history purge, repository-settings, ruleset and successor effects remain outside this operation.
+    - Repository source change is limited to ehco.operation.yaml.
+    - Release/provenance materialization, Git tag, GitHub Release, accepted_commit/artifact_digest semantics, and ehco.repository.yaml remain separate unselected work.
+    - Branch deletion, history rewrite, force update, repository-settings mutation, ruleset mutation or weakening, deployment, production activation, Runtime admission/binding/invocation/participation/authority/state/proof, and standing transition are not selected.
   automatic_successor: PROHIBITED
   successor_operation: NOT_SELECTED
 execution_continuity:
@@ -62,28 +54,24 @@ execution_continuity:
 scope:
   permitted_paths:
     - ehco.operation.yaml
-    - README.md
-    - architecture/EHCO-AI-OS-SYSTEM-CARD.md
-    - verification/validate_public_evidence.py
-    - architecture/assets/dashboard/overview-june-2026-public.webp
-    - architecture/assets/dashboard/services-coordination-june-2026-public.webp
-    - architecture/assets/dashboard/authority-boundary-june-2026-public.webp
-    - architecture/assets/dashboard/receipts-evidence-june-2026-public.webp
-    - architecture/assets/dashboard/health-registry-june-2026-public.webp
-    - architecture/assets/dashboard/replacement-readiness-june-2026-public.webp
-    - architecture/assets/dashboard/prime-relationship-june-2026-public.webp
-    - architecture/assets/dashboard/agent-connect-coordination-june-2026-public.webp
   controlled_paths:
     - ehco.operation.yaml
-    - verification/validate_public_evidence.py
   prohibited_paths:
     - AGENTS.md
     - ehco.repository.yaml
-    - GOVERNANCE.md
-    - SECURITY.md
+    - .github/workflows/**
+    - README.md
+    - LIBRARY.md
     - NOTICE.md
     - PROVENANCE.md
+    - GOVERNANCE.md
+    - SECURITY.md
+    - ECOSYSTEM-DILIGENCE.md
     - TECHNICAL-DILIGENCE.md
+    - architecture/**
+    - assurance/**
+    - getting-started/**
+    - verification/**
     - releases/**
     - evidence/**
     - dossiers/**
@@ -110,11 +98,6 @@ change_control:
     - record_owner_acceptance
     - close_operation
   remote_actions_prohibited:
-    - create_branch
-    - commit
-    - push
-    - open_draft_pull_request
-    - update_draft_pull_request
     - activate_selected_successor
     - modify_repository_settings
     - modify_drive_controls
@@ -135,7 +118,7 @@ effects:
   external_effect: NONE
 bridge:
   applicability: NOT_APPLICABLE_NON_PARTICIPANT
-  non_applicability_reason: Public repository source representation is separate from Runtime participation.
+  non_applicability_reason: Public repository source/control cleanup is separate from Runtime participation.
   direct_invocation: PROHIBITED
   runtime_admission_status: NOT_ESTABLISHED
   participation_binding_status: NOT_ESTABLISHED
@@ -143,26 +126,28 @@ bridge:
 evidence:
   evidence_class: OWNER_ACCEPTANCE_RECORD
   required_checks:
-    - Exact reviewed PUBLISH head is 2adfc7e26fbf95bf2c894e8ac8075ed765c2c05d and has successful public validation, canonical assistant-operation validation, CodeQL analysis and GitHub Advanced Security CodeQL with no new alerts in code changed by PR 31.
-    - ACCEPT projection changes only ehco.operation.yaml relative to exact reviewed PUBLISH head 2adfc7e26fbf95bf2c894e8ac8075ed765c2c05d.
-    - Full base-to-ACCEPT-head changed-path set remains the exact twelve-path SOW-006 envelope.
-    - The exact eight reviewed Dashboard WebP assets and reader-facing Dashboard narrative/validator content remain unchanged on the ACCEPT-control head.
-    - Required GitHub checks pass on the exact ACCEPT-control head before merge.
+    - Exact source base remains accepted main 5fc322e0b3c291bd0c275be3bcfd07e8eff0c4aa.
+    - Final changed-path set remains exactly ehco.operation.yaml.
+    - Exact final COMPLETE head passes Validate evidence and public boundaries, CodeQL, and EHCO Assistant Operation Gate under active repository protections.
     - Pull request review threads remain clear before merge.
-    - Merge uses exact expected-head protection and accepted main is read back after merge.
+    - Closeout pull request is merged only with expected-head protection after final exact-head qualification.
+    - Accepted public main is read back after merge and shows state COMPLETE with remaining_bounded_work empty and automatic successor prohibited.
   proves:
-    - Owner-selected acceptance applies to the exact reviewed SOW-006 Dashboard visual-orientation candidate.
-    - The accepted public representation preserves dated Tier Three projection/interface framing, public-safe disclosure treatment and Runtime-owned Tier One authority/current Runtime-state ownership.
+    - The stale SOW-006 ACTIVE repository operation projection is closed after its already accepted merge result.
+    - SOW-004 Drive control is reconciled to its already accepted PR #29 implementation result.
+    - Identified mutable pull-request metadata no longer presents superseded pending-operation or Language Model stage/unit maturity state as current public representation.
+    - Accepted public source, evidence integrity, numerical standing, Runtime authority boundaries, and repository protections remain preserved.
   evidence_not_created:
-    - Current Dashboard-baseline establishment for the exact June capture bytes
-    - Dashboard owning-source acceptance or development effect
     - Artifact publication or release
+    - Provenance materialization or accepted_commit/artifact_digest semantics
     - Deployment or production activation
     - Runtime admission binding invocation participation authority state proof or canonical Runtime receipt
     - Numerical standing transition
+    - Repository settings or ruleset mutation
+    - Git history rewrite or branch deletion
 stop_condition:
-  - Verify the ACCEPT-control head and exact relationship to reviewed PUBLISH head 2adfc7e26fbf95bf2c894e8ac8075ed765c2c05d.
-  - Mark PR 31 ready only after exact-head qualification succeeds and review threads are clear.
-  - Squash-merge only the exact qualified ACCEPT-control head under repository rules.
-  - Read back accepted main and reconcile Drive SOW-006.
+  - Verify the exact final COMPLETE head changes only ehco.operation.yaml relative to accepted main 5fc322e0b3c291bd0c275be3bcfd07e8eff0c4aa.
+  - Verify all required repository and security checks pass on the exact closeout head and review threads remain clear.
+  - Squash-merge only the exact qualified closeout head under repository rules.
+  - Read back accepted public main and confirm terminal COMPLETE control state.
   - Stop with automatic successor prohibited.
