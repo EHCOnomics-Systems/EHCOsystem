@@ -6,6 +6,20 @@
 
 **EHCO AI-OS is the realized Tier One Runtime** of EHCOsystem with accepted standing **52/53**. `EHCO_DOCKER_PORTABILITY` is the **PRIMARY_ACCESSIBLE_RUNTIME_PROJECTION** of the established Runtime lineage. The **current accepted working EHCO Dashboard baseline** is the principal presently established **Tier Three projection baseline** within the portability estate. **Downstream governed components** provide deterministic language, range/reasoning, retrieval/evidence, relationship continuity, coordination, research, and domain capability.
 
+## Dashboard visual orientation
+
+The EHCO Dashboard gives reviewers a visual orientation across governed system posture, service coordination, authority relationships, evidence, health, readiness, and component interaction. These dated interface views complement the repository's claim-to-evidence routes.
+
+![EHCO Dashboard overview projection showing governed system posture, Runtime control, active services, evidence, and reserved extension points](architecture/assets/dashboard/overview-june-2026-public.webp)
+
+*EHCO Dashboard — Tier Three projection/interface view. Public-safe derivative from an owner-supplied June 2026 EHCO Dashboard capture. Tier One Runtime authority and current Runtime-state ownership remain with `INSTANTIATED_EHCO_RUNTIME`.*
+
+![EHCO Dashboard services and coordination projection showing Prime, Agent Connect, the live Dashboard, and source-binding relationships](architecture/assets/dashboard/services-coordination-june-2026-public.webp)
+
+*EHCO Dashboard — Tier Three projection/interface view. Public-safe derivative from an owner-supplied June 2026 EHCO Dashboard capture. Tier One Runtime authority and current Runtime-state ownership remain with `INSTANTIATED_EHCO_RUNTIME`.*
+
+**[Explore all eight Dashboard views](architecture/EHCO-AI-OS-SYSTEM-CARD.md#dashboard-visual-orientation)**
+
 ## Current maturity
 
 The **foundational and shared EHCOsystem spine is substantially established**. Current development is concentrated in component finalization and hardening, EHCO RAG implementation, research/foundation reconciliation, and continuing domain/application expansion.
