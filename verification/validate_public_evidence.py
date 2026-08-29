@@ -81,6 +81,42 @@ PRIVATE_PROGRAM_HASHES = {
     "42c0877fa495c86d47844aa1179dfdf23cff40f9a709169faeb3b0f0c7766846",
 }
 
+DASHBOARD_ASSETS = {
+    "architecture/assets/dashboard/overview-june-2026-public.webp":
+        "F70838036001A79064C3F2EE86D301655C44C9E1F87811FF507869B2B1A30F4A",
+    "architecture/assets/dashboard/services-coordination-june-2026-public.webp":
+        "1E1592A1FC209D31FA10FFAE6BA8CC14645B230038BA58D821D2093AA1DA0526",
+    "architecture/assets/dashboard/authority-boundary-june-2026-public.webp":
+        "6304053C6764C757E66B6917C043372DEB32F1B744308F1EB418B35A08B6754C",
+    "architecture/assets/dashboard/receipts-evidence-june-2026-public.webp":
+        "00843121212E99CFEF6A9DC653F0F22655D9A8E01910F9F4172F83014611F790",
+    "architecture/assets/dashboard/health-registry-june-2026-public.webp":
+        "615BF7449A793C9CE2F760D9E178ABD0DFA176A7DCF3BEA43D3BC6457FCC2244",
+    "architecture/assets/dashboard/replacement-readiness-june-2026-public.webp":
+        "906A5E5671F9F9BF54063B05885F9CAD109B957A7666680576C09CE3FD885F86",
+    "architecture/assets/dashboard/prime-relationship-june-2026-public.webp":
+        "EEFA86B3F8DBBC6309342EE87CAC72541AFC6679AAEAD49322E1EF08A96798CE",
+    "architecture/assets/dashboard/agent-connect-coordination-june-2026-public.webp":
+        "F2AF589E9706786EF38B8D1AE08AF8A967F5249173EE59C8CA5E565D9B485003",
+}
+DASHBOARD_README_ROUTES = (
+    "architecture/assets/dashboard/overview-june-2026-public.webp",
+    "architecture/assets/dashboard/services-coordination-june-2026-public.webp",
+)
+DASHBOARD_SYSTEM_CARD_ROUTES = (
+    "assets/dashboard/authority-boundary-june-2026-public.webp",
+    "assets/dashboard/receipts-evidence-june-2026-public.webp",
+    "assets/dashboard/health-registry-june-2026-public.webp",
+    "assets/dashboard/replacement-readiness-june-2026-public.webp",
+    "assets/dashboard/prime-relationship-june-2026-public.webp",
+    "assets/dashboard/agent-connect-coordination-june-2026-public.webp",
+)
+DASHBOARD_CAPTION = (
+    "EHCO Dashboard — Tier Three projection/interface view. Public-safe derivative from an "
+    "owner-supplied June 2026 EHCO Dashboard capture. Tier One Runtime authority and current "
+    "Runtime-state ownership remain with `INSTANTIATED_EHCO_RUNTIME`."
+)
+
 ERRORS: list[str] = []
 CHECKS = 0
 
@@ -280,6 +316,54 @@ def validate_markdown_links() -> None:
             checked(resolved.exists(), f"Broken Markdown link in {path.relative_to(ROOT)}: {raw}")
 
 
+def validate_dashboard_visual_orientation() -> None:
+    dashboard_dir = ROOT / "architecture" / "assets" / "dashboard"
+    checked(dashboard_dir.is_dir(), "Dashboard public asset directory missing")
+
+    actual = (
+        sorted(path.name for path in dashboard_dir.iterdir() if path.is_file())
+        if dashboard_dir.is_dir()
+        else []
+    )
+    expected = sorted(PurePosixPath(relative).name for relative in DASHBOARD_ASSETS)
+    checked(actual == expected, f"Dashboard public asset set mismatch: {actual}")
+
+    for relative, expected_sha256 in DASHBOARD_ASSETS.items():
+        path = ROOT / relative
+        checked(path.is_file(), f"Dashboard public asset missing: {relative}")
+        if path.is_file():
+            checked(path.suffix.lower() == ".webp", f"Dashboard public asset encoding mismatch: {relative}")
+            checked(sha256_file(path) == expected_sha256, f"Dashboard SHA-256 mismatch: {relative}")
+
+    readme = read_text("README.md")
+    system_card = read_text("architecture/EHCO-AI-OS-SYSTEM-CARD.md")
+    for route in DASHBOARD_README_ROUTES:
+        checked(route in readme, f"README Dashboard route missing: {route}")
+    for route in DASHBOARD_SYSTEM_CARD_ROUTES:
+        checked(route in system_card, f"System-card Dashboard route missing: {route}")
+
+    image_re = re.compile(r"!\[([^\]]+)\]\(([^)]+)\)")
+    readme_images = {target.strip(): alt.strip() for alt, target in image_re.findall(readme)}
+    system_card_images = {target.strip(): alt.strip() for alt, target in image_re.findall(system_card)}
+    for route in DASHBOARD_README_ROUTES:
+        checked(bool(readme_images.get(route)), f"README Dashboard alt text missing: {route}")
+    for route in DASHBOARD_SYSTEM_CARD_ROUTES:
+        checked(bool(system_card_images.get(route)), f"System-card Dashboard alt text missing: {route}")
+
+    checked(readme.count(DASHBOARD_CAPTION) == 2, "README Dashboard projection caption count mismatch")
+    checked(system_card.count(DASHBOARD_CAPTION) == 6, "System-card Dashboard projection caption count mismatch")
+
+    framing_phrases = (
+        "Tier Three projection/interface view",
+        "June 2026 EHCO Dashboard capture",
+        "Tier One Runtime authority",
+        "current Runtime-state ownership remain with `INSTANTIATED_EHCO_RUNTIME`",
+    )
+    for phrase in framing_phrases:
+        checked(phrase in readme, f"README Dashboard framing missing: {phrase}")
+        checked(phrase in system_card, f"System-card Dashboard framing missing: {phrase}")
+
+
 def validate_disclosure_safety() -> None:
     high_confidence = [
         re.compile(r"-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----"),
@@ -430,6 +514,7 @@ def main() -> int:
     validate_json_syntax()
     validate_suite(manifest_hashes)
     validate_markdown_links()
+    validate_dashboard_visual_orientation()
     validate_disclosure_safety()
     validate_private_program_scope()
     validate_affirmative_public_representation()
