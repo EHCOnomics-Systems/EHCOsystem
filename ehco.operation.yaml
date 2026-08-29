@@ -59,7 +59,8 @@ scope:
   prohibited_paths:
     - AGENTS.md
     - ehco.repository.yaml
-    - .github/workflows/**
+    - .github/workflows/ehco-assistant-operation-gate.yml
+    - .github/workflows/ehco-assistant-operation-gate-bootstrap.yml
     - README.md
     - LIBRARY.md
     - NOTICE.md
@@ -92,16 +93,16 @@ change_control:
     - delete_file
     - generate_artifact
   remote_actions_authorized:
-    - create_branch
-    - commit
-    - push
-    - open_draft_pull_request
-    - update_draft_pull_request
     - mark_pull_request_ready_for_review
     - merge_pull_request
     - record_owner_acceptance
     - close_operation
   remote_actions_prohibited:
+    - create_branch
+    - commit
+    - push
+    - open_draft_pull_request
+    - update_draft_pull_request
     - activate_selected_successor
     - modify_repository_settings
     - modify_drive_controls
