@@ -89,8 +89,25 @@ def validate_public_representation() -> None:
     combined = "\n".join(texts.values())
     required_phrases = {
         "README.md": ["mature deterministic proof-carrying implication", "Range Reactor Public Capability Snapshot v1"],
-        "range-reactor/README.md": ["proof-carrying implication, reachability, range and reasoning system", "independent collapse-verification path", "source and qualification estate"],
-        "assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md": ["EHCO Range Reactor public capability evidence", "Source-reviewed synthetic capability evidence"],
+        "range-reactor/README.md": [
+            "proof-carrying implication, reachability, range and reasoning system",
+            "independent collapse-verification path",
+            "mature deterministic proof-carrying implication, reachability, range and reasoning system with accepted current capability and qualification evidence",
+            "neither extend nor reduce the system-capability maturity claim",
+        ],
+        "architecture/EHCO-TECHNOLOGY-ESTATE.md": [
+            "Range Reactor is a **mature deterministic proof-carrying implication, reachability, range and reasoning system**",
+            "those dimensions do not demote or redefine the established system-capability maturity",
+        ],
+        "architecture/ecosystem-components-and-participation.md": [
+            "**Maturity:** mature deterministic proof-carrying implication, reachability, range and reasoning system with accepted current capability and qualification evidence",
+            "does not reduce the established mature system-capability status",
+        ],
+        "assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md": [
+            "EHCO Range Reactor public capability evidence",
+            "Source-reviewed synthetic capability evidence",
+            "**Mature established system capability** supported by accepted current source and qualification evidence",
+        ],
         "verification/README.md": ["validate_public_range_reactor_snapshot.py", "eight synthetic capability vectors"],
         "LIBRARY.md": ["Range Reactor Public Capability Snapshot v1"],
         "getting-started/START-HERE.md": ["EHCO Range Reactor Public Capability Snapshot v1"],
@@ -105,6 +122,14 @@ def validate_public_representation() -> None:
     internal_identifier = re.compile(r"\bRR-(?:REF|COLLAPSE|MATH|SCHEMA|VAL|VERIFY|ID|HID|DEP|GHCR|REALWORLD|PRODUCTION|RELEASE|PRIME|PRIMORDIA|ACCEPTED)[A-Z0-9-]*-\d+\b", re.IGNORECASE)
     require(internal_identifier.search(combined) is None, "internal Range Reactor operation/stage identifier present in reader-facing public text")
     require("refs/heads/" not in combined and "PR #" not in combined, "Range Reactor branch/PR choreography present in public representation")
+
+    downward_qualifiers = (
+        "The component's public maturity is source-and-qualification maturity",
+        "mature deterministic proof-carrying range/reasoning source and qualification estate",
+        "mature deterministic proof-carrying range / reasoning source + qualification",
+    )
+    for phrase in downward_qualifiers:
+        require(phrase not in combined, f"Range Reactor maturity is being narrowed to an evidence/source dimension: {phrase}")
 
     overclaims = (
         "Range Reactor is a Runtime participant",
