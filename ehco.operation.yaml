@@ -5,47 +5,48 @@ protocol_reference:
   profile_version: 1.0.0
   protocol_version: 1.0.0
 repository: EHCOnomics-Systems/EHCOsystem
-governed_object: PUBLIC_EHCOSYSTEM_RANGE_REACTOR_CAPABILITY_AND_EVIDENCE_REPRESENTATION
+governed_object: PUBLIC_EHCOSYSTEM_DASHBOARD_VISUAL_ORIENTATION
 source_owner:
   repository: EHCOnomics-Systems/EHCOsystem
-  revision: c90eea53a26ca4e568f130d595ed4671c2939873
+  revision: 8208c897b7d1529a6aafa25992eb1a7b53850d1f
   repository_manifest_path: ehco.repository.yaml
-  controlling_source_reference: Drive EHCO-PUB-SOW-005
+  controlling_source_reference: Drive EHCO-PUB-SOW-006
 selection:
   selected_by: Edward Henry
   selection_class: EXPLICIT_OWNER_DIRECTION
   durable_reference: >-
-    Edward Henry owner direction selects EHCO-PUB-SOW-005 ACCEPT for the EHCOsystem Range Reactor capability and public evidence representation. Exact reviewed PUBLISH head b537a19b06acbe1d0c116da3f28e076215a050da completed EHCO Assistant Operation Gate, Validate evidence and public boundaries, CodeQL analysis and GitHub Advanced Security CodeQL successfully, with no new alerts in code changed by the pull request. This ACCEPT projection is bound to that exact reviewed PUBLISH head; public Range Reactor narrative, snapshot, navigation and validator content remain unchanged by the ACCEPT projection. Standing, Runtime, authority/proof, deployment, release and Range Reactor source-development effects remain NONE. NEW_PATH:range-reactor/README.md NEW_PATH:range-reactor/evidence/public-capability-snapshot-v1/README.md NEW_PATH:range-reactor/evidence/public-capability-snapshot-v1/MANIFEST.json NEW_PATH:range-reactor/evidence/public-capability-snapshot-v1/capability-vectors.json NEW_PATH:verification/validate_public_range_reactor_snapshot.py OPERATION_STABLE_ENVELOPE_CHANGE=true
-  source_base_revision: c90eea53a26ca4e568f130d595ed4671c2939873
-  expected_reviewed_head_revision: b537a19b06acbe1d0c116da3f28e076215a050da
+    Edward Henry owner direction 2026-08-29 selects EHCO-PUB-SOW-006 ACCEPT for the exact qualified Dashboard visual-orientation PUBLISH candidate at 2adfc7e26fbf95bf2c894e8ac8075ed765c2c05d on PR #31. That reviewed PUBLISH head completed EHCO Assistant Operation Gate, Validate evidence and public boundaries, CodeQL analysis, and GitHub Advanced Security CodeQL successfully, with no new alerts in code changed by the pull request and no unresolved review threads. This ACCEPT projection is bound to that exact reviewed PUBLISH head; the eight Dashboard assets, README.md, architecture/EHCO-AI-OS-SYSTEM-CARD.md, and verification/validate_public_evidence.py remain unchanged by the ACCEPT projection. Standing, Runtime, authority, deployment, production, release, component-owning-source, ruleset, history-purge, and successor effects remain NONE. NEW_PATH:architecture/assets/dashboard/overview-june-2026-public.webp NEW_PATH:architecture/assets/dashboard/services-coordination-june-2026-public.webp NEW_PATH:architecture/assets/dashboard/authority-boundary-june-2026-public.webp NEW_PATH:architecture/assets/dashboard/receipts-evidence-june-2026-public.webp NEW_PATH:architecture/assets/dashboard/health-registry-june-2026-public.webp NEW_PATH:architecture/assets/dashboard/replacement-readiness-june-2026-public.webp NEW_PATH:architecture/assets/dashboard/prime-relationship-june-2026-public.webp NEW_PATH:architecture/assets/dashboard/agent-connect-coordination-june-2026-public.webp OPERATION_STABLE_ENVELOPE_CHANGE=true
+  source_base_revision: 8208c897b7d1529a6aafa25992eb1a7b53850d1f
+  expected_reviewed_head_revision: 2adfc7e26fbf95bf2c894e8ac8075ed765c2c05d
 control_anchor: AGENTS.md
 status_owner_path: ehco.operation.yaml
 accepted_standing: 52/53
 active_operation:
-  operation_id: EHCO-PUBLIC-RR-CAPABILITY-EVIDENCE-ACCEPT-001
+  operation_id: EHCO-PUBLIC-DASHBOARD-VISUAL-ORIENTATION-ACCEPT-001
   state: ACTIVE
   authorization_mode: ACCEPT
   bounded_outcome: >-
-    Accept and merge the exact qualified SOW-005 Range Reactor public-representation candidate after verifying the ACCEPT-control head preserves the reviewed public content and passes all required repository checks.
+    Accept and merge the exact qualified SOW-006 Dashboard visual-orientation candidate after verifying the ACCEPT-control head preserves the reviewed public content and passes all required repository and security checks.
   remaining_bounded_work:
-    - Verify the ACCEPT-control head changes only ehco.operation.yaml relative to exact reviewed PUBLISH head b537a19b06acbe1d0c116da3f28e076215a050da.
-    - Qualify the ACCEPT-control head through required repository and security checks.
+    - Verify the ACCEPT-control head changes only ehco.operation.yaml relative to exact reviewed PUBLISH head 2adfc7e26fbf95bf2c894e8ac8075ed765c2c05d.
+    - Verify the full base-to-ACCEPT-head changed-path set remains the exact twelve-path SOW-006 envelope.
+    - Qualify the exact ACCEPT-control head through required repository and security checks.
     - Confirm pull request review threads remain clear.
-    - Mark PR 30 ready for review and merge only the exact qualified ACCEPT-control head under repository rules.
-    - Read back accepted main and reconcile SOW-005 to the owning Git result.
+    - Mark PR 31 ready for review and squash-merge only the exact qualified ACCEPT-control head under repository rules.
+    - Read back accepted main and reconcile SOW-006 to the owning Git result.
   interaction_seams:
-    - Google Drive EHCO-PUB-SOW-005 owns the durable capability-based public representation meaning and records this bounded ACCEPT selection.
-    - Exact reviewed PUBLISH head b537a19b06acbe1d0c116da3f28e076215a050da owns the qualified public content presented for acceptance.
-    - EHCOsystem main@c90eea53a26ca4e568f130d595ed4671c2939873 remains the source base until merge.
-    - Accepted owning Range Reactor main@2ab887e1e82c2c5422223fbd862b288c8c63ee27 remains the source-review basis for public capability claims and is read-only in this operation.
+    - Google Drive EHCO-PUB-SOW-006 owns the durable public first-contact and Dashboard visual-orientation meaning and records this bounded ACCEPT selection.
+    - Exact reviewed PUBLISH head 2adfc7e26fbf95bf2c894e8ac8075ed765c2c05d owns the qualified public content presented for acceptance.
+    - EHCOsystem main@8208c897b7d1529a6aafa25992eb1a7b53850d1f remains the source base until merge.
+    - The eight image derivatives remain dated public-safe Tier Three projection/interface views sourced from owner-supplied June 2026 EHCO Dashboard captures.
     - INSTANTIATED_EHCO_RUNTIME retains Tier One Runtime authority and current Runtime state.
   non_overlap:
-    - Range Reactor source, controls, tests, branches, pull requests, release state and lifecycle state remain outside this operation.
-    - Public narrative, snapshot, navigation and validator content from exact reviewed PUBLISH head b537a19b06acbe1d0c116da3f28e076215a050da remain unchanged by this ACCEPT projection.
-    - Language Model source and accepted public fixture bytes remain outside this operation.
+    - Dashboard owning source, controls, deployment, production state and Runtime participation remain outside this operation.
+    - Dashboard asset bytes, README.md, architecture/EHCO-AI-OS-SYSTEM-CARD.md and verification/validate_public_evidence.py from exact reviewed PUBLISH head 2adfc7e26fbf95bf2c894e8ac8075ed765c2c05d remain unchanged by this ACCEPT projection.
+    - Language Model, Range Reactor and other component owning-source development remain outside this operation.
     - Stable ehco.repository.yaml identity and boundary fields remain unchanged.
-    - Existing immutable public evidence packets and dossier bytes remain unchanged.
-    - Artifact publication, Git tag, GitHub Release, deployment, Runtime admission/binding/invocation/participation/authority/state/proof, standing, repository-settings, ruleset and successor effects remain outside this operation.
+    - Existing immutable public evidence packets, dossier bytes, accepted Language Model fixture bytes and accepted Range Reactor snapshot bytes remain unchanged.
+    - Artifact publication, Git tag, GitHub Release, deployment, Runtime admission/binding/invocation/participation/authority/state/proof, standing transition, SOW-003 history purge, repository-settings, ruleset and successor effects remain outside this operation.
   automatic_successor: PROHIBITED
   successor_operation: NOT_SELECTED
 execution_continuity:
@@ -62,24 +63,19 @@ scope:
   permitted_paths:
     - ehco.operation.yaml
     - README.md
-    - LIBRARY.md
-    - ECOSYSTEM-DILIGENCE.md
-    - getting-started/START-HERE.md
-    - architecture/EHCO-TECHNOLOGY-ESTATE.md
-    - architecture/ecosystem-components-and-participation.md
-    - architecture/diagrams/README.md
-    - assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md
-    - verification/README.md
-    - verification/validate_public_range_reactor_snapshot.py
-    - .github/workflows/validate-public-evidence.yml
-    - range-reactor/README.md
-    - range-reactor/evidence/public-capability-snapshot-v1/README.md
-    - range-reactor/evidence/public-capability-snapshot-v1/MANIFEST.json
-    - range-reactor/evidence/public-capability-snapshot-v1/capability-vectors.json
+    - architecture/EHCO-AI-OS-SYSTEM-CARD.md
+    - verification/validate_public_evidence.py
+    - architecture/assets/dashboard/overview-june-2026-public.webp
+    - architecture/assets/dashboard/services-coordination-june-2026-public.webp
+    - architecture/assets/dashboard/authority-boundary-june-2026-public.webp
+    - architecture/assets/dashboard/receipts-evidence-june-2026-public.webp
+    - architecture/assets/dashboard/health-registry-june-2026-public.webp
+    - architecture/assets/dashboard/replacement-readiness-june-2026-public.webp
+    - architecture/assets/dashboard/prime-relationship-june-2026-public.webp
+    - architecture/assets/dashboard/agent-connect-coordination-june-2026-public.webp
   controlled_paths:
     - ehco.operation.yaml
-    - .github/workflows/validate-public-evidence.yml
-    - verification/validate_public_range_reactor_snapshot.py
+    - verification/validate_public_evidence.py
   prohibited_paths:
     - AGENTS.md
     - ehco.repository.yaml
@@ -92,6 +88,7 @@ scope:
     - evidence/**
     - dossiers/**
     - language-model/**
+    - range-reactor/**
 change_control:
   control_change_declared: true
   delete_or_move_authorized: false
@@ -146,25 +143,26 @@ bridge:
 evidence:
   evidence_class: OWNER_ACCEPTANCE_RECORD
   required_checks:
-    - Exact reviewed PUBLISH head is b537a19b06acbe1d0c116da3f28e076215a050da and has successful public validation, canonical assistant-operation validation and CodeQL/security analysis.
-    - ACCEPT projection changes only ehco.operation.yaml relative to the exact reviewed PUBLISH head.
-    - Full base-to-ACCEPT-head changed-path set remains the exact sixteen-path SOW-005 envelope.
-    - Public Range Reactor maturity remains affirmative system-capability maturity, source-grounded and lifecycle-accurate on the ACCEPT-control head.
+    - Exact reviewed PUBLISH head is 2adfc7e26fbf95bf2c894e8ac8075ed765c2c05d and has successful public validation, canonical assistant-operation validation, CodeQL analysis and GitHub Advanced Security CodeQL with no new alerts in code changed by PR 31.
+    - ACCEPT projection changes only ehco.operation.yaml relative to exact reviewed PUBLISH head 2adfc7e26fbf95bf2c894e8ac8075ed765c2c05d.
+    - Full base-to-ACCEPT-head changed-path set remains the exact twelve-path SOW-006 envelope.
+    - The exact eight reviewed Dashboard WebP assets and reader-facing Dashboard narrative/validator content remain unchanged on the ACCEPT-control head.
     - Required GitHub checks pass on the exact ACCEPT-control head before merge.
     - Pull request review threads remain clear before merge.
     - Merge uses exact expected-head protection and accepted main is read back after merge.
   proves:
-    - Owner-selected acceptance applies to the exact reviewed SOW-005 Range Reactor public-representation candidate.
-    - The accepted public representation preserves mature system-capability status, dedicated public evidence routing, status-language integrity and evidence-domain ownership.
+    - Owner-selected acceptance applies to the exact reviewed SOW-006 Dashboard visual-orientation candidate.
+    - The accepted public representation preserves dated Tier Three projection/interface framing, public-safe disclosure treatment and Runtime-owned Tier One authority/current Runtime-state ownership.
   evidence_not_created:
-    - Range Reactor source-development or owning-repository source acceptance effect
+    - Current Dashboard-baseline establishment for the exact June capture bytes
+    - Dashboard owning-source acceptance or development effect
     - Artifact publication or release
     - Deployment or production activation
     - Runtime admission binding invocation participation authority state proof or canonical Runtime receipt
-    - External operational consequence or numerical standing transition
+    - Numerical standing transition
 stop_condition:
-  - Verify the ACCEPT-control head and exact relationship to reviewed PUBLISH head b537a19b06acbe1d0c116da3f28e076215a050da.
-  - Mark PR 30 ready only after exact-head qualification succeeds and review threads are clear.
-  - Merge only the exact qualified ACCEPT-control head under repository rules.
-  - Read back accepted main and reconcile Drive SOW-005.
+  - Verify the ACCEPT-control head and exact relationship to reviewed PUBLISH head 2adfc7e26fbf95bf2c894e8ac8075ed765c2c05d.
+  - Mark PR 31 ready only after exact-head qualification succeeds and review threads are clear.
+  - Squash-merge only the exact qualified ACCEPT-control head under repository rules.
+  - Read back accepted main and reconcile Drive SOW-006.
   - Stop with automatic successor prohibited.
