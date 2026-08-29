@@ -109,7 +109,6 @@ change_control:
     - push
     - open_draft_pull_request
     - update_draft_pull_request
-    - publish_image
   remote_actions_prohibited:
     - mark_pull_request_ready_for_review
     - merge_pull_request
