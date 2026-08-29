@@ -31,18 +31,18 @@ active_operation:
     - Reconcile all selected reader-facing Language Model maturity surfaces.
     - Strengthen public validation against internal-stage maturity presentation drift.
     - Run exact-head qualification and reconcile any in-scope failures.
-    - Present the exact qualified candidate for Source ACCEPT and merge under repository rules when acceptance conditions are satisfied.
+    - Present the exact qualified candidate for a separately projected ACCEPT operation under repository rules.
   interaction_seams:
     - Google Drive EHCO-PUB-SOW-004 owns capability-based public maturity meaning and the disclosure boundary.
     - EHCOsystem main@2f87a39c801ddd1e7a582f7302fb9ec65cae57ea is the exact public source base.
     - Direct EHCOnomics-Systems/ehco_Language-Model_v1 owning Git establishes accepted Language Model implementation currentness and may be inspected read-only for public representation evidence.
     - Accepted Language Model main@1382974ee309451b8c242b675efe78a689626d89 establishes the accepted source basis used for this reconciliation.
-    - Active Language Model candidate development may inform qualitative strengthening direction but does not establish accepted source capability until accepted in its owning repository.
+    - Active Language Model candidate development may inform qualitative strengthening direction while accepted capability remains grounded in accepted owning source.
     - INSTANTIATED_EHCO_RUNTIME retains Tier One Runtime authority and current Runtime state.
   non_overlap:
-    - No Language Model source, controls, tests, branches, pull requests or lifecycle state are modified by this operation.
-    - No immutable public evidence packet, dossier, exact Language Model fixture artifact or stable ehco.repository.yaml identity/boundary field is rewritten for presentation.
-    - No artifact, Git tag, GitHub Release, deployment, Runtime, authority, participation, proof-state, standing, repository-settings, ruleset-weakening or successor effect is selected.
+    - Language Model source, controls, tests, branches, pull requests and lifecycle state remain outside this operation.
+    - Immutable public evidence packets, dossier, exact Language Model fixture artifacts and stable ehco.repository.yaml identity/boundary fields retain their accepted bytes.
+    - Artifact, Git tag, GitHub Release, deployment, Runtime, authority, participation, proof-state, standing, repository-settings, ruleset and successor effects remain outside this operation.
   automatic_successor: PROHIBITED
   successor_operation: NOT_SELECTED
 execution_continuity:
@@ -104,11 +104,11 @@ change_control:
     - push
     - open_draft_pull_request
     - update_draft_pull_request
+  remote_actions_prohibited:
     - mark_pull_request_ready_for_review
     - merge_pull_request
     - record_owner_acceptance
     - close_operation
-  remote_actions_prohibited:
     - activate_selected_successor
     - modify_repository_settings
     - modify_drive_controls
@@ -135,29 +135,27 @@ bridge:
   participation_binding_status: NOT_ESTABLISHED
   canonical_runtime_receipt_status: NOT_ESTABLISHED
 evidence:
-  evidence_class: PUBLIC_SOURCE_REPRESENTATION_QUALIFICATION
+  evidence_class: REPOSITORY_SOURCE_AND_DIFF_VALIDATION
   required_checks:
     - Changed paths remain within the exact SOW-004 permitted path set.
-    - Active reader-facing Language Model maturity uses capability-based affirmative representation and contains no internal DF stage/unit maturity projection.
+    - Active reader-facing Language Model maturity uses capability-based affirmative representation and excludes internal DF stage/unit maturity projection.
     - Accepted Language Model capability claims remain grounded in accepted owning source main@1382974ee309451b8c242b675efe78a689626d89.
-    - Active Language Model development direction is represented qualitatively and is not promoted to accepted capability.
+    - Active Language Model development direction is represented qualitatively while accepted capability remains source-bound.
     - Existing affirmative public-representation, private-program exclusion, disclosure, dossier, evidence, link, secret-indicator and release-identity validations remain green.
-    - Exact reviewed head passes Validate evidence and public boundaries, CodeQL and EHCO Assistant Operation Gate before acceptance.
-    - Post-merge accepted main is read back and reconciled to Drive SOW-004.
+    - Exact PUBLISH head passes Validate evidence and public boundaries, CodeQL and EHCO Assistant Operation Gate before ACCEPT projection.
   proves:
-    - The EHCOsystem public Language Model story is capability-based, affirmative, source-grounded and resilient to internal stage-number churn.
-    - Public readers can understand established depth and current strengthening direction without exposure of internal development sequencing.
+    - The exact PUBLISH candidate presents the EHCOsystem Language Model through capability-based, affirmative, source-grounded maturity representation.
+    - The public representation is resilient to internal Language Model stage-number currentness churn.
   evidence_not_created:
     - Formal final Language Model completion
     - Language Model Source ACCEPT for active owning-repository candidate work
+    - EHCOsystem Source ACCEPT or merge
     - Artifact publication or release
     - Deployment or production activation
     - Runtime participation admission binding invocation persistence or canonical Runtime receipt
     - Authority proof external operational consequence or numerical standing change
 stop_condition:
   - Reconcile the exact bounded public surfaces and validator.
-  - Verify the exact candidate head passes all required repository evidence families.
-  - Present and accept only the exact qualified candidate under repository rules.
-  - Merge only with expected-head protection after qualification.
-  - Read back accepted public main and reconcile the exact source result to Drive SOW-004.
-  - Stop with automatic successor prohibited.
+  - Verify the exact PUBLISH candidate head passes all required repository evidence families.
+  - Stop at the PUBLISH boundary with the exact qualified candidate available for a separately projected ACCEPT operation.
+  - Keep automatic successor prohibited.
