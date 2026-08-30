@@ -15,7 +15,7 @@ supersedes: version 1.4
 
 EHCO AI-OS is the realized Tier One Runtime of EHCOsystem with accepted standing baseline **52/53** and accepted maturity **`REALIZED / COMPLETE_IN_ACCEPTED_SCOPE`**. It is the governing foundation for authority, scope, recognized state, transition, consequence, continuity, persistence, withholding/release, correction/recovery, and Runtime-originated proof.
 
-**52/53 is the accepted numerical Runtime standing corridor under the EHCO standing framework. It is not a benchmark score, percentage completion, component-maturity percentage, deployment-state percentage or public-release percentage.** Protected denominator mechanics are not inferred from public representation.
+**52/53 is the accepted numerical Runtime standing corridor under the EHCO standing framework. Benchmark scoring, percentage-completion measures, component-maturity percentages, deployment-state percentages and public-release percentages are separate dimensions.** Protected denominator mechanics remain within their owning governed sources.
 
 ## Current public Runtime evidence
 
@@ -23,7 +23,7 @@ For present public Runtime posture, begin with **[EHCO AI-OS Runtime — Current
 
 The clean Full Flex packet is the current public capability-and-evidence synthesis for the established Runtime environment, bound to packet SHA-256 `7F80C27D085AE871A00AED412C6F20EA9A76CB0677C93AEBA381CD1FD70EC8E5`. It synthesizes accepted Runtime posture, deployment-ready Docker portability, physically operated local Runtime evidence, Dashboard/bridge/worker relationships, persistent surfaces, networking, engineering-scale characterization, Range Reactor qualification/performance relationships, public claim bindings and integrity metadata.
 
-The packet is a public evidence projection, not the Runtime authority. `INSTANTIATED_EHCO_RUNTIME` remains the owner of actual Tier One Runtime authority and present Runtime state; owning Docker/host evidence remains the owner of physical execution observations. Historical Public Evidence Companion Packets 00–08 remain immutable event-time evidence and lineage.
+`INSTANTIATED_EHCO_RUNTIME` remains the owner of actual Tier One Runtime authority and present Runtime state; owning Docker/host evidence remains the owner of physical execution observations. Full Flex carries the current public evidence-projection role across those relationships. Historical Public Evidence Companion Packets 00–08 remain immutable event-time evidence and lineage.
 
 ## Architectural thesis
 
