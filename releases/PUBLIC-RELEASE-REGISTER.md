@@ -25,9 +25,9 @@ The canonical current public Runtime evidence route is the clean **EHCO Full Fle
 - Public front door: `runtime/README.md`
 - Evidence index: `evidence/runtime/full-flex/v1/README.md`
 
-The current packet identity and evidence precedence are present in public source. Exact JSON-byte materialization is accepted only when the transferred artifact verifies to the packet SHA-256 above. This preserves the owning-host-established evidence identity while preventing reconstructed bytes from being substituted for the selected packet.
+The current packet identity and evidence precedence are present in public source. Exact JSON-byte materialization becomes part of this evidence identity when the transferred artifact verifies to the packet SHA-256 above. This preserves the owning-host-established evidence identity and exact-byte continuity for the selected packet.
 
-Historical Public Evidence Companion Packets 00–08 remain immutable event-time evidence and lineage. They retain their recorded evidence scopes and do not become the present Runtime maturity/state interpretation surface.
+Historical Public Evidence Companion Packets 00–08 remain immutable event-time evidence and lineage. Their governing role is historical proof custody, source identity, bounded observations, and package lineage; present Runtime maturity/state interpretation routes through the current Full Flex evidence surface and owning evidence.
 
 ## Registered public release identity
 
