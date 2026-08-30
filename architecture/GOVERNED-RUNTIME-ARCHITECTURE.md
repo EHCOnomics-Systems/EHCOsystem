@@ -13,7 +13,7 @@ supersedes: version 1.2
 
 The accepted EHCO AI-OS standing baseline is **52/53**, with accepted maturity **`REALIZED / COMPLETE_IN_ACCEPTED_SCOPE`**.
 
-Accepted **52/53** is the numerical Runtime standing corridor under the EHCO standing framework. It is not a benchmark score, percentage completion, component-maturity percentage, deployment-state percentage or public-release percentage. Protected denominator mechanics are not inferred from public representation.
+Accepted **52/53** is the numerical Runtime standing corridor under the EHCO standing framework. Benchmark scoring, percentage-completion measures, component-maturity percentages, deployment-state percentages and public-release percentages are separate dimensions. Protected denominator mechanics remain within their owning governed sources.
 
 ## Architectural objective
 
@@ -23,7 +23,7 @@ Accepted **52/53** is the numerical Runtime standing corridor under the EHCO sta
 
 For present public Runtime posture, begin with [EHCO AI-OS Runtime — Current Public Evidence](../runtime/README.md) and the [EHCO Full Flex Public Packet v1 evidence index](../evidence/runtime/full-flex/v1/README.md).
 
-The Full Flex packet is the current public evidence projection and synthesis. It binds a public current-evidence identity across accepted Runtime posture, deployment-ready Docker portability and proposition-matched owning evidence relationships. It does not own Runtime authority or physical execution facts. `INSTANTIATED_EHCO_RUNTIME` remains the Tier One authority/current-state owner; owning Docker/host evidence remains the physical execution evidence owner.
+The Full Flex packet is the current public evidence projection and synthesis. It binds a public current-evidence identity across accepted Runtime posture, deployment-ready Docker portability and proposition-matched owning evidence relationships. `INSTANTIATED_EHCO_RUNTIME` remains the Tier One authority/current-state owner; owning Docker/host evidence remains the physical execution evidence owner; Full Flex carries the public synthesis role.
 
 ## Public Runtime model
 
@@ -69,9 +69,9 @@ Tier Three exposes governed information through interfaces, dashboards, reports,
 
 ## Public evidence projection
 
-The current Full Flex public evidence route synthesizes present public Runtime posture without changing the underlying evidence owners. Exact packet-byte identity, public source publication, deployment, Runtime state and historical packet evidence remain distinct classes.
+The current Full Flex public evidence route synthesizes present public Runtime posture while preserving the underlying evidence owners. Exact packet-byte identity, public source publication, deployment, Runtime state and historical packet evidence remain distinct classes.
 
-Historical Public Evidence Companion Packets 00–08 remain immutable event-time evidence and lineage. Their packet-local state does not override the current accepted Runtime baseline.
+Historical Public Evidence Companion Packets 00–08 remain immutable event-time evidence and lineage. Present Runtime baseline interpretation routes through current evidence and owning evidence relationships.
 
 ## Proof and evidence
 
