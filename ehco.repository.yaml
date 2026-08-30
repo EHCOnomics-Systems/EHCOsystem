@@ -43,11 +43,11 @@ dependencies:
     - ehco.operation.yaml
   reusable_workflows: []
 provenance:
-  accepted_commit: UNRESOLVED
+  accepted_commit: eff9301e7c5ddfc0759ee0d7e3c026ad28c5670c
   dependency_lock_digest: not-applicable
   build_definition: repository-validation-and-github-native-assistant-gate-workflows
   artifact_identifier: public-repository
-  artifact_digest: UNRESOLVED
+  artifact_digest: NOT_APPLICABLE_SOURCE_ONLY_PUBLIC_PROJECTION_NO_SEPARATE_BUILD_ARTIFACT
   integration_manifest: not-applicable
 state:
   instantiated: false
@@ -73,9 +73,7 @@ validation:
     codeql_run: 31285490410
     result: PASS
   rollback_reference: null
-unresolved_items:
-  - Define non-circular acceptance semantics before populating provenance.accepted_commit or artifact_digest.
-  - Materialize the declared canonical GitHub tag and Release for v1.0.0-public; repository documents currently define identity but do not assert live publication.
+unresolved_items: []
 acceptance:
   owner_acceptance: accepted
   accepted_by: Edward Henry

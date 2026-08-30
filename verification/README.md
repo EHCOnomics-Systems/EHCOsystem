@@ -37,11 +37,23 @@ Hash-preserved Packets 00-08 and exact Language Model fixture artifacts retain t
 
 ## Range Reactor capability validation
 
-`validate_public_range_reactor_snapshot.py` verifies the dedicated Range Reactor component/evidence route, eight synthetic capability vectors, manifest/source-review identity, fixture SHA-256, public navigation/claim presence, disclosure boundaries, evidence ceilings, and absence of internal Range Reactor operation/stage mechanics from reader-facing Range Reactor maturity prose.
+`validate_public_range_reactor_snapshot.py` verifies the dedicated Range Reactor component/evidence route, eight synthetic capability vectors, manifest/source-review identity, fixture SHA-256, public navigation/claim presence, disclosure boundaries, evidence ceilings, and reader-facing Range Reactor maturity prose aligned to established system capability.
 
-It also enforces status-language integrity in both directions. Range Reactor remains represented as a **mature deterministic proof-carrying implication, reachability, range and reasoning system** where accepted source and qualification evidence establish that capability. The mature system status remains distinct from source-only and qualification-only evidence labels. Deployment, production activation and Runtime participation remain separately owned evidence dimensions with unsupported promotion excluded by the same validation boundary.
+It also enforces status-language integrity in both directions. Range Reactor remains represented as a **mature deterministic proof-carrying implication, reachability, range and reasoning system** where accepted source and qualification evidence establish that capability. The mature system status remains distinct from source-only and qualification-only evidence labels. Deployment, production activation and Runtime participation remain separately owned evidence dimensions with promotion governed by the same validation boundary.
 
 The Range Reactor snapshot itself is source-reviewed synthetic capability evidence. It provides a bounded public inspection surface while controlled implementation source and technical-effect evidence remain with their owning evidence domains.
+
+## Release identity and provenance validation
+
+`validate_release_identity.py` verifies the canonical registered public release identity together with the repository-level stable-baseline provenance semantics:
+
+- version `1.0.0`, tag `v1.0.0-public`, and release title `EHCOsystem Public Architecture and Evidence Baseline v1.0.0` remain aligned across the release documents;
+- `ehco.repository.yaml` binds `provenance.accepted_commit` to `eff9301e7c5ddfc0759ee0d7e3c026ad28c5670c`, the commit that accepted the current stable manifest/boundary bytes, independently from current `main`;
+- repository-level `provenance.artifact_digest` is `NOT_APPLICABLE_SOURCE_ONLY_PUBLIC_PROJECTION_NO_SEPARATE_BUILD_ARTIFACT`, explicitly classifying the repository publication object as source-only;
+- stable-manifest provenance and registered release identity are documented consistently in `PROVENANCE.md` and `releases/PUBLIC-RELEASE-REGISTER.md`; and
+- active publication and provenance surfaces carry the resolved stable-baseline semantics.
+
+The validator checks source semantics. GitHub tag and GitHub Release existence are provider-owned publication facts established through provider-surface readback.
 
 ## Acceptance governance
 
@@ -49,4 +61,4 @@ Repository validation is one acceptance input. Pull-request acceptance uses the 
 
 ## Validation evidence
 
-A successful repository validation establishes the checked repository-integrity, disclosure, architecture, currentness and public-representation conditions for that exact revision. Claim-specific technical propositions retain their applicable evidence owner and class.
+A successful repository validation establishes the checked repository-integrity, disclosure, architecture, currentness, publication-identity and public-representation conditions for that exact revision. Claim-specific technical propositions retain their applicable evidence owner and class.

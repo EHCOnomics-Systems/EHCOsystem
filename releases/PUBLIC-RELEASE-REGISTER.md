@@ -17,6 +17,19 @@ This register records public source visibility, artifact identity and evidence s
 
 Canonical `main` is the active public source stream. The GitHub Releases surface determines live publication state. The registered release identity is tracked as a separate publication-lifecycle record.
 
+## Repository provenance basis
+
+The stable repository manifest uses stable-baseline provenance semantics:
+
+- `provenance.accepted_commit` identifies the commit that accepted the stable `ehco.repository.yaml` boundary represented by the file, independently from current `main`;
+- the current stable manifest baseline was accepted by `eff9301e7c5ddfc0759ee0d7e3c026ad28c5670c`;
+- `artifact_identifier` is `public-repository`;
+- `provenance.artifact_digest` is `NOT_APPLICABLE_SOURCE_ONLY_PUBLIC_PROJECTION_NO_SEPARATE_BUILD_ARTIFACT`, explicitly classifying the repository publication object as source-only.
+
+Hash-bound dossiers, evidence packets, Dashboard derivatives, Language Model fixtures and Range Reactor evidence retain their own artifact identities independently from repository-level provenance.
+
+The registered release identity above remains distinct from provider publication. Live materialization is established by the provider-owned Git tag and GitHub Release surfaces when those objects exist.
+
 ## Public estate in the current revision
 
 | Artifact | Status | Canonical path | Evidence scope |
@@ -64,4 +77,4 @@ F489BA01961A12CF101B1F1DF57E6958456A0840BEB798B862FA97ACB030892D
 
 ## Publication lifecycle
 
-Revision visibility, canonical-main publication and registered release identity are tracked as separate publication records. Current Runtime state remains owned by current Runtime evidence.
+Revision visibility, canonical-main publication, stable repository provenance and registered release identity are tracked as separate publication records. Live GitHub release materialization is established by the provider release surface. Current Runtime state remains owned by current Runtime evidence.

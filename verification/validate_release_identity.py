@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate the canonical EHCOsystem public release identity documents."""
+"""Validate the canonical EHCOsystem public release identity and provenance semantics."""
 
 from __future__ import annotations
 
@@ -10,50 +10,88 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 RELEASE_VERSION = "1.0.0"
 RELEASE_TAG = "v1.0.0-public"
 RELEASE_TITLE = "EHCOsystem Public Architecture and Evidence Baseline v1.0.0"
+STABLE_MANIFEST_ACCEPTED_COMMIT = "eff9301e7c5ddfc0759ee0d7e3c026ad28c5670c"
+SOURCE_ONLY_ARTIFACT_DIGEST = "NOT_APPLICABLE_SOURCE_ONLY_PUBLIC_PROJECTION_NO_SEPARATE_BUILD_ARTIFACT"
 
-DOCUMENTS = [
+RELEASE_DOCUMENTS = [
     "getting-started/repository-map.md",
     "releases/PUBLIC-RELEASE-REGISTER.md",
 ]
 
-REQUIRED_STATEMENTS = [
+RELEASE_REQUIRED_STATEMENTS = [
     f"Version: `{RELEASE_VERSION}`",
     f"Tag: `{RELEASE_TAG}`",
     f"Release title: `{RELEASE_TITLE}`",
     "The GitHub Releases surface determines live publication state.",
 ]
 
-OBSOLETE_STATEMENTS = [
-    "No tagged GitHub Release is currently declared",
-    "No tag or GitHub Release is currently declared",
+PROVENANCE_REQUIRED = {
+    "ehco.repository.yaml": [
+        f"accepted_commit: {STABLE_MANIFEST_ACCEPTED_COMMIT}",
+        f"artifact_digest: {SOURCE_ONLY_ARTIFACT_DIGEST}",
+        "unresolved_items: []",
+    ],
+    "PROVENANCE.md": [
+        f"`{STABLE_MANIFEST_ACCEPTED_COMMIT}`",
+        f"`{SOURCE_ONLY_ARTIFACT_DIGEST}`",
+        "independently from current `main`",
+        "Registered release identity and live provider publication are separate publication states.",
+    ],
+    "releases/PUBLIC-RELEASE-REGISTER.md": [
+        "`provenance.accepted_commit` identifies the commit that accepted the stable `ehco.repository.yaml` boundary represented by the file, independently from current `main`;",
+        f"`{STABLE_MANIFEST_ACCEPTED_COMMIT}`",
+        f"`provenance.artifact_digest` is `{SOURCE_ONLY_ARTIFACT_DIGEST}`",
+        "The registered release identity above remains distinct from provider publication.",
+    ],
+}
+
+LEGACY_PLACEHOLDERS = [
+    "accepted_commit: UNRESOLVED",
+    "artifact_digest: UNRESOLVED",
+    "Define non-circular acceptance semantics before populating provenance.accepted_commit or artifact_digest.",
 ]
+
+
+def read(relative: str, errors: list[str]) -> str:
+    path = REPO_ROOT / relative
+    if not path.is_file():
+        errors.append(f"Missing release/provenance document: {relative}")
+        return ""
+    return path.read_text(encoding="utf-8-sig")
 
 
 def main() -> int:
     errors: list[str] = []
     checks = 0
+    loaded: dict[str, str] = {}
 
-    for relative in DOCUMENTS:
-        path = REPO_ROOT / relative
+    for relative in sorted(set(RELEASE_DOCUMENTS) | set(PROVENANCE_REQUIRED)):
         checks += 1
-        if not path.is_file():
-            errors.append(f"Missing release identity document: {relative}")
-            continue
+        loaded[relative] = read(relative, errors)
 
-        text = path.read_text(encoding="utf-8-sig")
-        for statement in REQUIRED_STATEMENTS:
+    for relative in RELEASE_DOCUMENTS:
+        text = loaded.get(relative, "")
+        for statement in RELEASE_REQUIRED_STATEMENTS:
             checks += 1
             if statement not in text:
                 errors.append(f"Release identity missing from {relative}: {statement}")
 
-        for statement in OBSOLETE_STATEMENTS:
+    for relative, statements in PROVENANCE_REQUIRED.items():
+        text = loaded.get(relative, "")
+        for statement in statements:
+            checks += 1
+            if statement not in text:
+                errors.append(f"Provenance invariant missing from {relative}: {statement}")
+
+    for relative, text in loaded.items():
+        for statement in LEGACY_PLACEHOLDERS:
             checks += 1
             if statement.lower() in text.lower():
-                errors.append(f"Obsolete release-state wording in {relative}: {statement}")
+                errors.append(f"Legacy provenance placeholder present in {relative}: {statement}")
 
     if errors:
         print(
-            f"FAIL: {len(errors)} release identity error(s) across {checks} checks",
+            f"FAIL: {len(errors)} release/provenance error(s) across {checks} checks",
             file=sys.stderr,
         )
         for error in errors:
@@ -61,7 +99,7 @@ def main() -> int:
         return 1
 
     print(
-        "PASS: EHCOsystem canonical public release identity "
+        "PASS: EHCOsystem canonical public release identity and stable-baseline provenance "
         f"({checks} checks, version {RELEASE_VERSION}, tag {RELEASE_TAG})"
     )
     return 0
