@@ -66,4 +66,4 @@ The repository description, homepage and topics provide the GitHub-native discov
 - Tag: `v1.0.0-public`
 - Release title: `EHCOsystem Public Architecture and Evidence Baseline v1.0.0`
 
-Canonical `main` is the active public source stream. Registered release identity and live GitHub Release materialization remain separate publication states; the release register records that distinction.
+Canonical `main` is the active public source stream. **The GitHub Releases surface determines live publication state.** Registered release identity and live GitHub Release materialization remain separate publication states; the release register records that distinction.
