@@ -104,7 +104,7 @@ def main() -> int:
 
     start_here = public_files["Start Here"]
     checked("Current EHCO AI-OS Runtime — start here" in start_here, "Start Here does not put current Runtime evidence first")
-    checked("not a benchmark score" in start_here, "Start Here lacks bounded 52/53 interpretation")
+    checked("Benchmark scoring, percentage-completion measures" in start_here, "Start Here lacks bounded 52/53 interpretation")
 
     technical_diligence = public_files["Technical Diligence"]
     ecosystem_matrix = public_files["Ecosystem Claim Matrix"]
