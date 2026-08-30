@@ -1,12 +1,12 @@
 ---
 title: EHCOsystem — An Instantiated AI Ecosystem
-version: 1.7
+version: 1.8
 status: current-public-architecture
-published: 2026-08-28
+published: 2026-08-29
 maintainer: EHCOnomics
 evidence_class: controlled-technology-estate-architecture
 evidence_scope: category-to-ecosystem architecture and source-grounded maturity representation
-supersedes: version 1.6
+supersedes: version 1.7
 ---
 
 # EHCOsystem — An Instantiated AI Ecosystem
@@ -17,19 +17,25 @@ EHCOsystem is a governed computational estate built around explicit ownership of
 
 ## Tier One — EHCO AI-OS
 
-**EHCO AI-OS is the realized Tier One Runtime and governing foundation of EHCOsystem.** Its accepted standing baseline is **52/53**.
+**EHCO AI-OS is the realized Tier One Runtime and governing foundation of EHCOsystem.** Its accepted standing baseline is **52/53**, and its accepted Runtime maturity is **`REALIZED / COMPLETE_IN_ACCEPTED_SCOPE`**.
 
 Tier One owns the Runtime relationships through which authority, scope, recognized state, transition, consequence, continuity, persistence, withholding, release, correction, recovery, and Runtime-originated proof acquire operational meaning.
 
-## Primary accessible Runtime projection
+## Primary accessible Runtime projection and deployment-ready portability
 
 ### EHCO_DOCKER_PORTABILITY
 
-`EHCO_DOCKER_PORTABILITY` is the **PRIMARY_ACCESSIBLE_RUNTIME_PROJECTION** of the established EHCO AI-OS hardened Runtime/root-image lineage. It provides the portability estate through which the established Runtime lineage can be accessed and projected into governed execution environments.
+`EHCO_DOCKER_PORTABILITY` is the **PRIMARY_ACCESSIBLE_RUNTIME_PROJECTION** and the **fully containerized, deployment-ready portable delivery form** of the established EHCO AI-OS hardened Runtime/root-image lineage. Owning Docker/host evidence records successful local launch/relaunch behavior across the hardened image lineage, healthy service operation, endpoint behavior, Docker networking, persistent Runtime/proof/data surfaces, and exact image identities. This establishes a portable Docker delivery posture for governed live-environment deployment while preserving the Runtime's governing architecture.
+
+### Physically operated local Runtime
+
+EHCO AI-OS has physically operated as a **self-hosted local Docker Runtime** with Dashboard, Runtime bridge, worker service, Docker networking, persistent Runtime/proof/data surfaces, health behavior, and hardened image identity. The local operating path is self-hosted and carried by the EHCO Runtime plus its internal Docker services.
+
+Established Runtime/Docker lineage also records Tier One operation, governance, proof/release behavior, and Runtime-state/observer projection with the external-model seam disabled. Conversational projection remains a separately evidenced downstream function.
 
 ### EHCO Dashboard
 
-The **current accepted working EHCO Dashboard baseline** is the principal presently established **Tier Three projection baseline** within the portability estate. It projects overview, live trace, service/API state, health, readiness, rollback, authority interpretation, and settings concerns from governed sources.
+The **current accepted working EHCO Dashboard baseline** is the principal presently established **Tier Three projection baseline** within the portability estate. It projects overview, live trace, service/API state, health, readiness, rollback, authority interpretation, and settings concerns from governed sources. The published Dashboard views derive from the operating local EHCO Docker Runtime, and the local Dashboard was served on **host port 8080** during the captured operating state.
 
 ## Current qualitative maturity posture
 
@@ -64,7 +70,7 @@ The public evidence estate includes seven exact synthetic fixtures covering **62
 
 EHCO Range Reactor owns bounded deterministic implication, reachability, range, and reasoning computation. Its accepted source lineage includes executable reference semantics; typed query, event, proof, result and standing contracts; deterministic canonical identity and replay; explicit contradiction, remainder and frontier preservation; branch-modal reachability and zero classifications; finite semantic quotient/collapse computation with independent verification and retained witness fibers; service interfaces; container-source definitions; production-profile and release controls; Prime purification; Prime-purified Full-Range computation; and governed Primordia collapsed Full-Range producer interoperability.
 
-Range Reactor is a **mature deterministic proof-carrying implication, reachability, range and reasoning system**. Accepted source and qualification evidence establish that capability maturity. Deployment, production activation and Runtime participation remain separate lifecycle/effect dimensions with their own evidence owners and are orthogonal to the established system-capability maturity.
+Range Reactor is a **mature deterministic proof-carrying implication, reachability, range and reasoning system**. Accepted source and qualification evidence establish that capability maturity. Owning physical host qualification also establishes service execution, fail-closed behavior, timeout/unavailability handling, restart/recovery, portability, and diagnostic performance for the qualified component line. Deployment, production activation and Runtime participation remain separate lifecycle/effect dimensions with their own evidence owners and are orthogonal to the established system-capability maturity.
 
 The [Range Reactor public component record](../range-reactor/README.md) provides the capability map. The [Public Capability Snapshot v1](../range-reactor/evidence/public-capability-snapshot-v1/README.md) provides eight public-safe synthetic vectors bound to accepted owning-source review.
 
@@ -138,12 +144,13 @@ Tier Three contains interfaces, dashboards, reports, metrics, public-safe views,
 
 ## Evidence and diligence
 
-EHCOsystem maps material public propositions to their applicable evidence class. The [Ecosystem Claim → Evidence Matrix](../assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md) provides claim, maturity, source-review date, verification method, and evidence scope. [Ecosystem Technical Diligence](../ECOSYSTEM-DILIGENCE.md) provides the reviewer route.
+EHCOsystem maps material public propositions to their applicable evidence class. The [Canonical Public Claim Registry](../assurance/PUBLIC-CLAIM-REGISTRY.json) provides machine-readable current propositions and verification routes. The [Ecosystem Claim → Evidence Matrix](../assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md) provides claim, maturity, source-review date, verification method, and evidence scope. [Ecosystem Technical Diligence](../ECOSYSTEM-DILIGENCE.md) provides the reviewer route.
 
 ## Revision history
 
 | Version | Date | Change |
 |---|---|---|
+| 1.8 | 2026-08-29 | Strengthened the accepted Runtime baseline, deployment-ready Docker portability, physically operated local Runtime, Dashboard local port-8080 origin, model-independent Tier One lineage and Range Reactor physical-qualification representation. |
 | 1.7 | 2026-08-28 | Expanded Range Reactor capability depth and added its dedicated public evidence route while preserving lifecycle/evidence separation. |
 | 1.6 | 2026-08-28 | Recast Language Model maturity around established capability and advanced near-final strengthening while keeping internal development sequencing in controlled development sources. |
 | 1.5 | 2026-08-28 | Reconciled the estate to affirmative capability/maturity representation, refreshed shared-component maturity, and aligned the public component set to the current publication scope. |

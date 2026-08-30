@@ -1,27 +1,28 @@
 ---
 title: EHCOsystem Public Architecture Diagrams
-version: 1.4
+version: 1.5
 status: current-public-architecture-navigation
-published: 2026-08-28
+published: 2026-08-29
 maintainer: EHCOnomics
 evidence_class: original-public-safe-architecture-diagrams
 evidence_scope: explanatory architecture relationships
-supersedes: version 1.3
+supersedes: version 1.4
 ---
 
 # EHCOsystem Public Architecture Diagrams
 
 These diagrams provide public-safe views of the category, Runtime, component estate, computational ownership, maturity lanes, and evidence progression described in [Instantiated AI](../INSTANTIATED-AI.md), [EHCOsystem — An Instantiated AI Ecosystem](../EHCO-TECHNOLOGY-ESTATE.md), and the [Ecosystem Claim → Evidence Matrix](../../assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md).
 
-## 1. Category, Runtime, portability, components, and projection
+## 1. Category, Runtime, portability, local operation, components, and projection
 
 ```mermaid
 flowchart TD
     A[Instantiated AI<br/>architectural category]
     B[EHCOsystem<br/>EHCOnomics' Instantiated AI ecosystem]
-    C[EHCO AI-OS<br/>realized Tier One Runtime<br/>standing 52/53]
-    D[EHCO_DOCKER_PORTABILITY<br/>PRIMARY_ACCESSIBLE_RUNTIME_PROJECTION]
-    H[EHCO Dashboard<br/>current accepted working<br/>Tier Three projection baseline]
+    C[EHCO AI-OS<br/>realized Tier One Runtime<br/>REALIZED / COMPLETE_IN_ACCEPTED_SCOPE<br/>standing 52/53]
+    D[EHCO_DOCKER_PORTABILITY<br/>PRIMARY_ACCESSIBLE_RUNTIME_PROJECTION<br/>deployment-ready portable delivery form]
+    L[Self-hosted local Docker Runtime<br/>Dashboard + bridge + worker<br/>networking + persistent surfaces]
+    H[EHCO Dashboard<br/>local host port 8080<br/>Tier Three projection baseline]
     E[Downstream governed components<br/>computational / research / application owners]
     F[Tier Three<br/>interfaces and projections]
     G[Public EHCOsystem repository<br/>architecture / evidence / diligence]
@@ -31,22 +32,24 @@ flowchart TD
     B --> E
     B --> F
     B --> G
-    C -->|established Runtime lineage| D
-    D --> H
+    C -->|established hardened Runtime lineage| D
+    D -->|portable local operation| L
+    L --> H
     H --> F
     C -->|scoped governed relationships| E
     E --> F
 ```
 
-**Interpretation:** the category is Instantiated AI; the ecosystem is EHCOsystem; EHCO AI-OS owns Tier One Runtime authority; Docker Portability carries the primary accessible Runtime projection; Dashboard provides the current accepted Tier Three projection baseline; downstream components own their computational and domain capabilities; the public repository publishes architecture and evidence.
+**Interpretation:** the category is Instantiated AI; the ecosystem is EHCOsystem; EHCO AI-OS is the realized Tier One Runtime at accepted standing 52/53; Docker Portability carries the primary accessible Runtime projection and deployment-ready portable delivery form; owning Docker/host evidence establishes self-hosted local operation; Dashboard provides the current accepted Tier Three projection baseline from that local operating environment; downstream components own their computational and domain capabilities; the public repository publishes architecture and evidence.
 
 ## 2. Computational ownership across the ecosystem
 
 ```mermaid
 flowchart LR
     R[Runtime governance<br/>authority / state / release / proof] --> AIOS[EHCO AI-OS]
-    RP[Primary accessible Runtime projection] --> DP[EHCO_DOCKER_PORTABILITY]
-    V[Working projection baseline] --> DASH[EHCO Dashboard]
+    RP[Primary accessible Runtime projection<br/>deployment-ready portable delivery] --> DP[EHCO_DOCKER_PORTABILITY]
+    LO[Self-hosted local Docker operation] --> LOCAL[Dashboard / bridge / worker]
+    V[Working projection baseline<br/>local port 8080 capture] --> DASH[EHCO Dashboard]
     L[Deterministic computational language] --> LM[EHCO Language Model]
     Q[Proof-carrying implication / reachability<br/>range / reasoning computation] --> RR[EHCO Range Reactor]
     E[Retrieval / context / provenance / evidence] --> RAG[EHCO RAG]
@@ -58,7 +61,8 @@ flowchart LR
     T[Interfaces / reports / public-safe views] --> T3[Tier Three]
 
     AIOS --> DP
-    DP --> DASH
+    DP --> LOCAL
+    LOCAL --> DASH
     DASH --> T3
 ```
 
@@ -104,7 +108,7 @@ flowchart TD
     RT -->|governed Runtime relationships| Apps
 ```
 
-**Interpretation:** the foundational/shared spine is substantially established. The Language Model's mature deterministic foundation is in advanced near-final strengthening and qualification. Range Reactor is a mature deterministic proof-carrying implication/reachability and range/reasoning system, with accepted source and qualification evidence supporting that maturity and a dedicated public evidence route. Deployment and Runtime participation remain separate evidence dimensions. Current ecosystem development also includes RAG implementation, research/foundation reconciliation, and continuing domain/application expansion.
+**Interpretation:** the foundational/shared spine is substantially established. The Language Model's mature deterministic foundation is in advanced near-final strengthening and qualification. Range Reactor is a mature deterministic proof-carrying implication/reachability and range/reasoning system with accepted source, qualification and physical-host evidence supporting that maturity. Deployment and Runtime participation remain separate evidence dimensions. Current ecosystem development also includes RAG implementation, research/foundation reconciliation, and continuing domain/application expansion.
 
 ## 4. Technical evidence progression
 
@@ -125,12 +129,13 @@ flowchart LR
 
 ## Reading route
 
-Use these diagrams for orientation, then follow the [Ecosystem Claim → Evidence Matrix](../../assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md) for claim-specific evidence, the [Range Reactor component record](../../range-reactor/README.md) for Range Reactor capability detail, and the [Runtime, Repository, and Test-Estate Boundary](../runtime-repository-and-test-estate-boundary.md) for evidence-domain ownership.
+Use these diagrams for orientation, then follow the [Canonical Public Claim Registry](../../assurance/PUBLIC-CLAIM-REGISTRY.json) and [Ecosystem Claim → Evidence Matrix](../../assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md) for claim-specific evidence, the [Range Reactor component record](../../range-reactor/README.md) for Range Reactor capability detail, and the [Runtime, Repository, and Test-Estate Boundary](../runtime-repository-and-test-estate-boundary.md) for evidence-domain ownership.
 
 ## Revision history
 
 | Version | Date | Change |
 |---|---|---|
+| 1.5 | 2026-08-29 | Added realized accepted-scope maturity, deployment-ready portability, self-hosted local Docker operation, Dashboard local port-8080 relationship and physical Range Reactor qualification framing. |
 | 1.4 | 2026-08-28 | Expanded Range Reactor computational ownership and public evidence routing. |
 | 1.3 | 2026-08-28 | Recast Language Model maturity as advanced near-final strengthening of an established deterministic system rather than an internal development-stage projection. |
 | 1.2 | 2026-08-28 | Recast all diagrams around affirmative ownership, capability and maturity relationships and aligned the component set to the current public scope. |

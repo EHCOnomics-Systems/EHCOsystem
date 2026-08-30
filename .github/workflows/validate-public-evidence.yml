@@ -33,6 +33,9 @@ jobs:
       - name: Validate public evidence and semantic boundaries
         run: python3 verification/validate_public_evidence.py
 
+      - name: Validate canonical public claim registry and final-closeout representation
+        run: python3 verification/validate_public_claim_registry.py
+
       - name: Validate public Language Model test snapshot
         run: python3 verification/validate_public_lm_test_snapshot.py
 

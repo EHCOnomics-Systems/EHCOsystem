@@ -5,44 +5,43 @@ protocol_reference:
   profile_version: 1.0.0
   protocol_version: 1.0.0
 repository: EHCOnomics-Systems/EHCOsystem
-governed_object: PUBLIC_EHCOSYSTEM_RELEASE_PROVENANCE_PREPARATION_V1
+governed_object: PUBLIC_EHCOSYSTEM_FINAL_CLOSEOUT_REPRESENTATION_PHASE1_V1
 source_owner:
   repository: EHCOnomics-Systems/EHCOsystem
-  revision: 8d34904db195103ff7e840d0fac86027b7de9b54
+  revision: 9bac1d6af5210a596691530436429937169f527e
   repository_manifest_path: ehco.repository.yaml
-  controlling_source_reference: Drive EHCO-PUB-SOW-007 release provenance preparation control
+  controlling_source_reference: Drive EHCO-PUB-SOW-008 v1.3
 selection:
   selected_by: Edward Henry
   selection_class: EXPLICIT_OWNER_DIRECTION
   durable_reference: >-
-    Edward Henry direction 2026-08-29 “owner accept” explicitly selects ACCEPT and integration of EHCOnomics-Systems/EHCOsystem PR #34 after completed PUBLISH qualification. The reviewed PUBLISH basis is exact head 4bb4f97b8e4c3929ef030a8c602adc898a801d12 on source base 8d34904db195103ff7e840d0fac86027b7de9b54. That reviewed head passed Validate evidence and public boundaries, EHCO Assistant Operation Gate, CodeQL analysis, and GitHub Advanced Security CodeQL, with review threads clear. ACCEPT is limited to this operation-control transition, exact-head requalification, Ready-for-Review, expected-head squash merge, accepted-main readback, and Drive reconciliation. The five substantive release/provenance paths remain frozen at the reviewed PUBLISH basis throughout ACCEPT. Git tag v1.0.0-public and GitHub Release materialization remain a separate REALIZE effect. Deployment, production activation, Runtime action, authority/proof/participation effects, numerical standing transition, history rewrite, repository settings/rulesets, branch-retention policy change, and successor activation remain separate. STABLE_REPOSITORY_MANIFEST_CHANGE=true OPERATION_STABLE_ENVELOPE_CHANGE=true
-  source_base_revision: 8d34904db195103ff7e840d0fac86027b7de9b54
-  expected_reviewed_head_revision: 4bb4f97b8e4c3929ef030a8c602adc898a801d12
+    Edward Henry current direction “Proceed to next steps” explicitly selects ACCEPT and integration of the cleaned EHCOnomics-Systems/EHCOsystem PR #35 after bounded Phase 1 PUBLISH qualification. The reviewed PUBLISH basis is exact head 3432481a2717642fd037aa0209f066ba825ccb69 on accepted source base 9bac1d6af5210a596691530436429937169f527e. That reviewed head is exactly two commits ahead and zero behind the selected base, contains exactly the intended 16 Phase 1 representation paths, has successful public-evidence/claim-registry validation and CodeQL runs, and has clear review threads and no submitted reviews. ACCEPT is limited to this operation-control transition, exact-head requalification, Ready-for-Review, expected-head squash merge, accepted-main readback, and Drive reconciliation. The 15 substantive public representation/evidence/verification paths are frozen at reviewed PUBLISH head 3432481a2717642fd037aa0209f066ba825ccb69 throughout ACCEPT. Git tag/GitHub Release materialization, new qualification execution, deployment, production activation, Runtime action, authority/proof/participation effects, numerical standing transition, repository settings/rulesets, branch-retention policy change, and successor activation remain separate. NEW_PATH:assurance/PUBLIC-CLAIM-REGISTRY.json NEW_PATH:verification/validate_public_claim_registry.py OPERATION_STABLE_ENVELOPE_CHANGE=true
+  source_base_revision: 9bac1d6af5210a596691530436429937169f527e
+  expected_reviewed_head_revision: 3432481a2717642fd037aa0209f066ba825ccb69
 control_anchor: AGENTS.md
 status_owner_path: ehco.operation.yaml
 accepted_standing: 52/53
 active_operation:
-  operation_id: EHCO-PUBLIC-RELEASE-PROVENANCE-PREP-ACCEPT-001
+  operation_id: EHCO-PUBLIC-SOW008-REPRESENTATION-PHASE1-ACCEPT-001
   state: COMPLETE
   authorization_mode: ACCEPT
   bounded_outcome: >-
-    Owner-accept and integrate the already qualified public release/provenance source preparation while preserving the reviewed substantive release/provenance bytes and keeping provider publication as a separate REALIZE effect.
+    Owner-accept and integrate the already qualified cleaned Phase 1 public representation candidate so accepted main states the established EHCO AI-OS realized maturity, deployment-ready Docker portability, physically operated self-hosted local Docker Runtime, Dashboard local origin, established model-independent Tier One lineage, historical Runtime characterization/repair, and Range Reactor realization/physical-host qualification.
   remaining_bounded_work: []
   interaction_seams:
-    - Accepted public main 8d34904db195103ff7e840d0fac86027b7de9b54 is the exact source base for PR #34.
-    - Reviewed PUBLISH head 4bb4f97b8e4c3929ef030a8c602adc898a801d12 passed Validate evidence and public boundaries check 99178202537, EHCO Assistant Operation Gate check 99178200709, CodeQL analysis check 99178202613, and GitHub Advanced Security CodeQL check 99178273915 with no new alerts in changed code.
-    - Review threads were clear before ACCEPT selection.
-    - ehco.repository.yaml, PROVENANCE.md, releases/PUBLIC-RELEASE-REGISTER.md, verification/README.md, and verification/validate_release_identity.py are frozen at reviewed PUBLISH head 4bb4f97b8e4c3929ef030a8c602adc898a801d12 throughout ACCEPT.
-    - provenance.accepted_commit remains eff9301e7c5ddfc0759ee0d7e3c026ad28c5670c as the stable manifest/boundary acceptance baseline.
-    - provenance.artifact_digest remains NOT_APPLICABLE_SOURCE_ONLY_PUBLIC_PROJECTION_NO_SEPARATE_BUILD_ARTIFACT for this source-only public projection.
-    - Registered release identity remains version 1.0.0, tag v1.0.0-public, and title EHCOsystem Public Architecture and Evidence Baseline v1.0.0.
-    - GitHub tag and Releases surfaces retain ownership of live provider publication state.
+    - Google Drive EHCO-PUB-SOW-008 v1.3 owns the durable public-representation meaning and current historical-evidence selection.
+    - Accepted public main 9bac1d6af5210a596691530436429937169f527e is the exact source base for PR #35.
+    - Reviewed cleaned PUBLISH head 3432481a2717642fd037aa0209f066ba825ccb69 is exactly two commits ahead and zero behind the selected base with the intended 16 changed paths.
+    - The 15 substantive representation/evidence/verification paths remain frozen at reviewed PUBLISH head 3432481a2717642fd037aa0209f066ba825ccb69 throughout ACCEPT; post-review ACCEPT source delta is limited to ehco.operation.yaml.
+    - Owning Range Reactor Git history retains the accepted 2026-08-13 executable realization lineage and the executed 2026-08-14 host qualification/reconciliation evidence.
+    - Owning Runtime/Docker evidence retains local Runtime operation, Docker portability, launch/relaunch, persistence, health, Dashboard port 8080, and established external-model-independent Tier One operating lineage.
     - INSTANTIATED_EHCO_RUNTIME retains Tier One Runtime authority and current Runtime state.
   non_overlap:
-    - Total PR #34 diff remains bounded to the six SOW-007 paths.
-    - Post-review ACCEPT source delta is limited to ehco.operation.yaml.
-    - The five substantive release/provenance paths remain unchanged after reviewed PUBLISH head 4bb4f97b8e4c3929ef030a8c602adc898a801d12.
-    - Git tag/Release creation, deployment, production activation, Runtime admission/binding/invocation/participation/authority/state/proof, numerical standing transition, history rewrite, repository settings/rulesets, branch-retention policy change, and successor activation are separate.
+    - No new qualification or test-plan artifacts are introduced into the current Phase 1 PR tree.
+    - Fresh local Docker, network-isolation, matched-performance, Range Reactor physical or shell/PowerShell qualification execution remains outside this source acceptance.
+    - TGZ generation/upload, Git tag/GitHub Release, deployment, production activation, Runtime admission/binding/invocation/participation/authority/state/proof, standing transition, repository-settings, ruleset, branch-retention, and successor effects remain outside this operation.
+    - Stable ehco.repository.yaml identity and boundary fields remain unchanged.
+    - Existing immutable public evidence packets, dossier bytes, Dashboard image bytes, Language Model snapshot bytes and Range Reactor capability-snapshot-v1 bytes remain unchanged.
   automatic_successor: PROHIBITED
   successor_operation: NOT_SELECTED
 execution_continuity:
@@ -58,33 +57,37 @@ execution_continuity:
 scope:
   permitted_paths:
     - ehco.operation.yaml
-    - ehco.repository.yaml
-    - PROVENANCE.md
-    - releases/PUBLIC-RELEASE-REGISTER.md
-    - verification/validate_release_identity.py
-    - verification/README.md
-  controlled_paths:
-    - ehco.operation.yaml
-    - ehco.repository.yaml
-    - PROVENANCE.md
-    - releases/PUBLIC-RELEASE-REGISTER.md
-    - verification/validate_release_identity.py
-    - verification/README.md
-  prohibited_paths:
-    - AGENTS.md
     - README.md
-    - LIBRARY.md
-    - NOTICE.md
-    - GOVERNANCE.md
-    - SECURITY.md
     - ECOSYSTEM-DILIGENCE.md
     - TECHNICAL-DILIGENCE.md
-    - .github/**
-    - architecture/**
-    - assurance/**
-    - getting-started/**
-    - evidence/**
+    - getting-started/START-HERE.md
+    - architecture/EHCO-TECHNOLOGY-ESTATE.md
+    - architecture/EHCO-AI-OS-SYSTEM-CARD.md
+    - architecture/diagrams/README.md
+    - assurance/README.md
+    - assurance/CLAIM-EVIDENCE-MATRIX.md
+    - assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md
+    - assurance/PUBLIC-CLAIM-REGISTRY.json
+    - evidence/README.md
+    - verification/README.md
+    - verification/validate_public_claim_registry.py
+    - .github/workflows/validate-public-evidence.yml
+  controlled_paths:
+    - ehco.operation.yaml
+    - assurance/PUBLIC-CLAIM-REGISTRY.json
+    - verification/validate_public_claim_registry.py
+    - .github/workflows/validate-public-evidence.yml
+  prohibited_paths:
+    - AGENTS.md
+    - ehco.repository.yaml
+    - GOVERNANCE.md
+    - SECURITY.md
+    - NOTICE.md
+    - PROVENANCE.md
+    - releases/**
     - dossiers/**
+    - evidence/public-evidence-companion/**
+    - architecture/assets/**
     - language-model/**
     - range-reactor/**
 change_control:
@@ -132,7 +135,7 @@ effects:
   external_effect: NONE
 bridge:
   applicability: NOT_APPLICABLE_NON_PARTICIPANT
-  non_applicability_reason: Public repository release/provenance source acceptance is separate from Runtime participation.
+  non_applicability_reason: Public repository source acceptance is separate from Runtime participation.
   direct_invocation: PROHIBITED
   runtime_admission_status: NOT_ESTABLISHED
   participation_binding_status: NOT_ESTABLISHED
@@ -140,22 +143,28 @@ bridge:
 evidence:
   evidence_class: OWNER_ACCEPTANCE_RECORD
   required_checks:
-    - Exact source base remains accepted main 8d34904db195103ff7e840d0fac86027b7de9b54.
-    - Reviewed PUBLISH head remains 4bb4f97b8e4c3929ef030a8c602adc898a801d12 and its qualification checks remain successful.
-    - Final changed-path set remains exactly the six SOW-007 paths.
-    - Post-review compare from 4bb4f97b8e4c3929ef030a8c602adc898a801d12 to the final COMPLETE ACCEPT head changes only ehco.operation.yaml.
-    - The five substantive release/provenance paths remain frozen at reviewed PUBLISH head 4bb4f97b8e4c3929ef030a8c602adc898a801d12.
-    - Exact final COMPLETE ACCEPT head passes Validate evidence and public boundaries, CodeQL, and EHCO Assistant Operation Gate; GitHub Advanced Security CodeQL remains successful where produced.
+    - Exact source base remains accepted EHCOsystem main 9bac1d6af5210a596691530436429937169f527e.
+    - Reviewed cleaned PUBLISH head remains 3432481a2717642fd037aa0209f066ba825ccb69 and its qualification checks remain successful.
+    - Final changed-path set remains exactly the intended 16 Phase 1 paths.
+    - Post-review compare from 3432481a2717642fd037aa0209f066ba825ccb69 to the final COMPLETE ACCEPT head changes only ehco.operation.yaml.
+    - The 15 substantive representation/evidence/verification paths remain frozen at reviewed PUBLISH head 3432481a2717642fd037aa0209f066ba825ccb69.
+    - Exact final COMPLETE ACCEPT head passes Validate evidence and public boundaries, canonical public claim validation, CodeQL, and EHCO Assistant Operation Gate; GitHub Advanced Security CodeQL remains successful where produced.
     - Pull request review threads remain clear before merge.
-    - PR #34 is marked Ready only after final exact-head qualification and is squash-merged only with expected-head protection.
+    - Current PR tree contains exactly the selected Phase 1 representation/control scope and no new qualification/test-plan package.
+    - PR #35 is marked Ready only after final exact-head qualification and is squash-merged only with expected-head protection.
     - Accepted public main is read back after merge and shows state COMPLETE, authorization_mode ACCEPT, remaining_bounded_work empty, and automatic successor prohibited.
   proves:
-    - Owner acceptance of the bounded public release/provenance source preparation on the exact reviewed and requalified source chain.
-    - Stable repository provenance semantics and registered release identity are accepted in public repository source.
-    - Substantive release/provenance bytes remained frozen throughout ACCEPT after the reviewed PUBLISH basis.
-    - Provider publication remains separately owned by GitHub tag and Releases surfaces.
+    - Owner acceptance of the bounded cleaned EHCOsystem Phase 1 public representation on the exact reviewed and requalified source chain.
+    - Accepted public source affirmatively represents EHCO AI-OS as realized, Docker portability as deployment-ready and portable, and EHCO AI-OS as physically operated as a self-hosted local Docker Runtime.
+    - Range Reactor August 13 realization and August 14 actual host qualification remain preserved in owning source/evidence and represented at the correct public evidence strength.
+    - Substantive public representation bytes remained frozen throughout ACCEPT after the reviewed PUBLISH basis.
     - Accepted standing remains 52/53 and Runtime authority boundaries remain preserved.
   evidence_not_created:
+    - Fresh local Docker or network-isolation qualification
+    - Fresh matched Runtime performance benchmark
+    - Fresh Range Reactor physical qualification execution
+    - Shell or PowerShell proof packet
+    - TGZ artifact or public artifact upload
     - Git tag or GitHub Release publication
     - Deployment or production activation
     - Runtime admission binding invocation participation authority state proof or canonical Runtime receipt
@@ -164,7 +173,7 @@ evidence:
     - Git history rewrite or branch-retention policy change
 stop_condition:
   - Verify the exact final COMPLETE ACCEPT head passes required repository/security checks and review threads remain clear.
-  - Confirm the post-review compare changes only ehco.operation.yaml and all five substantive release/provenance paths remain frozen.
-  - Mark PR #34 Ready only after final exact-head qualification and squash-merge only with expected-head protection.
-  - Read back accepted public main and reconcile Drive SOW-007 to accepted closeout.
-  - Stop after accepted-main and Drive reconciliation with automatic successor prohibited and provider REALIZE remaining separate.
+  - Confirm the post-review compare changes only ehco.operation.yaml and all 15 substantive Phase 1 paths remain frozen.
+  - Mark PR #35 Ready only after final exact-head qualification and squash-merge only with expected-head protection.
+  - Read back accepted public main and reconcile Drive SOW-008 to the accepted closeout.
+  - Stop after accepted-main and Drive reconciliation with automatic successor prohibited and release/deployment/Runtime effects remaining separate.
