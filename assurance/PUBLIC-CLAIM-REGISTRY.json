@@ -1,19 +1,28 @@
 {
   "schema": "ehco.public.claim-registry.v1",
-  "registry_version": "1.0.0",
-  "published": "2026-08-29",
-  "source_review_date": "2026-08-29",
-  "public_repository_base": "9bac1d6af5210a596691530436429937169f527e",
-  "purpose": "Canonical machine-readable public propositions for the EHCOsystem final-closeout representation layer, with the current EHCO AI-OS Runtime evidence route bound to the Full Flex public packet identity.",
+  "registry_version": "1.1.0",
+  "published": "2026-08-30",
+  "source_review_date": "2026-08-30",
+  "public_repository_base": "2ee2eb0ac9cdf2c257a48460b8e83fda70b87952",
+  "public_repository_base_semantics": "accepted canonical-main Full Flex precedence materialization used as the source base for this closeout review",
+  "purpose": "Canonical machine-readable public propositions for EHCOsystem, with present EHCO AI-OS Runtime review routed through the current Full Flex evidence identity before historical packet lineage.",
+  "standing_interpretation": {
+    "accepted_standing": "52/53",
+    "public_meaning": "accepted numerical Runtime standing corridor under the EHCO standing framework",
+    "not_equivalent_to": ["benchmark score", "percentage completion", "component maturity percentage", "deployment-state percentage", "public-release percentage"],
+    "protected_denominator_mechanics": "NOT_PUBLICLY_INFERRED_OR_EXPANDED"
+  },
   "current_runtime_evidence": {
     "front_door": "runtime/README.md",
     "packet_index": "evidence/runtime/full-flex/v1/README.md",
+    "packet_path": "evidence/runtime/full-flex/v1/EHCO_FULL_FLEX_PUBLIC_PACKET_V1.json",
     "packet_schema": "EHCO_FULL_FLEX_PUBLIC_PACKET_V1",
     "packet_sha256": "7F80C27D085AE871A00AED412C6F20EA9A76CB0677C93AEBA381CD1FD70EC8E5",
     "runtime_maturity": "REALIZED / COMPLETE_IN_ACCEPTED_SCOPE",
     "accepted_standing": "52/53",
     "docker_portability": "PRIMARY_ACCESSIBLE_RUNTIME_PROJECTION",
-    "precedence": "CURRENT_FULL_FLEX_FIRST; PUBLIC_EVIDENCE_COMPANION_PACKETS_00_08_RETAINED_AS_HISTORICAL_EVENT_TIME_LINEAGE"
+    "precedence": "CURRENT_FULL_FLEX_FIRST; CLAIM_REGISTRY_SECOND; OWNING_RUNTIME_DOCKER_EVIDENCE_FOR_TECHNICAL_EFFECTS; PUBLIC_EVIDENCE_COMPANION_PACKETS_00_08_RETAINED_AS_HISTORICAL_EVENT_TIME_LINEAGE",
+    "exact_byte_publication": "PENDING_LAWFUL_BYTE_CUSTODY_UNLESS_PACKET_PATH_IS_PRESENT_AND_HASH_VERIFIED"
   },
   "claims": [
     {
@@ -82,7 +91,7 @@
       "maturity": "HISTORICAL_CHARACTERIZATION + ACCEPTED_REPAIR",
       "evidence_class": "historical owning Runtime characterization + accepted source/realization evidence",
       "public_references": ["evidence/runtime/full-flex/v1/README.md", "TECHNICAL-DILIGENCE.md", "ECOSYSTEM-DILIGENCE.md", "assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md"],
-      "verification_method": "Use the Full Flex route for current engineering-scale synthesis and review the bounded characterization statement and controlled owning evidence for the exact historical workload.",
+      "verification_method": "Use the Full Flex route for current engineering-scale synthesis and review controlled owning evidence for the exact historical workload. No post-repair speedup is claimed without matched owning execution evidence.",
       "disclosure_ceiling": "Historical large-ledger observation, diagnosed mechanism and accepted repair sequence.",
       "status": "ESTABLISHED"
     },
