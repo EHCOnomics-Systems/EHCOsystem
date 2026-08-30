@@ -86,6 +86,8 @@ Owning Range Reactor qualification evidence establishes physical service executi
 
 The physical qualification also recorded a 50-request diagnostic workload at **58.458 ms median**, **110.213 ms p95**, **213.075 ms maximum**, and **15.199 requests/second**.
 
+The 6.847-second Runtime activity characterization and the Range Reactor diagnostic performance record are **separate workloads**. Their values describe different evidence objects, and direct comparative speedup belongs only to matched-workload evidence.
+
 Range Reactor remains a **DOWNSTREAM_GOVERNED_COMPONENT**. Its physical qualification/performance evidence is included in the Full Flex current evidence synthesis without creating Tier One Runtime participation.
 
 ## 7. Historical evidence lineage
