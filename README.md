@@ -6,6 +6,16 @@
 
 **EHCO AI-OS is the realized Tier One Runtime** of EHCOsystem with accepted standing **52/53** and accepted baseline **`REALIZED / COMPLETE_IN_ACCEPTED_SCOPE`**. `EHCO_DOCKER_PORTABILITY` is the **PRIMARY_ACCESSIBLE_RUNTIME_PROJECTION** and the **fully containerized, deployment-ready portable delivery form** of the established hardened Runtime/root-image lineage. Owning Docker/host evidence establishes successful local launch/relaunch behavior, healthy bridge and worker services, persistent Runtime/proof/data surfaces, Docker networking, hardened image identity, and local service response. **EHCO AI-OS has physically operated as a self-hosted local Docker Runtime.** The **current accepted working EHCO Dashboard baseline** is the principal presently established **Tier Three projection baseline** within that portability estate, and the local Dashboard was served on **host port 8080** during the captured operating state. **Downstream governed components** provide deterministic language, range/reasoning, retrieval/evidence, relationship continuity, coordination, research, and domain capability.
 
+## Current EHCO AI-OS Runtime evidence — start here
+
+For the **current established EHCO AI-OS Runtime environment**, begin with the **[EHCO AI-OS Runtime — Current Public Evidence](runtime/README.md)**.
+
+The current public Runtime evidence front door is the clean **EHCO Full Flex Public Packet v1**, established from the owning Windows/Docker host on **2026-08-30** and bound by SHA-256 `7F80C27D085AE871A00AED412C6F20EA9A76CB0677C93AEBA381CD1FD70EC8E5`. It synthesizes the current accepted Runtime posture, deployment-ready Docker portability, physically operated local Runtime evidence, Dashboard/bridge/worker relationships, persistent surfaces, networking, hardened image identity, engineering-scale Runtime characterization, Range Reactor qualification/performance, public claim bindings, source bindings and artifact integrity.
+
+The existing Public Evidence Companion Packets 00–08 remain immutable historical/event-time evidence and lineage. For current Runtime maturity and deployment-ready environment interpretation, the Full Flex route is the canonical first public evidence route; historical packet-time fields retain their recorded evidence scope.
+
+**[Open current Runtime evidence →](runtime/README.md)**
+
 ## Dashboard visual orientation
 
 The EHCO Dashboard gives reviewers a visual orientation across governed system posture, service coordination, authority relationships, evidence, health, readiness, and component interaction. These dated interface views complement the repository's claim-to-evidence routes and derive from the operating local EHCO Docker Runtime.
@@ -34,16 +44,18 @@ The principal shared spine has differentiated maturity:
 
 ## Start here
 
-1. **[Instantiated AI — Public Architecture Definition](architecture/INSTANTIATED-AI.md)** — category definition, computational standing, dependency inversion, source/memory standing, and model independence.
-2. **[EHCOsystem — An Instantiated AI Ecosystem](architecture/EHCO-TECHNOLOGY-ESTATE.md)** — complete public technology-estate map and current maturity.
-3. **[Public Architecture Diagrams](architecture/diagrams/README.md)** — Runtime, projection, computational ownership, component spine, applications, and evidence relationships.
-4. **[Ecosystem Claim → Evidence Matrix](assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md)** — claim, maturity, evidence class, verification method, source-review date, and evidence scope.
-5. **[Ecosystem Technical Diligence](ECOSYSTEM-DILIGENCE.md)** — reviewer route from category architecture through source-grounded component evidence.
+1. **[Current EHCO AI-OS Runtime Evidence](runtime/README.md)** — current Runtime posture, Full Flex packet identity, Docker portability relationship and historical-evidence precedence.
+2. **[Instantiated AI — Public Architecture Definition](architecture/INSTANTIATED-AI.md)** — category definition, computational standing, dependency inversion, source/memory standing, and model independence.
+3. **[EHCOsystem — An Instantiated AI Ecosystem](architecture/EHCO-TECHNOLOGY-ESTATE.md)** — complete public technology-estate map and current maturity.
+4. **[Public Architecture Diagrams](architecture/diagrams/README.md)** — Runtime, projection, computational ownership, component spine, applications, and evidence relationships.
+5. **[Ecosystem Claim → Evidence Matrix](assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md)** — claim, maturity, evidence class, verification method, source-review date, and evidence scope.
+6. **[Ecosystem Technical Diligence](ECOSYSTEM-DILIGENCE.md)** — reviewer route from category architecture through source-grounded component evidence.
 
 ## Verify this repository
 
 The public representation is machine-checked against a canonical claim registry and the existing evidence validators.
 
+- **[Current Runtime Evidence](runtime/README.md)** — first public route for the established EHCO AI-OS Runtime environment and Full Flex packet identity.
 - **[Canonical Public Claim Registry](assurance/PUBLIC-CLAIM-REGISTRY.json)** — machine-readable current propositions, evidence classes, verification routes, and disclosure ceilings.
 - **[Public Repository Validation](verification/README.md)** — deterministic repository, claim-registry, Language Model, Range Reactor, and release-identity verification routes.
 - **[EHCO AI-OS Technical Diligence](TECHNICAL-DILIGENCE.md)** — focused Tier One route through local-operation evidence, observed Runtime evidence, implementation anchors, and performance characterization.
@@ -79,6 +91,8 @@ The application estate includes **EHCO Energy**, **Noble Law**, **EHCO War Room*
 
 EHCOsystem publishes evidence according to the proposition being examined: controlled architecture, exact artifact identity, manifests and hashes, selected test fixtures, source-reviewed synthetic capability evidence, source anchors, bounded observations, discrepancy records, receipts, and verification tooling.
 
+For the current established Tier One Runtime environment, use the **[Full Flex current evidence route](runtime/README.md)** first. The immutable Public Evidence Companion preserves the historical proof and event-time evidence lineage behind that current representation.
+
 The **EHCO Language Model Public Test Snapshot v1** publishes seven exact synthetic fixtures covering **62 cases**, expected dispositions, a qualification-test index, provenance manifest, and validation tooling. It is one inspectable window into a substantially deeper controlled implementation and qualification estate.
 
 **[Inspect the Language Model test evidence](language-model/evidence/public-test-snapshot-v1/README.md)**
@@ -89,6 +103,7 @@ The **EHCO Range Reactor Public Capability Snapshot v1** publishes eight public-
 
 ## Architecture, evidence, and governance
 
+- [Current EHCO AI-OS Runtime Evidence](runtime/README.md)
 - [EHCO Range Reactor](range-reactor/README.md)
 - [Runtime, Repository, and Test-Estate Boundary](architecture/runtime-repository-and-test-estate-boundary.md)
 - [Repository Governance](GOVERNANCE.md)

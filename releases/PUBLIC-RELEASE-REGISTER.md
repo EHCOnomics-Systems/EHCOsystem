@@ -7,7 +7,27 @@ This register records public source visibility, artifact identity and evidence s
 - **PRESENT_IN_REVISION** — present in the stated Git revision.
 - **REGISTERED_RELEASE_IDENTITY** — declared release identity reserved for publication lifecycle use.
 - **HASH_PRESERVED_EVIDENCE** — byte-preserved evidence with cryptographic identity.
+- **CURRENT_PUBLIC_EVIDENCE_IDENTITY** — current public evidence object whose exact identity is established by owning evidence and whose public routing/identity record is present in source; exact artifact-byte materialization is tracked separately.
 - **CURRENT_RUNTIME_EVIDENCE_REQUIRED** — current Runtime evidence owns the proposition.
+
+## Current EHCO AI-OS Runtime evidence identity
+
+The canonical current public Runtime evidence route is the clean **EHCO Full Flex Public Packet v1**.
+
+- Schema: `EHCO_FULL_FLEX_PUBLIC_PACKET_V1`
+- Evidence role: current affirmative capability-and-evidence synthesis for the established EHCO AI-OS Runtime environment
+- Owning-host establishment date: `2026-08-30`
+- Packet SHA-256: `7F80C27D085AE871A00AED412C6F20EA9A76CB0677C93AEBA381CD1FD70EC8E5`
+- Clean package ZIP SHA-256: `DBF984B55731B5EA53C4D7F2A24F8CF4C0C4207E355EB8E6B1170113509F6B94`
+- Runtime maturity represented: `REALIZED / COMPLETE_IN_ACCEPTED_SCOPE`
+- Accepted standing represented: `52/53`
+- Docker portability represented: `PRIMARY_ACCESSIBLE_RUNTIME_PROJECTION`
+- Public front door: `runtime/README.md`
+- Evidence index: `evidence/runtime/full-flex/v1/README.md`
+
+The current packet identity and evidence precedence are present in public source. Exact JSON-byte materialization becomes part of this evidence identity when the transferred artifact verifies to the packet SHA-256 above. This preserves the owning-host-established evidence identity and exact-byte continuity for the selected packet.
+
+Historical Public Evidence Companion Packets 00–08 remain immutable event-time evidence and lineage. Their governing role is historical proof custody, source identity, bounded observations, and package lineage; present Runtime maturity/state interpretation routes through the current Full Flex evidence surface and owning evidence.
 
 ## Registered public release identity
 
@@ -35,6 +55,8 @@ The registered release identity above remains distinct from provider publication
 | Artifact | Status | Canonical path | Evidence scope |
 |---|---|---|---|
 | Repository identity and front door | PRESENT_IN_REVISION | `README.md` | Category-to-ecosystem orientation and current maturity |
+| EHCO AI-OS current Runtime evidence front door | PRESENT_IN_REVISION | `runtime/README.md` | Current Runtime evidence precedence and deployment-ready environment synthesis |
+| EHCO Full Flex Public Packet v1 identity/index | CURRENT_PUBLIC_EVIDENCE_IDENTITY | `evidence/runtime/full-flex/v1/` | Current Runtime evidence identity; packet SHA-256 `7F80C27D085AE871A00AED412C6F20EA9A76CB0677C93AEBA381CD1FD70EC8E5` |
 | Instantiated AI | PRESENT_IN_REVISION | `architecture/INSTANTIATED-AI.md` | Category architecture |
 | EHCOsystem Technology Estate | PRESENT_IN_REVISION | `architecture/EHCO-TECHNOLOGY-ESTATE.md` | Ecosystem architecture and source-grounded maturity |
 | Public Architecture Diagrams | PRESENT_IN_REVISION | `architecture/diagrams/README.md` | Public explanatory relationships |
@@ -50,10 +72,18 @@ The registered release identity above remains distinct from provider publication
 | EHCO Language Model | PRESENT_IN_REVISION | `language-model/README.md` | Deterministic language architecture and current maturity |
 | Language Model Public Test Snapshot v1 | PRESENT_IN_REVISION | `language-model/evidence/public-test-snapshot-v1/` | Seven exact fixtures / 62 cases and qualification index |
 | Public dossier PDF | HASH_PRESERVED_EVIDENCE | `dossiers/EHCO_AI_OS_Governed_Operational_Architecture_Public_Edition_v1_8_LOCK_FINAL.pdf` | Controlled public architecture; SHA-256 `F489BA01961A12CF101B1F1DF57E6958456A0840BEB798B862FA97ACB030892D` |
-| Public Evidence Companion Version 1 | HASH_PRESERVED_EVIDENCE | `evidence/public-evidence-companion/v1/` | Packets 00-08 and their packet-specific evidence classes |
+| Public Evidence Companion Version 1 | HASH_PRESERVED_EVIDENCE | `evidence/public-evidence-companion/v1/` | Packets 00-08 and their historical/event-time evidence classes |
 | Public validation | PRESENT_IN_REVISION | `verification/` | Repository integrity and public-representation validation |
 
 ## Packet register
+
+### Current packet
+
+| Packet | Status | Evidence scope |
+|---|---|---|
+| EHCO Full Flex Public Packet v1 | CURRENT_PUBLIC_EVIDENCE_IDENTITY | Current established Runtime environment synthesis; exact packet identity SHA-256 `7F80C27D085AE871A00AED412C6F20EA9A76CB0677C93AEBA381CD1FD70EC8E5` |
+
+### Historical Public Evidence Companion
 
 | Packet | Status | Evidence scope |
 |---|---|---|
@@ -77,4 +107,4 @@ F489BA01961A12CF101B1F1DF57E6958456A0840BEB798B862FA97ACB030892D
 
 ## Publication lifecycle
 
-Revision visibility, canonical-main publication, stable repository provenance and registered release identity are tracked as separate publication records. Live GitHub release materialization is established by the provider release surface. Current Runtime state remains owned by current Runtime evidence.
+Revision visibility, canonical-main publication, stable repository provenance, current public evidence identity and registered release identity are tracked as separate publication records. Live GitHub release materialization is established by the provider release surface. Current Runtime state remains owned by current Runtime evidence.

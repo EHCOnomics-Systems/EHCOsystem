@@ -1,17 +1,17 @@
 ---
 title: EHCO AI-OS Technical Diligence — Start Here
-version: 1.2
+version: 1.3
 status: public-diligence-navigation
-published: 2026-08-29
+published: 2026-08-30
 maintainer: EHCOnomics
 evidence_class: navigation-and-bounded-technical-summary
 evidence_scope: focused Tier One public evidence route
-supersedes: version 1.1
+supersedes: version 1.2
 ---
 
 # EHCO AI-OS Technical Diligence — Start Here
 
-This page is the shortest public route to EHCO AI-OS realized maturity, local operating evidence, implementation anchors, observed evidence, and controlled qualification records.
+This page is the shortest public route to EHCO AI-OS current realized maturity, deployment-ready Runtime environment evidence, implementation anchors, historical observed evidence, and controlled qualification records.
 
 ## Technical claim
 
@@ -21,7 +21,21 @@ EHCO AI-OS is the realized Tier One Runtime at accepted standing **52/53** and a
 
 EHCO AI-OS has physically operated as a **self-hosted local Docker Runtime**. The Dashboard, Runtime bridge, worker service, Docker networking and persistent surfaces were observed in the same local operating estate; the local Dashboard was served on **host port 8080**. Established Runtime/Docker lineage also records Tier One operation, governance, proof/release behavior, and Runtime-state/observer projection with the external-model seam disabled.
 
-## 1. Local Runtime and deployment-ready portability evidence
+## 1. Current Runtime evidence — Full Flex first
+
+The canonical first public evidence route for the current established Runtime environment is the **[EHCO AI-OS Runtime — Current Public Evidence](runtime/README.md)** and the **[EHCO Full Flex Public Packet v1 evidence index](evidence/runtime/full-flex/v1/README.md)**.
+
+The clean `EHCO_FULL_FLEX_PUBLIC_PACKET_V1` was established from the owning Windows/Docker host on **2026-08-30** with SHA-256:
+
+```text
+7F80C27D085AE871A00AED412C6F20EA9A76CB0677C93AEBA381CD1FD70EC8E5
+```
+
+The current packet synthesizes the accepted Runtime posture, deployment-ready Docker portability, physically operated local Runtime evidence, Dashboard/bridge/worker relationships, persistent Runtime/proof/data surfaces, networking, hardened image identity, operating independence, engineering-scale Runtime characterization, Range Reactor qualification/performance, public claim bindings, source bindings and artifact integrity.
+
+The packet is the canonical current **public evidence projection and synthesis**. `INSTANTIATED_EHCO_RUNTIME` remains the owner of actual Tier One Runtime authority and present Runtime state; owning Docker/host evidence remains the owner of physical execution observations.
+
+## 2. Local Runtime and deployment-ready portability evidence
 
 The owning local Docker evidence binds two complementary propositions:
 
@@ -30,7 +44,9 @@ The owning local Docker evidence binds two complementary propositions:
 
 These observations establish operating local Docker behavior and portability across the hardened lineage while keeping the public representation at a public-safe abstraction level.
 
-## 2. Observed run — Packet 06
+## 3. Historical observed run — Packet 06
+
+Packet 06 is retained as immutable **historical/event-time evidence**. It is useful for reviewing a bounded prior observation window and the control behavior captured in that window; its evidence role is historical, while the Full Flex route carries current Runtime maturity and present-state public interpretation.
 
 Open:
 
@@ -38,18 +54,11 @@ Open:
 - raw [`api_chat_probe.json`](evidence/public-evidence-companion/v1/06_OBSERVED_LIVE_CAPTURE_AND_RELEASE_STATUS/06A_OBSERVED_LIVE_CAPTURE/raw/api_chat_probe.json)
 - [`DISCREPANCY_AND_GAP_REGISTER.json`](evidence/public-evidence-companion/v1/06_OBSERVED_LIVE_CAPTURE_AND_RELEASE_STATUS/06C_DISCREPANCY_AND_GAP_REGISTER/DISCREPANCY_AND_GAP_REGISTER.json)
 
-Packet 06 preserves a hash-bound `local_live` capture containing:
+Packet 06 preserves a hash-bound `local_live` capture containing three observed Compose service rows and three healthy rows; authority admission recorded as admitted; packet, continuity, range and proof status recorded as valid; a bounded recovery/quarantine state; a recorded release-gate result; and a configured LLM that remained idle during the captured authority/proof/range/release-gate sequence.
 
-- three observed Compose service rows and three healthy rows;
-- authority admission recorded as admitted;
-- packet, continuity, range, and proof status recorded as valid;
-- recovery quarantine active under a bounded recovery scope;
-- a release gate returning `bounded_release` while closure/readiness/freeze remain governed by their own conditions; and
-- a configured LLM that remained idle during the captured authority/proof/range/quarantine/release-gate sequence.
+Those fields remain evidence of that recorded event. Current accepted baseline interpretation remains **`REALIZED / COMPLETE_IN_ACCEPTED_SCOPE` / 52/53** through the current Full Flex evidence route and its owning evidence relationships.
 
-The capture therefore provides a direct public example of governed state evaluation proceeding through the recorded control path with the configured language model idle.
-
-## 3. Implementation anchors — Packet 03
+## 4. Implementation anchors — Packet 03
 
 Open [`TIER1_AUTHORITY_ENFORCEMENT.json`](evidence/public-evidence-companion/v1/03_TIER1_AUTHORITY_ENFORCEMENT/TIER1_AUTHORITY_ENFORCEMENT.json).
 
@@ -63,58 +72,50 @@ Packet 03 binds exact source identities and named enforcement anchors including:
 - `_build_release_gate`
 - `evaluate_freeze_gate`
 
-It records source hashes and declaration matches for the identified artifacts. Pair Packet 03's source/anchor evidence with Packet 06's observed capture for a two-class view of implementation identity and observed behavior.
+It records source hashes and declaration matches for the identified artifacts. Packet 03 remains useful historical source/anchor evidence while the Full Flex route carries the current public Runtime synthesis.
 
-## 4. Runtime performance characterization and repair
+## 5. Runtime engineering-scale characterization
 
-Controlled Runtime characterization recorded an `/api/activity?limit=1` request against a **496,898,804-byte / 2,605,233-line** activity ledger at **6.847 seconds**. The source diagnosis identified whole-ledger reading before tail selection. The accepted repair replaced that path with a bounded reverse-tail reader and was subsequently integrated and realized on the accepted Runtime source line.
+Controlled Runtime characterization recorded an `/api/activity?limit=1` request against a **496,898,804-byte / 2,605,233-line** activity ledger at **6.847 seconds**. The source diagnosis identified whole-ledger reading before tail selection. The accepted source line replaced that path with a bounded reverse-tail reader and the resulting capability was integrated and realized on the accepted Runtime source line.
 
-This characterization is an engineering progression: large-ledger observation → mechanism diagnosis → bounded reader repair → source/realization qualification.
+The current Full Flex evidence synthesis carries the engineering-scale relationship while the historical characterization record retains the exact event-time measurement and mechanism diagnosis.
 
-## 5. Range Reactor physical qualification and diagnostic performance
+## 6. Range Reactor physical qualification and diagnostic performance
 
 Owning Range Reactor qualification evidence establishes physical service execution, deterministic capability behavior, fail-closed malformed/unsupported-input handling, timeout/unavailability behavior, restart/recovery, local/private service-network execution, portability identity, and AI-OS fail-closed integration behavior for the qualified component line.
 
 The physical qualification also recorded a 50-request diagnostic workload at **58.458 ms median**, **110.213 ms p95**, **213.075 ms maximum**, and **15.199 requests/second**.
 
-The 6.847-second Runtime activity observation and the Range Reactor performance record are **separate workloads**. Their values describe different evidence objects and retain separate interpretation. Direct comparative speedup belongs only to matched-workload evidence.
+The 6.847-second Runtime activity characterization and the Range Reactor diagnostic performance record are **separate workloads**. Their values describe different evidence objects, and direct comparative speedup belongs only to matched-workload evidence.
 
-## 6. Recorded historical evidence lanes
+Range Reactor remains a **DOWNSTREAM_GOVERNED_COMPONENT**. Its physical qualification/performance evidence is included in the Full Flex current evidence synthesis; Tier One Runtime participation remains a separately governed evidence dimension.
 
-Packet 06 retains three direct discrepancy records:
+## 7. Historical evidence lineage
 
-1. `D06-001` — external-freeze readiness value versus derived-verdict divergence;
-2. `D06-002` — `ehco1_authority.py` hash divergence inside the bound record set;
-3. `D06-003` — live-capture classification versus a freeze reason containing `deployment_evidence_not_live_capture`.
+Public Evidence Companion Packets 00–08 remain hash-preserved evidence of their recorded events, artifacts, source anchors and package relationships. Their value is lineage and bounded proof custody.
 
-The capture also preserves five additional packet-time behavioral evidence lanes:
+Packet-local release, quarantine, discrepancy, Range, proof, freeze, readiness and other event-time fields remain bounded to their evidence class and time. Current Runtime maturity, Docker deployment-ready status and accepted standing **52/53** are represented through the current Full Flex route, canonical current claims and owning evidence.
 
-1. invalid admission;
-2. manifest-mismatch fail-closed behavior;
-3. missing-proof adversarial control;
-4. discrete public-projection denial; and
-5. process restart, persisted-state recovery, and re-admission.
+## 8. Public and controlled diligence surfaces
 
-These lanes remain historical Packet 06 classifications. Current Runtime maturity, Docker deployment-ready status, and accepted standing **52/53** remain governed by the accepted owning evidence and canonical claim registry.
+The public repository provides the current Runtime evidence front door, canonical claim identities, exact bounded implementation anchors, source hashes, historical observed execution records, manifests, receipts, public component evidence, and verification tooling.
 
-## 7. Public and controlled diligence surfaces
+Controlled diligence extends that public route through exact source/revision identity, hashes or digests, reviewer-selected safe tests, witnessed build/execution, local Docker qualification evidence, Range Reactor physical qualification evidence, and written verification findings. Protected implementation, credentials, detailed topology and operational access remain in controlled custody.
 
-The public repository provides architecture, canonical claim identities, exact bounded implementation anchors, source hashes, observed execution records, discrepancies, manifests, receipts, public component evidence, and verification tooling.
+## 9. Reviewer path
 
-Controlled diligence extends that public route through exact source/revision identity, hashes or digests, reviewer-selected safe tests, witnessed build/execution, local Docker qualification evidence, Range Reactor physical qualification evidence, and written verification findings. Protected implementation, schemas, credentials, detailed topology and operational access remain in controlled custody.
-
-## 8. Reviewer path
-
-1. [Canonical Public Claim Registry](assurance/PUBLIC-CLAIM-REGISTRY.json);
-2. local Runtime and deployment-ready portability representation on this page;
-3. Packet 06 observed capture and raw probe;
-4. Packet 03 source identities and enforcement anchors;
-5. Runtime performance characterization and repair sequence;
-6. Range Reactor public capability evidence and physical-qualification summary;
-7. [Runtime, Repository, and Test-Estate Boundary](architecture/runtime-repository-and-test-estate-boundary.md);
-8. [Public Claim → Evidence Matrix](assurance/CLAIM-EVIDENCE-MATRIX.md); and
-9. [Public Evidence Companion](evidence/README.md).
+1. [Current EHCO AI-OS Runtime Evidence](runtime/README.md);
+2. [Full Flex Public Packet v1 evidence index](evidence/runtime/full-flex/v1/README.md);
+3. [Canonical Public Claim Registry](assurance/PUBLIC-CLAIM-REGISTRY.json);
+4. local Runtime and deployment-ready portability evidence on this page;
+5. Packet 03 source identities and enforcement anchors for historical source/anchor review;
+6. Packet 06 for historical bounded observed-run review;
+7. Runtime engineering-scale characterization;
+8. Range Reactor public capability evidence and physical-qualification summary;
+9. [Runtime, Repository, and Test-Estate Boundary](architecture/runtime-repository-and-test-estate-boundary.md);
+10. [Public Claim → Evidence Matrix](assurance/CLAIM-EVIDENCE-MATRIX.md); and
+11. [Public Evidence](evidence/README.md).
 
 ## Evidence scope
 
-This page routes reviewers to existing public records plus public-safe current interpretation of owning local-operation and qualification evidence. Each linked artifact retains its own evidence class, time boundary, status and scope.
+This page routes reviewers first to the current Full Flex public Runtime evidence synthesis, then to the owning evidence classes and historical evidence lineage supporting specific propositions. Each artifact retains its own evidence class, time boundary, status and scope.
