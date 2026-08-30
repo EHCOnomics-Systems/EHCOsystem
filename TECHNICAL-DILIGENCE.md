@@ -79,7 +79,7 @@ The physical qualification also recorded a 50-request diagnostic workload at **5
 
 The 6.847-second Runtime activity observation and the Range Reactor performance record are **separate workloads**. Their values describe different evidence objects and retain separate interpretation. Direct comparative speedup belongs only to matched-workload evidence.
 
-## 6. Recorded evidence lanes
+## 6. Recorded historical evidence lanes
 
 Packet 06 retains three direct discrepancy records:
 
@@ -87,7 +87,7 @@ Packet 06 retains three direct discrepancy records:
 2. `D06-002` — `ehco1_authority.py` hash divergence inside the bound record set;
 3. `D06-003` — live-capture classification versus a freeze reason containing `deployment_evidence_not_live_capture`.
 
-The capture also identifies five additional behavioral evidence lanes for controlled qualification:
+The capture also preserves five additional packet-time behavioral evidence lanes:
 
 1. invalid admission;
 2. manifest-mismatch fail-closed behavior;
@@ -95,7 +95,7 @@ The capture also identifies five additional behavioral evidence lanes for contro
 4. discrete public-projection denial; and
 5. process restart, persisted-state recovery, and re-admission.
 
-This register gives reviewers a precise map of observed evidence and follow-on qualification targets.
+These lanes remain historical Packet 06 classifications. Current Runtime maturity, Docker deployment-ready status, and accepted standing **52/53** remain governed by the accepted owning evidence and canonical claim registry.
 
 ## 7. Public and controlled diligence surfaces
 
