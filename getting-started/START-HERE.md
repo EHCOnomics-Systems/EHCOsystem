@@ -19,7 +19,7 @@ For the **current established EHCO AI-OS Runtime environment**, begin with **[EH
 
 EHCO AI-OS is the realized Tier One Runtime at accepted standing **52/53** and accepted maturity **`REALIZED / COMPLETE_IN_ACCEPTED_SCOPE`**. `EHCO_DOCKER_PORTABILITY` is the **`PRIMARY_ACCESSIBLE_RUNTIME_PROJECTION`** and fully containerized, deployment-ready portable delivery form of the established hardened Runtime/root-image lineage.
 
-**52/53 is the accepted numerical Runtime standing corridor under the EHCO standing framework. It is not a benchmark score, percentage completion, component-maturity percentage, deployment-state percentage, or public-release percentage.** Public materials do not expose or infer protected denominator mechanics.
+**52/53 is the accepted numerical Runtime standing corridor under the EHCO standing framework. Benchmark scoring, percentage-completion measures, component-maturity percentages, deployment-state percentages and public-release percentages are separate dimensions.** Protected denominator mechanics remain within their owning governed sources.
 
 The clean **EHCO Full Flex Public Packet v1** is the canonical first public evidence route for present Runtime posture. The Public Evidence Companion Packets 00–08 remain immutable historical/event-time evidence and lineage.
 
