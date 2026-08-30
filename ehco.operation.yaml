@@ -8,48 +8,54 @@ repository: EHCOnomics-Systems/EHCOsystem
 governed_object: EHCO_PUBLIC_REPOSITORY_CLOSEOUT_LOOP_V1
 source_owner:
   repository: EHCOnomics-Systems/EHCOsystem
-  revision: 2ee2eb0ac9cdf2c257a48460b8e83fda70b87952
+  revision: de43811dce08577ba43d08fa6c25d629557edc99
   repository_manifest_path: ehco.repository.yaml
-  controlling_source_reference: Drive document 1FydQKUNfpQ7oZrgpLDlqRHxFM_f1mFv5uq_akploL38 section 22
+  controlling_source_reference: Drive document 1FydQKUNfpQ7oZrgpLDlqRHxFM_f1mFv5uq_akploL38 sections 22-24
 selection:
   selected_by: Edward Henry
   selection_class: EXPLICIT_OWNER_DIRECTION
   durable_reference: >-
-    Edward Henry directed “mark this as the close out loop and lets make sure we finish this.” Drive section 22 selects the bounded public-repository closeout loop after canonical Full Flex precedence materialization. Reviewed PUBLISH head 7829cc9c5bb8db9f51d3d0b1fd47816b33eeb65c passed Validate public repository, CodeQL, and EHCO Assistant Operation Gate with exactly the declared seventeen changed paths. ACCEPT is limited to this operation-control transition, exact-head requalification, Ready-for-Review, expected-head merge, accepted-main readback, and Drive reconciliation; the sixteen substantive closeout files remain frozen at reviewed PUBLISH head 7829cc9c5bb8db9f51d3d0b1fd47816b33eeb65c. The exact clean Full Flex packet remains bound to owning-host SHA-256 7F80C27D085AE871A00AED412C6F20EA9A76CB0677C93AEBA381CD1FD70EC8E5; exact JSON and receipt insertion remain a bounded continuation when lawful exact-byte custody is available. Historical Public Evidence Companion Packets 00-08 remain immutable event-time evidence and lineage. OPERATION_STABLE_ENVELOPE_CHANGE=true
-  source_base_revision: 2ee2eb0ac9cdf2c257a48460b8e83fda70b87952
-  expected_reviewed_head_revision: 7829cc9c5bb8db9f51d3d0b1fd47816b33eeb65c
+    Edward Henry directed “mark this as the close out loop and lets make sure we finish this.”
+    The selected public-repository closeout candidate was qualified, marked ready, and accepted through
+    PR #39 by exact-head squash merge to canonical main commit
+    de43811dce08577ba43d08fa6c25d629557edc99. Canonical main now carries the Full-Flex-first
+    current Runtime evidence route, synchronized public navigation and assurance surfaces, current
+    claim-registry metadata, and the bounded public interpretation of accepted standing 52/53.
+    This final source-control transition closes operation bookkeeping only. Exact clean Full Flex JSON
+    and associated receipt insertion remain a separate bounded exact-byte continuation when lawful
+    custody of the owning-host artifact is available and verifies to SHA-256
+    7F80C27D085AE871A00AED412C6F20EA9A76CB0677C93AEBA381CD1FD70EC8E5.
+    Historical Public Evidence Companion Packets 00-08 remain immutable event-time evidence and lineage.
+    OPERATION_STABLE_ENVELOPE_CHANGE=true
+  source_base_revision: de43811dce08577ba43d08fa6c25d629557edc99
+  expected_reviewed_head_revision: de43811dce08577ba43d08fa6c25d629557edc99
 control_anchor: AGENTS.md
 status_owner_path: ehco.operation.yaml
 accepted_standing: 52/53
 active_operation:
   operation_id: EHCO-PUBLIC-REPOSITORY-CLOSEOUT-LOOP-001
-  state: ACTIVE
+  state: COMPLETE
   authorization_mode: ACCEPT
   bounded_outcome: >-
-    Owner-accept and integrate the exact reviewed public-repository closeout candidate so canonical public source consistently routes present EHCO AI-OS Runtime review through Full Flex first while preserving accepted standing 52/53, EHCO_DOCKER_PORTABILITY as PRIMARY_ACCESSIBLE_RUNTIME_PROJECTION, owning evidence boundaries, immutable historical packet lineage, and separate Runtime/effect ownership.
-  remaining_bounded_work:
-    - Qualify this ACCEPT control transition while preserving the sixteen substantive closeout files exactly as reviewed at 7829cc9c5bb8db9f51d3d0b1fd47816b33eeb65c.
-    - Mark PR #39 ready for review and merge it through protected main using the exact qualified ACCEPT head.
-    - Read back accepted main and record the accepted public-source closeout materialization in Drive.
-    - Reconcile public operation-control state to COMPLETE after accepted-main materialization so canonical main does not retain stale merge-pending work.
-    - When lawful exact-byte custody becomes available, insert the byte-identical clean Full Flex JSON and associated receipt under evidence/runtime/full-flex/v1/ after verifying SHA-256 7F80C27D085AE871A00AED412C6F20EA9A76CB0677C93AEBA381CD1FD70EC8E5.
+    Owner-accepted and integrated the bounded public-repository synchronization closeout. Canonical
+    public source now consistently routes present EHCO AI-OS Runtime review through Full Flex first,
+    preserves current claim-registry and 52/53 interpretation semantics, and retains all established
+    Runtime, Docker, historical-evidence, Range Reactor, and authority boundaries without creating any
+    technical-effect transition.
+  remaining_bounded_work: []
   interaction_seams:
-    - Drive document 1FydQKUNfpQ7oZrgpLDlqRHxFM_f1mFv5uq_akploL38 section 22 owns durable closeout-loop meaning, completion criteria, packet-byte continuation, and effect ceiling.
-    - Accepted EHCOsystem main 2ee2eb0ac9cdf2c257a48460b8e83fda70b87952 is the exact source base for PR #39.
-    - Reviewed PUBLISH head 7829cc9c5bb8db9f51d3d0b1fd47816b33eeb65c binds the qualified substantive closeout candidate.
-    - From reviewed PUBLISH head to this ACCEPT candidate, only ehco.operation.yaml changes; the sixteen substantive closeout files remain frozen.
-    - Direct EHCOsystem Git owns exact source, pull-request, and accepted-main state.
-    - Owning Windows/Docker host evidence owns physical execution observations and the clean Full Flex artifact identity.
+    - Drive sections 22-24 own the durable closeout meaning, accepted materialization record, completion rule, and exact-byte continuation boundary.
+    - Accepted EHCOsystem main de43811dce08577ba43d08fa6c25d629557edc99 contains the merged substantive closeout from PR #39.
+    - Direct EHCOsystem Git owns the exact accepted public source and pull-request state.
+    - Owning Windows/Docker host evidence retains physical execution observations and the clean Full Flex artifact identity.
     - EHCO_DOCKER_PORTABILITY remains PRIMARY_ACCESSIBLE_RUNTIME_PROJECTION of the EHCO AI-OS Runtime environment.
     - INSTANTIATED_EHCO_RUNTIME retains Tier One Runtime authority and current Runtime state.
   non_overlap:
-    - evidence/public-evidence-companion/v1/** remains immutable hash-preserved historical evidence.
-    - Historical packet evidence retains its recorded event-time scope and lineage role; current Runtime maturity and public present-state interpretation route through the Full Flex current evidence surface and owning evidence.
+    - Hash-preserved Public Evidence Companion Packets 00-08 remain immutable event-time evidence and lineage.
+    - Exact clean Full Flex JSON and receipt bytes remain a separately bounded exact-byte publication continuation and are not reconstructed or substituted by this source closeout.
     - Stable ehco.repository.yaml identity and boundary fields remain unchanged.
-    - Exact clean packet bytes remain bound to owning-host identity and are outside this source-synchronization acceptance until lawful exact-byte custody is available.
     - Range Reactor remains a DOWNSTREAM_GOVERNED_COMPONENT with Runtime participation governed as a separate evidence dimension.
-    - New matched post-repair Runtime performance observation remains a separately selected owning-host/Runtime operation.
-    - This source acceptance creates no deployment, GitHub Release, Runtime admission, binding, invocation, physical qualification, standing transition, image publication, repository-setting change, or successor activation.
+    - No new qualification, benchmark, Docker execution, Range Reactor execution, deployment, GitHub Release, Runtime effect, standing transition, repository-setting change, or successor activation is part of this source closeout.
   automatic_successor: PROHIBITED
   successor_operation: NOT_SELECTED
 execution_continuity:
@@ -64,23 +70,7 @@ execution_continuity:
   local_override: MAY_TIGHTEN_NOT_WEAKEN
 scope:
   permitted_paths:
-    - LIBRARY.md
-    - NOTICE.md
-    - PROVENANCE.md
-    - architecture/EHCO-AI-OS-INSTANTIATED-SYSTEM.md
-    - architecture/EHCO-AI-OS-SYSTEM-CARD.md
-    - architecture/GOVERNED-RUNTIME-ARCHITECTURE.md
-    - architecture/instantiated-proof-range.md
-    - architecture/runtime-repository-and-test-estate-boundary.md
-    - assurance/CLAIM-EVIDENCE-MATRIX.md
-    - assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md
-    - assurance/PUBLIC-CLAIM-REGISTRY.json
     - ehco.operation.yaml
-    - getting-started/START-HERE.md
-    - getting-started/reading-order.md
-    - getting-started/repository-map.md
-    - verification/README.md
-    - verification/validate_public_claim_registry.py
   controlled_paths:
     - ehco.operation.yaml
   prohibited_paths:
@@ -88,12 +78,22 @@ scope:
     - ehco.repository.yaml
     - GOVERNANCE.md
     - SECURITY.md
+    - README.md
+    - NOTICE.md
+    - PROVENANCE.md
+    - LIBRARY.md
     - ECOSYSTEM-DILIGENCE.md
+    - TECHNICAL-DILIGENCE.md
+    - getting-started/**
+    - architecture/**
+    - assurance/**
+    - releases/**
     - dossiers/**
-    - evidence/public-evidence-companion/**
-    - architecture/assets/**
+    - evidence/**
+    - verification/**
     - language-model/**
     - range-reactor/**
+    - .github/**
 change_control:
   control_change_declared: true
   delete_or_move_authorized: false
@@ -110,16 +110,16 @@ change_control:
     - delete_file
     - generate_artifact
   remote_actions_authorized:
-    - mark_pull_request_ready_for_review
     - merge_pull_request
     - record_owner_acceptance
+    - close_operation
   remote_actions_prohibited:
     - create_branch
     - commit
     - push
     - open_draft_pull_request
     - update_draft_pull_request
-    - close_operation
+    - mark_pull_request_ready_for_review
     - activate_selected_successor
     - modify_repository_settings
     - modify_drive_controls
@@ -140,7 +140,7 @@ effects:
   external_effect: NONE
 bridge:
   applicability: NOT_APPLICABLE_NON_PARTICIPANT
-  non_applicability_reason: Public evidence source acceptance is separate from Runtime participation.
+  non_applicability_reason: Public repository source closeout is separate from Runtime participation.
   direct_invocation: PROHIBITED
   runtime_admission_status: NOT_ESTABLISHED
   participation_binding_status: NOT_ESTABLISHED
@@ -148,25 +148,24 @@ bridge:
 evidence:
   evidence_class: OWNER_ACCEPTANCE_RECORD
   required_checks:
-    - Reviewed PUBLISH head is exactly 7829cc9c5bb8db9f51d3d0b1fd47816b33eeb65c and passed Validate public repository, CodeQL, and EHCO Assistant Operation Gate.
-    - From reviewed PUBLISH head to this ACCEPT candidate, only ehco.operation.yaml changes.
-    - From accepted base main, changed paths remain exactly LIBRARY.md, NOTICE.md, PROVENANCE.md, architecture/EHCO-AI-OS-INSTANTIATED-SYSTEM.md, architecture/EHCO-AI-OS-SYSTEM-CARD.md, architecture/GOVERNED-RUNTIME-ARCHITECTURE.md, architecture/instantiated-proof-range.md, architecture/runtime-repository-and-test-estate-boundary.md, assurance/CLAIM-EVIDENCE-MATRIX.md, assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md, assurance/PUBLIC-CLAIM-REGISTRY.json, ehco.operation.yaml, getting-started/START-HERE.md, getting-started/reading-order.md, getting-started/repository-map.md, verification/README.md, and verification/validate_public_claim_registry.py.
-    - Current public evidence precedence is Full Flex first, canonical Public Claim Registry second, owning Runtime/Docker evidence for technical effects, and historical Packets 00-08 for event-time lineage.
-    - Canonical claim registry uses 2026-08-30 publication/source-review currentness and preserves packet SHA-256 7F80C27D085AE871A00AED412C6F20EA9A76CB0677C93AEBA381CD1FD70EC8E5, accepted standing 52/53, and PRIMARY_ACCESSIBLE_RUNTIME_PROJECTION.
-    - Public 52/53 interpretation remains the accepted numerical Runtime standing corridor and treats benchmark, percentage-completion, component-maturity, deployment-state, and public-release measures as separate dimensions while preserving protected denominator mechanics in owning governed sources.
-    - Public Evidence Companion v1 bytes remain unchanged.
-    - Current Runtime evidence validator succeeds on the exact ACCEPT head.
-    - Required protected-branch checks succeed on the exact ACCEPT head before merge.
+    - Accepted substantive closeout is merged on main at de43811dce08577ba43d08fa6c25d629557edc99 through PR #39.
+    - This closeout candidate changes only ehco.operation.yaml from accepted main.
+    - Operation state is COMPLETE and remaining_bounded_work is empty.
+    - Accepted standing remains 52/53.
+    - Full Flex remains the canonical first current public Runtime evidence route.
+    - Historical Public Evidence Companion Packets 00-08 remain unchanged.
+    - Automatic successor remains prohibited and no successor is selected.
+    - Required protected-branch checks succeed on the exact closeout head before merge.
   proves:
-    - Owner-selected acceptance of the exact reviewed public-repository closeout candidate.
-    - The accepted candidate closes the identified reader-path and source-currentness synchronization gaps.
+    - Owner-selected public-repository synchronization closeout is complete in accepted source.
     - EHCO AI-OS realized Runtime maturity and accepted standing 52/53 remain preserved.
     - EHCO_DOCKER_PORTABILITY deployment-ready portable-delivery representation remains preserved.
+    - Canonical public claim-registry currentness and bounded 52/53 interpretation remain preserved.
     - Historical Packets 00-08 remain immutable event-time evidence lineage.
     - Range Reactor remains a DOWNSTREAM_GOVERNED_COMPONENT and retains its accepted qualification/performance evidence relationship.
-    - Source acceptance creates no Runtime, deployment, release, authority, participation, or standing effect.
+    - Source closeout creates no Runtime, deployment, release, authority, participation, standing, or successor effect.
   evidence_not_created:
-    - Exact packet-byte repository custody while the clean host file remains inaccessible
+    - Exact clean Full Flex packet-byte repository custody
     - New Runtime authority or present-state evidence
     - New Docker or Range Reactor physical qualification execution
     - New matched post-repair Runtime performance observation
@@ -175,10 +174,10 @@ evidence:
     - Numerical standing transition
     - Git history rewrite or historical packet-byte rewrite
 stop_condition:
-  - Exact ACCEPT head passes Validate public repository, CodeQL, and EHCO Assistant Operation Gate with the sixteen substantive closeout files unchanged from 7829cc9c5bb8db9f51d3d0b1fd47816b33eeb65c.
-  - PR #39 is marked ready and merges through protected main using the exact qualified ACCEPT head.
-  - Accepted main is read back and the public-repository source closeout materialization is verified.
-  - Public operation-control state is reconciled to COMPLETE through a control-only closeout so canonical main carries no stale merge-pending work.
-  - Accepted source closure is recorded in Drive.
-  - Exact clean packet-byte insertion remains a bounded continuation when lawful exact-byte custody becomes available.
-  - Stop with accepted standing 52/53 preserved and Runtime, deployment, GitHub Release, authority, participation, and successor effects remaining NONE.
+  - Exact closeout head passes repository validation, CodeQL, and EHCO Assistant Operation Gate.
+  - Closeout change remains limited to ehco.operation.yaml.
+  - Closeout PR merges through protected main.
+  - Accepted main is read back with state COMPLETE, remaining_bounded_work empty, accepted standing 52/53, and automatic successor prohibited.
+  - Drive records the final accepted source closeout commit.
+  - Exact clean Full Flex packet-byte publication remains a separately bounded continuation when lawful exact-byte custody becomes available.
+  - Stop with Runtime, deployment, release, authority, standing, participation, and successor effects remaining NONE.
