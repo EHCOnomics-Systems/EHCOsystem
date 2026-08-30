@@ -12,7 +12,7 @@ supersedes: version 1.4
 
 **EHCO AI-OS is the realized Tier One Runtime and governing system foundation of EHCOsystem. Its accepted standing baseline is 52/53 and accepted maturity is `REALIZED / COMPLETE_IN_ACCEPTED_SCOPE`.**
 
-Accepted **52/53** is the numerical Runtime standing corridor under the EHCO standing framework. It is distinct from benchmark score, percentage completion, component maturity, deployment state and public-release state; protected denominator mechanics are not inferred from public representation.
+Accepted **52/53** is the numerical Runtime standing corridor under the EHCO standing framework. Benchmark scoring, percentage-completion measures, component maturity, deployment state and public-release state are separate dimensions; protected denominator mechanics remain within their owning governed sources.
 
 It binds authority, standing, identity, participation, recognized state, transition, consequence, continuity, proof, persistence, withholding, release, closure, correction, recovery, and Runtime truth into an instantiated operational structure.
 
@@ -20,9 +20,9 @@ It binds authority, standing, identity, participation, recognized state, transit
 
 For present public Runtime posture, begin with [EHCO AI-OS Runtime — Current Public Evidence](../runtime/README.md) and the [EHCO Full Flex Public Packet v1 evidence index](../evidence/runtime/full-flex/v1/README.md).
 
-The Full Flex packet is the current public evidence projection and synthesis, bound to selected SHA-256 `7F80C27D085AE871A00AED412C6F20EA9A76CB0677C93AEBA381CD1FD70EC8E5`. It does not become Runtime authority or physical execution proof. `INSTANTIATED_EHCO_RUNTIME` remains the Runtime authority/current-state owner and owning Docker/host evidence owns physical observations.
+The Full Flex packet is the current public evidence projection and synthesis, bound to selected SHA-256 `7F80C27D085AE871A00AED412C6F20EA9A76CB0677C93AEBA381CD1FD70EC8E5`. `INSTANTIATED_EHCO_RUNTIME` remains the Runtime authority/current-state owner and owning Docker/host evidence owns physical observations; Full Flex carries the public synthesis role across those evidence relationships.
 
-Historical Public Evidence Companion Packets 00–08 remain immutable event-time evidence and lineage. Their packet-local states do not recalculate or override present Runtime posture.
+Historical Public Evidence Companion Packets 00–08 remain immutable event-time evidence and lineage. Present Runtime posture routes through the current Full Flex evidence surface and its owning evidence relationships.
 
 ## Computational ownership
 
