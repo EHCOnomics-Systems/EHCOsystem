@@ -22,9 +22,9 @@ The [Canonical Public Claim Registry](../assurance/PUBLIC-CLAIM-REGISTRY.json) i
 
 The canonical historical Version 1 package is [`evidence/public-evidence-companion/v1/`](public-evidence-companion/v1/) and contains Packets 00–08. The dossier PDF is bound inside Packet 00 and is also published through [`dossiers/`](../dossiers/).
 
-Packets 00–08 retain their hash-preserved bytes and packet-time terminology. They remain valid immutable historical/event-time evidence for the bounded propositions they recorded. They preserve lineage; they are not the current Runtime maturity or present-state authority.
+Packets 00–08 retain their hash-preserved bytes and packet-time terminology. They remain valid immutable historical/event-time evidence for the bounded propositions they recorded. Their governing role is lineage, auditability, source identity, behavioral examples, and historical proof custody; current Runtime maturity and present-state interpretation route through the Full Flex current evidence surface and owning evidence.
 
-Packet 06 in particular is a historical bounded `local_live` observation window. Its packet-time release, quarantine, discrepancy, Range, proof, freeze, readiness and related fields retain their recorded event-time scope and do not override the accepted current Runtime baseline or the current Full Flex evidence route.
+Packet 06 in particular is a historical bounded `local_live` observation window. Its packet-time release, quarantine, discrepancy, Range, proof, freeze, readiness and related fields retain their recorded event-time scope. Current accepted Runtime baseline interpretation remains governed by the Full Flex current evidence route and its owning evidence relationships.
 
 ## Evidence classes
 
