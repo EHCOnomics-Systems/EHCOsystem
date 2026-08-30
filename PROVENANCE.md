@@ -61,7 +61,7 @@ The public repository is a source-only `PUBLIC_EVIDENCE` projection. Its reposit
 
 The registered public release identity is version `1.0.0`, tag `v1.0.0-public`, with release title `EHCOsystem Public Architecture and Evidence Baseline v1.0.0`.
 
-Registered release identity, canonical-main source publication, exact evidence-byte materialization, and live GitHub Release publication are separate publication states. Provider Git tag and GitHub Releases surfaces establish live release materialization when those provider objects exist.
+**Registered release identity and live provider publication are separate publication states.** Canonical-main source publication and exact evidence-byte materialization are additional distinct publication states. Provider Git tag and GitHub Releases surfaces establish live release materialization when those provider objects exist.
 
 ## Protected implementation custody
 
