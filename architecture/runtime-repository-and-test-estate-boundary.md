@@ -20,7 +20,7 @@ This record maps ownership and evidence domains across the Runtime, public repos
 
 ## Public repository domain
 
-The public `EHCOsystem` repository owns the approved public architecture, evidence projection, provenance, verification, diligence, navigation and publication record set. Direct Git/GitHub owns exact public source and publication state; repository source does not become Runtime authority merely by representing Runtime evidence.
+The public `EHCOsystem` repository owns the approved public architecture, evidence projection, provenance, verification, diligence, navigation and publication record set. Direct Git/GitHub owns exact public source and publication state; Runtime authority remains with its instantiated Runtime owner.
 
 ## Current public Runtime evidence projection
 
@@ -28,13 +28,13 @@ The canonical first public evidence route for the current established EHCO AI-OS
 
 The Full Flex packet is the current public capability-and-evidence synthesis. Its selected packet identity is SHA-256 `7F80C27D085AE871A00AED412C6F20EA9A76CB0677C93AEBA381CD1FD70EC8E5`. It binds current public interpretation across accepted Runtime posture, deployment-ready Docker portability, owning-host observations, engineering-scale characterization, Range Reactor qualification/performance relationships, claim bindings, source bindings and integrity metadata.
 
-The Full Flex packet does **not** own actual Runtime authority/current state or physical host execution facts. `INSTANTIATED_EHCO_RUNTIME` remains the Tier One authority/current-state owner; owning Windows/Docker host evidence owns physical execution observations.
+`INSTANTIATED_EHCO_RUNTIME` remains the Tier One authority/current-state owner; owning Windows/Docker host evidence owns physical execution observations; Full Flex carries the current public synthesis role.
 
-Exact packet-byte identity and public source routing are also separate dimensions. The repository may publish the established packet identity and precedence while exact packet-byte insertion remains pending lawful byte custody; reconstructed or alternate bytes do not become the selected packet.
+Exact packet-byte identity and public source routing are separate dimensions. The repository can publish the established packet identity and precedence while exact packet-byte insertion awaits lawful byte custody; byte identity determines whether an artifact is the selected packet.
 
 ## Standing interpretation boundary
 
-Accepted standing **52/53** is the accepted numerical Runtime standing corridor under the EHCO standing framework. It is distinct from benchmark score, percentage completion, component maturity, deployment state and public-release state. Public material does not infer or expose protected denominator mechanics beyond owning governed sources.
+Accepted standing **52/53** is the accepted numerical Runtime standing corridor under the EHCO standing framework. Benchmark scoring, percentage-completion measures, component maturity, deployment state and public-release state are separate dimensions. Protected denominator mechanics remain within their owning governed sources.
 
 ## Controlled source and test estates
 
@@ -46,7 +46,7 @@ Persistent downstream governed component identity records the software/applicati
 
 ## Historical Public Evidence Companion
 
-Packets 00–08 preserve hash-bound public evidence with packet-specific event-time scope. They remain valid immutable historical evidence and lineage; they do not recalculate or override present Runtime maturity, standing or deployment-ready portability.
+Packets 00–08 preserve hash-bound public evidence with packet-specific event-time scope. They remain valid immutable historical evidence and lineage; present Runtime maturity, standing and deployment-ready portability route through the Full Flex current evidence surface and owning evidence relationships.
 
 ### Packet 02 — Canonical Runtime Source Binding
 
