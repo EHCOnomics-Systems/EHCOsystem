@@ -5,41 +5,47 @@ protocol_reference:
   profile_version: 1.0.0
   protocol_version: 1.0.0
 repository: EHCOnomics-Systems/EHCOsystem
-governed_object: PUBLIC_EHCOSYSTEM_NO_DEMOTION_INTEGRITY_CORRECTION_V1
+governed_object: EHCO_AI_OS_RUNTIME_FULL_FLEX_PUBLICATION_V1
 source_owner:
   repository: EHCOnomics-Systems/EHCOsystem
-  revision: 0d0f324e22c5e569752418b44a04974714422427
+  revision: 45ec29de7e0c9fd5a0968c5c7353488892d91989
   repository_manifest_path: ehco.repository.yaml
-  controlling_source_reference: Drive EHCO-PUB-SOW-008 v1.4
+  controlling_source_reference: Drive document 1FydQKUNfpQ7oZrgpLDlqRHxFM_f1mFv5uq_akploL38 section 18
 selection:
   selected_by: Edward Henry
   selection_class: EXPLICIT_OWNER_DIRECTION
   durable_reference: >-
-    Edward Henry explicitly directed removal of public wording that contradicts or demotes established owning evidence and removal of equivalent maturity-weakening language from current public-state surfaces. The selected correction is accepted on main through PR #36 at merge commit 0d0f324e22c5e569752418b44a04974714422427. Current public source preserves EHCO AI-OS as the realized Tier One Runtime at accepted standing 52/53 and REALIZED / COMPLETE_IN_ACCEPTED_SCOPE, preserves EHCO_DOCKER_PORTABILITY as PRIMARY_ACCESSIBLE_RUNTIME_PROJECTION and the fully containerized deployment-ready portable delivery form, preserves the historical Runtime performance characterization and accepted repair, and preserves the 2026-08-13 Range Reactor executable realization plus actually executed 2026-08-14 governed host qualification as the controlling physical qualification lineage. Hash-preserved packet bytes and actual event-time observations remain unchanged. This final source-control transition closes operation bookkeeping only and creates no Runtime, deployment, release, authority, standing, or successor effect. OPERATION_STABLE_ENVELOPE_CHANGE=true
-  source_base_revision: 0d0f324e22c5e569752418b44a04974714422427
-  expected_reviewed_head_revision: 0d0f324e22c5e569752418b44a04974714422427
+    Edward Henry selected publication of the established clean EHCO Full Flex public packet into the public EHCOsystem repository using a Runtime front-door structure. The canonical evidence target is evidence/runtime/full-flex/v1/EHCO_FULL_FLEX_PUBLIC_PACKET_V1.json and the canonical Runtime landing surface is runtime/README.md. The exact owning-host packet identity is SHA-256 7F80C27D085AE871A00AED412C6F20EA9A76CB0677C93AEBA381CD1FD70EC8E5 and the clean ZIP identity is SHA-256 DBF984B55731B5EA53C4D7F2A24F8CF4C0C4207E355EB8E6B1170113509F6B94. Publication must preserve the exact host-established packet bytes; alternate or reconstructed packet bytes are outside the selected object.
+  source_base_revision: 45ec29de7e0c9fd5a0968c5c7353488892d91989
+  expected_reviewed_head_revision: NOT_ESTABLISHED_UNTIL_PACKET_BYTES_ARE_PRESENT
 control_anchor: AGENTS.md
 status_owner_path: ehco.operation.yaml
 accepted_standing: 52/53
 active_operation:
-  operation_id: EHCO-PUBLIC-NO-DEMOTION-INTEGRITY-CORRECTION-001
-  state: COMPLETE
-  authorization_mode: ACCEPT
+  operation_id: EHCO-RUNTIME-FULL-FLEX-PUBLICATION-001
+  state: ACTIVE
+  authorization_mode: PUBLISH
   bounded_outcome: >-
-    Owner-accepted and integrated the bounded public-source no-demotion correction. Current accepted public source affirmatively preserves established Runtime, Docker, standing, performance, Range Reactor, and evidence-owner relationships without creating any technical-effect transition.
-  remaining_bounded_work: []
+    Publish the exact clean host-established Full Flex packet as the front-door current evidence object for the broader EHCO AI-OS Runtime environment, preserving EHCO AI-OS as Tier One Runtime, EHCO_DOCKER_PORTABILITY as PRIMARY_ACCESSIBLE_RUNTIME_PROJECTION, accepted standing 52/53, evidence ownership, and the immutable historical Public Evidence Companion.
+  remaining_bounded_work:
+    - Obtain a lawful connector or uploaded-file reference to the exact clean host-established packet bytes and verify SHA-256 7F80C27D085AE871A00AED412C6F20EA9A76CB0677C93AEBA381CD1FD70EC8E5 before repository insertion.
+    - Obtain the exact clean PACKET_RECEIPT.json bytes associated with the selected packet or preserve receipt scope only to fields established by owning host evidence.
+    - Publish the packet package under evidence/runtime/full-flex/v1/ with README.md, exact JSON, detached SHA-256 and receipt.
+    - Create runtime/README.md as the EHCO AI-OS Runtime environment front door.
+    - Wire README.md, evidence/README.md, TECHNICAL-DILIGENCE.md, assurance claim/evidence routes, releases/PUBLIC-RELEASE-REGISTER.md and validation to the new current Runtime evidence package.
+    - Run repository validation and inspect exact branch postconditions.
+    - Open a draft pull request for review. Merge is outside this selected effect ceiling.
   interaction_seams:
-    - Google Drive EHCO-PUB-SOW-008 v1.4 owns the durable no-demotion public meaning.
-    - Accepted EHCOsystem main 0d0f324e22c5e569752418b44a04974714422427 contains the merged substantive correction from PR #36.
-    - Direct EHCOsystem Git owns the exact accepted source and pull-request state.
-    - Owning Runtime and Docker evidence retains realized Runtime, local Docker operation, deployment-ready portability, launch/relaunch, persistence, health, Dashboard port 8080, and performance/repair evidence.
-    - Owning Range Reactor evidence retains the 2026-08-13 executable realization and actually executed 2026-08-14 governed host qualification and diagnostic performance record.
-    - INSTANTIATED_EHCO_RUNTIME retains Tier One Runtime authority and current Runtime state.
+    - Drive document 1FydQKUNfpQ7oZrgpLDlqRHxFM_f1mFv5uq_akploL38 owns the durable selected publication meaning and owning-host packet identities.
+    - Direct EHCOsystem Git owns exact public source state and branch/PR state.
+    - Owning Windows/Docker host evidence owns the clean packet generation result and exact clean artifact identity.
+    - EHCO_DOCKER_PORTABILITY remains PRIMARY_ACCESSIBLE_RUNTIME_PROJECTION of the EHCO AI-OS Runtime environment.
+    - INSTANTIATED_EHCO_RUNTIME retains Tier One Runtime authority and present Runtime state.
   non_overlap:
-    - Hash-preserved Packet 00-08 bytes, manifests, receipts, dossier bytes, Dashboard image bytes, Language Model snapshot bytes, and Range Reactor capability-snapshot-v1 bytes remain unchanged.
-    - Actual historical packet-time observations and discrepancies remain preserved within their evidence class and time scope.
-    - No new qualification, substitute benchmark, physical test execution, Docker execution, Range Reactor execution, deployment, release, Runtime effect, standing transition, repository-setting change, or successor activation is part of this source closeout.
-    - Stable ehco.repository.yaml identity and boundary fields remain unchanged.
+    - evidence/public-evidence-companion/v1/** remains immutable hash-preserved historical evidence.
+    - ehco.repository.yaml identity and boundary fields remain unchanged.
+    - Range Reactor remains a DOWNSTREAM_GOVERNED_COMPONENT; this packet publication does not establish Runtime participation.
+    - This publication does not create deployment, release materialization, Runtime admission, binding, invocation, physical qualification, standing transition or successor activation.
   automatic_successor: PROHIBITED
   successor_operation: NOT_SELECTED
 execution_continuity:
@@ -55,8 +61,20 @@ execution_continuity:
 scope:
   permitted_paths:
     - ehco.operation.yaml
+    - runtime/README.md
+    - README.md
+    - TECHNICAL-DILIGENCE.md
+    - evidence/README.md
+    - evidence/runtime/full-flex/v1/**
+    - assurance/PUBLIC-CLAIM-REGISTRY.json
+    - assurance/CLAIM-EVIDENCE-MATRIX.md
+    - assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md
+    - releases/PUBLIC-RELEASE-REGISTER.md
+    - verification/**
+    - .github/workflows/validate-public-evidence.yml
   controlled_paths:
     - ehco.operation.yaml
+    - evidence/runtime/full-flex/v1/**
   prohibited_paths:
     - AGENTS.md
     - ehco.repository.yaml
@@ -64,18 +82,11 @@ scope:
     - SECURITY.md
     - NOTICE.md
     - PROVENANCE.md
-    - README.md
-    - ECOSYSTEM-DILIGENCE.md
-    - TECHNICAL-DILIGENCE.md
-    - architecture/**
-    - assurance/**
-    - releases/**
     - dossiers/**
-    - evidence/**
-    - verification/**
+    - evidence/public-evidence-companion/v1/**
+    - architecture/assets/**
     - language-model/**
     - range-reactor/**
-    - .github/**
 change_control:
   control_change_declared: true
   delete_or_move_authorized: false
@@ -83,30 +94,26 @@ change_control:
     - read_source
     - compare_source
     - audit
+    - create_file
     - update_file
+    - generate_artifact
     - run_checks
   local_actions_prohibited:
-    - propose
-    - create_file
     - move_file
     - delete_file
-    - generate_artifact
   remote_actions_authorized:
-    - merge_pull_request
-    - record_owner_acceptance
-    - close_operation
-  remote_actions_prohibited:
     - create_branch
     - commit
     - push
     - open_draft_pull_request
     - update_draft_pull_request
+    - record_publication_source_state
+  remote_actions_prohibited:
+    - merge_pull_request
     - mark_pull_request_ready_for_review
-    - activate_selected_successor
+    - enable_auto_merge
     - modify_repository_settings
-    - modify_drive_controls
     - publish_image
-    - mutate_environment
     - deploy
     - trigger_workflow
     - release
@@ -119,42 +126,34 @@ effects:
   runtime_effect: NONE
   deployment_effect: NONE
   release_effect: NONE
-  external_effect: NONE
+  external_effect: PUBLIC_SOURCE_BRANCH_AND_DRAFT_PR_ONLY
 bridge:
   applicability: NOT_APPLICABLE_NON_PARTICIPANT
-  non_applicability_reason: Public repository source closeout is separate from Runtime participation.
+  non_applicability_reason: Public evidence publication is separate from Runtime participation.
   direct_invocation: PROHIBITED
   runtime_admission_status: NOT_ESTABLISHED
   participation_binding_status: NOT_ESTABLISHED
   canonical_runtime_receipt_status: NOT_ESTABLISHED
 evidence:
-  evidence_class: OWNER_ACCEPTANCE_RECORD
+  evidence_class: PUBLIC_SOURCE_PUBLICATION_CONTROL
   required_checks:
-    - Accepted substantive correction is merged on main at 0d0f324e22c5e569752418b44a04974714422427 through PR #36.
-    - This closeout candidate changes only ehco.operation.yaml from accepted main.
-    - Operation state is COMPLETE and remaining_bounded_work is empty.
-    - Accepted standing remains 52/53.
-    - Automatic successor remains prohibited and no successor is selected.
-    - Required protected-branch checks succeed on the exact closeout head before merge.
+    - Exact packet bytes hash to 7F80C27D085AE871A00AED412C6F20EA9A76CB0677C93AEBA381CD1FD70EC8E5 before repository insertion.
+    - Published packet preserves accepted standing 52/53 and PRIMARY_ACCESSIBLE_RUNTIME_PROJECTION classification.
+    - Public Evidence Companion v1 bytes remain unchanged.
+    - New Runtime front door describes Full Flex as current evidence projection rather than Runtime authority.
+    - Repository validation succeeds on the exact reviewed head before draft PR review completion.
   proves:
-    - Owner-selected public-source correction is complete in accepted source.
-    - EHCO AI-OS realized Runtime maturity and accepted standing 52/53 remain preserved.
-    - EHCO_DOCKER_PORTABILITY deployment-ready portable-delivery representation remains preserved.
-    - Historical Runtime performance characterization and accepted repair interpretation remain preserved.
-    - Range Reactor August 13 realization and August 14 executed host qualification remain preserved at their accepted evidence strength.
-    - Source closeout creates no Runtime, deployment, release, authority, standing, or successor effect.
+    - Owner-selected public-source publication scope and target structure.
+    - Exact byte identity required for the selected clean host artifact.
+    - Public-source publication remains separate from Runtime authority and technical effects.
   evidence_not_created:
-    - New Runtime qualification or substitute benchmark
-    - New Docker or network-isolation execution
-    - New Range Reactor physical qualification execution
-    - New performance observation
-    - Runtime admission binding invocation participation authority state proof or canonical Runtime receipt
-    - Deployment production activation or external release
+    - New Runtime authority or present-state evidence
+    - New Docker execution or qualification
+    - New Range Reactor qualification
+    - Runtime participation or admission
+    - Deployment or external release materialization
     - Numerical standing transition
-    - Git history rewrite or packet-byte rewrite
 stop_condition:
-  - Exact closeout head passes repository validation, CodeQL, and EHCO Assistant Operation Gate.
-  - Closeout change remains limited to ehco.operation.yaml.
-  - Closeout PR merges through protected main.
-  - Accepted main is read back with state COMPLETE, remaining_bounded_work empty, accepted standing 52/53, and automatic successor prohibited.
-  - Stop with Runtime, deployment, release, authority, standing, and successor effects remaining NONE.
+  - Stop before packet insertion if the exact clean host-established packet bytes are not available through a lawful connector or uploaded-file reference.
+  - After byte custody is established, continue automatically through package publication, routing updates, validation and draft PR creation.
+  - Do not merge the draft PR under this operation.
