@@ -1,51 +1,56 @@
 # Public Repository Validation
 
-This directory contains repository-side validation tooling for the canonical public dossier, Public Evidence Companion, Instantiated AI architecture, EHCOsystem technology-estate architecture, diagrams, navigation, maturity representation, evidence matrices, canonical public claim registry, public Language Model snapshot, public Range Reactor capability snapshot, disclosure controls and publication identity.
+This directory contains repository-side validation tooling for the canonical public dossier, historical Public Evidence Companion, current Full Flex Runtime evidence route, Instantiated AI architecture, EHCOsystem technology-estate architecture, navigation, maturity representation, evidence matrices, canonical public claim registry, component evidence snapshots, disclosure controls and publication identity.
 
 ## Run locally
 
 ```bash
 python3 verification/validate_public_evidence.py
 python3 verification/validate_public_claim_registry.py
+python3 verification/validate_current_runtime_evidence.py
 python3 verification/validate_public_lm_test_snapshot.py
 python3 verification/validate_public_range_reactor_snapshot.py
 python3 verification/validate_release_identity.py
 ```
 
+## Current Runtime evidence validation
+
+`validate_current_runtime_evidence.py` verifies the Full Flex-first public Runtime evidence relationship, including:
+
+- `runtime/README.md` as the current public Runtime front door;
+- schema `EHCO_FULL_FLEX_PUBLIC_PACKET_V1` and packet SHA-256 `7F80C27D085AE871A00AED412C6F20EA9A76CB0677C93AEBA381CD1FD70EC8E5`;
+- accepted maturity `REALIZED / COMPLETE_IN_ACCEPTED_SCOPE` and standing **52/53**;
+- `EHCO_DOCKER_PORTABILITY` as `PRIMARY_ACCESSIBLE_RUNTIME_PROJECTION`;
+- Full Flex before historical Packet 06 in the public review order;
+- detached packet-hash identity;
+- historical Public Evidence Companion classification; and
+- exact packet-byte SHA-256/schema verification when the byte-identical JSON is present.
+
+When the exact packet JSON is not present, the validator requires explicit exact-byte-custody language rather than allowing reconstructed or alternate bytes to stand in for the owning-host-established artifact. A green result in that state establishes repository/source integrity and evidence-identity routing, not physical Runtime re-execution.
+
 ## Repository and evidence integrity
 
-`validate_public_evidence.py` verifies:
+`validate_public_evidence.py` verifies canonical dossier identity, Packets 00–08 structure/manifests/hashes/suite closure, JSON syntax, internal links, repository residue, high-confidence credential indicators, architecture/navigation relationships, Runtime/component/Tier Three terminology, Docker portability classification, Dashboard representation, current public maturity language, component snapshot relationships and claim/evidence matrix structure.
 
-- canonical dossier identity and SHA-256;
-- Packets 00-08 structure, manifests, detached hashes and suite closure;
-- JSON syntax and internal link closure;
-- repository residue and high-confidence credential indicators;
-- required architecture/navigation relationships;
-- current Tier One, downstream-component and Tier Three terminology;
-- `EHCO_DOCKER_PORTABILITY` projection classification;
-- EHCO Dashboard current accepted working projection baseline;
-- affirmative capability/maturity representation across active reader-facing public text;
-- Language Model capability-based advanced near-final maturation representation;
-- absence of internal Language Model stage/unit/program mechanics from active reader-facing maturity prose;
-- current owner-selected public component scope; and
-- claim/evidence matrix structure.
-
-Hash-preserved Packets 00-08 and exact Language Model fixture artifacts retain their accepted bytes.
+Hash-preserved Packets 00–08 and exact component fixture artifacts retain their accepted bytes.
 
 ## Canonical public claim-registry validation
 
-`validate_public_claim_registry.py` verifies the final-closeout representation layer across the machine-readable claim registry and current first-contact public surfaces. It checks:
+`validate_public_claim_registry.py` verifies the current machine-readable claim layer and first-contact public surfaces. It checks:
 
+- registry publication/source-review currentness for the August 30 Full Flex closeout review;
 - realized EHCO AI-OS standing **52/53** and `REALIZED / COMPLETE_IN_ACCEPTED_SCOPE` maturity;
-- `EHCO_DOCKER_PORTABILITY` as `PRIMARY_ACCESSIBLE_RUNTIME_PROJECTION` and the fully containerized, deployment-ready portable delivery form of the hardened Runtime lineage;
-- self-hosted local Docker Runtime representation;
-- Dashboard local operating origin and host port **8080** framing;
-- Tier One operating lineage with the external-model seam disabled;
-- the 6.847-second large-ledger Runtime characterization and accepted repair sequence;
+- bounded interpretation of 52/53 as a numerical Runtime standing corridor, distinct from benchmark score, percentage completion, component-maturity percentage, deployment-state percentage and public-release percentage;
+- Full Flex-first current evidence precedence;
+- `EHCO_DOCKER_PORTABILITY` deployment-ready portable-delivery representation;
+- self-hosted local Docker Runtime and Dashboard port-8080 representation;
+- Tier One external-model-disabled operating lineage;
+- the bounded 6.847-second large-ledger historical Runtime characterization and accepted repair sequence;
 - Range Reactor mature capability, physical qualification posture and diagnostic performance baseline;
-- separate-workload treatment for Runtime and Range Reactor performance measurements;
-- public/private locator and cloud-lineage disclosure boundaries; and
-- discoverability of the canonical claim registry from the public front door.
+- public/private locator disclosure boundaries; and
+- required claim/evidence fields and current navigation relationships.
+
+The validator does not infer protected standing denominator mechanics and does not convert repository validation into Runtime-originated proof.
 
 ## Language Model snapshot validation
 
@@ -53,23 +58,11 @@ Hash-preserved Packets 00-08 and exact Language Model fixture artifacts retain t
 
 ## Range Reactor capability validation
 
-`validate_public_range_reactor_snapshot.py` verifies the dedicated Range Reactor component/evidence route, eight synthetic capability vectors, manifest/source-review identity, fixture SHA-256, public navigation/claim presence, disclosure boundaries, evidence ceilings, and reader-facing Range Reactor maturity prose aligned to established system capability.
-
-It also enforces status-language integrity in both directions. Range Reactor remains represented as a **mature deterministic proof-carrying implication, reachability, range and reasoning system** where accepted source and qualification evidence establish that capability. The mature system status remains distinct from source-only and qualification-only evidence labels. Deployment, production activation and Runtime participation remain separately owned evidence dimensions with promotion governed by the same validation boundary.
-
-The Range Reactor snapshot itself is source-reviewed synthetic capability evidence. It provides a bounded public inspection surface while controlled implementation source and technical-effect evidence remain with their owning evidence domains.
+`validate_public_range_reactor_snapshot.py` verifies the dedicated Range Reactor component/evidence route, eight synthetic capability vectors, manifest/source-review identity, fixture SHA-256, public navigation/claim presence, disclosure boundaries, evidence ceilings, and mature-capability representation. Deployment, production activation and Runtime participation remain separately owned dimensions.
 
 ## Release identity and provenance validation
 
-`validate_release_identity.py` verifies the canonical registered public release identity together with the repository-level stable-baseline provenance semantics:
-
-- version `1.0.0`, tag `v1.0.0-public`, and release title `EHCOsystem Public Architecture and Evidence Baseline v1.0.0` remain aligned across the release documents;
-- `ehco.repository.yaml` binds `provenance.accepted_commit` to `eff9301e7c5ddfc0759ee0d7e3c026ad28c5670c`, the commit that accepted the current stable manifest/boundary bytes, independently from current `main`;
-- repository-level `provenance.artifact_digest` is `NOT_APPLICABLE_SOURCE_ONLY_PUBLIC_PROJECTION_NO_SEPARATE_BUILD_ARTIFACT`, explicitly classifying the repository publication object as source-only;
-- stable-manifest provenance and registered release identity are documented consistently in `PROVENANCE.md` and `releases/PUBLIC-RELEASE-REGISTER.md`; and
-- active publication and provenance surfaces carry the resolved stable-baseline semantics.
-
-The validator checks source semantics. GitHub tag and GitHub Release existence are provider-owned publication facts established through provider-surface readback.
+`validate_release_identity.py` verifies the registered public release identity and stable repository-level provenance semantics. Registered release identity remains distinct from live GitHub Release materialization; provider surfaces establish the latter when such objects exist.
 
 ## Acceptance governance
 
@@ -77,4 +70,4 @@ Repository validation is one acceptance input. Pull-request acceptance uses the 
 
 ## Validation evidence
 
-A successful repository validation establishes the checked repository-integrity, disclosure, architecture, currentness, publication-identity and public-representation conditions for that exact revision. Claim-specific technical propositions retain their applicable evidence owner and class.
+A successful repository validation establishes checked repository integrity, disclosure, architecture, currentness, publication identity and public-representation conditions for that exact revision. Claim-specific technical propositions retain their applicable evidence owner and class. Physical execution remains owned by Docker/host or Runtime evidence as applicable.
