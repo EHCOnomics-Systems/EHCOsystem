@@ -10,17 +10,38 @@ source_owner:
   repository: EHCOnomics-Systems/EHCOsystem
   revision: 45ec29de7e0c9fd5a0968c5c7353488892d91989
   repository_manifest_path: ehco.repository.yaml
-  controlling_source_reference: Drive document 1FydQKUNfpQ7oZrgpLDlqRHxFM_f1mFv5uq_akploL38 section 18
+  controlling_source_reference: Drive document 1FydQKUNfpQ7oZrgpLDlqRHxFM_f1mFv5uq_akploL38 sections 18-19
 selection:
   selected_by: Edward Henry
   selection_class: EXPLICIT_OWNER_DIRECTION
   durable_reference: >-
-    Edward Henry selected publication of the established clean EHCO Full Flex public packet into the public EHCOsystem repository using a Runtime front-door structure. The canonical evidence target is evidence/runtime/full-flex/v1/EHCO_FULL_FLEX_PUBLIC_PACKET_V1.json and the canonical Runtime landing surface is runtime/README.md. The exact owning-host packet identity is SHA-256 7F80C27D085AE871A00AED412C6F20EA9A76CB0677C93AEBA381CD1FD70EC8E5 and the clean ZIP identity is SHA-256 DBF984B55731B5EA53C4D7F2A24F8CF4C0C4207E355EB8E6B1170113509F6B94. Publication must preserve the exact host-established packet bytes; alternate or reconstructed packet bytes are outside the selected object.
+    Edward Henry selected publication of the established clean EHCO Full Flex public packet into the public EHCOsystem repository using a Runtime front-door structure and selected it as the canonical first public evidence route for the current established EHCO AI-OS Runtime environment. The canonical evidence target is evidence/runtime/full-flex/v1/EHCO_FULL_FLEX_PUBLIC_PACKET_V1.json and the canonical Runtime landing surface is runtime/README.md. The exact owning-host packet identity is SHA-256 7F80C27D085AE871A00AED412C6F20EA9A76CB0677C93AEBA381CD1FD70EC8E5 and the clean ZIP identity is SHA-256 DBF984B55731B5EA53C4D7F2A24F8CF4C0C4207E355EB8E6B1170113509F6B94. Publication must preserve the exact host-established packet bytes; alternate or reconstructed packet bytes are outside the selected object. Historical Packets 00-08 remain immutable event-time evidence and lineage, but they do not own current Runtime maturity or present-state interpretation.
   source_base_revision: 45ec29de7e0c9fd5a0968c5c7353488892d91989
   expected_reviewed_head_revision: NOT_ESTABLISHED_UNTIL_PACKET_BYTES_ARE_PRESENT
 control_anchor: AGENTS.md
 status_owner_path: ehco.operation.yaml
 accepted_standing: 52/53
+public_evidence_precedence:
+  current_public_runtime_evidence_front_door: EHCO_FULL_FLEX_PUBLIC_PACKET_V1
+  current_packet_path: evidence/runtime/full-flex/v1/EHCO_FULL_FLEX_PUBLIC_PACKET_V1.json
+  current_packet_sha256: 7F80C27D085AE871A00AED412C6F20EA9A76CB0677C93AEBA381CD1FD70EC8E5
+  current_runtime_posture:
+    runtime_identity: EHCO AI-OS
+    runtime_class: TIER_ONE_RUNTIME
+    maturity: REALIZED / COMPLETE_IN_ACCEPTED_SCOPE
+    accepted_standing: 52/53
+    docker_portability: PRIMARY_ACCESSIBLE_RUNTIME_PROJECTION
+  public_navigation_order:
+    - Current accepted Full Flex packet for present public Runtime posture and deployment-ready environment synthesis.
+    - Canonical Public Claim Registry for machine-readable claim interpretation and disclosure scope.
+    - Owning Runtime and Docker evidence for technical effects and present Runtime authority/state observations.
+    - Historical Public Evidence Companion Packets 00-08 for event-time lineage, historical proof custody, source identity and bounded behavioral examples.
+  historical_packet_rule: >-
+    Packets 00-08, including Packet 06, remain valid immutable historical/event-time evidence for what they recorded. Packet-local release, quarantine, discrepancy, Range, proof, freeze, readiness and other transaction/event-time fields remain bounded to their evidence class and time and do not recalculate, demote or override the accepted current Runtime baseline.
+  authority_rule: >-
+    Full Flex is the canonical current public evidence projection and synthesis. INSTANTIATED_EHCO_RUNTIME remains the owner of actual Tier One Runtime authority and present Runtime state; owning Docker/host evidence remains the owner of physical execution observations.
+  future_packet_rule: >-
+    A newer scope-matched Full Flex packet established from owning evidence and explicitly selected for publication may advance the current public packet pointer. Prior Full Flex packets remain retained as historical evidence lineage.
 active_operation:
   operation_id: EHCO-RUNTIME-FULL-FLEX-PUBLICATION-001
   state: ACTIVE
@@ -31,18 +52,19 @@ active_operation:
     - Obtain a lawful connector or uploaded-file reference to the exact clean host-established packet bytes and verify SHA-256 7F80C27D085AE871A00AED412C6F20EA9A76CB0677C93AEBA381CD1FD70EC8E5 before repository insertion.
     - Obtain the exact clean PACKET_RECEIPT.json bytes associated with the selected packet or preserve receipt scope only to fields established by owning host evidence.
     - Publish the packet package under evidence/runtime/full-flex/v1/ with README.md, exact JSON, detached SHA-256 and receipt.
-    - Create runtime/README.md as the EHCO AI-OS Runtime environment front door.
-    - Wire README.md, evidence/README.md, TECHNICAL-DILIGENCE.md, assurance claim/evidence routes, releases/PUBLIC-RELEASE-REGISTER.md and validation to the new current Runtime evidence package.
+    - Create runtime/README.md as the EHCO AI-OS Runtime environment front door and make the Full Flex packet the first current evidence route.
+    - Wire README.md, evidence/README.md, TECHNICAL-DILIGENCE.md, assurance claim/evidence routes, releases/PUBLIC-RELEASE-REGISTER.md and validation to the new current Runtime evidence package while clearly classifying Packets 00-08 as historical/event-time lineage.
     - Run repository validation and inspect exact branch postconditions.
     - Open a draft pull request for review. Merge is outside this selected effect ceiling.
   interaction_seams:
-    - Drive document 1FydQKUNfpQ7oZrgpLDlqRHxFM_f1mFv5uq_akploL38 owns the durable selected publication meaning and owning-host packet identities.
+    - Drive document 1FydQKUNfpQ7oZrgpLDlqRHxFM_f1mFv5uq_akploL38 owns the durable selected publication meaning, evidence precedence and owning-host packet identities.
     - Direct EHCOsystem Git owns exact public source state and branch/PR state.
     - Owning Windows/Docker host evidence owns the clean packet generation result and exact clean artifact identity.
     - EHCO_DOCKER_PORTABILITY remains PRIMARY_ACCESSIBLE_RUNTIME_PROJECTION of the EHCO AI-OS Runtime environment.
     - INSTANTIATED_EHCO_RUNTIME retains Tier One Runtime authority and present Runtime state.
   non_overlap:
-    - evidence/public-evidence-companion/v1/** remains immutable hash-preserved historical evidence.
+    - evidence/public-evidence-companion/v1/** remains immutable hash-preserved historical evidence; no deletion or rewrite is selected.
+    - Historical packet evidence remains valid for its recorded event/time and evidence class but is not the current Runtime-state or maturity authority.
     - ehco.repository.yaml identity and boundary fields remain unchanged.
     - Range Reactor remains a DOWNSTREAM_GOVERNED_COMPONENT; this packet publication does not establish Runtime participation.
     - This publication does not create deployment, release materialization, Runtime admission, binding, invocation, physical qualification, standing transition or successor activation.
@@ -140,10 +162,11 @@ evidence:
     - Exact packet bytes hash to 7F80C27D085AE871A00AED412C6F20EA9A76CB0677C93AEBA381CD1FD70EC8E5 before repository insertion.
     - Published packet preserves accepted standing 52/53 and PRIMARY_ACCESSIBLE_RUNTIME_PROJECTION classification.
     - Public Evidence Companion v1 bytes remain unchanged.
-    - New Runtime front door describes Full Flex as current evidence projection rather than Runtime authority.
+    - New Runtime front door makes Full Flex the canonical first current public Runtime evidence route and clearly classifies historical packet material as event-time lineage.
     - Repository validation succeeds on the exact reviewed head before draft PR review completion.
   proves:
     - Owner-selected public-source publication scope and target structure.
+    - Owner-selected current public Runtime evidence precedence.
     - Exact byte identity required for the selected clean host artifact.
     - Public-source publication remains separate from Runtime authority and technical effects.
   evidence_not_created:
@@ -155,5 +178,5 @@ evidence:
     - Numerical standing transition
 stop_condition:
   - Stop before packet insertion if the exact clean host-established packet bytes are not available through a lawful connector or uploaded-file reference.
-  - After byte custody is established, continue automatically through package publication, routing updates, validation and draft PR creation.
+  - After byte custody is established, continue automatically through package publication, current-evidence front-door routing, validation and draft PR creation.
   - Do not merge the draft PR under this operation.
