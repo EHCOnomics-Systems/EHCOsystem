@@ -109,7 +109,6 @@ change_control:
     - move_file
     - delete_file
     - generate_artifact
-    - invoke_runtime
   remote_actions_authorized:
     - create_branch
     - commit
