@@ -15,37 +15,33 @@ selection:
   selected_by: Edward Henry
   selection_class: EXPLICIT_OWNER_DIRECTION
   durable_reference: >-
-    Edward Henry direction 2026-08-29 “proceed with next steps” selects EHCO-PUB-SOW-008 v1.3 Phase 1 BUILD + PUBLISH for repository-language and claim reconciliation first. The selected candidate shall strengthen the current public representation of EHCO AI-OS realized standing 52/53, Docker Portability deployment readiness and local relaunchability, self-hosted local Docker Runtime operation, Dashboard local port-8080 origin, established external-model-independent Tier One operation/projection evidence, and Range Reactor physical qualification/performance evidence while preserving differentiated ecosystem maturity. The operation creates a canonical public claim registry and deterministic representation validator, publishes one draft pull request, and stops before owner ACCEPT or merge. Fresh local Docker qualification, network-isolation execution, matched performance execution, Range Reactor physical execution, shell/PowerShell proof generation, TGZ creation/upload, release materialization, deployment, Runtime action, standing transition, ruleset change, history rewrite and successor activation remain outside Phase 1. NEW_PATH:assurance/PUBLIC-CLAIM-REGISTRY.json NEW_PATH:verification/validate_public_claim_registry.py OPERATION_STABLE_ENVELOPE_CHANGE=true
+    Edward Henry current direction “Proceed to next steps” explicitly selects ACCEPT and integration of the cleaned EHCOnomics-Systems/EHCOsystem PR #35 after bounded Phase 1 PUBLISH qualification. The reviewed PUBLISH basis is exact head 3432481a2717642fd037aa0209f066ba825ccb69 on accepted source base 9bac1d6af5210a596691530436429937169f527e. That reviewed head is exactly two commits ahead and zero behind the selected base, contains exactly the intended 16 Phase 1 representation paths, has successful public-evidence/claim-registry validation and CodeQL runs, and has clear review threads and no submitted reviews. ACCEPT is limited to this operation-control transition, exact-head requalification, Ready-for-Review, expected-head squash merge, accepted-main readback, and Drive reconciliation. The 15 substantive public representation/evidence/verification paths are frozen at reviewed PUBLISH head 3432481a2717642fd037aa0209f066ba825ccb69 throughout ACCEPT. Git tag/GitHub Release materialization, new qualification execution, deployment, production activation, Runtime action, authority/proof/participation effects, numerical standing transition, repository settings/rulesets, branch-retention policy change, and successor activation remain separate. NEW_PATH:assurance/PUBLIC-CLAIM-REGISTRY.json NEW_PATH:verification/validate_public_claim_registry.py OPERATION_STABLE_ENVELOPE_CHANGE=true
   source_base_revision: 9bac1d6af5210a596691530436429937169f527e
-  expected_reviewed_head_revision: NOT_APPLICABLE_UNTIL_ACCEPT
+  expected_reviewed_head_revision: 3432481a2717642fd037aa0209f066ba825ccb69
 control_anchor: AGENTS.md
 status_owner_path: ehco.operation.yaml
 accepted_standing: 52/53
 active_operation:
-  operation_id: EHCO-PUBLIC-SOW008-REPRESENTATION-PHASE1-PUBLISH-001
-  state: ACTIVE
-  authorization_mode: PUBLISH
+  operation_id: EHCO-PUBLIC-SOW008-REPRESENTATION-PHASE1-ACCEPT-001
+  state: COMPLETE
+  authorization_mode: ACCEPT
   bounded_outcome: >-
-    Publish and exact-head verify one public EHCOsystem candidate that reconciles first-contact Runtime, portability, local-operation, Dashboard, performance and Range Reactor maturity language to current owning evidence, introduces a canonical public claim registry, and adds deterministic regression checks while preserving all effect and disclosure boundaries.
-  remaining_bounded_work:
-    - Create the canonical public claim registry and deterministic representation validator.
-    - Reconcile README, Start Here, AI-OS System Card, Technology Estate, diagrams, diligence, assurance matrices, evidence navigation and verification documentation to the same affirmative current representation.
-    - Preserve existing immutable public evidence packets, dossier bytes, Language Model fixture bytes, Range Reactor snapshot-v1 bytes and stable ehco.repository.yaml identity/boundary fields.
-    - Publish a draft pull request from the exact selected public source base and inspect all applicable exact-head checks.
-    - Stop before owner ACCEPT, ready-for-review transition, merge or any physical qualification phase.
+    Owner-accept and integrate the already qualified cleaned Phase 1 public representation candidate so accepted main states the established EHCO AI-OS realized maturity, deployment-ready Docker portability, physically operated self-hosted local Docker Runtime, Dashboard local origin, established model-independent Tier One lineage, historical Runtime characterization/repair, and Range Reactor realization/physical-host qualification.
+  remaining_bounded_work: []
   interaction_seams:
-    - Google Drive EHCO-PUB-SOW-008 v1.3 owns the durable final-closeout representation meaning and sequencing law for this operation.
-    - EHCOsystem main@9bac1d6af5210a596691530436429937169f527e is the exact selected public source base.
-    - Current accepted AI-OS owning source was refreshed directly on 2026-08-29 and remains read-only for this operation.
-    - Current accepted Range Reactor owning source was refreshed directly on 2026-08-29 and remains read-only for this operation.
-    - Owning Docker/host evidence establishes local Runtime activation indicators, local Dashboard port 8080, healthy bridge/worker services, hardened image identities, local launch/relaunch behavior, endpoint behavior, networking and persistent Runtime/proof/data surfaces.
-    - Historical Runtime characterization and Range Reactor physical qualification evidence remain owning technical evidence for the bounded measurements represented by this candidate.
+    - Google Drive EHCO-PUB-SOW-008 v1.3 owns the durable public-representation meaning and current historical-evidence selection.
+    - Accepted public main 9bac1d6af5210a596691530436429937169f527e is the exact source base for PR #35.
+    - Reviewed cleaned PUBLISH head 3432481a2717642fd037aa0209f066ba825ccb69 is exactly two commits ahead and zero behind the selected base with the intended 16 changed paths.
+    - The 15 substantive representation/evidence/verification paths remain frozen at reviewed PUBLISH head 3432481a2717642fd037aa0209f066ba825ccb69 throughout ACCEPT; post-review ACCEPT source delta is limited to ehco.operation.yaml.
+    - Owning Range Reactor Git history retains the accepted 2026-08-13 executable realization lineage and the executed 2026-08-14 host qualification/reconciliation evidence.
+    - Owning Runtime/Docker evidence retains local Runtime operation, Docker portability, launch/relaunch, persistence, health, Dashboard port 8080, and established external-model-independent Tier One operating lineage.
     - INSTANTIATED_EHCO_RUNTIME retains Tier One Runtime authority and current Runtime state.
   non_overlap:
-    - Fresh local Docker, network-isolation, matched-performance, Range Reactor physical or shell/PowerShell qualification execution remains outside this Phase 1 source operation.
-    - TGZ generation, artifact upload, Git tag, GitHub Release, deployment, production activation, Runtime admission/binding/invocation/participation/authority/state/proof, standing transition, repository-settings, ruleset, history and successor effects remain outside this operation.
+    - No new qualification or test-plan artifacts are introduced into the current Phase 1 PR tree.
+    - Fresh local Docker, network-isolation, matched-performance, Range Reactor physical or shell/PowerShell qualification execution remains outside this source acceptance.
+    - TGZ generation/upload, Git tag/GitHub Release, deployment, production activation, Runtime admission/binding/invocation/participation/authority/state/proof, standing transition, repository-settings, ruleset, branch-retention, and successor effects remain outside this operation.
     - Stable ehco.repository.yaml identity and boundary fields remain unchanged.
-    - Existing immutable public evidence packets, dossier bytes, Language Model snapshot bytes and Range Reactor capability-snapshot-v1 bytes remain unchanged.
+    - Existing immutable public evidence packets, dossier bytes, Dashboard image bytes, Language Model snapshot bytes and Range Reactor capability-snapshot-v1 bytes remain unchanged.
   automatic_successor: PROHIBITED
   successor_operation: NOT_SELECTED
 execution_continuity:
@@ -101,25 +97,25 @@ change_control:
     - read_source
     - compare_source
     - audit
-    - propose
-    - create_file
     - update_file
     - run_checks
   local_actions_prohibited:
+    - propose
+    - create_file
     - move_file
     - delete_file
     - generate_artifact
   remote_actions_authorized:
+    - mark_pull_request_ready_for_review
+    - merge_pull_request
+    - record_owner_acceptance
+    - close_operation
+  remote_actions_prohibited:
     - create_branch
     - commit
     - push
     - open_draft_pull_request
     - update_draft_pull_request
-  remote_actions_prohibited:
-    - mark_pull_request_ready_for_review
-    - merge_pull_request
-    - record_owner_acceptance
-    - close_operation
     - activate_selected_successor
     - modify_repository_settings
     - publish_image
@@ -139,25 +135,30 @@ effects:
   external_effect: NONE
 bridge:
   applicability: NOT_APPLICABLE_NON_PARTICIPANT
-  non_applicability_reason: Public repository source representation is separate from Runtime participation.
+  non_applicability_reason: Public repository source acceptance is separate from Runtime participation.
   direct_invocation: PROHIBITED
   runtime_admission_status: NOT_ESTABLISHED
   participation_binding_status: NOT_ESTABLISHED
   canonical_runtime_receipt_status: NOT_ESTABLISHED
 evidence:
-  evidence_class: REPOSITORY_SOURCE_AND_DIFF_VALIDATION
+  evidence_class: OWNER_ACCEPTANCE_RECORD
   required_checks:
-    - Exact candidate base remains accepted EHCOsystem main 9bac1d6af5210a596691530436429937169f527e.
-    - Public first-contact surfaces state realized Tier One Runtime standing 52/53, Docker Portability deployment readiness, local self-hosted Docker operation and Dashboard local port-8080 origin consistently.
-    - Public performance language keeps the 6.847-second large-ledger Runtime observation and 58.458-ms Range Reactor median in separate workload classes.
-    - Canonical public claim registry validates required claim IDs, evidence classes, public routes, source-review date and disclosure ceilings.
-    - Reader-facing language excludes protected source locators, private host paths, cloud-provider lineage identifiers and internal operation choreography from the maturity headline.
-    - Existing public repository validation, Language Model snapshot validation, Range Reactor snapshot validation, release identity validation and CodeQL remain passing on the exact candidate head.
-    - Candidate changed paths remain a subset of the exact declared Phase 1 permitted paths and stable ehco.repository.yaml remains unchanged.
+    - Exact source base remains accepted EHCOsystem main 9bac1d6af5210a596691530436429937169f527e.
+    - Reviewed cleaned PUBLISH head remains 3432481a2717642fd037aa0209f066ba825ccb69 and its qualification checks remain successful.
+    - Final changed-path set remains exactly the intended 16 Phase 1 paths.
+    - Post-review compare from 3432481a2717642fd037aa0209f066ba825ccb69 to the final COMPLETE ACCEPT head changes only ehco.operation.yaml.
+    - The 15 substantive representation/evidence/verification paths remain frozen at reviewed PUBLISH head 3432481a2717642fd037aa0209f066ba825ccb69.
+    - Exact final COMPLETE ACCEPT head passes Validate evidence and public boundaries, canonical public claim validation, CodeQL, and EHCO Assistant Operation Gate; GitHub Advanced Security CodeQL remains successful where produced.
+    - Pull request review threads remain clear before merge.
+    - Current PR tree contains exactly the selected Phase 1 representation/control scope and no new qualification/test-plan package.
+    - PR #35 is marked Ready only after final exact-head qualification and is squash-merged only with expected-head protection.
+    - Accepted public main is read back after merge and shows state COMPLETE, authorization_mode ACCEPT, remaining_bounded_work empty, and automatic successor prohibited.
   proves:
-    - The published candidate reconciles public Runtime, portability, local-operation, Dashboard, performance and Range Reactor representation to the strongest current evidence reviewed for Phase 1.
-    - The public claim registry and dedicated validator create a deterministic representation guard for the selected final-closeout propositions.
-    - Phase 1 preserves the SOW-008 sequence boundary by leaving physical qualification and proof-artifact generation for the terminal qualification phase.
+    - Owner acceptance of the bounded cleaned EHCOsystem Phase 1 public representation on the exact reviewed and requalified source chain.
+    - Accepted public source affirmatively represents EHCO AI-OS as realized, Docker portability as deployment-ready and portable, and EHCO AI-OS as physically operated as a self-hosted local Docker Runtime.
+    - Range Reactor August 13 realization and August 14 actual host qualification remain preserved in owning source/evidence and represented at the correct public evidence strength.
+    - Substantive public representation bytes remained frozen throughout ACCEPT after the reviewed PUBLISH basis.
+    - Accepted standing remains 52/53 and Runtime authority boundaries remain preserved.
   evidence_not_created:
     - Fresh local Docker or network-isolation qualification
     - Fresh matched Runtime performance benchmark
@@ -168,7 +169,11 @@ evidence:
     - Deployment or production activation
     - Runtime admission binding invocation participation authority state proof or canonical Runtime receipt
     - Numerical standing transition
+    - Repository settings or ruleset mutation
+    - Git history rewrite or branch-retention policy change
 stop_condition:
-  - Publish and exact-head verify EHCO-PUBLIC-SOW008-REPRESENTATION-PHASE1-PUBLISH-001 as a draft pull request.
-  - Stop before owner ACCEPT, ready-for-review transition, merge or physical qualification execution.
-  - Preserve automatic successor prohibition.
+  - Verify the exact final COMPLETE ACCEPT head passes required repository/security checks and review threads remain clear.
+  - Confirm the post-review compare changes only ehco.operation.yaml and all 15 substantive Phase 1 paths remain frozen.
+  - Mark PR #35 Ready only after final exact-head qualification and squash-merge only with expected-head protection.
+  - Read back accepted public main and reconcile Drive SOW-008 to the accepted closeout.
+  - Stop after accepted-main and Drive reconciliation with automatic successor prohibited and release/deployment/Runtime effects remaining separate.
