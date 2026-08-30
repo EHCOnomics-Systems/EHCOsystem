@@ -4,15 +4,28 @@ This page indexes the current public technical records for **EHCOsystem, EHCOnom
 
 ## Start here
 
+- [EHCO AI-OS Runtime — Current Public Evidence](runtime/README.md)
+- [EHCO Full Flex Public Packet v1 evidence index](evidence/runtime/full-flex/v1/README.md)
+- [Canonical Public Claim Registry](assurance/PUBLIC-CLAIM-REGISTRY.json)
 - [Instantiated AI — Public Architecture Definition](architecture/INSTANTIATED-AI.md)
 - [EHCOsystem — An Instantiated AI Ecosystem](architecture/EHCO-TECHNOLOGY-ESTATE.md)
 - [Public Architecture Diagrams](architecture/diagrams/README.md)
+- [EHCO AI-OS Technical Diligence](TECHNICAL-DILIGENCE.md)
 - [Ecosystem Claim → Evidence Matrix](assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md)
 - [Ecosystem Technical Diligence](ECOSYSTEM-DILIGENCE.md)
-- [EHCO AI-OS Technical Diligence](TECHNICAL-DILIGENCE.md)
 - [Start Here](getting-started/START-HERE.md)
 - [Reading Order](getting-started/reading-order.md)
 - [Repository Map](getting-started/repository-map.md)
+
+## Current EHCO AI-OS Runtime evidence
+
+- [EHCO AI-OS Runtime — Current Public Evidence](runtime/README.md)
+- [EHCO Full Flex Public Packet v1 evidence index](evidence/runtime/full-flex/v1/README.md)
+- [Canonical Public Claim Registry](assurance/PUBLIC-CLAIM-REGISTRY.json)
+- [EHCO AI-OS Technical Diligence](TECHNICAL-DILIGENCE.md)
+- [AI-OS Claim → Evidence Matrix](assurance/CLAIM-EVIDENCE-MATRIX.md)
+
+The Full Flex route is the canonical first public evidence route for present Runtime posture. Public Evidence Companion Packets 00–08 remain immutable historical/event-time evidence and lineage.
 
 ## Category architecture
 
@@ -55,14 +68,17 @@ These records present EHCO AI-OS as the realized Tier One Runtime foundation, `E
 ## Public assurance
 
 - [Public Assurance Index](assurance/README.md)
+- [Canonical Public Claim Registry](assurance/PUBLIC-CLAIM-REGISTRY.json)
 - [Ecosystem Claim → Evidence Matrix](assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md)
 - [AI-OS Claim → Evidence Matrix](assurance/CLAIM-EVIDENCE-MATRIX.md)
 
 ## Public evidence
 
-- [Public Evidence Companion](evidence/README.md)
-- [Version 1 Packets 00-08](evidence/public-evidence-companion/v1/)
-- [Public Evidence Validation](verification/README.md)
+- [Current Runtime Evidence](runtime/README.md)
+- [Full Flex Public Packet v1 evidence index](evidence/runtime/full-flex/v1/README.md)
+- [Public Evidence landing page](evidence/README.md)
+- [Historical Version 1 Packets 00–08](evidence/public-evidence-companion/v1/)
+- [Public Repository Validation](verification/README.md)
 
 ## Publication and governance
 
