@@ -1,12 +1,12 @@
 ---
 title: EHCO AI-OS Public System Card
-version: 1.4
+version: 1.5
 status: accepted-public-reference
-published: 2026-08-29
+published: 2026-08-30
 maintainer: EHCOnomics
 evidence_class: controlled-ehco-architecture
 evidence_scope: public system synthesis
-supersedes: version 1.3
+supersedes: version 1.4
 ---
 
 # EHCO AI-OS Public System Card
@@ -14,6 +14,16 @@ supersedes: version 1.3
 ## Purpose
 
 EHCO AI-OS is the realized Tier One Runtime of EHCOsystem with accepted standing baseline **52/53** and accepted maturity **`REALIZED / COMPLETE_IN_ACCEPTED_SCOPE`**. It is the governing foundation for authority, scope, recognized state, transition, consequence, continuity, persistence, withholding/release, correction/recovery, and Runtime-originated proof.
+
+**52/53 is the accepted numerical Runtime standing corridor under the EHCO standing framework. Benchmark scoring, percentage-completion measures, component-maturity percentages, deployment-state percentages and public-release percentages are separate dimensions.** Protected denominator mechanics remain within their owning governed sources.
+
+## Current public Runtime evidence
+
+For present public Runtime posture, begin with **[EHCO AI-OS Runtime — Current Public Evidence](../runtime/README.md)** and the **[EHCO Full Flex Public Packet v1 evidence index](../evidence/runtime/full-flex/v1/README.md)**.
+
+The clean Full Flex packet is the current public capability-and-evidence synthesis for the established Runtime environment, bound to packet SHA-256 `7F80C27D085AE871A00AED412C6F20EA9A76CB0677C93AEBA381CD1FD70EC8E5`. It synthesizes accepted Runtime posture, deployment-ready Docker portability, physically operated local Runtime evidence, Dashboard/bridge/worker relationships, persistent surfaces, networking, engineering-scale characterization, Range Reactor qualification/performance relationships, public claim bindings and integrity metadata.
+
+`INSTANTIATED_EHCO_RUNTIME` remains the owner of actual Tier One Runtime authority and present Runtime state; owning Docker/host evidence remains the owner of physical execution observations. Full Flex carries the current public evidence-projection role across those relationships. Historical Public Evidence Companion Packets 00–08 remain immutable event-time evidence and lineage.
 
 ## Architectural thesis
 
@@ -92,26 +102,30 @@ These dated public-safe views orient reviewers to projection relationships acros
 
 ## Evidence and interpretation
 
-The public repository exposes evidence through the canonical claim registry, canonical dossier, Public Evidence Companion, packet manifests, hashes, receipts, verification tooling, architecture records and publication controls. Each record identifies its evidence class and scope.
+The public repository exposes current evidence through the Full Flex Runtime route and canonical claim registry, and preserves historical evidence through the Public Evidence Companion, packet manifests, hashes, receipts and verification tooling. Architecture records and publication controls retain their own evidence classes and scopes.
 
-For the canonical separation principles, use [System Invariants](SYSTEM-INVARIANTS.md). For evidence-domain ownership, use the [Runtime, Repository, and Test-Estate Boundary](runtime-repository-and-test-estate-boundary.md).
+For present Runtime review use this order: current Full Flex evidence route; Canonical Public Claim Registry; owning Runtime/Docker evidence for technical effects; historical Public Evidence Companion Packets 00–08 for event-time lineage.
+
+For canonical separation principles, use [System Invariants](SYSTEM-INVARIANTS.md). For evidence-domain ownership, use the [Runtime, Repository, and Test-Estate Boundary](runtime-repository-and-test-estate-boundary.md).
 
 ## Public reading path
 
-1. [EHCOsystem Technology Estate](EHCO-TECHNOLOGY-ESTATE.md)
-2. [Canonical Public Claim Registry](../assurance/PUBLIC-CLAIM-REGISTRY.json)
-3. [Runtime, Repository, and Test-Estate Boundary](runtime-repository-and-test-estate-boundary.md)
-4. [EHCO AI-OS Instantiated System](EHCO-AI-OS-INSTANTIATED-SYSTEM.md)
-5. [Governed Runtime Architecture](GOVERNED-RUNTIME-ARCHITECTURE.md)
-6. [System Invariants](SYSTEM-INVARIANTS.md)
-7. [Public Evidence Companion](../evidence/README.md)
-8. [Ecosystem Claim → Evidence Matrix](../assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md)
+1. [Current EHCO AI-OS Runtime Evidence](../runtime/README.md)
+2. [Full Flex Public Packet v1 evidence index](../evidence/runtime/full-flex/v1/README.md)
+3. [Canonical Public Claim Registry](../assurance/PUBLIC-CLAIM-REGISTRY.json)
+4. [EHCOsystem Technology Estate](EHCO-TECHNOLOGY-ESTATE.md)
+5. [Runtime, Repository, and Test-Estate Boundary](runtime-repository-and-test-estate-boundary.md)
+6. [EHCO AI-OS Instantiated System](EHCO-AI-OS-INSTANTIATED-SYSTEM.md)
+7. [Governed Runtime Architecture](GOVERNED-RUNTIME-ARCHITECTURE.md)
+8. [System Invariants](SYSTEM-INVARIANTS.md)
+9. [Public Evidence](../evidence/README.md)
+10. [Ecosystem Claim → Evidence Matrix](../assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md)
 
 ## Revision history
 
 | Version | Date | Change |
 |---|---|---|
+| 1.5 | 2026-08-30 | Made Full Flex the first current evidence route, added evidence precedence/exact-owner boundary and bounded 52/53 interpretation. |
 | 1.4 | 2026-08-29 | Added deployment-ready Docker portability, physically operated local Runtime, Dashboard local port-8080 origin and external-model-disabled Tier One operating lineage. |
 | 1.3 | 2026-08-29 | Added eight-view Dashboard visual orientation with dated public-safe Tier Three projection/interface framing. |
 | 1.2 | 2026-08-28 | Recast the system card around affirmative ownership, evidence classes and architectural functions. |
-| 1.1 | 2026-08-25 | Reconciled current component/participation terminology. |
