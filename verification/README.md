@@ -1,11 +1,12 @@
 # Public Repository Validation
 
-This directory contains repository-side validation tooling for the canonical public dossier, Public Evidence Companion, Instantiated AI architecture, EHCOsystem technology-estate architecture, diagrams, navigation, maturity representation, evidence matrices, public Language Model snapshot, public Range Reactor capability snapshot, disclosure controls and publication identity.
+This directory contains repository-side validation tooling for the canonical public dossier, Public Evidence Companion, Instantiated AI architecture, EHCOsystem technology-estate architecture, diagrams, navigation, maturity representation, evidence matrices, canonical public claim registry, public Language Model snapshot, public Range Reactor capability snapshot, disclosure controls and publication identity.
 
 ## Run locally
 
 ```bash
 python3 verification/validate_public_evidence.py
+python3 verification/validate_public_claim_registry.py
 python3 verification/validate_public_lm_test_snapshot.py
 python3 verification/validate_public_range_reactor_snapshot.py
 python3 verification/validate_release_identity.py
@@ -30,6 +31,21 @@ python3 verification/validate_release_identity.py
 - claim/evidence matrix structure.
 
 Hash-preserved Packets 00-08 and exact Language Model fixture artifacts retain their accepted bytes.
+
+## Canonical public claim-registry validation
+
+`validate_public_claim_registry.py` verifies the final-closeout representation layer across the machine-readable claim registry and current first-contact public surfaces. It checks:
+
+- realized EHCO AI-OS standing **52/53** and `REALIZED / COMPLETE_IN_ACCEPTED_SCOPE` maturity;
+- `EHCO_DOCKER_PORTABILITY` as `PRIMARY_ACCESSIBLE_RUNTIME_PROJECTION` and the fully containerized, deployment-ready portable delivery form of the hardened Runtime lineage;
+- self-hosted local Docker Runtime representation;
+- Dashboard local operating origin and host port **8080** framing;
+- Tier One operating lineage with the external-model seam disabled;
+- the 6.847-second large-ledger Runtime characterization and accepted repair sequence;
+- Range Reactor mature capability, physical qualification posture and diagnostic performance baseline;
+- separate-workload treatment for Runtime and Range Reactor performance measurements;
+- public/private locator and cloud-lineage disclosure boundaries; and
+- discoverability of the canonical claim registry from the public front door.
 
 ## Language Model snapshot validation
 

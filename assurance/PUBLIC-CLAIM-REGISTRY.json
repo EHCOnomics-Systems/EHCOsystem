@@ -1,0 +1,110 @@
+{
+  "schema": "ehco.public.claim-registry.v1",
+  "registry_version": "1.0.0",
+  "published": "2026-08-29",
+  "source_review_date": "2026-08-29",
+  "public_repository_base": "9bac1d6af5210a596691530436429937169f527e",
+  "purpose": "Canonical machine-readable public propositions for the EHCOsystem final-closeout representation layer.",
+  "claims": [
+    {
+      "claim_id": "AIOS-RUNTIME-REALIZED",
+      "public_statement": "EHCO AI-OS is the realized Tier One Runtime of EHCOsystem with accepted standing 52/53.",
+      "maturity": "REALIZED / COMPLETE_IN_ACCEPTED_SCOPE",
+      "evidence_class": "controlled architecture + accepted standing projection",
+      "public_references": ["README.md", "architecture/EHCO-TECHNOLOGY-ESTATE.md", "assurance/CLAIM-EVIDENCE-MATRIX.md", "evidence/README.md"],
+      "verification_method": "Inspect the current public architecture, standing projection, claim/evidence mapping and evidence companion.",
+      "disclosure_ceiling": "Tier One system identity and accepted standing projection; present Runtime state remains owned by Runtime-originated evidence.",
+      "status": "ESTABLISHED"
+    },
+    {
+      "claim_id": "AIOS-COMPLETE-ACCEPTED-SCOPE",
+      "public_statement": "The accepted EHCO AI-OS Runtime baseline is REALIZED / COMPLETE_IN_ACCEPTED_SCOPE at standing 52/53.",
+      "maturity": "REALIZED / COMPLETE_IN_ACCEPTED_SCOPE",
+      "evidence_class": "controlled architecture + accepted standing projection",
+      "public_references": ["README.md", "architecture/EHCO-AI-OS-SYSTEM-CARD.md", "assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md"],
+      "verification_method": "Inspect the current public maturity surfaces and accepted standing evidence route.",
+      "disclosure_ceiling": "Accepted baseline maturity and standing representation.",
+      "status": "ESTABLISHED"
+    },
+    {
+      "claim_id": "AIOS-PORTABILITY-DEPLOYMENT-READY",
+      "public_statement": "EHCO_DOCKER_PORTABILITY is the PRIMARY_ACCESSIBLE_RUNTIME_PROJECTION and the fully containerized, deployment-ready portable delivery form of the established hardened EHCO AI-OS Runtime/root-image lineage.",
+      "maturity": "ESTABLISHED / DEPLOYMENT_READY / LOCAL_RELAUNCH_EVIDENCED",
+      "evidence_class": "controlled architecture + owning Docker/host execution evidence",
+      "public_references": ["README.md", "architecture/EHCO-TECHNOLOGY-ESTATE.md", "assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md", "TECHNICAL-DILIGENCE.md"],
+      "verification_method": "Inspect current public architecture and use controlled technical diligence for image identity, local launch/relaunch, endpoint, persistence and restart evidence.",
+      "disclosure_ceiling": "Portable delivery-form and deployment-readiness evidence across established hardened Runtime launch lineage.",
+      "status": "ESTABLISHED"
+    },
+    {
+      "claim_id": "AIOS-LOCAL-RUNTIME-PROVEN",
+      "public_statement": "EHCO AI-OS has physically operated as a self-hosted local Docker Runtime with Dashboard, Runtime bridge, worker service, Docker networking, persistent Runtime/proof/data surfaces, health behavior and hardened image identity.",
+      "maturity": "PHYSICALLY_OBSERVED_LOCAL_OPERATION",
+      "evidence_class": "owning Docker/host execution evidence",
+      "public_references": ["README.md", "architecture/EHCO-AI-OS-SYSTEM-CARD.md", "TECHNICAL-DILIGENCE.md", "assurance/CLAIM-EVIDENCE-MATRIX.md"],
+      "verification_method": "Inspect the current public representation and use controlled technical diligence for the bound local host observations.",
+      "disclosure_ceiling": "Self-hosted local Docker operating posture and identified service/health/persistence relationships.",
+      "status": "ESTABLISHED"
+    },
+    {
+      "claim_id": "AIOS-LOCAL-DASHBOARD-PROVEN",
+      "public_statement": "The published EHCO Dashboard views derive from the operating local EHCO Docker Runtime, with the local Dashboard served on host port 8080 during the captured operating state.",
+      "maturity": "OPERATING_LOCAL_TIER_THREE_PROJECTION",
+      "evidence_class": "owning local host execution evidence + public-safe Dashboard derivatives",
+      "public_references": ["README.md", "architecture/EHCO-AI-OS-SYSTEM-CARD.md", "architecture/EHCO-TECHNOLOGY-ESTATE.md"],
+      "verification_method": "Inspect the public-safe Dashboard derivatives and their current local-Runtime interpretation; controlled diligence binds the local service observation.",
+      "disclosure_ceiling": "Dashboard local origin, port-8080 service relationship and Tier Three projection interpretation.",
+      "status": "ESTABLISHED"
+    },
+    {
+      "claim_id": "AIOS-TIER1-MODEL-INDEPENDENT-OPERATION",
+      "public_statement": "Established EHCO Runtime lineage demonstrates Tier One operation, governance, proof/release behavior and Runtime-state/observer projection with the external-model seam disabled.",
+      "maturity": "ESTABLISHED_RUNTIME_LINEAGE",
+      "evidence_class": "owning Runtime/Docker lineage evidence + controlled architecture",
+      "public_references": ["TECHNICAL-DILIGENCE.md", "assurance/CLAIM-EVIDENCE-MATRIX.md", "architecture/EHCO-AI-OS-SYSTEM-CARD.md"],
+      "verification_method": "Inspect the public claim mapping and controlled Runtime/Docker lineage evidence for the bounded operating proposition.",
+      "disclosure_ceiling": "Tier One operation/projection with the external-model seam disabled; conversational projection remains a separately evidenced downstream function.",
+      "status": "ESTABLISHED"
+    },
+    {
+      "claim_id": "AIOS-PERFORMANCE-CHARACTERIZATION",
+      "public_statement": "Controlled Runtime characterization recorded a 6.847-second large-ledger activity request against a 496,898,804-byte / 2,605,233-line ledger, identified whole-ledger reading as the mechanism and accepted a bounded reverse-tail reader repair.",
+      "maturity": "HISTORICAL_CHARACTERIZATION + ACCEPTED_REPAIR",
+      "evidence_class": "historical owning Runtime characterization + accepted source/realization evidence",
+      "public_references": ["TECHNICAL-DILIGENCE.md", "ECOSYSTEM-DILIGENCE.md", "assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md"],
+      "verification_method": "Review the bounded characterization statement and controlled owning evidence; matched post-repair comparison is reserved for matched-workload evidence.",
+      "disclosure_ceiling": "Historical large-ledger observation, diagnosed mechanism and accepted repair sequence.",
+      "status": "ESTABLISHED"
+    },
+    {
+      "claim_id": "RR-MATURE",
+      "public_statement": "EHCO Range Reactor is a mature deterministic proof-carrying implication, reachability, range and reasoning system.",
+      "maturity": "MATURE ESTABLISHED SYSTEM CAPABILITY",
+      "evidence_class": "governed architecture + accepted source/qualification identity",
+      "public_references": ["range-reactor/README.md", "range-reactor/evidence/public-capability-snapshot-v1/README.md", "architecture/EHCO-TECHNOLOGY-ESTATE.md"],
+      "verification_method": "Inspect the public Range Reactor capability route and dedicated snapshot validator.",
+      "disclosure_ceiling": "Deterministic Range Reactor system capability and bounded public qualification evidence.",
+      "status": "ESTABLISHED"
+    },
+    {
+      "claim_id": "RR-PHYSICAL-QUALIFICATION",
+      "public_statement": "Owning Range Reactor qualification evidence establishes physical service execution, fail-closed behavior, timeout/unavailability handling, restart/recovery, portability and diagnostic performance for the qualified component line.",
+      "maturity": "PHYSICALLY_QUALIFIED_COMPONENT_LINE",
+      "evidence_class": "owning physical host qualification evidence",
+      "public_references": ["TECHNICAL-DILIGENCE.md", "ECOSYSTEM-DILIGENCE.md", "assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md", "range-reactor/README.md"],
+      "verification_method": "Use the public capability route for deterministic semantics and controlled technical diligence for the physical host qualification record.",
+      "disclosure_ceiling": "Physical component qualification; Runtime relationship remains a separate evidence dimension.",
+      "status": "ESTABLISHED"
+    },
+    {
+      "claim_id": "RR-PERFORMANCE",
+      "public_statement": "Range Reactor physical host qualification recorded 50 requests at 58.458 ms median, 110.213 ms p95, 213.075 ms maximum and 15.199 requests/second.",
+      "maturity": "DIAGNOSTIC_PHYSICAL_PERFORMANCE_BASELINE",
+      "evidence_class": "owning physical host qualification evidence",
+      "public_references": ["TECHNICAL-DILIGENCE.md", "ECOSYSTEM-DILIGENCE.md", "assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md"],
+      "verification_method": "Review the stated physical qualification workload and controlled owning performance record.",
+      "disclosure_ceiling": "Diagnostic component performance for the stated 50-request workload; comparative system speedup is reserved for matched-workload evidence.",
+      "status": "ESTABLISHED"
+    }
+  ]
+}
