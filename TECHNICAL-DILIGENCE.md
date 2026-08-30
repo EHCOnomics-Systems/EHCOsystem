@@ -46,7 +46,7 @@ These observations establish operating local Docker behavior and portability acr
 
 ## 3. Historical observed run — Packet 06
 
-Packet 06 is retained as immutable **historical/event-time evidence**. It is useful for reviewing a bounded prior observation window and the control behavior captured in that window; it is not the current Runtime maturity or present-state evidence front door.
+Packet 06 is retained as immutable **historical/event-time evidence**. It is useful for reviewing a bounded prior observation window and the control behavior captured in that window; its evidence role is historical, while the Full Flex route carries current Runtime maturity and present-state public interpretation.
 
 Open:
 
@@ -56,7 +56,7 @@ Open:
 
 Packet 06 preserves a hash-bound `local_live` capture containing three observed Compose service rows and three healthy rows; authority admission recorded as admitted; packet, continuity, range and proof status recorded as valid; a bounded recovery/quarantine state; a recorded release-gate result; and a configured LLM that remained idle during the captured authority/proof/range/release-gate sequence.
 
-Those fields remain evidence of that recorded event. They do not recalculate or override the current accepted baseline **`REALIZED / COMPLETE_IN_ACCEPTED_SCOPE` / 52/53** or the current Full Flex public evidence route.
+Those fields remain evidence of that recorded event. Current accepted baseline interpretation remains **`REALIZED / COMPLETE_IN_ACCEPTED_SCOPE` / 52/53** through the current Full Flex evidence route and its owning evidence relationships.
 
 ## 4. Implementation anchors — Packet 03
 
@@ -88,7 +88,7 @@ The physical qualification also recorded a 50-request diagnostic workload at **5
 
 The 6.847-second Runtime activity characterization and the Range Reactor diagnostic performance record are **separate workloads**. Their values describe different evidence objects, and direct comparative speedup belongs only to matched-workload evidence.
 
-Range Reactor remains a **DOWNSTREAM_GOVERNED_COMPONENT**. Its physical qualification/performance evidence is included in the Full Flex current evidence synthesis without creating Tier One Runtime participation.
+Range Reactor remains a **DOWNSTREAM_GOVERNED_COMPONENT**. Its physical qualification/performance evidence is included in the Full Flex current evidence synthesis; Tier One Runtime participation remains a separately governed evidence dimension.
 
 ## 7. Historical evidence lineage
 
