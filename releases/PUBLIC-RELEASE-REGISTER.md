@@ -44,7 +44,7 @@ The registered release identity above remains distinct from provider publication
 | Runtime/Repository/Test-Estate Boundary | PRESENT_IN_REVISION | `architecture/runtime-repository-and-test-estate-boundary.md` | Evidence-domain ownership |
 | EHCO AI-OS Instantiated System | PRESENT_IN_REVISION | `architecture/EHCO-AI-OS-INSTANTIATED-SYSTEM.md` | Tier One public system record |
 | EHCO AI-OS Public System Card | PRESENT_IN_REVISION | `architecture/EHCO-AI-OS-SYSTEM-CARD.md` | Tier One public synthesis |
-| Governed Runtime Architecture | PRESENT_IN_REVISION | `architecture/GOVERNED-RUNTIME-ARCHITECTURE.md` | Conceptual Runtime architecture |
+| Governed Runtime Architecture | PRESENT_IN_REVISION | `architecture/GOVERNED-RUNTIME-ARCHITECTURE.md` | Public Runtime architecture |
 | System Invariants | PRESENT_IN_REVISION | `architecture/SYSTEM-INVARIANTS.md` | Canonical separation principles |
 | Instantiated Proof Range | PRESENT_IN_REVISION | `architecture/instantiated-proof-range.md` | Proof/evidence classes |
 | EHCO Language Model | PRESENT_IN_REVISION | `language-model/README.md` | Deterministic language architecture and current maturity |

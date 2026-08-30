@@ -5,7 +5,7 @@ status: accepted-public-reference
 published: 2026-08-28
 maintainer: EHCOnomics
 evidence_class: controlled-ehco-architecture
-evidence_scope: conceptual public Runtime architecture
+evidence_scope: public Runtime architecture
 supersedes: version 1.1
 ---
 
@@ -17,7 +17,7 @@ The accepted EHCO AI-OS standing baseline is **52/53**.
 
 **EHCO AI-OS is the realized Tier One Runtime of EHCOsystem.** The architecture keeps identity, component capability, Runtime participation, authority, scope, state, consequence, continuity, evidence and projection as explicit governed dimensions.
 
-## Conceptual model
+## Public Runtime model
 
 ```text
 DOWNSTREAM GOVERNED COMPONENTS
@@ -80,5 +80,5 @@ Continuity preserves recognized relationships, evidence, state and governing con
 
 | Version | Date | Change |
 |---|---|---|
-| 1.2 | 2026-08-28 | Recast the conceptual architecture through positive computational ownership and lifecycle relationships. |
+| 1.2 | 2026-08-28 | Recast the public Runtime architecture through positive computational ownership and lifecycle relationships. |
 | 1.1 | 2026-08-25 | Reconciled component identity and Runtime participation. |
