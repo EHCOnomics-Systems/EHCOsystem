@@ -17,9 +17,9 @@ EHCOsystem public material is organized by **origin, evidence class, scope, time
 
 For present EHCO AI-OS Runtime posture, the canonical public route is [EHCO AI-OS Runtime — Current Public Evidence](runtime/README.md) and the [EHCO Full Flex Public Packet v1 evidence index](evidence/runtime/full-flex/v1/README.md).
 
-The selected Full Flex packet identity was established from owning Windows/Docker host evidence and is bound to SHA-256 `7F80C27D085AE871A00AED412C6F20EA9A76CB0677C93AEBA381CD1FD70EC8E5`. Public source can publish the selected identity, precedence and verification route without manufacturing the underlying artifact. Exact packet-byte publication remains a separate materialization state and must preserve the owning-host-established bytes.
+The selected Full Flex packet identity was established from owning Windows/Docker host evidence and is bound to SHA-256 `7F80C27D085AE871A00AED412C6F20EA9A76CB0677C93AEBA381CD1FD70EC8E5`. Public source publishes the selected identity, precedence and verification route while artifact bytes remain governed by exact-byte continuity. Exact packet-byte publication is a separate materialization state and preserves the owning-host-established bytes.
 
-The Full Flex packet is a **current public evidence projection and synthesis**. It does not replace `INSTANTIATED_EHCO_RUNTIME` as the owner of actual Tier One Runtime authority/current state or owning Docker/host evidence as the owner of physical execution observations.
+The Full Flex packet is a **current public evidence projection and synthesis**. `INSTANTIATED_EHCO_RUNTIME` remains the owner of actual Tier One Runtime authority/current state, and owning Docker/host evidence remains the owner of physical execution observations.
 
 ## Explanatory and navigation material
 
@@ -33,21 +33,21 @@ Architecture documents express the accepted public system model, computational o
 
 The Public Evidence Companion preserves packet-scoped records, manifests, checksums, source identities, observations, discrepancies and verification results. Each packet retains its original time, scope, evidence class and cryptographic identity.
 
-Packets 00–08 remain immutable historical/event-time evidence and lineage. Their packet-local fields retain their recorded scope and do not recalculate or override present Runtime maturity, accepted standing or deployment-ready portability.
+Packets 00–08 remain immutable historical/event-time evidence and lineage. Their packet-local fields retain their recorded scope, while present Runtime maturity, accepted standing and deployment-ready portability route through current evidence and owning evidence relationships.
 
 ## Runtime and machine observations
 
-Runtime, test, capture and machine observations are tied to their identified environment, capture time, source set and evidence class. Current Runtime propositions use current Runtime evidence; historical observations retain their historical time. Public evidence routing does not become technical-effect proof merely because it is current or machine-validated.
+Runtime, test, capture and machine observations are tied to their identified environment, capture time, source set and evidence class. Current Runtime propositions use current Runtime evidence; historical observations retain their historical time. Public evidence routing retains its representation evidence class, while technical-effect proof remains with the applicable owning evidence domain.
 
 ## Standing interpretation provenance
 
-Accepted **52/53** is the numerical Runtime standing corridor under the EHCO standing framework. It is not a benchmark score, percentage completion, component-maturity percentage, deployment-state percentage or public-release percentage. Public explanatory material does not infer or expose protected denominator mechanics beyond owning governed sources.
+Accepted **52/53** is the numerical Runtime standing corridor under the EHCO standing framework. Benchmark scoring, percentage-completion measures, component-maturity percentages, deployment-state percentages and public-release percentages are separate dimensions. Protected denominator mechanics remain within their owning governed sources.
 
 ## Repository verification tooling
 
 Executable verification tooling validates public repository structure, identity, manifests, links, disclosure safety, architecture relationships, maturity representation, current Runtime evidence routing and semantic controls for the checked revision.
 
-A green repository check establishes source/repository conditions for that revision. It does not substitute for owning Runtime or Docker/host execution evidence.
+A green repository check establishes source/repository conditions for that revision. Owning Runtime or Docker/host execution evidence establishes physical and Runtime technical effects.
 
 ## Stable repository provenance baseline
 
