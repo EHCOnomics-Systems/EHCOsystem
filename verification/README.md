@@ -26,11 +26,13 @@ python3 verification/validate_release_identity.py
 - historical Public Evidence Companion classification; and
 - exact packet-byte SHA-256/schema verification when the byte-identical JSON is present.
 
-When the exact packet JSON is not present, the validator requires explicit exact-byte-custody language rather than allowing reconstructed or alternate bytes to stand in for the owning-host-established artifact. A green result in that state establishes repository/source integrity and evidence-identity routing, not physical Runtime re-execution.
+When exact packet JSON bytes are awaiting lawful custody, the validator requires explicit exact-byte-custody language and preserves the owning-host-established artifact identity. A green result in that state establishes repository/source integrity and evidence-identity routing. Physical Runtime execution remains established by its owning execution evidence.
 
 ## Repository and evidence integrity
 
 `validate_public_evidence.py` verifies canonical dossier identity, Packets 00–08 structure/manifests/hashes/suite closure, JSON syntax, internal links, repository residue, high-confidence credential indicators, architecture/navigation relationships, Runtime/component/Tier Three terminology, Docker portability classification, Dashboard representation, current public maturity language, component snapshot relationships and claim/evidence matrix structure.
+
+It also preserves the required **Language Model capability-based advanced near-final maturation representation** and the **absence of internal Language Model stage/unit/program mechanics** from active reader-facing maturity prose.
 
 Hash-preserved Packets 00–08 and exact component fixture artifacts retain their accepted bytes.
 
@@ -40,7 +42,7 @@ Hash-preserved Packets 00–08 and exact component fixture artifacts retain thei
 
 - registry publication/source-review currentness for the August 30 Full Flex closeout review;
 - realized EHCO AI-OS standing **52/53** and `REALIZED / COMPLETE_IN_ACCEPTED_SCOPE` maturity;
-- bounded interpretation of 52/53 as a numerical Runtime standing corridor, distinct from benchmark score, percentage completion, component-maturity percentage, deployment-state percentage and public-release percentage;
+- bounded interpretation of 52/53 as a numerical Runtime standing corridor, with benchmark scoring, percentage completion, component-maturity percentages, deployment-state percentages and public-release percentages treated as separate dimensions;
 - Full Flex-first current evidence precedence;
 - `EHCO_DOCKER_PORTABILITY` deployment-ready portable-delivery representation;
 - self-hosted local Docker Runtime and Dashboard port-8080 representation;
@@ -50,7 +52,7 @@ Hash-preserved Packets 00–08 and exact component fixture artifacts retain thei
 - public/private locator disclosure boundaries; and
 - required claim/evidence fields and current navigation relationships.
 
-The validator does not infer protected standing denominator mechanics and does not convert repository validation into Runtime-originated proof.
+Protected standing denominator mechanics remain within their owning governed sources, and repository validation remains a source/repository evidence class distinct from Runtime-originated proof.
 
 ## Language Model snapshot validation
 
