@@ -15,7 +15,7 @@ selection:
   selected_by: Edward Henry
   selection_class: EXPLICIT_OWNER_DIRECTION
   durable_reference: >-
-    Edward Henry selected publication of the established clean EHCO Full Flex public packet into EHCOnomics-Systems/EHCOsystem using a Runtime front-door structure, selected it as the canonical first public evidence route for the current established EHCO AI-OS Runtime environment, and directed “Make it stick now.” Drive section 20 authorizes immediate canonical-main materialization of the current Runtime evidence precedence and routing layer after repository qualification. The canonical evidence target is evidence/runtime/full-flex/v1/EHCO_FULL_FLEX_PUBLIC_PACKET_V1.json and the canonical Runtime landing surface is runtime/README.md. The exact owning-host packet identity is SHA-256 7F80C27D085AE871A00AED412C6F20EA9A76CB0677C93AEBA381CD1FD70EC8E5 and the clean ZIP identity is SHA-256 DBF984B55731B5EA53C4D7F2A24F8CF4C0C4207E355EB8E6B1170113509F6B94. Exact packet-byte insertion remains separately bound to that owning-host identity. Historical Packets 00-08 remain immutable event-time evidence and lineage. OPERATION_STABLE_ENVELOPE_CHANGE=true
+    Edward Henry selected publication of the established clean EHCO Full Flex public packet into EHCOnomics-Systems/EHCOsystem using a Runtime front-door structure, selected it as the canonical first public evidence route for the current established EHCO AI-OS Runtime environment, and directed “Make it stick now.” Drive section 20 authorizes immediate canonical-main materialization of the current Runtime evidence precedence and routing layer after repository qualification. The canonical evidence target is evidence/runtime/full-flex/v1/EHCO_FULL_FLEX_PUBLIC_PACKET_V1.json and the canonical Runtime landing surface is runtime/README.md. The exact owning-host packet identity is SHA-256 7F80C27D085AE871A00AED412C6F20EA9A76CB0677C93AEBA381CD1FD70EC8E5 and the clean ZIP identity is SHA-256 DBF984B55731B5EA53C4D7F2A24F8CF4C0C4207E355EB8E6B1170113509F6B94. Exact packet-byte insertion remains separately bound to that owning-host identity. Historical Packets 00-08 remain immutable event-time evidence and lineage. NEW_PATH:runtime/README.md NEW_PATH:evidence/runtime/full-flex/v1/README.md NEW_PATH:evidence/runtime/full-flex/v1/EHCO_FULL_FLEX_PUBLIC_PACKET_V1.sha256 NEW_PATH:verification/validate_current_runtime_evidence.py OPERATION_STABLE_ENVELOPE_CHANGE=true
   source_base_revision: 45ec29de7e0c9fd5a0968c5c7353488892d91989
   expected_reviewed_head_revision: NOT_APPLICABLE_UNTIL_ACCEPT
 control_anchor: AGENTS.md
@@ -60,16 +60,17 @@ execution_continuity:
   local_override: MAY_TIGHTEN_NOT_WEAKEN
 scope:
   permitted_paths:
-    - ehco.operation.yaml
-    - runtime/README.md
+    - .github/workflows/validate-public-evidence.yml
     - README.md
     - TECHNICAL-DILIGENCE.md
-    - evidence/README.md
-    - evidence/runtime/full-flex/v1/**
     - assurance/PUBLIC-CLAIM-REGISTRY.json
+    - ehco.operation.yaml
+    - evidence/README.md
+    - evidence/runtime/full-flex/v1/EHCO_FULL_FLEX_PUBLIC_PACKET_V1.sha256
+    - evidence/runtime/full-flex/v1/README.md
     - releases/PUBLIC-RELEASE-REGISTER.md
+    - runtime/README.md
     - verification/validate_current_runtime_evidence.py
-    - .github/workflows/validate-public-evidence.yml
   controlled_paths:
     - ehco.operation.yaml
   prohibited_paths:
