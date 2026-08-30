@@ -18,11 +18,11 @@ The packet identity above was established from the owning Windows/Docker host. T
 
 This packet is the canonical current public evidence projection and synthesis for the broader EHCO AI-OS Runtime environment. It consolidates the accepted current Runtime posture with established Docker portability, physically operated local Runtime evidence, Dashboard/bridge/worker relationships, persistent surfaces, networking, image identity, engineering-scale characterization, Range Reactor qualification/performance, public claim bindings, source bindings and integrity metadata.
 
-For current public Runtime review, start with the [EHCO AI-OS Runtime front door](../../../runtime/README.md).
+For current public Runtime review, start with the [EHCO AI-OS Runtime front door](../../../../runtime/README.md).
 
 ## Historical evidence relationship
 
-The existing [`public-evidence-companion/v1`](../../public-evidence-companion/v1/) Packets 00–08 remain immutable historical/event-time evidence. They preserve lineage and continue to prove the bounded propositions they recorded.
+The existing [`public-evidence-companion/v1`](../../../public-evidence-companion/v1/) Packets 00–08 remain immutable historical/event-time evidence. They preserve lineage and continue to prove the bounded propositions they recorded.
 
 They are not the current Runtime maturity or present-state authority. Packet 06 in particular remains a historical bounded observation window; its packet-time state fields do not override the accepted current Runtime baseline or the current Full Flex evidence route.
 
