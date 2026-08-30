@@ -79,9 +79,6 @@ scope:
     - getting-started/repository-map.md
     - verification/README.md
     - verification/validate_public_claim_registry.py
-    - evidence/runtime/full-flex/v1/EHCO_FULL_FLEX_PUBLIC_PACKET_V1.json
-    - evidence/runtime/full-flex/v1/PACKET_RECEIPT.json
-    - evidence/runtime/full-flex/v1/EHCO_FULL_FLEX_PUBLIC_PACKET_V1.sha256
   controlled_paths:
     - ehco.operation.yaml
   prohibited_paths:
