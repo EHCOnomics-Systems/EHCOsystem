@@ -1,0 +1,136 @@
+﻿{
+    "schema":  "EHCO_FULL_FLEX_PUBLIC_PACKET_V1",
+    "packet_profile":  "FULL_FLEX_AFFIRMATIVE",
+    "projection_role":  "CURRENT_AFFIRMATIVE_CAPABILITY_AND_EVIDENCE_PROJECTION",
+    "packet_identity":  {
+                            "system":  "EHCOsystem",
+                            "runtime":  "EHCO AI-OS",
+                            "observation_time":  "2026-08-30T14:16:48.2707161-03:00",
+                            "generation_surface":  "OWNING_WINDOWS_DOCKER_HOST"
+                        },
+    "public_summary":  [
+                           "EHCO AI-OS is the realized Tier One Runtime of EHCOsystem at accepted standing 52/53 and COMPLETE_IN_ACCEPTED_SCOPE.",
+                           "EHCO_DOCKER_PORTABILITY is the PRIMARY_ACCESSIBLE_RUNTIME_PROJECTION and the fully containerized deployment-ready portable Runtime form of the established hardened Runtime lineage.",
+                           "The current owning Windows Docker host confirms the operating Prime bridge, codexbox and Dashboard services, hardened Runtime image identity, Dashboard service on host port 8080 and HTTP 200 operation.",
+                           "EHCO Range Reactor is a mature deterministic proof-carrying implication, reachability, range and reasoning system with established physical component qualification and measured host performance."
+                       ],
+    "runtime":  {
+                    "system_identity":  "EHCO AI-OS",
+                    "system_class":  "TIER_ONE_RUNTIME",
+                    "realization":  "REALIZED",
+                    "completion_status":  "COMPLETE_IN_ACCEPTED_SCOPE",
+                    "accepted_standing":  "52/53",
+                    "accepted_scope":  [
+                                           "Runtime",
+                                           "Governance",
+                                           "Persistence",
+                                           "Observability",
+                                           "Recovery"
+                                       ],
+                    "authority_and_current_state_owner":  "INSTANTIATED_EHCO_RUNTIME"
+                },
+    "docker_portability":  {
+                               "identity":  "EHCO_DOCKER_PORTABILITY",
+                               "classification":  "PRIMARY_ACCESSIBLE_RUNTIME_PROJECTION",
+                               "delivery_form":  "FULLY_CONTAINERIZED_DEPLOYMENT_READY_PORTABLE_RUNTIME_FORM",
+                               "lineage":  "ESTABLISHED_HARDENED_RUNTIME_ROOT_IMAGE_LINEAGE",
+                               "capabilities":  [
+                                                    "HARDENED_IMAGE_AND_SOURCE_IDENTITY",
+                                                    "SUCCESSFUL_LOCAL_LAUNCH_AND_RELAUNCH",
+                                                    "RESTART_DURABILITY",
+                                                    "DOCKER_COMPATIBLE_PORTABILITY",
+                                                    "PERSISTENT_RUNTIME_PROOF_AND_DATA_SURFACES",
+                                                    "RUNTIME_BRIDGE_AND_WORKER_EXECUTION",
+                                                    "SERVICE_NETWORKING_AND_HEALTH_BEHAVIOR"
+                                                ]
+                           },
+    "current_local_runtime":  {
+                                  "operating_form":  "PHYSICALLY_OPERATED_SELF_HOSTED_LOCAL_DOCKER_RUNTIME",
+                                  "docker_context":  "desktop-linux",
+                                  "docker_server_version":  "29.7.2",
+                                  "runtime_image_id":  "sha256:ebd8b18223e352080f9d8195ae078746e6a04275bf072e13468add80d88c05a8",
+                                  "dashboard_service":  "OPERATING_LOCAL_EHCO_DASHBOARD",
+                                  "dashboard_host_port":  8080,
+                                  "dashboard_http_status":  200,
+                                  "dashboard_content_length":  91383,
+                                  "services":  [
+                                                   {
+                                                       "service_name":  "ehco1primedeployready-bridge-1",
+                                                       "container_id":  "70f159116c6da964c1cce7dbb81f0e770debffffad0fca815de9ebf2b4d395d7",
+                                                       "health":  "HEALTHY",
+                                                       "operating":  "ESTABLISHED"
+                                                   },
+                                                   {
+                                                       "service_name":  "ehco1primedeployready-codexbox-1",
+                                                       "container_id":  "f8065217c6d9aa0e48f78daea58d3e36af1bfd85d8602270b636a810f57058b6",
+                                                       "health":  "HEALTHY",
+                                                       "operating":  "ESTABLISHED"
+                                                   },
+                                                   {
+                                                       "service_name":  "ehco1primedeployready-dashboard-1",
+                                                       "container_id":  "5c38cb1c8e3c267a103778a8802e57e57777c724aa2f66cbd4b5180e920ae175",
+                                                       "health":  "HEALTHY",
+                                                       "operating":  "ESTABLISHED"
+                                                   }
+                                               ],
+                                  "persistence":  "ESTABLISHED_RUNTIME_PROOF_DATA_SURFACES",
+                                  "service_networking":  "ESTABLISHED",
+                                  "restart_durability":  "ESTABLISHED"
+                              },
+    "operating_independence":  {
+                                   "local_tier_one_operation":  "SELF_HOSTED_EHCO_RUNTIME",
+                                   "control_plane_posture":  "LOCAL_EHCO_CONTROL_AND_SERVICE_BOUNDARIES",
+                                   "model_posture":  "EXTERNAL_LANGUAGE_MODEL_INDEPENDENT_IN_ESTABLISHED_LINEAGE"
+                               },
+    "runtime_engineering_scale":  {
+                                      "ledger_bytes":  496898804,
+                                      "ledger_lines":  2605233,
+                                      "activity_route":  "/api/activity?limit=1",
+                                      "reader_capability":  "BOUNDED_REVERSE_TAIL_READER",
+                                      "source_lineage_status":  "ACCEPTED_AND_REALIZED"
+                                  },
+    "range_reactor":  {
+                          "system_identity":  "EHCO Range Reactor",
+                          "component_class":  "DOWNSTREAM_GOVERNED_COMPONENT",
+                          "maturity":  "MATURE_ESTABLISHED_SYSTEM_CAPABILITY",
+                          "deterministic_capabilities":  [
+                                                             "PROOF_CARRYING_IMPLICATION",
+                                                             "REACHABILITY",
+                                                             "RANGE_REASONING",
+                                                             "DETERMINISTIC_POLICY_ENFORCEMENT",
+                                                             "BOUNDED_RESPONSE_CONTROL",
+                                                             "RESTART_AND_RECOVERY",
+                                                             "PORTABILITY"
+                                                         ],
+                          "physical_qualification":  "PHYSICALLY_QUALIFIED_COMPONENT_LINE",
+                          "qualification_date":  "2026-08-14",
+                          "qualification_image_id":  "sha256:f69cd78902d2a8b97e4f70f86b779159dac394c9d43ddcb81611a76897055c0a",
+                          "measured_performance":  {
+                                                       "requests":  50,
+                                                       "median_ms":  58.458,
+                                                       "p95_ms":  110.213,
+                                                       "maximum_ms":  213.075,
+                                                       "requests_per_second":  15.199
+                                                   }
+                      },
+    "established_public_claims":  [
+                                      "AIOS-RUNTIME-REALIZED",
+                                      "AIOS-COMPLETE-ACCEPTED-SCOPE",
+                                      "AIOS-PORTABILITY-DEPLOYMENT-READY",
+                                      "AIOS-LOCAL-RUNTIME-PROVEN",
+                                      "AIOS-LOCAL-DASHBOARD-PROVEN",
+                                      "AIOS-TIER1-MODEL-INDEPENDENT-OPERATION",
+                                      "AIOS-PERFORMANCE-CHARACTERIZATION",
+                                      "RR-MATURE",
+                                      "RR-PHYSICAL-QUALIFICATION",
+                                      "RR-PERFORMANCE"
+                                  ],
+    "source_bindings":  {
+                            "governing_drive_control":  "1FydQKUNfpQ7oZrgpLDlqRHxFM_f1mFv5uq_akploL38",
+                            "public_claim_registry_commit":  "45ec29de7e0c9fd5a0968c5c7353488892d91989",
+                            "standing_projection_candidate_commit":  "e2293a3a5c85873765d6d31d957282be0a7fd864",
+                            "recovered_public_companion_generator_sha256":  "C22A79398005CC3ED60BCA8034B2EB435B3F20199B2932CAE07F04691276B759",
+                            "historical_step55_packet_sha256":  "7708C9A89A6E0626CF69A53215944EC762DEFF3C1B36F665014194F9B034B4D7",
+                            "historical_step55_anchor_sha256":  "1A4AEA3CF6F12445424B8FF2821B700932E50579F008BB3594A370B990EA0EDE"
+                        }
+}
