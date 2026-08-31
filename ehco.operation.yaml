@@ -114,7 +114,7 @@ bridge:
   participation_binding_status: NOT_ESTABLISHED
   canonical_runtime_receipt_status: NOT_ESTABLISHED
 evidence:
-  evidence_class: PUBLIC_SOURCE_SYNCHRONIZATION_VALIDATION
+  evidence_class: REPOSITORY_SOURCE_AND_DIFF_VALIDATION
   required_checks:
     - Historical RR-PERFORMANCE remains a distinct diagnostic service qualification claim.
     - Matched A/B performance is represented separately with 14.304307x wall-clock and 14.208722x CPU speedup, 94.755854 percent allocation reduction, 1957 to 64 states, 1956 to 192 transitions, and 720 histories preserved.
