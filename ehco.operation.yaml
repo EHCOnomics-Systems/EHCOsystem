@@ -18,18 +18,20 @@ selection:
   selected_by: Edward Henry
   selection_class: EXPLICIT_OWNER_DIRECTION
   durable_reference: >-
-    Edward Henry selected completion of the current public EHCOsystem repository by publishing the
-    already-established clean Full Flex packet bytes and associated owning-host receipt into the
-    existing canonical Full Flex evidence path. The selected packet is the existing
-    EHCO_FULL_FLEX_PUBLIC_PACKET_V1.json from the physical EHCO_DOCKER_PORTABILITY estate with
-    SHA-256 7F80C27D085AE871A00AED412C6F20EA9A76CB0677C93AEBA381CD1FD70EC8E5.
-    This operation retrieves and publishes existing evidence; it does not reconstruct or revalidate it.
+    Edward Henry explicitly selected merge acceptance for the exact-byte Full Flex publication.
+    Reviewed PUBLISH head a8aa111b6727de1d0d4e48d12d89ba1f3b45385e passed Validate public repository
+    and CodeQL and contains exactly the selected Full Flex JSON, associated owning-host receipt,
+    and bounded operation control relative to accepted base aa681e61f8548add05ef9cb2872ef54901472ba3.
+    The exact packet remains SHA-256 7F80C27D085AE871A00AED412C6F20EA9A76CB0677C93AEBA381CD1FD70EC8E5.
+    ACCEPT is limited to the reviewed candidate, this operation-control transition, exact-head
+    requalification, Ready-for-Review, expected-head squash merge, accepted-main readback, and
+    acceptance reconciliation. The two evidence files remain frozen from reviewed PUBLISH head
+    a8aa111b6727de1d0d4e48d12d89ba1f3b45385e. No new Docker or Range Reactor execution,
+    deployment, Runtime effect, standing transition, historical evidence rewrite, or successor is selected.
     NEW_PATH:evidence/runtime/full-flex/v1/EHCO_FULL_FLEX_PUBLIC_PACKET_V1.json
     NEW_PATH:evidence/runtime/full-flex/v1/PACKET_RECEIPT.json
-    No new Docker execution, Range Reactor execution, deployment, Runtime effect, standing transition,
-    historical evidence rewrite, or automatic successor is selected.
   source_base_revision: aa681e61f8548add05ef9cb2872ef54901472ba3
-  expected_reviewed_head_revision: NOT_APPLICABLE_UNTIL_ACCEPT
+  expected_reviewed_head_revision: a8aa111b6727de1d0d4e48d12d89ba1f3b45385e
 
 control_anchor: AGENTS.md
 status_owner_path: ehco.operation.yaml
@@ -38,33 +40,32 @@ accepted_standing: 52/53
 active_operation:
   operation_id: EHCO-RUNTIME-FULL-FLEX-EXACT-BYTE-PUBLICATION-002
   state: ACTIVE
-  authorization_mode: PUBLISH
+  authorization_mode: ACCEPT
   bounded_outcome: >-
-    Publish the exact existing host-established Full Flex JSON and associated packet receipt into
-    evidence/runtime/full-flex/v1/, preserving exact byte identity, existing public evidence
-    interpretation, accepted standing 52/53, source/evidence ownership, historical evidence,
-    and all Runtime authority boundaries.
+    Owner-accept and integrate the exact reviewed Full Flex exact-byte public-source candidate so
+    canonical EHCOsystem source contains the established host packet and receipt while preserving
+    accepted standing 52/53, source/evidence ownership, historical evidence, and all Runtime authority boundaries.
   remaining_bounded_work:
-    - Publish the exact host-established EHCO_FULL_FLEX_PUBLIC_PACKET_V1.json bytes.
-    - Publish the associated existing PACKET_RECEIPT.json bytes.
-    - Verify staged and committed packet identity remains SHA-256 7F80C27D085AE871A00AED412C6F20EA9A76CB0677C93AEBA381CD1FD70EC8E5.
-    - Verify staged and committed receipt identity remains identical to the owning-host receipt.
-    - Run repository validation against the exact candidate.
-    - Publish the clean candidate branch.
-    - Open and inspect the bounded draft pull request and required checks.
+    - Qualify this ACCEPT control transition while preserving both Full Flex evidence files exactly as reviewed at a8aa111b6727de1d0d4e48d12d89ba1f3b45385e.
+    - Mark PR #42 ready for review and merge it through protected main using the exact qualified ACCEPT head.
+    - Read back accepted main and verify the exact Full Flex packet and receipt materialization.
+    - Reconcile public operation-control state to COMPLETE so canonical main does not retain stale merge-pending work.
+    - Record accepted public-source materialization in Drive when required by the governing control.
   interaction_seams:
     - Drive owns durable Full Flex meaning, publication requirements, and established packet identity.
-    - Direct EHCOsystem Git owns exact repository source, branch, pull-request, and accepted source state.
+    - Accepted EHCOsystem main aa681e61f8548add05ef9cb2872ef54901472ba3 is the exact source base for PR #42.
+    - Reviewed PUBLISH head a8aa111b6727de1d0d4e48d12d89ba1f3b45385e binds the qualified substantive exact-byte candidate.
+    - From reviewed PUBLISH head to this ACCEPT candidate, only ehco.operation.yaml changes; the two evidence files remain frozen.
+    - Direct EHCOsystem Git owns exact source, pull-request, and accepted-main state.
     - The owning Windows/Docker host owns the clean packet-generation result and exact physical artifact bytes.
     - EHCO_DOCKER_PORTABILITY remains PRIMARY_ACCESSIBLE_RUNTIME_PROJECTION.
     - INSTANTIATED_EHCO_RUNTIME retains Tier One Runtime authority and current Runtime state.
   non_overlap:
     - evidence/public-evidence-companion/v1/** remains immutable historical event-time evidence.
     - ehco.repository.yaml identity and boundary fields remain unchanged.
-    - The Full Flex packet and receipt are retrieved existing evidence and are not reconstructed.
+    - No packet reconstruction or substitute evidence is authorized.
     - No new Docker execution, Range Reactor execution, benchmark, deployment, release, Runtime effect,
-      Runtime participation, standing transition, repository-setting change, or successor activation
-      is part of this operation.
+      Runtime participation, standing transition, repository-setting change, or successor activation is part of this acceptance.
   automatic_successor: PROHIBITED
   successor_operation: NOT_SELECTED
 
@@ -109,23 +110,24 @@ change_control:
     - read_source
     - compare_source
     - audit
-    - create_file
     - update_file
     - run_checks
   local_actions_prohibited:
+    - propose
+    - create_file
     - move_file
     - delete_file
     - generate_artifact
   remote_actions_authorized:
+    - mark_pull_request_ready_for_review
+    - merge_pull_request
+    - record_owner_acceptance
+  remote_actions_prohibited:
     - create_branch
     - commit
     - push
     - open_draft_pull_request
     - update_draft_pull_request
-  remote_actions_prohibited:
-    - mark_pull_request_ready_for_review
-    - merge_pull_request
-    - record_owner_acceptance
     - close_operation
     - activate_selected_successor
     - modify_repository_settings
@@ -149,40 +151,42 @@ effects:
 
 bridge:
   applicability: NOT_APPLICABLE_NON_PARTICIPANT
-  non_applicability_reason: Public evidence publication is separate from Runtime participation.
+  non_applicability_reason: Public evidence source acceptance is separate from Runtime participation.
   direct_invocation: PROHIBITED
   runtime_admission_status: NOT_ESTABLISHED
   participation_binding_status: NOT_ESTABLISHED
   canonical_runtime_receipt_status: NOT_ESTABLISHED
 
 evidence:
-  evidence_class: REPOSITORY_SOURCE_AND_DIFF_VALIDATION
+  evidence_class: OWNER_ACCEPTANCE_RECORD
   required_checks:
-    - Exact owning-host packet bytes are SHA-256 7F80C27D085AE871A00AED412C6F20EA9A76CB0677C93AEBA381CD1FD70EC8E5.
-    - Git-staged and committed packet blobs preserve that exact SHA-256 identity.
-    - Associated PACKET_RECEIPT.json preserves the existing owning-host receipt bytes.
-    - Candidate changes remain limited to the selected three paths.
-    - Existing public repository validation succeeds against the exact candidate.
+    - Reviewed PUBLISH head is exactly a8aa111b6727de1d0d4e48d12d89ba1f3b45385e and passed Validate public repository and CodeQL.
+    - From reviewed PUBLISH head to this ACCEPT candidate, only ehco.operation.yaml changes.
+    - From accepted base main, changed paths remain exactly ehco.operation.yaml, evidence/runtime/full-flex/v1/EHCO_FULL_FLEX_PUBLIC_PACKET_V1.json, and evidence/runtime/full-flex/v1/PACKET_RECEIPT.json.
+    - Exact Full Flex packet remains SHA-256 7F80C27D085AE871A00AED412C6F20EA9A76CB0677C93AEBA381CD1FD70EC8E5.
+    - Full Flex JSON Git blob remains 419a6b3496aaefb2526411ea88644747c9226f60.
+    - PACKET_RECEIPT.json Git blob remains a7d28d5989b862a21d8589257ff80514cfbede87.
     - Historical Public Evidence Companion bytes remain unchanged.
+    - Current public Runtime evidence validation succeeds on the exact ACCEPT head.
+    - Required protected-branch checks succeed on the exact ACCEPT head before merge.
     - Accepted standing remains 52/53.
-    - Automatic successor remains prohibited.
   proves:
-    - Owner-selected exact-byte Full Flex public-source publication scope.
-    - Exact existing host artifact identity is preserved into Git source custody.
-    - Publication remains separate from Runtime authority and technical effects.
+    - Owner-selected acceptance of the exact reviewed Full Flex exact-byte public-source candidate.
+    - Canonical source acceptance establishes repository custody of the existing host packet and receipt.
+    - Publication and acceptance remain separate from Runtime authority and technical effects.
   evidence_not_created:
-    - Owner acceptance
     - New Runtime authority or current Runtime state
     - New Docker execution or qualification
     - New Range Reactor execution or qualification
     - Runtime participation or admission
     - Deployment or release materialization
     - Numerical standing transition
+    - Historical packet-byte rewrite
 
 stop_condition:
-  - Stop if staged or committed Full Flex JSON differs from SHA-256 7F80C27D085AE871A00AED412C6F20EA9A76CB0677C93AEBA381CD1FD70EC8E5.
-  - Stop if staged or committed PACKET_RECEIPT.json differs from the owning-host receipt bytes.
-  - Stop if candidate paths expand beyond the selected exact-byte publication scope.
-  - Continue automatically through branch publication, repository checks, and draft pull-request creation when the exact candidate is valid.
-  - Do not merge or mark the pull request ready for review under this PUBLISH operation.
-  - Preserve Runtime, deployment, release, authority, standing, participation, and successor effects as NONE.
+  - Exact ACCEPT head passes Validate public repository, CodeQL, and EHCO Assistant Operation Gate with both evidence files unchanged from reviewed PUBLISH head a8aa111b6727de1d0d4e48d12d89ba1f3b45385e.
+  - PR #42 is marked ready and merges through protected main using the exact qualified ACCEPT head.
+  - Accepted main is read back and exact packet/receipt source materialization is verified.
+  - Public operation-control state is reconciled to COMPLETE through a control-only closeout so canonical main carries no stale merge-pending work.
+  - Accepted source closure is recorded in Drive when required.
+  - Stop with accepted standing 52/53 preserved and Runtime, deployment, release, authority, participation, and successor effects remaining NONE.
