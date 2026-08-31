@@ -1,6 +1,6 @@
 # Public Repository Validation
 
-This directory contains repository-side validation tooling for the canonical public dossier, historical Public Evidence Companion, current Full Flex Runtime evidence route, Instantiated AI architecture, EHCOsystem technology-estate architecture, navigation, maturity representation, evidence matrices, canonical public claim registry, component evidence snapshots, disclosure controls and publication identity.
+This directory contains repository-side validation tooling for the canonical public dossier, historical Public Evidence Companion, current Full Flex Runtime evidence route, Instantiated AI architecture, EHCOsystem technology-estate architecture, navigation, maturity representation, evidence matrices, canonical public claim registry, component evidence snapshots, Range Reactor operational closure, disclosure controls and publication identity.
 
 ## Run locally
 
@@ -10,6 +10,7 @@ python3 verification/validate_public_claim_registry.py
 python3 verification/validate_current_runtime_evidence.py
 python3 verification/validate_public_lm_test_snapshot.py
 python3 verification/validate_public_range_reactor_snapshot.py
+python3 verification/validate_public_range_reactor_operational_closure.py
 python3 verification/validate_release_identity.py
 ```
 
@@ -26,7 +27,7 @@ python3 verification/validate_release_identity.py
 - historical Public Evidence Companion classification; and
 - exact packet-byte SHA-256/schema verification when the byte-identical JSON is present.
 
-When exact packet JSON bytes are awaiting lawful custody, the validator requires explicit exact-byte-custody language and preserves the owning-host-established artifact identity. A green result in that state establishes repository/source integrity and evidence-identity routing. Physical Runtime execution remains established by its owning execution evidence.
+The exact Full Flex packet JSON is present in canonical public Git custody and is verified against its accepted SHA-256. Physical Runtime execution remains established by its owning execution evidence.
 
 ## Repository and evidence integrity
 
@@ -40,17 +41,19 @@ Hash-preserved Packets 00–08 and exact component fixture artifacts retain thei
 
 `validate_public_claim_registry.py` verifies the current machine-readable claim layer and first-contact public surfaces. It checks:
 
-- registry publication/source-review currentness for the August 30 Full Flex closeout review;
+- registry publication/source-review currentness for the August 31 synchronization;
 - realized EHCO AI-OS standing **52/53** and `REALIZED / COMPLETE_IN_ACCEPTED_SCOPE` maturity;
-- bounded interpretation of 52/53 as a numerical Runtime standing corridor, with benchmark scoring, percentage completion, component-maturity percentages, deployment-state percentages and public-release percentages treated as separate dimensions;
-- Full Flex-first current evidence precedence;
+- bounded interpretation of 52/53 as a numerical Runtime standing corridor;
+- Full Flex-first current evidence precedence and completed exact-byte publication status;
 - `EHCO_DOCKER_PORTABILITY` deployment-ready portable-delivery representation;
 - self-hosted local Docker Runtime and Dashboard port-8080 representation;
 - Tier One external-model-disabled operating lineage;
 - the bounded 6.847-second large-ledger historical Runtime characterization and accepted repair sequence;
-- Range Reactor mature capability, physical qualification posture and diagnostic performance baseline;
+- Range Reactor mature capability and historical physical diagnostic performance;
+- separate Range Reactor matched A/B collapse-performance and selected semantic-closure claims;
+- root, Range Reactor and verification navigation synchronization;
 - public/private locator disclosure boundaries; and
-- required claim/evidence fields and current navigation relationships.
+- required claim/evidence fields and disclosure ceilings.
 
 Protected standing denominator mechanics remain within their owning governed sources, and repository validation remains a source/repository evidence class distinct from Runtime-originated proof.
 
@@ -61,6 +64,24 @@ Protected standing denominator mechanics remain within their owning governed sou
 ## Range Reactor capability validation
 
 `validate_public_range_reactor_snapshot.py` verifies the dedicated Range Reactor component/evidence route, eight synthetic capability vectors, manifest/source-review identity, fixture SHA-256, public navigation/claim presence, disclosure boundaries, evidence ceilings, and mature-capability representation. Deployment, production activation and Runtime participation remain separately owned dimensions.
+
+## Range Reactor operational-closure validation
+
+`validate_public_range_reactor_operational_closure.py` verifies the accepted `range-reactor/evidence/operational-closure-v1/` projection as one bounded evidence unit. It pins:
+
+- accepted owning-evidence and benchmark-source identities;
+- workload SHA-256 and owning/internal result hashes;
+- 2 warm-up pairs and 10 measured pairs;
+- **14.304307x** wall-clock and **14.208722x** CPU-time speedup;
+- **94.755854%** Python peak-allocation reduction;
+- **1,957 → 64** states and **1,956 → 192** transitions;
+- **720 → 720** histories;
+- **82 passed / 0 failed** selected semantic closure;
+- deterministic replay and continuation-manifest identity;
+- the selected-benchmark and selected-current-corpus claim ceilings; and
+- explicit bounded exclusions for universal/unbounded correctness, generic scalar foresight accuracy, Tier One Runtime participation, deployment, release, authority and standing effects.
+
+The historical real-world container/service qualification remains a separate evidence class and its diagnostic service timings stay separate from the matched A/B result.
 
 ## Release identity and provenance validation
 
