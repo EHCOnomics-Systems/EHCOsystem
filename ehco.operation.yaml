@@ -15,24 +15,20 @@ selection:
   selected_by: Edward Henry
   selection_class: EXPLICIT_OWNER_DIRECTION
   durable_reference: |-
-    Edward Henry explicitly selected the independently audited public-repository synchronization sequence on 2026-08-31: preserve the historical RR service diagnostic claim, add distinct matched A/B collapse-performance and bounded semantic-closure claims, synchronize the claim validator, add a dedicated operational-closure validator, and expose Capability Snapshot plus Operational Closure Evidence from the root and Range Reactor navigation surfaces. The operation also reconciles the Full Flex exact-byte status field in the canonical claim registry to already accepted Git custody. This candidate is reconstructed directly on canonical main 451ccd2603debcb0691893b7fd262fdbfbc89cc3 after completion of the Full Flex publication-status operation.
+    Edward Henry explicitly selected the independently audited public-repository synchronization sequence on 2026-08-31: preserve the historical RR service diagnostic claim, add distinct matched A/B collapse-performance and bounded semantic-closure claims, synchronize the claim validator, add a dedicated operational-closure validator, and expose Capability Snapshot plus Operational Closure Evidence from the root and Range Reactor navigation surfaces. The operation also reconciles the Full Flex exact-byte status field in the canonical claim registry to already accepted Git custody. Exact substantive candidate 69367557bd5345e203498dd63b80393140b1e9aa was qualified on canonical base 451ccd2603debcb0691893b7fd262fdbfbc89cc3 through repository validation, CodeQL, and EHCO Assistant Operation Gate; this ACCEPT transition records that reviewed candidate and authorizes its bounded protected-branch merge only.
     NEW_PATH:verification/validate_public_range_reactor_operational_closure.py
     OPERATION_STABLE_ENVELOPE_CHANGE=true
   source_base_revision: 451ccd2603debcb0691893b7fd262fdbfbc89cc3
-  expected_reviewed_head_revision: NOT_APPLICABLE_UNTIL_ACCEPT
+  expected_reviewed_head_revision: 69367557bd5345e203498dd63b80393140b1e9aa
 control_anchor: AGENTS.md
 status_owner_path: ehco.operation.yaml
 accepted_standing: 52/53
 active_operation:
   operation_id: RR-PUBLIC-EVIDENCE-SYNCHRONIZATION-001
-  state: ACTIVE
-  authorization_mode: PUBLISH
-  bounded_outcome: Synchronize public RR navigation, machine-readable claims, claim validation, and dedicated operational-closure validation to the already accepted operational-closure evidence without changing the evidence itself.
-  remaining_bounded_work:
-    - Update the claim registry and claim-registry validator atomically.
-    - Add and register a dedicated RR operational-closure validator.
-    - Surface Capability Snapshot plus Operational Closure Evidence in root and Range Reactor navigation.
-    - Qualify the exact synchronized candidate and transition it through bounded acceptance.
+  state: COMPLETE
+  authorization_mode: ACCEPT
+  bounded_outcome: Synchronized and accepted public RR navigation, machine-readable claims, claim validation, and dedicated operational-closure validation to the already accepted operational-closure evidence without changing the evidence itself.
+  remaining_bounded_work: []
   interaction_seams:
     - EHCOsystem owns public claims, navigation, and public-source validators.
     - EHCOnomics-Systems/EHCO_Range_Reactor owns the accepted implementation and operational-closure evidence projected here.
@@ -79,18 +75,18 @@ change_control:
     - compare_source
     - audit
     - update_file
-    - create_file
     - run_checks
   local_actions_prohibited:
+    - propose
+    - create_file
     - move_file
     - delete_file
     - generate_artifact
   remote_actions_authorized:
-    - commit
-    - push
-    - update_draft_pull_request
-  remote_actions_prohibited:
     - merge_pull_request
+    - record_owner_acceptance
+    - close_operation
+  remote_actions_prohibited:
     - activate_selected_successor
     - modify_repository_settings
     - modify_drive_controls
@@ -114,18 +110,21 @@ bridge:
   participation_binding_status: NOT_ESTABLISHED
   canonical_runtime_receipt_status: NOT_ESTABLISHED
 evidence:
-  evidence_class: REPOSITORY_SOURCE_AND_DIFF_VALIDATION
+  evidence_class: OWNER_ACCEPTANCE_RECORD
   required_checks:
+    - Exact substantive candidate 69367557bd5345e203498dd63b80393140b1e9aa passed repository validation, CodeQL, and EHCO Assistant Operation Gate on canonical base 451ccd2603debcb0691893b7fd262fdbfbc89cc3.
     - Historical RR-PERFORMANCE remains a distinct diagnostic service qualification claim.
-    - Matched A/B performance is represented separately with 14.304307x wall-clock and 14.208722x CPU speedup, 94.755854 percent allocation reduction, 1957 to 64 states, 1956 to 192 transitions, and 720 histories preserved.
-    - Semantic closure is represented separately as 82 passed and 0 failed with the selected-current-corpus ceiling and no universal or unbounded correctness claim.
-    - Dedicated validator pins accepted source identities, workload and result hashes, measurement counts, metrics, semantic closure, claim ceiling, and nonclaims.
+    - Matched A/B performance remains separately represented with 14.304307x wall-clock and 14.208722x CPU speedup, 94.755854 percent allocation reduction, 1957 to 64 states, 1956 to 192 transitions, and 720 histories preserved.
+    - Semantic closure remains separately represented as 82 passed and 0 failed with the selected-current-corpus ceiling and no universal or unbounded correctness claim.
     - Root and RR component navigation expose both Capability Snapshot and Operational Closure Evidence.
     - Full Flex exact-byte registry status reflects already accepted packet custody.
-    - Repository validation, CodeQL, and assistant operation gate pass on the exact candidate.
+    - This exact ACCEPT candidate passes protected repository validation, CodeQL, and EHCO Assistant Operation Gate before merge.
   proves:
-    - Public navigation, claim registry, and deterministic repository validators agree with the accepted RR operational-closure projection.
+    - Owner-selected public RR synchronization is qualified for bounded acceptance and canonical-source merge within the declared evidence ceiling.
   evidence_not_created:
-    - New physical execution, semantic correctness proof, Runtime participation, deployment, release, authority, or standing effect.
+    - New physical execution, semantic correctness proof, Runtime participation, deployment, release, authority, standing effect, or successor activation.
 stop_condition:
-  - Stop PUBLISH after the synchronized exact candidate is qualified for bounded acceptance with all effects remaining NONE.
+  - Exact ACCEPT head passes repository validation, CodeQL, and EHCO Assistant Operation Gate.
+  - PR #48 merges through protected main using that exact qualified head.
+  - Canonical main is read back with the synchronized public claims and operation state COMPLETE.
+  - Stop with Runtime, deployment, release, authority, standing, participation, and successor effects remaining NONE or not established as applicable.
