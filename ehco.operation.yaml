@@ -7,20 +7,18 @@ protocol_reference:
 repository: EHCOnomics-Systems/EHCOsystem
 governed_object: RANGE_REACTOR_PUBLIC_EXECUTION_CONTEXT_CLARIFICATION_V1
 source_owner:
-  repository: EHCOnomics-Systems/EHCO_Range_Reactor
-  revision: eae888b784620ed37ed7d6704bcd91dedcf92936
+  repository: EHCOnomics-Systems/EHCOsystem
+  revision: 4369d51f27dc1967147e44046d6d97750065b0a0
   repository_manifest_path: ehco.repository.yaml
-  controlling_source_reference: Drive document 1WnovTICznftQ8NEKyPHT6RxWJ71gbGDYdM35zzuRblM
+  controlling_source_reference: ehco.repository.yaml
 selection:
   selected_by: Edward Henry
   selection_class: EXPLICIT_OWNER_DIRECTION
   durable_reference: |-
-    Edward Henry explicitly selected clarification of the accepted public Range Reactor operational-closure evidence on 2026-08-31 so the public record states the established physical Docker/Linux execution context and the separately qualified real-world container/service evidence without flattening, demoting, or promoting either evidence class beyond its owning proof.
-    The selected operation changes only the RR operational-closure README, its PUBLIC_RESULT.json context fields, and this operation control.
-    It creates no new benchmark, semantic result, Runtime participation, deployment, release, authority, standing, or successor effect.
+    Edward Henry explicitly selected clarification of the accepted Range Reactor public operational-closure evidence on 2026-08-31. The bounded candidate states the established physical Docker/Linux benchmark context and separately qualified historical container/service evidence without creating a new benchmark, semantic result, Runtime participation, deployment, release, authority, standing, or successor effect.
     OPERATION_STABLE_ENVELOPE_CHANGE=true
   source_base_revision: 4369d51f27dc1967147e44046d6d97750065b0a0
-  expected_reviewed_head_revision: 4c5f6183abe7e76bae2ac5e18886d7681044ada5
+  expected_reviewed_head_revision: NOT_APPLICABLE_UNTIL_ACCEPT
 control_anchor: AGENTS.md
 status_owner_path: ehco.operation.yaml
 accepted_standing: 52/53
@@ -28,21 +26,15 @@ active_operation:
   operation_id: RR-PUBLIC-EXECUTION-CONTEXT-CLARIFICATION-001
   state: ACTIVE
   authorization_mode: PUBLISH
-  bounded_outcome: >-
-    Clarify that the accepted matched A/B is physical Docker/Linux execution evidence on the owning Windows/Docker estate and that the separately accepted historical qualification exercised bounded real-world container/service behavior, while preserving all accepted numerical results, hashes, semantic closure, evidence-class separation, and Runtime/production nonclaims.
+  bounded_outcome: Clarify accepted RR public execution-context language while preserving evidence classes and all Runtime and production nonclaims.
   remaining_bounded_work:
     - Qualify the exact clarification candidate through repository-owned checks.
-    - Accept the exact qualified candidate into canonical public main.
-    - Reconcile this operation to COMPLETE after acceptance.
+    - Transition the qualified candidate through bounded acceptance.
   interaction_seams:
-    - EHCOnomics-Systems/EHCO_Range_Reactor owns exact implementation and qualification evidence.
-    - EHCOsystem owns only the public-safe projection.
-    - Owning-host evidence remains owner of the physical benchmark observation.
-    - Historical service qualification remains a separate evidence class bound to its own source revision.
+    - EHCOsystem owns the public-safe projection; EHCOnomics-Systems/EHCO_Range_Reactor owns the accepted implementation and operational-closure evidence.
     - INSTANTIATED_EHCO_RUNTIME retains Tier One Runtime authority and current Runtime state.
   non_overlap:
-    - No new benchmark, semantic test, container execution, deployment, release, Runtime action, or repository cleanup.
-    - No controlled RR source, raw semantic logs, private host paths, credentials, endpoints, or infrastructure publication.
+    - No new benchmark, semantic test, deployment, release, Runtime action, authority, standing, or successor.
   automatic_successor: PROHIBITED
   successor_operation: NOT_SELECTED
 execution_continuity:
@@ -66,24 +58,6 @@ scope:
   prohibited_paths:
     - AGENTS.md
     - ehco.repository.yaml
-    - GOVERNANCE.md
-    - SECURITY.md
-    - NOTICE.md
-    - PROVENANCE.md
-    - README.md
-    - LIBRARY.md
-    - ECOSYSTEM-DILIGENCE.md
-    - TECHNICAL-DILIGENCE.md
-    - getting-started/**
-    - architecture/**
-    - assurance/**
-    - releases/**
-    - dossiers/**
-    - evidence/**
-    - verification/**
-    - language-model/**
-    - range-reactor/README.md
-    - range-reactor/evidence/public-capability-snapshot-v1/**
     - .github/**
 change_control:
   control_change_declared: true
@@ -102,18 +76,13 @@ change_control:
   remote_actions_authorized:
     - commit
     - push
-    - update_pull_request
-    - merge_pull_request
-    - record_owner_acceptance
-    - close_operation
+    - update_draft_pull_request
   remote_actions_prohibited:
+    - merge_pull_request
     - activate_selected_successor
     - modify_repository_settings
     - modify_drive_controls
-    - publish_image
-    - mutate_environment
     - deploy
-    - trigger_workflow
     - release
     - invoke_runtime
     - admit_runtime
@@ -124,31 +93,24 @@ effects:
   runtime_effect: NONE
   deployment_effect: NONE
   release_effect: NONE
-  external_effect: PUBLIC_SOURCE_PROJECTION_ONLY
+  external_effect: NONE
 bridge:
   applicability: NOT_APPLICABLE_NON_PARTICIPANT
-  non_applicability_reason: Public execution-context clarification does not establish Runtime participation.
+  non_applicability_reason: Public evidence clarification is separate from Runtime participation.
   direct_invocation: PROHIBITED
   runtime_admission_status: NOT_ESTABLISHED
   participation_binding_status: NOT_ESTABLISHED
   canonical_runtime_receipt_status: NOT_ESTABLISHED
 evidence:
-  evidence_class: PUBLIC_CLARIFICATION_OF_ACCEPTED_OWNING_EVIDENCE
-  owning_repository: EHCOnomics-Systems/EHCO_Range_Reactor
-  owning_accepted_commit: eae888b784620ed37ed7d6704bcd91dedcf92936
-  benchmark_source_commit: e72b2a29e52878d300b44f0286259466352f73cc
-  physical_benchmark_host_file_sha256: C6B7DAB276DCB620CC17C4D7F7B1E8B0EE45D53F6B64E574F55D7CC7ADBF2ED2
-  phase_e_continuation_manifest_sha256: 083BA279EBE5456B8C874E087C6FEBD9624BB52D1FC2FFB48DFB410F6DB7E232
-  service_qualification_source_revision: 149314be7c4302d66bd93ac112e062292a2e815b
+  evidence_class: REPOSITORY_SOURCE_AND_DIFF_VALIDATION
   required_checks:
-    - Aggregate candidate diff is limited to ehco.operation.yaml and the two accepted RR operational-closure public evidence files.
-    - Accepted benchmark metrics, hashes, semantic-equivalence result, and 82/0 selected semantic closure remain unchanged.
-    - Physical benchmark wording states Docker/Linux execution on the owning Windows/Docker estate and does not imply production deployment or Tier One Runtime execution.
-    - Historical service/container qualification remains separately identified by its own source revision and evidence class.
-    - No new performance or correctness result is introduced.
-    - Accepted standing remains 52/53 and automatic successor remains prohibited.
-    - Required repository-owned checks succeed before merge.
+    - Candidate diff is limited to the declared RR operational-closure public evidence files and operation control.
+    - Accepted benchmark metrics, hashes, semantic result, and 52/53 standing remain unchanged.
+    - Repository validation, CodeQL, and assistant operation gate pass on the exact candidate.
+  proves:
+    - The bounded public clarification is source-controlled and qualified within its declared evidence ceiling.
+  evidence_not_created:
+    - New Range Reactor execution or qualification.
+    - Runtime participation, admission, binding, invocation, deployment, release, authority, or standing change.
 stop_condition:
-  - Exact clarification head passes public validation, CodeQL, and EHCO Assistant Operation Gate.
-  - Clarification PR merges using the exact qualified head.
-  - Operation is reconciled to COMPLETE with 52/53 preserved and no Runtime, deployment, release, authority, participation, standing, or successor effect.
+  - Stop PUBLISH after the exact candidate is qualified for bounded acceptance with all effects remaining NONE.
