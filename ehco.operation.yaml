@@ -5,36 +5,41 @@ protocol_reference:
   profile_version: 1.0.0
   protocol_version: 1.0.0
 repository: EHCOnomics-Systems/EHCOsystem
-governed_object: PUBLIC_TECHNICAL_PACKAGING_SCOPE_V1
+governed_object: PUBLIC_TECHNICAL_REVIEW_SURFACE_V1
 source_owner:
   repository: EHCOnomics-Systems/EHCOsystem
-  revision: fefe194a7d69250e7223ab6d2a52788284ce32be
+  revision: 77b9d82e0e1bb63d932bd0c62ed98e6dfc32e4f5
   repository_manifest_path: ehco.repository.yaml
-  controlling_source_reference: ehco.repository.yaml
+  controlling_source_reference: dossiers/public-technical-packaging/SCOPE-OF-WORK.md
 selection:
   selected_by: Edward Henry
   selection_class: EXPLICIT_OWNER_DIRECTION
   durable_reference: |-
-    Edward Henry explicitly selected publication of the up-to-date EHCOsystem public technical packaging scope in the repository folders on 2026-08-31. The selected scope includes the previously defined public technical baseline, application/component evidence indexing, reviewer verification and navigation, plus evidence freshness/currentness, cross-repository provenance, public evidence delta records, and reviewer failure-path diagnostics. This operation publishes the scope and dossier navigation only; it does not execute the later packaging implementation.
-    NEW_PATH:dossiers/public-technical-packaging/SCOPE-OF-WORK.md
+    After acceptance and merge of PUBLIC-TECHNICAL-PACKAGING-SCOPE-PUBLICATION-001, Edward Henry explicitly directed EHCO1 to proceed to the next steps on 2026-08-31. This selects the first coherent implementation block of the accepted public technical packaging scope: reviewer navigation, application/component evidence indexing with currentness/provenance, unified public verification orchestration, and reviewer failure-path diagnostics. It packages already-established public evidence and does not create new technical evidence or technical effects.
+    NEW_PATH:dossiers/public-technical-packaging/APPLICATION-EVIDENCE-INDEX.md
+    NEW_PATH:verification/verify_all_public.py
     OPERATION_STABLE_ENVELOPE_CHANGE=true
-  source_base_revision: fefe194a7d69250e7223ab6d2a52788284ce32be
-  expected_reviewed_head_revision: 0c2393282ccf807c3e88e1b76c1c5cdcd99c59b4
+  source_base_revision: 77b9d82e0e1bb63d932bd0c62ed98e6dfc32e4f5
+  expected_reviewed_head_revision: NOT_YET_QUALIFIED
 control_anchor: AGENTS.md
 status_owner_path: ehco.operation.yaml
 accepted_standing: 52/53
 active_operation:
-  operation_id: PUBLIC-TECHNICAL-PACKAGING-SCOPE-PUBLICATION-001
-  state: COMPLETE
-  authorization_mode: ACCEPT
-  bounded_outcome: Publish and accept the selected up-to-date public technical packaging scope in the dossiers public-review area and expose it from the dossier navigation surface.
-  remaining_bounded_work: []
+  operation_id: PUBLIC-TECHNICAL-REVIEW-SURFACE-IMPLEMENTATION-001
+  state: ACTIVE
+  authorization_mode: PUBLISH
+  bounded_outcome: Implement and publish the first reviewer-ready technical packaging block: canonical reviewer navigation, application/evidence provenance-currentness index, unified public verification route, and bounded failure diagnostics.
+  remaining_bounded_work:
+    - Qualify the exact PUBLISH candidate through the unified public verification route and applicable repository checks.
+    - Correct any in-scope validation or public-boundary failures and reverify.
+    - Present the exact qualified candidate through the repository acceptance path without expanding into new evidence generation or technical effects.
   interaction_seams:
-    - EHCOsystem owns this public scope and public-review navigation surface.
-    - Direct owning repositories and owning technical evidence retain exact implementation and physical-effect ownership.
+    - EHCOsystem owns the public review/index/orchestration surfaces created by this operation.
+    - Direct owning repositories retain exact implementation-state ownership.
+    - Owning technical evidence retains physical-effect ownership.
     - INSTANTIATED_EHCO_RUNTIME retains Tier One Runtime authority and current Runtime state.
   non_overlap:
-    - No packaging implementation, new evidence, benchmark, semantic test, deployment, release, Runtime action, authority, standing, participation, or successor.
+    - No new component engineering, benchmark execution, semantic-test execution, accepted evidence-byte mutation, deployment, release, Runtime action, authority, standing, participation, or successor.
   automatic_successor: PROHIBITED
   successor_operation: NOT_SELECTED
 execution_continuity:
@@ -50,17 +55,21 @@ execution_continuity:
 scope:
   permitted_paths:
     - ehco.operation.yaml
+    - getting-started/START-HERE.md
     - dossiers/README.md
-    - dossiers/public-technical-packaging/SCOPE-OF-WORK.md
+    - dossiers/public-technical-packaging/**
+    - verification/README.md
+    - verification/verify_all_public.py
   controlled_paths:
     - ehco.operation.yaml
   prohibited_paths:
     - AGENTS.md
     - ehco.repository.yaml
     - .github/**
-    - assurance/**
+    - assurance/PUBLIC-CLAIM-REGISTRY.json
     - evidence/**
-    - verification/**
+    - language-model/evidence/**
+    - range-reactor/evidence/**
 change_control:
   control_change_declared: true
   delete_or_move_authorized: false
@@ -68,23 +77,21 @@ change_control:
     - read_source
     - compare_source
     - audit
+    - create_file
     - update_file
     - run_checks
   local_actions_prohibited:
-    - create_file
     - move_file
     - delete_file
     - generate_artifact
   remote_actions_authorized:
-    - merge_pull_request
-    - record_owner_acceptance
-    - close_operation
-  remote_actions_prohibited:
     - create_branch
     - commit
     - push
     - open_draft_pull_request
     - update_draft_pull_request
+  remote_actions_prohibited:
+    - merge_pull_request
     - activate_selected_successor
     - modify_repository_settings
     - modify_drive_controls
@@ -105,25 +112,27 @@ effects:
   external_effect: NONE
 bridge:
   applicability: NOT_APPLICABLE_NON_PARTICIPANT
-  non_applicability_reason: Public scope publication is separate from Runtime participation.
+  non_applicability_reason: Public technical packaging and repository verification orchestration are separate from Runtime participation.
   direct_invocation: PROHIBITED
   runtime_admission_status: NOT_ESTABLISHED
   participation_binding_status: NOT_ESTABLISHED
   canonical_runtime_receipt_status: NOT_ESTABLISHED
 evidence:
-  evidence_class: OWNER_ACCEPTANCE_RECORD
+  evidence_class: PUBLIC_TECHNICAL_REVIEW_SURFACE_CANDIDATE
   required_checks:
-    - Scope file exists at dossiers/public-technical-packaging/SCOPE-OF-WORK.md.
-    - Dossiers navigation exposes the selected scope.
-    - Scope preserves source/evidence ownership and currentness distinctions.
-    - Scope includes cross-repository provenance, evidence-delta, unified verification, and reviewer failure-path requirements.
-    - Exact reviewed PUBLISH head 0c2393282ccf807c3e88e1b76c1c5cdcd99c59b4 passed applicable repository validation and CodeQL before this ACCEPT transition.
-    - Scope preserves 52/53 and all Runtime, deployment, release, authority, standing, participation, and successor effects as NONE or not established as applicable.
+    - Reviewer navigation exposes the canonical application/evidence index and unified public verification command.
+    - Application/evidence index preserves public projection, owning source/evidence, currentness, and claim-ceiling distinctions.
+    - Unknown owning revisions or ownership relationships are represented as NOT_ESTABLISHED_IN_PUBLIC_PACKAGE rather than inferred.
+    - Unified verifier orchestrates existing specialized validators without replacing their logic or evidence classes.
+    - Failure diagnostics identify the failing public check without converting non-observation into owning-state demotion.
+    - Existing accepted evidence bytes and canonical claim registry remain unchanged.
+    - Applicable repository validation, CodeQL, and EHCO Assistant Operation Gate pass for the exact candidate before ACCEPT.
+    - 52/53 and all Runtime, deployment, release, authority, standing, participation, and successor effects remain NONE or not established as applicable.
   proves:
-    - The owner-selected public technical packaging scope is accepted for publication as bounded public source.
+    - The exact candidate packages already-established public evidence into a reviewer-ready navigation, provenance, verification, and failure-diagnostic surface.
   evidence_not_created:
-    - Packaging implementation, new physical execution, new semantic correctness proof, Runtime participation, deployment, release, authority, standing effect, or successor activation.
+    - New implementation capability, physical execution, benchmark result, semantic correctness proof, Runtime participation, deployment, release, authority, standing effect, or successor activation.
 stop_condition:
-  - Exact ACCEPT candidate passes applicable repository validation, CodeQL, and EHCO Assistant Operation Gate.
-  - Protected-branch merge is authorized only for the exact accepted head after required checks pass.
+  - Exact PUBLISH candidate passes unified public verification and applicable repository validation, CodeQL, and EHCO Assistant Operation Gate.
+  - Candidate remains unmerged until lawful ACCEPT transition records the exact reviewed PUBLISH head.
   - Stop with Runtime, deployment, release, authority, standing, participation, and successor effects remaining NONE or not established as applicable.
