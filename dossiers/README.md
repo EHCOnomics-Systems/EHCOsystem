@@ -34,7 +34,7 @@ Use the [Runtime, Repository, and Test-Estate Boundary](../architecture/runtime-
 
 ## Public technical packaging scope
 
-The selected scope for the next public technical packaging pass is maintained separately from the canonical architecture dossier so that packaging work does not rewrite or overstate accepted architecture evidence.
+The selected scope for the next public technical packaging pass is maintained separately from the canonical architecture dossier, preserving accepted architecture evidence while packaging work develops its own bounded review surface.
 
 - [Public Technical Packaging — Scope of Work v1.0](public-technical-packaging/SCOPE-OF-WORK.md) — reviewer-ready baseline, application/component evidence indexing, currentness, cross-repository provenance, evidence deltas, unified verification, and reviewer failure paths.
 
