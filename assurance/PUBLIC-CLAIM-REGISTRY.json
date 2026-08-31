@@ -1,11 +1,11 @@
 {
   "schema": "ehco.public.claim-registry.v1",
-  "registry_version": "1.1.0",
-  "published": "2026-08-30",
-  "source_review_date": "2026-08-30",
-  "public_repository_base": "2ee2eb0ac9cdf2c257a48460b8e83fda70b87952",
-  "public_repository_base_semantics": "accepted canonical-main Full Flex precedence materialization used as the source base for this closeout review",
-  "purpose": "Canonical machine-readable public propositions for EHCOsystem, with present EHCO AI-OS Runtime review routed through the current Full Flex evidence identity before historical packet lineage.",
+  "registry_version": "1.2.0",
+  "published": "2026-08-31",
+  "source_review_date": "2026-08-31",
+  "public_repository_base": "451ccd2603debcb0691893b7fd262fdbfbc89cc3",
+  "public_repository_base_semantics": "accepted canonical-main Full Flex publication-status closeout used as the source base for this public evidence synchronization",
+  "purpose": "Canonical machine-readable public propositions for EHCOsystem, with present EHCO AI-OS Runtime review routed through the current Full Flex evidence identity and Range Reactor claims separated by evidence class.",
   "standing_interpretation": {
     "accepted_standing": "52/53",
     "public_meaning": "accepted numerical Runtime standing corridor under the EHCO standing framework",
@@ -22,7 +22,7 @@
     "accepted_standing": "52/53",
     "docker_portability": "PRIMARY_ACCESSIBLE_RUNTIME_PROJECTION",
     "precedence": "CURRENT_FULL_FLEX_FIRST; CLAIM_REGISTRY_SECOND; OWNING_RUNTIME_DOCKER_EVIDENCE_FOR_TECHNICAL_EFFECTS; PUBLIC_EVIDENCE_COMPANION_PACKETS_00_08_RETAINED_AS_HISTORICAL_EVENT_TIME_LINEAGE",
-    "exact_byte_publication": "PENDING_LAWFUL_BYTE_CUSTODY_UNLESS_PACKET_PATH_IS_PRESENT_AND_HASH_VERIFIED"
+    "exact_byte_publication": "PUBLISHED_EXACT_BYTES_HASH_VERIFIED"
   },
   "claims": [
     {
@@ -100,8 +100,8 @@
       "public_statement": "EHCO Range Reactor is a mature deterministic proof-carrying implication, reachability, range and reasoning system.",
       "maturity": "MATURE ESTABLISHED SYSTEM CAPABILITY",
       "evidence_class": "governed architecture + accepted source/qualification identity",
-      "public_references": ["evidence/runtime/full-flex/v1/README.md", "range-reactor/README.md", "range-reactor/evidence/public-capability-snapshot-v1/README.md", "architecture/EHCO-TECHNOLOGY-ESTATE.md"],
-      "verification_method": "Inspect the current Full Flex synthesis for the current public relationship and the public Range Reactor capability route and dedicated snapshot validator for component evidence.",
+      "public_references": ["evidence/runtime/full-flex/v1/README.md", "range-reactor/README.md", "range-reactor/evidence/public-capability-snapshot-v1/README.md", "range-reactor/evidence/operational-closure-v1/README.md", "architecture/EHCO-TECHNOLOGY-ESTATE.md"],
+      "verification_method": "Inspect the Full Flex synthesis, Range Reactor component route, capability snapshot and operational-closure evidence with their dedicated validators.",
       "disclosure_ceiling": "Deterministic Range Reactor system capability and bounded public qualification evidence.",
       "status": "ESTABLISHED"
     },
@@ -110,8 +110,8 @@
       "public_statement": "Owning Range Reactor qualification evidence establishes physical service execution, fail-closed behavior, timeout/unavailability handling, restart/recovery, portability and diagnostic performance for the qualified component line.",
       "maturity": "PHYSICALLY_QUALIFIED_COMPONENT_LINE",
       "evidence_class": "owning physical host qualification evidence",
-      "public_references": ["evidence/runtime/full-flex/v1/README.md", "TECHNICAL-DILIGENCE.md", "ECOSYSTEM-DILIGENCE.md", "assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md", "range-reactor/README.md"],
-      "verification_method": "Use the Full Flex route for current synthesis, the public capability route for deterministic semantics and controlled technical diligence for the physical host qualification record.",
+      "public_references": ["evidence/runtime/full-flex/v1/README.md", "TECHNICAL-DILIGENCE.md", "ECOSYSTEM-DILIGENCE.md", "assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md", "range-reactor/README.md", "range-reactor/evidence/operational-closure-v1/README.md"],
+      "verification_method": "Use the Full Flex route for current synthesis, the public capability route for deterministic semantics, the operational-closure route for the separate physical benchmark context, and controlled technical diligence for historical physical host qualification.",
       "disclosure_ceiling": "Physical component qualification; Runtime relationship remains a separate evidence dimension.",
       "status": "ESTABLISHED"
     },
@@ -122,7 +122,27 @@
       "evidence_class": "owning physical host qualification evidence",
       "public_references": ["evidence/runtime/full-flex/v1/README.md", "TECHNICAL-DILIGENCE.md", "ECOSYSTEM-DILIGENCE.md", "assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md"],
       "verification_method": "Use the Full Flex route for current synthesis and review the stated physical qualification workload and controlled owning performance record.",
-      "disclosure_ceiling": "Diagnostic component performance for the stated 50-request workload; comparative system speedup is reserved for matched-workload evidence.",
+      "disclosure_ceiling": "Diagnostic component performance for the stated 50-request workload; comparative system speedup is a separate matched-workload evidence class.",
+      "status": "ESTABLISHED"
+    },
+    {
+      "claim_id": "RR-MATCHED-AB-COLLAPSE-PERFORMANCE",
+      "public_statement": "Range Reactor matched exploration-time A/B evidence on the selected benchmark recorded 14.304307x wall-clock speedup, 14.208722x CPU-time speedup, 94.755854% Python peak-allocation reduction, 96.729688% state-work reduction and 90.184049% transition-work reduction while preserving all 720 histories.",
+      "maturity": "ACCEPTED_MATCHED_AB_OPERATIONAL_CLOSURE_EVIDENCE",
+      "evidence_class": "accepted owning physical Docker/Linux matched-workload benchmark evidence",
+      "public_references": ["range-reactor/evidence/operational-closure-v1/README.md", "range-reactor/evidence/operational-closure-v1/PUBLIC_RESULT.json", "range-reactor/README.md"],
+      "verification_method": "Run verification/validate_public_range_reactor_operational_closure.py and inspect the accepted public result projection. The speedup applies only to the selected matched benchmark and is not a universal Range Reactor speedup.",
+      "disclosure_ceiling": "Selected RR-EXPLORATION-AB-001 matched benchmark only; 2 warm-up pairs and 10 measured pairs; memory is Python tracemalloc peak allocation, not RSS.",
+      "status": "ESTABLISHED"
+    },
+    {
+      "claim_id": "RR-SEMANTIC-CLOSURE",
+      "public_statement": "Range Reactor selected current semantic-closure corpus completed 82 passed and 0 failed with deterministic replay and bounded semantic-preservation evidence for the selected current corpus.",
+      "maturity": "COMPLETE_FOR_SELECTED_RANGE_REACTOR_V1_SCOPE",
+      "evidence_class": "accepted deterministic selected-corpus semantic closure evidence",
+      "public_references": ["range-reactor/evidence/operational-closure-v1/README.md", "range-reactor/evidence/operational-closure-v1/PUBLIC_RESULT.json", "range-reactor/README.md"],
+      "verification_method": "Run verification/validate_public_range_reactor_operational_closure.py and inspect the selected-corpus claim ceiling and deterministic replay digest in PUBLIC_RESULT.json.",
+      "disclosure_ceiling": "SELECTED_CURRENT_SEMANTIC_CORPUS_ONLY; generic scalar foresight accuracy and universal or unbounded correctness are not established.",
       "status": "ESTABLISHED"
     }
   ]

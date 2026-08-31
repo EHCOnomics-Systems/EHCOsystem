@@ -5,34 +5,37 @@ protocol_reference:
   profile_version: 1.0.0
   protocol_version: 1.0.0
 repository: EHCOnomics-Systems/EHCOsystem
-governed_object: FULL_FLEX_PUBLICATION_STATUS_RECONCILIATION_V1
+governed_object: RANGE_REACTOR_PUBLIC_EVIDENCE_SYNCHRONIZATION_V1
 source_owner:
   repository: EHCOnomics-Systems/EHCOsystem
-  revision: f429bc78b4af4e44427eda85e00b216900e18a16
+  revision: 451ccd2603debcb0691893b7fd262fdbfbc89cc3
   repository_manifest_path: ehco.repository.yaml
   controlling_source_reference: ehco.repository.yaml
 selection:
   selected_by: Edward Henry
   selection_class: EXPLICIT_OWNER_DIRECTION
   durable_reference: |-
-    Edward Henry explicitly selected correction and acceptance of stale Full Flex exact-byte publication wording on 2026-08-31. PR #47 was accepted and squash-merged from its exact qualified candidate into canonical public main f429bc78b4af4e44427eda85e00b216900e18a16. This control-only transition closes that same selected operation after acceptance; it creates no new packet publication, Runtime, deployment, release, authority, standing, participation, or successor effect.
+    Edward Henry explicitly selected the independently audited public-repository synchronization sequence on 2026-08-31: preserve the historical RR service diagnostic claim, add distinct matched A/B collapse-performance and bounded semantic-closure claims, synchronize the claim validator, add a dedicated operational-closure validator, and expose Capability Snapshot plus Operational Closure Evidence from the root and Range Reactor navigation surfaces. The operation also reconciles the Full Flex exact-byte status field in the canonical claim registry to already accepted Git custody. Exact substantive candidate 69367557bd5345e203498dd63b80393140b1e9aa was qualified on canonical base 451ccd2603debcb0691893b7fd262fdbfbc89cc3 through repository validation, CodeQL, and EHCO Assistant Operation Gate; this ACCEPT transition records that reviewed candidate and authorizes its bounded protected-branch merge only.
+    NEW_PATH:verification/validate_public_range_reactor_operational_closure.py
     OPERATION_STABLE_ENVELOPE_CHANGE=true
-  source_base_revision: f429bc78b4af4e44427eda85e00b216900e18a16
-  expected_reviewed_head_revision: f429bc78b4af4e44427eda85e00b216900e18a16
+  source_base_revision: 451ccd2603debcb0691893b7fd262fdbfbc89cc3
+  expected_reviewed_head_revision: 69367557bd5345e203498dd63b80393140b1e9aa
 control_anchor: AGENTS.md
 status_owner_path: ehco.operation.yaml
 accepted_standing: 52/53
 active_operation:
-  operation_id: FULL-FLEX-PUBLICATION-STATUS-RECONCILIATION-001
+  operation_id: RR-PUBLIC-EVIDENCE-SYNCHRONIZATION-001
   state: COMPLETE
   authorization_mode: ACCEPT
-  bounded_outcome: Reconciled and accepted the dedicated Full Flex evidence README to the already accepted exact-byte publication state without changing packet evidence or technical state.
+  bounded_outcome: Synchronized and accepted public RR navigation, machine-readable claims, claim validation, and dedicated operational-closure validation to the already accepted operational-closure evidence without changing the evidence itself.
   remaining_bounded_work: []
   interaction_seams:
-    - Canonical EHCOsystem Git owns the accepted public packet bytes and accepted public evidence README representation at f429bc78b4af4e44427eda85e00b216900e18a16.
+    - EHCOsystem owns public claims, navigation, and public-source validators.
+    - EHCOnomics-Systems/EHCO_Range_Reactor owns the accepted implementation and operational-closure evidence projected here.
+    - Physical benchmark and historical service qualification remain separate owning evidence classes.
     - INSTANTIATED_EHCO_RUNTIME retains Tier One Runtime authority and current Runtime state.
   non_overlap:
-    - No packet bytes, implementation, Runtime state, deployment, release, authority, standing, participation, or successor are changed.
+    - No new RR benchmark, semantic test, evidence artifact, implementation change, deployment, release, Runtime action, authority, standing, participation, or successor.
   automatic_successor: PROHIBITED
   successor_operation: NOT_SELECTED
 execution_continuity:
@@ -48,15 +51,22 @@ execution_continuity:
 scope:
   permitted_paths:
     - ehco.operation.yaml
+    - README.md
+    - range-reactor/README.md
+    - assurance/PUBLIC-CLAIM-REGISTRY.json
+    - verification/validate_public_claim_registry.py
+    - verification/validate_public_range_reactor_operational_closure.py
+    - verification/README.md
   controlled_paths:
     - ehco.operation.yaml
+    - assurance/PUBLIC-CLAIM-REGISTRY.json
+    - verification/validate_public_claim_registry.py
+    - verification/validate_public_range_reactor_operational_closure.py
   prohibited_paths:
     - AGENTS.md
     - ehco.repository.yaml
     - .github/**
-    - evidence/**
-    - range-reactor/**
-    - language-model/**
+    - range-reactor/evidence/operational-closure-v1/**
 change_control:
   control_change_declared: true
   delete_or_move_authorized: false
@@ -94,7 +104,7 @@ effects:
   external_effect: NONE
 bridge:
   applicability: NOT_APPLICABLE_NON_PARTICIPANT
-  non_applicability_reason: Public evidence README reconciliation and closeout are separate from Runtime participation.
+  non_applicability_reason: Public claim and verification synchronization is separate from Runtime participation.
   direct_invocation: PROHIBITED
   runtime_admission_status: NOT_ESTABLISHED
   participation_binding_status: NOT_ESTABLISHED
@@ -102,21 +112,19 @@ bridge:
 evidence:
   evidence_class: OWNER_ACCEPTANCE_RECORD
   required_checks:
-    - PR #47 was accepted and squash-merged from its exact qualified candidate into f429bc78b4af4e44427eda85e00b216900e18a16.
-    - Repository validation, CodeQL, and the applicable assistant operation gate were satisfied for the accepted substantive candidate.
-    - This closeout candidate changes only ehco.operation.yaml from accepted substantive public main.
-    - Operation state is COMPLETE and remaining_bounded_work is empty.
-    - Accepted standing remains 52/53.
-    - Automatic successor remains prohibited and no successor is selected.
-    - Required protected-branch checks succeed on the exact closeout head before merge.
+    - Exact substantive candidate 69367557bd5345e203498dd63b80393140b1e9aa passed repository validation, CodeQL, and EHCO Assistant Operation Gate on canonical base 451ccd2603debcb0691893b7fd262fdbfbc89cc3.
+    - Historical RR-PERFORMANCE remains a distinct diagnostic service qualification claim.
+    - Matched A/B performance remains separately represented with 14.304307x wall-clock and 14.208722x CPU speedup, 94.755854 percent allocation reduction, 1957 to 64 states, 1956 to 192 transitions, and 720 histories preserved.
+    - Semantic closure remains separately represented as 82 passed and 0 failed with the selected-current-corpus ceiling and no universal or unbounded correctness claim.
+    - Root and RR component navigation expose both Capability Snapshot and Operational Closure Evidence.
+    - Full Flex exact-byte registry status reflects already accepted packet custody.
+    - This exact ACCEPT candidate passes protected repository validation, CodeQL, and EHCO Assistant Operation Gate before merge.
   proves:
-    - Owner-selected Full Flex public status reconciliation is accepted and complete in canonical source.
-    - The accepted public representation remains separate from Runtime authority and technical effects.
+    - Owner-selected public RR synchronization is qualified for bounded acceptance and canonical-source merge within the declared evidence ceiling.
   evidence_not_created:
-    - New packet publication, Runtime state, deployment, release, authority, participation, standing change, or successor activation.
+    - New physical execution, semantic correctness proof, Runtime participation, deployment, release, authority, standing effect, or successor activation.
 stop_condition:
-  - Exact control-only closeout head passes repository validation, CodeQL, and EHCO Assistant Operation Gate.
-  - Closeout change remains limited to ehco.operation.yaml.
-  - Closeout PR merges through protected main using the exact qualified head.
-  - Accepted main is read back with state COMPLETE, remaining_bounded_work empty, accepted standing 52/53, and automatic successor prohibited.
-  - Stop with Runtime, deployment, release, authority, standing, participation, and successor effects remaining NONE.
+  - Exact ACCEPT head passes repository validation, CodeQL, and EHCO Assistant Operation Gate.
+  - PR #48 merges through protected main using that exact qualified head.
+  - Canonical main is read back with the synchronized public claims and operation state COMPLETE.
+  - Stop with Runtime, deployment, release, authority, standing, participation, and successor effects remaining NONE or not established as applicable.

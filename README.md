@@ -37,7 +37,7 @@ The **foundational and shared EHCOsystem spine is substantially established**. C
 The principal shared spine has differentiated maturity:
 
 - **EHCO Language Model** — mature deterministic computational-language system built as `DETERMINISTIC_COMPUTATIONAL_LANGUAGE / SINGLE_PATH / EXPLICIT_EHCO_COMPUTATION / ZERO_WEIGHT_ONLY / ZERO WEIGHTS TRAINED`. Its accepted source includes the Language Kernel, Language Math, deterministic tokenizer, evaluation, service boundary, schemas, registries, fixtures, deterministic tests, packaging, dependency locks, owner seams, and production-lifecycle source. The system is in an **advanced near-final maturation cycle** focused on strengthening computational meaning, deepening linguistic and reasoning capability, tightening evidence and owner integration, and extending integrated deterministic qualification across the established architecture.
-- **EHCO Range Reactor** — mature deterministic proof-carrying implication, reachability, range and reasoning system with accepted executable reference semantics, identity/replay, contradiction and frontier preservation, independently verified finite semantic collapse, service/container boundaries, production/release controls, Prime/Primordia interoperability, and physical host qualification covering service execution, fail-closed behavior, timeout/unavailability handling, restart/recovery, portability, and diagnostic performance.
+- **EHCO Range Reactor** — mature deterministic proof-carrying implication, reachability, range and reasoning system with accepted executable reference semantics, identity/replay, contradiction and frontier preservation, independently verified finite semantic collapse, service/container boundaries, production/release controls, Prime/Primordia interoperability, physical host qualification, and accepted selected-scope operational closure. Its matched exploration-time A/B records **14.304307x wall-clock** speedup on the selected benchmark with **82 passed / 0 failed** selected semantic closure; those results remain exclusively within their published selected-benchmark and selected-current-corpus evidence ceilings.
 - **EHCO RAG** — governed retrieval, context, source-custody, provenance, and evidence component with an accepted controlled baseline and active Stage 1 implementation.
 - **EHCO Prime** — advanced individual-facing relationship and assistant-coordination service with mature source/control hardening.
 - **EHCO Agent Connect** — advanced registry, discovery, compatibility, health-observation, and candidate-routing coordination service with mature source/control hardening.
@@ -57,7 +57,7 @@ The public representation is machine-checked against a canonical claim registry 
 
 - **[Current Runtime Evidence](runtime/README.md)** — first public route for the established EHCO AI-OS Runtime environment and Full Flex packet identity.
 - **[Canonical Public Claim Registry](assurance/PUBLIC-CLAIM-REGISTRY.json)** — machine-readable current propositions, evidence classes, verification routes, and disclosure ceilings.
-- **[Public Repository Validation](verification/README.md)** — deterministic repository, claim-registry, Language Model, Range Reactor, and release-identity verification routes.
+- **[Public Repository Validation](verification/README.md)** — deterministic repository, claim-registry, Language Model, Range Reactor capability, Range Reactor operational-closure, and release-identity verification routes.
 - **[EHCO AI-OS Technical Diligence](TECHNICAL-DILIGENCE.md)** — focused Tier One route through local-operation evidence, observed Runtime evidence, implementation anchors, and performance characterization.
 
 ## EHCOsystem at a glance
@@ -97,9 +97,14 @@ The **EHCO Language Model Public Test Snapshot v1** publishes seven exact synthe
 
 **[Inspect the Language Model test evidence](language-model/evidence/public-test-snapshot-v1/README.md)**
 
-The **EHCO Range Reactor Public Capability Snapshot v1** publishes eight public-safe synthetic capability vectors covering deterministic replay, contradiction/frontier preservation, modal distinction, semantic collapse with witness-fiber custody, independent collapse verification, source-mutation identity sensitivity, and grounded proof custody. Its manifest binds the snapshot to the accepted owning-source revision reviewed for publication while keeping controlled implementation source private.
+### Range Reactor — Capability Snapshot + Operational Closure Evidence
 
-**[Inspect the Range Reactor capability evidence](range-reactor/evidence/public-capability-snapshot-v1/README.md)**
+The **EHCO Range Reactor Public Capability Snapshot v1** publishes eight public-safe synthetic capability vectors covering deterministic replay, contradiction/frontier preservation, modal distinction, semantic collapse with witness-fiber custody, independent collapse verification, source-mutation identity sensitivity, and grounded proof custody.
+
+The separate **Range Reactor Operational Closure Evidence v1** publishes the accepted selected-benchmark matched A/B result — **14.304307x wall-clock**, **14.208722x CPU-time**, **94.755854%** Python peak-allocation reduction, **1,957 → 64** states, **1,956 → 192** transitions and **720 histories preserved** — together with **82 passed / 0 failed** selected semantic closure, deterministic replay, physical Docker/Linux benchmark context, hashes and explicit claim ceilings. Its public ceiling is the selected benchmark and selected current semantic corpus; universal/unbounded correctness, generic scalar foresight accuracy, production deployment and Tier One Runtime participation remain outside that evidence class.
+
+**[Inspect the Range Reactor capability evidence](range-reactor/evidence/public-capability-snapshot-v1/README.md)**  
+**[Inspect the Range Reactor operational-closure evidence](range-reactor/evidence/operational-closure-v1/README.md)**
 
 ## Architecture, evidence, and governance
 

@@ -1,11 +1,11 @@
 ---
 title: EHCO Range Reactor
-version: 1.0
+version: 1.1
 status: current-public-component-record
-published: 2026-08-28
+published: 2026-08-31
 maintainer: EHCOnomics
-evidence_class: public-component-capability-and-maturity-record
-evidence_scope: accepted-source capability, qualification maturity and evidence relationships
+evidence_class: public-component-capability-maturity-and-operational-closure-record
+evidence_scope: accepted-source capability, qualification maturity, matched benchmark, bounded semantic closure and evidence relationships
 ---
 
 # EHCO Range Reactor
@@ -44,18 +44,24 @@ For finite supported collapse classes, equivalent semantic states can be represe
 
 **Maturity:** mature deterministic proof-carrying implication, reachability, range and reasoning system with accepted current capability and qualification evidence.
 
-This mature status describes the established Range Reactor system capability demonstrated by accepted source and qualification evidence. Deployment, production activation and Runtime participation are separate lifecycle/effect dimensions established by their own evidence; they neither extend nor reduce the system-capability maturity claim.
+The current selected Range Reactor v1 operational-closure scope is complete. The accepted matched exploration-time A/B recorded **14.304307x wall-clock** and **14.208722x CPU-time** speedup on the selected benchmark, with **94.755854%** Python peak-allocation reduction, **1,957 → 64** states, **1,956 → 192** transitions and all **720 histories preserved**. The selected current semantic-closure corpus completed **82 passed / 0 failed** with deterministic replay. These are bounded evidence propositions, not universal Range Reactor speed or correctness claims.
+
+Deployment, production activation and Runtime participation are separate lifecycle/effect dimensions established by their own evidence; they **neither extend nor reduce the system-capability maturity claim**. The selected operational-closure claims remain separately bounded by their accepted benchmark and semantic-corpus evidence ceilings.
 
 ## Public evidence
 
-The [EHCO Range Reactor Public Capability Snapshot v1](evidence/public-capability-snapshot-v1/README.md) publishes eight public-safe synthetic capability vectors derived from accepted owning-source review. The package covers deterministic replay, contradiction/frontier preservation, modal distinction, quotient witness-fiber custody, independent collapse verification, source-mutation identity sensitivity, and grounded proof custody.
+Range Reactor now exposes two complementary public evidence routes:
 
-The snapshot is a bounded inspection surface. Controlled technical diligence can extend review into exact accepted source, qualification evidence and separately owned technical-effect evidence where the proposition requires it.
+- **[Public Capability Snapshot v1](evidence/public-capability-snapshot-v1/README.md)** — eight public-safe synthetic capability vectors covering deterministic replay, contradiction/frontier preservation, modal distinction, quotient witness-fiber custody, independent collapse verification, source-mutation identity sensitivity, and grounded proof custody.
+- **[Operational Closure Evidence v1](evidence/operational-closure-v1/README.md)** — accepted matched A/B performance, physical Docker/Linux benchmark context, separately classified historical container/service qualification, selected semantic closure, deterministic replay, hashes, and explicit claim ceilings.
+
+The capability snapshot is a bounded inspection surface. The operational-closure projection is a separate evidence class bound to accepted owning evidence. Neither route establishes Tier One Runtime participation, production deployment, release, authority or standing effects.
 
 ## Evidence relationships
 
 - **Component identity and capability maturity:** this record plus current accepted owning-source review.
 - **Selected public-safe capability evidence:** Range Reactor Public Capability Snapshot v1.
+- **Selected operational-closure evidence:** Range Reactor Operational Closure Evidence v1.
 - **Deployment and production effects:** owning build/deployment/production evidence.
 - **Tier One Runtime participation, authority, state and proof:** instantiated EHCO Runtime evidence.
 
