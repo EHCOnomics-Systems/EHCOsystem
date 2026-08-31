@@ -2,7 +2,19 @@
 
 This directory contains repository-side validation tooling for the canonical public dossier, historical Public Evidence Companion, current Full Flex Runtime evidence route, Instantiated AI architecture, EHCOsystem technology-estate architecture, navigation, maturity representation, evidence matrices, canonical public claim registry, component evidence snapshots, Range Reactor operational closure, disclosure controls and publication identity.
 
-## Run locally
+## Run the complete public verification route
+
+From repository root:
+
+```bash
+python3 verification/verify_all_public.py
+```
+
+`verify_all_public.py` is an orchestrator. It runs the existing specialized validators in the stable order below, stops at the first failure, identifies the failing validation class, and preserves the evidence boundary of each underlying check. It does not duplicate validator logic and does not create Runtime, implementation, physical-execution, authority, standing, deployment, or release evidence.
+
+The successful terminal result is `PASS ALL (7/7)`.
+
+## Run validators individually
 
 ```bash
 python3 verification/validate_public_evidence.py
@@ -13,6 +25,24 @@ python3 verification/validate_public_range_reactor_snapshot.py
 python3 verification/validate_public_range_reactor_operational_closure.py
 python3 verification/validate_release_identity.py
 ```
+
+## Failure interpretation
+
+A failed validator establishes a failure of that public repository/package check for the checkout being tested. It does **not** by itself establish a change, demotion, contradiction, or loss of standing in an owning implementation repository, owning physical evidence, or `INSTANTIATED_EHCO_RUNTIME`.
+
+Use the failing label/path reported by `verify_all_public.py` as the first inspection route:
+
+| Orchestrator label | Inspection surface |
+|---|---|
+| `PUBLIC_REPOSITORY_INTEGRITY` | `validate_public_evidence.py`; public architecture/navigation/evidence integrity |
+| `PUBLIC_CLAIM_REGISTRY` | `assurance/PUBLIC-CLAIM-REGISTRY.json`; `validate_public_claim_registry.py` |
+| `CURRENT_RUNTIME_PUBLIC_EVIDENCE` | `runtime/README.md`; `evidence/runtime/full-flex/v1/`; `validate_current_runtime_evidence.py` |
+| `LANGUAGE_MODEL_PUBLIC_SNAPSHOT` | `language-model/evidence/public-test-snapshot-v1/`; `validate_public_lm_test_snapshot.py` |
+| `RANGE_REACTOR_CAPABILITY_SNAPSHOT` | `range-reactor/evidence/public-capability-snapshot-v1/`; `validate_public_range_reactor_snapshot.py` |
+| `RANGE_REACTOR_OPERATIONAL_CLOSURE` | `range-reactor/evidence/operational-closure-v1/`; `validate_public_range_reactor_operational_closure.py` |
+| `REGISTERED_RELEASE_IDENTITY` | registered public provenance surfaces; `validate_release_identity.py` |
+
+For component/source ownership and currentness routing, see `dossiers/public-technical-packaging/APPLICATION-EVIDENCE-INDEX.md`.
 
 ## Current Runtime evidence validation
 
