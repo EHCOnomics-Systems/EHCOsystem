@@ -19,6 +19,7 @@ selection:
     NEW_PATH:dossiers/public-technical-packaging/SCOPE-OF-WORK.md
     OPERATION_STABLE_ENVELOPE_CHANGE=true
   source_base_revision: fefe194a7d69250e7223ab6d2a52788284ce32be
+  expected_reviewed_head_revision: 0c2393282ccf807c3e88e1b76c1c5cdcd99c59b4
 control_anchor: AGENTS.md
 status_owner_path: ehco.operation.yaml
 accepted_standing: 52/53
@@ -27,7 +28,6 @@ active_operation:
   state: COMPLETE
   authorization_mode: ACCEPT
   bounded_outcome: Publish and accept the selected up-to-date public technical packaging scope in the dossiers public-review area and expose it from the dossier navigation surface.
-  expected_reviewed_head_revision: 0c2393282ccf807c3e88e1b76c1c5cdcd99c59b4
   remaining_bounded_work: []
   interaction_seams:
     - EHCOsystem owns this public scope and public-review navigation surface.
