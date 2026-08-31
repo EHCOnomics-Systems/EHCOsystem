@@ -15,7 +15,7 @@ selection:
   selected_by: Edward Henry
   selection_class: EXPLICIT_OWNER_DIRECTION
   durable_reference: |-
-    Edward Henry explicitly selected correction and acceptance of stale Full Flex exact-byte publication wording on 2026-08-31. Canonical public Git already contains the accepted exact JSON bytes, SHA-256 companion, and packet receipt; this operation reconciles the dedicated Full Flex evidence README status language only.
+    Edward Henry explicitly selected correction and acceptance of stale Full Flex exact-byte publication wording on 2026-08-31. Canonical public Git already contains the accepted exact JSON bytes, SHA-256 companion, and packet receipt; this operation reconciles the dedicated Full Flex evidence README status language only. The candidate is based on canonical main f9e02df3bac913281e0543033e3145a23a187428 after acceptance of the separate Range Reactor execution-context clarification.
   source_base_revision: f9e02df3bac913281e0543033e3145a23a187428
   expected_reviewed_head_revision: NOT_APPLICABLE_UNTIL_ACCEPT
 control_anchor: AGENTS.md
