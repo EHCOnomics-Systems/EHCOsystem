@@ -19,6 +19,7 @@ selection:
   selection_class: EXPLICIT_OWNER_DIRECTION
   durable_reference: >-
     Edward Henry explicitly selected merge acceptance for the exact-byte Full Flex publication.
+    OPERATION_STABLE_ENVELOPE_CHANGE=true
     Reviewed PUBLISH head a8aa111b6727de1d0d4e48d12d89ba1f3b45385e passed Validate public repository
     and CodeQL and contains exactly the selected Full Flex JSON, associated owning-host receipt,
     and bounded operation control relative to accepted base aa681e61f8548add05ef9cb2872ef54901472ba3.
