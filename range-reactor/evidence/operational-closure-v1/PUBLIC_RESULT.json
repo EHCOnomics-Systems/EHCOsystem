@@ -9,7 +9,7 @@
     "contract": "RR-EXPLORATION-AB-001",
     "workload_id": "rr-independent-obligation-permutation-n6-v1",
     "workload_sha256": "44ad414852b2b23bc64cc415c8a433878d08da0698f17446f28c6ffdfa1ed8f6",
-    "execution_evidence_class": "PHYSICAL_LOCAL_DOCKER_LINUX_EXECUTION",
+    "execution_evidence_class": "PHYSICAL_DOCKER_LINUX_EXECUTION_ON_OWNING_WINDOWS_DOCKER_ESTATE",
     "execution_python": "CPython 3.11.16",
     "execution_platform": "Docker Desktop Linux x86_64 / WSL2",
     "wall_clock_speedup_x": 14.304307,
