@@ -16,6 +16,7 @@ selection:
   selection_class: EXPLICIT_OWNER_DIRECTION
   durable_reference: |-
     Edward Henry explicitly selected correction and acceptance of stale Full Flex exact-byte publication wording on 2026-08-31. PR #47 was accepted and squash-merged from its exact qualified candidate into canonical public main f429bc78b4af4e44427eda85e00b216900e18a16. This control-only transition closes that same selected operation after acceptance; it creates no new packet publication, Runtime, deployment, release, authority, standing, participation, or successor effect.
+    OPERATION_STABLE_ENVELOPE_CHANGE=true
   source_base_revision: f429bc78b4af4e44427eda85e00b216900e18a16
   expected_reviewed_head_revision: f429bc78b4af4e44427eda85e00b216900e18a16
 control_anchor: AGENTS.md
@@ -100,9 +101,8 @@ bridge:
   canonical_runtime_receipt_status: NOT_ESTABLISHED
 evidence:
   evidence_class: OWNER_ACCEPTANCE_RECORD
-  accepted_public_main: f429bc78b4af4e44427eda85e00b216900e18a16
   required_checks:
-    - PR #47 was accepted and squash-merged from its exact qualified candidate.
+    - PR #47 was accepted and squash-merged from its exact qualified candidate into f429bc78b4af4e44427eda85e00b216900e18a16.
     - Repository validation, CodeQL, and the applicable assistant operation gate were satisfied for the accepted substantive candidate.
     - This closeout candidate changes only ehco.operation.yaml from accepted substantive public main.
     - Operation state is COMPLETE and remaining_bounded_work is empty.
