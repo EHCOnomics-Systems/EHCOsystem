@@ -1,17 +1,17 @@
 ---
 title: Start Here
-version: 2.7
+version: 2.8
 status: current-public-navigation
-published: 2026-08-30
+published: 2026-08-31
 maintainer: EHCOnomics
 evidence_class: navigation
 evidence_scope: public review routing
-supersedes: version 2.6
+supersedes: version 2.7
 ---
 
 # Start Here
 
-EHCOsystem has four primary review routes.
+EHCOsystem has four primary review routes. For a technical-diligence review, use the application/evidence index and unified verifier rather than reconstructing provenance or validator order manually.
 
 ## 1. Current EHCO AI-OS Runtime — start here
 
@@ -39,15 +39,23 @@ The foundational/shared spine is substantially established. Current development 
 
 Use the **[Public Architecture Diagrams](../architecture/diagrams/README.md)** for the visual map.
 
-## 3. Inspect and verify the evidence
+## 3. Inspect provenance and verify the evidence
 
-Use the **[Full Flex Public Packet v1 evidence index](../evidence/runtime/full-flex/v1/README.md)** for current packet identity and exact-byte publication status.
+Start with the **[Public Application & Evidence Index](../dossiers/public-technical-packaging/APPLICATION-EVIDENCE-INDEX.md)**. It maps the principal public components and propositions to owning source/evidence domains, accepted public identities where established, public evidence routes, validators, currentness classifications, and explicit claim ceilings.
 
-Read the **[Canonical Public Claim Registry](../assurance/PUBLIC-CLAIM-REGISTRY.json)** for machine-readable current propositions and the **[Ecosystem Claim → Evidence Matrix](../assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md)** for claim, maturity, evidence class, public reference, verification method, source-review date, and evidence scope.
+Then inspect the **[Canonical Public Claim Registry](../assurance/PUBLIC-CLAIM-REGISTRY.json)** for machine-readable current propositions and the **[Ecosystem Claim → Evidence Matrix](../assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md)** for claim, maturity, evidence class, public reference, verification method, source-review date, and evidence scope.
 
-Use **[Public Repository Validation](../verification/README.md)** for deterministic repository and current-Runtime-evidence validation routes.
+Run the complete supported public verification route from repository root:
 
-For historical Runtime evidence lineage, use the **[Public Evidence Companion](../evidence/README.md)** and Packets 00–08. For direct component evidence, inspect the **[EHCO Language Model Public Test Snapshot v1](../language-model/evidence/public-test-snapshot-v1/README.md)** and the **[EHCO Range Reactor Public Capability Snapshot v1](../range-reactor/evidence/public-capability-snapshot-v1/README.md)**.
+```bash
+python3 verification/verify_all_public.py
+```
+
+The orchestrator runs the existing specialized validators in a stable order and reports the exact failing evidence class/validator. It does not replace their logic or promote repository validation into owning implementation, physical-effect, or Runtime evidence.
+
+Use **[Public Repository Validation](../verification/README.md)** for validator-by-validator meaning and failure inspection.
+
+For historical Runtime evidence lineage, use the **[Public Evidence Companion](../evidence/README.md)** and Packets 00–08. For direct component evidence, inspect the **[EHCO Language Model Public Test Snapshot v1](../language-model/evidence/public-test-snapshot-v1/README.md)**, **[EHCO Range Reactor Public Capability Snapshot v1](../range-reactor/evidence/public-capability-snapshot-v1/README.md)**, and **[Range Reactor Operational Closure Evidence v1](../range-reactor/evidence/operational-closure-v1/README.md)**.
 
 ## 4. Perform technical diligence
 
@@ -59,10 +67,13 @@ For a broad estate review, use **[Ecosystem Technical Diligence](../ECOSYSTEM-DI
 
 The [Runtime, Repository, and Test-Estate Boundary](../architecture/runtime-repository-and-test-estate-boundary.md) maps evidence-domain ownership. The [EHCOsystem Library](../LIBRARY.md) indexes the complete public record set.
 
+Public navigation and indexing are not independent technical evidence. Direct owning repositories establish exact implementation state; owning technical evidence establishes physical effects; `INSTANTIATED_EHCO_RUNTIME` retains Tier One Runtime authority and current Runtime-state ownership.
+
 ## Revision history
 
 | Version | Date | Change |
 |---|---|---|
+| 2.8 | 2026-08-31 | Added the canonical application/evidence provenance index and one-command unified public verification route with bounded failure interpretation. |
 | 2.7 | 2026-08-30 | Made the current Full Flex Runtime evidence route the first public path and added bounded 52/53 interpretation. |
 | 2.6 | 2026-08-29 | Strengthened first-read Runtime, deployment-ready portability, local-operation and Dashboard-8080 framing and added the canonical claim-registry verification route. |
 | 2.5 | 2026-08-28 | Added first-class Range Reactor component and public capability-evidence routing. |
