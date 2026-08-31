@@ -5,37 +5,37 @@ protocol_reference:
   profile_version: 1.0.0
   protocol_version: 1.0.0
 repository: EHCOnomics-Systems/EHCOsystem
-governed_object: RANGE_REACTOR_PUBLIC_EVIDENCE_SYNCHRONIZATION_V1
+governed_object: PUBLIC_TECHNICAL_PACKAGING_SCOPE_V1
 source_owner:
   repository: EHCOnomics-Systems/EHCOsystem
-  revision: 451ccd2603debcb0691893b7fd262fdbfbc89cc3
+  revision: fefe194a7d69250e7223ab6d2a52788284ce32be
   repository_manifest_path: ehco.repository.yaml
   controlling_source_reference: ehco.repository.yaml
 selection:
   selected_by: Edward Henry
   selection_class: EXPLICIT_OWNER_DIRECTION
   durable_reference: |-
-    Edward Henry explicitly selected the independently audited public-repository synchronization sequence on 2026-08-31: preserve the historical RR service diagnostic claim, add distinct matched A/B collapse-performance and bounded semantic-closure claims, synchronize the claim validator, add a dedicated operational-closure validator, and expose Capability Snapshot plus Operational Closure Evidence from the root and Range Reactor navigation surfaces. The operation also reconciles the Full Flex exact-byte status field in the canonical claim registry to already accepted Git custody. Exact substantive candidate 69367557bd5345e203498dd63b80393140b1e9aa was qualified on canonical base 451ccd2603debcb0691893b7fd262fdbfbc89cc3 through repository validation, CodeQL, and EHCO Assistant Operation Gate; this ACCEPT transition records that reviewed candidate and authorizes its bounded protected-branch merge only.
-    NEW_PATH:verification/validate_public_range_reactor_operational_closure.py
+    Edward Henry explicitly selected publication of the up-to-date EHCOsystem public technical packaging scope in the repository folders on 2026-08-31. The selected scope includes the previously defined public technical baseline, application/component evidence indexing, reviewer verification and navigation, plus evidence freshness/currentness, cross-repository provenance, public evidence delta records, and reviewer failure-path diagnostics. This operation publishes the scope and dossier navigation only; it does not execute the later packaging implementation.
+    NEW_PATH:dossiers/public-technical-packaging/SCOPE-OF-WORK.md
     OPERATION_STABLE_ENVELOPE_CHANGE=true
-  source_base_revision: 451ccd2603debcb0691893b7fd262fdbfbc89cc3
-  expected_reviewed_head_revision: 69367557bd5345e203498dd63b80393140b1e9aa
+  source_base_revision: fefe194a7d69250e7223ab6d2a52788284ce32be
 control_anchor: AGENTS.md
 status_owner_path: ehco.operation.yaml
 accepted_standing: 52/53
 active_operation:
-  operation_id: RR-PUBLIC-EVIDENCE-SYNCHRONIZATION-001
-  state: COMPLETE
-  authorization_mode: ACCEPT
-  bounded_outcome: Synchronized and accepted public RR navigation, machine-readable claims, claim validation, and dedicated operational-closure validation to the already accepted operational-closure evidence without changing the evidence itself.
-  remaining_bounded_work: []
+  operation_id: PUBLIC-TECHNICAL-PACKAGING-SCOPE-PUBLICATION-001
+  state: ACTIVE
+  authorization_mode: PUBLISH
+  bounded_outcome: Publish the selected up-to-date public technical packaging scope in the dossiers public-review area and expose it from the dossier navigation surface.
+  remaining_bounded_work:
+    - Qualify the exact publication candidate through repository checks.
+    - Present the bounded candidate for acceptance without expanding into implementation.
   interaction_seams:
-    - EHCOsystem owns public claims, navigation, and public-source validators.
-    - EHCOnomics-Systems/EHCO_Range_Reactor owns the accepted implementation and operational-closure evidence projected here.
-    - Physical benchmark and historical service qualification remain separate owning evidence classes.
+    - EHCOsystem owns this public scope and public-review navigation surface.
+    - Direct owning repositories and owning technical evidence retain exact implementation and physical-effect ownership.
     - INSTANTIATED_EHCO_RUNTIME retains Tier One Runtime authority and current Runtime state.
   non_overlap:
-    - No new RR benchmark, semantic test, evidence artifact, implementation change, deployment, release, Runtime action, authority, standing, participation, or successor.
+    - No packaging implementation, new evidence, benchmark, semantic test, deployment, release, Runtime action, authority, standing, participation, or successor.
   automatic_successor: PROHIBITED
   successor_operation: NOT_SELECTED
 execution_continuity:
@@ -51,22 +51,17 @@ execution_continuity:
 scope:
   permitted_paths:
     - ehco.operation.yaml
-    - README.md
-    - range-reactor/README.md
-    - assurance/PUBLIC-CLAIM-REGISTRY.json
-    - verification/validate_public_claim_registry.py
-    - verification/validate_public_range_reactor_operational_closure.py
-    - verification/README.md
+    - dossiers/README.md
+    - dossiers/public-technical-packaging/SCOPE-OF-WORK.md
   controlled_paths:
     - ehco.operation.yaml
-    - assurance/PUBLIC-CLAIM-REGISTRY.json
-    - verification/validate_public_claim_registry.py
-    - verification/validate_public_range_reactor_operational_closure.py
   prohibited_paths:
     - AGENTS.md
     - ehco.repository.yaml
     - .github/**
-    - range-reactor/evidence/operational-closure-v1/**
+    - assurance/**
+    - evidence/**
+    - verification/**
 change_control:
   control_change_declared: true
   delete_or_move_authorized: false
@@ -74,19 +69,19 @@ change_control:
     - read_source
     - compare_source
     - audit
+    - create_file
     - update_file
     - run_checks
   local_actions_prohibited:
-    - propose
-    - create_file
     - move_file
     - delete_file
     - generate_artifact
   remote_actions_authorized:
-    - merge_pull_request
-    - record_owner_acceptance
-    - close_operation
+    - commit
+    - push
+    - update_draft_pull_request
   remote_actions_prohibited:
+    - merge_pull_request
     - activate_selected_successor
     - modify_repository_settings
     - modify_drive_controls
@@ -104,27 +99,24 @@ effects:
   external_effect: NONE
 bridge:
   applicability: NOT_APPLICABLE_NON_PARTICIPANT
-  non_applicability_reason: Public claim and verification synchronization is separate from Runtime participation.
+  non_applicability_reason: Public scope publication is separate from Runtime participation.
   direct_invocation: PROHIBITED
   runtime_admission_status: NOT_ESTABLISHED
   participation_binding_status: NOT_ESTABLISHED
   canonical_runtime_receipt_status: NOT_ESTABLISHED
 evidence:
-  evidence_class: OWNER_ACCEPTANCE_RECORD
+  evidence_class: PUBLIC_SCOPE_PUBLICATION_CANDIDATE
   required_checks:
-    - Exact substantive candidate 69367557bd5345e203498dd63b80393140b1e9aa passed repository validation, CodeQL, and EHCO Assistant Operation Gate on canonical base 451ccd2603debcb0691893b7fd262fdbfbc89cc3.
-    - Historical RR-PERFORMANCE remains a distinct diagnostic service qualification claim.
-    - Matched A/B performance remains separately represented with 14.304307x wall-clock and 14.208722x CPU speedup, 94.755854 percent allocation reduction, 1957 to 64 states, 1956 to 192 transitions, and 720 histories preserved.
-    - Semantic closure remains separately represented as 82 passed and 0 failed with the selected-current-corpus ceiling and no universal or unbounded correctness claim.
-    - Root and RR component navigation expose both Capability Snapshot and Operational Closure Evidence.
-    - Full Flex exact-byte registry status reflects already accepted packet custody.
-    - This exact ACCEPT candidate passes protected repository validation, CodeQL, and EHCO Assistant Operation Gate before merge.
+    - Scope file exists at dossiers/public-technical-packaging/SCOPE-OF-WORK.md.
+    - Dossiers navigation exposes the selected scope.
+    - Scope preserves source/evidence ownership and currentness distinctions.
+    - Scope includes cross-repository provenance, evidence-delta, unified verification, and reviewer failure-path requirements.
+    - Scope preserves 52/53 and all Runtime, deployment, release, authority, standing, participation, and successor effects as NONE or not established as applicable.
   proves:
-    - Owner-selected public RR synchronization is qualified for bounded acceptance and canonical-source merge within the declared evidence ceiling.
+    - The owner-selected public technical packaging scope is represented as a bounded public-source candidate.
   evidence_not_created:
-    - New physical execution, semantic correctness proof, Runtime participation, deployment, release, authority, standing effect, or successor activation.
+    - Packaging implementation, new physical execution, new semantic correctness proof, Runtime participation, deployment, release, authority, standing effect, or successor activation.
 stop_condition:
-  - Exact ACCEPT head passes repository validation, CodeQL, and EHCO Assistant Operation Gate.
-  - PR #48 merges through protected main using that exact qualified head.
-  - Canonical main is read back with the synchronized public claims and operation state COMPLETE.
+  - Exact PUBLISH candidate passes applicable repository validation, CodeQL, and EHCO Assistant Operation Gate.
+  - Candidate remains unmerged until a lawful ACCEPT transition authorizes protected-branch merge.
   - Stop with Runtime, deployment, release, authority, standing, participation, and successor effects remaining NONE or not established as applicable.
