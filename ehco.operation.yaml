@@ -8,29 +8,28 @@ repository: EHCOnomics-Systems/EHCOsystem
 governed_object: FULL_FLEX_PUBLICATION_STATUS_RECONCILIATION_V1
 source_owner:
   repository: EHCOnomics-Systems/EHCOsystem
-  revision: f9e02df3bac913281e0543033e3145a23a187428
+  revision: f429bc78b4af4e44427eda85e00b216900e18a16
   repository_manifest_path: ehco.repository.yaml
   controlling_source_reference: ehco.repository.yaml
 selection:
   selected_by: Edward Henry
   selection_class: EXPLICIT_OWNER_DIRECTION
   durable_reference: |-
-    Edward Henry explicitly selected correction and acceptance of stale Full Flex exact-byte publication wording on 2026-08-31. Canonical public Git already contains the accepted exact JSON bytes, SHA-256 companion, and packet receipt; this operation reconciles the dedicated Full Flex evidence README status language only. The candidate is based on canonical main f9e02df3bac913281e0543033e3145a23a187428 after acceptance of the separate Range Reactor execution-context clarification.
-  source_base_revision: f9e02df3bac913281e0543033e3145a23a187428
-  expected_reviewed_head_revision: NOT_APPLICABLE_UNTIL_ACCEPT
+    Edward Henry explicitly selected correction and acceptance of stale Full Flex exact-byte publication wording on 2026-08-31. PR #47 was accepted and squash-merged from its exact qualified candidate into canonical public main f429bc78b4af4e44427eda85e00b216900e18a16. This control-only transition closes that same selected operation after acceptance; it creates no new packet publication, Runtime, deployment, release, authority, standing, participation, or successor effect.
+    OPERATION_STABLE_ENVELOPE_CHANGE=true
+  source_base_revision: f429bc78b4af4e44427eda85e00b216900e18a16
+  expected_reviewed_head_revision: f429bc78b4af4e44427eda85e00b216900e18a16
 control_anchor: AGENTS.md
 status_owner_path: ehco.operation.yaml
 accepted_standing: 52/53
 active_operation:
   operation_id: FULL-FLEX-PUBLICATION-STATUS-RECONCILIATION-001
-  state: ACTIVE
-  authorization_mode: PUBLISH
-  bounded_outcome: Reconcile the dedicated Full Flex evidence README to the already accepted exact-byte publication state without changing packet evidence or technical state.
-  remaining_bounded_work:
-    - Qualify the exact documentation candidate through repository-owned checks.
-    - Transition the qualified candidate through bounded acceptance.
+  state: COMPLETE
+  authorization_mode: ACCEPT
+  bounded_outcome: Reconciled and accepted the dedicated Full Flex evidence README to the already accepted exact-byte publication state without changing packet evidence or technical state.
+  remaining_bounded_work: []
   interaction_seams:
-    - Canonical EHCOsystem Git owns the accepted public packet bytes and public evidence README representation.
+    - Canonical EHCOsystem Git owns the accepted public packet bytes and accepted public evidence README representation at f429bc78b4af4e44427eda85e00b216900e18a16.
     - INSTANTIATED_EHCO_RUNTIME retains Tier One Runtime authority and current Runtime state.
   non_overlap:
     - No packet bytes, implementation, Runtime state, deployment, release, authority, standing, participation, or successor are changed.
@@ -49,14 +48,15 @@ execution_continuity:
 scope:
   permitted_paths:
     - ehco.operation.yaml
-    - evidence/runtime/full-flex/v1/README.md
   controlled_paths:
     - ehco.operation.yaml
-    - evidence/runtime/full-flex/v1/README.md
   prohibited_paths:
     - AGENTS.md
     - ehco.repository.yaml
     - .github/**
+    - evidence/**
+    - range-reactor/**
+    - language-model/**
 change_control:
   control_change_declared: true
   delete_or_move_authorized: false
@@ -67,16 +67,16 @@ change_control:
     - update_file
     - run_checks
   local_actions_prohibited:
+    - propose
     - create_file
     - move_file
     - delete_file
     - generate_artifact
   remote_actions_authorized:
-    - commit
-    - push
-    - update_draft_pull_request
-  remote_actions_prohibited:
     - merge_pull_request
+    - record_owner_acceptance
+    - close_operation
+  remote_actions_prohibited:
     - activate_selected_successor
     - modify_repository_settings
     - modify_drive_controls
@@ -94,21 +94,29 @@ effects:
   external_effect: NONE
 bridge:
   applicability: NOT_APPLICABLE_NON_PARTICIPANT
-  non_applicability_reason: Public evidence README reconciliation is separate from Runtime participation.
+  non_applicability_reason: Public evidence README reconciliation and closeout are separate from Runtime participation.
   direct_invocation: PROHIBITED
   runtime_admission_status: NOT_ESTABLISHED
   participation_binding_status: NOT_ESTABLISHED
   canonical_runtime_receipt_status: NOT_ESTABLISHED
 evidence:
-  evidence_class: REPOSITORY_SOURCE_AND_DIFF_VALIDATION
+  evidence_class: OWNER_ACCEPTANCE_RECORD
   required_checks:
-    - Candidate diff is limited to the dedicated Full Flex evidence README and operation control.
-    - README states the exact JSON bytes are already published and removes the obsolete future insertion statement.
-    - Accepted packet identity and 52/53 standing remain unchanged.
-    - Repository validation, CodeQL, and assistant operation gate pass on the exact candidate.
+    - PR #47 was accepted and squash-merged from its exact qualified candidate into f429bc78b4af4e44427eda85e00b216900e18a16.
+    - Repository validation, CodeQL, and the applicable assistant operation gate were satisfied for the accepted substantive candidate.
+    - This closeout candidate changes only ehco.operation.yaml from accepted substantive public main.
+    - Operation state is COMPLETE and remaining_bounded_work is empty.
+    - Accepted standing remains 52/53.
+    - Automatic successor remains prohibited and no successor is selected.
+    - Required protected-branch checks succeed on the exact closeout head before merge.
   proves:
-    - The bounded Full Flex status reconciliation is source-controlled and qualified within its declared evidence ceiling.
+    - Owner-selected Full Flex public status reconciliation is accepted and complete in canonical source.
+    - The accepted public representation remains separate from Runtime authority and technical effects.
   evidence_not_created:
-    - New packet publication, Runtime state, deployment, release, authority, participation, or standing change.
+    - New packet publication, Runtime state, deployment, release, authority, participation, standing change, or successor activation.
 stop_condition:
-  - Stop PUBLISH after the exact candidate is qualified for bounded acceptance with all effects remaining NONE.
+  - Exact control-only closeout head passes repository validation, CodeQL, and EHCO Assistant Operation Gate.
+  - Closeout change remains limited to ehco.operation.yaml.
+  - Closeout PR merges through protected main using the exact qualified head.
+  - Accepted main is read back with state COMPLETE, remaining_bounded_work empty, accepted standing 52/53, and automatic successor prohibited.
+  - Stop with Runtime, deployment, release, authority, standing, participation, and successor effects remaining NONE.
