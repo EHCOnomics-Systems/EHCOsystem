@@ -24,12 +24,11 @@ status_owner_path: ehco.operation.yaml
 accepted_standing: 52/53
 active_operation:
   operation_id: PUBLIC-TECHNICAL-PACKAGING-SCOPE-PUBLICATION-001
-  state: ACTIVE
-  authorization_mode: PUBLISH
-  bounded_outcome: Publish the selected up-to-date public technical packaging scope in the dossiers public-review area and expose it from the dossier navigation surface.
-  remaining_bounded_work:
-    - Qualify the exact publication candidate through repository checks.
-    - Present the bounded candidate for acceptance without expanding into implementation.
+  state: COMPLETE
+  authorization_mode: ACCEPT
+  bounded_outcome: Publish and accept the selected up-to-date public technical packaging scope in the dossiers public-review area and expose it from the dossier navigation surface.
+  expected_reviewed_head_revision: 0c2393282ccf807c3e88e1b76c1c5cdcd99c59b4
+  remaining_bounded_work: []
   interaction_seams:
     - EHCOsystem owns this public scope and public-review navigation surface.
     - Direct owning repositories and owning technical evidence retain exact implementation and physical-effect ownership.
@@ -80,8 +79,8 @@ change_control:
     - commit
     - push
     - update_draft_pull_request
-  remote_actions_prohibited:
     - merge_pull_request
+  remote_actions_prohibited:
     - activate_selected_successor
     - modify_repository_settings
     - modify_drive_controls
@@ -105,18 +104,19 @@ bridge:
   participation_binding_status: NOT_ESTABLISHED
   canonical_runtime_receipt_status: NOT_ESTABLISHED
 evidence:
-  evidence_class: PUBLIC_SCOPE_PUBLICATION_CANDIDATE
+  evidence_class: OWNER_ACCEPTANCE_RECORD
   required_checks:
     - Scope file exists at dossiers/public-technical-packaging/SCOPE-OF-WORK.md.
     - Dossiers navigation exposes the selected scope.
     - Scope preserves source/evidence ownership and currentness distinctions.
     - Scope includes cross-repository provenance, evidence-delta, unified verification, and reviewer failure-path requirements.
+    - Exact reviewed PUBLISH head 0c2393282ccf807c3e88e1b76c1c5cdcd99c59b4 passed applicable repository validation and CodeQL before this ACCEPT transition.
     - Scope preserves 52/53 and all Runtime, deployment, release, authority, standing, participation, and successor effects as NONE or not established as applicable.
   proves:
-    - The owner-selected public technical packaging scope is represented as a bounded public-source candidate.
+    - The owner-selected public technical packaging scope is accepted for publication as bounded public source.
   evidence_not_created:
     - Packaging implementation, new physical execution, new semantic correctness proof, Runtime participation, deployment, release, authority, standing effect, or successor activation.
 stop_condition:
-  - Exact PUBLISH candidate passes applicable repository validation, CodeQL, and EHCO Assistant Operation Gate.
-  - Candidate remains unmerged until a lawful ACCEPT transition authorizes protected-branch merge.
+  - Exact ACCEPT candidate passes applicable repository validation, CodeQL, and EHCO Assistant Operation Gate.
+  - Protected-branch merge is authorized only for the exact accepted head after required checks pass.
   - Stop with Runtime, deployment, release, authority, standing, participation, and successor effects remaining NONE or not established as applicable.
