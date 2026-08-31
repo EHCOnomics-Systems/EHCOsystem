@@ -12,11 +12,11 @@ This directory is the canonical public evidence location for the current **EHCO 
 - Accepted standing represented: `52/53`
 - Docker portability class represented: `PRIMARY_ACCESSIBLE_RUNTIME_PROJECTION`
 
-The packet identity above was established from the owning Windows/Docker host. The exact JSON bytes remain bound to the packet SHA-256 above. Repository publication of those exact bytes must preserve that identity; reconstructed or alternate bytes do not become this packet.
+The packet identity above was established from the owning Windows/Docker host. The exact JSON bytes are published in this canonical public directory as `EHCO_FULL_FLEX_PUBLIC_PACKET_V1.json` and remain bound to the packet SHA-256 above. The accompanying `.sha256` file and `PACKET_RECEIPT.json` preserve the exact-byte publication identity; reconstructed or alternate bytes do not become this packet.
 
 ## Current evidence role
 
-This packet is the canonical current public evidence projection and synthesis for the broader EHCO AI-OS Runtime environment. It consolidates the accepted current Runtime posture with established Docker portability, physically operated local Runtime evidence, Dashboard/bridge/worker relationships, persistent surfaces, networking, image identity, engineering-scale characterization, Range Reactor qualification/performance, public claim bindings, source bindings and integrity metadata.
+This packet is the canonical current public evidence projection and synthesis for the broader EHCO AI-OS Runtime environment. It consolidates the accepted current Runtime posture with established Docker portability, physically operated Runtime evidence, Dashboard/bridge/worker relationships, persistent surfaces, networking, image identity, engineering-scale characterization, Range Reactor qualification/performance, public claim bindings, source bindings and integrity metadata.
 
 For current public Runtime review, start with the [EHCO AI-OS Runtime front door](../../../../runtime/README.md).
 
@@ -35,6 +35,6 @@ They are not the current Runtime maturity or present-state authority. Packet 06 
 
 ## Publication status
 
-The current packet **identity and public evidence precedence are published in this repository**. The exact packet JSON is inserted here only when the byte-identical owning-host artifact is available for transfer and verifies to the SHA-256 above.
+The current packet **identity, public evidence precedence, and exact byte-identical JSON artifact are published in this repository**. `EHCO_FULL_FLEX_PUBLIC_PACKET_V1.json` is the accepted canonical public byte publication, with Git blob `419a6b3496aaefb2526411ea88644747c9226f60` and packet SHA-256 `7F80C27D085AE871A00AED412C6F20EA9A76CB0677C93AEBA381CD1FD70EC8E5`.
 
-This staging distinction preserves evidence integrity: the public repository may route to the current established packet identity without manufacturing or silently reconstructing the evidence artifact.
+`EHCO_FULL_FLEX_PUBLIC_PACKET_V1.sha256` and `PACKET_RECEIPT.json` are published alongside it to preserve and verify that identity. The earlier staging condition has therefore been satisfied; there is no outstanding future exact-byte insertion step for Full Flex Public Packet v1.
