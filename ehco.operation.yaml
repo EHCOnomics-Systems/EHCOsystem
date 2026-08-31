@@ -8,7 +8,7 @@ repository: EHCOnomics-Systems/EHCOsystem
 governed_object: FULL_FLEX_PUBLICATION_STATUS_RECONCILIATION_V1
 source_owner:
   repository: EHCOnomics-Systems/EHCOsystem
-  revision: f9e02df3bac913281e0543033e3145a23a187428
+  revision: f429bc78b4af4e44427eda85e00b216900e18a16
   repository_manifest_path: ehco.repository.yaml
   controlling_source_reference: ehco.repository.yaml
 selection:
@@ -16,7 +16,7 @@ selection:
   selection_class: EXPLICIT_OWNER_DIRECTION
   durable_reference: |-
     Edward Henry explicitly selected correction and acceptance of stale Full Flex exact-byte publication wording on 2026-08-31. PR #47 was accepted and squash-merged from its exact qualified candidate into canonical public main f429bc78b4af4e44427eda85e00b216900e18a16. This control-only transition closes that same selected operation after acceptance; it creates no new packet publication, Runtime, deployment, release, authority, standing, participation, or successor effect.
-  source_base_revision: f9e02df3bac913281e0543033e3145a23a187428
+  source_base_revision: f429bc78b4af4e44427eda85e00b216900e18a16
   expected_reviewed_head_revision: f429bc78b4af4e44427eda85e00b216900e18a16
 control_anchor: AGENTS.md
 status_owner_path: ehco.operation.yaml
