@@ -32,11 +32,14 @@ The byte-identical PDF is also bound inside Packet 00 at `evidence/public-eviden
 
 Use the [Runtime, Repository, and Test-Estate Boundary](../architecture/runtime-repository-and-test-estate-boundary.md) for evidence-domain ownership and the [Public Evidence Companion](../evidence/README.md) for packet-specific evidence.
 
-## Public technical packaging scope
+## Public technical packaging
 
-The selected scope for the next public technical packaging pass is maintained separately from the canonical architecture dossier, preserving accepted architecture evidence while packaging work develops its own bounded review surface.
+The public technical packaging material is maintained separately from the canonical architecture dossier so reviewer routing and packaging do not rewrite or overstate accepted architecture evidence.
 
-- [Public Technical Packaging — Scope of Work v1.0](public-technical-packaging/SCOPE-OF-WORK.md) — reviewer-ready baseline, application/component evidence indexing, currentness, cross-repository provenance, evidence deltas, unified verification, and reviewer failure paths.
+- [Public Technical Packaging — Scope of Work v1.0](public-technical-packaging/SCOPE-OF-WORK.md) — accepted scope for reviewer-ready baseline, indexing, currentness, provenance, verification, evidence deltas, and failure paths.
+- [Public Application & Evidence Index v1.0](public-technical-packaging/APPLICATION-EVIDENCE-INDEX.md) — principal component/proposition routing to owning source or evidence domains, accepted identities where established, public evidence routes, validators, currentness, and claim ceilings.
+
+For the one-command repository verification route, run `python3 verification/verify_all_public.py` from repository root and use [Public Repository Validation](../verification/README.md) for validator-specific meaning and failure inspection.
 
 ## Related material
 
