@@ -51,7 +51,7 @@ Run the complete supported public verification route from repository root:
 python3 verification/verify_all_public.py
 ```
 
-The orchestrator runs the existing specialized validators in a stable order and reports the exact failing evidence class/validator. It does not replace their logic or promote repository validation into owning implementation, physical-effect, or Runtime evidence.
+The orchestrator runs the existing specialized validators in a stable order, preserves their logic, and reports the exact failing evidence class/validator. Repository validation remains a repository/public-package evidence class; owning implementation, physical-effect, and Runtime evidence retain their separate evidence owners.
 
 Use **[Public Repository Validation](../verification/README.md)** for validator-by-validator meaning and failure inspection.
 
@@ -67,7 +67,7 @@ For a broad estate review, use **[Ecosystem Technical Diligence](../ECOSYSTEM-DI
 
 The [Runtime, Repository, and Test-Estate Boundary](../architecture/runtime-repository-and-test-estate-boundary.md) maps evidence-domain ownership. The [EHCOsystem Library](../LIBRARY.md) indexes the complete public record set.
 
-Public navigation and indexing are not independent technical evidence. Direct owning repositories establish exact implementation state; owning technical evidence establishes physical effects; `INSTANTIATED_EHCO_RUNTIME` retains Tier One Runtime authority and current Runtime-state ownership.
+Public navigation and indexing remain navigation and public packaging rather than independent technical evidence. Direct owning repositories establish exact implementation state; owning technical evidence establishes physical effects; `INSTANTIATED_EHCO_RUNTIME` retains Tier One Runtime authority and current Runtime-state ownership.
 
 ## Revision history
 
