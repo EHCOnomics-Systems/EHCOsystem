@@ -5,51 +5,45 @@ protocol_reference:
   profile_version: 1.0.0
   protocol_version: 1.0.0
 repository: EHCOnomics-Systems/EHCOsystem
-governed_object: EHCO_AI_OS_RUNTIME_FULL_FLEX_PUBLICATION_V1
+governed_object: RANGE_REACTOR_OPERATIONAL_CLOSURE_PUBLIC_PROJECTION_V1
 source_owner:
-  repository: EHCOnomics-Systems/EHCOsystem
-  revision: d02c31299bed8e6e413422602ed5590f06986f9c
+  repository: EHCOnomics-Systems/EHCO_Range_Reactor
+  revision: eae888b784620ed37ed7d6704bcd91dedcf92936
   repository_manifest_path: ehco.repository.yaml
-  controlling_source_reference: Drive document 1FydQKUNfpQ7oZrgpLDlqRHxFM_f1mFv5uq_akploL38
+  controlling_source_reference: Drive document 1WnovTICznftQ8NEKyPHT6RxWJ71gbGDYdM35zzuRblM
 selection:
   selected_by: Edward Henry
   selection_class: EXPLICIT_OWNER_DIRECTION
-  durable_reference: >-
-    Edward Henry accepted the exact-byte Full Flex publication and directed the dependent acceptance closeout to proceed.
-    PR #42 merged by expected-head squash from exact qualified ACCEPT head 7f9b02b5afc2c0264d934984595f248c9db24878
-    to canonical main commit d02c31299bed8e6e413422602ed5590f06986f9c. Canonical source now contains the exact
-    EHCO_FULL_FLEX_PUBLIC_PACKET_V1.json Git blob 419a6b3496aaefb2526411ea88644747c9226f60 and associated
-    PACKET_RECEIPT.json Git blob a7d28d5989b862a21d8589257ff80514cfbede87. The receipt binds packet SHA-256
-    7F80C27D085AE871A00AED412C6F20EA9A76CB0677C93AEBA381CD1FD70EC8E5, pressure scan PASS, accepted
-    standing 52/53, and EHCO_DOCKER_PORTABILITY PRIMARY_ACCESSIBLE_RUNTIME_PROJECTION. This control-only
-    transition closes the same selected publication operation; it creates no Runtime, deployment, release,
-    authority, standing, participation, repository-setting, or successor effect.
+  durable_reference: |-
+    Edward Henry explicitly directed the accepted Range Reactor operational-closure proof to be projected into the public repository on 2026-08-31.
+    Owning RR source acceptance is canonical commit eae888b784620ed37ed7d6704bcd91dedcf92936, preserving benchmark source binding e72b2a29e52878d300b44f0286259466352f73cc.
+    Publication is public-safe bounded evidence only: selected benchmark metrics and selected semantic-corpus closure, with no controlled implementation mechanics, private host path, Runtime, deployment, release, authority, standing, participation, or successor effect.
     OPERATION_STABLE_ENVELOPE_CHANGE=true
-  source_base_revision: d02c31299bed8e6e413422602ed5590f06986f9c
-  expected_reviewed_head_revision: d02c31299bed8e6e413422602ed5590f06986f9c
+    NEW_PATH:range-reactor/evidence/operational-closure-v1/README.md
+    NEW_PATH:range-reactor/evidence/operational-closure-v1/PUBLIC_RESULT.json
+  source_base_revision: b934e2a82c0de5efe8bede169acc13dc5bd36b04
+  expected_reviewed_head_revision: NOT_YET_QUALIFIED
 control_anchor: AGENTS.md
 status_owner_path: ehco.operation.yaml
 accepted_standing: 52/53
 active_operation:
-  operation_id: EHCO-RUNTIME-FULL-FLEX-EXACT-BYTE-PUBLICATION-002
-  state: COMPLETE
-  authorization_mode: ACCEPT
+  operation_id: RR-OPERATIONAL-CLOSURE-PUBLIC-PROJECTION-001
+  state: ACTIVE
+  authorization_mode: PUBLISH
   bounded_outcome: >-
-    Owner-accepted and integrated the exact host-established Full Flex packet and receipt into canonical
-    EHCOsystem public source with exact-byte custody established, while preserving accepted standing 52/53,
-    historical evidence boundaries, source/evidence ownership, and all Runtime authority boundaries.
-  remaining_bounded_work: []
+    Publish a public-safe Range Reactor operational-closure packet that binds the accepted owning RR source and exposes the established selected-benchmark performance and bounded semantic-closure result without publishing controlled implementation mechanics.
+  remaining_bounded_work:
+    - Publish the two explicitly declared public evidence files.
+    - Qualify the exact public candidate through repository-owned validation, CodeQL, and assistant operation gate.
+    - Accept the exact qualified candidate into public main and reconcile operation state.
   interaction_seams:
-    - Drive owns durable Full Flex meaning, publication requirements, and established packet identity.
-    - Accepted EHCOsystem main d02c31299bed8e6e413422602ed5590f06986f9c contains the exact accepted packet and receipt from PR #42.
-    - Direct EHCOsystem Git owns exact accepted public source and pull-request state.
-    - The owning Windows/Docker host retains ownership of the physical packet-generation observation and original artifact bytes.
-    - EHCO_DOCKER_PORTABILITY remains PRIMARY_ACCESSIBLE_RUNTIME_PROJECTION.
+    - EHCOnomics-Systems/EHCO_Range_Reactor owns exact implementation and accepted operational-closure evidence custody.
+    - EHCOsystem owns only the public evidence projection.
+    - Owning-host evidence remains the evidence owner for the physical benchmark observation.
     - INSTANTIATED_EHCO_RUNTIME retains Tier One Runtime authority and current Runtime state.
   non_overlap:
-    - evidence/public-evidence-companion/v1/** remains immutable historical event-time evidence.
-    - ehco.repository.yaml identity and boundary fields remain unchanged.
-    - No new Docker execution, Range Reactor execution, benchmark, deployment, release, Runtime effect, Runtime participation, standing transition, repository-setting change, or successor activation is part of this closeout.
+    - No controlled RR source, test corpus, raw semantic logs, host filesystem paths, credentials, endpoints, or production infrastructure are published.
+    - No Runtime, deployment, release, authority, standing, participation, repository-setting, or successor effect.
   automatic_successor: PROHIBITED
   successor_operation: NOT_SELECTED
 execution_continuity:
@@ -65,28 +59,22 @@ execution_continuity:
 scope:
   permitted_paths:
     - ehco.operation.yaml
+    - range-reactor/evidence/operational-closure-v1/README.md
+    - range-reactor/evidence/operational-closure-v1/PUBLIC_RESULT.json
   controlled_paths:
     - ehco.operation.yaml
+    - range-reactor/evidence/operational-closure-v1/PUBLIC_RESULT.json
   prohibited_paths:
     - AGENTS.md
     - ehco.repository.yaml
     - GOVERNANCE.md
     - SECURITY.md
-    - README.md
     - NOTICE.md
     - PROVENANCE.md
-    - LIBRARY.md
-    - ECOSYSTEM-DILIGENCE.md
-    - TECHNICAL-DILIGENCE.md
-    - getting-started/**
     - architecture/**
     - assurance/**
     - releases/**
-    - dossiers/**
-    - evidence/**
-    - verification/**
-    - language-model/**
-    - range-reactor/**
+    - evidence/public-evidence-companion/v1/**
     - .github/**
 change_control:
   control_change_declared: true
@@ -95,25 +83,25 @@ change_control:
     - read_source
     - compare_source
     - audit
-    - update_file
-    - run_checks
-  local_actions_prohibited:
     - propose
     - create_file
+    - update_file
+    - run_checks
+    - generate_artifact
+  local_actions_prohibited:
     - move_file
     - delete_file
-    - generate_artifact
   remote_actions_authorized:
+    - create_branch
+    - commit
+    - push
+    - open_pull_request
+    - update_pull_request
+    - mark_pull_request_ready_for_review
     - merge_pull_request
     - record_owner_acceptance
     - close_operation
   remote_actions_prohibited:
-    - create_branch
-    - commit
-    - push
-    - open_draft_pull_request
-    - update_draft_pull_request
-    - mark_pull_request_ready_for_review
     - activate_selected_successor
     - modify_repository_settings
     - modify_drive_controls
@@ -131,44 +119,33 @@ effects:
   runtime_effect: NONE
   deployment_effect: NONE
   release_effect: NONE
-  external_effect: NONE
+  external_effect: PUBLIC_SOURCE_PROJECTION_ONLY
 bridge:
   applicability: NOT_APPLICABLE_NON_PARTICIPANT
-  non_applicability_reason: Public evidence source acceptance and closeout are separate from Runtime participation.
+  non_applicability_reason: Public Range Reactor evidence projection is separate from Runtime participation.
   direct_invocation: PROHIBITED
   runtime_admission_status: NOT_ESTABLISHED
   participation_binding_status: NOT_ESTABLISHED
   canonical_runtime_receipt_status: NOT_ESTABLISHED
 evidence:
-  evidence_class: OWNER_ACCEPTANCE_RECORD
+  evidence_class: PUBLIC_PROJECTION_OF_ACCEPTED_OWNING_EVIDENCE
+  owning_repository: EHCOnomics-Systems/EHCO_Range_Reactor
+  owning_accepted_commit: eae888b784620ed37ed7d6704bcd91dedcf92936
+  benchmark_source_commit: e72b2a29e52878d300b44f0286259466352f73cc
+  owning_evidence_receipt_blob: 42d7e0d448a59b82d15eade58e11d8de9407f7f2
+  performance_host_file_sha256: C6B7DAB276DCB620CC17C4D7F7B1E8B0EE45D53F6B64E574F55D7CC7ADBF2ED2
+  performance_internal_result_sha256: 6cca258517425c8d3723c036b8bf36d7ccb5f09991054b4f4bacf75a6f7dc697
+  phase_e_continuation_manifest_sha256: 083BA279EBE5456B8C874E087C6FEBD9624BB52D1FC2FFB48DFB410F6DB7E232
   required_checks:
-    - PR #42 merged by expected-head squash from exact qualified ACCEPT head 7f9b02b5afc2c0264d934984595f248c9db24878.
-    - Accepted substantive main is exactly d02c31299bed8e6e413422602ed5590f06986f9c.
-    - Exact Full Flex JSON Git blob is 419a6b3496aaefb2526411ea88644747c9226f60.
-    - PACKET_RECEIPT.json Git blob is a7d28d5989b862a21d8589257ff80514cfbede87.
-    - Receipt binds exact packet SHA-256 7F80C27D085AE871A00AED412C6F20EA9A76CB0677C93AEBA381CD1FD70EC8E5.
-    - This closeout candidate changes only ehco.operation.yaml from accepted substantive main.
-    - Operation state is COMPLETE and remaining_bounded_work is empty.
-    - Accepted standing remains 52/53.
-    - Historical Public Evidence Companion bytes remain unchanged.
-    - Automatic successor remains prohibited and no successor is selected.
-    - Required protected-branch checks succeed on the exact closeout head before merge.
-  proves:
-    - Owner-selected exact-byte Full Flex public-source publication is accepted and complete in canonical source.
-    - Repository custody of the existing host-established packet and receipt is established.
-    - Publication and acceptance remain separate from Runtime authority and technical effects.
-  evidence_not_created:
-    - New Runtime authority or current Runtime state
-    - New Docker execution or qualification
-    - New Range Reactor execution or qualification
-    - Runtime participation or admission
-    - Deployment or release materialization
-    - Numerical standing transition
-    - Historical packet-byte rewrite
+    - Candidate changes only ehco.operation.yaml and the two explicitly declared public evidence files.
+    - Public result binds accepted owning RR commit eae888b784620ed37ed7d6704bcd91dedcf92936 and benchmark source e72b2a29e52878d300b44f0286259466352f73cc.
+    - Public result preserves selected-benchmark claim ceiling and does not claim universal or unbounded correctness.
+    - Public result contains no private host path or controlled implementation mechanics.
+    - Accepted standing remains 52/53 and automatic successor remains prohibited.
+    - Required protected-branch checks succeed on the exact publication head before merge.
 stop_condition:
-  - Exact control-only closeout head passes repository validation, CodeQL, and EHCO Assistant Operation Gate.
-  - Closeout change remains limited to ehco.operation.yaml.
-  - Closeout PR merges through protected main using the exact qualified head.
-  - Accepted main is read back with state COMPLETE, remaining_bounded_work empty, accepted standing 52/53, and automatic successor prohibited.
-  - Accepted source materialization is reconciled in Drive without changing Runtime or technical-effect ownership.
-  - Stop with Runtime, deployment, release, authority, standing, participation, and successor effects remaining NONE.
+  - Exact publication head passes repository validation, CodeQL, and EHCO Assistant Operation Gate.
+  - Public evidence files remain exactly the declared bounded projection.
+  - Publication PR merges through protected main using the exact qualified head.
+  - Accepted main is read back and public evidence materialization is verified.
+  - Operation is reconciled to COMPLETE without changing Runtime or technical-effect ownership.
