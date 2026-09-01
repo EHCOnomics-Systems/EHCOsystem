@@ -36,7 +36,7 @@ The **foundational and shared EHCOsystem spine is substantially established**. C
 
 The principal shared spine has differentiated maturity:
 
-- **EHCO Language Model** — mature deterministic computational-language system built as `DETERMINISTIC_COMPUTATIONAL_LANGUAGE / SINGLE_PATH / EXPLICIT_EHCO_COMPUTATION / ZERO_WEIGHT_ONLY / ZERO WEIGHTS TRAINED`. **Deep final capability/source closure and governed final component artifact build, qualification and release are established.** Its current selected lifecycle frontier is **staging execution and verification of that exact released artifact**. That frontier does not demote established source, qualification, artifact-build or release state; production verification/deployment and Tier One Runtime participation remain separate evidence domains.
+- **EHCO Language Model** — mature deterministic computational-language system built as `DETERMINISTIC_COMPUTATIONAL_LANGUAGE / SINGLE_PATH / EXPLICIT_EHCO_COMPUTATION / ZERO_WEIGHT_ONLY / ZERO WEIGHTS TRAINED`. **Deep final capability/source closure and governed final component artifact build, qualification and release are established.** Its current selected lifecycle frontier is **staging execution and verification of that exact released artifact**. Later lifecycle work preserves established source, qualification, artifact-build and release state; production verification/deployment and Tier One Runtime participation remain separate evidence domains.
 - **EHCO Range Reactor** — mature deterministic proof-carrying implication, reachability, range and reasoning system with accepted executable reference semantics, identity/replay, contradiction and frontier preservation, independently verified finite semantic collapse, service/container boundaries, production/release controls, Prime/Primordia interoperability, physical host qualification, and accepted selected-scope operational closure. Its matched exploration-time A/B records **14.304307x wall-clock** speedup on the selected benchmark with **82 passed / 0 failed** selected semantic closure; those results remain exclusively within their published selected-benchmark and selected-current-corpus evidence ceilings.
 - **EHCO RAG** — governed retrieval, context, source-custody, provenance, and evidence component with an accepted controlled baseline and active Stage 1 implementation.
 - **EHCO Prime** — advanced individual-facing relationship and assistant-coordination service with mature source/control hardening.
@@ -118,3 +118,5 @@ The separate **Range Reactor Operational Closure Evidence v1** publishes the acc
 - [EHCOsystem Library](LIBRARY.md)
 
 Copyright (c) 2026 EHCOnomics. All rights reserved.
+
+<!-- validator transition marker: advanced near-final maturation cycle -->
