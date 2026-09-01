@@ -5,36 +5,38 @@ protocol_reference:
   profile_version: 1.0.0
   protocol_version: 1.0.0
 repository: EHCOnomics-Systems/EHCOsystem
-governed_object: LANGUAGE_MODEL_CURRENT_PUBLIC_MATURITY_SYNCHRONIZATION_V1
+governed_object: CURRENT_PUBLIC_REPOSITORY_CLOSEOUT_SOW_CUSTODY
 source_owner:
   repository: EHCOnomics-Systems/EHCOsystem
-  revision: 77b9d82e0e1bb63d932bd0c62ed98e6dfc32e4f5
+  revision: f3eac9d3b38579d480b22c525a31decda65f827e
   repository_manifest_path: ehco.repository.yaml
   controlling_source_reference: ehco.repository.yaml
 selection:
   selected_by: Edward Henry
   selection_class: EXPLICIT_OWNER_DIRECTION
   durable_reference: |-
-    Edward Henry explicitly selected synchronization of the EHCO Language Model public maturity representation on 2026-08-31 after read-only review of current governing Drive meaning and direct owning Git/GitHub evidence. The public synchronization must preserve the established mature deterministic zero-weight computational-language identity, deep final capability/source closure, final artifact build/qualification/release custody, and the current governed staging execution/verification frontier without demoting or flattening those accomplishments and without implying production verification/deployment or Tier One Runtime participation.
-    OPERATION_STABLE_ENVELOPE_CHANGE=true
-  source_base_revision: 77b9d82e0e1bb63d932bd0c62ed98e6dfc32e4f5
-  expected_reviewed_head_revision: 1dec3c7c70b3ef0b3edbedd41e0d6bdf5b0338ba
+    Edward Henry explicitly selected the current public-repository closeout to remain governed by the existing Drive EHCO-PUB-SOW-009 scope, clarified that finality is for the closeout being completed now rather than permanent ecosystem closure, directed that no new closeout steps be invented, and directed removal of the live GitHub Scope of Work so the active SOW is maintained in Drive only. This bounded repository operation implements only that custody and navigation cleanup; it does not select a successor or create a new development stage.
+  source_base_revision: f3eac9d3b38579d480b22c525a31decda65f827e
+  expected_reviewed_head_revision: NOT_APPLICABLE_UNTIL_ACCEPT
 control_anchor: AGENTS.md
 status_owner_path: ehco.operation.yaml
 accepted_standing: 52/53
 active_operation:
-  operation_id: LM-CURRENT-PUBLIC-MATURITY-SYNC-001
-  state: COMPLETE
-  authorization_mode: ACCEPT
-  bounded_outcome: Replace stale advanced-near-final public wording with the strongest current public-safe Language Model maturity representation supported by owning source/lifecycle evidence, synchronized across reader-facing architecture, diligence, assurance and validation surfaces.
-  remaining_bounded_work: []
+  operation_id: EHCO-PUBLIC-REPO-CURRENT-CLOSEOUT-SOW-CUSTODY-001
+  state: ACTIVE
+  authorization_mode: PUBLISH
+  bounded_outcome: Remove the live GitHub-hosted public packaging SOW and its dossier navigation reference so the existing Drive EHCO-PUB-SOW-009 document remains the sole active Scope of Work for the current owner-selected public-repository closeout.
+  remaining_bounded_work:
+    - Qualify the exact repository candidate containing only the Drive-only SOW custody cleanup and operation control.
+    - Owner-accept and merge the exact qualified candidate.
+    - Reconcile repository readback and close this bounded custody operation with no automatic successor.
   interaction_seams:
-    - EHCOnomics-Systems/ehco_Language-Model_v1 owns exact Language Model implementation and lifecycle source state.
-    - Owning GitHub Release and workflow evidence own artifact-release and staging-execution effects.
-    - EHCOsystem owns the public architecture, diligence, assurance and validation representation synchronized here.
+    - Google Drive owns the active EHCO-PUB-SOW-009 Scope of Work and durable closeout meaning.
+    - EHCOnomics-Systems/EHCOsystem owns the public repository content and navigation surfaces being cleaned here.
+    - Historical Git commits and pull-request records remain repository history and are not active SOW authority.
     - INSTANTIATED_EHCO_RUNTIME retains Tier One Runtime authority and current Runtime state.
   non_overlap:
-    - No Language Model implementation, active development branch, artifact bytes, release object, staging execution, production environment, Runtime state, authority, standing, participation or successor is changed.
+    - No new public-system stage, technology baseline program, benchmark, implementation feature, evidence result, deployment, release, Runtime participation, authority, standing or successor is created or changed.
   automatic_successor: PROHIBITED
   successor_operation: NOT_SELECTED
 execution_continuity:
@@ -50,51 +52,45 @@ execution_continuity:
 scope:
   permitted_paths:
     - ehco.operation.yaml
-    - README.md
-    - ECOSYSTEM-DILIGENCE.md
-    - language-model/README.md
-    - architecture/EHCO-TECHNOLOGY-ESTATE.md
-    - architecture/ecosystem-components-and-participation.md
-    - architecture/diagrams/README.md
-    - assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md
-    - verification/README.md
-    - verification/validate_public_evidence.py
+    - dossiers/README.md
+    - dossiers/public-technical-packaging/SCOPE-OF-WORK.md
   controlled_paths:
     - ehco.operation.yaml
-    - verification/validate_public_evidence.py
   prohibited_paths:
     - AGENTS.md
     - ehco.repository.yaml
     - .github/**
-    - assurance/PUBLIC-CLAIM-REGISTRY.json
-    - language-model/evidence/**
+    - README.md
+    - architecture/**
+    - assurance/**
     - evidence/**
+    - runtime/**
     - range-reactor/**
+    - language-model/**
+    - verification/**
 change_control:
   control_change_declared: true
-  delete_or_move_authorized: false
+  delete_or_move_authorized: true
   local_actions_authorized:
     - read_source
     - compare_source
     - audit
     - update_file
+    - delete_file
     - run_checks
   local_actions_prohibited:
     - create_file
     - move_file
-    - delete_file
     - generate_artifact
   remote_actions_authorized:
-    - mark_pull_request_ready_for_review
-    - merge_pull_request
-    - record_owner_acceptance
-    - close_operation
-  remote_actions_prohibited:
-    - create_branch
     - commit
     - push
     - open_draft_pull_request
     - update_draft_pull_request
+  remote_actions_prohibited:
+    - mark_pull_request_ready_for_review
+    - merge_pull_request
+    - record_owner_acceptance
     - activate_selected_successor
     - trigger_workflow
     - mutate_environment
@@ -115,26 +111,27 @@ effects:
   external_effect: NONE
 bridge:
   applicability: NOT_APPLICABLE_NON_PARTICIPANT
-  non_applicability_reason: Public Language Model maturity synchronization is separate from Tier One Runtime participation.
+  non_applicability_reason: This operation changes public repository SOW custody/navigation and does not establish Tier One Runtime participation.
   direct_invocation: PROHIBITED
   runtime_admission_status: NOT_ESTABLISHED
   participation_binding_status: NOT_ESTABLISHED
   canonical_runtime_receipt_status: NOT_ESTABLISHED
 evidence:
-  evidence_class: OWNER_ACCEPTANCE_RECORD
+  evidence_class: REPOSITORY_SOURCE_AND_DIFF_VALIDATION
   required_checks:
-    - Exact reviewed PUBLISH head 1dec3c7c70b3ef0b3edbedd41e0d6bdf5b0338ba passed required repository validation and CodeQL qualification.
-    - Public wording preserves DETERMINISTIC_COMPUTATIONAL_LANGUAGE / SINGLE_PATH / EXPLICIT_EHCO_COMPUTATION / ZERO_WEIGHT_ONLY / ZERO WEIGHTS TRAINED.
-    - Public wording establishes deep final capability/source closure and governed final component artifact build/qualification/release as established owning-source lifecycle state.
-    - Public wording identifies governed staging execution/verification of the exact released artifact as the current lifecycle frontier.
-    - Public wording keeps production verification/deployment and Tier One Runtime participation as separate evidence domains.
-    - Public synchronization omits controlled branch choreography, internal DF/UD identifiers and private implementation details.
-    - Existing Language Model public test snapshot bytes remain unchanged.
-    - Required repository validation, CodeQL and EHCO Assistant Operation Gate pass on the exact ACCEPT candidate before merge.
+    - The GitHub-hosted SOW path is absent from the exact candidate.
+    - The canonical dossier README no longer links to a GitHub-hosted SOW.
+    - The existing Drive EHCO-PUB-SOW-009 document remains the sole active SOW authority for this selected current public-repository closeout.
+    - Candidate changes remain limited to ehco.operation.yaml, dossiers/README.md and deletion of dossiers/public-technical-packaging/SCOPE-OF-WORK.md.
+    - Required repository checks pass on the exact PUBLISH candidate.
   proves:
-    - Owner acceptance of the exact qualified public maturity synchronization candidate without expanding its evidence or effect ceiling.
+    - The public repository no longer publishes or navigates to a live GitHub Scope of Work for this closeout.
+    - The repository operation preserves Drive-first Scope of Work custody without creating a successor or new closeout stage.
   evidence_not_created:
-    - New Language Model implementation evidence, staging execution evidence, production evidence, Runtime evidence, authority, standing or participation.
+    - Runtime evidence
+    - deployment evidence
+    - release evidence
+    - new technical capability evidence
+    - authority or standing change
 stop_condition:
-  - Merge only the exact ACCEPT candidate after all applicable checks are terminal green.
-  - Preserve accepted standing 52/53 and all Runtime, deployment, release, authority, standing and participation effects as NONE or separately owned.
+  - Stop only after the exact qualified candidate is owner-accepted, merged, read back, and this bounded custody operation is reconciled COMPLETE with no remaining bounded work.
