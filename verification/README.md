@@ -10,7 +10,7 @@ From repository root:
 python3 verification/verify_all_public.py
 ```
 
-`verify_all_public.py` is an orchestrator. It runs the existing specialized validators in the stable order below, stops at the first failure, identifies the failing validation class, and preserves the evidence boundary of each underlying check. It does not duplicate validator logic and does not create Runtime, implementation, physical-execution, authority, standing, deployment, or release evidence.
+`verify_all_public.py` is an orchestrator. It runs the existing specialized validators in the stable order below, stops at the first failure, identifies the failing validation class, and preserves the evidence boundary of each underlying check. Specialized validators retain their own logic. Runtime, implementation, physical-execution, authority, standing, deployment, and release evidence remain established by their applicable owning evidence domains.
 
 The successful terminal result is `PASS ALL (7/7)`.
 
@@ -28,7 +28,7 @@ python3 verification/validate_release_identity.py
 
 ## Failure interpretation
 
-A failed validator establishes a failure of that public repository/package check for the checkout being tested. It does **not** by itself establish a change, demotion, contradiction, or loss of standing in an owning implementation repository, owning physical evidence, or `INSTANTIATED_EHCO_RUNTIME`.
+A failed validator establishes a failure of that public repository/package check for the checkout being tested. Owning implementation state, owning physical evidence, and `INSTANTIATED_EHCO_RUNTIME` standing remain determined by their respective owning evidence domains; a repository/package check carries its own bounded evidence class.
 
 Use the failing label/path reported by `verify_all_public.py` as the first inspection route:
 
@@ -63,7 +63,7 @@ The exact Full Flex packet JSON is present in canonical public Git custody and i
 
 `validate_public_evidence.py` verifies canonical dossier identity, Packets 00–08 structure/manifests/hashes/suite closure, JSON syntax, internal links, repository residue, high-confidence credential indicators, architecture/navigation relationships, Runtime/component/Tier Three terminology, Docker portability classification, Dashboard representation, current public maturity language, component snapshot relationships and claim/evidence matrix structure.
 
-It also preserves the required **Language Model capability-based advanced near-final maturation representation** and the **absence of internal Language Model stage/unit/program mechanics** from active reader-facing maturity prose.
+It also preserves the required **Language Model capability-based advanced near-final maturation representation** while active reader-facing maturity prose remains bounded to public capability representation. Internal Language Model stage/unit/program mechanics stay within their owning controlled sources.
 
 Hash-preserved Packets 00–08 and exact component fixture artifacts retain their accepted bytes.
 
@@ -109,7 +109,7 @@ Protected standing denominator mechanics remain within their owning governed sou
 - **82 passed / 0 failed** selected semantic closure;
 - deterministic replay and continuation-manifest identity;
 - the selected-benchmark and selected-current-corpus claim ceilings; and
-- explicit bounded exclusions for universal/unbounded correctness, generic scalar foresight accuracy, Tier One Runtime participation, deployment, release, authority and standing effects.
+- bounded claim ceilings for universal/unbounded correctness, generic scalar foresight accuracy, Tier One Runtime participation, deployment, release, authority and standing effects.
 
 The historical real-world container/service qualification remains a separate evidence class and its diagnostic service timings stay separate from the matched A/B result.
 
