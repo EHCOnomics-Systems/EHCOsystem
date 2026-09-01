@@ -1,6 +1,6 @@
 ---
 title: EHCO AI-OS Technical Diligence — Start Here
-version: 2.0
+version: 2.1
 status: public-diligence-navigation
 published: 2026-09-01
 maintainer: EHCOnomics
@@ -14,15 +14,15 @@ This page provides the focused public technical route for **EHCO AI-OS**, its de
 
 ## Runtime identity
 
-**EHCO AI-OS is the realized Tier One Runtime** with accepted standing **52/53** and accepted maturity **`REALIZED / COMPLETE_IN_ACCEPTED_SCOPE`**.
+**EHCO AI-OS is the realized Tier One Runtime** with accepted standing **52/53** and accepted maturity **`REALIZED / COMPLETE_IN_ACCEPTED_SCOPE`**. `INSTANTIATED_EHCO_RUNTIME` owns Tier One Runtime authority and Runtime state.
 
 `EHCO_DOCKER_PORTABILITY` is the **PRIMARY_ACCESSIBLE_RUNTIME_PROJECTION** and fully containerized, deployment-ready portable delivery form of the established hardened Runtime/root-image lineage.
 
 Accepted technical evidence establishes self-hosted local Docker operation with Dashboard, Runtime bridge, worker service, Docker networking, persistent Runtime/proof/data surfaces, health behavior, and hardened image identity.
 
-## 1. Full Flex current public route
+## 1. Full Flex accepted public route
 
-Start with [EHCO AI-OS Runtime — Current Public Evidence](runtime/README.md) and the [Full Flex evidence index](evidence/runtime/full-flex/v1/README.md).
+Start with [EHCO AI-OS Runtime — Accepted Public Evidence](runtime/README.md) and the [Full Flex evidence index](evidence/runtime/full-flex/v1/README.md).
 
 The accepted Full Flex packet is bound to SHA-256:
 
@@ -30,7 +30,7 @@ The accepted Full Flex packet is bound to SHA-256:
 7F80C27D085AE871A00AED412C6F20EA9A76CB0677C93AEBA381CD1FD70EC8E5
 ```
 
-The current public tree publishes the accepted receipt, detached packet identity, and [public-safe Full Flex record](evidence/runtime/full-flex/v1/PUBLIC_SAFE_RECORD.json). The raw accepted packet remains in owning evidence custody because it contains internal source-routing metadata.
+The public repository publishes the accepted receipt, detached packet identity, and [public-safe Full Flex record](evidence/runtime/full-flex/v1/PUBLIC_SAFE_RECORD.json). The raw accepted packet remains in owning evidence custody because it contains internal source-routing metadata.
 
 ## 2. Runtime engineering characterization
 
@@ -68,11 +68,11 @@ A separate historical physical qualification also records a 50-request diagnosti
 
 ## 6. Evidence ownership and review
 
-Runtime authority and current Runtime state remain owned by `INSTANTIATED_EHCO_RUNTIME`. The public repository provides public-safe architecture, accepted evidence identities, historical evidence records, selected component evidence, and exact-revision validation.
+Runtime authority and Runtime state remain owned by `INSTANTIATED_EHCO_RUNTIME`. The public repository provides public-safe architecture, accepted evidence identities, historical evidence records, selected component evidence, and exact-revision validation.
 
 Reviewer route:
 
-1. [Current Runtime evidence](runtime/README.md)
+1. [Accepted Runtime evidence](runtime/README.md)
 2. [Full Flex public evidence](evidence/runtime/full-flex/v1/README.md)
 3. [EHCO AI-OS Public System Card](architecture/EHCO-AI-OS-SYSTEM-CARD.md)
 4. [Canonical Public Claim Registry](assurance/PUBLIC-CLAIM-REGISTRY.json)
