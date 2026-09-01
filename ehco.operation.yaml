@@ -31,7 +31,7 @@ active_operation:
   authorization_mode: BUILD
   bounded_outcome: Correct all in-scope material public semantics, terminology, lifecycle, authority/currentness, evidence-ownership, disclosure and reader-flow defects; recursively re-audit the resulting candidate; qualify the exact candidate through normal public repository protections; then accept and merge only the exact qualified candidate and reconcile final Drive closeout state.
   remaining_bounded_work:
-    - Complete active public assurance/provenance/governance semantic reconciliation.
+    - Complete active public assurance/provenance/governance/security semantic reconciliation.
     - Recursively re-audit every identified defect class and materially equivalent wording across the active public surface.
     - Correct every in-scope material recurrence discovered by re-audit.
     - Qualify the exact candidate through canonical public validation, CodeQL/security checks and the EHCO Assistant Operation Gate as applicable.
@@ -68,6 +68,7 @@ scope:
     - NOTICE.md
     - PROVENANCE.md
     - README.md
+    - SECURITY.md
     - TECHNICAL-DILIGENCE.md
     - architecture/EHCO-AI-OS-INSTANTIATED-SYSTEM.md
     - architecture/EHCO-AI-OS-SYSTEM-CARD.md
