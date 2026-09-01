@@ -1,6 +1,6 @@
 # The EHCOsystem Library
 
-This page indexes the current public technical records for **EHCOsystem, EHCOnomics' Instantiated AI ecosystem**.
+This page indexes the accepted public technical records for **EHCOsystem, EHCOnomics' Instantiated AI ecosystem**.
 
 ## Start here
 
@@ -29,7 +29,7 @@ This page indexes the current public technical records for **EHCOsystem, EHCOnom
 
 ## Runtime and Full Flex
 
-- [EHCO AI-OS Runtime — Current Public Evidence](runtime/README.md)
+- [EHCO AI-OS Runtime — Accepted Public Evidence](runtime/README.md)
 - [Full Flex Public Evidence Index](evidence/runtime/full-flex/v1/README.md)
 - [Full Flex Public-Safe Record](evidence/runtime/full-flex/v1/PUBLIC_SAFE_RECORD.json)
 - [EHCO AI-OS Public System Card](architecture/EHCO-AI-OS-SYSTEM-CARD.md)
