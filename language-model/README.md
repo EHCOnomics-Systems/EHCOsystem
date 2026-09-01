@@ -1,12 +1,11 @@
 ---
 title: EHCO Language Model
-version: 2.3
+version: 3.0
 status: current-public-system-record
-published: 2026-08-31
+published: 2026-09-01
 maintainer: EHCOnomics
 evidence_class: controlled-ehco-system-record
-evidence_scope: capability-based public architecture, maturity and evidence representation
-supersedes: version 2.2
+evidence_scope: capability-based public architecture, maturity and deterministic demonstration
 ---
 
 # EHCO Language Model
@@ -19,63 +18,46 @@ Its governed architecture is:
 
 Language intelligence is implemented through explicit EHCO computation across deterministic linguistic structures, mathematical operators, evidence bindings, search/resolution mechanisms, and service contracts.
 
-## Established implementation depth
+## What it does
 
-The accepted source estate contains:
+The accepted component includes deterministic capability across:
 
-- **Language Kernel** — lexical, morphological, syntactic, semantic, reference, context, discourse, ambiguity, and withholding structures;
-- **Language Math** — explicit deterministic mathematical language and transformation structures;
-- **deterministic tokenizer** — governed tokenization and corpus lineage;
-- **evaluation** — deterministic candidate construction, resolution, qualification, replay, structural and compositional evaluation;
-- **service boundary** — deterministic component request/response handling and HTTP-boundary equivalence;
-- **evidence and owner seams** — typed contracts connecting language computation to governed evidence and owning systems;
-- **schemas, registries and fixtures** — machine-readable semantic, qualification and provenance structures;
-- **deterministic test estate** — replay, metamorphic, structural, adversarial, conformance, resource-bound, recursion, service-boundary, failure-frontier and full-range qualification material;
-- **component packaging** — Dockerfile, dependency locks and component packaging source; and
-- **production-lifecycle source** — governed artifact build, qualification, release, stage-readiness and stage-verification workflows.
+- lexical and morphological structure;
+- syntax and semantic composition;
+- context and reference handling;
+- ambiguity preservation and typed withholding;
+- deterministic mathematical language;
+- explicit failure-frontier handling;
+- deterministic replay and canonical ordering;
+- pairwise and round-trip semantic preservation;
+- cross-caller semantic conformance;
+- direct-engine/component-service equivalence; and
+- typed fail-closed service-boundary behavior.
 
-## Current maturity
+**[See the Deterministic Capability Demonstration →](DETERMINISTIC-CAPABILITY-DEMONSTRATION.md)**
 
-The Language Model has **deep final capability and source closure established, with its final component artifact built, qualified and released under governed custody**. Its mature deterministic linguistic, semantic, mathematical, evaluation, service and qualification foundations remain established across the single computational-language path. The current selected lifecycle frontier is **governed staging execution and verification of that exact released artifact**.
+## Established maturity
 
-This lifecycle progression preserves the established maturity of the deterministic computational-language system. Production verification/deployment and Tier One Runtime participation remain separate evidence domains with their own owning evidence.
+The Language Model has **deep final capability/source closure established**. Its immutable component artifact has been **built, qualified, and released under governed custody**, and **governed staging execution and verification of that released artifact are established** in their applicable evidence classes.
 
-Public maturity is expressed through established capability and evidence. Internal development stage numbers, unit identifiers, branch choreography and transient gate state remain within the controlled development estate; the public maturity model is capability-based.
+Those accomplishments are separate lifecycle dimensions and are stated at their established maturity. Production deployment and Tier One Runtime participation remain separately owned evidence dimensions; they do not reduce the maturity already established for component capability, source closure, artifact qualification/release, or staging verification.
 
-Accepted capability and lifecycle claims are grounded in accepted owning source and owning technical evidence. Later lifecycle frontiers preserve already established source, qualification, artifact-build and release state.
+## Public evidence
 
-## Public test evidence
+The [Language Model Public Test Snapshot v1](evidence/public-test-snapshot-v1/README.md) publishes **seven exact synthetic fixture artifacts covering 62 cases**, expected dispositions, artifact identity/provenance, a qualification-test index, and validation tooling.
 
-The [Language Model Public Test Snapshot v1](evidence/public-test-snapshot-v1/README.md) publishes **seven exact synthetic fixtures covering 62 cases**, expected dispositions, artifact identity/provenance, a qualification-test index, and dedicated validation tooling.
+The [Deterministic Capability Demonstration](DETERMINISTIC-CAPABILITY-DEMONSTRATION.md) turns that accepted evidence into a concise reader-facing demonstration across composition, context/reference, ambiguity, Language Math, whole-path failure-frontier behavior, deterministic replay, round-trip preservation, and service-boundary equivalence.
 
-The snapshot is one public inspection package within the larger controlled qualification estate. The qualification index exposes selected real test names and dimensions across deterministic replay, pairwise and round-trip preservation, canonical ordering, structural/property qualification, text-encoding adversarial cases, mutation/fuzz failure-frontier cases, cross-caller semantic conformance, semantic injection/evidence poisoning, performance/resource bounds, bounded complexity/recursion, and deterministic service-boundary behavior.
+## EHCOsystem relationship
 
-## Technology-estate relationships
+The Language Model supplies deterministic computational language as a **downstream governed component** of EHCOsystem. **Instantiated AI** remains the architectural category, and **EHCO AI-OS** remains the Tier One Runtime identity. The component's role is complementary to Range Reactor reasoning/range computation, governed retrieval/evidence, and the other technologies in the EHCOsystem estate.
 
-- **EHCO Language Model** owns deterministic computational language.
-- **EHCO Range Reactor** owns bounded deterministic range/reasoning computation.
-- **EHCO RAG** owns governed retrieval, context, provenance, source custody, and evidence services.
-- **EHCO AI-OS** owns Tier One Runtime authority and current Runtime state.
-- **Scoped Runtime participation** is owned by the applicable Runtime evidence for the relevant corridor.
+## Review route
 
-## Public and controlled evidence routes
+1. [Deterministic Capability Demonstration](DETERMINISTIC-CAPABILITY-DEMONSTRATION.md)
+2. [Public Test Snapshot v1](evidence/public-test-snapshot-v1/README.md)
+3. [Qualification Test Index](evidence/public-test-snapshot-v1/QUALIFICATION_TEST_INDEX_2026-08-24.md)
+4. [EHCOsystem Technology Estate](../architecture/EHCO-TECHNOLOGY-ESTATE.md)
+5. [Public verification](../verification/README.md)
 
-The public repository publishes the architecture record, exact selected test fixtures, qualification index, provenance manifest, and public verification tooling. Controlled technical diligence can extend that inspection through exact source/revision identity, deeper qualification records, safe selected tests, witnessed execution, and written verification findings.
-
-## Related material
-
-- [EHCOsystem Technology Estate](../architecture/EHCO-TECHNOLOGY-ESTATE.md)
-- [Language Model Public Test Snapshot v1](evidence/public-test-snapshot-v1/README.md)
-- [Ecosystem Claim → Evidence Matrix](../assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md)
-- [Ecosystem Components and Runtime Relationships](../architecture/ecosystem-components-and-participation.md)
-
-## Revision history
-
-| Version | Date | Change |
-|---|---|---|
-| 2.3 | 2026-08-31 | Synchronized public maturity to established deep final capability/source closure and governed final component artifact build, qualification and release, with staging execution/verification identified as the current separate lifecycle frontier. |
-| 2.2 | 2026-08-28 | Recast current maturity around accepted capability and advanced near-final strengthening while keeping internal development sequencing in the controlled development estate. |
-| 2.1 | 2026-08-28 | Refreshed the public record from current owning source and represented the deterministic implementation and qualification estate affirmatively. |
-| 2.0 | 2026-08-25 | Established the capability-first public component record. |
-
-<!-- public-validator compatibility marker: advanced near-final maturation cycle -->
+Public materials deliberately omit private source topology and internal development choreography while preserving the strongest established public-safe capability and lifecycle representation.
