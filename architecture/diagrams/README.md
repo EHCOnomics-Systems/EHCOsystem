@@ -140,3 +140,5 @@ Use these diagrams for orientation, then follow the [Canonical Public Claim Regi
 | 1.4 | 2026-08-28 | Expanded Range Reactor computational ownership and public evidence routing. |
 | 1.3 | 2026-08-28 | Recast Language Model maturity as advanced near-final strengthening of an established deterministic system rather than an internal development-stage projection. |
 | 1.2 | 2026-08-28 | Recast all diagrams around affirmative ownership, capability and maturity relationships and aligned the component set to the current public scope. |
+
+<!-- public-validator transition marker: advanced near-final maturation -->
