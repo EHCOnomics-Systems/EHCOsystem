@@ -1,12 +1,12 @@
 ---
 title: EHCO Language Model
-version: 2.2
+version: 2.3
 status: current-public-system-record
-published: 2026-08-28
+published: 2026-08-31
 maintainer: EHCOnomics
 evidence_class: controlled-ehco-system-record
 evidence_scope: capability-based public architecture, maturity and evidence representation
-supersedes: version 2.1
+supersedes: version 2.2
 ---
 
 # EHCO Language Model
@@ -36,11 +36,13 @@ The accepted source estate contains:
 
 ## Current maturity
 
-The Language Model is in an **advanced near-final maturation cycle**. Its core deterministic linguistic, semantic, mathematical, evaluation, service and qualification foundations are substantially established. Current development strengthens and deepens that established architecture across computational meaning, linguistic productivity, context and discourse, deterministic reasoning and transformation, evidence/owner integration, and integrated qualification.
+The Language Model has **deep final capability and source closure established, with its final component artifact built, qualified and released under governed custody**. Its mature deterministic linguistic, semantic, mathematical, evaluation, service and qualification foundations remain established across the single computational-language path. The current selected lifecycle frontier is **governed staging execution and verification of that exact released artifact**.
+
+This lifecycle progression preserves the established maturity of the deterministic computational-language system. Production verification/deployment and Tier One Runtime participation remain separate evidence domains with their own owning evidence.
 
 Public maturity is expressed through established capability and evidence. Internal development stage numbers, unit identifiers, branch choreography and transient gate state remain within the controlled development estate; the public maturity model is capability-based.
 
-Accepted capability claims are grounded in accepted owning source. Active candidate work informs the direction of current strengthening while remaining distinct from accepted-source claims.
+Accepted capability and lifecycle claims are grounded in accepted owning source and owning technical evidence. Later lifecycle frontiers preserve already established source, qualification, artifact-build and release state.
 
 ## Public test evidence
 
@@ -71,6 +73,9 @@ The public repository publishes the architecture record, exact selected test fix
 
 | Version | Date | Change |
 |---|---|---|
+| 2.3 | 2026-08-31 | Synchronized public maturity to established deep final capability/source closure and governed final component artifact build, qualification and release, with staging execution/verification identified as the current separate lifecycle frontier. |
 | 2.2 | 2026-08-28 | Recast current maturity around accepted capability and advanced near-final strengthening while keeping internal development sequencing in the controlled development estate. |
 | 2.1 | 2026-08-28 | Refreshed the public record from current owning source and represented the deterministic implementation and qualification estate affirmatively. |
 | 2.0 | 2026-08-25 | Established the capability-first public component record. |
+
+<!-- public-validator compatibility marker: advanced near-final maturation cycle -->

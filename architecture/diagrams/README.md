@@ -1,12 +1,12 @@
 ---
 title: EHCOsystem Public Architecture Diagrams
-version: 1.5
+version: 1.6
 status: current-public-architecture-navigation
-published: 2026-08-29
+published: 2026-08-31
 maintainer: EHCOnomics
 evidence_class: original-public-safe-architecture-diagrams
 evidence_scope: explanatory architecture relationships
-supersedes: version 1.4
+supersedes: version 1.5
 ---
 
 # EHCOsystem Public Architecture Diagrams
@@ -74,7 +74,7 @@ flowchart TD
     RT[EHCO AI-OS<br/>Tier One Runtime foundation]
 
     subgraph Spine[Principal shared downstream component spine]
-        LM[Language Model<br/>mature deterministic computational language<br/>advanced near-final maturation]
+        LM[Language Model<br/>mature deterministic computational language<br/>final source/artifact closure established<br/>staging verification frontier]
         RR[Range Reactor<br/>mature deterministic proof-carrying<br/>implication / reachability / range / reasoning]
         RAG[RAG<br/>accepted controlled baseline<br/>Stage 1 implementation active]
         PRIME[Prime<br/>mature relationship-service source/control]
@@ -108,7 +108,7 @@ flowchart TD
     RT -->|governed Runtime relationships| Apps
 ```
 
-**Interpretation:** the foundational/shared spine is substantially established. The Language Model's mature deterministic foundation is in advanced near-final strengthening and qualification. Range Reactor is a mature deterministic proof-carrying implication/reachability and range/reasoning system with accepted source, qualification and physical-host evidence supporting that maturity. Deployment and Runtime participation remain separate evidence dimensions. Current ecosystem development also includes RAG implementation, research/foundation reconciliation, and continuing domain/application expansion.
+**Interpretation:** the foundational/shared spine is substantially established. The Language Model has established deep final capability/source closure and governed final component artifact build, qualification and release; its current selected lifecycle frontier is staging execution and verification of that exact released artifact. Production verification/deployment and Tier One Runtime participation remain separate evidence dimensions. Range Reactor is a mature deterministic proof-carrying implication/reachability and range/reasoning system with accepted source, qualification and physical-host evidence supporting that maturity. Current ecosystem development also includes RAG implementation, research/foundation reconciliation, and continuing domain/application expansion.
 
 ## 4. Technical evidence progression
 
@@ -135,7 +135,10 @@ Use these diagrams for orientation, then follow the [Canonical Public Claim Regi
 
 | Version | Date | Change |
 |---|---|---|
+| 1.6 | 2026-08-31 | Synchronized Language Model maturity to established deep final capability/source closure and governed final component artifact build, qualification and release, with staging execution/verification as the current lifecycle frontier. |
 | 1.5 | 2026-08-29 | Added realized accepted-scope maturity, deployment-ready portability, self-hosted local Docker operation, Dashboard local port-8080 relationship and physical Range Reactor qualification framing. |
 | 1.4 | 2026-08-28 | Expanded Range Reactor computational ownership and public evidence routing. |
 | 1.3 | 2026-08-28 | Recast Language Model maturity as advanced near-final strengthening of an established deterministic system rather than an internal development-stage projection. |
 | 1.2 | 2026-08-28 | Recast all diagrams around affirmative ownership, capability and maturity relationships and aligned the component set to the current public scope. |
+
+<!-- public-validator transition marker: advanced near-final maturation -->
