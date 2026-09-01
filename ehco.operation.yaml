@@ -74,11 +74,11 @@ change_control:
     - compare_source
     - audit
     - update_file
-    - delete_file
     - run_checks
   local_actions_prohibited:
     - create_file
     - move_file
+    - delete_file
     - generate_artifact
   remote_actions_authorized:
     - mark_pull_request_ready_for_review
