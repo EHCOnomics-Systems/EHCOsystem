@@ -1,6 +1,6 @@
 ---
 title: EHCOnomics Instantiated AI Ecosystem Technical Diligence
-version: 2.0
+version: 2.1
 status: current-public-diligence-navigation
 published: 2026-09-01
 maintainer: EHCOnomics
@@ -21,7 +21,7 @@ Start with:
 3. [Components and Runtime Relationships](architecture/ecosystem-components-and-participation.md)
 4. [Public Architecture Diagrams](architecture/diagrams/README.md)
 
-**EHCO AI-OS** is the realized Tier One Runtime with accepted standing **52/53** and accepted maturity **`REALIZED / COMPLETE_IN_ACCEPTED_SCOPE`**. `EHCO_DOCKER_PORTABILITY` is the **PRIMARY_ACCESSIBLE_RUNTIME_PROJECTION** and fully containerized, deployment-ready portable delivery form of the established hardened Runtime lineage.
+**EHCO AI-OS** is the realized Tier One Runtime with accepted standing **52/53** and accepted maturity **`REALIZED / COMPLETE_IN_ACCEPTED_SCOPE`**. `EHCO_DOCKER_PORTABILITY` is the **PRIMARY_ACCESSIBLE_RUNTIME_PROJECTION** and fully containerized, deployment-ready portable delivery form of the established hardened Runtime lineage. `INSTANTIATED_EHCO_RUNTIME` owns Tier One Runtime authority and Runtime state.
 
 ## 2. Shared technologies
 
@@ -55,9 +55,9 @@ EHCO RAG provides governed retrieval/evidence capability; EHCO Prime provides re
 
 ## 3. Runtime / Full Flex
 
-Use [EHCO AI-OS Runtime — Current Public Evidence](runtime/README.md) for the Runtime route.
+Use [EHCO AI-OS Runtime — Accepted Public Evidence](runtime/README.md) for the Runtime route.
 
-The accepted Full Flex packet remains bound to SHA-256 `7F80C27D085AE871A00AED412C6F20EA9A76CB0677C93AEBA381CD1FD70EC8E5`. The current public tree carries its public-safe record, accepted receipt, and detached packet hash. Raw packet bytes remain in owning evidence custody because they contain internal source-routing metadata.
+The accepted Full Flex packet remains bound to SHA-256 `7F80C27D085AE871A00AED412C6F20EA9A76CB0677C93AEBA381CD1FD70EC8E5`. The public repository carries its public-safe record, accepted receipt, and detached packet hash. Raw packet bytes remain in owning evidence custody because they contain internal source-routing metadata.
 
 Historical Public Evidence Companion Packets 00–08 remain available for event-time lineage.
 
