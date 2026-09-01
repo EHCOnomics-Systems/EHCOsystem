@@ -1,69 +1,68 @@
 ---
 title: Start Here
-version: 2.7
+version: 3.0
 status: current-public-navigation
-published: 2026-08-30
+published: 2026-09-01
 maintainer: EHCOnomics
 evidence_class: navigation
 evidence_scope: public review routing
-supersedes: version 2.6
 ---
 
 # Start Here
 
-EHCOsystem has four primary review routes.
+Use this route for a first technical read of EHCOsystem.
 
-## 1. Current EHCO AI-OS Runtime — start here
+## 1. Understand Instantiated AI
 
-For the **current established EHCO AI-OS Runtime environment**, begin with **[EHCO AI-OS Runtime — Current Public Evidence](../runtime/README.md)**.
+Start with **[Instantiated AI — Public Architecture Definition](../architecture/INSTANTIATED-AI.md)**.
 
-EHCO AI-OS is the realized Tier One Runtime at accepted standing **52/53** and accepted maturity **`REALIZED / COMPLETE_IN_ACCEPTED_SCOPE`**. `EHCO_DOCKER_PORTABILITY` is the **`PRIMARY_ACCESSIBLE_RUNTIME_PROJECTION`** and fully containerized, deployment-ready portable delivery form of the established hardened Runtime/root-image lineage.
+Instantiated AI is the architectural category: intelligence operates inside explicit computational conditions for identity, authority, state, memory, source, permissible range, evidence, release, and consequence.
 
-**52/53 is the accepted numerical Runtime standing corridor under the EHCO standing framework. Benchmark scoring, percentage-completion measures, component-maturity percentages, deployment-state percentages and public-release percentages are separate dimensions.** Protected denominator mechanics remain within their owning governed sources.
+## 2. See the complete EHCOsystem architecture
 
-The clean **EHCO Full Flex Public Packet v1** is the canonical first public evidence route for present Runtime posture. The Public Evidence Companion Packets 00–08 remain immutable historical/event-time evidence and lineage.
+Read **[EHCOsystem — An Instantiated AI Ecosystem](../architecture/EHCO-TECHNOLOGY-ESTATE.md)**, then **[Ecosystem Components and Runtime Relationships](../architecture/ecosystem-components-and-participation.md)**.
 
-## 2. Understand Instantiated AI and explore EHCOsystem
+The durable hierarchy is:
 
-Read **[Instantiated AI — Public Architecture Definition](../architecture/INSTANTIATED-AI.md)** for the category definition, dependency inversion, computational standing, source and memory standing, model independence, and qualification surface.
+**Instantiated AI** → **EHCOsystem** → **EHCO AI-OS Tier One Runtime** → **shared downstream technologies** → **research foundations and governed applications** → **Tier Three interfaces/projections**.
 
-Read **[EHCOsystem — An Instantiated AI Ecosystem](../architecture/EHCO-TECHNOLOGY-ESTATE.md)** for the full public technology estate.
+EHCO AI-OS has accepted standing **52/53** and accepted Runtime maturity **`REALIZED / COMPLETE_IN_ACCEPTED_SCOPE`**. `EHCO_DOCKER_PORTABILITY` is the **PRIMARY_ACCESSIBLE_RUNTIME_PROJECTION** and fully containerized, deployment-ready portable delivery form of the established hardened Runtime/root-image lineage.
 
-The first-read hierarchy is:
+## 3. Explore the strongest shared technologies
 
-**EHCO AI-OS realized Tier One Runtime / `REALIZED / COMPLETE_IN_ACCEPTED_SCOPE` / standing 52/53** → **`EHCO_DOCKER_PORTABILITY` primary accessible Runtime projection and fully containerized deployment-ready portable delivery form** → **self-hosted local Docker Runtime operation** → **EHCO Dashboard current accepted Tier Three projection baseline, served locally on host port 8080 in the captured operating state**.
+### Language Model
 
-The shared downstream spine contains the Language Model, Range Reactor, RAG, Prime, and Agent Connect, each represented at its current source-supported maturity. Research foundations and domain applications retain their own development lanes.
+The **[EHCO Language Model](../language-model/README.md)** is a mature deterministic computational-language system built as `DETERMINISTIC_COMPUTATIONAL_LANGUAGE / SINGLE_PATH / EXPLICIT_EHCO_COMPUTATION / ZERO_WEIGHT_ONLY / ZERO WEIGHTS TRAINED`.
 
-The foundational/shared spine is substantially established. Current development is concentrated in component finalization/hardening, RAG implementation, research/foundation reconciliation, and continuing domain/application expansion.
+Open the **[Deterministic Capability Demonstration](../language-model/DETERMINISTIC-CAPABILITY-DEMONSTRATION.md)** for composition, context/reference, ambiguity, Language Math, failure-frontier, replay, round-trip, and service-boundary capability.
 
-Use the **[Public Architecture Diagrams](../architecture/diagrams/README.md)** for the visual map.
+### Range Reactor
 
-## 3. Inspect and verify the evidence
+The **[EHCO Range Reactor](../range-reactor/README.md)** is a mature deterministic proof-carrying range/reasoning system. Its accepted selected matched A/B result records **14.304307x wall-clock improvement**, **14.208722x CPU-time improvement**, **94.755854% benchmark-defined Python peak-allocation reduction**, **1,957 → 64 states**, **1,956 → 192 transitions**, and **720 histories preserved**, with **82 passed / 0 failed** selected semantic closure.
 
-Use the **[Full Flex Public Packet v1 evidence index](../evidence/runtime/full-flex/v1/README.md)** for current packet identity and exact-byte publication status.
+## 4. Inspect the Runtime evidence route
 
-Read the **[Canonical Public Claim Registry](../assurance/PUBLIC-CLAIM-REGISTRY.json)** for machine-readable current propositions and the **[Ecosystem Claim → Evidence Matrix](../assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md)** for claim, maturity, evidence class, public reference, verification method, source-review date, and evidence scope.
+Use **[EHCO AI-OS Runtime — Current Public Evidence](../runtime/README.md)** for the Full Flex public route.
 
-Use **[Public Repository Validation](../verification/README.md)** for deterministic repository and current-Runtime-evidence validation routes.
+The accepted Full Flex packet identity is preserved by its SHA-256 and receipt. The current public tree publishes a public-safe record bound to that accepted identity so internal source-routing metadata is not exposed.
 
-For historical Runtime evidence lineage, use the **[Public Evidence Companion](../evidence/README.md)** and Packets 00–08. For direct component evidence, inspect the **[EHCO Language Model Public Test Snapshot v1](../language-model/evidence/public-test-snapshot-v1/README.md)** and the **[EHCO Range Reactor Public Capability Snapshot v1](../range-reactor/evidence/public-capability-snapshot-v1/README.md)**.
+Historical Public Evidence Companion Packets 00–08 remain available as event-time evidence lineage.
 
-## 4. Perform technical diligence
+## 5. Verify
 
-For the focused Tier One route, use **[EHCO AI-OS Technical Diligence](../TECHNICAL-DILIGENCE.md)**.
+Run:
 
-For a broad estate review, use **[Ecosystem Technical Diligence](../ECOSYSTEM-DILIGENCE.md)**.
+```bash
+python3 verification/verify_all_public.py
+```
 
-## Canonical interpretation
+See **[Public Repository Validation](../verification/README.md)** for the complete validator set.
 
-The [Runtime, Repository, and Test-Estate Boundary](../architecture/runtime-repository-and-test-estate-boundary.md) maps evidence-domain ownership. The [EHCOsystem Library](../LIBRARY.md) indexes the complete public record set.
+## 6. Go deeper
 
-## Revision history
-
-| Version | Date | Change |
-|---|---|---|
-| 2.7 | 2026-08-30 | Made the current Full Flex Runtime evidence route the first public path and added bounded 52/53 interpretation. |
-| 2.6 | 2026-08-29 | Strengthened first-read Runtime, deployment-ready portability, local-operation and Dashboard-8080 framing and added the canonical claim-registry verification route. |
-| 2.5 | 2026-08-28 | Added first-class Range Reactor component and public capability-evidence routing. |
-| 2.4 | 2026-08-28 | Recast first-read navigation around affirmative identity, maturity, evidence, and current public scope. |
+- [Public Architecture Diagrams](../architecture/diagrams/README.md)
+- [Ecosystem Technical Diligence](../ECOSYSTEM-DILIGENCE.md)
+- [EHCO AI-OS Technical Diligence](../TECHNICAL-DILIGENCE.md)
+- [Canonical Public Claim Registry](../assurance/PUBLIC-CLAIM-REGISTRY.json)
+- [EHCOsystem Library](../LIBRARY.md)
+- [Repository Map](repository-map.md)
