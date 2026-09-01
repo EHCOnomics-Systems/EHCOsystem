@@ -1,6 +1,6 @@
 ---
 title: Ecosystem Components and Runtime Relationships
-version: 3.0
+version: 3.1
 status: current-public-system-architecture
 published: 2026-09-01
 maintainer: EHCOnomics
@@ -15,7 +15,7 @@ EHCOsystem keeps **component identity, capability maturity, artifact/release sta
 
 ### EHCO AI-OS
 
-**EHCO AI-OS is the realized Tier One Runtime** with accepted standing **52/53** and accepted maturity **`REALIZED / COMPLETE_IN_ACCEPTED_SCOPE`**. Runtime authority and current Runtime state remain owned by `INSTANTIATED_EHCO_RUNTIME`.
+**EHCO AI-OS is the realized Tier One Runtime** with accepted standing **52/53** and accepted maturity **`REALIZED / COMPLETE_IN_ACCEPTED_SCOPE`**. Tier One Runtime authority and Runtime state remain owned by `INSTANTIATED_EHCO_RUNTIME`.
 
 ## Primary accessible Runtime projection
 
@@ -82,4 +82,4 @@ A component's mature capability does not by itself establish Tier One Runtime pa
 - [Public Architecture Diagrams](diagrams/README.md)
 - [EHCO Language Model](../language-model/README.md)
 - [EHCO Range Reactor](../range-reactor/README.md)
-- [Current Runtime / Full Flex evidence](../runtime/README.md)
+- [Accepted Runtime / Full Flex evidence](../runtime/README.md)
