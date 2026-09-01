@@ -16,6 +16,7 @@ selection:
   selection_class: EXPLICIT_OWNER_DIRECTION
   durable_reference: |-
     Edward Henry explicitly selected the current public-repository closeout to remain governed by the existing Drive EHCO-PUB-SOW-009 scope, clarified that finality is for the closeout being completed now rather than permanent ecosystem closure, directed that no new closeout steps be invented, and directed removal of the live GitHub Scope of Work so the active SOW is maintained in Drive only. This bounded repository operation implements only that custody and navigation cleanup; it does not select a successor or create a new development stage.
+    OPERATION_STABLE_ENVELOPE_CHANGE=true
   source_base_revision: f3eac9d3b38579d480b22c525a31decda65f827e
   expected_reviewed_head_revision: NOT_APPLICABLE_UNTIL_ACCEPT
 control_anchor: AGENTS.md
