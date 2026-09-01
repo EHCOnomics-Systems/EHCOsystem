@@ -34,7 +34,7 @@ Use the [Runtime, Repository, and Test-Estate Boundary](../architecture/runtime-
 
 ## Public technical packaging
 
-The public technical packaging material is maintained separately from the canonical architecture dossier so reviewer routing and packaging do not rewrite or overstate accepted architecture evidence.
+The public technical packaging material is maintained separately from the canonical architecture dossier. This preserves accepted architecture evidence while providing reviewer routing and packaging as their own public evidence class.
 
 - [Public Technical Packaging — Scope of Work v1.0](public-technical-packaging/SCOPE-OF-WORK.md) — accepted scope for reviewer-ready baseline, indexing, currentness, provenance, verification, evidence deltas, and failure paths.
 - [Public Application & Evidence Index v1.0](public-technical-packaging/APPLICATION-EVIDENCE-INDEX.md) — principal component/proposition routing to owning source or evidence domains, accepted identities where established, public evidence routes, validators, currentness, and claim ceilings.
