@@ -1,12 +1,12 @@
 ---
 title: EHCOnomics Instantiated AI Ecosystem Technical Diligence
-version: 1.6
+version: 1.7
 status: current-public-diligence-navigation
-published: 2026-08-29
+published: 2026-08-31
 maintainer: EHCOnomics
 evidence_class: navigation-and-bounded-technical-summary
 evidence_scope: public reviewer route through current architecture and source-grounded evidence
-supersedes: version 1.5
+supersedes: version 1.6
 ---
 
 # EHCOnomics Instantiated AI Ecosystem Technical Diligence
@@ -49,7 +49,7 @@ Established Runtime/Docker lineage also records Tier One operation, governance, 
 
 ### 3. Principal shared component spine
 
-- **EHCO Language Model** — mature deterministic computational language under `ZERO_WEIGHT_ONLY / ZERO WEIGHTS TRAINED`, in an **advanced near-final maturation cycle** focused on strengthening computational meaning, linguistic and reasoning depth, evidence/owner integration, and integrated deterministic qualification.
+- **EHCO Language Model** — mature deterministic computational language under `ZERO_WEIGHT_ONLY / ZERO WEIGHTS TRAINED`, with **deep final capability/source closure and governed final component artifact build, qualification and release established**. Its current selected lifecycle frontier is governed **staging execution and verification of that exact released artifact**. Production verification/deployment and Tier One Runtime participation remain separate evidence domains.
 - **EHCO Range Reactor** — mature deterministic proof-carrying implication/reachability and range/reasoning system with accepted executable reference semantics, typed evidence and result custody, deterministic identity/replay, contradiction/frontier preservation, independent finite collapse verification, service/container source, production/release controls, Prime/Primordia interoperability, and owning physical-host qualification.
 - **EHCO RAG** — governed retrieval/evidence/context component with an accepted 23/23 controlled baseline and active Stage 1 implementation.
 - **EHCO Prime** — advanced/mature relationship-service source/control with Stage 8 production-build/rehearsal hardening.
@@ -99,6 +99,7 @@ Use the [Canonical Public Claim Registry](assurance/PUBLIC-CLAIM-REGISTRY.json) 
 
 | Version | Date | Change |
 |---|---|---|
+| 1.7 | 2026-08-31 | Synchronized Language Model maturity to established deep final capability/source closure and governed final component artifact build, qualification and release, with staging execution/verification as the current lifecycle frontier. |
 | 1.6 | 2026-08-29 | Added accepted-scope Runtime maturity, deployment-ready portability, local Docker operation, Dashboard-8080 origin, model-independent Tier One lineage, claim-registry routing and physical Range Reactor qualification. |
 | 1.5 | 2026-08-28 | Added the dedicated Range Reactor capability/evidence review route and source-reviewed public snapshot. |
 | 1.4 | 2026-08-28 | Recast Language Model maturity around accepted capability and advanced near-final strengthening rather than internal development sequencing. |
