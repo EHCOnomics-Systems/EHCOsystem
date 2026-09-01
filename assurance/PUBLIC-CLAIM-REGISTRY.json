@@ -1,10 +1,10 @@
 {
   "schema": "ehco.public.claim-registry.v1",
-  "registry_version": "1.3.0",
+  "registry_version": "1.4.0",
   "published": "2026-09-01",
   "source_review_date": "2026-09-01",
-  "public_repository_base": "f3eac9d3b38579d480b22c525a31decda65f827e",
-  "public_repository_base_semantics": "accepted canonical main used as the source base for the current presentation/resting-state closeout",
+  "public_repository_base": "1cf77b4d16327bc98c645b24f86b8df92b1a5ea4",
+  "public_repository_base_semantics": "accepted canonical main used as the source base for the recursive semantics/resting-state closeout continuation",
   "purpose": "Canonical machine-readable public propositions for EHCOsystem. Reader-facing pages explain the architecture first; this registry provides a deeper public claim and verification route.",
   "standing_interpretation": {
     "accepted_standing": "52/53",
@@ -19,6 +19,7 @@
     "protected_denominator_mechanics": "NOT_PUBLICLY_INFERRED_OR_EXPANDED"
   },
   "current_runtime_evidence": {
+    "field_semantics": "MACHINE_READABLE_SELECTED_ACCEPTED_PUBLIC_RUNTIME_EVIDENCE_IDENTITY",
     "front_door": "runtime/README.md",
     "packet_index": "evidence/runtime/full-flex/v1/README.md",
     "public_safe_record": "evidence/runtime/full-flex/v1/PUBLIC_SAFE_RECORD.json",
@@ -27,8 +28,10 @@
     "packet_sha256": "7F80C27D085AE871A00AED412C6F20EA9A76CB0677C93AEBA381CD1FD70EC8E5",
     "runtime_maturity": "REALIZED / COMPLETE_IN_ACCEPTED_SCOPE",
     "accepted_standing": "52/53",
+    "runtime_authority_and_state_owner": "INSTANTIATED_EHCO_RUNTIME",
     "docker_portability": "PRIMARY_ACCESSIBLE_RUNTIME_PROJECTION",
     "precedence": "CURRENT_FULL_FLEX_FIRST; CLAIM_REGISTRY_SECOND; OWNING_TECHNICAL_EVIDENCE_RETAINS_TECHNICAL_EFFECT_OWNERSHIP; PUBLIC_EVIDENCE_COMPANION_PACKETS_00_08_RETAINED_AS_HISTORICAL_EVENT_TIME_LINEAGE",
+    "precedence_semantics": "CURRENT_FULL_FLEX_FIRST is a retained machine status token for the selected accepted public evidence route; it does not assert live Runtime-state currentness.",
     "public_custody": "ACCEPTED_PACKET_HASH_AND_RECEIPT_WITH_PUBLIC_SAFE_RECORD",
     "raw_packet_publication": "WITHHELD_FROM_CURRENT_PUBLIC_TREE_TO_PROTECT_INTERNAL_SOURCE_ROUTING_METADATA"
   },
@@ -39,8 +42,8 @@
       "maturity": "REALIZED / COMPLETE_IN_ACCEPTED_SCOPE",
       "evidence_class": "controlled architecture + accepted standing projection",
       "public_references": ["runtime/README.md", "evidence/runtime/full-flex/v1/README.md", "README.md", "architecture/EHCO-TECHNOLOGY-ESTATE.md"],
-      "verification_method": "Begin with the current Full Flex Runtime evidence route, then inspect the public architecture and claim mapping.",
-      "disclosure_ceiling": "Tier One identity and accepted standing representation; present Runtime state remains owned by its owning evidence.",
+      "verification_method": "Begin with the accepted Full Flex Runtime evidence route, then inspect the public architecture and claim mapping.",
+      "disclosure_ceiling": "Tier One system identity and accepted standing representation; Runtime-state propositions remain owned by INSTANTIATED_EHCO_RUNTIME and applicable owning Runtime evidence.",
       "status": "ESTABLISHED"
     },
     {
@@ -49,8 +52,8 @@
       "maturity": "REALIZED / COMPLETE_IN_ACCEPTED_SCOPE",
       "evidence_class": "controlled architecture + accepted standing projection",
       "public_references": ["runtime/README.md", "evidence/runtime/full-flex/v1/README.md", "architecture/EHCO-AI-OS-SYSTEM-CARD.md"],
-      "verification_method": "Inspect the current Runtime evidence route and accepted public architecture.",
-      "disclosure_ceiling": "Accepted baseline maturity and standing representation.",
+      "verification_method": "Inspect the accepted Runtime evidence route and accepted public architecture.",
+      "disclosure_ceiling": "Accepted baseline maturity and standing representation; Runtime authority and Runtime state remain owned by INSTANTIATED_EHCO_RUNTIME.",
       "status": "ESTABLISHED"
     },
     {
@@ -59,7 +62,7 @@
       "maturity": "ESTABLISHED / DEPLOYMENT_READY / LOCAL_RELAUNCH_EVIDENCED",
       "evidence_class": "controlled architecture + accepted Docker/host execution evidence",
       "public_references": ["runtime/README.md", "evidence/runtime/full-flex/v1/README.md", "architecture/EHCO-TECHNOLOGY-ESTATE.md"],
-      "verification_method": "Inspect the current Full Flex public-safe Runtime record and technical diligence route.",
+      "verification_method": "Inspect the accepted Full Flex public-safe Runtime record and technical diligence route.",
       "disclosure_ceiling": "Portable delivery form and deployment-readiness representation for the established hardened Runtime launch lineage.",
       "status": "ESTABLISHED"
     },
@@ -70,7 +73,7 @@
       "evidence_class": "accepted Docker/host execution evidence",
       "public_references": ["runtime/README.md", "evidence/runtime/full-flex/v1/README.md", "architecture/EHCO-AI-OS-SYSTEM-CARD.md"],
       "verification_method": "Inspect the Full Flex public-safe record and technical diligence route.",
-      "disclosure_ceiling": "Established self-hosted local Docker operating posture and service/persistence relationships.",
+      "disclosure_ceiling": "Established self-hosted local Docker operating posture and service/persistence relationships; this event-time evidence does not by itself assert a later Runtime-state observation.",
       "status": "ESTABLISHED"
     },
     {
@@ -80,7 +83,7 @@
       "evidence_class": "accepted component source, qualification and public-safe evidence",
       "public_references": ["language-model/README.md", "language-model/evidence/public-test-snapshot-v1/README.md", "language-model/DETERMINISTIC-CAPABILITY-DEMONSTRATION.md"],
       "verification_method": "Inspect the component record, public snapshot and deterministic capability demonstration.",
-      "disclosure_ceiling": "Component capability and accepted lifecycle representation; Tier One Runtime participation remains separately owned.",
+      "disclosure_ceiling": "Component capability and accepted lifecycle representation; Tier One Runtime participation is a separately owned evidence dimension and is not asserted here.",
       "status": "ESTABLISHED"
     },
     {
@@ -100,7 +103,7 @@
       "evidence_class": "governed architecture + accepted qualification evidence",
       "public_references": ["range-reactor/README.md", "range-reactor/evidence/public-capability-snapshot-v1/README.md", "range-reactor/evidence/operational-closure-v1/README.md"],
       "verification_method": "Inspect the component route, public capability snapshot and public-safe operational-closure result.",
-      "disclosure_ceiling": "Deterministic Range Reactor capability and selected public qualification evidence.",
+      "disclosure_ceiling": "Deterministic Range Reactor capability and selected public qualification evidence; Tier One Runtime participation is not implied by component maturity.",
       "status": "ESTABLISHED"
     },
     {
