@@ -21,7 +21,7 @@ selection:
     NEW_PATH:verification/verify_all_public.py
     OPERATION_STABLE_ENVELOPE_CHANGE=true
   source_base_revision: f3eac9d3b38579d480b22c525a31decda65f827e
-  expected_reviewed_head_revision: NOT_YET_QUALIFIED
+  expected_reviewed_head_revision: NOT_APPLICABLE_UNTIL_ACCEPT
 control_anchor: AGENTS.md
 status_owner_path: ehco.operation.yaml
 accepted_standing: 52/53
@@ -172,7 +172,7 @@ bridge:
   participation_binding_status: NOT_ESTABLISHED
   canonical_runtime_receipt_status: NOT_ESTABLISHED
 evidence:
-  evidence_class: PUBLIC_PRESENTATION_RESTING_STATE_CLOSEOUT_CANDIDATE
+  evidence_class: REPOSITORY_SOURCE_AND_DIFF_VALIDATION
   required_checks:
     - The first-reader path is front door, Instantiated AI, architecture/Technology Estate, components, selected evidence, verification and then deep diligence.
     - Active reader-facing public language is affirmative, current, non-demoting and free of material contradictory current-state narratives.
