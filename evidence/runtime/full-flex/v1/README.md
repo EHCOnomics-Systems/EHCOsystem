@@ -1,6 +1,6 @@
-# EHCO Full Flex Public Packet v1 — Current Runtime Evidence Index
+# EHCO Full Flex Public Packet v1 — Accepted Runtime Evidence Index
 
-This directory is the canonical public evidence route for the accepted **EHCO Full Flex Public Packet v1** and the current established EHCO AI-OS Runtime representation.
+This directory is the canonical public evidence route for the accepted **EHCO Full Flex Public Packet v1** and the accepted EHCO AI-OS Runtime representation carried by this repository.
 
 ## Accepted packet identity
 
@@ -12,11 +12,11 @@ This directory is the canonical public evidence route for the accepted **EHCO Fu
 - Accepted standing represented: `52/53`
 - Docker portability class represented: `PRIMARY_ACCESSIBLE_RUNTIME_PROJECTION`
 
-The accepted packet identity remains unchanged. The current public tree publishes a **public-safe Full Flex record** rather than the raw packet bytes because the accepted raw packet contains internal source-routing metadata that is not part of the public disclosure surface.
+The accepted packet identity remains unchanged. The public repository publishes a **public-safe Full Flex record** rather than the raw packet bytes because the accepted raw packet contains internal source-routing metadata that is outside the public disclosure surface.
 
 Public custody is therefore:
 
-- [`PUBLIC_SAFE_RECORD.json`](PUBLIC_SAFE_RECORD.json) — public-safe current Runtime record bound to the accepted packet identity;
+- [`PUBLIC_SAFE_RECORD.json`](PUBLIC_SAFE_RECORD.json) — public-safe Runtime record bound to the accepted packet identity;
 - [`PACKET_RECEIPT.json`](PACKET_RECEIPT.json) — accepted packet receipt;
 - [`EHCO_FULL_FLEX_PUBLIC_PACKET_V1.sha256`](EHCO_FULL_FLEX_PUBLIC_PACKET_V1.sha256) — detached accepted packet identity.
 
@@ -26,17 +26,17 @@ The raw packet remains the accepted evidence object in its owning custody. Remov
 
 Full Flex records the established EHCO AI-OS Runtime posture together with its deployment-ready Docker portability and supporting technical relationships: physically operated local Docker Runtime behavior, Dashboard/bridge/worker relationships, persistent Runtime/proof/data surfaces, Docker networking, hardened image identity, operating independence, engineering-scale Runtime characterization, Range Reactor qualification/performance, public claim bindings, and artifact integrity.
 
-For the reader-facing Runtime route, start with [EHCO AI-OS Runtime — Current Public Evidence](../../../../runtime/README.md).
+For the reader-facing Runtime route, start with [EHCO AI-OS Runtime — Accepted Public Evidence](../../../../runtime/README.md).
 
 ## Historical evidence relationship
 
 The existing [`public-evidence-companion/v1`](../../../public-evidence-companion/v1/) Packets 00–08 remain immutable historical/event-time evidence. They preserve the propositions and observations recorded at their event time.
 
-The accepted Full Flex route is the current public Runtime evidence route; the historical companion remains the deeper event-time lineage behind it.
+The accepted Full Flex route is the primary public Runtime evidence route for the established baseline; the historical companion remains the deeper event-time lineage behind it. Any later Runtime-state proposition remains owned by applicable Runtime evidence.
 
 ## Evidence ownership
 
-- `INSTANTIATED_EHCO_RUNTIME` owns Tier One Runtime authority and current Runtime state.
+- `INSTANTIATED_EHCO_RUNTIME` owns Tier One Runtime authority and Runtime state.
 - Owning technical evidence established the physical Runtime and Full Flex result.
 - This public repository publishes the public-safe representation and integrity route.
 
