@@ -7,11 +7,11 @@ This register records public source visibility, public evidence identity, and pu
 - **PRESENT_IN_REVISION** — present in the identified public source revision.
 - **REGISTERED_RELEASE_IDENTITY** — declared repository release identity tracked separately from provider materialization.
 - **HASH_PRESERVED_EVIDENCE** — byte-preserved evidence with cryptographic identity.
-- **CURRENT_PUBLIC_EVIDENCE_IDENTITY** — accepted current evidence identity represented in the public repository through its public-safe record, receipt, and integrity anchors.
+- **CURRENT_PUBLIC_EVIDENCE_IDENTITY** — machine-readable status token for the selected accepted evidence identity represented in the public repository through its public-safe record, receipt, and integrity anchors.
 
-## Current EHCO AI-OS Runtime evidence identity
+## Accepted EHCO AI-OS Runtime evidence identity
 
-The accepted current Runtime evidence identity is **EHCO Full Flex Public Packet v1**.
+The selected accepted Runtime evidence identity represented publicly is **EHCO Full Flex Public Packet v1**.
 
 - Schema: `EHCO_FULL_FLEX_PUBLIC_PACKET_V1`
 - Established: `2026-08-30`
@@ -25,7 +25,7 @@ The accepted current Runtime evidence identity is **EHCO Full Flex Public Packet
 - Public-safe machine record: `evidence/runtime/full-flex/v1/PUBLIC_SAFE_RECORD.json`
 - Receipt: `evidence/runtime/full-flex/v1/PACKET_RECEIPT.json`
 
-The accepted packet identity remains established by its hash and receipt. The current public tree intentionally omits the raw accepted packet because those bytes contain internal source-routing metadata. Public-safe custody preserves the accepted identity and result without publishing that internal topology.
+The accepted packet identity remains established by its hash and receipt. The public repository intentionally omits the raw accepted packet because those bytes contain internal source-routing metadata. Public-safe custody preserves the accepted identity and result without publishing that internal topology.
 
 Historical Public Evidence Companion Packets 00–08 remain immutable event-time evidence and lineage.
 
@@ -37,7 +37,7 @@ Historical Public Evidence Companion Packets 00–08 remain immutable event-time
 
 Registered repository release identity and provider-owned GitHub Release materialization remain separate publication records.
 
-## Current public estate
+## Accepted public estate
 
 | Artifact | Status | Canonical path | Public role |
 |---|---|---|---|
@@ -69,4 +69,4 @@ F489BA01961A12CF101B1F1DF57E6958456A0840BEB798B862FA97ACB030892D
 
 ## Publication relationship
 
-The public source tree, accepted evidence identities, registered repository release identity, and provider-owned release objects are distinct records. The current public repository presents the strongest established public-safe state without requiring routine evidence refresh or republishing private source topology.
+The public source tree, accepted evidence identities, registered repository release identity, and provider-owned release objects are distinct records. The repository presents the strongest established public-safe state without requiring routine evidence refresh or republishing private source topology.
