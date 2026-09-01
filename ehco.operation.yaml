@@ -16,28 +16,22 @@ selection:
   selection_class: EXPLICIT_OWNER_DIRECTION
   durable_reference: |-
     Edward Henry selected completion of the current EHCOsystem public-repository closeout as a presentation-first operation intended to leave the public repository in a durable resting state that does not require planned near-term follow-on work. Established Runtime, EHCO_DOCKER_PORTABILITY, Full Flex and Range Reactor evidence is reused without reproof or revalidation. The sole selected additional public capability artifact is a bounded EHCO Language Model deterministic capability demonstration derived from already-established accepted component capabilities. Public presentation must be affirmative, current, non-demoting, coherent, public-safe and easy to navigate; private repository/commit/Drive/evidence-routing topology must not remain in the current public tree. The live GitHub-hosted SOW is removed so Google Drive remains the sole active SOW authority. PR #53 may be superseded by this current-main closeout route because its Draft transition is blocked by a connector capability defect.
+    REVIEWED_PUBLISH_HEAD:15c17b84221c808f3e3e79e56d10c650d4a2a6e2
     NEW_PATH:language-model/DETERMINISTIC-CAPABILITY-DEMONSTRATION.md
     NEW_PATH:evidence/runtime/full-flex/v1/PUBLIC_SAFE_RECORD.json
     NEW_PATH:verification/verify_all_public.py
     OPERATION_STABLE_ENVELOPE_CHANGE=true
   source_base_revision: f3eac9d3b38579d480b22c525a31decda65f827e
-  expected_reviewed_head_revision: NOT_APPLICABLE_UNTIL_ACCEPT
+  expected_reviewed_head_revision: 15c17b84221c808f3e3e79e56d10c650d4a2a6e2
 control_anchor: AGENTS.md
 status_owner_path: ehco.operation.yaml
 accepted_standing: 52/53
 active_operation:
   operation_id: EHCOSYSTEM-PUBLIC-RESTING-STATE-CLOSEOUT-001
-  state: ACTIVE
-  authorization_mode: PUBLISH
-  bounded_outcome: Finish the current EHCOsystem public representation as a clear, durable, public-safe resting-state repository; reuse established technical evidence; add one public-safe Language Model deterministic capability demonstration; qualify the exact public-repository candidate without reopening accepted technical proof.
-  remaining_bounded_work:
-    - Reconcile the active reader path, architecture/component navigation, public currentness, affirmative language and no-demotion representation.
-    - Remove current public private-source, private-commit, Drive-control and private evidence-routing exposure while preserving public-safe integrity relationships.
-    - Synchronize Language Model public maturity and publish one deterministic capability demonstration from already-established accepted capabilities.
-    - Reconcile Full Flex and Range Reactor presentation from established evidence without rerun or reproof.
-    - Remove the live GitHub SOW and obsolete public-packaging navigation.
-    - Make public validation documentation, validators and the required public-validation workflow coherent for the final presentation.
-    - Qualify the exact PUBLISH candidate and correct in-scope presentation/public-boundary failures before ACCEPT.
+  state: COMPLETE
+  authorization_mode: ACCEPT
+  bounded_outcome: Accept and merge the exact qualified EHCOsystem public resting-state closeout candidate after source, public-validation, CodeQL and assistant-operation qualification.
+  remaining_bounded_work: []
   interaction_seams:
     - Google Drive EHCO-PUB-SOW-009 v2.3 owns durable closeout meaning.
     - EHCOnomics-Systems/EHCOsystem owns the exact public repository implementation and presentation changed here.
@@ -132,27 +126,32 @@ change_control:
     - read_source
     - compare_source
     - audit
-    - create_file
     - update_file
-    - delete_file
     - run_checks
   local_actions_prohibited:
+    - propose
+    - create_file
     - move_file
+    - delete_file
     - generate_artifact
   remote_actions_authorized:
+    - merge_pull_request
+    - record_owner_acceptance
+    - close_operation
+  remote_actions_prohibited:
     - create_branch
     - commit
     - push
     - open_draft_pull_request
     - update_draft_pull_request
-  remote_actions_prohibited:
-    - merge_pull_request
+    - mark_pull_request_ready_for_review
     - activate_selected_successor
     - modify_repository_settings
     - modify_drive_controls
     - publish_image
     - mutate_environment
     - deploy
+    - trigger_workflow
     - release
     - invoke_runtime
     - admit_runtime
@@ -172,23 +171,15 @@ bridge:
   participation_binding_status: NOT_ESTABLISHED
   canonical_runtime_receipt_status: NOT_ESTABLISHED
 evidence:
-  evidence_class: REPOSITORY_SOURCE_AND_DIFF_VALIDATION
+  evidence_class: OWNER_ACCEPTANCE_RECORD
   required_checks:
-    - The first-reader path is front door, Instantiated AI, architecture/Technology Estate, components, selected evidence, verification and then deep diligence.
-    - Active reader-facing public language is affirmative, current, non-demoting and free of material contradictory current-state narratives.
-    - Current public tree contains no private repository names/locators, private source commit identifiers, Google Drive control identifiers, private evidence-receipt locators or private development topology in the selected active surfaces.
-    - Full Flex remains presented from accepted evidence without reproof, with public-safe integrity linkage replacing any raw public artifact that exposes internal routing metadata.
-    - Range Reactor retains the accepted 14.304307x wall-clock, 14.208722x CPU-time, 94.755854% benchmark-defined Python peak-allocation reduction, 1957-to-64 states, 1956-to-192 transitions, 720 histories preserved and 82 passed / 0 failed selected semantic closure without private owning-source exposure.
-    - Language Model public representation preserves mature deterministic computational-language identity, deep final capability/source closure, qualified/released immutable component artifact and established governed staging execution/verification in their proper evidence dimensions.
-    - One public-safe Language Model deterministic capability demonstration presents materially distinct already-established accepted capabilities without private implementation topology.
-    - Obsolete advanced-near-final and stale staging-frontier requirements are removed from active current representation and validation.
-    - Public verification documentation and required GitHub validation workflow run a coherent required validator set, including Range Reactor operational-closure validation if retained as current public evidence.
-    - The live GitHub SOW copy and navigation reference are absent from the exact candidate.
-    - Applicable repository validation, CodeQL and EHCO Assistant Operation Gate pass for the exact candidate before ACCEPT.
-    - The exact candidate leaves no known material presentation debt selected by this SOW that would predictably require near-term public-repository reopening.
-    - Accepted numerical standing remains 52/53; Runtime, deployment, release, authority, standing, participation and successor effects remain NONE or not established as applicable.
+    - Reviewed PUBLISH head 15c17b84221c808f3e3e79e56d10c650d4a2a6e2 passed the complete public repository validation workflow.
+    - Reviewed PUBLISH head 15c17b84221c808f3e3e79e56d10c650d4a2a6e2 passed CodeQL.
+    - Reviewed PUBLISH head 15c17b84221c808f3e3e79e56d10c650d4a2a6e2 passed the EHCO Assistant Operation Gate.
+    - The accepted candidate preserves the presentation-first reader path, public-safe Full Flex custody, Range Reactor selected results, Language Model deterministic capability demonstration, Drive-only active SOW custody, and 52/53 standing.
+    - No Runtime, deployment, release, authority, standing, participation or successor effect is created by acceptance or merge.
   proves:
-    - The exact candidate is a qualified public-repository presentation/resting-state closeout derived from established governed meaning, direct owning source currentness and accepted technical evidence.
+    - Owner-selected repository-source acceptance of the exact qualified public resting-state closeout candidate, subject to provider merge and main readback.
   evidence_not_created:
     - New Runtime proof or Runtime state
     - New Full Flex technical proof
@@ -197,6 +188,7 @@ evidence:
     - New authority, standing or Runtime participation
     - Any successor operation
 stop_condition:
-  - Exact PUBLISH candidate passes applicable public repository validation, CodeQL and EHCO Assistant Operation Gate.
-  - Candidate remains unmerged until lawful ACCEPT transition records the exact reviewed PUBLISH head.
+  - Exact ACCEPT candidate passes the applicable repository validation, CodeQL and EHCO Assistant Operation Gate.
+  - Record owner acceptance on PR #54 and merge only that exact ACCEPT head.
+  - Read back main and verify the resting-state postconditions from GitHub.
   - Stop with accepted standing 52/53 preserved and all Runtime, deployment, release, authority, standing, participation and successor effects remaining NONE or not established as applicable.
