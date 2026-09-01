@@ -63,7 +63,7 @@ The exact Full Flex packet JSON is present in canonical public Git custody and i
 
 `validate_public_evidence.py` verifies canonical dossier identity, Packets 00–08 structure/manifests/hashes/suite closure, JSON syntax, internal links, repository residue, high-confidence credential indicators, architecture/navigation relationships, Runtime/component/Tier Three terminology, Docker portability classification, Dashboard representation, current public maturity language, component snapshot relationships and claim/evidence matrix structure.
 
-It also preserves the required **Language Model capability-based advanced near-final maturation representation** while active reader-facing maturity prose remains bounded to public capability representation. Internal Language Model stage/unit/program mechanics stay within their owning controlled sources.
+It also preserves the required **Language Model capability-based advanced near-final maturation representation** and the **absence of internal Language Model stage/unit/program mechanics** from active reader-facing maturity prose.
 
 Hash-preserved Packets 00–08 and exact component fixture artifacts retain their accepted bytes.
 
