@@ -18,20 +18,16 @@ selection:
     Edward Henry explicitly selected synchronization of the EHCO Language Model public maturity representation on 2026-08-31 after read-only review of current governing Drive meaning and direct owning Git/GitHub evidence. The public synchronization must preserve the established mature deterministic zero-weight computational-language identity, deep final capability/source closure, final artifact build/qualification/release custody, and the current governed staging execution/verification frontier without demoting or flattening those accomplishments and without implying production verification/deployment or Tier One Runtime participation.
     OPERATION_STABLE_ENVELOPE_CHANGE=true
   source_base_revision: 77b9d82e0e1bb63d932bd0c62ed98e6dfc32e4f5
-  expected_reviewed_head_revision: NOT_APPLICABLE_UNTIL_ACCEPT
+  expected_reviewed_head_revision: 1dec3c7c70b3ef0b3edbedd41e0d6bdf5b0338ba
 control_anchor: AGENTS.md
 status_owner_path: ehco.operation.yaml
 accepted_standing: 52/53
 active_operation:
   operation_id: LM-CURRENT-PUBLIC-MATURITY-SYNC-001
-  state: ACTIVE
-  authorization_mode: PUBLISH
+  state: COMPLETE
+  authorization_mode: ACCEPT
   bounded_outcome: Replace stale advanced-near-final public wording with the strongest current public-safe Language Model maturity representation supported by owning source/lifecycle evidence, synchronized across reader-facing architecture, diligence, assurance and validation surfaces.
-  remaining_bounded_work:
-    - Synchronize all reader-facing Language Model maturity surfaces that retain the stale advanced-near-final representation.
-    - Synchronize the public repository validator expectation to the updated affirmative maturity representation.
-    - Qualify the exact public candidate without changing accepted evidence artifacts or controlled Language Model source.
-    - Transition the exact qualified candidate through bounded Source ACCEPT if all required checks pass.
+  remaining_bounded_work: []
   interaction_seams:
     - EHCOnomics-Systems/ehco_Language-Model_v1 owns exact Language Model implementation and lifecycle source state.
     - Owning GitHub Release and workflow evidence own artifact-release and staging-execution effects.
@@ -89,16 +85,16 @@ change_control:
     - delete_file
     - generate_artifact
   remote_actions_authorized:
+    - mark_pull_request_ready_for_review
+    - merge_pull_request
+    - record_owner_acceptance
+    - close_operation
+  remote_actions_prohibited:
     - create_branch
     - commit
     - push
     - open_draft_pull_request
     - update_draft_pull_request
-  remote_actions_prohibited:
-    - mark_pull_request_ready_for_review
-    - merge_pull_request
-    - record_owner_acceptance
-    - close_operation
     - activate_selected_successor
     - trigger_workflow
     - mutate_environment
@@ -125,19 +121,20 @@ bridge:
   participation_binding_status: NOT_ESTABLISHED
   canonical_runtime_receipt_status: NOT_ESTABLISHED
 evidence:
-  evidence_class: REPOSITORY_SOURCE_AND_DIFF_VALIDATION
+  evidence_class: OWNER_ACCEPTANCE_RECORD
   required_checks:
+    - Exact reviewed PUBLISH head 1dec3c7c70b3ef0b3edbedd41e0d6bdf5b0338ba passed required repository validation and CodeQL qualification.
     - Public wording preserves DETERMINISTIC_COMPUTATIONAL_LANGUAGE / SINGLE_PATH / EXPLICIT_EHCO_COMPUTATION / ZERO_WEIGHT_ONLY / ZERO WEIGHTS TRAINED.
     - Public wording establishes deep final capability/source closure and governed final component artifact build/qualification/release as established owning-source lifecycle state.
     - Public wording identifies governed staging execution/verification of the exact released artifact as the current lifecycle frontier.
     - Public wording keeps production verification/deployment and Tier One Runtime participation as separate evidence domains.
     - Public synchronization omits controlled branch choreography, internal DF/UD identifiers and private implementation details.
     - Existing Language Model public test snapshot bytes remain unchanged.
-    - Required repository validation, CodeQL and EHCO Assistant Operation Gate pass on the exact candidate.
+    - Required repository validation, CodeQL and EHCO Assistant Operation Gate pass on the exact ACCEPT candidate before merge.
   proves:
-    - EHCOsystem public maturity representation agrees with the strongest current public-safe Language Model state supported by the reviewed owning evidence.
+    - Owner acceptance of the exact qualified public maturity synchronization candidate without expanding its evidence or effect ceiling.
   evidence_not_created:
     - New Language Model implementation evidence, staging execution evidence, production evidence, Runtime evidence, authority, standing or participation.
 stop_condition:
-  - Stop PUBLISH at one exact terminal-green review head ready for bounded Source ACCEPT.
+  - Merge only the exact ACCEPT candidate after all applicable checks are terminal green.
   - Preserve accepted standing 52/53 and all Runtime, deployment, release, authority, standing and participation effects as NONE or separately owned.
