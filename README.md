@@ -1,122 +1,121 @@
 # EHCOsystem
 
-**Public technical architecture and evidence for EHCOnomics' Instantiated AI ecosystem.**
+**EHCOnomics' public technical architecture and evidence for an Instantiated AI ecosystem.**
 
-**Instantiated AI** is the architectural category. **EHCOsystem** is EHCOnomics' implementation of that category across a governed computational estate in which identity, authority, state, memory, source, permissible range, evidence, release, and consequence are established as computational conditions around intelligence.
+## What EHCOsystem is
 
-**EHCO AI-OS is the realized Tier One Runtime** of EHCOsystem with accepted standing **52/53** and accepted baseline **`REALIZED / COMPLETE_IN_ACCEPTED_SCOPE`**. `EHCO_DOCKER_PORTABILITY` is the **PRIMARY_ACCESSIBLE_RUNTIME_PROJECTION** and the **fully containerized, deployment-ready portable delivery form** of the established hardened Runtime/root-image lineage. Owning Docker/host evidence establishes successful local launch/relaunch behavior, healthy bridge and worker services, persistent Runtime/proof/data surfaces, Docker networking, hardened image identity, and local service response. **EHCO AI-OS has physically operated as a self-hosted local Docker Runtime.** The **current accepted working EHCO Dashboard baseline** is the principal presently established **Tier Three projection baseline** within that portability estate, and the local Dashboard was served on **host port 8080** during the captured operating state. **Downstream governed components** provide deterministic language, range/reasoning, retrieval/evidence, relationship continuity, coordination, research, and domain capability.
+**Instantiated AI** is the architectural category: intelligence operates inside explicit computational conditions for identity, authority, state, memory, source, permissible range, evidence, release, and consequence.
 
-## Current EHCO AI-OS Runtime evidence — start here
+**EHCOsystem** is EHCOnomics' implementation of that architecture across a governed technology estate.
 
-For the **current established EHCO AI-OS Runtime environment**, begin with the **[EHCO AI-OS Runtime — Current Public Evidence](runtime/README.md)**.
+**EHCO AI-OS** is the realized **Tier One Runtime** of EHCOsystem with accepted standing **52/53** and accepted maturity **`REALIZED / COMPLETE_IN_ACCEPTED_SCOPE`**.
 
-The current public Runtime evidence front door is the clean **EHCO Full Flex Public Packet v1**, established from the owning Windows/Docker host on **2026-08-30** and bound by SHA-256 `7F80C27D085AE871A00AED412C6F20EA9A76CB0677C93AEBA381CD1FD70EC8E5`. It synthesizes the current accepted Runtime posture, deployment-ready Docker portability, physically operated local Runtime evidence, Dashboard/bridge/worker relationships, persistent surfaces, networking, hardened image identity, engineering-scale Runtime characterization, Range Reactor qualification/performance, public claim bindings, source bindings and artifact integrity.
+**[Start with Instantiated AI →](architecture/INSTANTIATED-AI.md)**
 
-The existing Public Evidence Companion Packets 00–08 remain immutable historical/event-time evidence and lineage. For current Runtime maturity and deployment-ready environment interpretation, the Full Flex route is the canonical first public evidence route; historical packet-time fields retain their recorded evidence scope.
+## System architecture
 
-**[Open current Runtime evidence →](runtime/README.md)**
+The public architecture is easiest to read in this order:
 
-## Dashboard visual orientation
+1. **[Instantiated AI](architecture/INSTANTIATED-AI.md)** — the architectural category and governing computational conditions.
+2. **[EHCOsystem Technology Estate](architecture/EHCO-TECHNOLOGY-ESTATE.md)** — the Runtime, shared technologies, research foundations, and applications.
+3. **[Components and Runtime Relationships](architecture/ecosystem-components-and-participation.md)** — how capability, artifact/release state, service realization, Runtime participation, and projection remain distinct.
+4. **[Architecture diagrams](architecture/diagrams/README.md)** — visual system relationships.
 
-The EHCO Dashboard gives reviewers a visual orientation across governed system posture, service coordination, authority relationships, evidence, health, readiness, and component interaction. These dated interface views complement the repository's claim-to-evidence routes and derive from the operating local EHCO Docker Runtime.
+## Tier One Runtime
 
-![EHCO Dashboard overview projection showing governed system posture, Runtime control, active services, evidence, and reserved extension points](architecture/assets/dashboard/overview-june-2026-public.webp)
+**EHCO AI-OS** owns the governing Runtime relationships for authority, recognized state, transition, consequence, continuity, persistence, withholding/release, correction/recovery, and Runtime-originated proof.
 
-*EHCO Dashboard — Tier Three projection/interface view. Public-safe derivative from an owner-supplied June 2026 EHCO Dashboard capture. Tier One Runtime authority and current Runtime-state ownership remain with `INSTANTIATED_EHCO_RUNTIME`. The source capture derives from the operating local EHCO Docker Runtime, with the Dashboard served on host port 8080 during the captured operating state.*
+`EHCO_DOCKER_PORTABILITY` is the **PRIMARY_ACCESSIBLE_RUNTIME_PROJECTION** and the **fully containerized, deployment-ready portable delivery form** of the established hardened Runtime/root-image lineage.
 
-![EHCO Dashboard services and coordination projection showing Prime, Agent Connect, the live Dashboard, and source-binding relationships](architecture/assets/dashboard/services-coordination-june-2026-public.webp)
+Accepted technical evidence establishes physical self-hosted local Docker operation, Dashboard/bridge/worker relationships, networking, persistent Runtime/proof/data surfaces, health behavior, and hardened image identity.
 
-*EHCO Dashboard — Tier Three projection/interface view. Public-safe derivative from an owner-supplied June 2026 EHCO Dashboard capture. Tier One Runtime authority and current Runtime-state ownership remain with `INSTANTIATED_EHCO_RUNTIME`. The source capture derives from the operating local EHCO Docker Runtime, with the Dashboard served on host port 8080 during the captured operating state.*
+**[Explore the current Runtime / Full Flex public route →](runtime/README.md)**
 
-**[Explore all eight Dashboard views](architecture/EHCO-AI-OS-SYSTEM-CARD.md#dashboard-visual-orientation)**
+## Shared technology spine
 
-## Current maturity
+### EHCO Language Model
 
-The **foundational and shared EHCOsystem spine is substantially established**. Current development is concentrated in component finalization and hardening, EHCO RAG implementation, research/foundation reconciliation, and continuing domain/application expansion.
+The **EHCO Language Model** is a mature deterministic computational-language system built as:
 
-The principal shared spine has differentiated maturity:
+> **DETERMINISTIC_COMPUTATIONAL_LANGUAGE / SINGLE_PATH / EXPLICIT_EHCO_COMPUTATION / ZERO_WEIGHT_ONLY / ZERO WEIGHTS TRAINED**
 
-- **EHCO Language Model** — mature deterministic computational-language system built as `DETERMINISTIC_COMPUTATIONAL_LANGUAGE / SINGLE_PATH / EXPLICIT_EHCO_COMPUTATION / ZERO_WEIGHT_ONLY / ZERO WEIGHTS TRAINED`. **Deep final capability/source closure and governed final component artifact build, qualification and release are established.** Its current selected lifecycle frontier is **staging execution and verification of that exact released artifact**. Later lifecycle work preserves established source, qualification, artifact-build and release state; production verification/deployment and Tier One Runtime participation remain separate evidence domains.
-- **EHCO Range Reactor** — mature deterministic proof-carrying implication, reachability, range and reasoning system with accepted executable reference semantics, identity/replay, contradiction and frontier preservation, independently verified finite semantic collapse, service/container boundaries, production/release controls, Prime/Primordia interoperability, physical host qualification, and accepted selected-scope operational closure. Its matched exploration-time A/B records **14.304307x wall-clock** speedup on the selected benchmark with **82 passed / 0 failed** selected semantic closure; those results remain exclusively within their published selected-benchmark and selected-current-corpus evidence ceilings.
-- **EHCO RAG** — governed retrieval, context, source-custody, provenance, and evidence component with an accepted controlled baseline and active Stage 1 implementation.
-- **EHCO Prime** — advanced individual-facing relationship and assistant-coordination service with mature source/control hardening.
-- **EHCO Agent Connect** — advanced registry, discovery, compatibility, health-observation, and candidate-routing coordination service with mature source/control hardening.
+Its established capability includes lexical/morphological computation, syntax and semantic composition, context/reference, ambiguity preservation, typed withholding, deterministic Language Math, replay, semantic preservation, explicit failure-frontier handling, and deterministic service-boundary behavior.
 
-## Start here
+Deep final capability/source closure is established. Its immutable component artifact has been built, qualified, and released, and governed staging execution and verification of that released artifact are established in their applicable evidence classes.
 
-1. **[Current EHCO AI-OS Runtime Evidence](runtime/README.md)** — current Runtime posture, Full Flex packet identity, Docker portability relationship and historical-evidence precedence.
-2. **[Instantiated AI — Public Architecture Definition](architecture/INSTANTIATED-AI.md)** — category definition, computational standing, dependency inversion, source/memory standing, and model independence.
-3. **[EHCOsystem — An Instantiated AI Ecosystem](architecture/EHCO-TECHNOLOGY-ESTATE.md)** — complete public technology-estate map and current maturity.
-4. **[Public Architecture Diagrams](architecture/diagrams/README.md)** — Runtime, projection, computational ownership, component spine, applications, and evidence relationships.
-5. **[Ecosystem Claim → Evidence Matrix](assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md)** — claim, maturity, evidence class, verification method, source-review date, and evidence scope.
-6. **[Ecosystem Technical Diligence](ECOSYSTEM-DILIGENCE.md)** — reviewer route from category architecture through source-grounded component evidence.
+**[See the Language Model →](language-model/README.md)**  
+**[Open the Deterministic Capability Demonstration →](language-model/DETERMINISTIC-CAPABILITY-DEMONSTRATION.md)**
 
-## Verify this repository
+### EHCO Range Reactor
 
-The public representation is machine-checked against a canonical claim registry and the existing evidence validators.
+The **EHCO Range Reactor** is a mature deterministic proof-carrying implication, reachability, range, and reasoning system.
 
-- **[Current Runtime Evidence](runtime/README.md)** — first public route for the established EHCO AI-OS Runtime environment and Full Flex packet identity.
-- **[Canonical Public Claim Registry](assurance/PUBLIC-CLAIM-REGISTRY.json)** — machine-readable current propositions, evidence classes, verification routes, and disclosure ceilings.
-- **[Public Repository Validation](verification/README.md)** — deterministic repository, claim-registry, Language Model, Range Reactor capability, Range Reactor operational-closure, and release-identity verification routes.
-- **[EHCO AI-OS Technical Diligence](TECHNICAL-DILIGENCE.md)** — focused Tier One route through local-operation evidence, observed Runtime evidence, implementation anchors, and performance characterization.
+Its accepted selected matched A/B result records:
 
-## EHCOsystem at a glance
+- **14.304307x wall-clock improvement**;
+- **14.208722x CPU-time improvement**;
+- **94.755854% benchmark-defined Python peak-allocation reduction**;
+- **1,957 → 64 states**;
+- **1,956 → 192 transitions**;
+- **720 histories preserved**; and
+- **82 passed / 0 failed** selected semantic closure.
 
-### Tier One Runtime foundation
+**[See Range Reactor →](range-reactor/README.md)**  
+**[Inspect the operational-closure result →](range-reactor/evidence/operational-closure-v1/README.md)**
 
-**EHCO AI-OS** owns the governing Runtime relationships for authority, scope, recognized state, transition, consequence, continuity, persistence, withholding and release, correction and recovery, and Runtime-originated proof.
+### Other shared components
 
-### Primary accessible Runtime projection and Tier Three baseline
+- **EHCO RAG** — governed retrieval, context, source custody, provenance, and evidence services.
+- **EHCO Prime** — relationship continuity, intent clarification, bounded capability coordination, and individual-facing explanation.
+- **EHCO Agent Connect** — registry, discovery, compatibility analysis, candidate routing, health observation, and route evidence.
 
-- **EHCO_DOCKER_PORTABILITY** carries the primary accessible Runtime projection and the fully containerized, deployment-ready portable delivery form of the established hardened Runtime/root-image lineage.
-- **EHCO AI-OS local operation** is physically evidenced as a self-hosted local Docker Runtime with Dashboard, bridge, worker, networking, persistent Runtime/proof/data surfaces, health behavior, and hardened image identities.
-- **EHCO Dashboard** provides the current accepted working Tier Three projection baseline across overview, live trace, service/API state, health, readiness, rollback, authority interpretation, and settings concerns; the captured local Dashboard service is bound to host port 8080.
+## Research foundations and applications
 
-### Principal shared downstream component spine
+The governed foundation estate includes **EHCO Memory**, **Primordia**, **EHCO Recursion**, and **EHCO Fractal Systems**.
 
-The shared spine provides reusable computational and service capabilities across deterministic language, range/reasoning, governed retrieval/evidence, relationship continuity, and coordination. Each component retains its own source and lifecycle state.
+The downstream application estate includes **EHCO Energy**, **Noble Law**, **EHCO War Room**, **HTPI**, **EHCO Project Construct**, **EHCO Luminis**, **EHCO Nexus**, and **EHCO Permit Trace**.
 
-### Governed research and foundation estates
+The [Technology Estate](architecture/EHCO-TECHNOLOGY-ESTATE.md) describes how these modules fit into the larger architecture.
 
-- **EHCO Memory** — memory and continuity research foundation.
-- **Primordia** — computational substrate, specification/language, semantics, and engineering-system research.
-- **EHCO Recursion** — recursion, trust/coherence, collapse/failure, bounded re-entry, and composition research.
-- **EHCO Fractal Systems** — structural/form preservation, admissibility, continuity, drift, scale, projection, and lineage research.
+## Dashboard orientation
 
-### Continuing downstream governed domain/application expansion
+The EHCO Dashboard provides a Tier Three visual projection of governed system posture, service coordination, evidence, health, readiness, and component relationships.
 
-The application estate includes **EHCO Energy**, **Noble Law**, **EHCO War Room**, **HTPI**, **EHCO Project Construct**, **EHCO Luminis**, **EHCO Nexus**, and **EHCO Permit Trace**. These components turn the shared instantiated architecture into domain-specific intelligence, deterministic workflows, evidence systems, and governed application services.
+![EHCO Dashboard overview projection](architecture/assets/dashboard/overview-june-2026-public.webp)
+
+![EHCO Dashboard services and coordination projection](architecture/assets/dashboard/services-coordination-june-2026-public.webp)
+
+**[Explore the Dashboard system-card views →](architecture/EHCO-AI-OS-SYSTEM-CARD.md#dashboard-visual-orientation)**
 
 ## Public evidence
 
-EHCOsystem publishes evidence according to the proposition being examined: controlled architecture, exact artifact identity, manifests and hashes, selected test fixtures, source-reviewed synthetic capability evidence, source anchors, bounded observations, discrepancy records, receipts, and verification tooling.
+Public evidence follows the technology it supports:
 
-For the current established Tier One Runtime environment, use the **[Full Flex current evidence route](runtime/README.md)** first. The immutable Public Evidence Companion preserves the historical proof and event-time evidence lineage behind that current representation.
+- **Runtime / Full Flex:** [current public Runtime evidence](runtime/README.md)
+- **Language Model:** [deterministic capability demonstration](language-model/DETERMINISTIC-CAPABILITY-DEMONSTRATION.md) and [Public Test Snapshot v1](language-model/evidence/public-test-snapshot-v1/README.md)
+- **Range Reactor:** [Public Capability Snapshot v1](range-reactor/evidence/public-capability-snapshot-v1/README.md) and [Operational Closure Evidence v1](range-reactor/evidence/operational-closure-v1/README.md)
+- **Machine-readable claims:** [Canonical Public Claim Registry](assurance/PUBLIC-CLAIM-REGISTRY.json)
 
-The **EHCO Language Model Public Test Snapshot v1** publishes seven exact synthetic fixtures covering **62 cases**, expected dispositions, a qualification-test index, provenance manifest, and validation tooling. It is one inspectable window into a substantially deeper controlled implementation and qualification estate.
+The Full Flex public route preserves the accepted packet identity and receipt through a public-safe record; internal source-routing metadata remains outside the current public tree.
 
-**[Inspect the Language Model test evidence](language-model/evidence/public-test-snapshot-v1/README.md)**
+## Verify
 
-### Range Reactor — Capability Snapshot + Operational Closure Evidence
+Run the canonical public repository verification:
 
-The **EHCO Range Reactor Public Capability Snapshot v1** publishes eight public-safe synthetic capability vectors covering deterministic replay, contradiction/frontier preservation, modal distinction, semantic collapse with witness-fiber custody, independent collapse verification, source-mutation identity sensitivity, and grounded proof custody.
+```bash
+python3 verification/verify_all_public.py
+```
 
-The separate **Range Reactor Operational Closure Evidence v1** publishes the accepted selected-benchmark matched A/B result — **14.304307x wall-clock**, **14.208722x CPU-time**, **94.755854%** Python peak-allocation reduction, **1,957 → 64** states, **1,956 → 192** transitions and **720 histories preserved** — together with **82 passed / 0 failed** selected semantic closure, deterministic replay, physical Docker/Linux benchmark context, hashes and explicit claim ceilings. Its public ceiling is the selected benchmark and selected current semantic corpus; universal/unbounded correctness, generic scalar foresight accuracy, production deployment and Tier One Runtime participation remain outside that evidence class.
+**[Verification guide →](verification/README.md)**
 
-**[Inspect the Range Reactor capability evidence](range-reactor/evidence/public-capability-snapshot-v1/README.md)**  
-**[Inspect the Range Reactor operational-closure evidence](range-reactor/evidence/operational-closure-v1/README.md)**
+## Deeper review
 
-## Architecture, evidence, and governance
-
-- [Current EHCO AI-OS Runtime Evidence](runtime/README.md)
-- [EHCO Range Reactor](range-reactor/README.md)
-- [Runtime, Repository, and Test-Estate Boundary](architecture/runtime-repository-and-test-estate-boundary.md)
-- [Repository Governance](GOVERNANCE.md)
-- [Security and Responsible Disclosure](SECURITY.md)
-- [Public Documentation and Evidence Provenance](PROVENANCE.md)
-- [Proprietary Public Inspection License](LICENSE)
+- [Ecosystem Technical Diligence](ECOSYSTEM-DILIGENCE.md)
+- [EHCO AI-OS Technical Diligence](TECHNICAL-DILIGENCE.md)
 - [EHCOsystem Library](LIBRARY.md)
+- [Repository Map](getting-started/repository-map.md)
+- [Governance](GOVERNANCE.md)
+- [Security and Responsible Disclosure](SECURITY.md)
+- [Provenance](PROVENANCE.md)
 
 Copyright (c) 2026 EHCOnomics. All rights reserved.
-
-<!-- validator transition marker: advanced near-final maturation cycle -->

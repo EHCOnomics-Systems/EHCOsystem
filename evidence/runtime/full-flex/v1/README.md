@@ -1,40 +1,55 @@
 # EHCO Full Flex Public Packet v1 — Current Runtime Evidence Index
 
-This directory is the canonical public evidence location for the current **EHCO Full Flex Public Packet v1**, the first public evidence route for the current established EHCO AI-OS Runtime environment.
+This directory is the canonical public evidence route for the accepted **EHCO Full Flex Public Packet v1** and the current established EHCO AI-OS Runtime representation.
 
-## Current packet identity
+## Accepted packet identity
 
 - Schema: `EHCO_FULL_FLEX_PUBLIC_PACKET_V1`
-- Owning-host establishment date: `2026-08-30`
+- Established: `2026-08-30`
 - Packet SHA-256: `7F80C27D085AE871A00AED412C6F20EA9A76CB0677C93AEBA381CD1FD70EC8E5`
 - Clean package ZIP SHA-256: `DBF984B55731B5EA53C4D7F2A24F8CF4C0C4207E355EB8E6B1170113509F6B94`
 - Runtime maturity represented: `REALIZED / COMPLETE_IN_ACCEPTED_SCOPE`
 - Accepted standing represented: `52/53`
 - Docker portability class represented: `PRIMARY_ACCESSIBLE_RUNTIME_PROJECTION`
 
-The packet identity above was established from the owning Windows/Docker host. The exact JSON bytes are published in this canonical public directory as `EHCO_FULL_FLEX_PUBLIC_PACKET_V1.json` and remain bound to the packet SHA-256 above. The accompanying `.sha256` file and `PACKET_RECEIPT.json` preserve the exact-byte publication identity; reconstructed or alternate bytes do not become this packet.
+The accepted packet identity remains unchanged. The current public tree publishes a **public-safe Full Flex record** rather than the raw packet bytes because the accepted raw packet contains internal source-routing metadata that is not part of the public disclosure surface.
 
-## Current evidence role
+Public custody is therefore:
 
-This packet is the canonical current public evidence projection and synthesis for the broader EHCO AI-OS Runtime environment. It consolidates the accepted current Runtime posture with established Docker portability, physically operated Runtime evidence, Dashboard/bridge/worker relationships, persistent surfaces, networking, image identity, engineering-scale characterization, Range Reactor qualification/performance, public claim bindings, source bindings and integrity metadata.
+- [`PUBLIC_SAFE_RECORD.json`](PUBLIC_SAFE_RECORD.json) — public-safe current Runtime record bound to the accepted packet identity;
+- [`PACKET_RECEIPT.json`](PACKET_RECEIPT.json) — accepted packet receipt;
+- [`EHCO_FULL_FLEX_PUBLIC_PACKET_V1.sha256`](EHCO_FULL_FLEX_PUBLIC_PACKET_V1.sha256) — detached accepted packet identity.
 
-For current public Runtime review, start with the [EHCO AI-OS Runtime front door](../../../../runtime/README.md).
+The raw packet remains the accepted evidence object in its owning custody. Removing its public copy does not alter its hash, receipt, establishment, or technical result.
+
+## What Full Flex establishes publicly
+
+Full Flex records the established EHCO AI-OS Runtime posture together with its deployment-ready Docker portability and supporting technical relationships: physically operated local Docker Runtime behavior, Dashboard/bridge/worker relationships, persistent Runtime/proof/data surfaces, Docker networking, hardened image identity, operating independence, engineering-scale Runtime characterization, Range Reactor qualification/performance, public claim bindings, and artifact integrity.
+
+For the reader-facing Runtime route, start with [EHCO AI-OS Runtime — Current Public Evidence](../../../../runtime/README.md).
 
 ## Historical evidence relationship
 
-The existing [`public-evidence-companion/v1`](../../../public-evidence-companion/v1/) Packets 00–08 remain immutable historical/event-time evidence. They preserve lineage and continue to prove the bounded propositions they recorded.
+The existing [`public-evidence-companion/v1`](../../../public-evidence-companion/v1/) Packets 00–08 remain immutable historical/event-time evidence. They preserve the propositions and observations recorded at their event time.
 
-They are not the current Runtime maturity or present-state authority. Packet 06 in particular remains a historical bounded observation window; its packet-time state fields do not override the accepted current Runtime baseline or the current Full Flex evidence route.
+The accepted Full Flex route is the current public Runtime evidence route; the historical companion remains the deeper event-time lineage behind it.
 
 ## Evidence ownership
 
-- `INSTANTIATED_EHCO_RUNTIME` owns actual Tier One Runtime authority and present Runtime state.
-- Owning Windows/Docker host evidence owns physical execution observations and the clean packet-generation result.
-- Google Drive governance owns durable public interpretation and packet identity records.
-- Direct Git/GitHub owns exact public repository source and publication state.
+- `INSTANTIATED_EHCO_RUNTIME` owns Tier One Runtime authority and current Runtime state.
+- Owning technical evidence established the physical Runtime and Full Flex result.
+- This public repository publishes the public-safe representation and integrity route.
 
-## Publication status
+## Verify
 
-The current packet **identity, public evidence precedence, and exact byte-identical JSON artifact are published in this repository**. `EHCO_FULL_FLEX_PUBLIC_PACKET_V1.json` is the accepted canonical public byte publication, with Git blob `419a6b3496aaefb2526411ea88644747c9226f60` and packet SHA-256 `7F80C27D085AE871A00AED412C6F20EA9A76CB0677C93AEBA381CD1FD70EC8E5`.
+Run:
 
-`EHCO_FULL_FLEX_PUBLIC_PACKET_V1.sha256` and `PACKET_RECEIPT.json` are published alongside it to preserve and verify that identity. The earlier staging condition has therefore been satisfied; there is no outstanding future exact-byte insertion step for Full Flex Public Packet v1.
+```bash
+python3 verification/validate_current_runtime_evidence.py
+```
+
+or the canonical complete public validation route:
+
+```bash
+python3 verification/verify_all_public.py
+```

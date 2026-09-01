@@ -1,68 +1,69 @@
 ---
 title: EHCO Range Reactor
-version: 1.1
+version: 2.0
 status: current-public-component-record
-published: 2026-08-31
+published: 2026-09-01
 maintainer: EHCOnomics
-evidence_class: public-component-capability-maturity-and-operational-closure-record
-evidence_scope: accepted-source capability, qualification maturity, matched benchmark, bounded semantic closure and evidence relationships
+evidence_class: public-component-capability-and-operational-closure-record
+evidence_scope: mature deterministic range/reasoning capability and selected public-safe operational result
 ---
 
 # EHCO Range Reactor
 
-EHCO Range Reactor is EHCOnomics' mature deterministic **proof-carrying implication, reachability, range and reasoning system** within the principal shared downstream component spine.
+The **EHCO Range Reactor** is EHCOnomics' mature deterministic **proof-carrying implication, reachability, range, and reasoning system** within the shared EHCOsystem technology spine.
 
-## Computational role
+## What it does
 
-Range Reactor owns bounded deterministic implication and reachability computation, typed range/reasoning evaluation, semantic result identity, and reusable reasoning capability for governed EHCO consumers.
+Range Reactor provides bounded deterministic reasoning across implication and reachability, typed range evaluation, semantic result identity, deterministic replay, contradiction/remainder/frontier preservation, and finite semantic reduction with retained concrete-history witness custody.
 
-That mature system capability is distinct from Tier One Runtime authority. Runtime admission, binding, invocation, authoritative consequence, Runtime proof and standing remain owned by their applicable Runtime evidence.
+Its accepted capability includes:
 
-## Established capability
+- executable deterministic reference semantics;
+- typed query, event, proof, result, standing, and reduction contracts;
+- canonical content-addressed identity and deterministic replay;
+- contradiction, remainder, and frontier preservation;
+- possible-versus-inevitable reachability distinctions;
+- finite semantic quotient/reduction with retained witness fibers;
+- independent verification of proposed reductions;
+- service and container interfaces; and
+- interoperable governed reasoning relationships with other EHCO technologies.
 
-The accepted source estate includes:
+## Selected operational result
 
-- executable deterministic reference semantics over bounded admitted classes;
-- typed query, event, proof, result, standing and collapse contracts;
-- canonical content-addressed identity and deterministic replay controls;
-- contradiction-preserving state treatment and typed remainder/frontier custody;
-- possible-versus-inevitable reachability distinctions and claim-scoped zero semantics;
-- finite semantic quotient/collapse computation with retained concrete-history witness fibers;
-- an independent collapse-verification path that recomputes the finite relation and rejects forged quotient/certificate data;
-- service interfaces, an internal HTTP boundary and container-source definitions;
-- production-profile, host-qualification and release-control source;
-- Prime purification and Prime-purified Full-Range computation; and
-- governed Primordia collapsed Full-Range producer interoperability with explicit owner separation.
+For the accepted `RR-EXPLORATION-AB-001` selected workload, the matched physical A/B result records:
 
-## Deterministic evidence behavior
+- **14.304307x wall-clock improvement**;
+- **14.208722x CPU-time improvement**;
+- **94.755854% benchmark-defined Python peak-allocation reduction**;
+- **96.729688% state-work reduction**, from **1,957** states to **64**;
+- **90.184049% transition-work reduction**, from **1,956** transitions to **192**; and
+- **720 histories preserved** in both modes.
 
-Range Reactor preserves bounded uncertainty instead of turning finite non-observation into completion. Frontier custody keeps unexplored behavior explicit; contradiction custody preserves conflicting evidence; proof custody governs obligation discharge; deterministic identities bind results to materially relevant source and semantic state.
+The selected semantic-closure corpus records **82 passed / 0 failed** with deterministic replay.
 
-For finite supported collapse classes, equivalent semantic states can be represented by one quotient class while distinct concrete histories remain retained in witness fibers. The independent verifier evaluates the proposed quotient from a separate verification path so a proposal cannot establish its own correctness merely by being produced.
-
-## Maturity
-
-**Maturity:** mature deterministic proof-carrying implication, reachability, range and reasoning system with accepted current capability and qualification evidence.
-
-The current selected Range Reactor v1 operational-closure scope is complete. The accepted matched exploration-time A/B recorded **14.304307x wall-clock** and **14.208722x CPU-time** speedup on the selected benchmark, with **94.755854%** Python peak-allocation reduction, **1,957 → 64** states, **1,956 → 192** transitions and all **720 histories preserved**. The selected current semantic-closure corpus completed **82 passed / 0 failed** with deterministic replay. These are bounded evidence propositions, not universal Range Reactor speed or correctness claims.
-
-Deployment, production activation and Runtime participation are separate lifecycle/effect dimensions established by their own evidence; they **neither extend nor reduce the system-capability maturity claim**. The selected operational-closure claims remain separately bounded by their accepted benchmark and semantic-corpus evidence ceilings.
+The benchmark and semantic corpus define the scope of those measured results. Range Reactor's mature component capability is broader than one benchmark, while the numerical measurements remain attached to the selected workload that produced them.
 
 ## Public evidence
 
-Range Reactor now exposes two complementary public evidence routes:
+- **[Operational Closure Evidence v1](evidence/operational-closure-v1/README.md)** — the selected matched A/B result, selected semantic closure, public-safe integrity hashes, and accepted container/service qualification summary.
+- **[Public Capability Snapshot v1](evidence/public-capability-snapshot-v1/README.md)** — eight public-safe synthetic capability vectors covering deterministic replay, contradiction/frontier preservation, modal distinction, reduction witness custody, independent verification, source-sensitive identity, and grounded proof custody.
 
-- **[Public Capability Snapshot v1](evidence/public-capability-snapshot-v1/README.md)** — eight public-safe synthetic capability vectors covering deterministic replay, contradiction/frontier preservation, modal distinction, quotient witness-fiber custody, independent collapse verification, source-mutation identity sensitivity, and grounded proof custody.
-- **[Operational Closure Evidence v1](evidence/operational-closure-v1/README.md)** — accepted matched A/B performance, physical Docker/Linux benchmark context, separately classified historical container/service qualification, selected semantic closure, deterministic replay, hashes, and explicit claim ceilings.
+## EHCOsystem relationship
 
-The capability snapshot is a bounded inspection surface. The operational-closure projection is a separate evidence class bound to accepted owning evidence. Neither route establishes Tier One Runtime participation, production deployment, release, authority or standing effects.
+Range Reactor supplies deterministic range/reasoning computation as a downstream governed component. Component capability maturity remains distinct from Tier One Runtime authority and Runtime participation. **EHCO AI-OS** remains the Tier One Runtime identity, and `INSTANTIATED_EHCO_RUNTIME` owns Runtime authority and current Runtime state.
 
-## Evidence relationships
+## Verify
 
-- **Component identity and capability maturity:** this record plus current accepted owning-source review.
-- **Selected public-safe capability evidence:** Range Reactor Public Capability Snapshot v1.
-- **Selected operational-closure evidence:** Range Reactor Operational Closure Evidence v1.
-- **Deployment and production effects:** owning build/deployment/production evidence.
-- **Tier One Runtime participation, authority, state and proof:** instantiated EHCO Runtime evidence.
+Run the complete public verification route:
+
+```bash
+python3 verification/verify_all_public.py
+```
+
+or the dedicated operational-closure validator:
+
+```bash
+python3 verification/validate_public_range_reactor_operational_closure.py
+```
 
 Use of these materials is governed by the repository root `LICENSE`.
