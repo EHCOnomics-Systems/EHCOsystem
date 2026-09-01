@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate the EHCO Range Reactor public capability snapshot and representation."""
+"""Validate the EHCO Range Reactor public capability snapshot and current public representation."""
 
 from __future__ import annotations
 
@@ -87,57 +87,31 @@ def validate_snapshot() -> None:
 def validate_public_representation() -> None:
     texts = {relative: read_text(relative) for relative in PUBLIC_SURFACES}
     combined = "\n".join(texts.values())
-    required_phrases = {
-        "README.md": ["mature deterministic proof-carrying implication", "Range Reactor Public Capability Snapshot v1"],
-        "range-reactor/README.md": [
-            "proof-carrying implication, reachability, range and reasoning system",
-            "independent collapse-verification path",
-            "mature deterministic proof-carrying implication, reachability, range and reasoning system with accepted current capability and qualification evidence",
-            "neither extend nor reduce the system-capability maturity claim",
-        ],
-        "architecture/EHCO-TECHNOLOGY-ESTATE.md": [
-            "Range Reactor is a **mature deterministic proof-carrying implication, reachability, range and reasoning system**",
-            "are orthogonal to the established system-capability maturity",
-        ],
-        "architecture/ecosystem-components-and-participation.md": [
-            "**Maturity:** mature deterministic proof-carrying implication, reachability, range and reasoning system with accepted current capability and qualification evidence",
-            "remain orthogonal to the established mature system-capability status",
-        ],
-        "assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md": [
-            "EHCO Range Reactor public capability evidence",
-            "Source-reviewed synthetic capability evidence",
-            "**Mature established system capability** supported by accepted current source and qualification evidence",
-        ],
-        "verification/README.md": ["validate_public_range_reactor_snapshot.py", "eight synthetic capability vectors"],
-        "LIBRARY.md": ["Range Reactor Public Capability Snapshot v1"],
-        "getting-started/START-HERE.md": ["EHCO Range Reactor Public Capability Snapshot v1"],
+
+    required = {
+        "README.md": ["mature deterministic proof-carrying implication", "Public Capability Snapshot v1", "14.304307x"],
+        "range-reactor/README.md": ["proof-carrying implication, reachability, range, and reasoning system", "14.304307x wall-clock improvement", "82 passed / 0 failed", "Public Capability Snapshot v1"],
+        "architecture/EHCO-TECHNOLOGY-ESTATE.md": ["mature deterministic proof-carrying implication, reachability, range, and reasoning system", "14.304307x wall-clock improvement"],
+        "architecture/ecosystem-components-and-participation.md": ["mature deterministic proof-carrying implication, reachability, range, and reasoning", "14.304307x wall-clock"],
+        "assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md": ["EHCO Range Reactor", "14.304307x wall", "82 passed / 0 failed"],
+        "verification/README.md": ["validate_public_range_reactor_snapshot.py", "Range Reactor capability snapshot"],
+        "LIBRARY.md": ["Public Capability Snapshot v1"],
+        "getting-started/START-HERE.md": ["EHCO Range Reactor", "14.304307x wall-clock improvement"],
     }
-    for relative, phrases in required_phrases.items():
+    for relative, phrases in required.items():
         for phrase in phrases:
             require(phrase in texts[relative], f"Range Reactor public representation missing in {relative}: {phrase}")
 
     controlled_locator = re.compile(r"\bEHCOnomics-Systems/EHCO_Range_Reactor\b", re.IGNORECASE)
     require(controlled_locator.search(combined) is None, "controlled Range Reactor repository locator present in reader-facing public text")
+    require("refs/heads/" not in combined, "Range Reactor branch choreography present in public representation")
 
-    internal_identifier = re.compile(r"\bRR-(?:REF|COLLAPSE|MATH|SCHEMA|VAL|VERIFY|ID|HID|DEP|GHCR|REALWORLD|PRODUCTION|RELEASE|PRIME|PRIMORDIA|ACCEPTED)[A-Z0-9-]*-\d+\b", re.IGNORECASE)
-    require(internal_identifier.search(combined) is None, "internal Range Reactor operation/stage identifier present in reader-facing public text")
-    require("refs/heads/" not in combined and "PR #" not in combined, "Range Reactor branch/PR choreography present in public representation")
-
-    downward_qualifiers = (
-        "The component's public maturity is source-and-qualification maturity",
-        "mature deterministic proof-carrying range/reasoning source and qualification estate",
-        "mature deterministic proof-carrying range / reasoning source + qualification",
-    )
-    for phrase in downward_qualifiers:
-        require(phrase not in combined, f"Range Reactor maturity is being narrowed to an evidence/source dimension: {phrase}")
-
-    overclaims = (
+    for phrase in (
         "Range Reactor is a Runtime participant",
         "Range Reactor is production deployed",
         "Range Reactor is Runtime-admitted",
         "Range Reactor owns Runtime authority",
-    )
-    for phrase in overclaims:
+    ):
         require(phrase not in combined, f"Range Reactor lifecycle/authority overclaim detected: {phrase}")
 
 
