@@ -1,11 +1,11 @@
 ---
 title: Ecosystem Components and Runtime Relationships
-version: 2.4
+version: 2.5
 status: current-public-system-architecture
-published: 2026-08-28
+published: 2026-08-31
 maintainer: EHCOnomics
 evidence_class: controlled-ehco-system-record
-supersedes: version 2.3
+supersedes: version 2.4
 ---
 
 # Ecosystem Components and Runtime Relationships
@@ -27,13 +27,13 @@ EHCOsystem tracks persistent component identity, source maturity, application/se
 
 ### EHCO Language Model
 
-**Maturity:** mature deterministic computational-language system in an **advanced near-final maturation cycle**.
+**Maturity:** mature deterministic computational-language system with **deep final capability/source closure and governed final component artifact build, qualification and release established**. The current selected lifecycle frontier is **staging execution and verification of the exact released artifact**.
 
 **Architecture:** `DETERMINISTIC_COMPUTATIONAL_LANGUAGE / SINGLE_PATH / EXPLICIT_EHCO_COMPUTATION / ZERO_WEIGHT_ONLY / ZERO WEIGHTS TRAINED`.
 
 **Established source depth:** Language Kernel; Language Math; deterministic tokenizer; lexical/morphological computation; syntax/semantic composition; reference/context; evidence binding; deterministic search/resolution; ambiguity/withholding; bounded reasoning; evaluation; service boundary; schemas; registries; fixtures; deterministic tests; packaging; dependency locks; owner seams; production-lifecycle source.
 
-**Current strengthening direction:** deeper computational meaning, linguistic productivity, context/discourse capability, deterministic reasoning/transformation, evidence/owner integration, and integrated deterministic qualification across the established single language path.
+**Lifecycle separation:** established source, qualification, artifact-build and release state remains distinct from staging execution/verification, production verification/deployment, and Tier One Runtime participation. Those later dimensions require their owning evidence.
 
 ### EHCO Range Reactor
 
@@ -109,6 +109,7 @@ Tier Three contains interfaces, dashboards, reports, metrics, and public-safe pr
 
 | Version | Date | Change |
 |---|---|---|
+| 2.5 | 2026-08-31 | Synchronized Language Model maturity to established deep final capability/source closure and governed final component artifact build, qualification and release, with staging execution/verification as the current lifecycle frontier. |
 | 2.4 | 2026-08-28 | Expanded the Range Reactor source/qualification capability representation and added its dedicated public evidence route. |
 | 2.3 | 2026-08-28 | Recast Language Model maturity around established capability and advanced near-final strengthening rather than internal development sequencing. |
 | 2.2 | 2026-08-28 | Recast component maturity and Runtime relationships affirmatively, refreshed Language Model depth, and aligned the component set to the current public scope. |
