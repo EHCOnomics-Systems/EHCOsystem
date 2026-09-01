@@ -18,24 +18,20 @@ selection:
     Edward Henry selected a recursive semantics and language audit continuation of the existing EHCOsystem public-repository closeout and explicitly directed immediate correction of every identified material semantics/language defect and materially equivalent recurrence until repeated re-audit finds no known material presentation defect. This is a bounded continuation of EHCO-PUB-SOW-009, not a new baseline program or automatic successor. Accepted Runtime, EHCO_DOCKER_PORTABILITY, Full Flex, Range Reactor and Language Model technical/lifecycle evidence is reused without reproof or revalidation. Public presentation must preserve the strongest established state in the correct evidence/lifecycle dimension, keep EHCO AI-OS as the Tier One Runtime system identity, keep INSTANTIATED_EHCO_RUNTIME as Tier One Runtime authority/Runtime-state owner, remove residual Full Flex synthesis and stale custody wording, avoid unsupported Runtime-participation implications, use durable resting-state reader language, preserve public-private boundaries, and recursively re-audit the corrected candidate.
     SOURCE_BASE:1cf77b4d16327bc98c645b24f86b8df92b1a5ea4
     BRANCH:closeout/recursive-semantics-audit-v24
+    REVIEWED_PUBLISH_HEAD:7314f43db5e248f196af00165e3fbe55b8a99055
     RECURSIVE_REAUDIT_REQUIRED=true
     OPERATION_STABLE_ENVELOPE_CHANGE=true
   source_base_revision: 1cf77b4d16327bc98c645b24f86b8df92b1a5ea4
-  expected_reviewed_head_revision: NOT_APPLICABLE_UNTIL_ACCEPT
+  expected_reviewed_head_revision: 7314f43db5e248f196af00165e3fbe55b8a99055
 control_anchor: AGENTS.md
 status_owner_path: ehco.operation.yaml
 accepted_standing: 52/53
 active_operation:
   operation_id: EHCOSYSTEM-PUBLIC-RECURSIVE-SEMANTICS-CORRECTION-001
-  state: ACTIVE
-  authorization_mode: PUBLISH
-  bounded_outcome: Correct all in-scope material public semantics, terminology, lifecycle, authority/currentness, evidence-ownership, disclosure and reader-flow defects; recursively re-audit the resulting candidate; qualify the exact candidate through normal public repository protections; then accept and merge only the exact qualified candidate and reconcile final Drive closeout state.
-  remaining_bounded_work:
-    - Recursively re-audit every identified defect class and materially equivalent wording across the active public surface.
-    - Correct every in-scope material recurrence discovered by re-audit.
-    - Qualify the exact published candidate through canonical public validation, CodeQL/security checks and the EHCO Assistant Operation Gate.
-    - Freeze the exact reviewed candidate SHA before advancing to ACCEPT.
-    - Merge only the exact qualified ACCEPT candidate, read back canonical main, reconcile bounded branch/PR residue, and record final closeout state in Drive.
+  state: COMPLETE
+  authorization_mode: ACCEPT
+  bounded_outcome: Accept and merge the exact qualified recursive public semantics/resting-state correction candidate after repeated semantic audit, source/diff validation, public validation, CodeQL and assistant-operation qualification.
+  remaining_bounded_work: []
   interaction_seams:
     - Google Drive EHCO-PUB-SOW-009 v2.4 owns durable closeout and recursive-audit meaning.
     - EHCOnomics-Systems/EHCOsystem owns the exact public repository implementation and presentation state changed here.
@@ -144,25 +140,25 @@ change_control:
     - read_source
     - compare_source
     - audit
-    - propose
     - update_file
     - run_checks
   local_actions_prohibited:
+    - propose
     - create_file
     - move_file
     - delete_file
     - generate_artifact
   remote_actions_authorized:
+    - mark_pull_request_ready_for_review
+    - merge_pull_request
+    - record_owner_acceptance
+    - close_operation
+  remote_actions_prohibited:
     - create_branch
     - commit
     - push
     - open_draft_pull_request
     - update_draft_pull_request
-  remote_actions_prohibited:
-    - mark_pull_request_ready_for_review
-    - merge_pull_request
-    - record_owner_acceptance
-    - close_operation
     - activate_selected_successor
     - modify_repository_settings
     - modify_drive_controls
@@ -189,16 +185,16 @@ bridge:
   participation_binding_status: NOT_ESTABLISHED
   canonical_runtime_receipt_status: NOT_ESTABLISHED
 evidence:
-  evidence_class: REPOSITORY_SOURCE_AND_DIFF_VALIDATION
+  evidence_class: OWNER_ACCEPTANCE_RECORD
   required_checks:
-    - Recursive semantics/language re-audit finds no known material contradiction, ambiguity, demotion, stale Full Flex wording, unsupported participation implication, volatile resting-state wording, private disclosure defect or reader-flow defect in the active public surface.
-    - Canonical public repository validation passes on the exact reviewed candidate.
-    - CodeQL/security checks required by repository or organization rules pass on the exact reviewed candidate.
-    - The EHCO Assistant Operation Gate passes on the exact reviewed candidate.
+    - Reviewed PUBLISH head 7314f43db5e248f196af00165e3fbe55b8a99055 passed canonical public repository validation.
+    - Reviewed PUBLISH head 7314f43db5e248f196af00165e3fbe55b8a99055 passed CodeQL.
+    - Reviewed PUBLISH head 7314f43db5e248f196af00165e3fbe55b8a99055 passed the EHCO Assistant Operation Gate.
+    - Recursive semantics re-audit found no known material unresolved occurrence in the active public surfaces reviewed under SOW v2.4; later exact-head validation remains required for this ACCEPT candidate.
     - Accepted numerical standing remains 52/53.
-    - No Runtime, deployment, release, authority, standing, participation or successor effect is created by the correction or publication candidate.
+    - No Runtime, deployment, release, authority, standing, participation or successor effect is created by acceptance or merge.
   proves:
-    - Repository-source and exact-diff qualification of the bounded recursive public semantics correction candidate only.
+    - Owner-selected repository-source acceptance of the exact qualified recursive public semantics correction candidate, subject to exact ACCEPT-head qualification, provider merge, and canonical main readback.
   evidence_not_created:
     - New Runtime proof or Runtime state
     - New Full Flex technical proof
@@ -208,8 +204,8 @@ evidence:
     - New authority, standing or Runtime participation
     - Any successor operation
 stop_condition:
-  - Every known material recursive semantics/language finding is corrected or explicitly bounded by owning evidence/historical scope.
-  - The exact PUBLISH candidate passes applicable repository validation, CodeQL and EHCO Assistant Operation Gate.
-  - Freeze the exact reviewed PUBLISH candidate before advancing to ACCEPT.
-  - Merge only the exact qualified ACCEPT candidate through normal protections and read back canonical main.
-  - Reconcile the final closeout state in Drive and leave accepted standing 52/53 preserved with Runtime, deployment, release, authority, standing, participation and successor effects NONE or not established as applicable.
+  - Exact ACCEPT candidate passes canonical public repository validation, CodeQL and EHCO Assistant Operation Gate.
+  - Mark PR #55 ready, record bounded owner acceptance, and merge only that exact qualified ACCEPT head.
+  - Read back canonical main and verify the accepted resting-state semantic postconditions from GitHub.
+  - Reconcile final closeout state in Drive.
+  - Stop with accepted standing 52/53 preserved and all Runtime, deployment, release, authority, standing, participation and successor effects remaining NONE or not established as applicable.
