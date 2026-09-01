@@ -1,18 +1,18 @@
 ---
 title: Runtime, Repository, and Test-Estate Boundary
-version: 1.3
+version: 1.4
 status: accepted-public-boundary
-published: 2026-08-30
+published: 2026-09-01
 maintainer: EHCOnomics
 evidence_class: controlled-ehco-boundary-record
-supersedes: version 1.2
+supersedes: version 1.3
 ---
 
 # Runtime, Repository, and Test-Estate Boundary
 
 **EHCO AI-OS is the realized Tier One Runtime of EHCOsystem with accepted standing 52/53.**
 
-This record maps ownership and evidence domains across the Runtime, public repository, controlled source/test estates, downstream components, current public Runtime evidence and historical evidence packets.
+This record maps ownership and evidence domains across the Runtime, public repository, controlled source/test estates, downstream components, accepted public Runtime evidence and historical evidence packets.
 
 ## Tier One Runtime domain
 
@@ -20,17 +20,17 @@ This record maps ownership and evidence domains across the Runtime, public repos
 
 ## Public repository domain
 
-The public `EHCOsystem` repository owns the approved public architecture, evidence projection, provenance, verification, diligence, navigation and publication record set. Direct Git/GitHub owns exact public source and publication state; Runtime authority remains with its instantiated Runtime owner.
+The public `EHCOsystem` repository owns the approved public architecture, evidence representation, provenance, verification, diligence, navigation and publication record set. Direct Git/GitHub owns exact public source and publication state; Runtime authority remains with `INSTANTIATED_EHCO_RUNTIME`.
 
-## Current public Runtime evidence projection
+## Accepted public Runtime evidence representation
 
-The canonical first public evidence route for the current established EHCO AI-OS Runtime environment is [EHCO AI-OS Runtime — Current Public Evidence](../runtime/README.md), with the [EHCO Full Flex Public Packet v1 evidence index](../evidence/runtime/full-flex/v1/README.md).
+The canonical first public evidence route for the accepted EHCO AI-OS Runtime baseline is [EHCO AI-OS Runtime — Accepted Public Evidence](../runtime/README.md), with the [EHCO Full Flex Public Packet v1 evidence index](../evidence/runtime/full-flex/v1/README.md).
 
-The Full Flex packet is the current public capability-and-evidence synthesis. Its selected packet identity is SHA-256 `7F80C27D085AE871A00AED412C6F20EA9A76CB0677C93AEBA381CD1FD70EC8E5`. It binds current public interpretation across accepted Runtime posture, deployment-ready Docker portability, owning-host observations, engineering-scale characterization, Range Reactor qualification/performance relationships, claim bindings, source bindings and integrity metadata.
+The accepted Full Flex route is a public-safe evidence record bound to selected packet SHA-256 `7F80C27D085AE871A00AED412C6F20EA9A76CB0677C93AEBA381CD1FD70EC8E5`. It presents accepted Runtime posture, deployment-ready Docker portability, owning-host observations, engineering-scale characterization, Range Reactor qualification/performance relationships, claim bindings, source bindings and integrity metadata according to their proposition-matched evidence classes.
 
-`INSTANTIATED_EHCO_RUNTIME` remains the Tier One authority/current-state owner; owning Windows/Docker host evidence owns physical execution observations; Full Flex carries the current public synthesis role.
+`INSTANTIATED_EHCO_RUNTIME` remains the Tier One authority and Runtime-state owner; owning Docker/host evidence owns physical execution observations. The Full Flex route exposes the accepted public evidence relationship without replacing those owners.
 
-Exact packet-byte identity and public source routing are separate dimensions. The repository can publish the established packet identity and precedence while exact packet-byte insertion awaits lawful byte custody; byte identity determines whether an artifact is the selected packet.
+Exact packet-byte identity and public disclosure are separate dimensions. Exact selected packet-byte identity and custody are established through the accepted packet hash and receipt. The public repository intentionally publishes the public-safe record, accepted receipt, and detached packet hash rather than the raw accepted packet because the raw bytes contain internal source-routing metadata outside the public disclosure surface. This disclosure choice does not alter the accepted packet identity or technical result.
 
 ## Standing interpretation boundary
 
@@ -42,15 +42,15 @@ Controlled repositories and supporting estates own source, tests, compatibility 
 
 ## Downstream component domain
 
-Persistent downstream governed component identity records the software/application/service object and its capabilities. Scoped Runtime participation records a governed relationship with the instantiated Runtime. The applicable Runtime evidence owns admission, binding, invocation, disposition, authoritative consequence/persistence and canonical receipts for each corridor.
+Persistent downstream governed component identity records the software/application/service object and its capabilities. Runtime participation is a separate governed relationship with the instantiated Runtime and is asserted only where the applicable Runtime evidence establishes admission, binding, invocation, disposition, authoritative consequence/persistence or canonical receipts for that corridor.
 
 ## Historical Public Evidence Companion
 
-Packets 00–08 preserve hash-bound public evidence with packet-specific event-time scope. They remain valid immutable historical evidence and lineage; present Runtime maturity, standing and deployment-ready portability route through the Full Flex current evidence surface and owning evidence relationships.
+Packets 00–08 preserve hash-bound public evidence with packet-specific event-time scope. They remain valid immutable historical evidence and lineage. Accepted Runtime maturity, standing and deployment-ready portability retain their established evidence relationships; later Runtime-state propositions remain owned by applicable Runtime evidence.
 
 ### Packet 02 — Canonical Runtime Source Binding
 
-Packet 02 binds an exact packet-time snapshot of runtime-support test/source artifacts to declared SHA-256 values. Its evidence class is **artifact identity, integrity and provenance**.
+Packet 02 binds an exact packet-time snapshot of Runtime-support test/source artifacts to declared SHA-256 values. Its evidence class is **artifact identity, integrity and provenance**.
 
 ### Packets 03–05 — declarations and anchors
 
@@ -66,9 +66,9 @@ Packet 08 binds dossier identity, prior packet manifests, verification statuses,
 
 ## Public evidence precedence
 
-For present Runtime posture:
+For public Runtime review:
 
-1. current Full Flex evidence route;
+1. accepted Full Flex evidence route;
 2. canonical Public Claim Registry for machine-readable claim interpretation;
 3. owning Runtime/Docker evidence for technical effects; and
 4. historical Public Evidence Companion Packets 00–08 for event-time lineage and proof history.
@@ -78,8 +78,8 @@ For present Runtime posture:
 - **PROVEN** — established within an expressly identified proof scope.
 - **BOUND_BY_PRIOR_PROOF** — preserved by an accepted proof root.
 - **PRESENT_IN_REVISION** — present in the Git revision being interpreted.
-- **CURRENT_PUBLIC_EVIDENCE_IDENTITY** — current public evidence object whose selected identity/routing is established while exact artifact-byte materialization is tracked separately.
-- **CURRENT_RUNTIME_EVIDENCE_REQUIRED** — current Runtime evidence owns the proposition.
+- **CURRENT_PUBLIC_EVIDENCE_IDENTITY** — machine-readable status token for the selected accepted public evidence identity represented through the public-safe record, receipt and integrity anchors.
+- **CURRENT_RUNTIME_EVIDENCE_REQUIRED** — machine-readable status token indicating that a Runtime-state proposition must be established by applicable owning Runtime evidence.
 - **SOURCE_REVIEW_REQUIRED** — owning source review establishes the proposition.
 - **CONTRADICTED_BY_VALID_PROOF** — displaced by accepted contradiction proof.
 
@@ -91,6 +91,7 @@ Independent validation is its own evidence class and is established through an i
 
 | Version | Date | Change |
 |---|---|---|
+| 1.4 | 2026-09-01 | Replaced synthesis/currentness language, corrected stale exact-byte custody wording, and tightened Runtime-participation semantics. |
 | 1.3 | 2026-08-30 | Added Full Flex current-public-evidence ownership, evidence precedence, exact-byte separation and bounded 52/53 interpretation. |
 | 1.2 | 2026-08-28 | Recast the boundary as an affirmative ownership/evidence-domain map. |
 | 1.1 | 2026-08-26 | Reconciled current Tier One/downstream-component terminology. |
