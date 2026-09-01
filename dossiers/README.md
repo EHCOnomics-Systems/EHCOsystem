@@ -30,20 +30,13 @@ The byte-identical PDF is also bound inside Packet 00 at `evidence/public-eviden
 
 **EHCO AI-OS is the realized Tier One Runtime with accepted standing 52/53.** The dossier's evidence class is controlled public architecture. Repository publication establishes the dossier's public identity and cryptographic integrity.
 
-Use the [Runtime, Repository, and Test-Estate Boundary](../architecture/runtime-repository-and-test-estate-boundary.md) for evidence-domain ownership and the [Public Evidence Companion](../evidence/README.md) for packet-specific evidence.
-
-## Public technical packaging scope
-
-The selected scope for the next public technical packaging pass is maintained separately from the canonical architecture dossier, preserving accepted architecture evidence while packaging work develops its own bounded review surface.
-
-- [Public Technical Packaging — Scope of Work v1.0](public-technical-packaging/SCOPE-OF-WORK.md) — reviewer-ready baseline, application/component evidence indexing, currentness, cross-repository provenance, evidence deltas, unified verification, and reviewer failure paths.
+Use the [Runtime, Repository, and Test-Estate Boundary](../architecture/runtime-repository-and-test-estate-boundary.md) for evidence-domain ownership and the [Public Evidence landing page](../evidence/README.md) for the current and historical evidence routes.
 
 ## Related material
 
-- [EHCO AI-OS Instantiated System](../architecture/EHCO-AI-OS-INSTANTIATED-SYSTEM.md)
+- [Instantiated AI](../architecture/INSTANTIATED-AI.md)
 - [EHCOsystem Technology Estate](../architecture/EHCO-TECHNOLOGY-ESTATE.md)
-- [Ecosystem Components and Runtime Relationships](../architecture/ecosystem-components-and-participation.md)
-- [Instantiated Proof Range](../architecture/instantiated-proof-range.md)
+- [EHCO AI-OS Runtime](../runtime/README.md)
 - [EHCO Language Model](../language-model/README.md)
-- [Public Evidence Companion](../evidence/README.md)
-- [Public Evidence Validation](../verification/README.md)
+- [EHCO Range Reactor](../range-reactor/README.md)
+- [Public Repository Validation](../verification/README.md)
