@@ -1,12 +1,12 @@
 ---
 title: EHCOsystem — An Instantiated AI Ecosystem
-version: 1.8
+version: 1.9
 status: current-public-architecture
-published: 2026-08-29
+published: 2026-08-31
 maintainer: EHCOnomics
 evidence_class: controlled-technology-estate-architecture
 evidence_scope: category-to-ecosystem architecture and source-grounded maturity representation
-supersedes: version 1.7
+supersedes: version 1.8
 ---
 
 # EHCOsystem — An Instantiated AI Ecosystem
@@ -60,7 +60,7 @@ The EHCO Language Model is EHCOnomics' deterministic computational-language comp
 
 Its accepted source estate includes the Language Kernel, Language Math, deterministic tokenizer, lexical and morphological computation, syntax and semantic composition, reference and context, evidence binding, deterministic candidate search and resolution, ambiguity and withholding, bounded reasoning, evaluation, component service, schemas, registries, fixtures, deterministic tests, packaging, dependency locks, owner seams, and production-lifecycle source.
 
-The component is in an **advanced near-final maturation cycle**. Its established deterministic implementation and qualification foundation is being strengthened through deeper computational meaning, linguistic productivity, context/discourse capability, deterministic reasoning and transformation, evidence/owner integration, and increasingly integrated qualification across the same single computational-language path.
+**Deep final capability/source closure and governed final component artifact build, qualification and release are established.** The current selected lifecycle frontier is **staging execution and verification of that exact released artifact**. Later lifecycle work preserves established source, qualification, artifact-build and release state; production verification/deployment and Tier One Runtime participation remain separate evidence domains.
 
 Public maturity is expressed through established capability and evidence. Internal development stage/unit mechanics remain in the controlled development estate; the public maturity model is capability-based.
 
@@ -150,6 +150,7 @@ EHCOsystem maps material public propositions to their applicable evidence class.
 
 | Version | Date | Change |
 |---|---|---|
+| 1.9 | 2026-08-31 | Synchronized Language Model maturity to established deep final capability/source closure and governed final component artifact build, qualification and release, with staging execution/verification as the current lifecycle frontier. |
 | 1.8 | 2026-08-29 | Strengthened the accepted Runtime baseline, deployment-ready Docker portability, physically operated local Runtime, Dashboard local port-8080 origin, model-independent Tier One lineage and Range Reactor physical-qualification representation. |
 | 1.7 | 2026-08-28 | Expanded Range Reactor capability depth and added its dedicated public evidence route while preserving lifecycle/evidence separation. |
 | 1.6 | 2026-08-28 | Recast Language Model maturity around established capability and advanced near-final strengthening while keeping internal development sequencing in controlled development sources. |
