@@ -2,7 +2,7 @@
 
 ## Scope
 
-This repository contains approved public architecture, evidence, provenance, research, verification and publication materials for EHCOsystem. Tier One Runtime authority and current Runtime state remain in the instantiated Runtime domain. Controlled source/test estates and downstream component source remain in their owning technical domains.
+This repository contains approved public architecture, evidence, provenance, research, verification and publication materials for EHCOsystem. Tier One Runtime authority and Runtime state remain owned by `INSTANTIATED_EHCO_RUNTIME`. Controlled source/test estates and downstream component source remain in their owning technical domains.
 
 ## Public evidence handling
 
@@ -33,7 +33,7 @@ The following classes remain in controlled EHCOnomics custody:
 
 ## Automated checks
 
-Repository automation validates canonical dossier hashes, packet manifests, detached hashes, JSON syntax, suite closure, internal links, high-confidence credential patterns, public architecture relationships, disclosure boundaries and current public representation semantics.
+Repository automation validates canonical dossier hashes, packet manifests, detached hashes, JSON syntax, suite closure, internal links, high-confidence credential patterns, public architecture relationships, disclosure boundaries and durable public representation semantics.
 
 Human review, security review, legal review and Runtime-originated evidence complement these automated checks according to the proposition being assessed.
 
