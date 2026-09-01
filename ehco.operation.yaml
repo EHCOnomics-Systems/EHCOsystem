@@ -5,36 +5,40 @@ protocol_reference:
   profile_version: 1.0.0
   protocol_version: 1.0.0
 repository: EHCOnomics-Systems/EHCOsystem
-governed_object: PUBLIC_TECHNICAL_PACKAGING_SCOPE_V1
+governed_object: LANGUAGE_MODEL_CURRENT_PUBLIC_MATURITY_SYNCHRONIZATION_V1
 source_owner:
   repository: EHCOnomics-Systems/EHCOsystem
-  revision: fefe194a7d69250e7223ab6d2a52788284ce32be
+  revision: 77b9d82e0e1bb63d932bd0c62ed98e6dfc32e4f5
   repository_manifest_path: ehco.repository.yaml
   controlling_source_reference: ehco.repository.yaml
 selection:
   selected_by: Edward Henry
   selection_class: EXPLICIT_OWNER_DIRECTION
   durable_reference: |-
-    Edward Henry explicitly selected publication of the up-to-date EHCOsystem public technical packaging scope in the repository folders on 2026-08-31. The selected scope includes the previously defined public technical baseline, application/component evidence indexing, reviewer verification and navigation, plus evidence freshness/currentness, cross-repository provenance, public evidence delta records, and reviewer failure-path diagnostics. This operation publishes the scope and dossier navigation only; it does not execute the later packaging implementation.
-    NEW_PATH:dossiers/public-technical-packaging/SCOPE-OF-WORK.md
+    Edward Henry explicitly selected synchronization of the EHCO Language Model public maturity representation on 2026-08-31 after read-only review of current governing Drive meaning and direct owning Git/GitHub evidence. The public synchronization must preserve the established mature deterministic zero-weight computational-language identity, deep final capability/source closure, final artifact build/qualification/release custody, and the current governed staging execution/verification frontier without demoting or flattening those accomplishments and without implying production verification/deployment or Tier One Runtime participation.
     OPERATION_STABLE_ENVELOPE_CHANGE=true
-  source_base_revision: fefe194a7d69250e7223ab6d2a52788284ce32be
-  expected_reviewed_head_revision: 0c2393282ccf807c3e88e1b76c1c5cdcd99c59b4
+  source_base_revision: 77b9d82e0e1bb63d932bd0c62ed98e6dfc32e4f5
+  expected_reviewed_head_revision: NOT_APPLICABLE_UNTIL_ACCEPT
 control_anchor: AGENTS.md
 status_owner_path: ehco.operation.yaml
 accepted_standing: 52/53
 active_operation:
-  operation_id: PUBLIC-TECHNICAL-PACKAGING-SCOPE-PUBLICATION-001
-  state: COMPLETE
-  authorization_mode: ACCEPT
-  bounded_outcome: Publish and accept the selected up-to-date public technical packaging scope in the dossiers public-review area and expose it from the dossier navigation surface.
-  remaining_bounded_work: []
+  operation_id: LM-CURRENT-PUBLIC-MATURITY-SYNC-001
+  state: ACTIVE
+  authorization_mode: PUBLISH
+  bounded_outcome: Replace stale advanced-near-final public wording with the strongest current public-safe Language Model maturity representation supported by owning source/lifecycle evidence, synchronized across reader-facing architecture, diligence, assurance and validation surfaces.
+  remaining_bounded_work:
+    - Synchronize all reader-facing Language Model maturity surfaces that retain the stale advanced-near-final representation.
+    - Synchronize the public repository validator expectation to the updated affirmative maturity representation.
+    - Qualify the exact public candidate without changing accepted evidence artifacts or controlled Language Model source.
+    - Transition the exact qualified candidate through bounded Source ACCEPT if all required checks pass.
   interaction_seams:
-    - EHCOsystem owns this public scope and public-review navigation surface.
-    - Direct owning repositories and owning technical evidence retain exact implementation and physical-effect ownership.
+    - EHCOnomics-Systems/ehco_Language-Model_v1 owns exact Language Model implementation and lifecycle source state.
+    - Owning GitHub Release and workflow evidence own artifact-release and staging-execution effects.
+    - EHCOsystem owns the public architecture, diligence, assurance and validation representation synchronized here.
     - INSTANTIATED_EHCO_RUNTIME retains Tier One Runtime authority and current Runtime state.
   non_overlap:
-    - No packaging implementation, new evidence, benchmark, semantic test, deployment, release, Runtime action, authority, standing, participation, or successor.
+    - No Language Model implementation, active development branch, artifact bytes, release object, staging execution, production environment, Runtime state, authority, standing, participation or successor is changed.
   automatic_successor: PROHIBITED
   successor_operation: NOT_SELECTED
 execution_continuity:
@@ -50,17 +54,26 @@ execution_continuity:
 scope:
   permitted_paths:
     - ehco.operation.yaml
-    - dossiers/README.md
-    - dossiers/public-technical-packaging/SCOPE-OF-WORK.md
+    - README.md
+    - ECOSYSTEM-DILIGENCE.md
+    - language-model/README.md
+    - architecture/EHCO-TECHNOLOGY-ESTATE.md
+    - architecture/ecosystem-components-and-participation.md
+    - architecture/diagrams/README.md
+    - assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md
+    - verification/README.md
+    - verification/validate_public_evidence.py
   controlled_paths:
     - ehco.operation.yaml
+    - verification/validate_public_evidence.py
   prohibited_paths:
     - AGENTS.md
     - ehco.repository.yaml
     - .github/**
-    - assurance/**
+    - assurance/PUBLIC-CLAIM-REGISTRY.json
+    - language-model/evidence/**
     - evidence/**
-    - verification/**
+    - range-reactor/**
 change_control:
   control_change_declared: true
   delete_or_move_authorized: false
@@ -76,26 +89,27 @@ change_control:
     - delete_file
     - generate_artifact
   remote_actions_authorized:
-    - merge_pull_request
-    - record_owner_acceptance
-    - close_operation
-  remote_actions_prohibited:
     - create_branch
     - commit
     - push
     - open_draft_pull_request
     - update_draft_pull_request
+  remote_actions_prohibited:
+    - mark_pull_request_ready_for_review
+    - merge_pull_request
+    - record_owner_acceptance
+    - close_operation
     - activate_selected_successor
-    - modify_repository_settings
-    - modify_drive_controls
-    - publish_image
+    - trigger_workflow
     - mutate_environment
     - deploy
-    - trigger_workflow
     - release
+    - publish_image
     - invoke_runtime
     - admit_runtime
     - bind_runtime
+    - modify_repository_settings
+    - modify_drive_controls
 effects:
   authority_effect: NONE
   standing_effect: NONE
@@ -105,25 +119,25 @@ effects:
   external_effect: NONE
 bridge:
   applicability: NOT_APPLICABLE_NON_PARTICIPANT
-  non_applicability_reason: Public scope publication is separate from Runtime participation.
+  non_applicability_reason: Public Language Model maturity synchronization is separate from Tier One Runtime participation.
   direct_invocation: PROHIBITED
   runtime_admission_status: NOT_ESTABLISHED
   participation_binding_status: NOT_ESTABLISHED
   canonical_runtime_receipt_status: NOT_ESTABLISHED
 evidence:
-  evidence_class: OWNER_ACCEPTANCE_RECORD
+  evidence_class: REPOSITORY_SOURCE_AND_DIFF_VALIDATION
   required_checks:
-    - Scope file exists at dossiers/public-technical-packaging/SCOPE-OF-WORK.md.
-    - Dossiers navigation exposes the selected scope.
-    - Scope preserves source/evidence ownership and currentness distinctions.
-    - Scope includes cross-repository provenance, evidence-delta, unified verification, and reviewer failure-path requirements.
-    - Exact reviewed PUBLISH head 0c2393282ccf807c3e88e1b76c1c5cdcd99c59b4 passed applicable repository validation and CodeQL before this ACCEPT transition.
-    - Scope preserves 52/53 and all Runtime, deployment, release, authority, standing, participation, and successor effects as NONE or not established as applicable.
+    - Public wording preserves DETERMINISTIC_COMPUTATIONAL_LANGUAGE / SINGLE_PATH / EXPLICIT_EHCO_COMPUTATION / ZERO_WEIGHT_ONLY / ZERO WEIGHTS TRAINED.
+    - Public wording establishes deep final capability/source closure and governed final component artifact build/qualification/release as established owning-source lifecycle state.
+    - Public wording identifies governed staging execution/verification of the exact released artifact as the current lifecycle frontier.
+    - Public wording keeps production verification/deployment and Tier One Runtime participation as separate evidence domains.
+    - Public synchronization omits controlled branch choreography, internal DF/UD identifiers and private implementation details.
+    - Existing Language Model public test snapshot bytes remain unchanged.
+    - Required repository validation, CodeQL and EHCO Assistant Operation Gate pass on the exact candidate.
   proves:
-    - The owner-selected public technical packaging scope is accepted for publication as bounded public source.
+    - EHCOsystem public maturity representation agrees with the strongest current public-safe Language Model state supported by the reviewed owning evidence.
   evidence_not_created:
-    - Packaging implementation, new physical execution, new semantic correctness proof, Runtime participation, deployment, release, authority, standing effect, or successor activation.
+    - New Language Model implementation evidence, staging execution evidence, production evidence, Runtime evidence, authority, standing or participation.
 stop_condition:
-  - Exact ACCEPT candidate passes applicable repository validation, CodeQL, and EHCO Assistant Operation Gate.
-  - Protected-branch merge is authorized only for the exact accepted head after required checks pass.
-  - Stop with Runtime, deployment, release, authority, standing, participation, and successor effects remaining NONE or not established as applicable.
+  - Stop PUBLISH at one exact terminal-green review head ready for bounded Source ACCEPT.
+  - Preserve accepted standing 52/53 and all Runtime, deployment, release, authority, standing and participation effects as NONE or separately owned.
