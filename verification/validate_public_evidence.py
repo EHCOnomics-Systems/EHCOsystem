@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate EHCOsystem public repository integrity and presentation boundaries."""
+"""Validate EHCOsystem public repository integrity, presentation boundaries, and durable semantics."""
 from __future__ import annotations
 
 import hashlib
@@ -26,23 +26,37 @@ EXPECTED_PACKETS = [
 ]
 ACTIVE_PUBLIC_TEXT = [
     "README.md",
+    "NOTICE.md",
+    "LIBRARY.md",
     "getting-started/START-HERE.md",
     "getting-started/reading-order.md",
     "architecture/INSTANTIATED-AI.md",
     "architecture/EHCO-TECHNOLOGY-ESTATE.md",
     "architecture/ecosystem-components-and-participation.md",
     "architecture/diagrams/README.md",
+    "architecture/EHCO-AI-OS-SYSTEM-CARD.md",
+    "architecture/EHCO-AI-OS-INSTANTIATED-SYSTEM.md",
+    "architecture/GOVERNED-RUNTIME-ARCHITECTURE.md",
+    "architecture/SYSTEM-INVARIANTS.md",
+    "architecture/instantiated-proof-range.md",
+    "architecture/proof-and-status-classes.md",
+    "architecture/runtime-repository-and-test-estate-boundary.md",
     "language-model/README.md",
     "language-model/DETERMINISTIC-CAPABILITY-DEMONSTRATION.md",
+    "language-model/evidence/public-test-snapshot-v1/README.md",
     "range-reactor/README.md",
     "range-reactor/evidence/operational-closure-v1/README.md",
     "runtime/README.md",
     "evidence/README.md",
     "evidence/runtime/full-flex/v1/README.md",
     "ECOSYSTEM-DILIGENCE.md",
+    "TECHNICAL-DILIGENCE.md",
+    "assurance/CLAIM-EVIDENCE-MATRIX.md",
     "assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md",
     "verification/README.md",
     "releases/PUBLIC-RELEASE-REGISTER.md",
+    "PROVENANCE.md",
+    "GOVERNANCE.md",
 ]
 DASHBOARD_ASSETS = [
     "architecture/assets/dashboard/overview-june-2026-public.webp",
@@ -202,23 +216,37 @@ def validate_dashboard_assets() -> None:
 def validate_public_presentation() -> None:
     texts = {relative: read_text(relative) for relative in ACTIVE_PUBLIC_TEXT}
     combined = "\n".join(texts.values())
+    lower_combined = combined.lower()
 
     required = {
-        "README.md": ["Instantiated AI", "EHCO AI-OS", "EHCO Language Model", "EHCO Range Reactor", "verification/verify_all_public.py"],
+        "README.md": ["Instantiated AI", "EHCO AI-OS", "INSTANTIATED_EHCO_RUNTIME", "EHCO Language Model", "EHCO Range Reactor", "verification/verify_all_public.py"],
         "language-model/README.md": ["mature deterministic computational-language system", "governed staging execution and verification", "DETERMINISTIC-CAPABILITY-DEMONSTRATION.md"],
         "language-model/DETERMINISTIC-CAPABILITY-DEMONSTRATION.md": ["RETAIN_AMBIGUITY", "WITHHOLD", "Language Math", "round-trip", "service equivalence"],
         "range-reactor/README.md": ["14.304307x", "14.208722x", "94.755854%", "82 passed / 0 failed"],
-        "runtime/README.md": ["REALIZED / COMPLETE_IN_ACCEPTED_SCOPE", "52/53", "PRIMARY_ACCESSIBLE_RUNTIME_PROJECTION", "public-safe Full Flex record"],
-        "evidence/runtime/full-flex/v1/README.md": ["PUBLIC_SAFE_RECORD.json", "7F80C27D085AE871A00AED412C6F20EA9A76CB0677C93AEBA381CD1FD70EC8E5"],
-        "verification/README.md": ["verification/verify_all_public.py", "Range Reactor operational-closure"],
+        "runtime/README.md": ["EHCO AI-OS Runtime — Accepted Public Evidence", "REALIZED / COMPLETE_IN_ACCEPTED_SCOPE", "52/53", "PRIMARY_ACCESSIBLE_RUNTIME_PROJECTION", "public-safe Full Flex record"],
+        "evidence/runtime/full-flex/v1/README.md": ["Accepted Runtime Evidence Index", "PUBLIC_SAFE_RECORD.json", "7F80C27D085AE871A00AED412C6F20EA9A76CB0677C93AEBA381CD1FD70EC8E5"],
+        "verification/README.md": ["verification/verify_all_public.py", "Range Reactor operational-closure", "durable public semantics"],
     }
     for relative, phrases in required.items():
         for phrase in phrases:
             checked(phrase in texts[relative], f"Required public representation missing in {relative}: {phrase}")
 
-    checked("advanced near-final" not in combined.lower(), "Obsolete advanced-near-final wording remains in active public surfaces")
-    checked("staging verification frontier" not in combined.lower(), "Stale Language Model staging-frontier wording remains in active public surfaces")
-    checked("current selected lifecycle frontier" not in combined.lower(), "Volatile lifecycle-frontier wording remains in active public surfaces")
+    forbidden_semantics = [
+        ("advanced near-final", "Obsolete advanced-near-final wording remains in active public surfaces"),
+        ("staging verification frontier", "Stale Language Model staging-frontier wording remains in active public surfaces"),
+        ("current selected lifecycle frontier", "Volatile lifecycle-frontier wording remains in active public surfaces"),
+        ("current public evidence projection and synthesis", "Residual Full Flex synthesis wording remains in active public surfaces"),
+        ("current public capability-and-evidence synthesis", "Residual Full Flex capability-synthesis wording remains in active public surfaces"),
+        ("public synthesis role", "Residual Full Flex synthesis-role wording remains in active public surfaces"),
+        ("ehco ai-os owns the governing runtime relationships", "EHCO AI-OS authority-owner collapse remains in active public surfaces"),
+        ("ehco ai-os owns:\n\n- admission and standing", "EHCO AI-OS authority-owner list remains in active public surfaces"),
+        ("governing relationships owned by ehco ai-os", "System invariants still assign Runtime authority relationships to EHCO AI-OS"),
+        ("exact packet-byte insertion awaits lawful byte custody", "Stale Full Flex exact-byte custody wording remains"),
+        ("scoped runtime participation relationship are independently tracked", "Language Model Runtime participation remains implied without owning evidence"),
+        ("ehco ai-os runtime — current public evidence", "Volatile Runtime front-door label remains in active public surfaces"),
+    ]
+    for phrase, message in forbidden_semantics:
+        checked(phrase not in lower_combined, message)
 
     private_tokens = [
         "EHCOnomics-Systems/EHCO_AI-OS",
@@ -234,7 +262,7 @@ def validate_public_presentation() -> None:
         checked(token not in combined, f"Private source/topology token exposed in active public surfaces: {token}")
 
     raw_full_flex = ROOT / "evidence" / "runtime" / "full-flex" / "v1" / "EHCO_FULL_FLEX_PUBLIC_PACKET_V1.json"
-    checked(not raw_full_flex.exists(), "Raw Full Flex packet remains in current public tree")
+    checked(not raw_full_flex.exists(), "Raw Full Flex packet remains in public tree")
     checked((ROOT / "evidence/runtime/full-flex/v1/PUBLIC_SAFE_RECORD.json").is_file(), "Full Flex public-safe record missing")
 
 
@@ -263,7 +291,7 @@ def main() -> int:
         for error in ERRORS:
             print(f"- {error}", file=sys.stderr)
         return 1
-    print(f"EHCOsystem public repository validation: PASS ({CHECKS} checks)")
+    print(f"EHCOsystem public repository validation: PASS ({CHECKS} checks) [DURABLE_PUBLIC_SEMANTICS]")
     return 0
 
 

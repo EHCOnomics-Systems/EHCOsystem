@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate the current EHCO AI-OS Runtime public-evidence route."""
+"""Validate the accepted EHCO AI-OS Runtime public-evidence route and durable public semantics."""
 
 from __future__ import annotations
 
@@ -13,6 +13,8 @@ EXPECTED_ZIP_SHA256 = "DBF984B55731B5EA53C4D7F2A24F8CF4C0C4207E355EB8E6B11701135
 EXPECTED_STANDING = "52/53"
 EXPECTED_MATURITY = "REALIZED / COMPLETE_IN_ACCEPTED_SCOPE"
 EXPECTED_PORTABILITY = "PRIMARY_ACCESSIBLE_RUNTIME_PROJECTION"
+EXPECTED_RUNTIME_FRONT_DOOR_TITLE = "EHCO AI-OS Runtime — Accepted Public Evidence"
+RUNTIME_AUTHORITY_OWNER = "INSTANTIATED_EHCO_RUNTIME"
 
 ERRORS: list[str] = []
 CHECKS = 0
@@ -27,7 +29,7 @@ def checked(condition: bool, message: str) -> None:
 
 def read(relative: str) -> str:
     path = ROOT / relative
-    checked(path.is_file(), f"Required current Runtime evidence file missing: {relative}")
+    checked(path.is_file(), f"Required Runtime/public-semantics file missing: {relative}")
     return path.read_text(encoding="utf-8-sig") if path.is_file() else ""
 
 
@@ -49,21 +51,37 @@ def main() -> int:
     packet_index = read("evidence/runtime/full-flex/v1/README.md")
     detached_sha = read("evidence/runtime/full-flex/v1/EHCO_FULL_FLEX_PUBLIC_PACKET_V1.sha256").strip()
     diligence = read("TECHNICAL-DILIGENCE.md")
+    ecosystem_diligence = read("ECOSYSTEM-DILIGENCE.md")
     release_register = read("releases/PUBLIC-RELEASE-REGISTER.md")
+    notice = read("NOTICE.md")
+    start_here = read("getting-started/START-HERE.md")
+    reading_order = read("getting-started/reading-order.md")
+    library = read("LIBRARY.md")
+    instantiated_ai = read("architecture/INSTANTIATED-AI.md")
+    technology_estate = read("architecture/EHCO-TECHNOLOGY-ESTATE.md")
+    system_card = read("architecture/EHCO-AI-OS-SYSTEM-CARD.md")
+    instantiated_system = read("architecture/EHCO-AI-OS-INSTANTIATED-SYSTEM.md")
+    governed_runtime = read("architecture/GOVERNED-RUNTIME-ARCHITECTURE.md")
+    proof_range = read("architecture/instantiated-proof-range.md")
+    runtime_boundary = read("architecture/runtime-repository-and-test-estate-boundary.md")
+    diagrams = read("architecture/diagrams/README.md")
+    claim_matrix = read("assurance/CLAIM-EVIDENCE-MATRIX.md")
     public_record = load_json("evidence/runtime/full-flex/v1/PUBLIC_SAFE_RECORD.json")
     receipt = load_json("evidence/runtime/full-flex/v1/PACKET_RECEIPT.json")
     registry = load_json("assurance/PUBLIC-CLAIM-REGISTRY.json")
 
     raw_packet = ROOT / "evidence" / "runtime" / "full-flex" / "v1" / "EHCO_FULL_FLEX_PUBLIC_PACKET_V1.json"
-    checked(not raw_packet.exists(), "Raw Full Flex packet must not remain in the current public tree")
+    checked(not raw_packet.exists(), "Raw Full Flex packet must not remain in the public tree")
 
     checked("EHCO AI-OS" in root_readme, "Root README does not identify EHCO AI-OS")
     checked("runtime/README.md" in root_readme, "Root README does not route to Runtime front door")
     checked("Full Flex" in root_readme, "Root README does not name Full Flex")
 
+    checked(EXPECTED_RUNTIME_FRONT_DOOR_TITLE in runtime_readme, "Runtime front door title is not resting-state durable")
     checked(EXPECTED_MATURITY in runtime_readme, "Runtime front door maturity mismatch")
     checked(EXPECTED_STANDING in runtime_readme, "Runtime front door standing mismatch")
     checked(EXPECTED_PORTABILITY in runtime_readme, "Runtime front door portability classification mismatch")
+    checked(RUNTIME_AUTHORITY_OWNER in runtime_readme, "Runtime front door does not identify the Runtime authority/state owner")
     checked("public-safe" in runtime_readme.lower(), "Runtime front door does not describe the public-safe Full Flex route")
 
     checked(EXPECTED_PACKET_SCHEMA in packet_index, "Full Flex evidence index schema mismatch")
@@ -102,20 +120,62 @@ def main() -> int:
     checked(current.get("public_custody") == "ACCEPTED_PACKET_HASH_AND_RECEIPT_WITH_PUBLIC_SAFE_RECORD", "Claim registry public custody mismatch")
 
     checked("Full Flex" in diligence, "Technical Diligence does not retain Full Flex route")
-    checked("CURRENT_PUBLIC_EVIDENCE_IDENTITY" in release_register, "Release register lacks current public evidence identity class")
+    checked("CURRENT_PUBLIC_EVIDENCE_IDENTITY" in release_register, "Release register lacks selected public evidence identity class")
     checked("Historical Public Evidence Companion Packets 00–08" in release_register, "Release register lacks historical companion classification")
     checked("Full Flex" in evidence_readme, "Evidence README lacks Full Flex route")
 
-    public_combined = "\n".join([root_readme, runtime_readme, evidence_readme, packet_index, diligence, release_register, json.dumps(public_record), json.dumps(registry)])
-    checked("1FydQKUNfpQ7oZrgpLDlqRHxFM_f1mFv5uq_akploL38" not in public_combined, "Private Drive control identifier exposed in current Runtime public surfaces")
+    reader_semantics = "\n".join(
+        [
+            root_readme,
+            runtime_readme,
+            evidence_readme,
+            packet_index,
+            diligence,
+            ecosystem_diligence,
+            notice,
+            start_here,
+            reading_order,
+            library,
+            instantiated_ai,
+            technology_estate,
+            system_card,
+            instantiated_system,
+            governed_runtime,
+            proof_range,
+            runtime_boundary,
+            diagrams,
+            claim_matrix,
+        ]
+    )
+    forbidden_reader_phrases = {
+        "current public evidence projection and synthesis": "Residual Full Flex synthesis wording remains",
+        "current public capability-and-evidence synthesis": "Residual Full Flex capability-synthesis wording remains",
+        "public synthesis role": "Residual Full Flex synthesis-role wording remains",
+        "EHCO AI-OS owns the governing Runtime relationships": "EHCO AI-OS is still presented as the Runtime authority owner",
+        "EHCO AI-OS owns:\n\n- admission and standing": "EHCO AI-OS authority-owner collapse remains in Tier One relationship prose",
+        "exact packet-byte insertion awaits lawful byte custody": "Stale Full Flex exact-byte custody wording remains",
+        "scoped Runtime participation relationship are independently tracked": "Language Model Runtime participation is still implied without owning evidence",
+        "EHCO AI-OS Runtime — Current Public Evidence": "Volatile Runtime front-door label remains in active reader-facing prose",
+    }
+    lower_reader_semantics = reader_semantics.lower()
+    for phrase, message in forbidden_reader_phrases.items():
+        checked(phrase.lower() not in lower_reader_semantics, message)
+
+    checked(RUNTIME_AUTHORITY_OWNER in root_readme, "Root README does not separate Runtime identity from authority/state ownership")
+    checked(RUNTIME_AUTHORITY_OWNER in instantiated_ai, "Instantiated AI page does not identify Runtime authority/state owner")
+    checked(RUNTIME_AUTHORITY_OWNER in technology_estate, "Technology Estate does not identify Runtime authority/state owner")
+    checked(RUNTIME_AUTHORITY_OWNER in diagrams, "Architecture diagrams do not identify Runtime authority/state owner")
+
+    public_combined = "\n".join([reader_semantics, release_register, json.dumps(public_record), json.dumps(registry)])
+    checked("1FydQKUNfpQ7oZrgpLDlqRHxFM_f1mFv5uq_akploL38" not in public_combined, "Private Drive control identifier exposed in Runtime public surfaces")
 
     if ERRORS:
-        print(f"EHCOsystem current Runtime evidence validation: FAIL ({len(ERRORS)} errors / {CHECKS} checks)")
+        print(f"EHCOsystem accepted Runtime evidence validation: FAIL ({len(ERRORS)} errors / {CHECKS} checks)")
         for error in ERRORS:
             print(f"- {error}")
         return 1
 
-    print(f"EHCOsystem current Runtime evidence validation: PASS ({CHECKS} checks) [PUBLIC_SAFE_ACCEPTED_PACKET_IDENTITY]")
+    print(f"EHCOsystem accepted Runtime evidence validation: PASS ({CHECKS} checks) [PUBLIC_SAFE_ACCEPTED_PACKET_IDENTITY / DURABLE_PUBLIC_SEMANTICS]")
     return 0
 
 

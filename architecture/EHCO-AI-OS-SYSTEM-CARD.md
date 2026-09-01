@@ -1,29 +1,29 @@
 ---
 title: EHCO AI-OS Public System Card
-version: 1.5
+version: 1.6
 status: accepted-public-reference
-published: 2026-08-30
+published: 2026-09-01
 maintainer: EHCOnomics
 evidence_class: controlled-ehco-architecture
-evidence_scope: public system synthesis
-supersedes: version 1.4
+evidence_scope: public system record
+supersedes: version 1.5
 ---
 
 # EHCO AI-OS Public System Card
 
 ## Purpose
 
-EHCO AI-OS is the realized Tier One Runtime of EHCOsystem with accepted standing baseline **52/53** and accepted maturity **`REALIZED / COMPLETE_IN_ACCEPTED_SCOPE`**. It is the governing foundation for authority, scope, recognized state, transition, consequence, continuity, persistence, withholding/release, correction/recovery, and Runtime-originated proof.
+EHCO AI-OS is the realized Tier One Runtime of EHCOsystem with accepted standing baseline **52/53** and accepted maturity **`REALIZED / COMPLETE_IN_ACCEPTED_SCOPE`**. EHCO AI-OS is the Tier One Runtime system identity; **`INSTANTIATED_EHCO_RUNTIME`** owns Tier One Runtime authority and Runtime state, including the governing relationships for scope, recognized state, transition, consequence, continuity, persistence, withholding/release, correction/recovery, and Runtime-originated proof.
 
 **52/53 is the accepted numerical Runtime standing corridor under the EHCO standing framework. Benchmark scoring, percentage-completion measures, component-maturity percentages, deployment-state percentages and public-release percentages are separate dimensions.** Protected denominator mechanics remain within their owning governed sources.
 
-## Current public Runtime evidence
+## Accepted public Runtime evidence
 
-For present public Runtime posture, begin with **[EHCO AI-OS Runtime — Current Public Evidence](../runtime/README.md)** and the **[EHCO Full Flex Public Packet v1 evidence index](../evidence/runtime/full-flex/v1/README.md)**.
+Begin with **[EHCO AI-OS Runtime — Accepted Public Evidence](../runtime/README.md)** and the **[EHCO Full Flex Public Packet v1 evidence index](../evidence/runtime/full-flex/v1/README.md)**.
 
-The clean Full Flex packet is the current public capability-and-evidence synthesis for the established Runtime environment, bound to packet SHA-256 `7F80C27D085AE871A00AED412C6F20EA9A76CB0677C93AEBA381CD1FD70EC8E5`. It synthesizes accepted Runtime posture, deployment-ready Docker portability, physically operated local Runtime evidence, Dashboard/bridge/worker relationships, persistent surfaces, networking, engineering-scale characterization, Range Reactor qualification/performance relationships, public claim bindings and integrity metadata.
+The accepted Full Flex route is a public-safe evidence record bound to packet SHA-256 `7F80C27D085AE871A00AED412C6F20EA9A76CB0677C93AEBA381CD1FD70EC8E5`. It presents accepted Runtime posture, deployment-ready Docker portability, physically operated local Runtime evidence, Dashboard/bridge/worker relationships, persistent surfaces, networking, engineering-scale characterization, Range Reactor qualification/performance relationships, public claim bindings and integrity metadata according to their owning evidence classes.
 
-`INSTANTIATED_EHCO_RUNTIME` remains the owner of actual Tier One Runtime authority and present Runtime state; owning Docker/host evidence remains the owner of physical execution observations. Full Flex carries the current public evidence-projection role across those relationships. Historical Public Evidence Companion Packets 00–08 remain immutable event-time evidence and lineage.
+`INSTANTIATED_EHCO_RUNTIME` retains Tier One Runtime authority and Runtime-state ownership; owning Docker/host evidence retains ownership of physical execution observations. Historical Public Evidence Companion Packets 00–08 remain immutable event-time evidence and lineage.
 
 ## Architectural thesis
 
@@ -43,7 +43,7 @@ Established Runtime/Docker lineage records Tier One operation, governance, proof
 
 ### Tier One — Runtime Authority
 
-Tier One establishes and maintains the conditions for authority, state transition, consequence, persistence, withholding/release, recovery and proof.
+`INSTANTIATED_EHCO_RUNTIME` establishes and maintains the authoritative Runtime conditions for authority, state transition, consequence, persistence, withholding/release, recovery and proof within EHCO AI-OS.
 
 ### Downstream governed components
 
@@ -55,62 +55,62 @@ Tier Three provides visibility, interpretation, reporting, dashboards, metrics a
 
 ## Public system functions
 
-- **Runtime Authority** — admission, authority, scope, recognized state, transition, consequence, withholding/release, correction/recovery and Runtime-originated proof.
+- **Runtime Authority** — admission, authority, scope, recognized state, transition, consequence, withholding/release, correction/recovery and Runtime-originated proof through `INSTANTIATED_EHCO_RUNTIME`.
 - **Memory & Continuity** — organizational context and continuity across change.
 - **Proof & Reflection** — evidence, auditability, proof relationships and claim/proof distinction.
 - **Connection & Expansion** — governed integration of new systems, services, agents and capabilities.
 
 ## Dashboard visual orientation
 
-These dated public-safe views orient reviewers to projection relationships across authority, evidence, health, readiness, relationship continuity, and coordination. The source captures derive from the operating local EHCO Docker Runtime.
+These dated public-safe views orient reviewers to projection relationships across authority, evidence, health, readiness, relationship continuity, and coordination. All images below are public-safe derivatives from owner-supplied June 2026 EHCO Dashboard captures. The source captures derive from the operating local EHCO Docker Runtime, with the Dashboard served on host port 8080 during the captured operating state. Tier One Runtime authority and Runtime-state ownership remain with `INSTANTIATED_EHCO_RUNTIME`.
 
 ### Authority boundary
 
 ![EHCO Dashboard authority-boundary projection showing the Runtime Authority Core governance relationship and authority-reconciled interface concepts](assets/dashboard/authority-boundary-june-2026-public.webp)
 
-*EHCO Dashboard — Tier Three projection/interface view. Public-safe derivative from an owner-supplied June 2026 EHCO Dashboard capture. Tier One Runtime authority and current Runtime-state ownership remain with `INSTANTIATED_EHCO_RUNTIME`. The source capture derives from the operating local EHCO Docker Runtime, with the Dashboard served on host port 8080 during the captured operating state.*
+*EHCO Dashboard — Tier Three authority-boundary projection/interface view.*
 
 ### Evidence and receipts
 
 ![EHCO Dashboard receipts projection showing source-bound snapshot, returned-payload, status, capsule, and run evidence relationships](assets/dashboard/receipts-evidence-june-2026-public.webp)
 
-*EHCO Dashboard — Tier Three projection/interface view. Public-safe derivative from an owner-supplied June 2026 EHCO Dashboard capture. Tier One Runtime authority and current Runtime-state ownership remain with `INSTANTIATED_EHCO_RUNTIME`. The source capture derives from the operating local EHCO Docker Runtime, with the Dashboard served on host port 8080 during the captured operating state.*
+*EHCO Dashboard — Tier Three evidence-and-receipts projection/interface view.*
 
 ### Health registry
 
 ![EHCO Dashboard health-registry projection showing governed service health and registry relationships](assets/dashboard/health-registry-june-2026-public.webp)
 
-*EHCO Dashboard — Tier Three projection/interface view. Public-safe derivative from an owner-supplied June 2026 EHCO Dashboard capture. Tier One Runtime authority and current Runtime-state ownership remain with `INSTANTIATED_EHCO_RUNTIME`. The source capture derives from the operating local EHCO Docker Runtime, with the Dashboard served on host port 8080 during the captured operating state.*
+*EHCO Dashboard — Tier Three health-registry projection/interface view.*
 
 ### Replacement readiness
 
 ![EHCO Dashboard replacement-readiness projection showing governed readiness and replacement-oriented interface relationships](assets/dashboard/replacement-readiness-june-2026-public.webp)
 
-*EHCO Dashboard — Tier Three projection/interface view. Public-safe derivative from an owner-supplied June 2026 EHCO Dashboard capture. Tier One Runtime authority and current Runtime-state ownership remain with `INSTANTIATED_EHCO_RUNTIME`. The source capture derives from the operating local EHCO Docker Runtime, with the Dashboard served on host port 8080 during the captured operating state.*
+*EHCO Dashboard — Tier Three replacement-readiness projection/interface view.*
 
 ### Prime relationship
 
 ![EHCO Dashboard Prime projection showing individual-facing relationship and assistant-coordination concepts](assets/dashboard/prime-relationship-june-2026-public.webp)
 
-*EHCO Dashboard — Tier Three projection/interface view. Public-safe derivative from an owner-supplied June 2026 EHCO Dashboard capture. Tier One Runtime authority and current Runtime-state ownership remain with `INSTANTIATED_EHCO_RUNTIME`. The source capture derives from the operating local EHCO Docker Runtime, with the Dashboard served on host port 8080 during the captured operating state.*
+*EHCO Dashboard — Tier Three Prime-relationship projection/interface view.*
 
 ### Agent Connect coordination
 
 ![EHCO Dashboard Agent Connect projection showing registry, discovery, compatibility, health-observation, and candidate-routing coordination concepts](assets/dashboard/agent-connect-coordination-june-2026-public.webp)
 
-*EHCO Dashboard — Tier Three projection/interface view. Public-safe derivative from an owner-supplied June 2026 EHCO Dashboard capture. Tier One Runtime authority and current Runtime-state ownership remain with `INSTANTIATED_EHCO_RUNTIME`. The source capture derives from the operating local EHCO Docker Runtime, with the Dashboard served on host port 8080 during the captured operating state.*
+*EHCO Dashboard — Tier Three Agent Connect coordination projection/interface view.*
 
 ## Evidence and interpretation
 
-The public repository exposes current evidence through the Full Flex Runtime route and canonical claim registry, and preserves historical evidence through the Public Evidence Companion, packet manifests, hashes, receipts and verification tooling. Architecture records and publication controls retain their own evidence classes and scopes.
+The public repository exposes accepted evidence through the Full Flex Runtime route and canonical claim registry, and preserves historical evidence through the Public Evidence Companion, packet manifests, hashes, receipts and verification tooling. Architecture records and publication controls retain their own evidence classes and scopes.
 
-For present Runtime review use this order: current Full Flex evidence route; Canonical Public Claim Registry; owning Runtime/Docker evidence for technical effects; historical Public Evidence Companion Packets 00–08 for event-time lineage.
+For public Runtime review use this order: accepted Full Flex evidence route; Canonical Public Claim Registry; owning Runtime/Docker evidence for technical effects; historical Public Evidence Companion Packets 00–08 for event-time lineage.
 
 For canonical separation principles, use [System Invariants](SYSTEM-INVARIANTS.md). For evidence-domain ownership, use the [Runtime, Repository, and Test-Estate Boundary](runtime-repository-and-test-estate-boundary.md).
 
 ## Public reading path
 
-1. [Current EHCO AI-OS Runtime Evidence](../runtime/README.md)
+1. [Accepted EHCO AI-OS Runtime Evidence](../runtime/README.md)
 2. [Full Flex Public Packet v1 evidence index](../evidence/runtime/full-flex/v1/README.md)
 3. [Canonical Public Claim Registry](../assurance/PUBLIC-CLAIM-REGISTRY.json)
 4. [EHCOsystem Technology Estate](EHCO-TECHNOLOGY-ESTATE.md)
@@ -125,6 +125,7 @@ For canonical separation principles, use [System Invariants](SYSTEM-INVARIANTS.m
 
 | Version | Date | Change |
 |---|---|---|
+| 1.6 | 2026-09-01 | Separated Runtime system identity from instantiated Runtime authority/state ownership, replaced Full Flex synthesis/currentness language, and consolidated repeated Dashboard boundary captions. |
 | 1.5 | 2026-08-30 | Made Full Flex the first current evidence route, added evidence precedence/exact-owner boundary and bounded 52/53 interpretation. |
 | 1.4 | 2026-08-29 | Added deployment-ready Docker portability, physically operated local Runtime, Dashboard local port-8080 origin and external-model-disabled Tier One operating lineage. |
 | 1.3 | 2026-08-29 | Added eight-view Dashboard visual orientation with dated public-safe Tier Three projection/interface framing. |

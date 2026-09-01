@@ -1,6 +1,6 @@
 ---
 title: EHCO Range Reactor
-version: 2.0
+version: 2.1
 status: current-public-component-record
 published: 2026-09-01
 maintainer: EHCOnomics
@@ -50,7 +50,7 @@ The benchmark and semantic corpus define the scope of those measured results. Ra
 
 ## EHCOsystem relationship
 
-Range Reactor supplies deterministic range/reasoning computation as a downstream governed component. Component capability maturity remains distinct from Tier One Runtime authority and Runtime participation. **EHCO AI-OS** remains the Tier One Runtime identity, and `INSTANTIATED_EHCO_RUNTIME` owns Runtime authority and current Runtime state.
+Range Reactor supplies deterministic range/reasoning computation as a downstream governed component. Component capability maturity remains distinct from Tier One Runtime authority and Runtime participation. **EHCO AI-OS** remains the Tier One Runtime identity, and `INSTANTIATED_EHCO_RUNTIME` owns Tier One Runtime authority and Runtime state. No Tier One Runtime participation relationship is implied by the component capability or selected operational result.
 
 ## Verify
 

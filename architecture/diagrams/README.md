@@ -1,6 +1,6 @@
 ---
 title: EHCOsystem Public Architecture Diagrams
-version: 2.0
+version: 2.1
 status: current-public-architecture-navigation
 published: 2026-09-01
 maintainer: EHCOnomics
@@ -18,7 +18,8 @@ These diagrams provide a compact visual route through the [Instantiated AI](../I
 flowchart TD
     A[Instantiated AI<br/>architectural category]
     B[EHCOsystem<br/>EHCOnomics' Instantiated AI ecosystem]
-    C[EHCO AI-OS<br/>realized Tier One Runtime<br/>52/53]
+    C[EHCO AI-OS<br/>realized Tier One Runtime identity<br/>52/53]
+    R[INSTANTIATED_EHCO_RUNTIME<br/>Runtime authority / Runtime state]
     D[EHCO_DOCKER_PORTABILITY<br/>PRIMARY_ACCESSIBLE_RUNTIME_PROJECTION<br/>deployment-ready portable delivery]
     E[Shared downstream technologies<br/>Language Model / Range Reactor / RAG / Prime / Agent Connect]
     F[Research foundations]
@@ -30,8 +31,9 @@ flowchart TD
     B --> E
     B --> F
     B --> G
+    C --> R
     C --> D
-    C -->|governed Runtime relationships| E
+    R -->|governed Runtime relationships when established| E
     E --> G
     D --> H
     E --> H
@@ -42,7 +44,8 @@ flowchart TD
 
 ```mermaid
 flowchart LR
-    AIOS[EHCO AI-OS] --> RG[Runtime governance<br/>authority / state / transition / release / proof]
+    AIOS[EHCO AI-OS<br/>Tier One Runtime system identity] --> RUNTIME[INSTANTIATED_EHCO_RUNTIME]
+    RUNTIME --> RG[Runtime authority / state<br/>transition / release / proof]
     DP[EHCO_DOCKER_PORTABILITY] --> PORT[portable Runtime projection]
     LM[Language Model] --> LANG[deterministic computational language]
     RR[Range Reactor] --> RANGE[deterministic range / reasoning]
@@ -90,5 +93,5 @@ flowchart LR
 - [Components and Runtime Relationships](../ecosystem-components-and-participation.md)
 - [Language Model](../../language-model/README.md)
 - [Range Reactor](../../range-reactor/README.md)
-- [Current Runtime / Full Flex evidence](../../runtime/README.md)
+- [Accepted Runtime / Full Flex evidence](../../runtime/README.md)
 - [Public verification](../../verification/README.md)

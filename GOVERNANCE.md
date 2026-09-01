@@ -4,7 +4,7 @@
 
 This repository publishes approved public architecture, evidence, provenance, research, verification and publication materials for **EHCOsystem, EHCOnomics' Instantiated AI ecosystem**.
 
-**EHCO AI-OS is the realized Tier One Runtime foundation.** Runtime authority and current Runtime state are owned by the instantiated Runtime. The public repository owns the public architecture/evidence projection.
+**EHCO AI-OS is the realized Tier One Runtime foundation and system identity.** Tier One Runtime authority and Runtime state are owned by `INSTANTIATED_EHCO_RUNTIME`. The public repository owns the public architecture/evidence representation.
 
 ## Controlling architecture
 
@@ -39,7 +39,7 @@ Public material enters the repository through a governed publication path that e
 
 ## Hash-preserved evidence
 
-Packets 00-08 remain hash-preserved Version 1 evidence. Historical paths, source labels, container names, local ports, revisions and similar capture attributes retain their packet-time meaning. Current interpretation is supplied through the active architecture and evidence landing records.
+Packets 00-08 remain hash-preserved Version 1 evidence. Historical paths, source labels, container names, local ports, revisions and similar capture attributes retain their packet-time meaning. Accepted interpretation is supplied through the active architecture and evidence landing records; historical packet wording remains scoped to its event time.
 
 ## Contribution policy
 
@@ -55,7 +55,7 @@ Accepted public architecture and standing records move through explicit EHCOnomi
 
 ## Validation
 
-Every pull request and push to `main` runs repository validation. Acceptance also uses the then-current repository and organization rulesets and their required status/review conditions on the exact candidate relationship.
+Every pull request and push to `main` runs repository validation. Acceptance also uses the repository and organization rulesets and their required status/review conditions applicable to the exact candidate at review time.
 
 ## Licensing
 

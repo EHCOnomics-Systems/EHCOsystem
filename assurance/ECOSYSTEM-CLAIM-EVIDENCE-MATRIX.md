@@ -1,6 +1,6 @@
 ---
 title: Ecosystem Claim to Evidence Matrix
-version: 3.0
+version: 3.1
 status: current-public-assurance-reference
 published: 2026-09-01
 maintainer: EHCOnomics
@@ -12,15 +12,15 @@ evidence_scope: durable public claims and verification routes
 
 This matrix is a deeper assurance surface. The reader-facing architecture comes first; use this page when you want the evidence route for a specific public proposition.
 
-Accepted **52/53** is the numerical Runtime standing corridor under the EHCO standing framework. Component maturity, benchmarks, deployment state, and public publication are separate dimensions.
+Accepted **52/53** is the numerical Runtime standing corridor under the EHCO standing framework. Component maturity, benchmarks, deployment state, and public publication are separate dimensions. `INSTANTIATED_EHCO_RUNTIME` owns Tier One Runtime authority and Runtime state.
 
 | Governed object | Affirmative public claim | Established maturity / result | Evidence class | Public route | Verification |
 |---|---|---|---|---|---|
-| Instantiated AI | Architectural category in which governing computational conditions surround intelligence | Current controlled category definition | Controlled architecture | [Instantiated AI](../architecture/INSTANTIATED-AI.md) | Inspect category definition |
+| Instantiated AI | Architectural category in which governing computational conditions surround intelligence | Accepted controlled category definition | Controlled architecture | [Instantiated AI](../architecture/INSTANTIATED-AI.md) | Inspect category definition |
 | EHCOsystem | EHCOnomics' Instantiated AI ecosystem | Shared Runtime, technology, research, and application architecture established | Controlled ecosystem architecture | [Technology Estate](../architecture/EHCO-TECHNOLOGY-ESTATE.md) | Review architecture and component relationships |
 | EHCO AI-OS | Realized Tier One Runtime of EHCOsystem | `REALIZED / COMPLETE_IN_ACCEPTED_SCOPE`, standing **52/53** | Accepted Runtime/standing representation | [Runtime](../runtime/README.md) | `validate_current_runtime_evidence.py` |
 | EHCO_DOCKER_PORTABILITY | `PRIMARY_ACCESSIBLE_RUNTIME_PROJECTION` and fully containerized, deployment-ready portable delivery form | Established hardened Runtime/root-image portability lineage | Accepted Docker/host technical evidence + public architecture | [Runtime](../runtime/README.md) | `validate_current_runtime_evidence.py` |
-| Full Flex Public Packet v1 | Accepted current Runtime evidence identity | Packet SHA-256 `7F80C27D085AE871A00AED412C6F20EA9A76CB0677C93AEBA381CD1FD70EC8E5`; public-safe record + receipt + detached hash | Accepted packet identity and public-safe current record | [Full Flex](../evidence/runtime/full-flex/v1/README.md) | `validate_current_runtime_evidence.py` |
+| Full Flex Public Packet v1 | Selected accepted Runtime evidence identity represented publicly | Packet SHA-256 `7F80C27D085AE871A00AED412C6F20EA9A76CB0677C93AEBA381CD1FD70EC8E5`; public-safe record + receipt + detached hash | Accepted packet identity and public-safe record | [Full Flex](../evidence/runtime/full-flex/v1/README.md) | `validate_current_runtime_evidence.py` |
 | EHCO Language Model | Mature deterministic computational-language system using `DETERMINISTIC_COMPUTATIONAL_LANGUAGE / SINGLE_PATH / EXPLICIT_EHCO_COMPUTATION / ZERO_WEIGHT_ONLY / ZERO WEIGHTS TRAINED` | Deep final capability/source closure; immutable component artifact built, qualified, released; governed staging execution and verification established | Accepted component source, qualification, artifact/release and staging evidence | [Language Model](../language-model/README.md) | LM public snapshot validator + public claim validation |
 | Language Model deterministic demonstration | Reader-oriented demonstration of already-established deterministic language capability | Composition, context/reference, ambiguity, typed withholding, Language Math, whole-path failure frontier, replay, round-trip and service equivalence represented | Accepted public fixtures + qualification index | [Capability Demonstration](../language-model/DETERMINISTIC-CAPABILITY-DEMONSTRATION.md) | LM public snapshot validator + claim validation |
 | Language Model Public Test Snapshot v1 | Seven exact public fixtures covering **62 cases** | Published accepted public fixture snapshot | Exact public artifact identity | [LM Snapshot](../language-model/evidence/public-test-snapshot-v1/README.md) | `validate_public_lm_test_snapshot.py` |
@@ -38,4 +38,4 @@ Accepted **52/53** is the numerical Runtime standing corridor under the EHCO sta
 
 The public route preserves evidence ownership. Repository validation checks the public representation; it does not regenerate Runtime, Full Flex, Range Reactor, Language Model lifecycle, deployment, release, authority, standing, or participation effects.
 
-The current public tree intentionally keeps private source topology outside the publication surface. Public-safe records use public claims, selected evidence identities, hashes, manifests, fixtures, and validation routes appropriate to the proposition.
+The public repository intentionally keeps private source topology outside the publication surface. Public-safe records use public claims, selected evidence identities, hashes, manifests, fixtures, and validation routes appropriate to the proposition.

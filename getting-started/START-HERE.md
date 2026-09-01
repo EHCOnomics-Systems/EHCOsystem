@@ -1,6 +1,6 @@
 ---
 title: Start Here
-version: 3.0
+version: 3.1
 status: current-public-navigation
 published: 2026-09-01
 maintainer: EHCOnomics
@@ -26,7 +26,7 @@ The durable hierarchy is:
 
 **Instantiated AI** → **EHCOsystem** → **EHCO AI-OS Tier One Runtime** → **shared downstream technologies** → **research foundations and governed applications** → **Tier Three interfaces/projections**.
 
-EHCO AI-OS has accepted standing **52/53** and accepted Runtime maturity **`REALIZED / COMPLETE_IN_ACCEPTED_SCOPE`**. `EHCO_DOCKER_PORTABILITY` is the **PRIMARY_ACCESSIBLE_RUNTIME_PROJECTION** and fully containerized, deployment-ready portable delivery form of the established hardened Runtime/root-image lineage.
+EHCO AI-OS has accepted standing **52/53** and accepted Runtime maturity **`REALIZED / COMPLETE_IN_ACCEPTED_SCOPE`**. `EHCO_DOCKER_PORTABILITY` is the **PRIMARY_ACCESSIBLE_RUNTIME_PROJECTION** and fully containerized, deployment-ready portable delivery form of the established hardened Runtime/root-image lineage. `INSTANTIATED_EHCO_RUNTIME` owns Tier One Runtime authority and Runtime state.
 
 ## 3. Explore the strongest shared technologies
 
@@ -42,9 +42,9 @@ The **[EHCO Range Reactor](../range-reactor/README.md)** is a mature determinist
 
 ## 4. Inspect the Runtime evidence route
 
-Use **[EHCO AI-OS Runtime — Current Public Evidence](../runtime/README.md)** for the Full Flex public route.
+Use **[EHCO AI-OS Runtime — Accepted Public Evidence](../runtime/README.md)** for the Full Flex public route.
 
-The accepted Full Flex packet identity is preserved by its SHA-256 and receipt. The current public tree publishes a public-safe record bound to that accepted identity so internal source-routing metadata is not exposed.
+The accepted Full Flex packet identity is preserved by its SHA-256 and receipt. The public repository publishes a public-safe record bound to that accepted identity so internal source-routing metadata is not exposed.
 
 Historical Public Evidence Companion Packets 00–08 remain available as event-time evidence lineage.
 

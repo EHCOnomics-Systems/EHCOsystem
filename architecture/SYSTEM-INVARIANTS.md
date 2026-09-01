@@ -1,12 +1,12 @@
 ---
 title: EHCO AI-OS Public System Invariants
-version: 1.2
+version: 1.3
 status: accepted-public-reference
-published: 2026-08-28
+published: 2026-09-01
 maintainer: EHCOnomics
 evidence_class: controlled-ehco-architecture
 evidence_scope: canonical public separation principles
-supersedes: version 1.1
+supersedes: version 1.2
 ---
 
 # EHCO AI-OS Public System Invariants
@@ -16,7 +16,7 @@ The accepted standing baseline is **52/53**.
 ## Runtime and authority
 
 ### 1. Runtime authority has an explicit owner
-`INSTANTIATED_EHCO_RUNTIME` owns Tier One Runtime authority and current Runtime state.
+`INSTANTIATED_EHCO_RUNTIME` owns Tier One Runtime authority and Runtime state.
 
 ### 2. Capability and authority are separate dimensions
 A component's technical capability describes the work it can perform. Authority describes the governing basis under which work can acquire Runtime consequence.
@@ -25,7 +25,7 @@ A component's technical capability describes the work it can perform. Authority 
 Persistent Tier Two software identities are downstream governed components. Runtime participation is scoped to an applicable Runtime corridor and owning Runtime evidence.
 
 ### 4. Tier One authority remains centralized
-Models, agents, applications and services operate under the governing relationships owned by EHCO AI-OS.
+EHCO AI-OS is the Tier One Runtime system identity. Models, agents, applications and services operate under the governing Runtime relationships owned by `INSTANTIATED_EHCO_RUNTIME`.
 
 ### 5. Proposals follow an acceptance lifecycle
 Generated plans, model output, drafts and proposed changes move through their applicable review, acceptance and commit controls.
@@ -104,5 +104,6 @@ When two records differ, identify the governed object, source owner, evidence cl
 
 | Version | Date | Change |
 |---|---|---|
+| 1.3 | 2026-09-01 | Separated EHCO AI-OS Runtime system identity from `INSTANTIATED_EHCO_RUNTIME` authority/state ownership in the canonical invariants. |
 | 1.2 | 2026-08-28 | Recast the canonical invariants as affirmative ownership, lifecycle and evidence principles. |
 | 1.1 | 2026-08-25 | Added the component-identity/Runtime-participation invariant. |

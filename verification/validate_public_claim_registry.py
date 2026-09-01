@@ -7,6 +7,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 REGISTRY = ROOT / "assurance" / "PUBLIC-CLAIM-REGISTRY.json"
 EXPECTED_PACKET_SHA256 = "7F80C27D085AE871A00AED412C6F20EA9A76CB0677C93AEBA381CD1FD70EC8E5"
+RUNTIME_OWNER = "INSTANTIATED_EHCO_RUNTIME"
 ERRORS: list[str] = []
 CHECKS = 0
 
@@ -33,7 +34,7 @@ def main() -> int:
         registry = {}
 
     checked(registry.get("schema") == "ehco.public.claim-registry.v1", "Claim registry schema mismatch")
-    checked(registry.get("registry_version") == "1.3.0", "Claim registry version mismatch")
+    checked(registry.get("registry_version") == "1.4.0", "Claim registry version mismatch")
     checked(registry.get("published") == "2026-09-01", "Claim registry publication date mismatch")
     checked(registry.get("source_review_date") == "2026-09-01", "Claim registry source-review date mismatch")
 
@@ -50,12 +51,15 @@ def main() -> int:
         "packet_sha256": EXPECTED_PACKET_SHA256,
         "runtime_maturity": "REALIZED / COMPLETE_IN_ACCEPTED_SCOPE",
         "accepted_standing": "52/53",
+        "runtime_authority_and_state_owner": RUNTIME_OWNER,
         "docker_portability": "PRIMARY_ACCESSIBLE_RUNTIME_PROJECTION",
         "public_custody": "ACCEPTED_PACKET_HASH_AND_RECEIPT_WITH_PUBLIC_SAFE_RECORD",
         "raw_packet_publication": "WITHHELD_FROM_CURRENT_PUBLIC_TREE_TO_PROTECT_INTERNAL_SOURCE_ROUTING_METADATA",
     }
     for key, value in expected_current.items():
-        checked(current.get(key) == value, f"Current Runtime evidence mismatch: {key}")
+        checked(current.get(key) == value, f"Runtime evidence registry mismatch: {key}")
+    checked(current.get("field_semantics") == "MACHINE_READABLE_SELECTED_ACCEPTED_PUBLIC_RUNTIME_EVIDENCE_IDENTITY", "Runtime evidence field semantics mismatch")
+    checked("does not assert live Runtime-state currentness" in str(current.get("precedence_semantics", "")), "Machine currentness token is not bounded from live Runtime-state meaning")
 
     claims = registry.get("claims", [])
     checked(isinstance(claims, list), "Claim registry claims must be a list")
@@ -80,6 +84,9 @@ def main() -> int:
             for field in ["evidence_class", "verification_method", "disclosure_ceiling"]:
                 checked(bool(item.get(field)), f"{field} missing: {claim_id}")
 
+    checked(RUNTIME_OWNER in str(by_id.get("AIOS-RUNTIME-REALIZED", {}).get("disclosure_ceiling", "")), "Runtime realized claim does not preserve the owning Runtime authority/state boundary")
+    checked("not asserted here" in str(by_id.get("LM-MATURE-DETERMINISTIC-COMPUTATIONAL-LANGUAGE", {}).get("disclosure_ceiling", "")), "Language Model claim does not preserve Runtime-participation nonclaim")
+
     public_files = {
         "README.md": read("README.md"),
         "Start Here": read("getting-started/START-HERE.md"),
@@ -94,6 +101,7 @@ def main() -> int:
     }
 
     checked("Instantiated AI" in public_files["README.md"], "Root README does not expose Instantiated AI")
+    checked(RUNTIME_OWNER in public_files["README.md"], "Root README does not identify the Runtime authority/state owner")
     checked("DETERMINISTIC-CAPABILITY-DEMONSTRATION.md" in public_files["Language Model"], "Language Model page does not route to deterministic capability demonstration")
     checked("14.304307x" in public_files["Range Reactor"], "Range Reactor page does not expose selected operational result")
     checked("PUBLIC_SAFE_RECORD.json" in public_files["Full Flex"], "Full Flex page does not route to public-safe record")
@@ -112,8 +120,11 @@ def main() -> int:
     for value in forbidden:
         checked(value not in combined, f"Protected locator/topology token in active public representation: {value}")
 
-    checked("advanced near-final" not in combined.lower(), "Obsolete advanced-near-final wording remains active")
-    checked("current selected lifecycle frontier is governed staging" not in combined.lower(), "Stale Language Model staging-frontier wording remains active")
+    lower_combined = combined.lower()
+    checked("advanced near-final" not in lower_combined, "Obsolete advanced-near-final wording remains active")
+    checked("current selected lifecycle frontier is governed staging" not in lower_combined, "Stale Language Model staging-frontier wording remains active")
+    checked("current public evidence projection and synthesis" not in lower_combined, "Residual Full Flex synthesis wording remains active")
+    checked("ehco ai-os runtime — current public evidence" not in lower_combined, "Volatile Runtime front-door wording remains active")
 
     if ERRORS:
         print(f"EHCOsystem public claim-registry validation: FAIL ({len(ERRORS)} errors / {CHECKS} checks)")
@@ -121,7 +132,7 @@ def main() -> int:
             print(f"- {error}")
         return 1
 
-    print(f"EHCOsystem public claim-registry validation: PASS ({CHECKS} checks)")
+    print(f"EHCOsystem public claim-registry validation: PASS ({CHECKS} checks) [DURABLE_PUBLIC_SEMANTICS]")
     return 0
 
 

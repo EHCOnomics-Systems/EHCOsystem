@@ -28,9 +28,9 @@ The byte-identical PDF is also bound inside Packet 00 at `evidence/public-eviden
 
 ## System relationship
 
-**EHCO AI-OS is the realized Tier One Runtime with accepted standing 52/53.** The dossier's evidence class is controlled public architecture. Repository publication establishes the dossier's public identity and cryptographic integrity.
+**EHCO AI-OS is the realized Tier One Runtime with accepted standing 52/53.** The dossier's evidence class is controlled public architecture. Repository publication establishes the dossier's public identity and cryptographic integrity. Tier One Runtime authority and Runtime state remain owned by `INSTANTIATED_EHCO_RUNTIME`.
 
-Use the [Runtime, Repository, and Test-Estate Boundary](../architecture/runtime-repository-and-test-estate-boundary.md) for evidence-domain ownership and the [Public Evidence landing page](../evidence/README.md) for the current and historical evidence routes.
+Use the [Runtime, Repository, and Test-Estate Boundary](../architecture/runtime-repository-and-test-estate-boundary.md) for evidence-domain ownership and the [Public Evidence landing page](../evidence/README.md) for the accepted and historical evidence routes.
 
 ## Related material
 

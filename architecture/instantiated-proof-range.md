@@ -1,24 +1,24 @@
 ---
 title: Instantiated Proof Range
-version: 1.5
+version: 1.6
 status: accepted-public-proof-record
-published: 2026-08-30
+published: 2026-09-01
 maintainer: EHCOnomics
 evidence_class: controlled-ehco-proof-record
-supersedes: version 1.4
+supersedes: version 1.5
 ---
 
 # Instantiated Proof Range
 
 **EHCO AI-OS is the realized Tier One Runtime with accepted standing 52/53.** The accepted public proof range covers authority, standing, recognized state, transition, consequence, continuity, proof, persistence, withholding, release, correction and recovery relationships.
 
-## Current public evidence route
+## Accepted public evidence route
 
-For present public Runtime posture, begin with [EHCO AI-OS Runtime — Current Public Evidence](../runtime/README.md) and the [EHCO Full Flex Public Packet v1 evidence index](../evidence/runtime/full-flex/v1/README.md).
+Begin with [EHCO AI-OS Runtime — Accepted Public Evidence](../runtime/README.md) and the [EHCO Full Flex Public Packet v1 evidence index](../evidence/runtime/full-flex/v1/README.md).
 
-The Full Flex packet is the current public evidence projection and synthesis. `INSTANTIATED_EHCO_RUNTIME` remains the owner of actual Runtime authority/current state, owning Docker/host evidence remains the owner of physical execution observations, and Full Flex carries the public synthesis role across those relationships.
+The accepted Full Flex route is a public-safe evidence record bound to the accepted Runtime baseline and proposition-matched owning evidence relationships. `INSTANTIATED_EHCO_RUNTIME` owns Runtime authority and Runtime state; owning Docker/host evidence owns physical execution observations; the Full Flex route preserves and exposes the accepted public evidence relationship without replacing those owners.
 
-Its selected packet identity is SHA-256 `7F80C27D085AE871A00AED412C6F20EA9A76CB0677C93AEBA381CD1FD70EC8E5`. Exact-byte publication remains a distinct integrity/materialization state, and byte identity determines the selected artifact.
+Its selected packet identity is SHA-256 `7F80C27D085AE871A00AED412C6F20EA9A76CB0677C93AEBA381CD1FD70EC8E5`. Exact-byte identity and public disclosure are distinct integrity/publication dimensions, and byte identity determines the selected artifact.
 
 ## Proof classes
 
@@ -28,9 +28,9 @@ The accepted **52/53** standing baseline is an EHCOnomics-controlled operational
 
 For public interpretation, 52/53 is the accepted numerical Runtime standing corridor under the EHCO standing framework. Benchmark scoring, percentage-completion measures, component-maturity percentages, deployment-state percentages and public-release percentages are separate dimensions. Protected denominator mechanics remain within their owning governed sources.
 
-### Current public Runtime evidence projection
+### Accepted public Runtime evidence representation
 
-A current public evidence projection can synthesize accepted meaning and proposition-matched evidence relationships into a current inspection route. This evidence class establishes the public representation and its bound identity/scope; Runtime authority and physical execution facts retain their respective owning evidence domains.
+An accepted public evidence representation binds accepted propositions to their public-safe identity, scope, and proposition-matched evidence relationships. It establishes the public representation; Runtime authority and physical execution facts retain their respective owning evidence domains.
 
 ### Artifact identity and provenance
 
@@ -50,26 +50,26 @@ Runtime-originated records establish authoritative Runtime state, consequence, p
 
 ## Historical Public Evidence Companion
 
-Packets 00–08 preserve a public-safe historical proof estate. Packet 02 binds packet-time runtime-support test/source artifacts to exact hashes. Packets 03–05 bind artifact identity and named declarations/anchors. Packet 06 preserves a historical bounded test/observation capture with discrepancy records and additional evidence lanes. Packet 08 verifies suite identity, integrity and closure.
+Packets 00–08 preserve a public-safe historical proof estate. Packet 02 binds packet-time Runtime-support test/source artifacts to exact hashes. Packets 03–05 bind artifact identity and named declarations/anchors. Packet 06 preserves a historical bounded test/observation capture with discrepancy records and additional evidence lanes. Packet 08 verifies suite identity, integrity and closure.
 
-These packet bytes remain immutable event-time evidence. Present Runtime maturity, 52/53 standing and deployment-ready Docker portability route through current evidence and their owning evidence relationships.
+These packet bytes remain immutable event-time evidence. Accepted Runtime maturity, 52/53 standing and deployment-ready Docker portability retain their established evidence relationships; any later Runtime-state proposition remains owned by applicable Runtime evidence.
 
 ## Evidence precedence
 
-For present Runtime review:
+For public Runtime review:
 
-1. current Full Flex public evidence route;
+1. accepted Full Flex public evidence route;
 2. canonical Public Claim Registry;
 3. owning Runtime/Docker evidence for technical effects; and
 4. historical Public Evidence Companion Packets 00–08 for lineage and event-time proof.
 
 ## Language-system position
 
-The EHCO Language Model is a mature deterministic computational-language downstream governed component. Its persistent component identity, implementation maturity, qualification estate and scoped Runtime participation relationship are independently tracked. Runtime participation evidence owns each established Runtime corridor.
+The EHCO Language Model is a mature deterministic computational-language downstream governed component. Its persistent component identity, implementation maturity, qualification estate, and any Tier One Runtime participation state are independently governed dimensions. A Runtime-participation relationship is asserted only where owning Runtime evidence establishes the applicable corridor.
 
 ## Related material
 
-- [Current EHCO AI-OS Runtime Evidence](../runtime/README.md)
+- [Accepted EHCO AI-OS Runtime Evidence](../runtime/README.md)
 - [Full Flex Public Packet v1 evidence index](../evidence/runtime/full-flex/v1/README.md)
 - [Runtime, Repository, and Test-Estate Boundary](runtime-repository-and-test-estate-boundary.md)
 - [EHCO AI-OS Instantiated System](EHCO-AI-OS-INSTANTIATED-SYSTEM.md)
@@ -81,6 +81,7 @@ The EHCO Language Model is a mature deterministic computational-language downstr
 
 | Version | Date | Change |
 |---|---|---|
+| 1.6 | 2026-09-01 | Replaced Full Flex synthesis/currentness language, clarified exact-byte/public-disclosure separation, and changed Language Model Runtime participation to an owning-evidence nonclaim. |
 | 1.5 | 2026-08-30 | Added the Full Flex current-public-evidence projection, evidence precedence, exact-byte separation and bounded 52/53 interpretation. |
 | 1.4 | 2026-08-28 | Recast proof classes as affirmative evidence propositions. |
 | 1.3 | 2026-08-25 | Reconciled Language Model component and Runtime relationship terminology. |

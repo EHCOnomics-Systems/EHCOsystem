@@ -1,6 +1,6 @@
 ---
 title: EHCOsystem Reading Order
-version: 3.0
+version: 3.1
 status: current-public-navigation
 published: 2026-09-01
 maintainer: EHCOnomics
@@ -29,7 +29,7 @@ evidence_scope: public reading sequence
 
 ## Runtime evidence
 
-12. [EHCO AI-OS Runtime — Current Public Evidence](../runtime/README.md)
+12. [EHCO AI-OS Runtime — Accepted Public Evidence](../runtime/README.md)
 13. [Full Flex Public Evidence Index](../evidence/runtime/full-flex/v1/README.md)
 14. [EHCO AI-OS Public System Card](../architecture/EHCO-AI-OS-SYSTEM-CARD.md)
 15. [EHCO AI-OS Instantiated System](../architecture/EHCO-AI-OS-INSTANTIATED-SYSTEM.md)

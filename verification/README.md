@@ -10,7 +10,7 @@ The orchestrator runs the complete required validator set in a stable order:
 
 1. public repository integrity and disclosure boundaries;
 2. canonical public claim registry;
-3. current Runtime / Full Flex public representation;
+3. accepted Runtime / Full Flex public representation;
 4. Language Model public snapshot;
 5. Range Reactor capability snapshot;
 6. Range Reactor operational-closure public result; and
@@ -20,17 +20,21 @@ The required GitHub workflow runs this same entrypoint, so local reviewer instru
 
 ## What validation establishes
 
-A successful run establishes that the checked-out public repository is internally coherent for its exact revision: required files and links are present, public/private disclosure boundaries hold, selected public evidence records match their expected identities, component and Runtime terminology is consistent, and the current reader-facing representation satisfies the repository's public validation rules.
+A successful run establishes that the checked-out public repository is internally coherent for its exact revision: required files and links are present, public/private disclosure boundaries hold, selected public evidence records match their expected identities, component and Runtime terminology is consistent, and the reader-facing representation satisfies the repository's public validation rules.
 
 Repository validation qualifies the **public representation**. It does not reopen or replace the owning evidence that established Runtime operation, Full Flex, Range Reactor performance/semantic closure, Language Model artifact/release/staging state, deployment, authority, standing, or Runtime participation.
 
-## Current Runtime / Full Flex
+The public validation surface also enforces **durable public semantics** for the intended repository resting state: active reader-facing language must preserve evidence ownership, lifecycle dimensions, Runtime identity/authority separation, accepted evidence meaning, and historical/event-time scope without creating avoidable live-currentness obligations.
 
-`validate_current_runtime_evidence.py` verifies the Full Flex-first public Runtime route, accepted Runtime maturity `REALIZED / COMPLETE_IN_ACCEPTED_SCOPE`, standing **52/53**, `EHCO_DOCKER_PORTABILITY` as `PRIMARY_ACCESSIBLE_RUNTIME_PROJECTION`, the accepted Full Flex packet SHA-256 `7F80C27D085AE871A00AED412C6F20EA9A76CB0677C93AEBA381CD1FD70EC8E5`, public-safe packet identity/receipt custody, and the historical classification of the Public Evidence Companion.
+## Accepted Runtime / Full Flex
+
+`validate_current_runtime_evidence.py` retains its established filename and machine-facing status vocabulary while verifying the accepted Full Flex-first public Runtime route, accepted Runtime maturity `REALIZED / COMPLETE_IN_ACCEPTED_SCOPE`, standing **52/53**, `EHCO_DOCKER_PORTABILITY` as `PRIMARY_ACCESSIBLE_RUNTIME_PROJECTION`, the accepted Full Flex packet SHA-256 `7F80C27D085AE871A00AED412C6F20EA9A76CB0677C93AEBA381CD1FD70EC8E5`, public-safe packet identity/receipt custody, and the historical classification of the Public Evidence Companion.
+
+It also protects reader-facing semantics by rejecting residual Full Flex “synthesis” language and wording that assigns Tier One Runtime authority/state ownership to EHCO AI-OS instead of `INSTANTIATED_EHCO_RUNTIME`.
 
 ## Language Model
 
-`validate_public_lm_test_snapshot.py` verifies the established seven-fixture / 62-case public snapshot. The current public component record and deterministic capability demonstration are presentation surfaces for already-established accepted Language Model capabilities; they do not create a new maturity or lifecycle proof program.
+`validate_public_lm_test_snapshot.py` verifies the established seven-fixture / 62-case public snapshot. The accepted public component record and deterministic capability demonstration are presentation surfaces for already-established accepted Language Model capabilities; they do not create a new maturity or lifecycle proof program.
 
 ## Range Reactor
 

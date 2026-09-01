@@ -1,12 +1,12 @@
 ---
 title: Instantiated AI — Public Architecture Definition
-version: 1.2
+version: 1.3
 status: current-public-architecture
-published: 2026-08-28
+published: 2026-09-01
 maintainer: EHCOnomics
 evidence_class: controlled-ehco-architecture
 evidence_scope: category and ecosystem architecture definition
-supersedes: version 1.1
+supersedes: version 1.2
 ---
 
 # Instantiated AI
@@ -23,12 +23,12 @@ The governing system establishes the operating conditions. Intelligence interpre
 
 Within EHCOsystem:
 
-- **EHCO AI-OS** is the realized Tier One Runtime foundation and owns the governing Runtime relationships for authority, scope, recognized state, transition, consequence, continuity, persistence, withholding, release, correction, recovery, and Runtime-originated proof;
+- **EHCO AI-OS** is the realized Tier One Runtime foundation; **`INSTANTIATED_EHCO_RUNTIME`** owns Tier One Runtime authority and Runtime state, including the governing relationships for scope, recognized state, transition, consequence, continuity, persistence, withholding, release, correction, recovery, and Runtime-originated proof;
 - **downstream governed components** own deterministic language, range/reasoning, retrieval/evidence, relationship, coordination, research, and domain-application capabilities;
 - **Tier Three** owns interfaces and projections that make governed information visible and usable; and
 - **public evidence and technical diligence** provide source-bound inspection routes for material technical propositions.
 
-Persistent component identity, application/service realization, and scoped Runtime participation are independently governed dimensions. Runtime participation is established through the applicable Runtime evidence for the relevant corridor and time.
+Persistent component identity, application/service realization, and scoped Runtime participation are independently governed dimensions. Runtime participation is established only through the applicable owning Runtime evidence for the relevant corridor and time.
 
 ## Representation and instantiation
 
@@ -174,5 +174,6 @@ Use [EHCOsystem — An Instantiated AI Ecosystem](EHCO-TECHNOLOGY-ESTATE.md) for
 
 | Version | Date | Change |
 |---|---|---|
+| 1.3 | 2026-09-01 | Separated EHCO AI-OS Tier One Runtime identity from `INSTANTIATED_EHCO_RUNTIME` authority/current-state ownership and tightened Runtime-participation wording. |
 | 1.2 | 2026-08-28 | Recast the category definition as an affirmative computational architecture and consolidated component, standing, source, memory, and model-independence relationships. |
 | 1.1 | 2026-08-26 | Added the category-to-ecosystem relationship and qualification surface. |
