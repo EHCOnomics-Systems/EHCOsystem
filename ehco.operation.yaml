@@ -5,36 +5,46 @@ protocol_reference:
   profile_version: 1.0.0
   protocol_version: 1.0.0
 repository: EHCOnomics-Systems/EHCOsystem
-governed_object: LANGUAGE_MODEL_CURRENT_PUBLIC_MATURITY_SYNCHRONIZATION_V1
+governed_object: EHCOSYSTEM_PUBLIC_RESTING_STATE_CLOSEOUT_V2_3
 source_owner:
   repository: EHCOnomics-Systems/EHCOsystem
-  revision: 77b9d82e0e1bb63d932bd0c62ed98e6dfc32e4f5
+  revision: f3eac9d3b38579d480b22c525a31decda65f827e
   repository_manifest_path: ehco.repository.yaml
-  controlling_source_reference: ehco.repository.yaml
+  controlling_source_reference: GOOGLE_DRIVE_EHCO_PUB_SOW_009_LOCKED_SCOPE_V2_3
 selection:
   selected_by: Edward Henry
   selection_class: EXPLICIT_OWNER_DIRECTION
   durable_reference: |-
-    Edward Henry explicitly selected synchronization of the EHCO Language Model public maturity representation on 2026-08-31 after read-only review of current governing Drive meaning and direct owning Git/GitHub evidence. The public synchronization must preserve the established mature deterministic zero-weight computational-language identity, deep final capability/source closure, final artifact build/qualification/release custody, and the current governed staging execution/verification frontier without demoting or flattening those accomplishments and without implying production verification/deployment or Tier One Runtime participation.
+    Edward Henry selected completion of the current EHCOsystem public-repository closeout as a presentation-first operation intended to leave the public repository in a durable resting state that does not require planned near-term follow-on work. Established Runtime, EHCO_DOCKER_PORTABILITY, Full Flex and Range Reactor evidence is reused without reproof or revalidation. The sole selected additional public capability artifact is a bounded EHCO Language Model deterministic capability demonstration derived from already-established accepted component capabilities. Public presentation must be affirmative, current, non-demoting, coherent, public-safe and easy to navigate; private repository/commit/Drive/evidence-routing topology must not remain in the current public tree. The live GitHub-hosted SOW is removed so Google Drive remains the sole active SOW authority. PR #53 may be superseded by this current-main closeout route because its Draft transition is blocked by a connector capability defect.
+    NEW_PATH:language-model/DETERMINISTIC-CAPABILITY-DEMONSTRATION.md
     OPERATION_STABLE_ENVELOPE_CHANGE=true
-  source_base_revision: 77b9d82e0e1bb63d932bd0c62ed98e6dfc32e4f5
-  expected_reviewed_head_revision: 1dec3c7c70b3ef0b3edbedd41e0d6bdf5b0338ba
+  source_base_revision: f3eac9d3b38579d480b22c525a31decda65f827e
+  expected_reviewed_head_revision: NOT_YET_QUALIFIED
 control_anchor: AGENTS.md
 status_owner_path: ehco.operation.yaml
 accepted_standing: 52/53
 active_operation:
-  operation_id: LM-CURRENT-PUBLIC-MATURITY-SYNC-001
-  state: COMPLETE
-  authorization_mode: ACCEPT
-  bounded_outcome: Replace stale advanced-near-final public wording with the strongest current public-safe Language Model maturity representation supported by owning source/lifecycle evidence, synchronized across reader-facing architecture, diligence, assurance and validation surfaces.
-  remaining_bounded_work: []
+  operation_id: EHCOSYSTEM-PUBLIC-RESTING-STATE-CLOSEOUT-001
+  state: ACTIVE
+  authorization_mode: PUBLISH
+  bounded_outcome: Finish the current EHCOsystem public representation as a clear, durable, public-safe resting-state repository; reuse established technical evidence; add one public-safe Language Model deterministic capability demonstration; qualify the exact public-repository candidate without reopening accepted technical proof.
+  remaining_bounded_work:
+    - Reconcile the active reader path, architecture/component navigation, public currentness, affirmative language and no-demotion representation.
+    - Remove current public private-source, private-commit, Drive-control and private evidence-routing exposure while preserving public-safe integrity relationships.
+    - Synchronize Language Model public maturity and publish one deterministic capability demonstration from already-established accepted capabilities.
+    - Reconcile Full Flex and Range Reactor presentation from established evidence without rerun or reproof.
+    - Remove the live GitHub SOW and obsolete public-packaging navigation.
+    - Make public validation documentation, validators and the required public-validation workflow coherent for the final presentation.
+    - Qualify the exact PUBLISH candidate and correct in-scope presentation/public-boundary failures before ACCEPT.
   interaction_seams:
-    - EHCOnomics-Systems/ehco_Language-Model_v1 owns exact Language Model implementation and lifecycle source state.
-    - Owning GitHub Release and workflow evidence own artifact-release and staging-execution effects.
-    - EHCOsystem owns the public architecture, diligence, assurance and validation representation synchronized here.
+    - Google Drive EHCO-PUB-SOW-009 v2.3 owns durable closeout meaning.
+    - EHCOnomics-Systems/EHCOsystem owns the exact public repository implementation and presentation changed here.
+    - Direct owning component Git/GitHub remains the source of exact component implementation/currentness claims used for synchronization.
+    - Existing owning technical evidence retains build, artifact, release, staging, execution, benchmark, Runtime and proof effects already established.
     - INSTANTIATED_EHCO_RUNTIME retains Tier One Runtime authority and current Runtime state.
   non_overlap:
-    - No Language Model implementation, active development branch, artifact bytes, release object, staging execution, production environment, Runtime state, authority, standing, participation or successor is changed.
+    - No Full Flex reproof, Runtime observation, Docker/host execution, Range Reactor rerun, Range Reactor benchmark rerun, duplicate semantic corpus, new system-wide technical proof, deployment, release, Runtime action, authority change, standing change, participation change or automatic successor.
+    - The Language Model public demonstration presents already-established accepted component capabilities and does not reopen Language Model maturity, qualification, release, staging or lifecycle acceptance.
   automatic_successor: PROHIBITED
   successor_operation: NOT_SELECTED
 execution_continuity:
@@ -51,61 +61,78 @@ scope:
   permitted_paths:
     - ehco.operation.yaml
     - README.md
+    - LIBRARY.md
     - ECOSYSTEM-DILIGENCE.md
-    - language-model/README.md
+    - TECHNICAL-DILIGENCE.md
+    - PROVENANCE.md
+    - getting-started/**
     - architecture/EHCO-TECHNOLOGY-ESTATE.md
     - architecture/ecosystem-components-and-participation.md
     - architecture/diagrams/README.md
+    - language-model/README.md
+    - language-model/DETERMINISTIC-CAPABILITY-DEMONSTRATION.md
+    - runtime/README.md
+    - evidence/README.md
+    - evidence/runtime/full-flex/v1/**
+    - range-reactor/README.md
+    - range-reactor/evidence/operational-closure-v1/**
     - assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md
-    - verification/README.md
-    - verification/validate_public_evidence.py
+    - assurance/PUBLIC-CLAIM-REGISTRY.json
+    - releases/PUBLIC-RELEASE-REGISTER.md
+    - dossiers/README.md
+    - dossiers/public-technical-packaging/SCOPE-OF-WORK.md
+    - verification/**
+    - .github/workflows/validate-public-evidence.yml
   controlled_paths:
     - ehco.operation.yaml
-    - verification/validate_public_evidence.py
+    - assurance/PUBLIC-CLAIM-REGISTRY.json
+    - verification/**
+    - .github/workflows/validate-public-evidence.yml
   prohibited_paths:
     - AGENTS.md
     - ehco.repository.yaml
-    - .github/**
-    - assurance/PUBLIC-CLAIM-REGISTRY.json
-    - language-model/evidence/**
-    - evidence/**
-    - range-reactor/**
+    - architecture/INSTANTIATED-AI.md
+    - architecture/assets/**
+    - .github/CODEOWNERS
+    - .github/ISSUE_TEMPLATE/**
+    - .github/pull_request_template.md
+    - .github/workflows/codeql.yml
+    - .github/workflows/ehco-assistant-operation-gate.yml
+    - evidence/companion/**
+    - language-model/evidence/public-test-snapshot-v1/**
+    - range-reactor/evidence/public-capability-snapshot-v1/**
 change_control:
   control_change_declared: true
-  delete_or_move_authorized: false
+  delete_or_move_authorized: true
   local_actions_authorized:
     - read_source
     - compare_source
     - audit
+    - create_file
     - update_file
+    - delete_file
     - run_checks
   local_actions_prohibited:
-    - create_file
     - move_file
-    - delete_file
     - generate_artifact
   remote_actions_authorized:
-    - mark_pull_request_ready_for_review
-    - merge_pull_request
-    - record_owner_acceptance
-    - close_operation
-  remote_actions_prohibited:
     - create_branch
     - commit
     - push
     - open_draft_pull_request
     - update_draft_pull_request
+  remote_actions_prohibited:
+    - merge_pull_request
     - activate_selected_successor
-    - trigger_workflow
+    - modify_repository_settings
+    - modify_drive_controls
+    - publish_image
     - mutate_environment
     - deploy
     - release
-    - publish_image
     - invoke_runtime
     - admit_runtime
     - bind_runtime
-    - modify_repository_settings
-    - modify_drive_controls
 effects:
   authority_effect: NONE
   standing_effect: NONE
@@ -115,26 +142,37 @@ effects:
   external_effect: NONE
 bridge:
   applicability: NOT_APPLICABLE_NON_PARTICIPANT
-  non_applicability_reason: Public Language Model maturity synchronization is separate from Tier One Runtime participation.
+  non_applicability_reason: Public repository presentation and a component-level public demonstration do not establish Tier One Runtime participation.
   direct_invocation: PROHIBITED
   runtime_admission_status: NOT_ESTABLISHED
   participation_binding_status: NOT_ESTABLISHED
   canonical_runtime_receipt_status: NOT_ESTABLISHED
 evidence:
-  evidence_class: OWNER_ACCEPTANCE_RECORD
+  evidence_class: PUBLIC_PRESENTATION_RESTING_STATE_CLOSEOUT_CANDIDATE
   required_checks:
-    - Exact reviewed PUBLISH head 1dec3c7c70b3ef0b3edbedd41e0d6bdf5b0338ba passed required repository validation and CodeQL qualification.
-    - Public wording preserves DETERMINISTIC_COMPUTATIONAL_LANGUAGE / SINGLE_PATH / EXPLICIT_EHCO_COMPUTATION / ZERO_WEIGHT_ONLY / ZERO WEIGHTS TRAINED.
-    - Public wording establishes deep final capability/source closure and governed final component artifact build/qualification/release as established owning-source lifecycle state.
-    - Public wording identifies governed staging execution/verification of the exact released artifact as the current lifecycle frontier.
-    - Public wording keeps production verification/deployment and Tier One Runtime participation as separate evidence domains.
-    - Public synchronization omits controlled branch choreography, internal DF/UD identifiers and private implementation details.
-    - Existing Language Model public test snapshot bytes remain unchanged.
-    - Required repository validation, CodeQL and EHCO Assistant Operation Gate pass on the exact ACCEPT candidate before merge.
+    - The first-reader path is front door, Instantiated AI, architecture/Technology Estate, components, selected evidence, verification and then deep diligence.
+    - Active reader-facing public language is affirmative, current, non-demoting and free of material contradictory current-state narratives.
+    - Current public tree contains no private repository names/locators, private source commit identifiers, Google Drive control identifiers, private evidence-receipt locators or private development topology in the selected active surfaces.
+    - Full Flex remains presented from accepted evidence without reproof, with public-safe integrity linkage replacing any raw public artifact that exposes internal routing metadata.
+    - Range Reactor retains the accepted 14.304307x wall-clock, 14.208722x CPU-time, 94.755854% benchmark-defined Python peak-allocation reduction, 1957-to-64 states, 1956-to-192 transitions, 720 histories preserved and 82 passed / 0 failed selected semantic closure without private owning-source exposure.
+    - Language Model public representation preserves mature deterministic computational-language identity, deep final capability/source closure, qualified/released immutable component artifact and established governed staging execution/verification in their proper evidence dimensions.
+    - One public-safe Language Model deterministic capability demonstration presents materially distinct already-established accepted capabilities without private implementation topology.
+    - Obsolete advanced-near-final and stale staging-frontier requirements are removed from active current representation and validation.
+    - Public verification documentation and required GitHub validation workflow run a coherent required validator set, including Range Reactor operational-closure validation if retained as current public evidence.
+    - The live GitHub SOW copy and navigation reference are absent from the exact candidate.
+    - Applicable repository validation, CodeQL and EHCO Assistant Operation Gate pass for the exact candidate before ACCEPT.
+    - The exact candidate leaves no known material presentation debt selected by this SOW that would predictably require near-term public-repository reopening.
+    - Accepted numerical standing remains 52/53; Runtime, deployment, release, authority, standing, participation and successor effects remain NONE or not established as applicable.
   proves:
-    - Owner acceptance of the exact qualified public maturity synchronization candidate without expanding its evidence or effect ceiling.
+    - The exact candidate is a qualified public-repository presentation/resting-state closeout derived from established governed meaning, direct owning source currentness and accepted technical evidence.
   evidence_not_created:
-    - New Language Model implementation evidence, staging execution evidence, production evidence, Runtime evidence, authority, standing or participation.
+    - New Runtime proof or Runtime state
+    - New Full Flex technical proof
+    - New Range Reactor technical proof or benchmark result
+    - New deployment or release effect
+    - New authority, standing or Runtime participation
+    - Any successor operation
 stop_condition:
-  - Merge only the exact ACCEPT candidate after all applicable checks are terminal green.
-  - Preserve accepted standing 52/53 and all Runtime, deployment, release, authority, standing and participation effects as NONE or separately owned.
+  - Exact PUBLISH candidate passes applicable public repository validation, CodeQL and EHCO Assistant Operation Gate.
+  - Candidate remains unmerged until lawful ACCEPT transition records the exact reviewed PUBLISH head.
+  - Stop with accepted standing 52/53 preserved and all Runtime, deployment, release, authority, standing, participation and successor effects remaining NONE or not established as applicable.
