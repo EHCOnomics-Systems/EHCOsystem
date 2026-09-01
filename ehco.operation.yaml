@@ -76,6 +76,7 @@ scope:
     - evidence/runtime/full-flex/v1/**
     - range-reactor/README.md
     - range-reactor/evidence/operational-closure-v1/**
+    - assurance/CLAIM-EVIDENCE-MATRIX.md
     - assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md
     - assurance/PUBLIC-CLAIM-REGISTRY.json
     - releases/PUBLIC-RELEASE-REGISTER.md
