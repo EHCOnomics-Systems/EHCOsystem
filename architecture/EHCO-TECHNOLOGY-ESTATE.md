@@ -1,6 +1,6 @@
 ---
 title: EHCOsystem — An Instantiated AI Ecosystem
-version: 2.0
+version: 2.1
 status: current-public-architecture
 published: 2026-09-01
 maintainer: EHCOnomics
@@ -18,13 +18,13 @@ EHCOsystem is a governed computational estate in which identity, authority, stat
 
 **EHCO AI-OS is the realized Tier One Runtime and governing foundation of EHCOsystem.** Its accepted standing is **52/53**, and its accepted Runtime maturity is **`REALIZED / COMPLETE_IN_ACCEPTED_SCOPE`**.
 
-Tier One owns the Runtime relationships through which authority, recognized state, transition, consequence, continuity, persistence, withholding, release, correction, recovery, and Runtime-originated proof acquire operational meaning.
+**`INSTANTIATED_EHCO_RUNTIME`** owns Tier One Runtime authority and Runtime state. Through that instantiated Runtime authority, the governing relationships for recognized state, transition, consequence, continuity, persistence, withholding, release, correction, recovery, and Runtime-originated proof acquire operational meaning.
 
 ## Primary accessible Runtime projection
 
 `EHCO_DOCKER_PORTABILITY` is the **PRIMARY_ACCESSIBLE_RUNTIME_PROJECTION** and the **fully containerized, deployment-ready portable delivery form** of the established EHCO AI-OS hardened Runtime/root-image lineage.
 
-Accepted technical evidence establishes local Docker operation, relaunch behavior, service health, networking, persistent Runtime/proof/data surfaces, hardened image identity, and the operating relationships represented by the current Full Flex public route.
+Accepted technical evidence establishes local Docker operation, relaunch behavior, service health, networking, persistent Runtime/proof/data surfaces, hardened image identity, and the operating relationships represented by the accepted Full Flex public route.
 
 The **EHCO Dashboard** is the principal established Tier Three projection baseline within this portability estate, presenting governed system posture, service coordination, evidence, health, readiness, and component relationships.
 
@@ -90,7 +90,7 @@ The downstream governed application estate includes:
 
 EHCOsystem deliberately keeps component capability, artifact/release state, service/application realization, deployment, Runtime participation, and Tier Three projection as separate dimensions. Strong maturity in one dimension is preserved without being flattened by the status of another.
 
-Downstream components contribute specialized computation. **EHCO AI-OS remains the Tier One Runtime identity**, and `INSTANTIATED_EHCO_RUNTIME` remains the owner of Runtime authority and current Runtime state.
+Downstream components contribute specialized computation. **EHCO AI-OS remains the Tier One Runtime identity**, and **`INSTANTIATED_EHCO_RUNTIME` remains the owner of Tier One Runtime authority and Runtime state**.
 
 ## Public review
 
@@ -99,6 +99,6 @@ Downstream components contribute specialized computation. **EHCO AI-OS remains t
 3. [Public Architecture Diagrams](diagrams/README.md)
 4. [Language Model](../language-model/README.md)
 5. [Range Reactor](../range-reactor/README.md)
-6. [Current Runtime / Full Flex evidence](../runtime/README.md)
+6. [Accepted Runtime / Full Flex evidence](../runtime/README.md)
 7. [Public verification](../verification/README.md)
 8. [Ecosystem Technical Diligence](../ECOSYSTEM-DILIGENCE.md)
