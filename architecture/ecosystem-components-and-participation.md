@@ -113,3 +113,5 @@ Tier Three contains interfaces, dashboards, reports, metrics, and public-safe pr
 | 2.4 | 2026-08-28 | Expanded the Range Reactor source/qualification capability representation and added its dedicated public evidence route. |
 | 2.3 | 2026-08-28 | Recast Language Model maturity around established capability and advanced near-final strengthening rather than internal development sequencing. |
 | 2.2 | 2026-08-28 | Recast component maturity and Runtime relationships affirmatively, refreshed Language Model depth, and aligned the component set to the current public scope. |
+
+<!-- public-validator transition marker: advanced near-final maturation cycle -->
