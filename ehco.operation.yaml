@@ -17,6 +17,8 @@ selection:
   durable_reference: |-
     Edward Henry selected completion of the current EHCOsystem public-repository closeout as a presentation-first operation intended to leave the public repository in a durable resting state that does not require planned near-term follow-on work. Established Runtime, EHCO_DOCKER_PORTABILITY, Full Flex and Range Reactor evidence is reused without reproof or revalidation. The sole selected additional public capability artifact is a bounded EHCO Language Model deterministic capability demonstration derived from already-established accepted component capabilities. Public presentation must be affirmative, current, non-demoting, coherent, public-safe and easy to navigate; private repository/commit/Drive/evidence-routing topology must not remain in the current public tree. The live GitHub-hosted SOW is removed so Google Drive remains the sole active SOW authority. PR #53 may be superseded by this current-main closeout route because its Draft transition is blocked by a connector capability defect.
     NEW_PATH:language-model/DETERMINISTIC-CAPABILITY-DEMONSTRATION.md
+    NEW_PATH:evidence/runtime/full-flex/v1/PUBLIC_SAFE_RECORD.json
+    NEW_PATH:verification/verify_all_public.py
     OPERATION_STABLE_ENVELOPE_CHANGE=true
   source_base_revision: f3eac9d3b38579d480b22c525a31decda65f827e
   expected_reviewed_head_revision: NOT_YET_QUALIFIED
@@ -59,36 +61,57 @@ execution_continuity:
   local_override: MAY_TIGHTEN_NOT_WEAKEN
 scope:
   permitted_paths:
-    - ehco.operation.yaml
-    - README.md
-    - LIBRARY.md
+    - .github/workflows/validate-public-evidence.yml
     - ECOSYSTEM-DILIGENCE.md
-    - TECHNICAL-DILIGENCE.md
+    - LIBRARY.md
     - PROVENANCE.md
-    - getting-started/**
+    - README.md
+    - TECHNICAL-DILIGENCE.md
     - architecture/EHCO-TECHNOLOGY-ESTATE.md
-    - architecture/ecosystem-components-and-participation.md
     - architecture/diagrams/README.md
-    - language-model/README.md
-    - language-model/DETERMINISTIC-CAPABILITY-DEMONSTRATION.md
-    - runtime/README.md
-    - evidence/README.md
-    - evidence/runtime/full-flex/v1/**
-    - range-reactor/README.md
-    - range-reactor/evidence/operational-closure-v1/**
+    - architecture/ecosystem-components-and-participation.md
     - assurance/CLAIM-EVIDENCE-MATRIX.md
     - assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md
     - assurance/PUBLIC-CLAIM-REGISTRY.json
-    - releases/PUBLIC-RELEASE-REGISTER.md
     - dossiers/README.md
     - dossiers/public-technical-packaging/SCOPE-OF-WORK.md
-    - verification/**
-    - .github/workflows/validate-public-evidence.yml
-  controlled_paths:
     - ehco.operation.yaml
-    - assurance/PUBLIC-CLAIM-REGISTRY.json
-    - verification/**
+    - evidence/README.md
+    - evidence/runtime/full-flex/v1/EHCO_FULL_FLEX_PUBLIC_PACKET_V1.json
+    - evidence/runtime/full-flex/v1/PUBLIC_SAFE_RECORD.json
+    - evidence/runtime/full-flex/v1/README.md
+    - getting-started/START-HERE.md
+    - getting-started/reading-order.md
+    - getting-started/repository-map.md
+    - language-model/DETERMINISTIC-CAPABILITY-DEMONSTRATION.md
+    - language-model/README.md
+    - range-reactor/README.md
+    - range-reactor/evidence/operational-closure-v1/PUBLIC_RESULT.json
+    - range-reactor/evidence/operational-closure-v1/README.md
+    - releases/PUBLIC-RELEASE-REGISTER.md
+    - runtime/README.md
+    - verification/README.md
+    - verification/validate_current_runtime_evidence.py
+    - verification/validate_public_claim_registry.py
+    - verification/validate_public_evidence.py
+    - verification/validate_public_lm_test_snapshot.py
+    - verification/validate_public_range_reactor_operational_closure.py
+    - verification/validate_public_range_reactor_snapshot.py
+    - verification/validate_release_identity.py
+    - verification/verify_all_public.py
+  controlled_paths:
     - .github/workflows/validate-public-evidence.yml
+    - assurance/PUBLIC-CLAIM-REGISTRY.json
+    - ehco.operation.yaml
+    - verification/README.md
+    - verification/validate_current_runtime_evidence.py
+    - verification/validate_public_claim_registry.py
+    - verification/validate_public_evidence.py
+    - verification/validate_public_lm_test_snapshot.py
+    - verification/validate_public_range_reactor_operational_closure.py
+    - verification/validate_public_range_reactor_snapshot.py
+    - verification/validate_release_identity.py
+    - verification/verify_all_public.py
   prohibited_paths:
     - AGENTS.md
     - ehco.repository.yaml
