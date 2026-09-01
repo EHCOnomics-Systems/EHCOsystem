@@ -15,25 +15,22 @@ selection:
   selected_by: Edward Henry
   selection_class: EXPLICIT_OWNER_DIRECTION
   durable_reference: |-
-    Edward Henry explicitly selected the current public-repository closeout to remain governed by the existing Drive EHCO-PUB-SOW-009 scope, clarified that finality is for the closeout being completed now rather than permanent ecosystem closure, directed that no new closeout steps be invented, and directed removal of the live GitHub Scope of Work so the active SOW is maintained in Drive only. This bounded repository operation implements only that custody and navigation cleanup; it does not select a successor or create a new development stage.
+    Edward Henry explicitly selected the current public-repository closeout to remain governed by the existing Drive EHCO-PUB-SOW-009 scope, clarified that finality is for the closeout being completed now rather than permanent ecosystem closure, directed that no new closeout steps be invented, and directed removal of the live GitHub Scope of Work so the active SOW is maintained in Drive only. This ACCEPT record admits only the exact reviewed PUBLISH basis b8dcce05cdd18730af67f28dae8d3c2f025f1f1b and closes the same bounded custody/navigation cleanup. It does not select a successor or create a new development stage.
     OPERATION_STABLE_ENVELOPE_CHANGE=true
   source_base_revision: f3eac9d3b38579d480b22c525a31decda65f827e
-  expected_reviewed_head_revision: NOT_APPLICABLE_UNTIL_ACCEPT
+  expected_reviewed_head_revision: b8dcce05cdd18730af67f28dae8d3c2f025f1f1b
 control_anchor: AGENTS.md
 status_owner_path: ehco.operation.yaml
 accepted_standing: 52/53
 active_operation:
   operation_id: EHCO-PUBLIC-REPO-CURRENT-CLOSEOUT-SOW-CUSTODY-001
-  state: ACTIVE
-  authorization_mode: PUBLISH
+  state: COMPLETE
+  authorization_mode: ACCEPT
   bounded_outcome: Remove the live GitHub-hosted public packaging SOW and its dossier navigation reference so the existing Drive EHCO-PUB-SOW-009 document remains the sole active Scope of Work for the current owner-selected public-repository closeout.
-  remaining_bounded_work:
-    - Qualify the exact repository candidate containing only the Drive-only SOW custody cleanup and operation control.
-    - Owner-accept and merge the exact qualified candidate.
-    - Reconcile repository readback and close this bounded custody operation with no automatic successor.
+  remaining_bounded_work: []
   interaction_seams:
     - Google Drive owns the active EHCO-PUB-SOW-009 Scope of Work and durable closeout meaning.
-    - EHCOnomics-Systems/EHCOsystem owns the public repository content and navigation surfaces being cleaned here.
+    - EHCOnomics-Systems/EHCOsystem owns the public repository content and navigation surfaces cleaned here.
     - Historical Git commits and pull-request records remain repository history and are not active SOW authority.
     - INSTANTIATED_EHCO_RUNTIME retains Tier One Runtime authority and current Runtime state.
   non_overlap:
@@ -84,14 +81,16 @@ change_control:
     - move_file
     - generate_artifact
   remote_actions_authorized:
+    - mark_pull_request_ready_for_review
+    - merge_pull_request
+    - record_owner_acceptance
+    - close_operation
+  remote_actions_prohibited:
+    - create_branch
     - commit
     - push
     - open_draft_pull_request
     - update_draft_pull_request
-  remote_actions_prohibited:
-    - mark_pull_request_ready_for_review
-    - merge_pull_request
-    - record_owner_acceptance
     - activate_selected_successor
     - trigger_workflow
     - mutate_environment
@@ -118,16 +117,17 @@ bridge:
   participation_binding_status: NOT_ESTABLISHED
   canonical_runtime_receipt_status: NOT_ESTABLISHED
 evidence:
-  evidence_class: REPOSITORY_SOURCE_AND_DIFF_VALIDATION
+  evidence_class: OWNER_ACCEPTANCE_RECORD
   required_checks:
+    - Exact reviewed PUBLISH head b8dcce05cdd18730af67f28dae8d3c2f025f1f1b passed the EHCO Assistant Operation Gate.
     - The GitHub-hosted SOW path is absent from the exact candidate.
     - The canonical dossier README no longer links to a GitHub-hosted SOW.
     - The existing Drive EHCO-PUB-SOW-009 document remains the sole active SOW authority for this selected current public-repository closeout.
     - Candidate changes remain limited to ehco.operation.yaml, dossiers/README.md and deletion of dossiers/public-technical-packaging/SCOPE-OF-WORK.md.
-    - Required repository checks pass on the exact PUBLISH candidate.
+    - Required repository checks pass on the exact ACCEPT candidate before merge.
   proves:
+    - Owner acceptance of the exact qualified Drive-only SOW custody cleanup without expanding its effect ceiling.
     - The public repository no longer publishes or navigates to a live GitHub Scope of Work for this closeout.
-    - The repository operation preserves Drive-first Scope of Work custody without creating a successor or new closeout stage.
   evidence_not_created:
     - Runtime evidence
     - deployment evidence
@@ -135,4 +135,5 @@ evidence:
     - new technical capability evidence
     - authority or standing change
 stop_condition:
-  - Stop only after the exact qualified candidate is owner-accepted, merged, read back, and this bounded custody operation is reconciled COMPLETE with no remaining bounded work.
+  - Merge only the exact ACCEPT candidate after all applicable checks are terminal green.
+  - Preserve accepted standing 52/53 and all Runtime, deployment, release, authority and standing effects as NONE or separately owned.
