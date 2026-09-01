@@ -23,13 +23,13 @@ The public architecture is easiest to read in this order:
 
 ## Tier One Runtime
 
-**EHCO AI-OS** owns the governing Runtime relationships for authority, recognized state, transition, consequence, continuity, persistence, withholding/release, correction/recovery, and Runtime-originated proof.
+**EHCO AI-OS** is the Tier One Runtime system identity. **`INSTANTIATED_EHCO_RUNTIME`** owns Tier One Runtime authority and Runtime state, including the governing relationships for recognized state, transition, consequence, continuity, persistence, withholding/release, correction/recovery, and Runtime-originated proof.
 
 `EHCO_DOCKER_PORTABILITY` is the **PRIMARY_ACCESSIBLE_RUNTIME_PROJECTION** and the **fully containerized, deployment-ready portable delivery form** of the established hardened Runtime/root-image lineage.
 
 Accepted technical evidence establishes physical self-hosted local Docker operation, Dashboard/bridge/worker relationships, networking, persistent Runtime/proof/data surfaces, health behavior, and hardened image identity.
 
-**[Explore the current Runtime / Full Flex public route →](runtime/README.md)**
+**[Explore the accepted Runtime / Full Flex public route →](runtime/README.md)**
 
 ## Shared technology spine
 
@@ -91,12 +91,12 @@ The EHCO Dashboard provides a Tier Three visual projection of governed system po
 
 Public evidence follows the technology it supports:
 
-- **Runtime / Full Flex:** [current public Runtime evidence](runtime/README.md)
+- **Runtime / Full Flex:** [accepted public Runtime evidence](runtime/README.md)
 - **Language Model:** [deterministic capability demonstration](language-model/DETERMINISTIC-CAPABILITY-DEMONSTRATION.md) and [Public Test Snapshot v1](language-model/evidence/public-test-snapshot-v1/README.md)
 - **Range Reactor:** [Public Capability Snapshot v1](range-reactor/evidence/public-capability-snapshot-v1/README.md) and [Operational Closure Evidence v1](range-reactor/evidence/operational-closure-v1/README.md)
 - **Machine-readable claims:** [Canonical Public Claim Registry](assurance/PUBLIC-CLAIM-REGISTRY.json)
 
-The Full Flex public route preserves the accepted packet identity and receipt through a public-safe record; internal source-routing metadata remains outside the current public tree.
+The Full Flex public route preserves the accepted packet identity and receipt through a public-safe record; internal source-routing metadata remains outside the public repository.
 
 ## Verify
 
