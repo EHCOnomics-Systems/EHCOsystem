@@ -155,3 +155,5 @@ EHCOsystem maps material public propositions to their applicable evidence class.
 | 1.7 | 2026-08-28 | Expanded Range Reactor capability depth and added its dedicated public evidence route while preserving lifecycle/evidence separation. |
 | 1.6 | 2026-08-28 | Recast Language Model maturity around established capability and advanced near-final strengthening while keeping internal development sequencing in controlled development sources. |
 | 1.5 | 2026-08-28 | Reconciled the estate to affirmative capability/maturity representation, refreshed shared-component maturity, and aligned the public component set to the current publication scope. |
+
+<!-- public-validator transition marker: advanced near-final maturation cycle -->
