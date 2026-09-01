@@ -12,7 +12,7 @@ The package contains **7 fixture artifacts and 62 explicit test cases** spanning
 
 The snapshot is **exact repository test-artifact evidence**. It establishes the published fixture bytes, inputs, expected dispositions, case counts, identities, and provenance bindings.
 
-The broader Language Model maturity record is grounded in the current controlled source and qualification estate. This snapshot provides a public inspection window into that larger system.
+The broader Language Model maturity record is grounded in accepted controlled source and qualification evidence. This snapshot provides a public inspection window into that larger system.
 
 ## Historical fixture lineage
 
@@ -37,7 +37,7 @@ Public inspection uses exact safe fixture artifacts and a source-reviewed qualif
 ## Evidence relationships
 
 - **Selected test-artifact identity and contents:** this snapshot and manifest.
-- **Language Model implementation and maturity:** current controlled source and qualification estate.
-- **Tier One Runtime authority and current Runtime state:** instantiated EHCO Runtime evidence.
+- **Language Model implementation and maturity:** accepted controlled source and qualification evidence.
+- **Tier One Runtime authority and Runtime state:** owning instantiated Runtime evidence.
 
 Use of these materials is governed by the repository root `LICENSE`.
