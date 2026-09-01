@@ -30,20 +30,5 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Validate public evidence and semantic boundaries
-        run: python3 verification/validate_public_evidence.py
-
-      - name: Validate canonical public claim registry and final-closeout representation
-        run: python3 verification/validate_public_claim_registry.py
-
-      - name: Validate current Runtime evidence precedence and Full Flex identity
-        run: python3 verification/validate_current_runtime_evidence.py
-
-      - name: Validate public Language Model test snapshot
-        run: python3 verification/validate_public_lm_test_snapshot.py
-
-      - name: Validate public Range Reactor capability snapshot
-        run: python3 verification/validate_public_range_reactor_snapshot.py
-
-      - name: Validate canonical public release identity
-        run: python3 verification/validate_release_identity.py
+      - name: Validate complete public repository
+        run: python3 verification/verify_all_public.py
