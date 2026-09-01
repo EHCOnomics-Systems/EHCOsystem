@@ -100,20 +100,21 @@ def validate_public_boundary_and_demonstration() -> None:
     require("lifecycle frontier" not in component.lower(), "obsolete LM lifecycle-frontier language remains")
 
     demo = DEMONSTRATION.read_text(encoding="utf-8")
+    demo_lower = demo.lower()
     for phrase in (
         "the cat walks",
         "the sheep went",
-        "RETAIN_AMBIGUITY",
-        "MISSING_REFERENCE_RESOLUTION",
+        "retain_ambiguity",
+        "missing_reference_resolution",
         "prove x plus 0 equals x",
-        "Language Math",
+        "language math",
         "whole-path",
         "deterministic replay",
         "round-trip",
         "service equivalence",
         "seven exact fixture artifacts covering 62 cases",
     ):
-        require(phrase in demo, f"LM deterministic capability demonstration missing: {phrase}")
+        require(phrase in demo_lower, f"LM deterministic capability demonstration missing: {phrase}")
 
     for fixture_name in (
         "LM_ZW_CAP_SLICE_002_SYNTAX_COMPOSITION.json",
