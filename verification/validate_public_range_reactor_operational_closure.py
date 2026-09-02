@@ -6,6 +6,8 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
+from public_disclosure_policy import find_disclosure_violations, run_synthetic_policy_self_test
+
 ROOT = Path(__file__).resolve().parents[1]
 RESULT = ROOT / "range-reactor" / "evidence" / "operational-closure-v1" / "PUBLIC_RESULT.json"
 README = ROOT / "range-reactor" / "evidence" / "operational-closure-v1" / "README.md"
@@ -21,6 +23,12 @@ def checked(condition: bool, message: str) -> None:
 
 
 def main() -> int:
+    try:
+        run_synthetic_policy_self_test()
+        checked(True, "Public disclosure policy synthetic self-test failed")
+    except AssertionError as exc:
+        checked(False, f"Public disclosure policy synthetic self-test failed: {exc}")
+
     checked(RESULT.is_file(), "RR operational-closure PUBLIC_RESULT.json missing")
     checked(README.is_file(), "RR operational-closure README missing")
     try:
@@ -104,16 +112,9 @@ def main() -> int:
     ]:
         checked(phrase in readme, f"RR operational-closure README missing representation: {phrase}")
 
-    forbidden_public_text = [
-        "EHCOnomics-Systems/EHCO_Range_Reactor",
-        "eae888b784620ed37ed7d6704bcd91dedcf92936",
-        "e72b2a29e52878d300b44f0286259466352f73cc",
-        "42d7e0d448a59b82d15eade58e11d8de9407f7f2",
-        "149314be7c4302d66bd93ac112e062292a2e815b",
-    ]
     combined = RESULT.read_text(encoding="utf-8-sig") + "\n" + readme
-    for value in forbidden_public_text:
-        checked(value not in combined, f"RR public operational closure exposes private locator: {value}")
+    violations = find_disclosure_violations(combined, "RR operational closure public projection")
+    checked(not violations, "RR public operational closure exposes prohibited source/topology information")
 
     if ERRORS:
         print(f"EHCOsystem RR operational-closure validation: FAIL ({len(ERRORS)} errors / {CHECKS} checks)")
