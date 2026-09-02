@@ -18,11 +18,13 @@ selection:
     Edward Henry selected execution of the next SOW-010 steps with private repository/source-topology exposure handled first. The authoritative Scope of Work remains in private Google Drive custody; GitHub contains only this public-safe operation projection and the repository work performed under it. This BUILD operation begins with whole-public-surface exposure inventory and current/editable disclosure-control hardening before reader-facing technical-publication expansion.
     SOURCE_BASE:5cd2753eaaef81fcbdf9260c9164392f5b924b7c
     BRANCH:sow010/public-surface-hardening
+    NEW_PATH:verification/public_disclosure_policy.py
     SOW_DOCUMENT_PUBLICATION=false
     PRIVATE_TOPOLOGY_DISCLOSURE=false
     DESTRUCTIVE_HISTORY_REWRITE=false
+    OPERATION_STABLE_ENVELOPE_CHANGE=true
   source_base_revision: 5cd2753eaaef81fcbdf9260c9164392f5b924b7c
-  expected_reviewed_head_revision: NOT_YET_ESTABLISHED
+  expected_reviewed_head_revision: NOT_APPLICABLE_UNTIL_ACCEPT
 control_anchor: AGENTS.md
 status_owner_path: ehco.operation.yaml
 accepted_standing: 52/53
@@ -30,23 +32,23 @@ active_operation:
   operation_id: EHCOSYSTEM-PUBLIC-SOW010-ZERO-EXPOSURE-001
   state: ACTIVE
   authorization_mode: BUILD
-  bounded_outcome: Build a qualified public-surface privacy-hardening candidate that removes known prohibited private implementation/source-topology exposure from current editable public repository/provider surfaces, replaces unsafe literal-based disclosure checks with public-safe structural enforcement, inventories residual provider/history exposure, and preserves established public-safe technical evidence and publication depth.
+  bounded_outcome: Build and qualify a bounded public-surface privacy-hardening candidate that removes known prohibited private implementation/source-topology exposure from current editable public repository/provider surfaces, replaces unsafe literal-based disclosure checks with public-safe structural enforcement, inventories residual provider/history exposure, and preserves established public-safe technical evidence and publication depth.
   remaining_bounded_work:
-    - Complete whole-public-GitHub-surface exposure inventory for the selected privacy-first workstream.
-    - Remove real protected locator literals from current public validation/control source.
-    - Replace literal private-token enforcement with public-safe structural, schema, allowlist, and synthetic-fixture controls.
+    - Complete the selected whole-public-GitHub-surface exposure inventory.
+    - Remove real protected locator literals from current public validation/control source and public machine records.
+    - Replace literal private-token enforcement with public-safe structural and synthetic-fixture controls.
     - Audit current editable public repository/provider metadata and workflow/log surfaces for prohibited topology exposure.
     - Establish any remaining historical/provider-retained exposure and classify its lawful remediation boundary.
-    - Qualify the exact BUILD candidate under applicable public repository validation, CodeQL, and EHCO Assistant Operation Gate conditions before any later PUBLISH/ACCEPT transition.
+    - Qualify the exact BUILD candidate through canonical public validation, CodeQL/security checks and the EHCO Assistant Operation Gate before any later authorization transition.
   interaction_seams:
-    - Private Google Drive SOW-010 owns the durable objective, scope, disclosure law, exclusions, and effect ceiling.
-    - EHCOnomics-Systems/EHCOsystem owns exact repository implementation and public provider state.
-    - Existing owning technical evidence retains all established Runtime, artifact, benchmark, proof, capability, release, and standing effects.
-    - INSTANTIATED_EHCO_RUNTIME retains Tier One Runtime authority and current Runtime state.
+    - Private Google Drive SOW-010 owns the durable objective, scope, disclosure law, exclusions and effect ceiling.
+    - EHCOnomics-Systems/EHCOsystem owns exact public repository implementation and provider state.
+    - Existing owning technical evidence retains all established Runtime, artifact, benchmark, proof, capability, release and standing effects.
+    - INSTANTIATED_EHCO_RUNTIME retains Tier One Runtime authority and Runtime state.
   non_overlap:
     - The private Scope of Work document itself is not published to GitHub.
-    - No open-source conversion, proprietary implementation-source distribution, new technical proof campaign, Runtime observation/invocation/admission/binding, deployment, production rollout, standing change, or automatic successor.
-    - No destructive Git history rewrite, repository replacement, provider purge, Wiki/Pages/Discussions enablement, tag/Release materialization, or merge/owner acceptance is authorized by this BUILD operation.
+    - No open-source conversion, proprietary implementation-source distribution, new technical proof campaign, Runtime observation/invocation/admission/binding, deployment, production rollout, release, authority change, standing change, participation change or automatic successor.
+    - No destructive Git history rewrite, repository replacement, provider purge, repository-setting mutation, provider-publication-feature enablement, tag/Release materialization, merge or owner acceptance is included.
   automatic_successor: PROHIBITED
   successor_operation: NOT_SELECTED
 execution_continuity:
@@ -62,45 +64,36 @@ execution_continuity:
 scope:
   permitted_paths:
     - ehco.operation.yaml
-    - verification/**
-    - .github/pull_request_template.md
-    - .github/workflows/**
-    - README.md
-    - NOTICE.md
-    - LIBRARY.md
-    - PROVENANCE.md
-    - GOVERNANCE.md
-    - ECOSYSTEM-DILIGENCE.md
-    - TECHNICAL-DILIGENCE.md
-    - getting-started/**
-    - architecture/**
-    - language-model/**
-    - range-reactor/**
-    - runtime/**
-    - evidence/**
-    - assurance/**
-    - releases/**
+    - range-reactor/evidence/public-capability-snapshot-v1/MANIFEST.json
+    - verification/public_disclosure_policy.py
+    - verification/validate_current_runtime_evidence.py
+    - verification/validate_public_claim_registry.py
+    - verification/validate_public_evidence.py
+    - verification/validate_public_range_reactor_operational_closure.py
+    - verification/validate_public_range_reactor_snapshot.py
   controlled_paths:
     - ehco.operation.yaml
-    - verification/**
-    - .github/**
-    - README.md
-    - NOTICE.md
-    - LIBRARY.md
-    - PROVENANCE.md
-    - GOVERNANCE.md
-    - ECOSYSTEM-DILIGENCE.md
-    - TECHNICAL-DILIGENCE.md
-    - getting-started/**
-    - architecture/**
-    - language-model/**
-    - range-reactor/**
-    - runtime/**
-    - evidence/**
-    - assurance/**
-    - releases/**
+    - range-reactor/evidence/public-capability-snapshot-v1/MANIFEST.json
+    - verification/public_disclosure_policy.py
+    - verification/validate_current_runtime_evidence.py
+    - verification/validate_public_claim_registry.py
+    - verification/validate_public_evidence.py
+    - verification/validate_public_range_reactor_operational_closure.py
+    - verification/validate_public_range_reactor_snapshot.py
   prohibited_paths:
+    - AGENTS.md
     - ehco.repository.yaml
+    - .github/CODEOWNERS
+    - .github/ISSUE_TEMPLATE/**
+    - .github/pull_request_template.md
+    - .github/workflows/codeql.yml
+    - .github/workflows/ehco-assistant-operation-gate.yml
+    - evidence/public-evidence-companion/**
+    - language-model/evidence/public-test-snapshot-v1/actual-tests/**
+    - language-model/evidence/public-test-snapshot-v1/MANIFEST.json
+    - language-model/evidence/public-test-snapshot-v1/QUALIFICATION_TEST_INDEX_2026-08-24.md
+    - range-reactor/evidence/operational-closure-v1/PUBLIC_RESULT.json
+    - dossiers/EHCO_AI_OS_Governed_Operational_Architecture_Public_Edition_v1_8_LOCK_FINAL.pdf
 change_control:
   control_change_declared: true
   delete_or_move_authorized: false
@@ -108,10 +101,11 @@ change_control:
     - read_source
     - compare_source
     - audit
+    - propose
     - update_file
-    - create_file
     - run_checks
   local_actions_prohibited:
+    - create_file
     - move_file
     - delete_file
     - generate_artifact
@@ -128,6 +122,7 @@ change_control:
     - close_operation
     - activate_selected_successor
     - modify_repository_settings
+    - modify_drive_controls
     - publish_image
     - mutate_environment
     - deploy
@@ -136,16 +131,13 @@ change_control:
     - invoke_runtime
     - admit_runtime
     - bind_runtime
-    - destructive_history_rewrite
-    - replace_repository
-    - enable_provider_publication_features
 effects:
   authority_effect: NONE
   standing_effect: NONE
   runtime_effect: NONE
   deployment_effect: NONE
   release_effect: NONE
-  external_effect: PUBLIC_REPOSITORY_BUILD_BRANCH_ONLY
+  external_effect: NONE
 bridge:
   applicability: NOT_APPLICABLE_NON_PARTICIPANT
   non_applicability_reason: Public repository privacy and technical-publication work does not establish Tier One Runtime participation.
@@ -154,27 +146,29 @@ bridge:
   participation_binding_status: NOT_ESTABLISHED
   canonical_runtime_receipt_status: NOT_ESTABLISHED
 evidence:
-  evidence_class: PUBLIC_REPOSITORY_BUILD_CANDIDATE
+  evidence_class: REPOSITORY_SOURCE_AND_DIFF_VALIDATION
   required_checks:
     - Exact source base is canonical main 5cd2753eaaef81fcbdf9260c9164392f5b924b7c at operation start.
-    - The private SOW remains in Drive custody and no Drive ID or URL is introduced into public GitHub content by this operation.
-    - Current validator/control source contains no real protected private repository/source locator values in the qualified candidate.
-    - Public disclosure regression controls operate without embedding protected identities.
-    - Established public-safe architecture, capability, evidence, benchmarks, Runtime representation, and accepted numerical standing are not demoted merely because implementation custody is proprietary.
+    - The private Scope of Work remains in Drive custody and no private Drive routing identifier or URL is introduced into public GitHub content by this operation.
+    - Current validator/control source and selected public machine records contain no known real protected private repository/source locator values in the qualified candidate.
+    - Public disclosure regression controls operate structurally with synthetic fixtures rather than publishing protected identities.
+    - Established public-safe architecture, capability, evidence, benchmarks, Runtime representation and accepted numerical standing are not demoted merely because implementation custody is proprietary.
     - Any historical/provider-retained exposure requiring destructive remediation is stopped at the owner-level decision boundary.
-    - Exact candidate passes applicable canonical public repository validation, CodeQL, and EHCO Assistant Operation Gate conditions before later publication/acceptance.
+    - Canonical public repository validation passes on the exact reviewed candidate.
+    - CodeQL/security checks required by repository or organization rules pass on the exact reviewed candidate.
+    - The EHCO Assistant Operation Gate passes on the exact reviewed candidate.
     - Accepted numerical standing remains 52/53.
   proves:
-    - Bounded repository-source BUILD work under SOW-010 privacy-first public-surface hardening.
+    - Repository-source and exact-diff qualification of the bounded SOW-010 privacy-first public-surface hardening BUILD candidate only.
   evidence_not_created:
     - New technical proof or Runtime state
     - New component/application lifecycle state
-    - Deployment, production, or release effect
-    - Authority, standing, or Runtime participation change
+    - Deployment, production or release effect
+    - Authority, standing or Runtime participation change
     - Proprietary implementation source publication or transfer
-    - Owner acceptance, merge, or successor operation
+    - Owner acceptance, merge or successor operation
 stop_condition:
   - Current/editable prohibited topology exposure is removed or an exact capability/authorization boundary is established.
   - Residual historical/provider exposure is classified and any destructive-remediation requirement is returned as an owner-level choice rather than silently executed.
-  - The exact BUILD candidate is qualified under applicable repository controls or stopped at a genuine external capability/authorization boundary.
-  - No PUBLISH, ACCEPT, merge, provider-feature, release, deployment, Runtime, authority, standing, or successor effect occurs without separate selection.
+  - The exact BUILD candidate passes applicable canonical public validation, CodeQL and EHCO Assistant Operation Gate, or stops at a genuine external capability/authorization boundary.
+  - No later authorization, merge, provider-feature, release, deployment, Runtime, authority, standing or successor effect occurs without separate selection.
