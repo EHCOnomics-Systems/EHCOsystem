@@ -15,24 +15,22 @@ selection:
   selected_by: Edward Henry
   selection_class: EXPLICIT_OWNER_DIRECTION
   durable_reference: |-
-    Edward Henry selected closure of the two remaining administrative temporal residues only: reconcile the completed public-repository operation record to timeless completed-state wording and reconcile the existing Drive SOW chronology after the resulting provider merge. No reader-facing technical content, architecture, component/application/property presentation, evidence, maturity, Runtime, deployment, release, authority, participation, standing, or successor state is changed by this operation.
+    Edward Henry selected closure of the two remaining administrative temporal residues only: reconcile the completed public-repository operation record to timeless completed-state wording and reconcile the existing Drive SOW chronology after provider integration. No reader-facing technical content, architecture, component/application/property presentation, evidence, maturity, Runtime, deployment, release, authority, participation, standing, or successor state is changed by this operation.
     SOURCE_BASE:cfbf009f272fd6457ec4af9a115401fe9051e57b
     BRANCH:closeout/final-temporal-reconciliation-v24
+    REVIEWED_PUBLISH_HEAD:092cc7d9b114ede673e920b024e7710097562efc
     OPERATION_STABLE_ENVELOPE_CHANGE=true
   source_base_revision: cfbf009f272fd6457ec4af9a115401fe9051e57b
-  expected_reviewed_head_revision: NOT_APPLICABLE_UNTIL_ACCEPT
+  expected_reviewed_head_revision: 092cc7d9b114ede673e920b024e7710097562efc
 control_anchor: AGENTS.md
 status_owner_path: ehco.operation.yaml
 accepted_standing: 52/53
 active_operation:
   operation_id: EHCOSYSTEM-PUBLIC-FINAL-TEMPORAL-RECONCILIATION-001
-  state: ACTIVE
-  authorization_mode: PUBLISH
-  bounded_outcome: Remove the final pre-merge temporal residue from the completed public operation record without changing any established public technical meaning or system state.
-  remaining_bounded_work:
-    - Replace future-oriented provider-merge wording in the completed operation record with durable acceptance/integration boundary wording that remains correct before and after provider integration.
-    - Qualify the exact one-file candidate through the existing repository checks.
-    - Reconcile the governing Drive SOW chronology after canonical main readback.
+  state: COMPLETE
+  authorization_mode: ACCEPT
+  bounded_outcome: Owner acceptance of the exact qualified one-file temporal reconciliation candidate while preserving all established public technical meaning and system state.
+  remaining_bounded_work: []
   interaction_seams:
     - Google Drive EHCO-PUB-SOW-009 v2.4 owns durable closeout meaning.
     - EHCOnomics-Systems/EHCOsystem owns the exact repository control record.
@@ -91,16 +89,16 @@ change_control:
     - delete_file
     - generate_artifact
   remote_actions_authorized:
+    - mark_pull_request_ready_for_review
+    - merge_pull_request
+    - record_owner_acceptance
+    - close_operation
+  remote_actions_prohibited:
     - create_branch
     - commit
     - push
     - open_draft_pull_request
     - update_draft_pull_request
-  remote_actions_prohibited:
-    - mark_pull_request_ready_for_review
-    - merge_pull_request
-    - record_owner_acceptance
-    - close_operation
     - activate_selected_successor
     - modify_repository_settings
     - modify_drive_controls
@@ -127,15 +125,16 @@ bridge:
   participation_binding_status: NOT_ESTABLISHED
   canonical_runtime_receipt_status: NOT_ESTABLISHED
 evidence:
-  evidence_class: REPOSITORY_SOURCE_AND_DIFF_VALIDATION
+  evidence_class: OWNER_ACCEPTANCE_RECORD
   required_checks:
-    - The exact candidate changes only ehco.operation.yaml.
-    - The completed-operation boundary wording contains no stale future-tense assertion that an already-completed provider merge or canonical-main update remains pending.
+    - Reviewed PUBLISH head 092cc7d9b114ede673e920b024e7710097562efc changed only ehco.operation.yaml.
+    - Reviewed PUBLISH head 092cc7d9b114ede673e920b024e7710097562efc passed canonical public repository validation.
+    - Reviewed PUBLISH head 092cc7d9b114ede673e920b024e7710097562efc passed CodeQL.
+    - Reviewed PUBLISH head 092cc7d9b114ede673e920b024e7710097562efc passed the EHCO Assistant Operation Gate.
+    - The accepted candidate removes the identified temporal residue without changing reader-facing technical, architecture, component/application/property, evidence, maturity, Runtime, deployment, release, authority, participation, standing, or successor statements.
     - Accepted numerical standing remains 52/53.
-    - No established reader-facing technical, architecture, component/application/property, evidence, maturity, Runtime, deployment, release, authority, participation, or successor statement is changed.
-    - Exact candidate passes canonical public repository validation, CodeQL, and EHCO Assistant Operation Gate before ACCEPT.
   proves:
-    - The exact repository control candidate removes the identified temporal residue without changing the accepted public technical representation.
+    - Owner-selected repository-source acceptance of the exact qualified one-file temporal reconciliation candidate.
   evidence_not_created:
     - New technical proof or Runtime state
     - New component/application lifecycle state
@@ -143,6 +142,6 @@ evidence:
     - New authority, standing or Runtime participation
     - Any successor operation
 stop_condition:
-  - Exact PUBLISH candidate passes canonical public repository validation, CodeQL and EHCO Assistant Operation Gate.
-  - Acceptance is limited to the exact qualified one-file control candidate and its control-only ACCEPT transition.
-  - Accepted standing remains 52/53 and all Runtime, deployment, release, authority, standing, participation and successor effects remain NONE or not established as applicable.
+  - Acceptance is bound to reviewed PUBLISH head 092cc7d9b114ede673e920b024e7710097562efc and its control-only ACCEPT transition.
+  - Provider integration preserves the exact accepted content under normal repository protections.
+  - Canonical main preserves accepted standing 52/53 and all Runtime, deployment, release, authority, standing, participation and successor effects as NONE or not established as applicable.
