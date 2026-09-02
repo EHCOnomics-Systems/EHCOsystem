@@ -1,0 +1,25 @@
+{
+    "packet_id":  "08_SUITE_VERIFICATION_AND_FINAL_ZIP",
+    "verified_at_utc":  "2026-07-17T02:38:51.3663056Z",
+    "status":  "PASS",
+    "verification_scope":  "SUITE_PACKET_AND_PUBLIC_DISCLOSURE_INTEGRITY",
+    "prior_packets_checked":  8,
+    "prior_packets_passed":  8,
+    "total_packets":  9,
+    "dossier_sha256":  "F489BA01961A12CF101B1F1DF57E6958456A0840BEB798B862FA97ACB030892D",
+    "content_manifest_sha256":  "48587517844AA0DFA1DFD67A3250A016D845D670082B32F1B24FEA59A10A4847",
+    "public_disclosure_policy_checked":  true,
+    "historical_raw_path_findings":  1,
+    "historical_raw_path_findings_allowed":  1,
+    "verification_tools_included":  1,
+    "verification_tools_allowed":  1,
+    "implementation_source_files_included":  0,
+    "secret_indicator_findings":  0,
+    "external_release_authorized":  false,
+    "production_activation_authorized":  false,
+    "errors":  [
+
+               ],
+    "authority_effect":  "NONE",
+    "standing_effect":  "NONE"
+}

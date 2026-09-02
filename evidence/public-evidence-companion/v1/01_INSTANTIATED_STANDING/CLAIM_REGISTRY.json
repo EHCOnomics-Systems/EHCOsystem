@@ -1,0 +1,99 @@
+{
+    "schema":  "EHCO_PUBLIC_EVIDENCE_CLAIM_REGISTRY_V1",
+    "packet_id":  "01_INSTANTIATED_STANDING",
+    "claims":  [
+                   {
+                       "claim_id":  "P01-C001",
+                       "claim":  "EHCO AI-OS has an accepted operational baseline spanning Runtime, Governance, Persistence, Observability, and Recovery.",
+                       "claim_class":  "STANDING",
+                       "source_class":  "PUBLIC_DOSSIER_AND_CANONICAL_STANDING",
+                       "dossier_pages":  [
+                                             2,
+                                             6,
+                                             38,
+                                             39
+                                         ],
+                       "evidence_refs":  [
+                                             "STANDING_RECORD.json",
+                                             "STANDING_SCOPE_AND_DELIVERY_SEPARATION.json"
+                                         ],
+                       "status":  "ACCEPTED",
+                       "authority_effect":  "NONE",
+                       "standing_effect":  "NONE"
+                   },
+                   {
+                       "claim_id":  "P01-C002",
+                       "claim":  "The accepted standing lineage is preserved through the 52/53 standing corridor and the V23 runtime authority route.",
+                       "claim_class":  "STANDING_LINEAGE",
+                       "source_class":  "CANONICAL_STANDING_LINEAGE",
+                       "dossier_pages":  [
+
+                                         ],
+                       "evidence_refs":  [
+                                             "STANDING_RECORD.json"
+                                         ],
+                       "status":  "ACCEPTED",
+                       "authority_effect":  "NONE",
+                       "standing_effect":  "NONE"
+                   },
+                   {
+                       "claim_id":  "P01-C003",
+                       "claim":  "Tier 1 remains the recognition point for standing, authority, transition, truth, persistence, and recovery.",
+                       "claim_class":  "AUTHORITY_BOUNDARY",
+                       "source_class":  "PUBLIC_DOSSIER",
+                       "dossier_pages":  [
+                                             2,
+                                             4,
+                                             9,
+                                             12,
+                                             39
+                                         ],
+                       "evidence_refs":  [
+                                             "STANDING_RECORD.json"
+                                         ],
+                       "status":  "ARCHITECTURALLY_AND_OPERATIONALLY_BOUND",
+                       "authority_effect":  "NONE",
+                       "standing_effect":  "NONE"
+                   },
+                   {
+                       "claim_id":  "P01-C004",
+                       "claim":  "The standing baseline does not automatically confer implementation, validation, deployment, commercial, release, ingress, or go-live status on wider corridors.",
+                       "claim_class":  "STATUS_SEPARATION",
+                       "source_class":  "PUBLIC_DOSSIER",
+                       "dossier_pages":  [
+                                             2,
+                                             6,
+                                             32,
+                                             36,
+                                             38,
+                                             39,
+                                             40
+                                         ],
+                       "evidence_refs":  [
+                                             "STANDING_SCOPE_AND_DELIVERY_SEPARATION.json"
+                                         ],
+                       "status":  "BOUNDARY_CONFIRMED",
+                       "authority_effect":  "NONE",
+                       "standing_effect":  "NONE"
+                   },
+                   {
+                       "claim_id":  "P01-C005",
+                       "claim":  "Creation, verification, absence, or failure of this packet does not independently change Tier 1 standing.",
+                       "claim_class":  "PACKET_EFFECT_BOUNDARY",
+                       "source_class":  "EHCO_AUTHORITY_BOUNDARY",
+                       "dossier_pages":  [
+                                             23,
+                                             24,
+                                             32,
+                                             33
+                                         ],
+                       "evidence_refs":  [
+                                             "STANDING_RECORD.json",
+                                             "PARENT_BINDING.json"
+                                         ],
+                       "status":  "NON_AUTHORITY_PROJECTION",
+                       "authority_effect":  "NONE",
+                       "standing_effect":  "NONE"
+                   }
+               ]
+}

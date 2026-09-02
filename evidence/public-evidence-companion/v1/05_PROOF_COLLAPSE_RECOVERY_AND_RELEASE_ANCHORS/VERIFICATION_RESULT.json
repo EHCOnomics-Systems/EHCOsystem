@@ -1,0 +1,14 @@
+{
+    "packet_id":  "05_PROOF_COLLAPSE_RECOVERY_AND_RELEASE_ANCHORS",
+    "verified_at_utc":  "2026-07-16T23:12:16.6365164Z",
+    "status":  "PASS",
+    "source_files_checked":  2,
+    "source_hash_matches":  2,
+    "anchors_checked":  9,
+    "anchor_matches":  9,
+    "errors":  [
+
+               ],
+    "authority_effect":  "NONE",
+    "standing_effect":  "NONE"
+}

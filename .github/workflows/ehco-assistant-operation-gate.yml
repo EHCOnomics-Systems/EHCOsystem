@@ -1,0 +1,130 @@
+name: EHCO Assistant Operation Gate
+
+on:
+  pull_request_target:
+    types:
+      - opened
+      - synchronize
+      - reopened
+      - ready_for_review
+
+permissions:
+  contents: read
+  pull-requests: read
+
+concurrency:
+  group: ehco-assistant-operation-gate-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    name: EHCO Assistant Operation Gate
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Reconcile exact pull-request state
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          EXPECTED_HEAD: ${{ github.event.pull_request.head.sha }}
+          EXPECTED_BASE: ${{ github.event.pull_request.base.sha }}
+        run: |
+          set -euo pipefail
+          current_head="$(gh api "repos/${GITHUB_REPOSITORY}/pulls/${PR_NUMBER}" --jq '.head.sha')"
+          current_base="$(gh api "repos/${GITHUB_REPOSITORY}/pulls/${PR_NUMBER}" --jq '.base.sha')"
+          test "$current_head" = "$EXPECTED_HEAD"
+          test "$current_base" = "$EXPECTED_BASE"
+
+      - name: Check out exact candidate as untrusted data
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          repository: ${{ github.event.pull_request.head.repo.full_name }}
+          ref: ${{ github.event.pull_request.head.sha }}
+          path: candidate
+          fetch-depth: 0
+          persist-credentials: false
+          submodules: false
+          lfs: false
+
+      - name: Establish candidate base and reject symlinks
+        shell: bash
+        env:
+          EXPECTED_BASE: ${{ github.event.pull_request.base.sha }}
+        run: |
+          set -euo pipefail
+          symlink="$(find candidate -path 'candidate/.git' -prune -o -type l -print -quit)"
+          test -z "$symlink"
+          git -C candidate fetch --no-tags --depth=1 "https://github.com/${GITHUB_REPOSITORY}.git" "$EXPECTED_BASE"
+          git -C candidate cat-file -e "${EXPECTED_BASE}^{commit}"
+
+      - name: Create short-lived read token for accepted control source
+        id: control-token
+        uses: actions/create-github-app-token@bcd2ba49218906704ab6c1aa796996da409d3eb1
+        with:
+          client-id: ${{ vars.EHCO_GATE_APP_CLIENT_ID }}
+          private-key: ${{ secrets.EHCO_GATE_APP_PRIVATE_KEY }}
+          owner: ${{ github.repository_owner }}
+          repositories: ${{ secrets.EHCO_GATE_CONTROL_REPOSITORY }}
+          permission-contents: read
+
+      - name: Check out accepted canonical control source
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          repository: ${{ secrets.EHCO_GATE_CONTROL_REPOSITORY }}
+          ref: ${{ secrets.EHCO_GATE_CONTROL_REVISION }}
+          token: ${{ steps.control-token.outputs.token }}
+          path: canonical
+          fetch-depth: 1
+          persist-credentials: false
+          submodules: false
+          lfs: false
+
+      - name: Verify exact canonical source revision
+        shell: bash
+        env:
+          EXPECTED_CANONICAL_REVISION: ${{ secrets.EHCO_GATE_CONTROL_REVISION }}
+        run: |
+          set -euo pipefail
+          test "$(git -C canonical rev-parse HEAD)" = "$EXPECTED_CANONICAL_REVISION"
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: "3.12"
+
+      - name: Install pinned gate dependencies
+        shell: bash
+        run: python -m pip install --disable-pip-version-check --quiet PyYAML==6.0.2 jsonschema==4.23.0
+
+      - name: Validate the public-safe operation through accepted canonical semantics
+        shell: bash
+        env:
+          CANONICAL_REPOSITORY: ${{ secrets.EHCO_GATE_CONTROL_REPOSITORY }}
+          CANONICAL_REVISION: ${{ secrets.EHCO_GATE_CONTROL_REVISION }}
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+        run: |
+          set -euo pipefail
+          python canonical/scripts/validate_public_safe_ai_assisted_operation.py \
+            --operation ehco.operation.yaml \
+            --repository-root candidate \
+            --canonical-root canonical \
+            --canonical-repository "$CANONICAL_REPOSITORY" \
+            --canonical-source-revision "$CANONICAL_REVISION" \
+            --repository "$GITHUB_REPOSITORY" \
+            --base-ref "$BASE_SHA"
+
+      - name: Reject candidate drift before conclusion
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          EXPECTED_HEAD: ${{ github.event.pull_request.head.sha }}
+          EXPECTED_BASE: ${{ github.event.pull_request.base.sha }}
+        run: |
+          set -euo pipefail
+          current_head="$(gh api "repos/${GITHUB_REPOSITORY}/pulls/${PR_NUMBER}" --jq '.head.sha')"
+          current_base="$(gh api "repos/${GITHUB_REPOSITORY}/pulls/${PR_NUMBER}" --jq '.base.sha')"
+          test "$current_head" = "$EXPECTED_HEAD"
+          test "$current_base" = "$EXPECTED_BASE"

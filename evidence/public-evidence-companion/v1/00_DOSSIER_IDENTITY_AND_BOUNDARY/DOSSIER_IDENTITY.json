@@ -1,0 +1,14 @@
+{
+    "schema":  "EHCO_PUBLIC_DOSSIER_IDENTITY_V1",
+    "packet_id":  "00_DOSSIER_IDENTITY_AND_BOUNDARY",
+    "created_at_utc":  "2026-07-16T19:59:33.8960146Z",
+    "document":  {
+                     "title":  "EHCO AI-OS Governed Operational Architecture",
+                     "edition":  "Public Edition",
+                     "version":  "1.8",
+                     "publication_date":  "July 2026",
+                     "relative_path":  "source_document/EHCO_AI_OS_Governed_Operational_Architecture_Public_Edition_v1_8_LOCK_FINAL.pdf",
+                     "bytes":  1411324,
+                     "sha256":  "F489BA01961A12CF101B1F1DF57E6958456A0840BEB798B862FA97ACB030892D"
+                 }
+}

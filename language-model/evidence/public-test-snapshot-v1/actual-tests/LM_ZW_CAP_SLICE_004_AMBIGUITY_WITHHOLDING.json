@@ -1,0 +1,86 @@
+{
+  "schema": "EHCO_ZERO_WEIGHT_CAPABILITY_SLICE_FIXTURE_V1",
+  "operation_id": "LM-ZW-CAP-SLICE-004",
+  "selected_slice": "AMBIGUITY_WITHHOLDING",
+  "cases": [
+    {
+      "case_id": "AW-001-all-pass",
+      "probe": "bundle",
+      "input": {"children": [
+        {"adapter": "lexical_morphology", "case": {"case_id": "aw1-lm", "probe": "morphology", "input": {"surface": "cats", "locale": "en"}}},
+        {"adapter": "syntax_composition", "case": {"case_id": "aw1-sc", "probe": "syntax", "input": {"surface": "the cat walks", "locale": "en"}}},
+        {"adapter": "reference_context", "case": {"case_id": "aw1-rc", "probe": "context", "input": {"surface": "walk", "context_id": "ehco:lk:ehco.lk.lb05:context:fixture-instruction@1.0.0", "locale": "en"}}}
+      ]},
+      "expected": {"disposition": "PASS", "failure_class": null}
+    },
+    {
+      "case_id": "AW-002-lexical-ambiguity-survives-pass",
+      "probe": "bundle",
+      "input": {"children": [
+        {"adapter": "lexical_morphology", "case": {"case_id": "aw2-lm", "probe": "morphology", "input": {"surface": "sheep", "locale": "en"}}},
+        {"adapter": "syntax_composition", "case": {"case_id": "aw2-sc", "probe": "syntax", "input": {"surface": "the cat walks", "locale": "en"}}}
+      ]},
+      "expected": {"disposition": "RETAIN_AMBIGUITY", "failure_class": "MISSING_DISAMBIGUATION_RULE"}
+    },
+    {
+      "case_id": "AW-003-reference-ambiguity-survives-pass",
+      "probe": "bundle",
+      "input": {"children": [
+        {"adapter": "lexical_morphology", "case": {"case_id": "aw3-lm", "probe": "sense", "input": {"surface": "cat", "locale": "en"}}},
+        {"adapter": "reference_context", "case": {"case_id": "aw3-rc", "probe": "reference", "input": {"utterances": ["the cat walks", "the sheep went"], "context_ids": ["ehco:lk:ehco.lk.lb05:context:fixture-report@1.0.0", "ehco:lk:ehco.lk.lb05:context:fixture-report@1.0.0"], "locale": "en"}}}
+      ]},
+      "expected": {"disposition": "RETAIN_AMBIGUITY", "failure_class": "MISSING_DISAMBIGUATION_RULE"}
+    },
+    {
+      "case_id": "AW-004-withhold-outranks-ambiguity",
+      "probe": "bundle",
+      "input": {"children": [
+        {"adapter": "syntax_composition", "case": {"case_id": "aw4-sc", "probe": "syntax", "input": {"surface": "the sheep went", "locale": "en"}}},
+        {"adapter": "reference_context", "case": {"case_id": "aw4-rc", "probe": "context", "input": {"surface": "walk", "context_id": "ehco:lk:ehco.lk.lb05:context:fixture-report@1.0.0", "locale": "en"}}}
+      ]},
+      "expected": {"disposition": "WITHHOLD", "failure_class": "MISSING_REFERENCE_RESOLUTION"}
+    },
+    {
+      "case_id": "AW-005-pass-cannot-compensate-withhold",
+      "probe": "bundle",
+      "input": {"children": [
+        {"adapter": "lexical_morphology", "case": {"case_id": "aw5-lm", "probe": "morphology", "input": {"surface": "cats", "locale": "en"}}},
+        {"adapter": "syntax_composition", "case": {"case_id": "aw5-sc", "probe": "syntax", "input": {"surface": "the cat walk", "locale": "en"}}},
+        {"adapter": "reference_context", "case": {"case_id": "aw5-rc", "probe": "context", "input": {"surface": "the cat walks", "context_id": "ehco:lk:ehco.lk.lb05:context:fixture-report@1.0.0", "locale": "en"}}}
+      ]},
+      "expected": {"disposition": "WITHHOLD", "failure_class": "MISSING_COMPOSITION_RULE"}
+    },
+    {
+      "case_id": "AW-006-missing-representation-withhold",
+      "probe": "bundle",
+      "input": {"children": [
+        {"adapter": "lexical_morphology", "case": {"case_id": "aw6-lm", "probe": "sense", "input": {"surface": "dog", "locale": "en"}}},
+        {"adapter": "syntax_composition", "case": {"case_id": "aw6-sc", "probe": "composition", "input": {"surface": "walk", "locale": "en"}}}
+      ]},
+      "expected": {"disposition": "WITHHOLD", "failure_class": "MISSING_REPRESENTATION"}
+    },
+    {
+      "case_id": "AW-007-unsupported-locale-withhold",
+      "probe": "bundle",
+      "input": {"children": [
+        {"adapter": "lexical_morphology", "case": {"case_id": "aw7-lm", "probe": "morphology", "input": {"surface": "cats", "locale": "fr-FR"}}},
+        {"adapter": "reference_context", "case": {"case_id": "aw7-rc", "probe": "context", "input": {"surface": "walk", "context_id": "ehco:lk:ehco.lk.lb05:context:fixture-instruction@1.0.0", "locale": "en"}}}
+      ]},
+      "expected": {"disposition": "WITHHOLD", "failure_class": "GENERALIZATION_NOT_ESTABLISHED"}
+    },
+    {
+      "case_id": "AW-008-unknown-adapter-fails-closed",
+      "probe": "bundle",
+      "input": {"children": [
+        {"adapter": "unknown_adapter", "case": {"case_id": "aw8-unknown", "probe": "unknown", "input": {}}}
+      ]},
+      "expected": {"disposition": "CAPABILITY_FAILURE", "failure_class": "MISSING_REPRESENTATION"}
+    },
+    {
+      "case_id": "AW-009-unsupported-top-level-probe",
+      "probe": "unknown",
+      "input": {"children": []},
+      "expected": {"disposition": "CAPABILITY_FAILURE", "failure_class": "MISSING_REPRESENTATION"}
+    }
+  ]
+}

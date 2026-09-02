@@ -1,0 +1,18 @@
+{
+    "schema":  "EHCO_PUBLIC_EVIDENCE_PARENT_BINDING_V1",
+    "packet_id":  "01_INSTANTIATED_STANDING",
+    "created_at_utc":  "2026-07-16T20:13:08.1985268Z",
+    "parent_packet":  {
+                          "packet_id":  "00_DOSSIER_IDENTITY_AND_BOUNDARY",
+                          "relative_path":  "../00_DOSSIER_IDENTITY_AND_BOUNDARY",
+                          "verification_result_sha256":  "1A5287136934B143B60A1BD57179B96407CE279A956543E7E80259EE47AAC22B",
+                          "verification_status":  "PASS",
+                          "content_manifest_sha256":  "81025E9F2C16DE49A6172B19B0A96E5A19852E1E73BCEB7B26970DCF8E5435EF"
+                      },
+    "dossier":  {
+                    "version":  "1.8",
+                    "sha256":  "F489BA01961A12CF101B1F1DF57E6958456A0840BEB798B862FA97ACB030892D"
+                },
+    "authority_effect":  "NONE",
+    "standing_effect":  "NONE"
+}

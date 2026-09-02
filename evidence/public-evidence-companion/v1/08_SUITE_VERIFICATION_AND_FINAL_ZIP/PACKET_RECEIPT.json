@@ -1,0 +1,17 @@
+{
+    "packet_id":  "08_SUITE_VERIFICATION_AND_FINAL_ZIP",
+    "issued_at_utc":  "2026-07-17T02:38:51.3663056Z",
+    "prior_packet_count":  8,
+    "total_packet_count":  9,
+    "dossier_sha256":  "F489BA01961A12CF101B1F1DF57E6958456A0840BEB798B862FA97ACB030892D",
+    "content_manifest_sha256":  "48587517844AA0DFA1DFD67A3250A016D845D670082B32F1B24FEA59A10A4847",
+    "verification_result_sha256":  "32238AEB04976B13683D1EFE9CBCAA2E34C754EFBBC410CBBC1130652DB0020F",
+    "public_disclosure_policy_sha256":  "454BF75F986311E6A82F4ADBEF68EDB28263C3D5D6BBC23E71698961434A6317",
+    "status":  "PASS",
+    "verification_scope":  "SUITE_PACKET_AND_PUBLIC_DISCLOSURE_INTEGRITY",
+    "external_release_authorized":  false,
+    "production_activation_authorized":  false,
+    "authority_effect":  "NONE",
+    "standing_effect":  "NONE",
+    "final_zip_created":  false
+}

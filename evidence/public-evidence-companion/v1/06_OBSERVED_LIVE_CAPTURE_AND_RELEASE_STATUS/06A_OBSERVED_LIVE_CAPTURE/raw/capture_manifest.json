@@ -1,0 +1,16 @@
+﻿{
+    "captured_at_utc":  "2026-05-01T02:48:46.2604099Z",
+    "external_emission":  true,
+    "capture_schema":  "live_capture",
+    "required_files":  [
+                           "api_chat_probe.json",
+                           "api_mechanics.json",
+                           "api_receipts_summary.json",
+                           "capture_manifest.json",
+                           "docker_compose_ps.txt"
+                       ],
+    "schema":  "EHCO_LIVE_DEPLOYMENT_CAPTURE_MANIFEST_V1",
+    "source":  "running_docker_compose_stack",
+    "environment_label":  "local_live",
+    "evidence_root":  "proofs/release_authority/live_deployment_capture"
+}

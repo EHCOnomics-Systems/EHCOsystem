@@ -1,0 +1,111 @@
+{
+    "packet_id":  "07_PUBLIC_BOUNDARIES_AND_DELIVERY_STATUS",
+    "created_at_utc":  "2026-07-17T01:47:43.5475854Z",
+    "dossier_binding":  {
+                            "title":  "EHCO AI-OS Governed Operational Architecture Public Edition",
+                            "version":  "1.8",
+                            "sha256":  "F489BA01961A12CF101B1F1DF57E6958456A0840BEB798B862FA97ACB030892D",
+                            "relevant_pages":  [
+                                                   2,
+                                                   4,
+                                                   5,
+                                                   6,
+                                                   23,
+                                                   24,
+                                                   25,
+                                                   26,
+                                                   27,
+                                                   32,
+                                                   33,
+                                                   35,
+                                                   36,
+                                                   37,
+                                                   38,
+                                                   39
+                                               ]
+                        },
+    "parent_binding":  {
+                           "packet_id":  "06_OBSERVED_LIVE_CAPTURE_AND_RELEASE_STATUS",
+                           "content_manifest_sha256":  "379E16571EE8A2C5451D0C46610B34E5AC2835C5E1879B6AF77E4F2B009BD5F3",
+                           "verification_result_sha256":  "302673E16C6B95ADDE9DE9645F74E94ABA4FAD6844AD9D81143649ABACE270B1",
+                           "status":  "PASS",
+                           "verification_scope":  "PACKET_INTEGRITY",
+                           "evidence_disposition":  "MIXED_STATUS_WITH_DIRECT_DISCREPANCIES_AND_OPEN_GAPS"
+                       },
+    "public_boundary_rules":  [
+                                  {
+                                      "rule_id":  "PB-001",
+                                      "statement":  "Architecture status, authoritative standing, and delivery status are separate.",
+                                      "effect":  "BOUNDARY_PRESERVED"
+                                  },
+                                  {
+                                      "rule_id":  "PB-002",
+                                      "statement":  "Runtime authority is not assistant behavior or public projection.",
+                                      "effect":  "BOUNDARY_PRESERVED"
+                                  },
+                                  {
+                                      "rule_id":  "PB-003",
+                                      "statement":  "Internal authoritative state is not replaced by an external evidence packet.",
+                                      "effect":  "BOUNDARY_PRESERVED"
+                                  },
+                                  {
+                                      "rule_id":  "PB-004",
+                                      "statement":  "A proof or validation packet does not itself enforce runtime decisions.",
+                                      "effect":  "BOUNDARY_PRESERVED"
+                                  },
+                                  {
+                                      "rule_id":  "PB-005",
+                                      "statement":  "Bundle completion does not constitute runtime realization.",
+                                      "effect":  "BOUNDARY_PRESERVED"
+                                  },
+                                  {
+                                      "rule_id":  "PB-006",
+                                      "statement":  "Observed local-live deployment evidence does not authorize production activation.",
+                                      "effect":  "BOUNDARY_PRESERVED"
+                                  },
+                                  {
+                                      "rule_id":  "PB-007",
+                                      "statement":  "Kubernetes remains a target deployment translation unless separately implemented and validated.",
+                                      "effect":  "BOUNDARY_PRESERVED"
+                                  },
+                                  {
+                                      "rule_id":  "PB-008",
+                                      "statement":  "Full pre-execution cost enforcement remains a separately bounded enforcement responsibility.",
+                                      "effect":  "BOUNDARY_PRESERVED"
+                                  },
+                                  {
+                                      "rule_id":  "PB-009",
+                                      "statement":  "Tier 2 interpretation and Tier 3 projection cannot create or modify Tier 1 standing.",
+                                      "effect":  "BOUNDARY_PRESERVED"
+                                  },
+                                  {
+                                      "rule_id":  "PB-010",
+                                      "statement":  "Industry-family and product delivery status remain independently governed.",
+                                      "effect":  "BOUNDARY_PRESERVED"
+                                  }
+                              ],
+    "current_delivery_status":  {
+                                    "packet06_integrity_status":  "PASS",
+                                    "packet06_evidence_disposition":  "MIXED_STATUS_WITH_DIRECT_DISCREPANCIES_AND_OPEN_GAPS",
+                                    "local_live_capture_present":  true,
+                                    "external_release_authorized":  false,
+                                    "production_activation_authorized":  false,
+                                    "public_ingress_authorized_by_this_packet":  false,
+                                    "kubernetes_status":  "TARGET_TRANSLATION_NOT_PRODUCTION_VALIDATION",
+                                    "behavioral_gap_status":  "OPEN_GAPS_PRESERVED_IN_PACKET_06",
+                                    "direct_discrepancy_status":  "UNRESOLVED_DISCREPANCIES_PRESERVED_IN_PACKET_06"
+                                },
+    "evidence_scope":  {
+                           "binds_public_dossier":  true,
+                           "binds_parent_packet_status":  true,
+                           "records_delivery_boundaries":  true,
+                           "changes_runtime_state":  false,
+                           "changes_authoritative_standing":  false,
+                           "resolves_packet06_discrepancies":  false,
+                           "closes_packet06_behavioral_gaps":  false,
+                           "authorizes_external_release":  false,
+                           "authorizes_production_activation":  false
+                       },
+    "authority_effect":  "NONE",
+    "standing_effect":  "NONE"
+}

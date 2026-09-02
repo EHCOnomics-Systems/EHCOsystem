@@ -1,0 +1,20 @@
+{
+    "packet_id":  "07_PUBLIC_BOUNDARIES_AND_DELIVERY_STATUS",
+    "hash_algorithm":  "SHA256",
+    "manifest_self_reference":  false,
+    "verification_result_in_manifest":  false,
+    "packet_receipt_in_manifest":  false,
+    "file_count":  2,
+    "files":  [
+                  {
+                      "path":  "PUBLIC_BOUNDARIES_AND_DELIVERY_STATUS.json",
+                      "bytes":  7162,
+                      "sha256":  "E0D023053208AD9D689E5B44F10E445DACBE39FA7830312E40D6150A6FAD8178"
+                  },
+                  {
+                      "path":  "README.txt",
+                      "bytes":  843,
+                      "sha256":  "76950C3B58C24C17134887C805DEDFB993AE44FE779D79816CD932DE6C81501F"
+                  }
+              ]
+}

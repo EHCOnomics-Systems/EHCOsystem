@@ -1,0 +1,29 @@
+{
+  "schema": "EHCO_PUBLIC_RANGE_REACTOR_CAPABILITY_SNAPSHOT_MANIFEST_V1",
+  "snapshot_id": "EHCO-RR-PUBLIC-CAPABILITY-SNAPSHOT-V1",
+  "source_review_date": "2026-08-28",
+  "source_review_basis": "ACCEPTED_OWNING_SOURCE_REVIEW",
+  "source_revision_publication": "WITHHELD_PRIVATE_CUSTODY",
+  "evidence_class": "SOURCE_REVIEWED_SYNTHETIC_CAPABILITY_EVIDENCE",
+  "artifact_origin": "PUBLIC_SAFE_SYNTHETIC_DERIVATION_FROM_ACCEPTED_OWNING_SOURCE_REVIEW",
+  "fixture_count": 1,
+  "case_count": 8,
+  "fixtures": [
+    {
+      "path": "capability-vectors.json",
+      "sha256": "612389A01DA53688CCB0276D0633A3CEA757517DAC736615D089D597424762D1",
+      "case_count": 8,
+      "scope": "deterministic replay, contradiction/frontier preservation, modal distinction, quotient witness fibers, independent verification, source mutation identity sensitivity, and grounded proof custody"
+    }
+  ],
+  "proof_ceiling": [
+    "SELECTED_PUBLIC_SAFE_SYNTHETIC_CAPABILITY_EVIDENCE",
+    "SOURCE_REVIEWED_CAPABILITY_RELATIONSHIP",
+    "NO_PRIVATE_IMPLEMENTATION_SOURCE_DISCLOSURE",
+    "NO_THEORETICAL_COMPLETENESS_CLAIM",
+    "NO_GLOBAL_FULL_RANGE_EXHAUSTION_CLAIM",
+    "NO_DEPLOYMENT_OR_PRODUCTION_ACTIVATION_CLAIM",
+    "NO_RUNTIME_PARTICIPATION_AUTHORITY_STATE_OR_PROOF_CLAIM",
+    "NO_RELEASE_OR_STANDING_CHANGE_CLAIM"
+  ]
+}

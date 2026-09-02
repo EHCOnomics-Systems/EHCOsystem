@@ -1,0 +1,13 @@
+﻿{
+    "schema":  "EHCO_FULL_FLEX_PACKET_RECEIPT_V1",
+    "packet_profile":  "FULL_FLEX_AFFIRMATIVE",
+    "packet_file":  "EHCO_FULL_FLEX_PUBLIC_PACKET_V1.json",
+    "packet_sha256":  "7F80C27D085AE871A00AED412C6F20EA9A76CB0677C93AEBA381CD1FD70EC8E5",
+    "pressure_scan":  "PASS",
+    "runtime_realization":  "REALIZED",
+    "runtime_standing":  "52/53",
+    "docker_portability":  "PRIMARY_ACCESSIBLE_RUNTIME_PROJECTION",
+    "dashboard_http":  200,
+    "range_reactor":  "MATURE_ESTABLISHED_SYSTEM_CAPABILITY",
+    "source_candidate_sha256":  "6059C90CA4E30A7C43F3B8C1A81D28BC4AE91F2A09DB23966ADADC23AE1D96F9"
+}

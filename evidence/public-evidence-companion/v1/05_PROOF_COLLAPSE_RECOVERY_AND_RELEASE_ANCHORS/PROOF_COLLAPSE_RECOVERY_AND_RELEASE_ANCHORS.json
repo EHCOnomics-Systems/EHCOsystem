@@ -1,0 +1,148 @@
+{
+    "packet_id":  "05_PROOF_COLLAPSE_RECOVERY_AND_RELEASE_ANCHORS",
+    "created_at_utc":  "2026-07-16T23:12:16.5551818Z",
+    "dossier_binding":  {
+                            "version":  "1.8",
+                            "sha256":  "F489BA01961A12CF101B1F1DF57E6958456A0840BEB798B862FA97ACB030892D",
+                            "relevant_pages":  [
+                                                   23,
+                                                   24,
+                                                   25,
+                                                   32,
+                                                   33,
+                                                   34
+                                               ]
+                        },
+    "parent_binding":  {
+                           "packet_id":  "04_RUNTIME_PACKET_AND_CONTINUITY_ANCHORS",
+                           "content_manifest_sha256":  "B941B17DD3946BFAD3EDA312EBDD2630751C189E52702D97302B5AAA1064173F",
+                           "verification_result_sha256":  "9C68CCC4C7BADFCB49D07A29156E83D9A603C7AFC4606B88EEB378A96F48517A",
+                           "verification_status":  "PASS"
+                       },
+    "source_file_count":  2,
+    "source_bindings":  [
+                            {
+                                "relative_path":  "ehco/chat_routes.py",
+                                "bytes":  167428,
+                                "sha256":  "24C80969E6478D85135E96E006544F1C1D5C83D23A5D65CF66C2978726C0C367",
+                                "hash_match":  true,
+                                "source_content_included":  false
+                            },
+                            {
+                                "relative_path":  "ehco/freeze_gate.py",
+                                "bytes":  19234,
+                                "sha256":  "B4894FA1AC7BDA7C7C7463D314C4D78F2960794821818B0C5B6248A80A54E6AC",
+                                "hash_match":  true,
+                                "source_content_included":  false
+                            }
+                        ],
+    "implementation_anchor_count":  9,
+    "implementation_anchors":  [
+                                   {
+                                       "relative_path":  "ehco/chat_routes.py",
+                                       "symbol":  "_build_proof_hook",
+                                       "evidence_area":  "PROOF",
+                                       "line":  689,
+                                       "declaration_sha256":  "D1DCF342C2FD670034DCD1B59E9AB69D129A713FD734D5966697D75709D6535C",
+                                       "source_sha256":  "24C80969E6478D85135E96E006544F1C1D5C83D23A5D65CF66C2978726C0C367",
+                                       "declaration_match":  true
+                                   },
+                                   {
+                                       "relative_path":  "ehco/chat_routes.py",
+                                       "symbol":  "_ehco_build_public_runtime_receipt",
+                                       "evidence_area":  "RECEIPT",
+                                       "line":  1180,
+                                       "declaration_sha256":  "C2E45568FC9E45B022EECDDA68C540676E31CD92524B6D1D736BF7A2F0AA3B6E",
+                                       "source_sha256":  "24C80969E6478D85135E96E006544F1C1D5C83D23A5D65CF66C2978726C0C367",
+                                       "declaration_match":  true
+                                   },
+                                   {
+                                       "relative_path":  "ehco/chat_routes.py",
+                                       "symbol":  "_build_trust_and_collapse",
+                                       "evidence_area":  "COLLAPSE",
+                                       "line":  855,
+                                       "declaration_sha256":  "4C3FBB26108F6503AC1A9F2BCFFC82621E154FAF12E7E21DB3457A80A505486D",
+                                       "source_sha256":  "24C80969E6478D85135E96E006544F1C1D5C83D23A5D65CF66C2978726C0C367",
+                                       "declaration_match":  true
+                                   },
+                                   {
+                                       "relative_path":  "ehco/chat_routes.py",
+                                       "symbol":  "_build_quarantine_state",
+                                       "evidence_area":  "QUARANTINE",
+                                       "line":  904,
+                                       "declaration_sha256":  "730652954CD8B23175D45769F51602541F0E5969F90581F164C5ACA6A96900E1",
+                                       "source_sha256":  "24C80969E6478D85135E96E006544F1C1D5C83D23A5D65CF66C2978726C0C367",
+                                       "declaration_match":  true
+                                   },
+                                   {
+                                       "relative_path":  "ehco/chat_routes.py",
+                                       "symbol":  "_build_release_gate",
+                                       "evidence_area":  "RELEASE",
+                                       "line":  1321,
+                                       "declaration_sha256":  "5413E224334C0781F33F344C482D09C0DC2DCAA1CBE602321A135A0469EDC649",
+                                       "source_sha256":  "24C80969E6478D85135E96E006544F1C1D5C83D23A5D65CF66C2978726C0C367",
+                                       "declaration_match":  true
+                                   },
+                                   {
+                                       "relative_path":  "ehco/freeze_gate.py",
+                                       "symbol":  "evaluate_freeze_gate",
+                                       "evidence_area":  "FREEZE_AND_RECOVERY",
+                                       "line":  179,
+                                       "declaration_sha256":  "4A6C7D712684CFC7DE8EE659958E0B43D5808D7F0B43A5E4BCD1B5E06C3D44F6",
+                                       "source_sha256":  "B4894FA1AC7BDA7C7C7463D314C4D78F2960794821818B0C5B6248A80A54E6AC",
+                                       "declaration_match":  true
+                                   },
+                                   {
+                                       "relative_path":  "ehco/chat_routes.py",
+                                       "symbol":  "_public_release_authority_projection_from_latest",
+                                       "evidence_area":  "PUBLIC_PROJECTION",
+                                       "line":  1862,
+                                       "declaration_sha256":  "7B06C99370A6C273EB5A87BEBF8E473E0C01329469D7EBB2A7EF9081C3C5D9EE",
+                                       "source_sha256":  "24C80969E6478D85135E96E006544F1C1D5C83D23A5D65CF66C2978726C0C367",
+                                       "declaration_match":  true
+                                   },
+                                   {
+                                       "relative_path":  "ehco/chat_routes.py",
+                                       "symbol":  "_release_gate_allows_chat_projection",
+                                       "evidence_area":  "PROJECTION_ADMISSION",
+                                       "line":  2459,
+                                       "declaration_sha256":  "35DAF6A26D6ED458E52715B1284E27DE61FF5DB8768A8A7D5711E6E79E71C88A",
+                                       "source_sha256":  "24C80969E6478D85135E96E006544F1C1D5C83D23A5D65CF66C2978726C0C367",
+                                       "declaration_match":  true
+                                   },
+                                   {
+                                       "relative_path":  "ehco/chat_routes.py",
+                                       "symbol":  "_apply_release_gated_chat_projection",
+                                       "evidence_area":  "PROJECTION_APPLICATION",
+                                       "line":  2838,
+                                       "declaration_sha256":  "195BC1719D7E9A54F744926C226969C9B8679499E8DCB4C00B5781C57DC9782D",
+                                       "source_sha256":  "24C80969E6478D85135E96E006544F1C1D5C83D23A5D65CF66C2978726C0C367",
+                                       "declaration_match":  true
+                                   }
+                               ],
+    "evidence_scope":  {
+                           "exact_source_identity":  true,
+                           "named_declaration_presence":  true,
+                           "proof_anchor_present":  true,
+                           "receipt_anchor_present":  true,
+                           "collapse_anchor_present":  true,
+                           "quarantine_anchor_present":  true,
+                           "freeze_and_recovery_anchor_present":  true,
+                           "release_anchor_present":  true,
+                           "public_projection_anchors_present":  true
+                       },
+    "explicit_non_claims":  {
+                                "live_runtime_execution_observed":  false,
+                                "end_to_end_behavior_proven":  false,
+                                "proof_admission_behavior_proven":  false,
+                                "collapse_behavior_proven":  false,
+                                "quarantine_behavior_proven":  false,
+                                "freeze_or_recovery_behavior_proven":  false,
+                                "release_behavior_proven":  false,
+                                "production_authorization_claimed":  false,
+                                "standing_change_claimed":  false,
+                                "complete_source_code_included":  false
+                            },
+    "authority_effect":  "NONE",
+    "standing_effect":  "NONE"
+}

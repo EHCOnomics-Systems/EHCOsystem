@@ -1,0 +1,130 @@
+{
+  "schema": "ehco.public.claim-registry.v1",
+  "registry_version": "1.4.0",
+  "published": "2026-09-01",
+  "source_review_date": "2026-09-01",
+  "public_repository_base": "1cf77b4d16327bc98c645b24f86b8df92b1a5ea4",
+  "public_repository_base_semantics": "accepted canonical main used as the source base for the recursive semantics/resting-state closeout continuation",
+  "purpose": "Canonical machine-readable public propositions for EHCOsystem. Reader-facing pages explain the architecture first; this registry provides a deeper public claim and verification route.",
+  "standing_interpretation": {
+    "accepted_standing": "52/53",
+    "public_meaning": "accepted numerical Runtime standing corridor under the EHCO standing framework",
+    "not_equivalent_to": [
+      "benchmark score",
+      "percentage completion",
+      "component maturity percentage",
+      "deployment-state percentage",
+      "public-release percentage"
+    ],
+    "protected_denominator_mechanics": "NOT_PUBLICLY_INFERRED_OR_EXPANDED"
+  },
+  "current_runtime_evidence": {
+    "field_semantics": "MACHINE_READABLE_SELECTED_ACCEPTED_PUBLIC_RUNTIME_EVIDENCE_IDENTITY",
+    "front_door": "runtime/README.md",
+    "packet_index": "evidence/runtime/full-flex/v1/README.md",
+    "public_safe_record": "evidence/runtime/full-flex/v1/PUBLIC_SAFE_RECORD.json",
+    "packet_receipt": "evidence/runtime/full-flex/v1/PACKET_RECEIPT.json",
+    "packet_schema": "EHCO_FULL_FLEX_PUBLIC_PACKET_V1",
+    "packet_sha256": "7F80C27D085AE871A00AED412C6F20EA9A76CB0677C93AEBA381CD1FD70EC8E5",
+    "runtime_maturity": "REALIZED / COMPLETE_IN_ACCEPTED_SCOPE",
+    "accepted_standing": "52/53",
+    "runtime_authority_and_state_owner": "INSTANTIATED_EHCO_RUNTIME",
+    "docker_portability": "PRIMARY_ACCESSIBLE_RUNTIME_PROJECTION",
+    "precedence": "CURRENT_FULL_FLEX_FIRST; CLAIM_REGISTRY_SECOND; OWNING_TECHNICAL_EVIDENCE_RETAINS_TECHNICAL_EFFECT_OWNERSHIP; PUBLIC_EVIDENCE_COMPANION_PACKETS_00_08_RETAINED_AS_HISTORICAL_EVENT_TIME_LINEAGE",
+    "precedence_semantics": "CURRENT_FULL_FLEX_FIRST is a retained machine status token for the selected accepted public evidence route; it does not assert live Runtime-state currentness.",
+    "public_custody": "ACCEPTED_PACKET_HASH_AND_RECEIPT_WITH_PUBLIC_SAFE_RECORD",
+    "raw_packet_publication": "WITHHELD_FROM_CURRENT_PUBLIC_TREE_TO_PROTECT_INTERNAL_SOURCE_ROUTING_METADATA"
+  },
+  "claims": [
+    {
+      "claim_id": "AIOS-RUNTIME-REALIZED",
+      "public_statement": "EHCO AI-OS is the realized Tier One Runtime of EHCOsystem with accepted standing 52/53.",
+      "maturity": "REALIZED / COMPLETE_IN_ACCEPTED_SCOPE",
+      "evidence_class": "controlled architecture + accepted standing projection",
+      "public_references": ["runtime/README.md", "evidence/runtime/full-flex/v1/README.md", "README.md", "architecture/EHCO-TECHNOLOGY-ESTATE.md"],
+      "verification_method": "Begin with the accepted Full Flex Runtime evidence route, then inspect the public architecture and claim mapping.",
+      "disclosure_ceiling": "Tier One system identity and accepted standing representation; Runtime-state propositions remain owned by INSTANTIATED_EHCO_RUNTIME and applicable owning Runtime evidence.",
+      "status": "ESTABLISHED"
+    },
+    {
+      "claim_id": "AIOS-COMPLETE-ACCEPTED-SCOPE",
+      "public_statement": "The accepted EHCO AI-OS Runtime baseline is REALIZED / COMPLETE_IN_ACCEPTED_SCOPE at standing 52/53.",
+      "maturity": "REALIZED / COMPLETE_IN_ACCEPTED_SCOPE",
+      "evidence_class": "controlled architecture + accepted standing projection",
+      "public_references": ["runtime/README.md", "evidence/runtime/full-flex/v1/README.md", "architecture/EHCO-AI-OS-SYSTEM-CARD.md"],
+      "verification_method": "Inspect the accepted Runtime evidence route and accepted public architecture.",
+      "disclosure_ceiling": "Accepted baseline maturity and standing representation; Runtime authority and Runtime state remain owned by INSTANTIATED_EHCO_RUNTIME.",
+      "status": "ESTABLISHED"
+    },
+    {
+      "claim_id": "AIOS-PORTABILITY-DEPLOYMENT-READY",
+      "public_statement": "EHCO_DOCKER_PORTABILITY is the PRIMARY_ACCESSIBLE_RUNTIME_PROJECTION and the fully containerized, deployment-ready portable delivery form of the established hardened EHCO AI-OS Runtime/root-image lineage.",
+      "maturity": "ESTABLISHED / DEPLOYMENT_READY / LOCAL_RELAUNCH_EVIDENCED",
+      "evidence_class": "controlled architecture + accepted Docker/host execution evidence",
+      "public_references": ["runtime/README.md", "evidence/runtime/full-flex/v1/README.md", "architecture/EHCO-TECHNOLOGY-ESTATE.md"],
+      "verification_method": "Inspect the accepted Full Flex public-safe Runtime record and technical diligence route.",
+      "disclosure_ceiling": "Portable delivery form and deployment-readiness representation for the established hardened Runtime launch lineage.",
+      "status": "ESTABLISHED"
+    },
+    {
+      "claim_id": "AIOS-LOCAL-RUNTIME-PROVEN",
+      "public_statement": "EHCO AI-OS has physically operated as a self-hosted local Docker Runtime with Dashboard, Runtime bridge, worker service, Docker networking, persistent Runtime/proof/data surfaces, health behavior and hardened image identity.",
+      "maturity": "PHYSICALLY_OBSERVED_LOCAL_OPERATION",
+      "evidence_class": "accepted Docker/host execution evidence",
+      "public_references": ["runtime/README.md", "evidence/runtime/full-flex/v1/README.md", "architecture/EHCO-AI-OS-SYSTEM-CARD.md"],
+      "verification_method": "Inspect the Full Flex public-safe record and technical diligence route.",
+      "disclosure_ceiling": "Established self-hosted local Docker operating posture and service/persistence relationships; this event-time evidence does not by itself assert a later Runtime-state observation.",
+      "status": "ESTABLISHED"
+    },
+    {
+      "claim_id": "LM-MATURE-DETERMINISTIC-COMPUTATIONAL-LANGUAGE",
+      "public_statement": "EHCO Language Model is a mature deterministic computational-language system built as DETERMINISTIC_COMPUTATIONAL_LANGUAGE / SINGLE_PATH / EXPLICIT_EHCO_COMPUTATION / ZERO_WEIGHT_ONLY / ZERO WEIGHTS TRAINED.",
+      "maturity": "MATURE_DETERMINISTIC_COMPONENT",
+      "evidence_class": "accepted component source, qualification and public-safe evidence",
+      "public_references": ["language-model/README.md", "language-model/evidence/public-test-snapshot-v1/README.md", "language-model/DETERMINISTIC-CAPABILITY-DEMONSTRATION.md"],
+      "verification_method": "Inspect the component record, public snapshot and deterministic capability demonstration.",
+      "disclosure_ceiling": "Component capability and accepted lifecycle representation; Tier One Runtime participation is a separately owned evidence dimension and is not asserted here.",
+      "status": "ESTABLISHED"
+    },
+    {
+      "claim_id": "LM-ARTIFACT-RELEASE-STAGING-ESTABLISHED",
+      "public_statement": "EHCO Language Model has deep final capability/source closure, a qualified and released immutable component artifact, and governed staging execution and verification established in their applicable evidence classes.",
+      "maturity": "CAPABILITY_SOURCE_CLOSED / ARTIFACT_QUALIFIED_RELEASED / STAGING_VERIFIED",
+      "evidence_class": "accepted component lifecycle and technical evidence",
+      "public_references": ["language-model/README.md", "architecture/EHCO-TECHNOLOGY-ESTATE.md"],
+      "verification_method": "Use the public component record for the public-safe maturity statement; exact lifecycle effects remain owned by their accepted technical evidence.",
+      "disclosure_ceiling": "Established component capability/source, artifact qualification/release and governed staging verification; production deployment and Tier One Runtime participation are separate dimensions.",
+      "status": "ESTABLISHED"
+    },
+    {
+      "claim_id": "RR-MATURE",
+      "public_statement": "EHCO Range Reactor is a mature deterministic proof-carrying implication, reachability, range and reasoning system.",
+      "maturity": "MATURE_ESTABLISHED_SYSTEM_CAPABILITY",
+      "evidence_class": "governed architecture + accepted qualification evidence",
+      "public_references": ["range-reactor/README.md", "range-reactor/evidence/public-capability-snapshot-v1/README.md", "range-reactor/evidence/operational-closure-v1/README.md"],
+      "verification_method": "Inspect the component route, public capability snapshot and public-safe operational-closure result.",
+      "disclosure_ceiling": "Deterministic Range Reactor capability and selected public qualification evidence; Tier One Runtime participation is not implied by component maturity.",
+      "status": "ESTABLISHED"
+    },
+    {
+      "claim_id": "RR-MATCHED-AB-COLLAPSE-PERFORMANCE",
+      "public_statement": "Range Reactor matched exploration-time A/B evidence on the selected benchmark recorded 14.304307x wall-clock improvement, 14.208722x CPU-time improvement, 94.755854% Python peak-allocation reduction, 96.729688% state-work reduction and 90.184049% transition-work reduction while preserving all 720 histories.",
+      "maturity": "ACCEPTED_MATCHED_AB_OPERATIONAL_CLOSURE_EVIDENCE",
+      "evidence_class": "accepted physical Docker/Linux matched-workload benchmark evidence",
+      "public_references": ["range-reactor/evidence/operational-closure-v1/README.md", "range-reactor/evidence/operational-closure-v1/PUBLIC_RESULT.json", "range-reactor/README.md"],
+      "verification_method": "Run verification/validate_public_range_reactor_operational_closure.py and inspect the public-safe result.",
+      "disclosure_ceiling": "Selected matched benchmark only; 2 warm-up pairs and 10 measured pairs; memory is Python tracemalloc peak allocation.",
+      "status": "ESTABLISHED"
+    },
+    {
+      "claim_id": "RR-SEMANTIC-CLOSURE",
+      "public_statement": "Range Reactor selected semantic-closure corpus completed 82 passed and 0 failed with deterministic replay and bounded semantic-preservation evidence for the selected corpus.",
+      "maturity": "COMPLETE_FOR_SELECTED_RANGE_REACTOR_V1_SCOPE",
+      "evidence_class": "accepted deterministic selected-corpus semantic closure evidence",
+      "public_references": ["range-reactor/evidence/operational-closure-v1/README.md", "range-reactor/evidence/operational-closure-v1/PUBLIC_RESULT.json", "range-reactor/README.md"],
+      "verification_method": "Run verification/validate_public_range_reactor_operational_closure.py and inspect the selected-corpus scope and deterministic replay digest.",
+      "disclosure_ceiling": "Selected semantic closure corpus.",
+      "status": "ESTABLISHED"
+    }
+  ]
+}

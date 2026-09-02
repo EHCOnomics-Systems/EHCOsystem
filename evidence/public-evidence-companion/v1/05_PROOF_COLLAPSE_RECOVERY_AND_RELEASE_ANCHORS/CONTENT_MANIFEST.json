@@ -1,0 +1,20 @@
+{
+    "packet_id":  "05_PROOF_COLLAPSE_RECOVERY_AND_RELEASE_ANCHORS",
+    "hash_algorithm":  "SHA256",
+    "manifest_self_reference":  false,
+    "verification_result_in_manifest":  false,
+    "packet_receipt_in_manifest":  false,
+    "file_count":  2,
+    "files":  [
+                  {
+                      "path":  "PROOF_COLLAPSE_RECOVERY_AND_RELEASE_ANCHORS.json",
+                      "bytes":  9998,
+                      "sha256":  "17858BA5682B8EC61F0B3E6CED3296BC9D870FED99837D1C7063A946A081DCE6"
+                  },
+                  {
+                      "path":  "README.txt",
+                      "bytes":  673,
+                      "sha256":  "8B42067475A49876873FAE349C70CAE5D9A408078FD0AB41FCB41F0F104FF5F5"
+                  }
+              ]
+}

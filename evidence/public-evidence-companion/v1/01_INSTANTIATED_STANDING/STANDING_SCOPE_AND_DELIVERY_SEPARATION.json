@@ -1,0 +1,49 @@
+{
+    "schema":  "EHCO_STANDING_SCOPE_AND_DELIVERY_SEPARATION_V1",
+    "packet_id":  "01_INSTANTIATED_STANDING",
+    "included_standing":  [
+                              {
+                                  "standing_class":  "RUNTIME",
+                                  "meaning":  "Operational participants, objects, packets, state, execution paths, and governed outcomes."
+                              },
+                              {
+                                  "standing_class":  "GOVERNANCE",
+                                  "meaning":  "Admission, standing, authority, admissibility, transition control, release boundaries, contradiction handling, and lawful next action."
+                              },
+                              {
+                                  "standing_class":  "PERSISTENCE",
+                                  "meaning":  "Durable operational stores, continuity references, proof and receipt storage, configuration state, lineage, and restart behavior."
+                              },
+                              {
+                                  "standing_class":  "OBSERVABILITY",
+                                  "meaning":  "Telemetry, activity, health, latency, service use, resource behavior, blockers, proof production, and recovery visibility."
+                              },
+                              {
+                                  "standing_class":  "RECOVERY",
+                                  "meaning":  "Freeze, collapse, rollback, restoration, re-admission, replay boundaries, continuity checkpoints, and state lineage."
+                              }
+                          ],
+    "independently_statused_corridors":  [
+                                             "EHCO Prime",
+                                             "Agent Connect",
+                                             "War Room",
+                                             "Learning Hub",
+                                             "Integration Layer",
+                                             "Industry-family modules",
+                                             "Kubernetes packaging",
+                                             "Production deployment",
+                                             "Commercial activation",
+                                             "Public ingress",
+                                             "Release and go-live"
+                                         ],
+    "status_law":  {
+                       "baseline_implies_all_products_complete":  false,
+                       "baseline_implies_production_authorized":  false,
+                       "baseline_implies_public_ingress_authorized":  false,
+                       "architecture_implies_delivery":  false,
+                       "implementation_implies_release":  false,
+                       "standing_implies_go_live":  false
+                   },
+    "authority_effect":  "NONE",
+    "standing_effect":  "NONE"
+}

@@ -1,0 +1,14 @@
+{
+    "packet_id":  "03_TIER1_AUTHORITY_ENFORCEMENT",
+    "verified_at_utc":  "2026-07-16T21:40:50.1460050Z",
+    "status":  "PASS",
+    "sealed_files_checked":  7,
+    "sealed_file_hash_matches":  7,
+    "enforcement_anchors_checked":  7,
+    "enforcement_anchor_matches":  7,
+    "errors":  [
+
+               ],
+    "authority_effect":  "NONE",
+    "standing_effect":  "NONE"
+}

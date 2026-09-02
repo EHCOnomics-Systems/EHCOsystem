@@ -1,0 +1,53 @@
+{
+  "schema": "EHCO_RR_PUBLIC_OPERATIONAL_CLOSURE_RESULT_V1",
+  "evidence_class": "PUBLIC_SAFE_PROJECTION_OF_ACCEPTED_OPERATIONAL_CLOSURE",
+  "benchmark": {
+    "contract": "RR-EXPLORATION-AB-001",
+    "workload_id": "rr-independent-obligation-permutation-n6-v1",
+    "workload_sha256": "44ad414852b2b23bc64cc415c8a433878d08da0698f17446f28c6ffdfa1ed8f6",
+    "execution_evidence_class": "PHYSICAL_DOCKER_LINUX_EXECUTION",
+    "execution_python": "CPython 3.11.16",
+    "wall_clock_speedup_x": 14.304307,
+    "cpu_time_speedup_x": 14.208722,
+    "memory_reduction_percent": 94.755854,
+    "memory_metric_class": "PYTHON_TRACEMALLOC_PEAK_BYTES",
+    "throughput_gain_x": 14.304307,
+    "state_work_reduction_percent": 96.729688,
+    "transition_work_reduction_percent": 90.184049,
+    "literal_states": 1957,
+    "reduced_states": 64,
+    "literal_transitions": 1956,
+    "reduced_transitions": 192,
+    "literal_histories": 720,
+    "reduced_histories": 720,
+    "semantic_equivalence": "PROVEN_EQUAL_FOR_SELECTED_BENCHMARK_PROJECTION",
+    "measurement_pairs": 10,
+    "warmup_pairs": 2,
+    "physical_result_sha256": "C6B7DAB276DCB620CC17C4D7F7B1E8B0EE45D53F6B64E574F55D7CC7ADBF2ED2",
+    "result_payload_sha256": "6cca258517425c8d3723c036b8bf36d7ccb5f09991054b4f4bacf75a6f7dc697"
+  },
+  "service_qualification": {
+    "evidence_class": "SEPARATE_ACCEPTED_CONTAINER_SERVICE_QUALIFICATION",
+    "qualification_id": "RR-REALWORLD-QUALIFY-001",
+    "execution_form": "CONTAINERIZED_INTERNAL_HTTP_SERVICE",
+    "private_network_operation": "PASS",
+    "capability_execution": "PASS",
+    "fail_closed_transport": "PASS",
+    "timeout_unavailability_behavior": "PASS",
+    "restart_recovery": "PASS",
+    "temporary_portability": "PASS",
+    "ai_os_fail_closed_fallback": "PASS"
+  },
+  "semantic_closure": {
+    "selected_tests_passed": 82,
+    "selected_tests_failed": 0,
+    "deterministic_replay_digest": "collapse-certificate-58a1e724b8acb571891d3c52",
+    "continuation_manifest_sha256": "083BA279EBE5456B8C874E087C6FEBD9624BB52D1FC2FFB48DFB410F6DB7E232",
+    "scope": "SELECTED_SEMANTIC_CLOSURE_CORPUS"
+  },
+  "public_scope": {
+    "benchmark_scope": "SELECTED_WORKLOAD_ONLY",
+    "semantic_scope": "SELECTED_SEMANTIC_CLOSURE_CORPUS",
+    "accepted_numerical_standing": "52/53"
+  }
+}

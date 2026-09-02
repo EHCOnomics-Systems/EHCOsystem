@@ -1,0 +1,21 @@
+{
+    "packet_id":  "06_OBSERVED_LIVE_CAPTURE_AND_RELEASE_STATUS",
+    "verified_at_utc":  "2026-07-17T01:29:20.9841841Z",
+    "status":  "PASS",
+    "verification_scope":  "PACKET_INTEGRITY",
+    "evidence_disposition":  "MIXED_STATUS_WITH_DIRECT_DISCREPANCIES_AND_OPEN_GAPS",
+    "release_records_checked":  4,
+    "release_record_hash_matches":  4,
+    "capture_artifacts_checked":  5,
+    "capture_artifact_hash_matches":  5,
+    "direct_discrepancies":  3,
+    "cross_snapshot_divergences":  3,
+    "not_directly_observed_behavioral_gaps":  5,
+    "release_authorized":  false,
+    "production_activation_authorized":  false,
+    "errors":  [
+
+               ],
+    "authority_effect":  "NONE",
+    "standing_effect":  "NONE"
+}

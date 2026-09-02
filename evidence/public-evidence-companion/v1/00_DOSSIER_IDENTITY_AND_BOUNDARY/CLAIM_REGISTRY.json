@@ -1,0 +1,71 @@
+{
+    "schema":  "EHCO_PUBLIC_EVIDENCE_CLAIM_REGISTRY_V1",
+    "packet_id":  "00_DOSSIER_IDENTITY_AND_BOUNDARY",
+    "claims":  [
+                   {
+                       "claim_id":  "P00-C001",
+                       "claim":  "This packet contains the exact Public Edition v1.8 dossier identified by SHA-256.",
+                       "claim_class":  "DOCUMENT_IDENTITY",
+                       "dossier_pages":  [
+                                             1
+                                         ],
+                       "evidence_refs":  [
+                                             "DOSSIER_IDENTITY.json",
+                                             "source_document/EHCO_AI_OS_Governed_Operational_Architecture_Public_Edition_v1_8_LOCK_FINAL.pdf"
+                                         ],
+                       "authority_effect":  "NONE",
+                       "standing_effect":  "NONE"
+                   },
+                   {
+                       "claim_id":  "P00-C002",
+                       "claim":  "Runtime authority remains Tier 1.",
+                       "claim_class":  "AUTHORITY_BOUNDARY",
+                       "dossier_pages":  [
+                                             2,
+                                             4,
+                                             5,
+                                             9,
+                                             12,
+                                             24,
+                                             33,
+                                             39
+                                         ],
+                       "evidence_refs":  [
+                                             "AUTHORITY_AND_STATUS_BOUNDARY.json"
+                                         ],
+                       "authority_effect":  "NONE",
+                       "standing_effect":  "NONE"
+                   },
+                   {
+                       "claim_id":  "P00-C003",
+                       "claim":  "Architecture, instantiated standing, and delivery status are separate status dimensions.",
+                       "claim_class":  "STATUS_BOUNDARY",
+                       "dossier_pages":  [
+                                             2,
+                                             6,
+                                             38,
+                                             39
+                                         ],
+                       "evidence_refs":  [
+                                             "AUTHORITY_AND_STATUS_BOUNDARY.json"
+                                         ],
+                       "authority_effect":  "NONE",
+                       "standing_effect":  "NONE"
+                   },
+                   {
+                       "claim_id":  "P00-C004",
+                       "claim":  "A proof artifact does not independently create runtime truth.",
+                       "claim_class":  "PROOF_RECOGNITION_BOUNDARY",
+                       "dossier_pages":  [
+                                             10,
+                                             23,
+                                             24
+                                         ],
+                       "evidence_refs":  [
+                                             "AUTHORITY_AND_STATUS_BOUNDARY.json"
+                                         ],
+                       "authority_effect":  "NONE",
+                       "standing_effect":  "NONE"
+                   }
+               ]
+}

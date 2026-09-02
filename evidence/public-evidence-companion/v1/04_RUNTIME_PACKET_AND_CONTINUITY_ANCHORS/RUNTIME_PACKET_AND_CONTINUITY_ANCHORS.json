@@ -1,0 +1,137 @@
+{
+    "packet_id":  "04_RUNTIME_PACKET_AND_CONTINUITY_ANCHORS",
+    "created_at_utc":  "2026-07-16T22:54:44.9515703Z",
+    "dossier_binding":  {
+                            "version":  "1.8",
+                            "sha256":  "F489BA01961A12CF101B1F1DF57E6958456A0840BEB798B862FA97ACB030892D",
+                            "relevant_pages":  [
+                                                   16,
+                                                   17,
+                                                   18,
+                                                   19,
+                                                   20,
+                                                   34
+                                               ]
+                        },
+    "parent_binding":  {
+                           "packet_id":  "03_TIER1_AUTHORITY_ENFORCEMENT",
+                           "content_manifest_sha256":  "11F0747840951C6184024569FF06E277BF81345D6D316F6F5297A7EFB71DF7FA",
+                           "verification_result_sha256":  "4C6262AE47EB096A760CA267232F54012EA4E4D2A5695285A22DF5A503DCC3BC",
+                           "verification_status":  "PASS"
+                       },
+    "source_file_count":  4,
+    "source_bindings":  [
+                            {
+                                "relative_path":  "ehco/chat_routes.py",
+                                "bytes":  167428,
+                                "sha256":  "24C80969E6478D85135E96E006544F1C1D5C83D23A5D65CF66C2978726C0C367",
+                                "hash_match":  true,
+                                "source_content_included":  false
+                            },
+                            {
+                                "relative_path":  "ehco/chat_engine.py",
+                                "bytes":  21760,
+                                "sha256":  "4E9A25B9304180A8D1ADEA135F295448BC45CD06763C4EE8667AD6AAF80F1340",
+                                "hash_match":  true,
+                                "source_content_included":  false
+                            },
+                            {
+                                "relative_path":  "ehco/ehco1-recursion-engine/support_roots.py",
+                                "bytes":  7422,
+                                "sha256":  "82E065AB6A1C427B6E435FF6B0550DF14373B9811CCE32F7005B9BECA15AC7E9",
+                                "hash_match":  true,
+                                "source_content_included":  false
+                            },
+                            {
+                                "relative_path":  "ehco/core/ehco_node/runtime/recursion_bridge.py",
+                                "bytes":  1944,
+                                "sha256":  "EADE2F7F32620840DCA8CF243E79689E4A73EF62B4ABAFADA7FA64BEC12871A2",
+                                "hash_match":  true,
+                                "source_content_included":  false
+                            }
+                        ],
+    "implementation_anchor_count":  7,
+    "implementation_anchors":  [
+                                   {
+                                       "relative_path":  "ehco/chat_engine.py",
+                                       "symbol":  "build_reply_native",
+                                       "evidence_area":  "RUNTIME_PACKET",
+                                       "line":  408,
+                                       "declaration_sha256":  "6D25EDC636B9761ACF700E6B5820762503A5D6E305A683495879CF220773200D",
+                                       "source_sha256":  "4E9A25B9304180A8D1ADEA135F295448BC45CD06763C4EE8667AD6AAF80F1340",
+                                       "declaration_match":  true
+                                   },
+                                   {
+                                       "relative_path":  "ehco/chat_routes.py",
+                                       "symbol":  "_packet_carrier",
+                                       "evidence_area":  "RUNTIME_PACKET",
+                                       "line":  587,
+                                       "declaration_sha256":  "724D250E8F9A4357246F455CB0E463C0C4ABE848D95D72CFE4228C97AAC0F110",
+                                       "source_sha256":  "24C80969E6478D85135E96E006544F1C1D5C83D23A5D65CF66C2978726C0C367",
+                                       "declaration_match":  true
+                                   },
+                                   {
+                                       "relative_path":  "ehco/chat_routes.py",
+                                       "symbol":  "_build_runtime_packet_view",
+                                       "evidence_area":  "RUNTIME_PACKET",
+                                       "line":  1261,
+                                       "declaration_sha256":  "8EBB82D32FC97D9A5F7FCEC324EF995D6A5A5902E3960DB5C275C6C4BDD1CEA3",
+                                       "source_sha256":  "24C80969E6478D85135E96E006544F1C1D5C83D23A5D65CF66C2978726C0C367",
+                                       "declaration_match":  true
+                                   },
+                                   {
+                                       "relative_path":  "ehco/chat_routes.py",
+                                       "symbol":  "_augment_packet_with_seam",
+                                       "evidence_area":  "RUNTIME_PACKET",
+                                       "line":  1343,
+                                       "declaration_sha256":  "94A7CEAB1867F4940E385E40431AE3C6199452CE5192E61A5DC4241EB7E8386E",
+                                       "source_sha256":  "24C80969E6478D85135E96E006544F1C1D5C83D23A5D65CF66C2978726C0C367",
+                                       "declaration_match":  true
+                                   },
+                                   {
+                                       "relative_path":  "ehco/chat_routes.py",
+                                       "symbol":  "_persist_server_continuity",
+                                       "evidence_area":  "CONTINUITY",
+                                       "line":  1377,
+                                       "declaration_sha256":  "E1822973E15C85F4FF768BB79D856CE7B3B9A6DF848F4811407F3AC2FF517970",
+                                       "source_sha256":  "24C80969E6478D85135E96E006544F1C1D5C83D23A5D65CF66C2978726C0C367",
+                                       "declaration_match":  true
+                                   },
+                                   {
+                                       "relative_path":  "ehco/ehco1-recursion-engine/support_roots.py",
+                                       "symbol":  "load_support_roots",
+                                       "evidence_area":  "RECURSIVE_SUPPORT",
+                                       "line":  227,
+                                       "declaration_sha256":  "C74FDF33C2104EEC4FAC6F51411F617AC73B60B7A6D0C150E0E744770EFF4551",
+                                       "source_sha256":  "82E065AB6A1C427B6E435FF6B0550DF14373B9811CCE32F7005B9BECA15AC7E9",
+                                       "declaration_match":  true
+                                   },
+                                   {
+                                       "relative_path":  "ehco/core/ehco_node/runtime/recursion_bridge.py",
+                                       "symbol":  "run_recursion",
+                                       "evidence_area":  "RECURSIVE_SUPPORT",
+                                       "line":  15,
+                                       "declaration_sha256":  "E2BEDA939B5DB111E243C5084978FDC67AF444557DC65A9E69C977582C83C31E",
+                                       "source_sha256":  "EADE2F7F32620840DCA8CF243E79689E4A73EF62B4ABAFADA7FA64BEC12871A2",
+                                       "declaration_match":  true
+                                   }
+                               ],
+    "evidence_scope":  {
+                           "exact_source_identity":  true,
+                           "named_declaration_presence":  true,
+                           "runtime_packet_anchors":  true,
+                           "continuity_anchors":  true,
+                           "recursive_support_anchors":  true
+                       },
+    "explicit_non_claims":  {
+                                "live_runtime_execution_observed":  false,
+                                "end_to_end_behavior_proven":  false,
+                                "persistence_behavior_proven":  false,
+                                "restart_behavior_proven":  false,
+                                "recovery_behavior_proven":  false,
+                                "new_runtime_realization_claimed":  false,
+                                "source_code_included":  false
+                            },
+    "authority_effect":  "NONE",
+    "standing_effect":  "NONE"
+}

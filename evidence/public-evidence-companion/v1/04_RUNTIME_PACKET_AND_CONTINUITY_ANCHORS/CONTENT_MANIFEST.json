@@ -1,0 +1,20 @@
+{
+    "packet_id":  "04_RUNTIME_PACKET_AND_CONTINUITY_ANCHORS",
+    "hash_algorithm":  "SHA256",
+    "manifest_self_reference":  false,
+    "verification_result_in_manifest":  false,
+    "packet_receipt_in_manifest":  false,
+    "file_count":  2,
+    "files":  [
+                  {
+                      "path":  "RUNTIME_PACKET_AND_CONTINUITY_ANCHORS.json",
+                      "bytes":  8983,
+                      "sha256":  "E719C1F3F76CB5EB7919AB646D72F79EE3F32D0C7550FD210E28F5E7CC7690BC"
+                  },
+                  {
+                      "path":  "README.txt",
+                      "bytes":  540,
+                      "sha256":  "A2A51DE0AE0E2855055DE121003084F938A142EE031069F99E0D46B2BB66EB93"
+                  }
+              ]
+}

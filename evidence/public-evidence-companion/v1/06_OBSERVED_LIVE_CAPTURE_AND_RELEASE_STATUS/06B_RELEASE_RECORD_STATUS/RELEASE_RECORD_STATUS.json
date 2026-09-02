@@ -1,0 +1,74 @@
+{
+    "packet_id":  "06_OBSERVED_LIVE_CAPTURE_AND_RELEASE_STATUS",
+    "artifact_release_proof":  {
+                                   "schema":  "EHCO_ARTIFACT_RELEASE_PROOF_V5",
+                                   "contract_version":  "5.0",
+                                   "snapshot_basis":  "conversation_derived_release_authority_v5",
+                                   "snapshot_label":  "closeout_v5_contract_surface",
+                                   "generated_at":  1777495146,
+                                   "execution_surface_observed":  false,
+                                   "repo_inspection":  "pending",
+                                   "live_chat_proof":  "pending",
+                                   "release_gate_proof":  "pending",
+                                   "release_readiness_verdict":  "blocked",
+                                   "ready_for_release":  false,
+                                   "verification_status":  "blocked",
+                                   "blocking_failure_codes":  [
+                                                                  "proof_not_sufficient_for_release",
+                                                                  "law_00"
+                                                              ]
+                               },
+    "artifact_release_binding":  {
+                                     "schema":  "EHCO_ARTIFACT_RELEASE_BINDING_V5",
+                                     "contract_version":  "5.0",
+                                     "snapshot_basis":  "conversation_derived_release_authority_v5",
+                                     "snapshot_label":  "closeout_v5_contract_surface",
+                                     "generated_at":  1777495146,
+                                     "binding_graph_complete":  true,
+                                     "binding_integrity_complete":  true,
+                                     "verification_status":  "bound",
+                                     "blocking_failure_codes":  [
+                                                                    "artifact_release_authority_not_valid"
+                                                                ]
+                                 },
+    "deployment_evidence_binding":  {
+                                        "schema":  "EHCO_DEPLOYMENT_EVIDENCE_BINDING_V6",
+                                        "contract_version":  "6.0",
+                                        "snapshot_basis":  "live_capture_external_freeze_closeout",
+                                        "snapshot_label":  "external_freeze_live_capture",
+                                        "generated_at":  1777603904,
+                                        "capture_timestamp":  "2026-05-01T02:48:46.2604099Z",
+                                        "environment_label":  "local_live",
+                                        "external_emission":  true,
+                                        "deployment_binding_complete":  true,
+                                        "observed_ready_for_external_freeze":  true,
+                                        "derived_ready_for_external_freeze":  false,
+                                        "observed_verification_status":  "live_capture_bound",
+                                        "derived_verification_status":  "bound"
+                                    },
+    "distribution_release_binding":  {
+                                         "schema":  "EHCO_DISTRIBUTION_RELEASE_BINDING_V5",
+                                         "contract_version":  "5.0",
+                                         "snapshot_basis":  "conversation_derived_release_authority_v5",
+                                         "generated_at":  1777495146,
+                                         "bundle_path":  null,
+                                         "bundle_sha256":  null,
+                                         "missing_members":  [
+                                                                 "EHCO_Fusion_Dev/chat_routes.py",
+                                                                 "docs/CARRYOVER_FULL_SET.json",
+                                                                 "proofs/release_authority/ARTIFACT_RELEASE_PROOF.json",
+                                                                 "proofs/release_authority/ARTIFACT_RELEASE_BINDING.json"
+                                                             ],
+                                         "distribution_binding_complete":  false,
+                                         "ready_for_external_release":  false,
+                                         "verification_status":  "blocked",
+                                         "blocking_failure_codes":  [
+                                                                        "distribution_authority_not_ready",
+                                                                        "binding_not_valid"
+                                                                    ]
+                                     },
+    "record_disposition":  "MIXED_BOUND_BLOCKED_AND_DIVERGENT",
+    "release_authorized":  false,
+    "authority_effect":  "NONE",
+    "standing_effect":  "NONE"
+}

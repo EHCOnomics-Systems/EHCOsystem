@@ -1,0 +1,16 @@
+{
+    "packet_id":  "06_OBSERVED_LIVE_CAPTURE_AND_RELEASE_STATUS",
+    "issued_at_utc":  "2026-07-17T01:29:20.9942928Z",
+    "parent_manifest_sha256":  "CD7D4B1F127AA3A1A827127BB94314BB47C46528D53D4FB798D0E1E44243950C",
+    "parent_verification_sha256":  "9C78C74D0AF6D04F41D48F19E63282189394FE68A6B879C6F0860F81A6E0EC0B",
+    "content_manifest_sha256":  "379E16571EE8A2C5451D0C46610B34E5AC2835C5E1879B6AF77E4F2B009BD5F3",
+    "verification_result_sha256":  "302673E16C6B95ADDE9DE9645F74E94ABA4FAD6844AD9D81143649ABACE270B1",
+    "status":  "PASS",
+    "verification_scope":  "PACKET_INTEGRITY",
+    "evidence_disposition":  "MIXED_STATUS_WITH_DIRECT_DISCREPANCIES_AND_OPEN_GAPS",
+    "release_authorized":  false,
+    "production_activation_authorized":  false,
+    "authority_effect":  "NONE",
+    "standing_effect":  "NONE",
+    "final_zip_created":  false
+}

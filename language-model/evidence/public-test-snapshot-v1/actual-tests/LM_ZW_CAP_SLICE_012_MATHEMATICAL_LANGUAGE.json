@@ -1,0 +1,17 @@
+{
+  "schema": "EHCO_ZERO_WEIGHT_CAPABILITY_EVALUATION_FIXTURE_V1",
+  "operation_id": "LM-ZW-CAP-SLICE-012",
+  "selected_slice": "MATHEMATICAL_LANGUAGE",
+  "cases": [
+    {"case_id":"MATH-001","probe":"md4_bounded_language_math","input":{"statements":["prove x plus 0 equals x"]},"expected":{"disposition":"PASS","failure_class":null}},
+    {"case_id":"MATH-002","probe":"md4_bounded_language_math","input":{"statements":["prove 2 is less than or equal to 2"]},"expected":{"disposition":"PASS","failure_class":null}},
+    {"case_id":"MATH-003","probe":"md4_bounded_language_math","input":{"statements":["assume x equals y","prove y equals x"]},"expected":{"disposition":"PASS","failure_class":null}},
+    {"case_id":"MATH-004","probe":"free_natural_language","input":{"statements":["please prove that x is probably equal to y"]},"expected":{"disposition":"WITHHOLD","failure_class":"GENERALIZATION_NOT_ESTABLISHED"}},
+    {"case_id":"MATH-005","probe":"symbolic_surface","input":{"statements":["prove 2 + 2 equals 4"]},"expected":{"disposition":"WITHHOLD","failure_class":"MISSING_REPRESENTATION"}},
+    {"case_id":"MATH-006","probe":"question_form","input":{"statements":["what is 2 plus 2"]},"expected":{"disposition":"WITHHOLD","failure_class":"GENERALIZATION_NOT_ESTABLISHED"}},
+    {"case_id":"MATH-007","probe":"missing_relation","input":{"statements":["prove x plus 1"]},"expected":{"disposition":"WITHHOLD","failure_class":"MISSING_COMPOSITION_RULE"}},
+    {"case_id":"MATH-008","probe":"ineligible_source","input":{"statements":["prove 1 equals 1"],"source_dispositions":["DEFERRED"]},"expected":{"disposition":"WITHHOLD","failure_class":"MISSING_EVIDENCE_INPUT"}},
+    {"case_id":"MATH-009","probe":"multiple_goals","input":{"statements":["prove 1 equals 1","prove 2 equals 2"]},"expected":{"disposition":"WITHHOLD","failure_class":"MISSING_COMPOSITION_RULE"}},
+    {"case_id":"MATH-010","probe":"unsupported_probe","input":{},"expected":{"disposition":"CAPABILITY_FAILURE","failure_class":"MISSING_REPRESENTATION"}}
+  ]
+}
