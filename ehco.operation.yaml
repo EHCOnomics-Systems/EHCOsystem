@@ -145,7 +145,7 @@ bridge:
   participation_binding_status: NOT_ESTABLISHED
   canonical_runtime_receipt_status: NOT_ESTABLISHED
 evidence:
-  evidence_class: PUBLIC_HISTORY_REMEDIATION_PREPARATION_RECORD
+  evidence_class: REPOSITORY_SOURCE_AND_DIFF_VALIDATION
   required_checks:
     - Exact source base is accepted main a5e1fb7ec73e12534fce47b15bce86927549065e.
     - Accepted source tree before preparation is 7999a0747585f096f9d1e53236ce4c55f8add1c0.
