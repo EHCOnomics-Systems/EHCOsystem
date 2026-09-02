@@ -4,6 +4,8 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
+from public_disclosure_policy import find_disclosure_violations, run_synthetic_policy_self_test
+
 ROOT = Path(__file__).resolve().parents[1]
 REGISTRY = ROOT / "assurance" / "PUBLIC-CLAIM-REGISTRY.json"
 EXPECTED_PACKET_SHA256 = "7F80C27D085AE871A00AED412C6F20EA9A76CB0677C93AEBA381CD1FD70EC8E5"
@@ -26,6 +28,12 @@ def read(relative: str) -> str:
 
 
 def main() -> int:
+    try:
+        run_synthetic_policy_self_test()
+        checked(True, "Public disclosure policy synthetic self-test failed")
+    except AssertionError as exc:
+        checked(False, f"Public disclosure policy synthetic self-test failed: {exc}")
+
     checked(REGISTRY.is_file(), "Canonical public claim registry missing")
     try:
         registry = json.loads(REGISTRY.read_text(encoding="utf-8-sig"))
@@ -107,19 +115,13 @@ def main() -> int:
     checked("PUBLIC_SAFE_RECORD.json" in public_files["Full Flex"], "Full Flex page does not route to public-safe record")
     checked("verify_all_public.py" in public_files["Verification"], "Verification README does not expose unified validator")
 
-    combined = "\n".join(public_files.values()) + "\n" + json.dumps(registry, sort_keys=True)
-    forbidden = [
-        "EHCOnomics-Systems/EHCO_AI-OS",
-        "EHCOnomics-Systems/EHCO_Range_Reactor",
-        "EHCOnomics-Systems/ehco_Language-Model_v1",
-        "drive.google.com",
-        "1FydQKUNfpQ7oZrgpLDlqRHxFM_f1mFv5uq_akploL38",
-        "DESKTOP-",
-        "C:\\",
-    ]
-    for value in forbidden:
-        checked(value not in combined, f"Protected locator/topology token in active public representation: {value}")
+    disclosure_inputs = dict(public_files)
+    disclosure_inputs["PUBLIC-CLAIM-REGISTRY.json"] = json.dumps(registry, sort_keys=True)
+    for source, text in disclosure_inputs.items():
+        violations = find_disclosure_violations(text, source)
+        checked(not violations, f"Protected topology detected by public disclosure policy in {source}")
 
+    combined = "\n".join(disclosure_inputs.values())
     lower_combined = combined.lower()
     checked("advanced near-final" not in lower_combined, "Obsolete advanced-near-final wording remains active")
     checked("current selected lifecycle frontier is governed staging" not in lower_combined, "Stale Language Model staging-frontier wording remains active")
