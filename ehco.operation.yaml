@@ -15,10 +15,11 @@ selection:
   selected_by: Edward Henry
   selection_class: EXPLICIT_OWNER_DIRECTION
   durable_reference: |-
-    Edward Henry selected continuation of SOW-010 Option 1 after canonical acceptance of the history-remediation preparation package: proceed with the destructive clean-history cutover/provider-purge path while strictly preserving accepted public technical evidence, proof, language, architecture, verification depth, benchmark results, accepted maturity, and numerical standing 52/53. The clean-history construction uses the exact current accepted public tree as its content source and the established disclosure-safe repository root as its ancestry anchor. This PUBLISH control projection records and qualifies that selected cutover operation; it does not itself force-update protected main or weaken repository protections.
+    Edward Henry selected continuation of SOW-010 Option 1 after canonical acceptance of the history-remediation preparation package: proceed with the destructive clean-history cutover/provider-purge path while strictly preserving accepted public technical evidence, proof, language, architecture, verification depth, benchmark results, accepted maturity, and numerical standing 52/53. The exact PUBLISH cutover-control head 3ae2c2ede828213cf6d9615653962b904700a4e7 passed canonical public repository validation, CodeQL and the EHCO Assistant Operation Gate. This ACCEPT transition integrates only the source-grounded cutover control projection; it does not itself force-update protected main, mutate rulesets, replace the repository, or claim provider purge completion.
     SOURCE_MAIN:2cee336c6016a71ed5a1bde645643e3c19f7c8ad
     SOURCE_TREE:77142b791be819ec3663be6c845d78538462f6c0
     DISCLOSURE_SAFE_ROOT:a1fdf15fb91ce112548eee435aaadf48a92dc451
+    REVIEWED_PUBLISH_HEAD:3ae2c2ede828213cf6d9615653962b904700a4e7
     CLEAN_HISTORY_BRANCH:sow010/clean-history-candidate
     DESTRUCTIVE_MAIN_CUTOVER_OWNER_SELECTED=true
     PROVIDER_PURGE_OWNER_SELECTED=true
@@ -30,37 +31,30 @@ selection:
     PROVIDER_ADMINISTRATIVE_REF_REPLACEMENT_OUTSIDE_CANONICAL_REMOTE_ACTION_ENUM=true
     OPERATION_STABLE_ENVELOPE_CHANGE=true
   source_base_revision: 2cee336c6016a71ed5a1bde645643e3c19f7c8ad
-  expected_reviewed_head_revision: NOT_APPLICABLE_UNTIL_ACCEPT
+  expected_reviewed_head_revision: 3ae2c2ede828213cf6d9615653962b904700a4e7
 control_anchor: AGENTS.md
 status_owner_path: ehco.operation.yaml
 accepted_standing: 52/53
 active_operation:
   operation_id: EHCOSYSTEM-PUBLIC-SOW010-HISTORY-CUTOVER-001
-  state: ACTIVE
-  authorization_mode: PUBLISH
-  bounded_outcome: Publish and qualify the exact SOW-010 clean-history cutover control projection that freezes current accepted main/tree, the disclosure-safe ancestry anchor, technical-evidence preservation invariants, and the selected destructive provider-history remediation path before clean-history construction and protected-main ref replacement.
-  remaining_bounded_work:
-    - Qualify this control-only PUBLISH candidate through applicable repository validation, CodeQL and the EHCO Assistant Operation Gate.
-    - Owner-accept and integrate the exact qualified control projection through normal protected-main PR mechanics.
-    - Construct a disclosure-safe clean-history candidate from the established safe root using the then-current accepted canonical tree as the preserved content source.
-    - Verify clean-history candidate content preservation and ancestry before any default-branch ref replacement.
-    - Attempt the selected protected-main cutover only through a lawful provider route that satisfies or explicitly dispositiones the active provider ruleset; do not silently weaken repository controls.
-    - Pursue provider-side dereferencing/purge of residual contaminated provider objects through available lawful GitHub/provider routes and verify public reachability postconditions.
-    - Stop at a proven provider capability boundary and return only the minimum owner/provider action if the connected route cannot perform the required administrative effect.
+  state: COMPLETE
+  authorization_mode: ACCEPT
+  bounded_outcome: Owner-accept and integrate the exact qualified SOW-010 clean-history cutover control projection so canonical source records the selected destructive remediation path, exact accepted source/tree, disclosure-safe ancestry anchor, technical-evidence preservation invariants, and provider ruleset boundary before the history rewrite itself.
+  remaining_bounded_work: []
   interaction_seams:
     - Private Google Drive SOW-010 owns the zero-exposure objective, destructive-remediation decision law and prohibition on evidence demotion.
     - EHCOnomics-Systems/EHCOsystem owns exact public Git history, tree/blob identities, refs, pull-request/provider state and repository rulesets.
-    - Existing owning technical evidence retains all established technical effects and claim ceilings; Git-history custody change does not recreate or demote that evidence.
+    - Existing owning technical evidence retains all established technical effects and claim ceilings; this acceptance does not recreate or demote that evidence.
     - GitHub/provider rulesets own whether the selected non-fast-forward default-branch replacement is currently permitted.
     - INSTANTIATED_EHCO_RUNTIME retains Tier One Runtime authority and Runtime state.
   non_overlap:
-    - No accepted public-safe technical evidence, architecture, benchmark, proof result, verification machinery, reader-facing technical language or maturity statement is reduced to simplify history remediation.
+    - No accepted public-safe technical evidence, architecture, benchmark, proof result, verification machinery, reader-facing technical language or maturity statement is reduced by this acceptance.
     - No standing change from 52/53.
     - No Runtime, deployment, release, authority or participation effect.
     - No open-source conversion or proprietary implementation-source publication.
     - No repository replacement/reseed unless separately selected after a proven failure of the selected clean-history rewrite path.
     - No automatic successor.
-    - No silent ruleset weakening or provider-setting mutation.
+    - No ruleset mutation, force update of main or provider purge is included in this ACCEPT integration.
   automatic_successor: PROHIBITED
   successor_operation: NOT_SELECTED
 execution_continuity:
@@ -105,25 +99,25 @@ change_control:
     - read_source
     - compare_source
     - audit
-    - propose
     - update_file
     - run_checks
   local_actions_prohibited:
+    - propose
     - create_file
     - move_file
     - delete_file
     - generate_artifact
   remote_actions_authorized:
+    - mark_pull_request_ready_for_review
+    - merge_pull_request
+    - record_owner_acceptance
+    - close_operation
+  remote_actions_prohibited:
     - create_branch
     - commit
     - push
     - open_draft_pull_request
     - update_draft_pull_request
-  remote_actions_prohibited:
-    - mark_pull_request_ready_for_review
-    - merge_pull_request
-    - record_owner_acceptance
-    - close_operation
     - activate_selected_successor
     - modify_repository_settings
     - modify_drive_controls
@@ -150,18 +144,20 @@ bridge:
   participation_binding_status: NOT_ESTABLISHED
   canonical_runtime_receipt_status: NOT_ESTABLISHED
 evidence:
-  evidence_class: REPOSITORY_SOURCE_AND_DIFF_VALIDATION
+  evidence_class: OWNER_ACCEPTANCE_RECORD
   required_checks:
-    - Exact source base is accepted main 2cee336c6016a71ed5a1bde645643e3c19f7c8ad.
-    - Exact source tree is 77142b791be819ec3663be6c845d78538462f6c0.
+    - Reviewed PUBLISH head 3ae2c2ede828213cf6d9615653962b904700a4e7 passed canonical public repository validation.
+    - Reviewed PUBLISH head 3ae2c2ede828213cf6d9615653962b904700a4e7 passed CodeQL.
+    - Reviewed PUBLISH head 3ae2c2ede828213cf6d9615653962b904700a4e7 passed the EHCO Assistant Operation Gate.
+    - Reviewed PUBLISH diff changes only ehco.operation.yaml.
+    - Exact source base is accepted main 2cee336c6016a71ed5a1bde645643e3c19f7c8ad with source tree 77142b791be819ec3663be6c845d78538462f6c0.
     - Established disclosure-safe repository root is a1fdf15fb91ce112548eee435aaadf48a92dc451.
-    - This PUBLISH projection changes only ehco.operation.yaml.
     - Canonical continuity receipt remains unchanged and preserves accepted public technical evidence/proof/language through history remediation.
-    - Active Protect main non-fast-forward protection remains unchanged during this PUBLISH projection.
-    - Required protected-branch checks succeed on the exact PUBLISH candidate.
     - Accepted numerical standing remains 52/53.
+    - No ruleset mutation, protected-main ref replacement or provider purge is created by this acceptance.
+    - No Runtime, deployment, release, authority, standing, participation or successor effect is created by this acceptance.
   proves:
-    - Owner-selected source-grounded PUBLISH control for the SOW-010 destructive clean-history cutover/provider-purge path with strict technical-evidence preservation.
+    - Owner-selected repository-source acceptance of the exact qualified SOW-010 destructive clean-history cutover control projection.
   evidence_not_created:
     - Clean-history candidate construction
     - Protected-main ref replacement
@@ -173,7 +169,7 @@ evidence:
     - Authority, standing or Runtime participation change
     - Any successor operation
 stop_condition:
-  - Exact PUBLISH control candidate passes repository validation, CodeQL and EHCO Assistant Operation Gate or stops at a genuine control/provider boundary.
-  - No technical evidence/proof/language path changes in this control projection.
-  - No protected-main non-fast-forward update, ruleset mutation or provider purge is performed by this PUBLISH projection.
-  - After canonical acceptance, continue the already-selected destructive remediation to the actual provider boundary without automatically selecting a different remediation strategy.
+  - Acceptance applies only to reviewed PUBLISH head 3ae2c2ede828213cf6d9615653962b904700a4e7 and its control-only ACCEPT transition.
+  - Provider integration must preserve the one-file cutover control under normal repository protections and exact-head merge protection.
+  - Canonical main readback must preserve accepted standing 52/53 and all Runtime, deployment, release, authority, standing, participation and successor effects as NONE or not established as applicable.
+  - This control acceptance closes before the destructive history rewrite, ruleset mutation, protected-main ref replacement or provider purge; those remain the already-selected next dependent operation and must execute only through lawful provider routes.
