@@ -6,6 +6,8 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
+from public_disclosure_policy import find_disclosure_violations, run_synthetic_policy_self_test
+
 ROOT = Path(__file__).resolve().parents[1]
 EXPECTED_PACKET_SCHEMA = "EHCO_FULL_FLEX_PUBLIC_PACKET_V1"
 EXPECTED_PACKET_SHA256 = "7F80C27D085AE871A00AED412C6F20EA9A76CB0677C93AEBA381CD1FD70EC8E5"
@@ -45,6 +47,12 @@ def load_json(relative: str) -> dict:
 
 
 def main() -> int:
+    try:
+        run_synthetic_policy_self_test()
+        checked(True, "Public disclosure policy synthetic self-test failed")
+    except AssertionError as exc:
+        checked(False, f"Public disclosure policy synthetic self-test failed: {exc}")
+
     root_readme = read("README.md")
     runtime_readme = read("runtime/README.md")
     evidence_readme = read("evidence/README.md")
@@ -166,8 +174,15 @@ def main() -> int:
     checked(RUNTIME_AUTHORITY_OWNER in technology_estate, "Technology Estate does not identify Runtime authority/state owner")
     checked(RUNTIME_AUTHORITY_OWNER in diagrams, "Architecture diagrams do not identify Runtime authority/state owner")
 
-    public_combined = "\n".join([reader_semantics, release_register, json.dumps(public_record), json.dumps(registry)])
-    checked("1FydQKUNfpQ7oZrgpLDlqRHxFM_f1mFv5uq_akploL38" not in public_combined, "Private Drive control identifier exposed in Runtime public surfaces")
+    disclosure_inputs = {
+        "Runtime reader surfaces": reader_semantics,
+        "Release register": release_register,
+        "Runtime public-safe record": json.dumps(public_record, sort_keys=True),
+        "Public claim registry": json.dumps(registry, sort_keys=True),
+    }
+    for source, text in disclosure_inputs.items():
+        violations = find_disclosure_violations(text, source)
+        checked(not violations, f"Protected source/topology information exposed in {source}")
 
     if ERRORS:
         print(f"EHCOsystem accepted Runtime evidence validation: FAIL ({len(ERRORS)} errors / {CHECKS} checks)")
