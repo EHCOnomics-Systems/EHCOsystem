@@ -14,7 +14,6 @@ RR_ROOT = ROOT / "range-reactor"
 SNAPSHOT = RR_ROOT / "evidence" / "public-capability-snapshot-v1"
 MANIFEST = SNAPSHOT / "MANIFEST.json"
 VECTORS = SNAPSHOT / "capability-vectors.json"
-EXPECTED_SOURCE_REVISION = "2ab887e1e82c2c5422223fbd862b288c8c63ee27"
 EXPECTED_VECTOR_SHA256 = "612389A01DA53688CCB0276D0633A3CEA757517DAC736615D089D597424762D1"
 EXPECTED_CAPABILITIES = {
     "deterministic_replay",
@@ -66,7 +65,9 @@ def validate_snapshot() -> None:
     vectors = load_json(VECTORS)
     require(manifest.get("schema") == "EHCO_PUBLIC_RANGE_REACTOR_CAPABILITY_SNAPSHOT_MANIFEST_V1", "RR manifest schema drift")
     require(manifest.get("snapshot_id") == "EHCO-RR-PUBLIC-CAPABILITY-SNAPSHOT-V1", "RR snapshot identity drift")
-    require(manifest.get("owning_source_revision") == EXPECTED_SOURCE_REVISION, "RR accepted source-review revision drift")
+    require(manifest.get("source_review_basis") == "ACCEPTED_OWNING_SOURCE_REVIEW", "RR public source-review basis drift")
+    require(manifest.get("source_revision_publication") == "WITHHELD_PRIVATE_CUSTODY", "RR private source-revision publication boundary drift")
+    require("owning_source_revision" not in manifest, "RR public manifest must not publish an owning-source revision")
     require(manifest.get("evidence_class") == "SOURCE_REVIEWED_SYNTHETIC_CAPABILITY_EVIDENCE", "RR evidence class drift")
     require(manifest.get("fixture_count") == 1 and manifest.get("case_count") == 8, "RR manifest count drift")
     raw = VECTORS.read_bytes()
