@@ -18,29 +18,27 @@ selection:
     Edward Henry selected a narrow language-cleanup continuation of the existing EHCOsystem public-repository closeout. The selected work is limited to removing stale or misleading wording already present in the accepted public repository while preserving the established public presentation, strongest accepted capability and lifecycle statements, public-private boundaries, and numerical standing 52/53. This operation does not reclassify components or applications, publish private development state, introduce new public maturity tables, demote established capability, reopen technical proof, or create a new baseline program.
     SOURCE_BASE:86d0c1c6f4d3b36eb3167d4c77365952c83bf514
     BRANCH:closeout/stale-language-cleanup-v24
+    REVIEWED_PUBLISH_HEAD:4937ddca532b75b579102e3648e0f1dd7c641afe
     OPERATION_STABLE_ENVELOPE_CHANGE=true
   source_base_revision: 86d0c1c6f4d3b36eb3167d4c77365952c83bf514
-  expected_reviewed_head_revision: NOT_APPLICABLE_UNTIL_ACCEPT
+  expected_reviewed_head_revision: 4937ddca532b75b579102e3648e0f1dd7c641afe
 control_anchor: AGENTS.md
 status_owner_path: ehco.operation.yaml
 accepted_standing: 52/53
 active_operation:
   operation_id: EHCOSYSTEM-PUBLIC-STALE-LANGUAGE-CLEANUP-001
-  state: ACTIVE
-  authorization_mode: PUBLISH
-  bounded_outcome: Remove the remaining stale wording from the accepted public repository without changing established technical meaning, maturity, evidence, architecture, property/application presentation, or standing.
-  remaining_bounded_work:
-    - Reconcile the completed repository-operation record so completed PR55 qualification, merge, canonical-main readback, and Drive reconciliation are described as completed rather than pending.
-    - Clarify registered repository release identity wording so a registered tag name cannot be mistaken for provider-materialized GitHub tag or GitHub Release state.
-    - Re-audit the resulting public candidate for the same stale-language classes and qualify the exact candidate through existing repository checks.
+  state: COMPLETE
+  authorization_mode: ACCEPT
+  bounded_outcome: Owner acceptance of the exact qualified stale-language cleanup candidate while preserving established public technical meaning, maturity, evidence, architecture, property/application presentation, and standing.
+  remaining_bounded_work: []
   interaction_seams:
     - Google Drive EHCO-PUB-SOW-009 v2.4 owns durable closeout meaning.
     - EHCOnomics-Systems/EHCOsystem owns the exact public wording changed here.
     - Existing owning technical evidence retains all previously established Runtime, artifact, release, staging, benchmark, proof, and standing effects.
     - INSTANTIATED_EHCO_RUNTIME retains Tier One Runtime authority and Runtime state.
   non_overlap:
-    - No component/application reclassification, private lifecycle publication, public maturity table, technical reproof, Runtime observation, host execution, benchmark rerun, deployment, release, authority change, standing change, participation change, or automatic successor.
-    - Established EHCO AI-OS, Full Flex, Language Model, Range Reactor, and other accepted public capability statements are preserved at their strongest established state.
+    - No component/application reclassification, private lifecycle publication, public maturity table, technical reproof, Runtime observation, host execution, benchmark rerun, deployment, release, authority change, standing change, participation change or automatic successor.
+    - Established EHCO AI-OS, Full Flex, Language Model, Range Reactor, and other accepted public capability statements remain at their strongest established state.
   automatic_successor: PROHIBITED
   successor_operation: NOT_SELECTED
 execution_continuity:
@@ -90,16 +88,16 @@ change_control:
     - delete_file
     - generate_artifact
   remote_actions_authorized:
+    - mark_pull_request_ready_for_review
+    - merge_pull_request
+    - record_owner_acceptance
+    - close_operation
+  remote_actions_prohibited:
     - create_branch
     - commit
     - push
     - open_draft_pull_request
     - update_draft_pull_request
-  remote_actions_prohibited:
-    - mark_pull_request_ready_for_review
-    - merge_pull_request
-    - record_owner_acceptance
-    - close_operation
     - activate_selected_successor
     - modify_repository_settings
     - modify_drive_controls
@@ -126,15 +124,16 @@ bridge:
   participation_binding_status: NOT_ESTABLISHED
   canonical_runtime_receipt_status: NOT_ESTABLISHED
 evidence:
-  evidence_class: REPOSITORY_SOURCE_AND_DIFF_VALIDATION
+  evidence_class: OWNER_ACCEPTANCE_RECORD
   required_checks:
-    - The completed operation record contains no prospective PR55 merge/readback/Drive-reconciliation instructions.
-    - Registered repository release identity wording clearly distinguishes the registered tag name from provider-materialized Git tag or GitHub Release state.
-    - No established public capability, maturity, Runtime, Full Flex, Language Model, Range Reactor, application/property, or standing statement is demoted or reclassified.
-    - Exact candidate passes canonical public repository validation, CodeQL, and EHCO Assistant Operation Gate before ACCEPT.
-    - Accepted numerical standing remains 52/53 and all Runtime, deployment, release, authority, standing, participation, and successor effects remain NONE or not established as applicable.
+    - Reviewed PUBLISH head 4937ddca532b75b579102e3648e0f1dd7c641afe passed canonical public repository validation.
+    - Reviewed PUBLISH head 4937ddca532b75b579102e3648e0f1dd7c641afe passed CodeQL.
+    - Reviewed PUBLISH head 4937ddca532b75b579102e3648e0f1dd7c641afe passed the EHCO Assistant Operation Gate.
+    - The accepted candidate removes the identified stale operation and registered-release wording without changing architecture/component/property maturity statements.
+    - Accepted numerical standing remains 52/53.
+    - No Runtime, deployment, release, authority, standing, participation or successor effect is created by this acceptance.
   proves:
-    - The exact candidate removes the identified stale wording while preserving the accepted public technical meaning and presentation.
+    - Owner-selected repository-source acceptance of the exact qualified stale-language cleanup candidate.
   evidence_not_created:
     - New technical proof or Runtime state
     - New component/application lifecycle state
@@ -142,6 +141,6 @@ evidence:
     - New authority, standing or Runtime participation
     - Any successor operation
 stop_condition:
-  - Exact PUBLISH candidate passes canonical public repository validation, CodeQL and EHCO Assistant Operation Gate.
-  - Candidate remains unmerged until lawful ACCEPT records the exact reviewed PUBLISH head.
-  - Stop with accepted standing 52/53 preserved and no Runtime, deployment, release, authority, standing, participation, or successor effect.
+  - Acceptance applies only to reviewed PUBLISH head 4937ddca532b75b579102e3648e0f1dd7c641afe and its control-only ACCEPT transition.
+  - Any provider merge must preserve the exact accepted content and normal repository protections.
+  - Canonical main, when updated by that provider merge, must preserve accepted standing 52/53 and all Runtime, deployment, release, authority, standing, participation and successor effects as NONE or not established as applicable.
