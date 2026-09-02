@@ -35,7 +35,7 @@ This map identifies the role of each public section in `EHCOsystem`.
 ## Registered repository release identity
 
 - Version: `1.0.0`
-- Tag: `v1.0.0-public`
+- Registered tag name: `v1.0.0-public`
 - Release title: `EHCOsystem Public Architecture and Evidence Baseline v1.0.0`
 
-Registered repository release identity and provider-owned GitHub Release materialization are separate publication records.
+This repository records the release identity independently from provider materialization. A GitHub tag or GitHub Release object is established only when the corresponding provider object exists.

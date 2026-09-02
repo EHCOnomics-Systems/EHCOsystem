@@ -58,9 +58,9 @@ The public repository is a source-only `PUBLIC_EVIDENCE` projection. Its reposit
 
 ## Registered repository release identity
 
-The registered repository release identity is version `1.0.0`, tag `v1.0.0-public`, with release title `EHCOsystem Public Architecture and Evidence Baseline v1.0.0`.
+The registered repository release identity is version `1.0.0`, with registered tag name `v1.0.0-public` and release title `EHCOsystem Public Architecture and Evidence Baseline v1.0.0`.
 
-**Registered release identity and live provider publication are separate publication states.** Provider-owned tag/release objects establish provider materialization when those objects exist.
+**Registered release identity and provider materialization are separate publication states.** The registered tag name is a repository identity field; it does not by itself establish that GitHub currently materializes that tag or a GitHub Release object. Provider-owned tag/release objects establish provider materialization when those objects exist.
 
 ## Repository verification
 

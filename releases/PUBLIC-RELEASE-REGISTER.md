@@ -32,10 +32,10 @@ Historical Public Evidence Companion Packets 00–08 remain immutable event-time
 ## Registered repository release identity
 
 - Version: `1.0.0`
-- Tag: `v1.0.0-public`
+- Registered tag name: `v1.0.0-public`
 - Release title: `EHCOsystem Public Architecture and Evidence Baseline v1.0.0`
 
-Registered repository release identity and provider-owned GitHub Release materialization remain separate publication records.
+This is a repository-registered release identity. It does not by itself establish that GitHub currently materializes a tag or GitHub Release object with those names. Provider-owned tag and release objects, when present, establish provider materialization separately.
 
 ## Accepted public estate
 

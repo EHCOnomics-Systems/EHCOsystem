@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate EHCOsystem public publication identity and stable repository provenance."""
+"""Validate EHCOsystem registered public publication identity and stable repository provenance."""
 
 from __future__ import annotations
 
@@ -8,7 +8,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 VERSION = "1.0.0"
-TAG = "v1.0.0-public"
+REGISTERED_TAG_NAME = "v1.0.0-public"
 TITLE = "EHCOsystem Public Architecture and Evidence Baseline v1.0.0"
 STABLE_MANIFEST_ACCEPTED_COMMIT = "eff9301e7c5ddfc0759ee0d7e3c026ad28c5670c"
 SOURCE_ONLY_ARTIFACT_DIGEST = "NOT_APPLICABLE_SOURCE_ONLY_PUBLIC_PROJECTION_NO_SEPARATE_BUILD_ARTIFACT"
@@ -36,7 +36,11 @@ def main() -> int:
     provenance = read("PROVENANCE.md", errors)
 
     for text, label in ((register, "release register"), (repo_map, "repository map")):
-        for phrase in (f"Version: `{VERSION}`", f"Tag: `{TAG}`", f"Release title: `{TITLE}`"):
+        for phrase in (
+            f"Version: `{VERSION}`",
+            f"Registered tag name: `{REGISTERED_TAG_NAME}`",
+            f"Release title: `{TITLE}`",
+        ):
             require(phrase in text, f"Registered release identity missing from {label}: {phrase}", errors)
 
     for phrase in (
@@ -44,9 +48,16 @@ def main() -> int:
         PACKET_SHA256,
         "PUBLIC_SAFE_RECORD.json",
         "raw accepted packet",
-        "Registered repository release identity and provider-owned GitHub Release materialization",
+        "does not by itself establish that GitHub currently materializes a tag or GitHub Release object",
     ):
         require(phrase in register, f"Publication register missing: {phrase}", errors)
+
+    require(
+        "registered tag name" in provenance.lower()
+        and "does not by itself establish that GitHub currently materializes that tag or a GitHub Release object" in provenance,
+        "PROVENANCE.md registered/provider publication distinction missing",
+        errors,
+    )
 
     for phrase in (
         f"accepted_commit: {STABLE_MANIFEST_ACCEPTED_COMMIT}",
@@ -67,7 +78,10 @@ def main() -> int:
             print(f"- {error}", file=sys.stderr)
         return 1
 
-    print(f"PASS: EHCOsystem public publication identity (version {VERSION}, tag {TAG})")
+    print(
+        "PASS: EHCOsystem registered public publication identity "
+        f"(version {VERSION}, registered tag name {REGISTERED_TAG_NAME}; provider tag/release materialization is separate)"
+    )
     return 0
 
 
