@@ -5,47 +5,56 @@ protocol_reference:
   profile_version: 1.0.0
   protocol_version: 1.0.0
 repository: EHCOnomics-Systems/EHCOsystem
-governed_object: EHCOSYSTEM_PUBLIC_ZERO_EXPOSURE_TECHNICAL_PUBLICATION_V1_2
+governed_object: EHCOSYSTEM_PUBLIC_HISTORY_ZERO_EXPOSURE_REMEDIATION_V1
 source_owner:
   repository: EHCOnomics-Systems/EHCOsystem
-  revision: 5cd2753eaaef81fcbdf9260c9164392f5b924b7c
+  revision: a5e1fb7ec73e12534fce47b15bce86927549065e
   repository_manifest_path: ehco.repository.yaml
   controlling_source_reference: GOOGLE_DRIVE_EHCO_PUB_SOW_010_OWNER_SELECTED_SCOPE_V1_2
 selection:
   selected_by: Edward Henry
   selection_class: EXPLICIT_OWNER_DIRECTION
   durable_reference: |-
-    Edward Henry explicitly accepted the exact qualified SOW-010 privacy-first PUBLISH candidate after current/editable disclosure-control hardening and non-destructive provider-metadata sanitation. Acceptance is bound to the reviewed PUBLISH head below and its control-only ACCEPT transition. The authoritative SOW remains in private Google Drive custody. This bounded acceptance does not declare the whole SOW-010 complete and does not resolve historical Git/diff exposure that may require a separately selected destructive provider-history remedy.
-    SOURCE_BASE:5cd2753eaaef81fcbdf9260c9164392f5b924b7c
-    BRANCH:sow010/public-surface-hardening
-    REVIEWED_PUBLISH_HEAD:aa346308fcea85649a3eb5c9f4d3efdb89294ec8
-    NEW_PATH:verification/public_disclosure_policy.py
-    SOW_DOCUMENT_PUBLICATION=false
-    PRIVATE_TOPOLOGY_DISCLOSURE=false
-    DESTRUCTIVE_HISTORY_REWRITE=false
-    OWNER_ACCEPTED_BOUNDED_PRIVACY_HARDENING=true
+    Edward Henry selected SOW-010 Option 1: clean-history rewrite plus provider-purge remediation, with strict preservation of accepted public technical evidence, proof, language, architecture, verification depth, benchmark results, accepted maturity, and numerical standing 52/53. The selected operation removes protected implementation/source-topology residue from publicly reachable historical Git/provider surfaces without using technical demotion as a remediation mechanism.
+    SOURCE_BASE:a5e1fb7ec73e12534fce47b15bce86927549065e
+    ACCEPTED_TREE:7999a0747585f096f9d1e53236ce4c55f8add1c0
+    BRANCH:sow010/history-remediation-prep
+    NEW_PATH:assurance/PUBLIC_HISTORY_CONTINUITY_RECEIPT_V1.md
+    TECHNICAL_EVIDENCE_DEMOTION=false
+    CLAIM_WEAKENING=false
+    STANDING_CHANGE=false
+    RUNTIME_EFFECT=false
+    DESTRUCTIVE_MAIN_CUTOVER_NOT_YET_AUTHORIZED_BY_PROVIDER_CONTROLS=true
     OPERATION_STABLE_ENVELOPE_CHANGE=true
-  source_base_revision: 5cd2753eaaef81fcbdf9260c9164392f5b924b7c
-  expected_reviewed_head_revision: aa346308fcea85649a3eb5c9f4d3efdb89294ec8
+  source_base_revision: a5e1fb7ec73e12534fce47b15bce86927549065e
+  expected_reviewed_head_revision: NOT_APPLICABLE_UNTIL_ACCEPT
 control_anchor: AGENTS.md
 status_owner_path: ehco.operation.yaml
 accepted_standing: 52/53
 active_operation:
-  operation_id: EHCOSYSTEM-PUBLIC-SOW010-ZERO-EXPOSURE-001
-  state: COMPLETE
-  authorization_mode: ACCEPT
-  bounded_outcome: Owner acceptance and provider integration of the exact qualified SOW-010 privacy-first current/editable public-surface hardening candidate while preserving established public-safe technical evidence, proprietary implementation custody, accepted standing 52/53, and all Runtime, deployment, release, authority, participation, standing and successor non-effects.
-  remaining_bounded_work: []
+  operation_id: EHCOSYSTEM-PUBLIC-SOW010-HISTORY-REMEDIATION-001
+  state: ACTIVE
+  authorization_mode: PUBLISH
+  bounded_outcome: Prepare and qualify a public-safe history-remediation control package that freezes the accepted public technical tree and continuity invariants, establishes the clean-history construction/cutover boundary, and preserves all accepted public-safe evidence/proof/language while stopping before any force-update of protected main, ruleset weakening, repository replacement, provider purge requiring an unavailable route, release, deployment, Runtime, authority, standing, participation or successor effect.
+  remaining_bounded_work:
+    - Publish the public-safe history continuity receipt on the preparation branch.
+    - Verify the preparation diff changes only ehco.operation.yaml and the declared continuity receipt.
+    - Qualify the preparation branch through applicable public repository validation, CodeQL and the EHCO Assistant Operation Gate.
+    - Establish the exact safe-history construction anchor and the exact accepted tree to preserve.
+    - Establish the minimum provider/ruleset action required for destructive main cutover and provider purge.
+    - Stop before changing protected main history or repository protections unless a lawful route exists inside the selected effect and provider controls permit it.
   interaction_seams:
-    - Private Google Drive SOW-010 owns the durable objective, disclosure law, broader workstreams and whole-SOW completion criteria.
-    - EHCOnomics-Systems/EHCOsystem owns the exact public repository implementation and provider state accepted in this bounded block.
-    - Existing owning technical evidence retains all established Runtime, artifact, benchmark, proof, capability, release and standing effects.
+    - Private Google Drive SOW-010 owns the zero-exposure objective, history-remediation decision law and prohibition on evidence demotion.
+    - EHCOnomics-Systems/EHCOsystem owns exact public Git history, tree/blob identities, pull-request/provider state and repository controls.
+    - Existing owning technical evidence retains all established technical effects and claim ceilings; history remediation does not recreate or demote that evidence.
     - INSTANTIATED_EHCO_RUNTIME retains Tier One Runtime authority and Runtime state.
   non_overlap:
-    - This acceptance does not publish the private Scope of Work document or any private Drive routing locator.
-    - This acceptance does not convert EHCOsystem to open source or distribute proprietary implementation source.
-    - This acceptance does not authorize destructive Git history rewrite, repository replacement/reseed, provider purge, repository-setting mutation, Wiki/Pages/Discussions enablement, tag/Release materialization, deployment, Runtime action, authority change, standing change, participation change or automatic successor.
-    - Residual historical Git/diff exposure, if any, remains outside this accepted block and inside the broader SOW-010 owner-level history-remedy decision boundary.
+    - No accepted public-safe technical evidence, architecture, benchmark, proof result, verification machinery, reader-facing technical language or maturity statement is reduced merely to simplify history remediation.
+    - No standing change from 52/53.
+    - No Runtime, deployment, release, authority or participation effect.
+    - No open-source conversion or proprietary implementation-source publication.
+    - No automatic successor.
+    - No silent ruleset weakening, force update of main, repository replacement/reseed or provider purge before the exact provider boundary is established.
   automatic_successor: PROHIBITED
   successor_operation: NOT_SELECTED
 execution_continuity:
@@ -61,36 +70,29 @@ execution_continuity:
 scope:
   permitted_paths:
     - ehco.operation.yaml
-    - range-reactor/evidence/public-capability-snapshot-v1/MANIFEST.json
-    - verification/public_disclosure_policy.py
-    - verification/validate_current_runtime_evidence.py
-    - verification/validate_public_claim_registry.py
-    - verification/validate_public_evidence.py
-    - verification/validate_public_range_reactor_operational_closure.py
-    - verification/validate_public_range_reactor_snapshot.py
+    - assurance/PUBLIC_HISTORY_CONTINUITY_RECEIPT_V1.md
   controlled_paths:
     - ehco.operation.yaml
-    - range-reactor/evidence/public-capability-snapshot-v1/MANIFEST.json
-    - verification/public_disclosure_policy.py
-    - verification/validate_current_runtime_evidence.py
-    - verification/validate_public_claim_registry.py
-    - verification/validate_public_evidence.py
-    - verification/validate_public_range_reactor_operational_closure.py
-    - verification/validate_public_range_reactor_snapshot.py
+    - assurance/PUBLIC_HISTORY_CONTINUITY_RECEIPT_V1.md
   prohibited_paths:
     - AGENTS.md
     - ehco.repository.yaml
-    - .github/CODEOWNERS
-    - .github/ISSUE_TEMPLATE/**
-    - .github/pull_request_template.md
-    - .github/workflows/codeql.yml
-    - .github/workflows/ehco-assistant-operation-gate.yml
-    - evidence/public-evidence-companion/**
-    - language-model/evidence/public-test-snapshot-v1/actual-tests/**
-    - language-model/evidence/public-test-snapshot-v1/MANIFEST.json
-    - language-model/evidence/public-test-snapshot-v1/QUALIFICATION_TEST_INDEX_2026-08-24.md
-    - range-reactor/evidence/operational-closure-v1/PUBLIC_RESULT.json
-    - dossiers/EHCO_AI_OS_Governed_Operational_Architecture_Public_Edition_v1_8_LOCK_FINAL.pdf
+    - README.md
+    - GOVERNANCE.md
+    - SECURITY.md
+    - NOTICE.md
+    - PROVENANCE.md
+    - LIBRARY.md
+    - ECOSYSTEM-DILIGENCE.md
+    - TECHNICAL-DILIGENCE.md
+    - architecture/**
+    - evidence/**
+    - language-model/**
+    - range-reactor/**
+    - runtime/**
+    - dossiers/**
+    - verification/**
+    - .github/**
 change_control:
   control_change_declared: true
   delete_or_move_authorized: false
@@ -98,25 +100,25 @@ change_control:
     - read_source
     - compare_source
     - audit
-    - update_file
-    - run_checks
-  local_actions_prohibited:
     - propose
     - create_file
+    - update_file
+    - run_checks
+    - generate_artifact
+  local_actions_prohibited:
     - move_file
     - delete_file
-    - generate_artifact
   remote_actions_authorized:
-    - mark_pull_request_ready_for_review
-    - merge_pull_request
-    - record_owner_acceptance
-    - close_operation
-  remote_actions_prohibited:
     - create_branch
     - commit
     - push
     - open_draft_pull_request
     - update_draft_pull_request
+  remote_actions_prohibited:
+    - mark_pull_request_ready_for_review
+    - merge_pull_request
+    - record_owner_acceptance
+    - close_operation
     - activate_selected_successor
     - modify_repository_settings
     - modify_drive_controls
@@ -137,37 +139,34 @@ effects:
   external_effect: NONE
 bridge:
   applicability: NOT_APPLICABLE_NON_PARTICIPANT
-  non_applicability_reason: Public repository privacy and technical-publication work does not establish Tier One Runtime participation.
+  non_applicability_reason: Public Git history/privacy remediation does not establish Tier One Runtime participation.
   direct_invocation: PROHIBITED
   runtime_admission_status: NOT_ESTABLISHED
   participation_binding_status: NOT_ESTABLISHED
   canonical_runtime_receipt_status: NOT_ESTABLISHED
 evidence:
-  evidence_class: OWNER_ACCEPTANCE_RECORD
+  evidence_class: PUBLIC_HISTORY_REMEDIATION_PREPARATION_RECORD
   required_checks:
-    - Reviewed PUBLISH head aa346308fcea85649a3eb5c9f4d3efdb89294ec8 passed canonical public repository validation.
-    - Reviewed PUBLISH head aa346308fcea85649a3eb5c9f4d3efdb89294ec8 passed CodeQL.
-    - Reviewed PUBLISH head aa346308fcea85649a3eb5c9f4d3efdb89294ec8 passed the EHCO Assistant Operation Gate.
-    - The accepted candidate removes known real protected locator literals from the affected current verification source and replaces literal-value blacklists with public-safe structural policy and synthetic fixtures.
-    - The accepted candidate removes the identified private owning-source revision from the selected public machine record while preserving the accepted source-reviewed evidence relationship.
-    - Editable historical PR metadata identified in this bounded workstream was sanitized non-destructively without changing Git history or the public technical result.
-    - The successful assistant-operation workflow log masks the controlled canonical repository and revision inputs on the public log surface.
+    - Exact source base is accepted main a5e1fb7ec73e12534fce47b15bce86927549065e.
+    - Accepted source tree before preparation is 7999a0747585f096f9d1e53236ce4c55f8add1c0.
+    - Preparation changes only ehco.operation.yaml and assurance/PUBLIC_HISTORY_CONTINUITY_RECEIPT_V1.md.
+    - Continuity receipt states that history remediation changes Git ancestry/custody only and does not demote accepted public-safe technical evidence, proof, language, architecture, verification, benchmark results, maturity or standing.
+    - Clean-history construction must preserve all non-control/non-receipt accepted file bytes from the selected accepted tree unless a separately source-grounded public-safety defect requires correction.
+    - Current protected main non-fast-forward prohibition is preserved during preparation.
+    - Required protected-branch checks succeed on the exact preparation candidate.
     - Accepted numerical standing remains 52/53.
-    - No Runtime, deployment, release, authority, standing, participation or successor effect is created by this acceptance.
-    - Whole-SOW zero-exposure completion is not established by this bounded acceptance because historical Git/diff exposure remains a separate SOW-010 decision boundary.
   proves:
-    - Owner-selected repository-source acceptance of the exact qualified SOW-010 privacy-first current/editable public-surface hardening candidate.
+    - Owner-selected preparation for SOW-010 Option 1 with explicit technical-evidence preservation and provider-cutover boundary.
   evidence_not_created:
-    - Whole-SOW SOW-010 completion
-    - Destructive history-remediation decision or effect
+    - Destructive main-history cutover
+    - Provider purge completion
+    - Whole-SOW zero-exposure completion
     - New technical proof or Runtime state
-    - New component/application lifecycle state
     - Deployment, production or release effect
     - Authority, standing or Runtime participation change
-    - Proprietary implementation source publication or transfer
     - Any successor operation
 stop_condition:
-  - Acceptance applies only to reviewed PUBLISH head aa346308fcea85649a3eb5c9f4d3efdb89294ec8 and its control-only ACCEPT transition.
-  - Provider integration must preserve the accepted candidate under normal repository protections and exact-head merge protection.
-  - Canonical main, when updated by provider merge, must preserve accepted standing 52/53 and all Runtime, deployment, release, authority, standing, participation and successor effects as NONE or not established as applicable.
-  - This bounded operation closes after canonical main readback; the broader SOW-010 historical-exposure decision and later publication workstreams do not activate automatically.
+  - Exact preparation candidate passes public validation, CodeQL and EHCO Assistant Operation Gate or stops at a genuine provider/capability boundary.
+  - Accepted technical evidence/proof/language remains unchanged outside the operation control and continuity receipt.
+  - No protected-main non-fast-forward update, ruleset weakening or provider purge is performed during this PUBLISH preparation stage.
+  - Return the exact minimum cutover/provider action once established; do not activate a successor automatically.
