@@ -5,40 +5,47 @@ protocol_reference:
   profile_version: 1.0.0
   protocol_version: 1.0.0
 repository: EHCOnomics-Systems/EHCOsystem
-governed_object: EHCOSYSTEM_PUBLIC_FINAL_TEMPORAL_RECONCILIATION_V2_4
+governed_object: EHCOSYSTEM_PUBLIC_ZERO_EXPOSURE_TECHNICAL_PUBLICATION_V1_2
 source_owner:
   repository: EHCOnomics-Systems/EHCOsystem
-  revision: cfbf009f272fd6457ec4af9a115401fe9051e57b
+  revision: 5cd2753eaaef81fcbdf9260c9164392f5b924b7c
   repository_manifest_path: ehco.repository.yaml
-  controlling_source_reference: GOOGLE_DRIVE_EHCO_PUB_SOW_009_LOCKED_SCOPE_V2_4
+  controlling_source_reference: GOOGLE_DRIVE_EHCO_PUB_SOW_010_OWNER_SELECTED_SCOPE_V1_2
 selection:
   selected_by: Edward Henry
   selection_class: EXPLICIT_OWNER_DIRECTION
   durable_reference: |-
-    Edward Henry selected closure of the two remaining administrative temporal residues only: reconcile the completed public-repository operation record to timeless completed-state wording and reconcile the existing Drive SOW chronology after provider integration. No reader-facing technical content, architecture, component/application/property presentation, evidence, maturity, Runtime, deployment, release, authority, participation, standing, or successor state is changed by this operation.
-    SOURCE_BASE:cfbf009f272fd6457ec4af9a115401fe9051e57b
-    BRANCH:closeout/final-temporal-reconciliation-v24
-    REVIEWED_PUBLISH_HEAD:092cc7d9b114ede673e920b024e7710097562efc
+    Edward Henry explicitly accepted the exact qualified SOW-010 privacy-first PUBLISH candidate after current/editable disclosure-control hardening and non-destructive provider-metadata sanitation. Acceptance is bound to the reviewed PUBLISH head below and its control-only ACCEPT transition. The authoritative SOW remains in private Google Drive custody. This bounded acceptance does not declare the whole SOW-010 complete and does not resolve historical Git/diff exposure that may require a separately selected destructive provider-history remedy.
+    SOURCE_BASE:5cd2753eaaef81fcbdf9260c9164392f5b924b7c
+    BRANCH:sow010/public-surface-hardening
+    REVIEWED_PUBLISH_HEAD:aa346308fcea85649a3eb5c9f4d3efdb89294ec8
+    NEW_PATH:verification/public_disclosure_policy.py
+    SOW_DOCUMENT_PUBLICATION=false
+    PRIVATE_TOPOLOGY_DISCLOSURE=false
+    DESTRUCTIVE_HISTORY_REWRITE=false
+    OWNER_ACCEPTED_BOUNDED_PRIVACY_HARDENING=true
     OPERATION_STABLE_ENVELOPE_CHANGE=true
-  source_base_revision: cfbf009f272fd6457ec4af9a115401fe9051e57b
-  expected_reviewed_head_revision: 092cc7d9b114ede673e920b024e7710097562efc
+  source_base_revision: 5cd2753eaaef81fcbdf9260c9164392f5b924b7c
+  expected_reviewed_head_revision: aa346308fcea85649a3eb5c9f4d3efdb89294ec8
 control_anchor: AGENTS.md
 status_owner_path: ehco.operation.yaml
 accepted_standing: 52/53
 active_operation:
-  operation_id: EHCOSYSTEM-PUBLIC-FINAL-TEMPORAL-RECONCILIATION-001
+  operation_id: EHCOSYSTEM-PUBLIC-SOW010-ZERO-EXPOSURE-001
   state: COMPLETE
   authorization_mode: ACCEPT
-  bounded_outcome: Owner acceptance of the exact qualified one-file temporal reconciliation candidate while preserving all established public technical meaning and system state.
+  bounded_outcome: Owner acceptance and provider integration of the exact qualified SOW-010 privacy-first current/editable public-surface hardening candidate while preserving established public-safe technical evidence, proprietary implementation custody, accepted standing 52/53, and all Runtime, deployment, release, authority, participation, standing and successor non-effects.
   remaining_bounded_work: []
   interaction_seams:
-    - Google Drive EHCO-PUB-SOW-009 v2.4 owns durable closeout meaning.
-    - EHCOnomics-Systems/EHCOsystem owns the exact repository control record.
-    - Existing owning technical evidence retains all established Runtime, artifact, release, staging, benchmark, proof, and standing effects.
+    - Private Google Drive SOW-010 owns the durable objective, disclosure law, broader workstreams and whole-SOW completion criteria.
+    - EHCOnomics-Systems/EHCOsystem owns the exact public repository implementation and provider state accepted in this bounded block.
+    - Existing owning technical evidence retains all established Runtime, artifact, benchmark, proof, capability, release and standing effects.
     - INSTANTIATED_EHCO_RUNTIME retains Tier One Runtime authority and Runtime state.
   non_overlap:
-    - No reader-facing architecture, component, application/property, evidence, Runtime, Full Flex, Language Model, Range Reactor, release/publication, or verification semantics are changed.
-    - No technical reproof, Runtime observation, deployment, release, authority change, standing change, participation change, private-state publication, or automatic successor.
+    - This acceptance does not publish the private Scope of Work document or any private Drive routing locator.
+    - This acceptance does not convert EHCOsystem to open source or distribute proprietary implementation source.
+    - This acceptance does not authorize destructive Git history rewrite, repository replacement/reseed, provider purge, repository-setting mutation, Wiki/Pages/Discussions enablement, tag/Release materialization, deployment, Runtime action, authority change, standing change, participation change or automatic successor.
+    - Residual historical Git/diff exposure, if any, remains outside this accepted block and inside the broader SOW-010 owner-level history-remedy decision boundary.
   automatic_successor: PROHIBITED
   successor_operation: NOT_SELECTED
 execution_continuity:
@@ -54,25 +61,36 @@ execution_continuity:
 scope:
   permitted_paths:
     - ehco.operation.yaml
+    - range-reactor/evidence/public-capability-snapshot-v1/MANIFEST.json
+    - verification/public_disclosure_policy.py
+    - verification/validate_current_runtime_evidence.py
+    - verification/validate_public_claim_registry.py
+    - verification/validate_public_evidence.py
+    - verification/validate_public_range_reactor_operational_closure.py
+    - verification/validate_public_range_reactor_snapshot.py
   controlled_paths:
     - ehco.operation.yaml
+    - range-reactor/evidence/public-capability-snapshot-v1/MANIFEST.json
+    - verification/public_disclosure_policy.py
+    - verification/validate_current_runtime_evidence.py
+    - verification/validate_public_claim_registry.py
+    - verification/validate_public_evidence.py
+    - verification/validate_public_range_reactor_operational_closure.py
+    - verification/validate_public_range_reactor_snapshot.py
   prohibited_paths:
     - AGENTS.md
     - ehco.repository.yaml
-    - README.md
-    - NOTICE.md
-    - LIBRARY.md
-    - architecture/**
-    - language-model/**
-    - range-reactor/**
-    - runtime/**
-    - evidence/**
-    - assurance/**
-    - dossiers/**
-    - releases/**
-    - verification/**
-    - getting-started/**
-    - .github/**
+    - .github/CODEOWNERS
+    - .github/ISSUE_TEMPLATE/**
+    - .github/pull_request_template.md
+    - .github/workflows/codeql.yml
+    - .github/workflows/ehco-assistant-operation-gate.yml
+    - evidence/public-evidence-companion/**
+    - language-model/evidence/public-test-snapshot-v1/actual-tests/**
+    - language-model/evidence/public-test-snapshot-v1/MANIFEST.json
+    - language-model/evidence/public-test-snapshot-v1/QUALIFICATION_TEST_INDEX_2026-08-24.md
+    - range-reactor/evidence/operational-closure-v1/PUBLIC_RESULT.json
+    - dossiers/EHCO_AI_OS_Governed_Operational_Architecture_Public_Edition_v1_8_LOCK_FINAL.pdf
 change_control:
   control_change_declared: true
   delete_or_move_authorized: false
@@ -119,7 +137,7 @@ effects:
   external_effect: NONE
 bridge:
   applicability: NOT_APPLICABLE_NON_PARTICIPANT
-  non_applicability_reason: Repository control chronology reconciliation does not establish Tier One Runtime participation.
+  non_applicability_reason: Public repository privacy and technical-publication work does not establish Tier One Runtime participation.
   direct_invocation: PROHIBITED
   runtime_admission_status: NOT_ESTABLISHED
   participation_binding_status: NOT_ESTABLISHED
@@ -127,21 +145,29 @@ bridge:
 evidence:
   evidence_class: OWNER_ACCEPTANCE_RECORD
   required_checks:
-    - Reviewed PUBLISH head 092cc7d9b114ede673e920b024e7710097562efc changed only ehco.operation.yaml.
-    - Reviewed PUBLISH head 092cc7d9b114ede673e920b024e7710097562efc passed canonical public repository validation.
-    - Reviewed PUBLISH head 092cc7d9b114ede673e920b024e7710097562efc passed CodeQL.
-    - Reviewed PUBLISH head 092cc7d9b114ede673e920b024e7710097562efc passed the EHCO Assistant Operation Gate.
-    - The accepted candidate removes the identified temporal residue without changing reader-facing technical, architecture, component/application/property, evidence, maturity, Runtime, deployment, release, authority, participation, standing, or successor statements.
+    - Reviewed PUBLISH head aa346308fcea85649a3eb5c9f4d3efdb89294ec8 passed canonical public repository validation.
+    - Reviewed PUBLISH head aa346308fcea85649a3eb5c9f4d3efdb89294ec8 passed CodeQL.
+    - Reviewed PUBLISH head aa346308fcea85649a3eb5c9f4d3efdb89294ec8 passed the EHCO Assistant Operation Gate.
+    - The accepted candidate removes known real protected locator literals from the affected current verification source and replaces literal-value blacklists with public-safe structural policy and synthetic fixtures.
+    - The accepted candidate removes the identified private owning-source revision from the selected public machine record while preserving the accepted source-reviewed evidence relationship.
+    - Editable historical PR metadata identified in this bounded workstream was sanitized non-destructively without changing Git history or the public technical result.
+    - The successful assistant-operation workflow log masks the controlled canonical repository and revision inputs on the public log surface.
     - Accepted numerical standing remains 52/53.
+    - No Runtime, deployment, release, authority, standing, participation or successor effect is created by this acceptance.
+    - Whole-SOW zero-exposure completion is not established by this bounded acceptance because historical Git/diff exposure remains a separate SOW-010 decision boundary.
   proves:
-    - Owner-selected repository-source acceptance of the exact qualified one-file temporal reconciliation candidate.
+    - Owner-selected repository-source acceptance of the exact qualified SOW-010 privacy-first current/editable public-surface hardening candidate.
   evidence_not_created:
+    - Whole-SOW SOW-010 completion
+    - Destructive history-remediation decision or effect
     - New technical proof or Runtime state
     - New component/application lifecycle state
-    - New deployment or release effect
-    - New authority, standing or Runtime participation
+    - Deployment, production or release effect
+    - Authority, standing or Runtime participation change
+    - Proprietary implementation source publication or transfer
     - Any successor operation
 stop_condition:
-  - Acceptance is bound to reviewed PUBLISH head 092cc7d9b114ede673e920b024e7710097562efc and its control-only ACCEPT transition.
-  - Provider integration preserves the exact accepted content under normal repository protections.
-  - Canonical main preserves accepted standing 52/53 and all Runtime, deployment, release, authority, standing, participation and successor effects as NONE or not established as applicable.
+  - Acceptance applies only to reviewed PUBLISH head aa346308fcea85649a3eb5c9f4d3efdb89294ec8 and its control-only ACCEPT transition.
+  - Provider integration must preserve the accepted candidate under normal repository protections and exact-head merge protection.
+  - Canonical main, when updated by provider merge, must preserve accepted standing 52/53 and all Runtime, deployment, release, authority, standing, participation and successor effects as NONE or not established as applicable.
+  - This bounded operation closes after canonical main readback; the broader SOW-010 historical-exposure decision and later publication workstreams do not activate automatically.

@@ -9,6 +9,8 @@ import sys
 from pathlib import Path, PurePosixPath
 from urllib.parse import unquote
 
+from public_disclosure_policy import find_disclosure_violations, run_synthetic_policy_self_test
+
 ROOT = Path(__file__).resolve().parents[1]
 EVIDENCE_ROOT = ROOT / "evidence" / "public-evidence-companion" / "v1"
 DOSSIER_NAME = "EHCO_AI_OS_Governed_Operational_Architecture_Public_Edition_v1_8_LOCK_FINAL.pdf"
@@ -214,6 +216,12 @@ def validate_dashboard_assets() -> None:
 
 
 def validate_public_presentation() -> None:
+    try:
+        run_synthetic_policy_self_test()
+        checked(True, "Public disclosure policy synthetic self-test failed")
+    except AssertionError as exc:
+        checked(False, f"Public disclosure policy synthetic self-test failed: {exc}")
+
     texts = {relative: read_text(relative) for relative in ACTIVE_PUBLIC_TEXT}
     combined = "\n".join(texts.values())
     lower_combined = combined.lower()
@@ -248,18 +256,9 @@ def validate_public_presentation() -> None:
     for phrase, message in forbidden_semantics:
         checked(phrase not in lower_combined, message)
 
-    private_tokens = [
-        "EHCOnomics-Systems/EHCO_AI-OS",
-        "EHCOnomics-Systems/EHCO_Range_Reactor",
-        "EHCOnomics-Systems/ehco_Language-Model_v1",
-        "drive.google.com",
-        "1FydQKUNfpQ7oZrgpLDlqRHxFM_f1mFv5uq_akploL38",
-        "eae888b784620ed37ed7d6704bcd91dedcf92936",
-        "e72b2a29e52878d300b44f0286259466352f73cc",
-        "42d7e0d448a59b82d15eade58e11d8de9407f7f2",
-    ]
-    for token in private_tokens:
-        checked(token not in combined, f"Private source/topology token exposed in active public surfaces: {token}")
+    for relative, text in texts.items():
+        violations = find_disclosure_violations(text, relative)
+        checked(not violations, f"Protected source/topology information exposed in active public surface: {relative}")
 
     raw_full_flex = ROOT / "evidence" / "runtime" / "full-flex" / "v1" / "EHCO_FULL_FLEX_PUBLIC_PACKET_V1.json"
     checked(not raw_full_flex.exists(), "Raw Full Flex packet remains in public tree")

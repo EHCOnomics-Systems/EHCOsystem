@@ -5,15 +5,15 @@ from __future__ import annotations
 
 import hashlib
 import json
-import re
 from pathlib import Path
+
+from public_disclosure_policy import find_disclosure_violations, run_synthetic_policy_self_test
 
 ROOT = Path(__file__).resolve().parents[1]
 RR_ROOT = ROOT / "range-reactor"
 SNAPSHOT = RR_ROOT / "evidence" / "public-capability-snapshot-v1"
 MANIFEST = SNAPSHOT / "MANIFEST.json"
 VECTORS = SNAPSHOT / "capability-vectors.json"
-EXPECTED_SOURCE_REVISION = "2ab887e1e82c2c5422223fbd862b288c8c63ee27"
 EXPECTED_VECTOR_SHA256 = "612389A01DA53688CCB0276D0633A3CEA757517DAC736615D089D597424762D1"
 EXPECTED_CAPABILITIES = {
     "deterministic_replay",
@@ -65,7 +65,9 @@ def validate_snapshot() -> None:
     vectors = load_json(VECTORS)
     require(manifest.get("schema") == "EHCO_PUBLIC_RANGE_REACTOR_CAPABILITY_SNAPSHOT_MANIFEST_V1", "RR manifest schema drift")
     require(manifest.get("snapshot_id") == "EHCO-RR-PUBLIC-CAPABILITY-SNAPSHOT-V1", "RR snapshot identity drift")
-    require(manifest.get("owning_source_revision") == EXPECTED_SOURCE_REVISION, "RR accepted source-review revision drift")
+    require(manifest.get("source_review_basis") == "ACCEPTED_OWNING_SOURCE_REVIEW", "RR public source-review basis drift")
+    require(manifest.get("source_revision_publication") == "WITHHELD_PRIVATE_CUSTODY", "RR private source-revision publication boundary drift")
+    require("owning_source_revision" not in manifest, "RR public manifest must not publish an owning-source revision")
     require(manifest.get("evidence_class") == "SOURCE_REVIEWED_SYNTHETIC_CAPABILITY_EVIDENCE", "RR evidence class drift")
     require(manifest.get("fixture_count") == 1 and manifest.get("case_count") == 8, "RR manifest count drift")
     raw = VECTORS.read_bytes()
@@ -102,8 +104,8 @@ def validate_public_representation() -> None:
         for phrase in phrases:
             require(phrase in texts[relative], f"Range Reactor public representation missing in {relative}: {phrase}")
 
-    controlled_locator = re.compile(r"\bEHCOnomics-Systems/EHCO_Range_Reactor\b", re.IGNORECASE)
-    require(controlled_locator.search(combined) is None, "controlled Range Reactor repository locator present in reader-facing public text")
+    violations = find_disclosure_violations(combined, "Range Reactor reader-facing public surfaces")
+    require(not violations, "prohibited repository/source topology present in Range Reactor reader-facing public text")
     require("refs/heads/" not in combined, "Range Reactor branch choreography present in public representation")
 
     for phrase in (
@@ -116,8 +118,10 @@ def validate_public_representation() -> None:
 
 
 def validate_disclosure_boundary() -> None:
+    run_synthetic_policy_self_test()
     combined = "\n".join((MANIFEST.read_text(encoding="utf-8"), VECTORS.read_text(encoding="utf-8"), read_text("range-reactor/evidence/public-capability-snapshot-v1/README.md")))
-    require("EHCOnomics-Systems/" not in combined, "controlled repository locator detected in RR snapshot")
+    violations = find_disclosure_violations(combined, "Range Reactor public capability snapshot")
+    require(not violations, "prohibited repository/source topology detected in RR snapshot")
     for marker in ("BEGIN PRIVATE KEY", "api_key=", "password=", "github_pat_"):
         require(marker not in combined, f"RR snapshot disclosure marker detected: {marker}")
 
