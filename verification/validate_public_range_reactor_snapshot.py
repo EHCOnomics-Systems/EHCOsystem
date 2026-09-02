@@ -5,8 +5,9 @@ from __future__ import annotations
 
 import hashlib
 import json
-import re
 from pathlib import Path
+
+from public_disclosure_policy import find_disclosure_violations, run_synthetic_policy_self_test
 
 ROOT = Path(__file__).resolve().parents[1]
 RR_ROOT = ROOT / "range-reactor"
@@ -102,8 +103,8 @@ def validate_public_representation() -> None:
         for phrase in phrases:
             require(phrase in texts[relative], f"Range Reactor public representation missing in {relative}: {phrase}")
 
-    controlled_locator = re.compile(r"\bEHCOnomics-Systems/EHCO_Range_Reactor\b", re.IGNORECASE)
-    require(controlled_locator.search(combined) is None, "controlled Range Reactor repository locator present in reader-facing public text")
+    violations = find_disclosure_violations(combined, "Range Reactor reader-facing public surfaces")
+    require(not violations, "prohibited repository/source topology present in Range Reactor reader-facing public text")
     require("refs/heads/" not in combined, "Range Reactor branch choreography present in public representation")
 
     for phrase in (
@@ -116,8 +117,10 @@ def validate_public_representation() -> None:
 
 
 def validate_disclosure_boundary() -> None:
+    run_synthetic_policy_self_test()
     combined = "\n".join((MANIFEST.read_text(encoding="utf-8"), VECTORS.read_text(encoding="utf-8"), read_text("range-reactor/evidence/public-capability-snapshot-v1/README.md")))
-    require("EHCOnomics-Systems/" not in combined, "controlled repository locator detected in RR snapshot")
+    violations = find_disclosure_violations(combined, "Range Reactor public capability snapshot")
+    require(not violations, "prohibited repository/source topology detected in RR snapshot")
     for marker in ("BEGIN PRIVATE KEY", "api_key=", "password=", "github_pat_"):
         require(marker not in combined, f"RR snapshot disclosure marker detected: {marker}")
 
