@@ -1,8 +1,8 @@
 ---
 title: Ecosystem Claim to Evidence Matrix
-version: 3.1
+version: 3.2
 status: current-public-assurance-reference
-published: 2026-09-01
+published: 2026-09-06
 maintainer: EHCOnomics
 evidence_class: claim-to-evidence-navigation
 evidence_scope: durable public claims and verification routes
@@ -19,6 +19,7 @@ Accepted **52/53** is the numerical Runtime standing corridor under the EHCO sta
 | Instantiated AI | Architectural category in which governing computational conditions surround intelligence | Accepted controlled category definition | Controlled architecture | [Instantiated AI](../architecture/INSTANTIATED-AI.md) | Inspect category definition |
 | EHCOsystem | EHCOnomics' Instantiated AI ecosystem | Shared Runtime, technology, research, and application architecture established | Controlled ecosystem architecture | [Technology Estate](../architecture/EHCO-TECHNOLOGY-ESTATE.md) | Review architecture and component relationships |
 | EHCO AI-OS | Realized Tier One Runtime of EHCOsystem | `REALIZED / COMPLETE_IN_ACCEPTED_SCOPE`, standing **52/53** | Accepted Runtime/standing representation | [Runtime](../runtime/README.md) | `validate_current_runtime_evidence.py` |
+| EHCO AI-OS local Runtime operation | The EHCO AI-OS Tier One Runtime has physically operated locally in Docker; this does not assert simultaneous local execution of the full EHCO repository/component estate | `PHYSICALLY_OBSERVED_LOCAL_OPERATION` for the evidenced Tier One Runtime form | Accepted Docker/host execution evidence | [Runtime](../runtime/README.md) | Public claim registry + accepted Full Flex Runtime evidence route |
 | EHCO_DOCKER_PORTABILITY | `PRIMARY_ACCESSIBLE_RUNTIME_PROJECTION` and fully containerized, deployment-ready portable delivery form | Established hardened Runtime/root-image portability lineage | Accepted Docker/host technical evidence + public architecture | [Runtime](../runtime/README.md) | `validate_current_runtime_evidence.py` |
 | Full Flex Public Packet v1 | Selected accepted Runtime evidence identity represented publicly | Packet SHA-256 `7F80C27D085AE871A00AED412C6F20EA9A76CB0677C93AEBA381CD1FD70EC8E5`; public-safe record + receipt + detached hash | Accepted packet identity and public-safe record | [Full Flex](../evidence/runtime/full-flex/v1/README.md) | `validate_current_runtime_evidence.py` |
 | EHCO Language Model | Mature deterministic computational-language system using `DETERMINISTIC_COMPUTATIONAL_LANGUAGE / SINGLE_PATH / EXPLICIT_EHCO_COMPUTATION / ZERO_WEIGHT_ONLY / ZERO WEIGHTS TRAINED` | Deep final capability/source closure; immutable component artifact built, qualified, released; governed staging execution and verification established | Accepted component source, qualification, artifact/release and staging evidence | [Language Model](../language-model/README.md) | LM public snapshot validator + public claim validation |
