@@ -1,12 +1,12 @@
 ---
 title: EHCO AI-OS Public System Card
-version: 1.7
+version: 1.8
 status: accepted-public-reference
 published: 2026-09-06
 maintainer: EHCOnomics
 evidence_class: controlled-ehco-architecture
 evidence_scope: public system record
-supersedes: version 1.6
+supersedes: version 1.7
 ---
 
 # EHCO AI-OS Public System Card
@@ -38,6 +38,8 @@ EHCOnomics distinguishes **inference** and **instantiation** as complementary co
 The **EHCO AI-OS Tier One Runtime has physically operated as a self-hosted local Docker Runtime**. The local Dashboard was served on **host port 8080** in the captured operating state alongside the Runtime bridge and worker service.
 
 This local-operation proposition is scoped to the Tier One Runtime form established by owning Runtime/Docker evidence. It does **not** assert that the complete EHCO repository estate, every Tier Two component, every research foundation, or every application was deployed, admitted, participating, or executing simultaneously on that same local host.
+
+The accepted Range Reactor matched A/B benchmark was also physically produced through the local Windows/WSL2 Docker portability environment represented by owning host evidence. For the selected workload, that result recorded **14.304307x wall-clock improvement** while preserving **all 720 histories**. This relationship establishes a shared local portability execution environment for the benchmark evidence; it does not identify a specific physical device model or create Tier One Runtime authority, standing, admission, or participation for Range Reactor.
 
 Established Runtime/Docker lineage records Tier One operation, governance, proof/release behavior, and Runtime-state/observer projection with the external-model seam disabled. Conversational projection remains a separately evidenced downstream function.
 
@@ -127,6 +129,7 @@ For canonical separation principles, use [System Invariants](SYSTEM-INVARIANTS.m
 
 | Version | Date | Change |
 |---|---|---|
+| 1.8 | 2026-09-06 | Added the accepted Range Reactor matched A/B relationship to the local Windows/WSL2 Docker portability environment while preserving the physical-device and Runtime-participation boundaries. |
 | 1.7 | 2026-09-06 | Bounded local Docker operation explicitly to the EHCO AI-OS Tier One Runtime and separated that proof from simultaneous local execution of the broader repository/component estate. |
 | 1.6 | 2026-09-01 | Separated Runtime system identity from instantiated Runtime authority/state ownership, replaced Full Flex synthesis/currentness language, and consolidated repeated Dashboard boundary captions. |
 | 1.5 | 2026-08-30 | Made Full Flex the first current evidence route, added evidence precedence/exact-owner boundary and bounded 52/53 interpretation. |
