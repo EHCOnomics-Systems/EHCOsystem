@@ -5,56 +5,57 @@ protocol_reference:
   profile_version: 1.0.0
   protocol_version: 1.0.0
 repository: EHCOnomics-Systems/EHCOsystem
-governed_object: EHCOSYSTEM_PUBLIC_HISTORY_ZERO_EXPOSURE_REMEDIATION_V1
+governed_object: EHCOSYSTEM_TIER1_LOCAL_RUNTIME_SCOPE_PRECISION_V1
 source_owner:
   repository: EHCOnomics-Systems/EHCOsystem
-  revision: 2cee336c6016a71ed5a1bde645643e3c19f7c8ad
+  revision: ca895511ba284018feaa0922e88e437c519806fa
   repository_manifest_path: ehco.repository.yaml
-  controlling_source_reference: GOOGLE_DRIVE_EHCO_PUB_SOW_010_OWNER_SELECTED_SCOPE_V1_2
+  controlling_source_reference: EXISTING_ACCEPTED_RUNTIME_EVIDENCE_AND_REPOSITORY_CLASSIFICATION_WITH_OWNER_DIRECTION_2026_09_06
 selection:
   selected_by: Edward Henry
   selection_class: EXPLICIT_OWNER_DIRECTION
   durable_reference: |-
-    Edward Henry selected continuation of SOW-010 Option 1 after canonical acceptance of the history-remediation preparation package: proceed with the destructive clean-history cutover/provider-purge path while strictly preserving accepted public technical evidence, proof, language, architecture, verification depth, benchmark results, accepted maturity, and numerical standing 52/53. The exact PUBLISH cutover-control head 3ae2c2ede828213cf6d9615653962b904700a4e7 passed canonical public repository validation, CodeQL and the EHCO Assistant Operation Gate. This ACCEPT transition integrates only the source-grounded cutover control projection; it does not itself force-update protected main, mutate rulesets, replace the repository, or claim provider purge completion.
-    SOURCE_MAIN:2cee336c6016a71ed5a1bde645643e3c19f7c8ad
-    SOURCE_TREE:77142b791be819ec3663be6c845d78538462f6c0
-    DISCLOSURE_SAFE_ROOT:a1fdf15fb91ce112548eee435aaadf48a92dc451
-    REVIEWED_PUBLISH_HEAD:3ae2c2ede828213cf6d9615653962b904700a4e7
-    CLEAN_HISTORY_BRANCH:sow010/clean-history-candidate
-    DESTRUCTIVE_MAIN_CUTOVER_OWNER_SELECTED=true
-    PROVIDER_PURGE_OWNER_SELECTED=true
+    Edward Henry directed: "Proceed with those changes" after reviewing the narrower public formulation that distinguishes proven local operation of the EHCO AI-OS Tier One Runtime from the broader EHCO repository/component estate.
+    This operation changes public wording and validation only. It creates no new Runtime fact, hardware fact, component-deployment fact, architecture authority, standing, release, or participation state.
+    SOURCE_MAIN:ca895511ba284018feaa0922e88e437c519806fa
+    TIER_ONE_LOCAL_RUNTIME_SCOPE_PRECISION=true
+    BROADER_ESTATE_SIMULTANEOUS_LOCAL_EXECUTION_NOT_CLAIMED=true
+    MICROSOFT_SURFACE_DEVICE_IDENTITY_NOT_ADDED_WITHOUT_OWNING_HARDWARE_EVIDENCE=true
     TECHNICAL_EVIDENCE_DEMOTION=false
     CLAIM_WEAKENING=false
     STANDING_CHANGE=false
     RUNTIME_EFFECT=false
-    RULESET_WEAKENING_NOT_IMPLICITLY_AUTHORIZED=true
-    PROVIDER_ADMINISTRATIVE_REF_REPLACEMENT_OUTSIDE_CANONICAL_REMOTE_ACTION_ENUM=true
-    OPERATION_STABLE_ENVELOPE_CHANGE=true
-  source_base_revision: 2cee336c6016a71ed5a1bde645643e3c19f7c8ad
-  expected_reviewed_head_revision: 3ae2c2ede828213cf6d9615653962b904700a4e7
+    AUTOMATIC_SUCCESSOR=false
+  source_base_revision: ca895511ba284018feaa0922e88e437c519806fa
+  expected_reviewed_head_revision: NOT_YET_QUALIFIED
 control_anchor: AGENTS.md
 status_owner_path: ehco.operation.yaml
 accepted_standing: 52/53
 active_operation:
-  operation_id: EHCOSYSTEM-PUBLIC-SOW010-HISTORY-CUTOVER-001
-  state: COMPLETE
-  authorization_mode: ACCEPT
-  bounded_outcome: Owner-accept and integrate the exact qualified SOW-010 clean-history cutover control projection so canonical source records the selected destructive remediation path, exact accepted source/tree, disclosure-safe ancestry anchor, technical-evidence preservation invariants, and provider ruleset boundary before the history rewrite itself.
-  remaining_bounded_work: []
+  operation_id: EHCOSYSTEM-PUBLIC-TIER1-LOCAL-RUNTIME-PRECISION-001
+  state: IN_PROGRESS
+  authorization_mode: PUBLISH
+  bounded_outcome: Narrow public local-operation language so accepted Docker/host evidence is stated as proof of EHCO AI-OS Tier One Runtime local operation and is not read as proof that the full EHCO repository/component estate executed locally at the same time.
+  remaining_bounded_work:
+    - Reconcile reader-facing local-Runtime wording across the selected public surfaces.
+    - Tighten the canonical public claim and disclosure ceiling.
+    - Add a claim-evidence matrix row for the bounded local Tier One Runtime proposition.
+    - Add deterministic validation against regression to broader-estate local-execution language.
+    - Run repository validation, CodeQL, and EHCO Assistant Operation Gate through the normal provider path.
   interaction_seams:
-    - Private Google Drive SOW-010 owns the zero-exposure objective, destructive-remediation decision law and prohibition on evidence demotion.
-    - EHCOnomics-Systems/EHCOsystem owns exact public Git history, tree/blob identities, refs, pull-request/provider state and repository rulesets.
-    - Existing owning technical evidence retains all established technical effects and claim ceilings; this acceptance does not recreate or demote that evidence.
-    - GitHub/provider rulesets own whether the selected non-fast-forward default-branch replacement is currently permitted.
+    - Existing accepted Runtime/Docker evidence retains ownership of physical execution claims.
+    - EHCOnomics-Systems/EHCOsystem owns exact public representation and repository-validation state.
+    - EHCOnomics-Systems/EHCO_AI-OS remains the canonical Tier One source/build/test/verification/deployment-control estate.
     - INSTANTIATED_EHCO_RUNTIME retains Tier One Runtime authority and Runtime state.
+    - Tier Two and research/application repositories retain separate source, maturity, deployment, and participation evidence classes.
   non_overlap:
-    - No accepted public-safe technical evidence, architecture, benchmark, proof result, verification machinery, reader-facing technical language or maturity statement is reduced by this acceptance.
+    - No new local hardware model or Microsoft Surface claim is created without owning device evidence.
+    - No claim that the full EHCO ecosystem or every repository/component ran simultaneously on one local host.
+    - No accepted Runtime evidence bytes, Full Flex packet identity, historical evidence, benchmark result, or component maturity is altered.
     - No standing change from 52/53.
-    - No Runtime, deployment, release, authority or participation effect.
+    - No Runtime, deployment, production, release, authority, admission, participation, or persistence effect.
     - No open-source conversion or proprietary implementation-source publication.
-    - No repository replacement/reseed unless separately selected after a proven failure of the selected clean-history rewrite path.
     - No automatic successor.
-    - No ruleset mutation, force update of main or provider purge is included in this ACCEPT integration.
   automatic_successor: PROHIBITED
   successor_operation: NOT_SELECTED
 execution_continuity:
@@ -70,27 +71,33 @@ execution_continuity:
 scope:
   permitted_paths:
     - ehco.operation.yaml
+    - README.md
+    - runtime/README.md
+    - TECHNICAL-DILIGENCE.md
+    - architecture/EHCO-AI-OS-SYSTEM-CARD.md
+    - assurance/PUBLIC-CLAIM-REGISTRY.json
+    - assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md
+    - verification/validate_public_claim_registry.py
   controlled_paths:
     - ehco.operation.yaml
+    - README.md
+    - runtime/README.md
+    - TECHNICAL-DILIGENCE.md
+    - architecture/EHCO-AI-OS-SYSTEM-CARD.md
+    - assurance/PUBLIC-CLAIM-REGISTRY.json
+    - assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md
+    - verification/validate_public_claim_registry.py
   prohibited_paths:
     - AGENTS.md
     - ehco.repository.yaml
-    - README.md
     - GOVERNANCE.md
     - SECURITY.md
     - NOTICE.md
     - PROVENANCE.md
-    - LIBRARY.md
-    - ECOSYSTEM-DILIGENCE.md
-    - TECHNICAL-DILIGENCE.md
-    - assurance/**
-    - architecture/**
     - evidence/**
     - language-model/**
     - range-reactor/**
-    - runtime/**
     - dossiers/**
-    - verification/**
     - .github/**
 change_control:
   control_change_declared: true
@@ -102,29 +109,27 @@ change_control:
     - update_file
     - run_checks
   local_actions_prohibited:
-    - propose
     - create_file
     - move_file
     - delete_file
     - generate_artifact
   remote_actions_authorized:
-    - mark_pull_request_ready_for_review
-    - merge_pull_request
-    - record_owner_acceptance
-    - close_operation
-  remote_actions_prohibited:
     - create_branch
     - commit
     - push
     - open_draft_pull_request
     - update_draft_pull_request
+  remote_actions_prohibited:
+    - mark_pull_request_ready_for_review
+    - merge_pull_request
+    - record_owner_acceptance
+    - close_operation
     - activate_selected_successor
     - modify_repository_settings
     - modify_drive_controls
     - publish_image
     - mutate_environment
     - deploy
-    - trigger_workflow
     - release
     - invoke_runtime
     - admit_runtime
@@ -138,38 +143,32 @@ effects:
   external_effect: NONE
 bridge:
   applicability: NOT_APPLICABLE_NON_PARTICIPANT
-  non_applicability_reason: Public Git history/privacy remediation does not establish Tier One Runtime participation.
+  non_applicability_reason: Public claim-scope precision does not establish Tier One Runtime participation.
   direct_invocation: PROHIBITED
   runtime_admission_status: NOT_ESTABLISHED
   participation_binding_status: NOT_ESTABLISHED
   canonical_runtime_receipt_status: NOT_ESTABLISHED
 evidence:
-  evidence_class: OWNER_ACCEPTANCE_RECORD
+  evidence_class: PUBLIC_REPRESENTATION_PRECISION_CANDIDATE
   required_checks:
-    - Reviewed PUBLISH head 3ae2c2ede828213cf6d9615653962b904700a4e7 passed canonical public repository validation.
-    - Reviewed PUBLISH head 3ae2c2ede828213cf6d9615653962b904700a4e7 passed CodeQL.
-    - Reviewed PUBLISH head 3ae2c2ede828213cf6d9615653962b904700a4e7 passed the EHCO Assistant Operation Gate.
-    - Reviewed PUBLISH diff changes only ehco.operation.yaml.
-    - Exact source base is accepted main 2cee336c6016a71ed5a1bde645643e3c19f7c8ad with source tree 77142b791be819ec3663be6c845d78538462f6c0.
-    - Established disclosure-safe repository root is a1fdf15fb91ce112548eee435aaadf48a92dc451.
-    - Canonical continuity receipt remains unchanged and preserves accepted public technical evidence/proof/language through history remediation.
-    - Accepted numerical standing remains 52/53.
-    - No ruleset mutation, protected-main ref replacement or provider purge is created by this acceptance.
-    - No Runtime, deployment, release, authority, standing, participation or successor effect is created by this acceptance.
+    - Canonical public repository validation must pass on the exact reviewed candidate head.
+    - CodeQL must pass on the exact reviewed candidate head.
+    - EHCO Assistant Operation Gate must pass on the exact reviewed candidate head.
+    - Public local-operation language must remain bounded to the EHCO AI-OS Tier One Runtime proposition.
+    - Broader EHCO repository/component simultaneous local execution must remain explicitly unclaimed.
+    - Accepted numerical standing must remain 52/53.
   proves:
-    - Owner-selected repository-source acceptance of the exact qualified SOW-010 destructive clean-history cutover control projection.
+    - Repository-source representation of the narrower Tier One local-Runtime claim if the selected candidate qualifies.
   evidence_not_created:
-    - Clean-history candidate construction
-    - Protected-main ref replacement
-    - Ruleset mutation or bypass
-    - Provider purge completion
-    - Whole-SOW zero-exposure completion
-    - New technical proof or Runtime state
-    - Deployment, production or release effect
-    - Authority, standing or Runtime participation change
+    - New Runtime realization or current Runtime-state observation
+    - Microsoft Surface model, CPU, RAM, or host-resource evidence
+    - Full ecosystem simultaneous local execution
+    - Tier Two deployment or Runtime participation
+    - New benchmark or performance result
+    - Deployment, production, release, authority, standing, admission, or persistence effect
     - Any successor operation
 stop_condition:
-  - Acceptance applies only to reviewed PUBLISH head 3ae2c2ede828213cf6d9615653962b904700a4e7 and its control-only ACCEPT transition.
-  - Provider integration must preserve the one-file cutover control under normal repository protections and exact-head merge protection.
-  - Canonical main readback must preserve accepted standing 52/53 and all Runtime, deployment, release, authority, standing, participation and successor effects as NONE or not established as applicable.
-  - This control acceptance closes before the destructive history rewrite, ruleset mutation, protected-main ref replacement or provider purge; those remain the already-selected next dependent operation and must execute only through lawful provider routes.
+  - Stop after a bounded draft PUBLISH candidate is opened and exact-head provider checks are available or reported as pending.
+  - Do not merge or mark ready for review without a separate owner-selected ACCEPT transition.
+  - Do not add Microsoft Surface or other hardware-specific claims until owning hardware evidence exists.
+  - Preserve accepted standing 52/53 and all Runtime, deployment, release, authority, standing, participation and successor effects as NONE or not established as applicable.
