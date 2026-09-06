@@ -15,6 +15,8 @@ Accepted technical evidence establishes that the **EHCO AI-OS Tier One Runtime h
 
 This proposition is deliberately bounded. It establishes local operation of the Tier One Runtime form represented by the owning Runtime/Docker evidence. It does **not** establish that every repository, Tier Two component, research foundation, or application in the broader EHCO technology estate was deployed, admitted, participating, or executing simultaneously on that same local host.
 
+Accepted Range Reactor benchmark evidence also ties its matched A/B execution to the local Windows/WSL2 Docker portability environment represented by owning host evidence. The selected workload recorded **14.304307x wall-clock improvement** while preserving **all 720 histories**. That relationship does not identify a specific physical device model and does not create Tier One Runtime authority, standing, admission, or participation for Range Reactor.
+
 ## Full Flex public evidence route
 
 The accepted **EHCO Full Flex Public Packet v1** is the selected public Runtime evidence identity represented by this repository.
