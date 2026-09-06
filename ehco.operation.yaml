@@ -10,15 +10,17 @@ source_owner:
   repository: EHCOnomics-Systems/EHCOsystem
   revision: ca895511ba284018feaa0922e88e437c519806fa
   repository_manifest_path: ehco.repository.yaml
-  controlling_source_reference: EXISTING_ACCEPTED_RUNTIME_EVIDENCE_AND_REPOSITORY_CLASSIFICATION_WITH_OWNER_DIRECTION_2026_09_06
+  controlling_source_reference: EXISTING_ACCEPTED_RUNTIME_AND_RANGE_REACTOR_HOST_EVIDENCE_WITH_OWNER_DIRECTION_2026_09_06
 selection:
   selected_by: Edward Henry
   selection_class: EXPLICIT_OWNER_DIRECTION
   durable_reference: |-
-    Edward Henry directed: "Proceed with those changes" after reviewing the narrower public formulation that distinguishes proven local operation of the EHCO AI-OS Tier One Runtime from the broader EHCO repository/component estate.
-    This operation changes public wording and validation only. It creates no new Runtime fact, hardware fact, component-deployment fact, architecture authority, standing, release, or participation state.
+    Edward Henry directed continuation of the public-language precision after review of the accepted Range Reactor matched A/B environment evidence.
+    The accepted raw Range Reactor result is held under the local EHCO_DOCKER_PORTABILITY host custody path and records Microsoft-standard WSL2 as its execution platform. Public wording may therefore state that the accepted Range Reactor benchmark was produced through the same local Windows/WSL2 Docker portability environment, while remaining silent on the exact physical device model until owning hardware evidence exists.
+    This operation changes public wording and validation only. It creates no new Runtime fact, hardware fact, component-deployment fact, architecture authority, standing, release, benchmark result, or participation state.
     SOURCE_MAIN:ca895511ba284018feaa0922e88e437c519806fa
     TIER_ONE_LOCAL_RUNTIME_SCOPE_PRECISION=true
+    RANGE_REACTOR_LOCAL_PORTABILITY_ENVIRONMENT_LINKAGE=true
     BROADER_ESTATE_SIMULTANEOUS_LOCAL_EXECUTION_NOT_CLAIMED=true
     MICROSOFT_SURFACE_DEVICE_IDENTITY_NOT_ADDED_WITHOUT_OWNING_HARDWARE_EVIDENCE=true
     TECHNICAL_EVIDENCE_DEMOTION=false
@@ -35,15 +37,17 @@ active_operation:
   operation_id: EHCOSYSTEM-PUBLIC-TIER1-LOCAL-RUNTIME-PRECISION-001
   state: IN_PROGRESS
   authorization_mode: PUBLISH
-  bounded_outcome: Narrow public local-operation language so accepted Docker/host evidence is stated as proof of EHCO AI-OS Tier One Runtime local operation and is not read as proof that the full EHCO repository/component estate executed locally at the same time.
+  bounded_outcome: Narrow public local-operation language so accepted Docker/host evidence is stated as proof of EHCO AI-OS Tier One Runtime local operation, bind the accepted Range Reactor matched A/B result to the same local Windows/WSL2 Docker portability environment established by owning host evidence, and avoid implying full-estate simultaneous local execution or a specific physical device model.
   remaining_bounded_work:
     - Reconcile reader-facing local-Runtime wording across the selected public surfaces.
+    - Reconcile Range Reactor matched A/B wording with its accepted local Windows/WSL2 Docker portability execution environment.
     - Tighten the canonical public claim and disclosure ceiling.
-    - Add a claim-evidence matrix row for the bounded local Tier One Runtime proposition.
-    - Add deterministic validation against regression to broader-estate local-execution language.
+    - Update the claim-evidence matrix for the bounded local Runtime and Range Reactor environment propositions.
+    - Add deterministic validation against regression to broader-estate local-execution language and unsupported physical-device wording.
     - Run repository validation, CodeQL, and EHCO Assistant Operation Gate through the normal provider path.
   interaction_seams:
-    - Existing accepted Runtime/Docker evidence retains ownership of physical execution claims.
+    - Existing accepted Runtime/Docker evidence retains ownership of physical Runtime execution claims.
+    - Existing accepted Range Reactor benchmark and host-custody evidence retain ownership of the matched A/B result and execution-environment relationship.
     - EHCOnomics-Systems/EHCOsystem owns exact public representation and repository-validation state.
     - EHCOnomics-Systems/EHCO_AI-OS remains the canonical Tier One source/build/test/verification/deployment-control estate.
     - INSTANTIATED_EHCO_RUNTIME retains Tier One Runtime authority and Runtime state.
@@ -51,6 +55,7 @@ active_operation:
   non_overlap:
     - No new local hardware model or Microsoft Surface claim is created without owning device evidence.
     - No claim that the full EHCO ecosystem or every repository/component ran simultaneously on one local host.
+    - No claim that Range Reactor benchmark execution establishes Tier One Runtime participation, admission, authority, standing, or release.
     - No accepted Runtime evidence bytes, Full Flex packet identity, historical evidence, benchmark result, or component maturity is altered.
     - No standing change from 52/53.
     - No Runtime, deployment, production, release, authority, admission, participation, or persistence effect.
@@ -155,10 +160,12 @@ evidence:
     - CodeQL must pass on the exact reviewed candidate head.
     - EHCO Assistant Operation Gate must pass on the exact reviewed candidate head.
     - Public local-operation language must remain bounded to the EHCO AI-OS Tier One Runtime proposition.
+    - Public Range Reactor wording may state local Windows/WSL2 Docker portability execution only to the extent established by accepted benchmark and host-custody evidence.
+    - Microsoft Surface or other exact hardware-device language must remain unasserted until owning hardware evidence exists.
     - Broader EHCO repository/component simultaneous local execution must remain explicitly unclaimed.
     - Accepted numerical standing must remain 52/53.
   proves:
-    - Repository-source representation of the narrower Tier One local-Runtime claim if the selected candidate qualifies.
+    - Repository-source representation of the narrower Tier One local-Runtime claim and accepted Range Reactor local portability-environment relationship if the selected candidate qualifies.
   evidence_not_created:
     - New Runtime realization or current Runtime-state observation
     - Microsoft Surface model, CPU, RAM, or host-resource evidence
@@ -168,7 +175,7 @@ evidence:
     - Deployment, production, release, authority, standing, admission, or persistence effect
     - Any successor operation
 stop_condition:
-  - Stop after a bounded draft PUBLISH candidate is opened and exact-head provider checks are available or reported as pending.
+  - Stop after the bounded draft PUBLISH candidate is updated and exact-head provider checks are available or reported as pending.
   - Do not merge or mark ready for review without a separate owner-selected ACCEPT transition.
   - Do not add Microsoft Surface or other hardware-specific claims until owning hardware evidence exists.
   - Preserve accepted standing 52/53 and all Runtime, deployment, release, authority, standing, participation and successor effects as NONE or not established as applicable.
