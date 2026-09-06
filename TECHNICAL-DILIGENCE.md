@@ -18,7 +18,7 @@ This page provides the focused public technical route for **EHCO AI-OS**, its de
 
 `EHCO_DOCKER_PORTABILITY` is the **PRIMARY_ACCESSIBLE_RUNTIME_PROJECTION** and fully containerized, deployment-ready portable delivery form of the established hardened Runtime/root-image lineage.
 
-Accepted technical evidence establishes self-hosted local Docker operation with Dashboard, Runtime bridge, worker service, Docker networking, persistent Runtime/proof/data surfaces, health behavior, and hardened image identity.
+Accepted technical evidence establishes that the **EHCO AI-OS Tier One Runtime has operated locally in Docker** with Dashboard, Runtime bridge, worker service, Docker networking, persistent Runtime/proof/data surfaces, health behavior, and hardened image identity. This evidence does not establish simultaneous local execution, deployment, admission, or Runtime participation for the full EHCO repository/component estate.
 
 ## 1. Full Flex accepted public route
 
