@@ -42,7 +42,7 @@ def main() -> int:
         registry = {}
 
     checked(registry.get("schema") == "ehco.public.claim-registry.v1", "Claim registry schema mismatch")
-    checked(registry.get("registry_version") == "1.5.0", "Claim registry version mismatch")
+    checked(registry.get("registry_version") == "1.6.0", "Claim registry version mismatch")
     checked(registry.get("published") == "2026-09-06", "Claim registry publication date mismatch")
     checked(registry.get("source_review_date") == "2026-09-06", "Claim registry source-review date mismatch")
 
@@ -80,7 +80,7 @@ def main() -> int:
         "LM-MATURE-DETERMINISTIC-COMPUTATIONAL-LANGUAGE": "mature deterministic computational-language system",
         "LM-ARTIFACT-RELEASE-STAGING-ESTABLISHED": "governed staging execution and verification established",
         "RR-MATURE": "mature deterministic proof-carrying",
-        "RR-MATCHED-AB-COLLAPSE-PERFORMANCE": "14.304307x wall-clock improvement",
+        "RR-MATCHED-AB-COLLAPSE-PERFORMANCE": "local Windows/WSL2 Docker portability environment",
         "RR-SEMANTIC-CLOSURE": "82 passed and 0 failed",
     }
     for claim_id, phrase in required_claims.items():
@@ -96,6 +96,9 @@ def main() -> int:
     local_ceiling = str(by_id.get("AIOS-LOCAL-RUNTIME-PROVEN", {}).get("disclosure_ceiling", ""))
     checked("does not establish simultaneous local execution" in local_ceiling, "Local Runtime claim does not exclude full-estate simultaneous local execution")
     checked("full EHCO repository/component estate" in local_ceiling, "Local Runtime claim does not name the broader estate boundary")
+    rr_ceiling = str(by_id.get("RR-MATCHED-AB-COLLAPSE-PERFORMANCE", {}).get("disclosure_ceiling", ""))
+    checked("does not identify a specific physical device model" in rr_ceiling, "Range Reactor environment claim does not preserve the physical-device nonclaim")
+    checked("does not establish Tier One Runtime authority" in rr_ceiling, "Range Reactor environment claim does not preserve the Tier One authority boundary")
     checked("not asserted here" in str(by_id.get("LM-MATURE-DETERMINISTIC-COMPUTATIONAL-LANGUAGE", {}).get("disclosure_ceiling", "")), "Language Model claim does not preserve Runtime-participation nonclaim")
 
     public_files = {
@@ -117,10 +120,15 @@ def main() -> int:
     checked("Instantiated AI" in public_files["README.md"], "Root README does not expose Instantiated AI")
     checked(RUNTIME_OWNER in public_files["README.md"], "Root README does not identify the Runtime authority/state owner")
     checked("does not assert that every repository" in public_files["README.md"], "Root README does not bound the Tier One local-operation claim from broader estate execution")
+    checked("local Windows/WSL2 Docker portability environment" in public_files["README.md"], "Root README does not expose the accepted Range Reactor local portability environment relationship")
     checked("does not" in public_files["Runtime"] and "broader EHCO technology estate" in public_files["Runtime"], "Runtime front door does not preserve the broader-estate nonclaim")
+    checked("local Windows/WSL2 Docker portability environment" in public_files["Runtime"], "Runtime front door does not expose the Range Reactor local portability environment relationship")
     checked("complete EHCO repository estate" in public_files["System Card"], "System Card does not preserve the complete-estate local-execution nonclaim")
+    checked("local Windows/WSL2 Docker portability environment" in public_files["System Card"], "System Card does not expose the Range Reactor local portability environment relationship")
     checked("full EHCO repository/component estate" in public_files["Technical Diligence"], "Technical diligence does not preserve the full-estate local-execution nonclaim")
+    checked("Microsoft-standard WSL2" in public_files["Technical Diligence"], "Technical diligence does not expose the accepted WSL2 benchmark environment")
     checked("simultaneous local execution" in public_files["Evidence Matrix"], "Evidence matrix does not expose the bounded local Runtime proposition")
+    checked("local Windows/WSL2 Docker portability environment" in public_files["Evidence Matrix"], "Evidence matrix does not expose the Range Reactor local portability environment relationship")
     checked("DETERMINISTIC-CAPABILITY-DEMONSTRATION.md" in public_files["Language Model"], "Language Model page does not route to deterministic capability demonstration")
     checked("14.304307x" in public_files["Range Reactor"], "Range Reactor page does not expose selected operational result")
     checked("PUBLIC_SAFE_RECORD.json" in public_files["Full Flex"], "Full Flex page does not route to public-safe record")
