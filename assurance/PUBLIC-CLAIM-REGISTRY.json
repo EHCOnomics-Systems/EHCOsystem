@@ -1,21 +1,15 @@
 {
   "schema": "ehco.public.claim-registry.v1",
-  "registry_version": "1.4.0",
-  "published": "2026-09-01",
-  "source_review_date": "2026-09-01",
-  "public_repository_base": "1cf77b4d16327bc98c645b24f86b8df92b1a5ea4",
-  "public_repository_base_semantics": "accepted canonical main used as the source base for the recursive semantics/resting-state closeout continuation",
+  "registry_version": "1.5.0",
+  "published": "2026-09-06",
+  "source_review_date": "2026-09-06",
+  "public_repository_base": "ca895511ba284018feaa0922e88e437c519806fa",
+  "public_repository_base_semantics": "accepted canonical main used as the source base for Tier One local-Runtime claim precision",
   "purpose": "Canonical machine-readable public propositions for EHCOsystem. Reader-facing pages explain the architecture first; this registry provides a deeper public claim and verification route.",
   "standing_interpretation": {
     "accepted_standing": "52/53",
     "public_meaning": "accepted numerical Runtime standing corridor under the EHCO standing framework",
-    "not_equivalent_to": [
-      "benchmark score",
-      "percentage completion",
-      "component maturity percentage",
-      "deployment-state percentage",
-      "public-release percentage"
-    ],
+    "not_equivalent_to": ["benchmark score", "percentage completion", "component maturity percentage", "deployment-state percentage", "public-release percentage"],
     "protected_denominator_mechanics": "NOT_PUBLICLY_INFERRED_OR_EXPANDED"
   },
   "current_runtime_evidence": {
@@ -68,12 +62,12 @@
     },
     {
       "claim_id": "AIOS-LOCAL-RUNTIME-PROVEN",
-      "public_statement": "EHCO AI-OS has physically operated as a self-hosted local Docker Runtime with Dashboard, Runtime bridge, worker service, Docker networking, persistent Runtime/proof/data surfaces, health behavior and hardened image identity.",
+      "public_statement": "The EHCO AI-OS Tier One Runtime has physically operated as a self-hosted local Docker Runtime with Dashboard, Runtime bridge, worker service, Docker networking, persistent Runtime/proof/data surfaces, health behavior and hardened image identity.",
       "maturity": "PHYSICALLY_OBSERVED_LOCAL_OPERATION",
       "evidence_class": "accepted Docker/host execution evidence",
       "public_references": ["runtime/README.md", "evidence/runtime/full-flex/v1/README.md", "architecture/EHCO-AI-OS-SYSTEM-CARD.md"],
       "verification_method": "Inspect the Full Flex public-safe record and technical diligence route.",
-      "disclosure_ceiling": "Established self-hosted local Docker operating posture and service/persistence relationships; this event-time evidence does not by itself assert a later Runtime-state observation.",
+      "disclosure_ceiling": "Established self-hosted local operation of the EHCO AI-OS Tier One Runtime form and its evidenced service/persistence relationships. This claim does not establish simultaneous local execution, deployment, admission, or Runtime participation of the full EHCO repository/component estate, and event-time evidence does not by itself assert a later Runtime-state observation.",
       "status": "ESTABLISHED"
     },
     {
