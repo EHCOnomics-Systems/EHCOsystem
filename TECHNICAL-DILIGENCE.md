@@ -1,8 +1,8 @@
 ---
 title: EHCO AI-OS Technical Diligence — Start Here
-version: 2.1
+version: 2.2
 status: public-diligence-navigation
-published: 2026-09-01
+published: 2026-09-06
 maintainer: EHCOnomics
 evidence_class: navigation-and-bounded-technical-summary
 evidence_scope: focused Tier One public evidence route
@@ -19,6 +19,8 @@ This page provides the focused public technical route for **EHCO AI-OS**, its de
 `EHCO_DOCKER_PORTABILITY` is the **PRIMARY_ACCESSIBLE_RUNTIME_PROJECTION** and fully containerized, deployment-ready portable delivery form of the established hardened Runtime/root-image lineage.
 
 Accepted technical evidence establishes that the **EHCO AI-OS Tier One Runtime has operated locally in Docker** with Dashboard, Runtime bridge, worker service, Docker networking, persistent Runtime/proof/data surfaces, health behavior, and hardened image identity. This evidence does not establish simultaneous local execution, deployment, admission, or Runtime participation for the full EHCO repository/component estate.
+
+The accepted Range Reactor matched A/B benchmark was also executed through the local Windows/WSL2 Docker portability environment represented by owning host evidence. The selected workload recorded **14.304307x wall-clock improvement** while preserving **all 720 histories**. This is an execution-environment relationship, not a claim that Range Reactor thereby acquired Tier One Runtime authority, standing, admission, or participation, and it does not identify the exact physical device model.
 
 ## 1. Full Flex accepted public route
 
@@ -63,6 +65,8 @@ Open [`TIER1_AUTHORITY_ENFORCEMENT.json`](evidence/public-evidence-companion/v1/
 ## 5. Range Reactor technical relationship
 
 Range Reactor is a mature downstream deterministic range/reasoning technology. Its selected matched A/B result is published through [Operational Closure Evidence v1](range-reactor/evidence/operational-closure-v1/README.md): **14.304307x wall-clock improvement**, **14.208722x CPU-time improvement**, **94.755854% benchmark-defined Python peak-allocation reduction**, **1,957 → 64 states**, **1,956 → 192 transitions**, **720 histories preserved**, and **82 passed / 0 failed** selected semantic closure.
+
+The accepted raw benchmark environment records Microsoft-standard WSL2 on x86_64, and owning host custody places the result under the local `EHCO_DOCKER_PORTABILITY` environment. This supports the public statement that the matched A/B result was physically produced through the local Windows/WSL2 Docker portability environment. It does not establish a specific physical hardware model.
 
 A separate historical physical qualification also records a 50-request diagnostic workload at **58.458 ms median**, **110.213 ms p95**, **213.075 ms maximum**, and **15.199 requests/second**. These are distinct workloads and evidence classes.
 
