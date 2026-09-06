@@ -1,12 +1,12 @@
 ---
 title: EHCO AI-OS Public System Card
-version: 1.6
+version: 1.7
 status: accepted-public-reference
-published: 2026-09-01
+published: 2026-09-06
 maintainer: EHCOnomics
 evidence_class: controlled-ehco-architecture
 evidence_scope: public system record
-supersedes: version 1.5
+supersedes: version 1.6
 ---
 
 # EHCO AI-OS Public System Card
@@ -21,7 +21,7 @@ EHCO AI-OS is the realized Tier One Runtime of EHCOsystem with accepted standing
 
 Begin with **[EHCO AI-OS Runtime — Accepted Public Evidence](../runtime/README.md)** and the **[EHCO Full Flex Public Packet v1 evidence index](../evidence/runtime/full-flex/v1/README.md)**.
 
-The accepted Full Flex route is a public-safe evidence record bound to packet SHA-256 `7F80C27D085AE871A00AED412C6F20EA9A76CB0677C93AEBA381CD1FD70EC8E5`. It presents accepted Runtime posture, deployment-ready Docker portability, physically operated local Runtime evidence, Dashboard/bridge/worker relationships, persistent surfaces, networking, engineering-scale characterization, Range Reactor qualification/performance relationships, public claim bindings and integrity metadata according to their owning evidence classes.
+The accepted Full Flex route is a public-safe evidence record bound to packet SHA-256 `7F80C27D085AE871A00AED412C6F20EA9A76CB0677C93AEBA381CD1FD70EC8E5`. It presents accepted Runtime posture, deployment-ready Docker portability, physically operated local Tier One Runtime evidence, Dashboard/bridge/worker relationships, persistent surfaces, networking, engineering-scale characterization, Range Reactor qualification/performance relationships, public claim bindings and integrity metadata according to their owning evidence classes.
 
 `INSTANTIATED_EHCO_RUNTIME` retains Tier One Runtime authority and Runtime-state ownership; owning Docker/host evidence retains ownership of physical execution observations. Historical Public Evidence Companion Packets 00–08 remain immutable event-time evidence and lineage.
 
@@ -35,7 +35,9 @@ EHCOnomics distinguishes **inference** and **instantiation** as complementary co
 
 `EHCO_DOCKER_PORTABILITY` is the **PRIMARY_ACCESSIBLE_RUNTIME_PROJECTION** and the fully containerized, deployment-ready portable delivery form of the established hardened EHCO AI-OS Runtime/root-image lineage. Owning Docker/host evidence establishes local launch/relaunch behavior, hardened image identities, healthy bridge and worker services, Docker networking, endpoint behavior, and persistent Runtime/proof/data surfaces.
 
-EHCO AI-OS has physically operated as a **self-hosted local Docker Runtime**. The local Dashboard was served on **host port 8080** in the captured operating state alongside the Runtime bridge and worker service.
+The **EHCO AI-OS Tier One Runtime has physically operated as a self-hosted local Docker Runtime**. The local Dashboard was served on **host port 8080** in the captured operating state alongside the Runtime bridge and worker service.
+
+This local-operation proposition is scoped to the Tier One Runtime form established by owning Runtime/Docker evidence. It does **not** assert that the complete EHCO repository estate, every Tier Two component, every research foundation, or every application was deployed, admitted, participating, or executing simultaneously on that same local host.
 
 Established Runtime/Docker lineage records Tier One operation, governance, proof/release behavior, and Runtime-state/observer projection with the external-model seam disabled. Conversational projection remains a separately evidenced downstream function.
 
@@ -125,6 +127,7 @@ For canonical separation principles, use [System Invariants](SYSTEM-INVARIANTS.m
 
 | Version | Date | Change |
 |---|---|---|
+| 1.7 | 2026-09-06 | Bounded local Docker operation explicitly to the EHCO AI-OS Tier One Runtime and separated that proof from simultaneous local execution of the broader repository/component estate. |
 | 1.6 | 2026-09-01 | Separated Runtime system identity from instantiated Runtime authority/state ownership, replaced Full Flex synthesis/currentness language, and consolidated repeated Dashboard boundary captions. |
 | 1.5 | 2026-08-30 | Made Full Flex the first current evidence route, added evidence precedence/exact-owner boundary and bounded 52/53 interpretation. |
 | 1.4 | 2026-08-29 | Added deployment-ready Docker portability, physically operated local Runtime, Dashboard local port-8080 origin and external-model-disabled Tier One operating lineage. |
