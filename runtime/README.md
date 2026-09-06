@@ -11,7 +11,11 @@
 
 `EHCO_DOCKER_PORTABILITY` is the **PRIMARY_ACCESSIBLE_RUNTIME_PROJECTION** and the fully containerized, deployment-ready portable delivery form of the established hardened EHCO AI-OS Runtime/root-image lineage.
 
-Accepted technical evidence establishes that EHCO AI-OS has physically operated as a self-hosted local Docker Runtime with Dashboard, Runtime bridge, worker service, Docker networking, persistent Runtime/proof/data surfaces, health behavior, and hardened image identity.
+Accepted technical evidence establishes that the **EHCO AI-OS Tier One Runtime has physically operated as a self-hosted local Docker Runtime** with Dashboard, Runtime bridge, worker service, Docker networking, persistent Runtime/proof/data surfaces, health behavior, and hardened image identity.
+
+This proposition is deliberately bounded. It establishes local operation of the Tier One Runtime form represented by the owning Runtime/Docker evidence. It does **not** establish that every repository, Tier Two component, research foundation, or application in the broader EHCO technology estate was deployed, admitted, participating, or executing simultaneously on that same local host.
+
+Accepted Range Reactor benchmark evidence also ties its matched A/B execution to the local Windows/WSL2 Docker portability environment represented by owning host evidence. The selected workload recorded **14.304307x wall-clock improvement** while preserving **all 720 histories**. That relationship does not identify a specific physical device model and does not create Tier One Runtime authority, standing, admission, or participation for Range Reactor.
 
 ## Full Flex public evidence route
 
@@ -28,7 +32,7 @@ The public repository publishes a **public-safe Full Flex record**, the accepted
 
 ## What the accepted evidence establishes
 
-The Full Flex evidence route binds the accepted Runtime posture to established Docker portability, physical local Runtime operation, Dashboard/bridge/worker relationships, persistent Runtime/proof/data surfaces, networking, hardened image identity, operating independence, engineering-scale Runtime characterization, Range Reactor qualification/performance, public claim relationships, and artifact integrity.
+The Full Flex evidence route binds the accepted Runtime posture to established Docker portability, physical local Tier One Runtime operation, Dashboard/bridge/worker relationships, persistent Runtime/proof/data surfaces, networking, hardened image identity, operating independence, engineering-scale Runtime characterization, Range Reactor qualification/performance, public claim relationships, and artifact integrity.
 
 ## Historical evidence lineage
 

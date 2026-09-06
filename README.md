@@ -27,7 +27,9 @@ The public architecture is easiest to read in this order:
 
 `EHCO_DOCKER_PORTABILITY` is the **PRIMARY_ACCESSIBLE_RUNTIME_PROJECTION** and the **fully containerized, deployment-ready portable delivery form** of the established hardened Runtime/root-image lineage.
 
-Accepted technical evidence establishes physical self-hosted local Docker operation, Dashboard/bridge/worker relationships, networking, persistent Runtime/proof/data surfaces, health behavior, and hardened image identity.
+Accepted technical evidence establishes that the **EHCO AI-OS Tier One Runtime has physically operated locally in Docker** with Dashboard, Runtime bridge, worker service, Docker networking, persistent Runtime/proof/data surfaces, health behavior, and hardened image identity. This local-operation claim is bounded to the Tier One Runtime evidence. It does not assert that every repository, research foundation, application, or Tier Two component in the broader EHCO technology estate was executing simultaneously on the same local host.
+
+The accepted Range Reactor matched A/B benchmark was also executed through the local Windows/WSL2 Docker portability environment represented by owning host evidence. That benchmark recorded **14.304307x wall-clock improvement** while preserving **all 720 histories** for the selected workload. This links the published Range Reactor performance result to the local portability environment without asserting a specific physical device model.
 
 **[Explore the accepted Runtime / Full Flex public route →](runtime/README.md)**
 
