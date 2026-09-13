@@ -45,10 +45,10 @@ Opaque archive and office-container additions fail closed rather than being trea
 For provider-facing narrative that is not part of the Git candidate, place the proposed title/body/release text in a local file and run:
 
 ```text
-python verification/pre_publication_gate.py --base origin/main --candidate HEAD --ref-name refs/heads/CANDIDATE --metadata-file LOCAL_METADATA_FILE --receipt .git/ehco-publication-clearance.json
+python verification/pre_publication_gate.py --base origin/main --candidate HEAD --ref-name CANDIDATE_PUBLIC_REF --metadata-file LOCAL_METADATA_FILE --receipt .git/ehco-publication-clearance.json
 ```
 
-Use public-safe placeholders such as `CANDIDATE` and `LOCAL_METADATA_FILE`; do not put protected identifiers into shell history merely to test the gate.
+Use public-safe placeholders such as `CANDIDATE_PUBLIC_REF` and `LOCAL_METADATA_FILE`; do not put protected identifiers into shell history merely to test the gate.
 
 ## What validation establishes
 
