@@ -25,29 +25,32 @@ selection:
     EXACT_CANDIDATE_CLEARANCE_BINDING_REQUIRED=true
     POST_PUSH_CI_IS_DEFENSE_IN_DEPTH_NOT_CONFIDENTIALITY_BOUNDARY=true
     REAL_PRIVATE_LOCATORS_IN_PUBLIC_VALIDATOR_SOURCE_PROHIBITED=true
+    OPERATION_STABLE_ENVELOPE_CHANGE=true
+    NEW_PATH:verification/pre_publication_gate.py
+    NEW_PATH:verification/install_publication_guard.py
+    NEW_PATH:verification/validate_pre_publication_gate.py
+    NEW_PATH:.githooks/pre-push
     TECHNICAL_EVIDENCE_DEMOTION=false
     CLAIM_WEAKENING=false
     STANDING_CHANGE=false
     RUNTIME_EFFECT=false
     AUTOMATIC_SUCCESSOR=false
   source_base_revision: ca895511ba284018feaa0922e88e437c519806fa
-  expected_reviewed_head_revision: NOT_YET_QUALIFIED
+  expected_reviewed_head_revision: NOT_APPLICABLE_UNTIL_ACCEPT
 control_anchor: AGENTS.md
 status_owner_path: ehco.operation.yaml
 accepted_standing: 52/53
 active_operation:
   operation_id: EHCOSYSTEM-PUBLIC-PREPUBLISH-DISCLOSURE-GATE-001
-  state: IN_PROGRESS
+  state: ACTIVE
   authorization_mode: PUBLISH
   bounded_outcome: Implement and publish a disclosure-safe candidate that adds a fail-closed pre-provider gate for exact candidate Git objects and provider-facing metadata, installs a clone-local pre-push guard, strengthens structural disclosure detection without embedding protected identities, and retains GitHub CI/rulesets as defense in depth.
   remaining_bounded_work:
-    - Implement the repository-owned pre-publication disclosure gate.
-    - Add a clone-local pre-push installation route.
-    - Scan newly reachable Git objects, commit messages, ref names and supplied provider metadata.
-    - Bind successful clearance to the exact candidate SHA/tree outside the public tree.
-    - Add synthetic regression tests proving clean pass and transient-history/provider-metadata rejection.
-    - Reconcile assistant entry, Governance, Security, Provenance, verification guidance, PR template and CI with the same disclosure boundary.
-    - Publish a draft pull-request candidate and obtain exact-head repository validation, CodeQL and EHCO Assistant Operation Gate results.
+    - Obtain exact-head canonical public repository validation.
+    - Obtain exact-head CodeQL validation.
+    - Obtain exact-head EHCO Assistant Operation Gate validation.
+    - Reconcile any in-scope validation defects and reverify the exact candidate.
+    - Transition to ACCEPT only through the owner-selected acceptance path after qualification.
   interaction_seams:
     - The current EHCO-PUB-SOW-010 Drive control owns the zero-private-topology objective and public-disclosure contract.
     - EHCOnomics-Systems/EHCOsystem owns exact public source, Git objects, refs, workflows, pull requests and repository-validation state.
@@ -171,7 +174,7 @@ bridge:
   participation_binding_status: NOT_ESTABLISHED
   canonical_runtime_receipt_status: NOT_ESTABLISHED
 evidence:
-  evidence_class: PUBLIC_REPOSITORY_DISCLOSURE_PREVENTION_CANDIDATE
+  evidence_class: REPOSITORY_SOURCE_AND_DIFF_VALIDATION
   required_checks:
     - Canonical public repository validation must pass on the exact reviewed candidate head.
     - Pre-publication synthetic regression testing must prove safe candidate acceptance and rejection of transient historical exposure, commit-message exposure and provider-metadata exposure.
@@ -190,7 +193,6 @@ evidence:
     - Deployment, production, release, authority, standing, admission or participation effect
     - Any successor operation
 stop_condition:
-  - Stop after the bounded draft PUBLISH candidate is created and exact-head provider checks are available or reported as pending.
-  - Do not merge or mark ready for review without a separate owner-selected ACCEPT transition.
+  - Stop after the bounded draft PUBLISH candidate is qualified on its exact head and is ready for the separately owner-selected ACCEPT transition.
   - Do not weaken repository rulesets or use a provider route to bypass the pre-publication control.
   - Preserve accepted standing 52/53 and all Runtime, deployment, release, authority, standing, participation and successor effects as NONE or not established as applicable.
