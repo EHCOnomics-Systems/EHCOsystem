@@ -5,80 +5,57 @@ protocol_reference:
   profile_version: 1.0.0
   protocol_version: 1.0.0
 repository: EHCOnomics-Systems/EHCOsystem
-governed_object: EHCOSYSTEM_PUBLIC_PROOF_KERNEL_PRELAUNCH_V1
+governed_object: EHCOSYSTEM_PUBLIC_CONTROL_ROUTING_DISCLOSURE_CORRECTION
 source_owner:
   repository: EHCOnomics-Systems/EHCOsystem
-  revision: 58f8a0375df7ca3ef19b25f0103d93c987854543
+  revision: c208cb7cd002d016359f39aba1e3aef3f820befc
   repository_manifest_path: ehco.repository.yaml
-  controlling_source_reference: GOOGLE_DRIVE_EHCO_PUB_SOW_010_OWNER_SELECTED_SCOPE_V1_8
+  controlling_source_reference: OWNER_SELECTED_PUBLIC_LAUNCH_SCOPE
 selection:
   selected_by: Edward Henry
-  selection_class: EXPLICIT_OWNER_DIRECTION
+  selection_class: CONTINUATION_OF_OWNER_SELECTED_PUBLIC_LAUNCH_OPERATION
   durable_reference: |-
-    Edward Henry direction 2026-09-13 "accepted proceed with next steps" explicitly ACCEPTS exact reviewed PUBLISH head 21b824cd6dac121b1e85573ef0d9cc7a62bf2da7 for EHCOnomics-Systems/EHCOsystem PR #63.
-    The accepted object is the bounded EHCOsystem Public Proof Kernel candidate only. This acceptance establishes it as the selected SOW C1 public proof mechanism if integration succeeds; it does not issue EHCO_PUBLIC_LAUNCH_BASELINE_V1_ACCEPTED and does not close or supersede the wider EHCO-PUB-SOW-010 public-launch program.
-    Exact reviewed head 21b824cd6dac121b1e85573ef0d9cc7a62bf2da7 passed canonical public repository validation run 34779425093, CodeQL run 34779425088, and EHCO Assistant Operation Gate run 34779424080.
-    ACCEPT authorizes only recording this exact owner acceptance, final ACCEPT-head qualification, Ready-for-Review, exact-head merge, operation closeout, and accepted-main readback for PR #63.
-    The 13 non-operation candidate paths accepted at reviewed head 21b824cd6dac121b1e85573ef0d9cc7a62bf2da7 must remain byte-unchanged in the post-acceptance delta.
-    SOURCE_MAIN:58f8a0375df7ca3ef19b25f0103d93c987854543
-    PRELAUNCH_BASELINE_REQUIRED_BEFORE_PUBLIC_GITHUB_WRITE=true
-    PREPUBLICATION_DISCLOSURE_GATE_REQUIRED=true
-    EXACT_CANDIDATE_CLEARANCE_BINDING_REQUIRED=true
-    PROVIDER_NARRATIVE_PREPUBLICATION_SCAN_REQUIRED=true
-    POST_PUSH_CI_IS_DEFENSE_IN_DEPTH_NOT_CONFIDENTIALITY_BOUNDARY=true
-    PUBLIC_GITHUB_IS_POST_QUALIFICATION_DESTINATION=true
-    REAL_PRIVATE_LOCATORS_IN_PUBLIC_VALIDATOR_SOURCE_PROHIBITED=true
-    OPERATION_STABLE_ENVELOPE_CHANGE=true
-    NEW_PATH:proof/public-kernel/v1/README.md
-    NEW_PATH:proof/public-kernel/v1/kernel.py
-    NEW_PATH:proof/public-kernel/v1/verify_receipt.py
-    NEW_PATH:proof/public-kernel/v1/protocol.json
-    NEW_PATH:proof/public-kernel/v1/environment.json
-    NEW_PATH:proof/public-kernel/v1/fixtures.json
-    NEW_PATH:proof/public-kernel/v1/claim-test-map.json
-    NEW_PATH:proof/public-kernel/v1/threat-control-map.json
-    NEW_PATH:proof/public-kernel/v1/public-proof-manifest.json
-    NEW_PATH:proof/public-kernel/v1/PUBLICATION-BOUNDARY.json
-    NEW_PATH:verification/validate_public_proof_kernel.py
+    Edward Henry directed continuation of the already-selected public-launch work.
+    During continuation review, the current public operation record was found to contain a control-routing label that is unnecessary for public verification and inconsistent with the stricter public disclosure boundary.
+    This bounded corrective operation removes that routing label from the current public source while preserving the accepted Public Proof Kernel, accepted numerical standing 52/53, and all non-publication authority boundaries.
+    SOURCE_MAIN:c208cb7cd002d016359f39aba1e3aef3f820befc
+    CHANGE_SCOPE:ehco.operation.yaml
     TECHNICAL_EVIDENCE_DEMOTION=false
     CLAIM_WEAKENING=false
     STANDING_CHANGE=false
     RUNTIME_EFFECT=false
     DEPLOYMENT_EFFECT=false
     AUTOMATIC_SUCCESSOR=false
-  source_base_revision: 58f8a0375df7ca3ef19b25f0103d93c987854543
-  expected_reviewed_head_revision: 21b824cd6dac121b1e85573ef0d9cc7a62bf2da7
+  source_base_revision: c208cb7cd002d016359f39aba1e3aef3f820befc
+  expected_reviewed_head_revision: NOT_APPLICABLE_UNTIL_PROVIDER_QUALIFICATION
 control_anchor: AGENTS.md
 status_owner_path: ehco.operation.yaml
 accepted_standing: 52/53
 active_operation:
-  operation_id: EHCOSYSTEM-PUBLIC-PROOF-KERNEL-ACCEPT-001
-  state: COMPLETE
-  authorization_mode: ACCEPT
-  bounded_outcome: Owner-accept and integrate exact terminal-green PR #63 reviewed head 21b824cd6dac121b1e85573ef0d9cc7a62bf2da7 as the bounded EHCOsystem Public Proof Kernel and selected SOW C1 public proof mechanism, limiting the post-acceptance delta to ehco.operation.yaml, then read back resulting accepted main. This acceptance does not constitute full EHCO-PUB-SOW-010 Public Launch Baseline v1 acceptance.
-  remaining_bounded_work: []
+  operation_id: EHCOSYSTEM-PUBLIC-CONTROL-ROUTING-DISCLOSURE-CORRECTION-001
+  state: ACTIVE
+  authorization_mode: PUBLISH
+  bounded_outcome: Remove the unnecessary public control-routing label from ehco.operation.yaml, qualify the exact one-file corrective candidate, and integrate the correction without changing the accepted Public Proof Kernel or any Runtime, deployment, authority, standing, release, or successor state.
+  remaining_bounded_work:
+    - Publish only the exact prequalified one-file correction candidate.
+    - Obtain exact-head canonical public repository validation.
+    - Obtain exact-head CodeQL validation.
+    - Obtain exact-head EHCO Assistant Operation Gate validation.
+    - Reconcile any in-scope defect without weakening controls.
+    - Integrate the exact qualified corrective head and read back accepted main.
   interaction_seams:
-    - The current EHCO-PUB-SOW-010 Drive control owns the wider public-launch objective, claim/evidence ceilings, comparative-proof requirement, independent-reproduction requirement and Public Launch Baseline v1 acceptance.
-    - Exact owner-accepted reviewed PUBLISH head is 21b824cd6dac121b1e85573ef0d9cc7a62bf2da7 on PR #63.
-    - Reviewed head 21b824cd6dac121b1e85573ef0d9cc7a62bf2da7 passed canonical public repository validation run 34779425093, CodeQL run 34779425088, and EHCO Assistant Operation Gate run 34779424080.
-    - EHCOnomics-Systems/EHCOsystem@58f8a0375df7ca3ef19b25f0103d93c987854543 remains the exact source base for PR #63.
-    - GitHub owns exact PR, workflow, merge and accepted-main repository state.
+    - EHCOnomics-Systems/EHCOsystem owns exact public source, Git objects, refs, workflows, pull requests and repository-validation state.
     - Existing owning technical evidence retains all established technical effects and claim ceilings.
+    - The accepted Public Proof Kernel remains established by its accepted public Git history.
     - INSTANTIATED_EHCO_RUNTIME retains Tier One Runtime authority and Runtime state.
   non_overlap:
-    - Total PR changed-path set remains exactly the established 14 paths declared in scope.
-    - Delta from owner-accepted reviewed PUBLISH head 21b824cd6dac121b1e85573ef0d9cc7a62bf2da7 to final ACCEPT head is exactly ehco.operation.yaml.
-    - The other 13 accepted candidate paths remain byte-unchanged after owner acceptance.
-    - No destructive history rewrite, provider cache purge or repository replacement.
-    - No private repository, Drive-control or host locator is added to public source.
-    - No proprietary implementation source is copied or transferred.
-    - No accepted technical evidence, architecture, benchmark, proof result, maturity or public claim is demoted.
-    - No full EHCO_PUBLIC_LAUNCH_BASELINE_V1_ACCEPTED receipt is created by this bounded PR acceptance.
-    - No official comparative C1B result is created by this bounded PR acceptance.
-    - No independent external third-party reproduction receipt is created by this bounded PR acceptance.
-    - No standing change from 52/53.
+    - No change to ehco.repository.yaml or any Public Proof Kernel file.
+    - No technical-evidence demotion or claim weakening.
+    - No proprietary implementation source publication.
+    - No destructive history rewrite.
+    - No accepted numerical standing change from 52/53.
     - No Runtime, deployment, production, release, authority, admission, participation or persistence effect.
-    - No open-source conversion or proprietary implementation-source publication.
+    - No full public-launch baseline acceptance effect.
     - No automatic successor.
   automatic_successor: PROHIBITED
   successor_operation: NOT_SELECTED
@@ -95,56 +72,13 @@ execution_continuity:
 scope:
   permitted_paths:
     - ehco.operation.yaml
-    - AGENTS.md
-    - GOVERNANCE.md
-    - SECURITY.md
-    - PROVENANCE.md
-    - verification/verify_all_public.py
-    - verification/README.md
-    - verification/validate_public_proof_kernel.py
-    - proof/public-kernel/v1/README.md
-    - proof/public-kernel/v1/kernel.py
-    - proof/public-kernel/v1/verify_receipt.py
-    - proof/public-kernel/v1/protocol.json
-    - proof/public-kernel/v1/environment.json
-    - proof/public-kernel/v1/fixtures.json
-    - proof/public-kernel/v1/claim-test-map.json
-    - proof/public-kernel/v1/threat-control-map.json
-    - proof/public-kernel/v1/public-proof-manifest.json
-    - proof/public-kernel/v1/PUBLICATION-BOUNDARY.json
   controlled_paths:
     - ehco.operation.yaml
-    - AGENTS.md
-    - GOVERNANCE.md
-    - SECURITY.md
-    - PROVENANCE.md
-    - verification/verify_all_public.py
-    - verification/README.md
-    - verification/validate_public_proof_kernel.py
-    - proof/public-kernel/v1/README.md
-    - proof/public-kernel/v1/kernel.py
-    - proof/public-kernel/v1/verify_receipt.py
-    - proof/public-kernel/v1/protocol.json
-    - proof/public-kernel/v1/environment.json
-    - proof/public-kernel/v1/fixtures.json
-    - proof/public-kernel/v1/claim-test-map.json
-    - proof/public-kernel/v1/threat-control-map.json
-    - proof/public-kernel/v1/public-proof-manifest.json
-    - proof/public-kernel/v1/PUBLICATION-BOUNDARY.json
   prohibited_paths:
     - ehco.repository.yaml
-    - README.md
-    - NOTICE.md
-    - LIBRARY.md
-    - ECOSYSTEM-DILIGENCE.md
-    - TECHNICAL-DILIGENCE.md
-    - assurance/**
-    - architecture/**
-    - evidence/**
-    - language-model/**
-    - range-reactor/**
-    - runtime/**
-    - dossiers/**
+    - proof/**
+    - verification/**
+    - .github/**
 change_control:
   control_change_declared: true
   delete_or_move_authorized: false
@@ -155,25 +89,21 @@ change_control:
     - update_file
     - run_checks
   local_actions_prohibited:
-    - propose
     - create_file
     - move_file
     - delete_file
     - generate_artifact
   remote_actions_authorized:
-    - mark_pull_request_ready_for_review
-    - merge_pull_request
-    - record_owner_acceptance
-    - close_operation
-  remote_actions_prohibited:
     - create_branch
     - commit
     - push
     - open_draft_pull_request
     - update_draft_pull_request
-    - activate_selected_successor
+    - mark_pull_request_ready_for_review
+    - merge_pull_request
+    - close_operation
+  remote_actions_prohibited:
     - modify_repository_settings
-    - modify_drive_controls
     - publish_image
     - mutate_environment
     - deploy
@@ -188,41 +118,32 @@ effects:
   runtime_effect: NONE
   deployment_effect: NONE
   release_effect: NONE
-  external_effect: NONE
+  external_effect: PUBLIC_SOURCE_CORRECTION_ONLY
 bridge:
   applicability: NOT_APPLICABLE_NON_PARTICIPANT
-  non_applicability_reason: Public proof-kernel acceptance does not establish Tier One Runtime participation.
+  non_applicability_reason: Public source disclosure correction does not establish Tier One Runtime participation.
   direct_invocation: PROHIBITED
   runtime_admission_status: NOT_ESTABLISHED
   participation_binding_status: NOT_ESTABLISHED
   canonical_runtime_receipt_status: NOT_ESTABLISHED
 evidence:
-  evidence_class: OWNER_ACCEPTANCE_RECORD
+  evidence_class: REPOSITORY_SOURCE_AND_PROVIDER_VALIDATION
   required_checks:
-    - Exact owner-accepted reviewed PUBLISH head remains 21b824cd6dac121b1e85573ef0d9cc7a62bf2da7 on PR #63.
-    - Reviewed head 21b824cd6dac121b1e85573ef0d9cc7a62bf2da7 retains terminal-success canonical public repository validation run 34779425093, CodeQL run 34779425088, and EHCO Assistant Operation Gate run 34779424080.
-    - Exact source base remains EHCOnomics-Systems/EHCOsystem@58f8a0375df7ca3ef19b25f0103d93c987854543.
-    - Total PR changed-path set remains exactly the 14 declared paths.
-    - Delta from reviewed PUBLISH head to final ACCEPT head is exactly ehco.operation.yaml.
-    - The other 13 accepted candidate paths remain byte-unchanged from the owner-accepted reviewed head.
-    - Final COMPLETE ACCEPT head passes canonical public repository validation, CodeQL and EHCO Assistant Operation Gate.
-    - Merge uses the exact qualified final ACCEPT head guard and accepted main is read back from GitHub.
+    - Exact candidate differs from accepted main only at ehco.operation.yaml.
+    - Exact candidate and provider metadata pass pre-provider disclosure qualification.
+    - Canonical public repository validation passes on the exact candidate head.
+    - CodeQL passes on the exact candidate head.
+    - EHCO Assistant Operation Gate passes on the exact candidate head.
     - Accepted numerical standing remains 52/53.
-    - No full Public Launch Baseline v1 acceptance, official comparative result, independent reproduction, deployment, release, Runtime, authority, participation, standing or successor effect is created.
   proves:
-    - Edward Henry explicitly accepted exact reviewed PR #63 head 21b824cd6dac121b1e85573ef0d9cc7a62bf2da7.
-    - Successful integration establishes the bounded Public Proof Kernel as accepted EHCOsystem public source and the selected SOW C1 public proof mechanism.
-    - This bounded source acceptance does not itself establish the wider EHCO-PUB-SOW-010 Public Launch Baseline v1 acceptance state.
+    - The current public tip no longer carries the unnecessary control-routing label in ehco.operation.yaml if the exact candidate is integrated.
   evidence_not_created:
-    - EHCO_PUBLIC_LAUNCH_BASELINE_V1_ACCEPTED
-    - Official comparative C1B result
-    - Independent external third-party reproduction receipt
-    - New Runtime realization or current Runtime-state observation
-    - Language Model requalification
-    - Range Reactor requalification
-    - Deployment, production, release, authority, standing, admission or participation effect
+    - New Public Proof Kernel technical evidence
+    - Official comparative result
+    - Independent reproduction receipt
+    - Full public-launch baseline acceptance
+    - Runtime, deployment, production, release, authority, standing, admission or participation effect
     - Any successor operation
 stop_condition:
-  - Reverify the exact final COMPLETE ACCEPT head through canonical public repository validation, CodeQL and EHCO Assistant Operation Gate with total PR diff limited to the 14 established paths and post-acceptance delta limited exactly to ehco.operation.yaml.
-  - Mark PR #63 Ready only after exact-head qualification, merge only with exact qualified final ACCEPT head protection, and read back accepted EHCOsystem main.
-  - Stop this bounded ACCEPT operation before any full Public Launch Baseline v1 acceptance declaration, provider feature activation beyond this PR, deployment, release, Runtime action, authority/standing effect, proprietary-source transfer, or automatic successor activation.
+  - Integrate only the exact qualified one-file corrective candidate and read back accepted main.
+  - Do not alter technical proof files, run the comparative proof, create full public-launch acceptance, deploy, release, mutate Runtime/authority/standing, or activate a successor.
