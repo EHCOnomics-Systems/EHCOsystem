@@ -2,6 +2,15 @@
 
 Describe the bounded public-repository change and the result it establishes.
 
+## Pre-publication disclosure clearance
+
+- [ ] The exact candidate was scanned before the provider write by `verification/pre_publication_gate.py` or an equivalent fail-closed pre-provider transport.
+- [ ] The clearance was bound to the exact candidate SHA/tree and was regenerated after any candidate mutation.
+- [ ] Provider-visible branch/ref naming was included in the clearance.
+- [ ] Proposed PR title/body and any other provider-facing narrative were scanned before publication.
+- [ ] No private repository/source topology, Drive/control routing, private host path, credential, endpoint, proprietary implementation source, or other protected publication class is present.
+- [ ] No opaque archive/office-container payload bypasses the disclosure scan.
+
 ## Public architecture
 
 - [ ] EHCO AI-OS remains represented as the realized Tier One Runtime with accepted standing **52/53**.

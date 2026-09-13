@@ -1,8 +1,8 @@
 ---
 title: Public Documentation and Evidence Provenance
-version: 2.1
+version: 2.2
 status: current-public-reference
-published: 2026-09-01
+published: 2026-09-13
 maintainer: EHCOnomics
 evidence_class: provenance-and-interpretation-reference
 evidence_scope: public provenance classification and integrity routing
@@ -48,6 +48,12 @@ Language Model public fixtures, the Language Model deterministic capability demo
 
 Public hashes, manifests, fixture identities, workload identities, selected results, and repository validators provide the integrity route appropriate to each public artifact.
 
+## Pre-publication clearance provenance
+
+A pre-publication clearance receipt is a transient publisher-control record, not technical evidence and not Runtime evidence. It binds the exact public candidate commit/tree, accepted public base, gate policy identity, object counts and PASS status for the disclosure scan performed before a normal public GitHub write.
+
+The receipt is kept outside the public tree under clone-local Git custody. A different candidate SHA requires a new clearance. Provider-side CI may repeat the gate as regression evidence, but post-push execution does not replace the pre-provider clearance requirement.
+
 ## Stable repository provenance baseline
 
 `ehco.repository.yaml` is the stable repository identity and boundary record. Its `provenance.accepted_commit` identifies the commit that accepted the stable manifest/boundary baseline represented by that file, independently from later `main` revisions.
@@ -64,9 +70,9 @@ The registered repository release identity is version `1.0.0`, with registered t
 
 ## Repository verification
 
-`python3 verification/verify_all_public.py` validates the exact checked-out public revision across repository integrity, claims, Runtime/Full Flex public-safe custody, Language Model fixture/demonstration integrity, Range Reactor public evidence, publication identity, and durable public semantics.
+`python3 verification/verify_all_public.py` validates the exact checked-out public revision across repository integrity, disclosure-gate regression behavior, claims, Runtime/Full Flex public-safe custody, Language Model fixture/demonstration integrity, Range Reactor public evidence, publication identity, and durable public semantics.
 
-A green repository check establishes the public source/repository conditions for that revision. It does not regenerate technical evidence.
+A green repository check establishes the public source/repository conditions for that revision. It does not regenerate technical evidence and, when run on GitHub after a push, does not retroactively establish that an unsafe push was confidential.
 
 ## Protected implementation custody
 

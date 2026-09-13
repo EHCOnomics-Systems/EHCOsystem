@@ -2,8 +2,6 @@ name: Validate public repository
 
 on:
   push:
-    branches:
-      - main
   pull_request:
 
 permissions:
@@ -20,15 +18,48 @@ jobs:
     timeout-minutes: 10
 
     steps:
-      - name: Check out exact repository revision
+      - name: Check out exact repository revision with history
         uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09
         with:
+          fetch-depth: 0
           persist-credentials: false
 
       - name: Set up Python 3.12
         uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1
         with:
           python-version: "3.12"
+
+      - name: Re-run disclosure gate as provider-side regression detection
+        shell: bash
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          EVENT_BEFORE: ${{ github.event.before }}
+          PR_BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          PR_HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+          PR_HEAD_REF: ${{ github.head_ref }}
+        run: |
+          set -euo pipefail
+          zero_sha="0000000000000000000000000000000000000000"
+
+          if [ "$EVENT_NAME" = "pull_request" ]; then
+            base_sha="$PR_BASE_SHA"
+            candidate_sha="$PR_HEAD_SHA"
+            provider_ref="refs/heads/$PR_HEAD_REF"
+          else
+            candidate_sha="$GITHUB_SHA"
+            provider_ref="$GITHUB_REF"
+            if [ -n "${EVENT_BEFORE:-}" ] && [ "$EVENT_BEFORE" != "$zero_sha" ]; then
+              base_sha="$EVENT_BEFORE"
+            else
+              git fetch --no-tags origin main:refs/remotes/origin/main
+              base_sha="$(git rev-parse refs/remotes/origin/main)"
+            fi
+          fi
+
+          python3 verification/pre_publication_gate.py \
+            --base "$base_sha" \
+            --candidate "$candidate_sha" \
+            --ref-name "$provider_ref"
 
       - name: Validate complete public repository
         run: python3 verification/verify_all_public.py

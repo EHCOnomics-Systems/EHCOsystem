@@ -24,6 +24,20 @@ Public material enters the repository through a governed publication path that e
 - canonical repository path and integrity controls; and
 - repository validation coverage.
 
+### Pre-publication disclosure boundary
+
+GitHub is the destination after disclosure qualification, not the first place disclosure qualification occurs.
+
+The normal publication path is:
+
+`PRIVATE/LOCAL WORK -> PUBLICATION CANDIDATE -> PRE-PUBLICATION DISCLOSURE GATE -> PUBLIC GITHUB REF/METADATA -> REQUIRED CI/REVIEW -> MERGE -> PUBLIC READBACK`
+
+Before a candidate is pushed to this public repository, `verification/pre_publication_gate.py` scans the Git objects newly reachable from that candidate relative to accepted public `main`. This includes commit messages, path names, new blob content, objects introduced and later removed inside the candidate history, and the provider-visible ref name. Provider-facing narrative such as a pull-request body or release text is scanned separately before publication.
+
+The gate uses structural public-policy checks and synthetic fixtures. It does not embed the protected private identifiers it is intended to exclude. Clearance is bound to the exact candidate SHA/tree and must be regenerated after any candidate change.
+
+Post-push GitHub validation remains mandatory defense in depth. It is not treated as the confidentiality boundary because a public branch or pull-request object is already provider-visible by the time ordinary CI executes.
+
 ## Evidence classes
 
 1. **Controlled EHCO architecture** — accepted architectural position.
@@ -55,7 +69,9 @@ Accepted public architecture and standing records move through explicit EHCOnomi
 
 ## Validation
 
-Every pull request and push to `main` runs repository validation. Acceptance also uses the repository and organization rulesets and their required status/review conditions applicable to the exact candidate at review time.
+Every pull request and every branch push runs repository validation. Acceptance also uses the repository and organization rulesets and their required status/review conditions applicable to the exact candidate at review time.
+
+Local publisher transports must satisfy the pre-publication disclosure gate before GitHub receives the candidate. The GitHub-hosted copy of that gate is a regression/detection layer and does not retroactively make an unsafe public push confidential.
 
 ## Licensing
 

@@ -5,56 +5,71 @@ protocol_reference:
   profile_version: 1.0.0
   protocol_version: 1.0.0
 repository: EHCOnomics-Systems/EHCOsystem
-governed_object: EHCOSYSTEM_PUBLIC_HISTORY_ZERO_EXPOSURE_REMEDIATION_V1
+governed_object: EHCOSYSTEM_PREPUBLICATION_DISCLOSURE_PREVENTION_V1
 source_owner:
   repository: EHCOnomics-Systems/EHCOsystem
-  revision: 2cee336c6016a71ed5a1bde645643e3c19f7c8ad
+  revision: ca895511ba284018feaa0922e88e437c519806fa
   repository_manifest_path: ehco.repository.yaml
-  controlling_source_reference: GOOGLE_DRIVE_EHCO_PUB_SOW_010_OWNER_SELECTED_SCOPE_V1_2
+  controlling_source_reference: GOOGLE_DRIVE_EHCO_PUB_SOW_010_OWNER_SELECTED_SCOPE_V1_6
 selection:
   selected_by: Edward Henry
   selection_class: EXPLICIT_OWNER_DIRECTION
   durable_reference: |-
-    Edward Henry selected continuation of SOW-010 Option 1 after canonical acceptance of the history-remediation preparation package: proceed with the destructive clean-history cutover/provider-purge path while strictly preserving accepted public technical evidence, proof, language, architecture, verification depth, benchmark results, accepted maturity, and numerical standing 52/53. The exact PUBLISH cutover-control head 3ae2c2ede828213cf6d9615653962b904700a4e7 passed canonical public repository validation, CodeQL and the EHCO Assistant Operation Gate. This ACCEPT transition integrates only the source-grounded cutover control projection; it does not itself force-update protected main, mutate rulesets, replace the repository, or claim provider purge completion.
-    SOURCE_MAIN:2cee336c6016a71ed5a1bde645643e3c19f7c8ad
-    SOURCE_TREE:77142b791be819ec3663be6c845d78538462f6c0
-    DISCLOSURE_SAFE_ROOT:a1fdf15fb91ce112548eee435aaadf48a92dc451
-    REVIEWED_PUBLISH_HEAD:3ae2c2ede828213cf6d9615653962b904700a4e7
-    CLEAN_HISTORY_BRANCH:sow010/clean-history-candidate
-    DESTRUCTIVE_MAIN_CUTOVER_OWNER_SELECTED=true
-    PROVIDER_PURGE_OWNER_SELECTED=true
+    Edward Henry direction 2026-09-13 "accepted proceed" explicitly ACCEPTS exact reviewed PUBLISH head ebfa82489c22160cf41ebf81b5eaa77b8c3fe9f2 for EHCOnomics-Systems/EHCOsystem PR #62.
+    The accepted object is the bounded fail-closed pre-publication disclosure-prevention candidate only. This acceptance does not issue EHCO_PUBLIC_LAUNCH_BASELINE_V1_ACCEPTED and does not close or supersede the wider EHCO-PUB-SOW-010 public-launch program.
+    Exact reviewed head ebfa82489c22160cf41ebf81b5eaa77b8c3fe9f2 passed canonical public repository validation run 34772963928, CodeQL run 34772963927, and EHCO Assistant Operation Gate run 34772962474.
+    ACCEPT authorizes only recording this exact owner acceptance, final ACCEPT-head qualification, Ready-for-Review, exact-head merge, operation closeout, and accepted-main readback for PR #62.
+    The 13 non-operation candidate paths accepted at reviewed head ebfa82489c22160cf41ebf81b5eaa77b8c3fe9f2 must remain byte-unchanged in the post-acceptance delta.
+    SOURCE_MAIN:ca895511ba284018feaa0922e88e437c519806fa
+    PREPUBLICATION_DISCLOSURE_GATE_REQUIRED=true
+    NEWLY_REACHABLE_GIT_OBJECT_SCAN_REQUIRED=true
+    COMMIT_MESSAGE_AND_PROVIDER_REF_SCAN_REQUIRED=true
+    PROVIDER_NARRATIVE_PREPUBLICATION_SCAN_REQUIRED=true
+    EXACT_CANDIDATE_CLEARANCE_BINDING_REQUIRED=true
+    POST_PUSH_CI_IS_DEFENSE_IN_DEPTH_NOT_CONFIDENTIALITY_BOUNDARY=true
+    REAL_PRIVATE_LOCATORS_IN_PUBLIC_VALIDATOR_SOURCE_PROHIBITED=true
+    OPERATION_STABLE_ENVELOPE_CHANGE=true
+    NEW_PATH:verification/pre_publication_gate.py
+    NEW_PATH:verification/install_publication_guard.py
+    NEW_PATH:verification/validate_pre_publication_gate.py
+    NEW_PATH:.githooks/pre-push
     TECHNICAL_EVIDENCE_DEMOTION=false
     CLAIM_WEAKENING=false
     STANDING_CHANGE=false
     RUNTIME_EFFECT=false
-    RULESET_WEAKENING_NOT_IMPLICITLY_AUTHORIZED=true
-    PROVIDER_ADMINISTRATIVE_REF_REPLACEMENT_OUTSIDE_CANONICAL_REMOTE_ACTION_ENUM=true
-    OPERATION_STABLE_ENVELOPE_CHANGE=true
-  source_base_revision: 2cee336c6016a71ed5a1bde645643e3c19f7c8ad
-  expected_reviewed_head_revision: 3ae2c2ede828213cf6d9615653962b904700a4e7
+    AUTOMATIC_SUCCESSOR=false
+  source_base_revision: ca895511ba284018feaa0922e88e437c519806fa
+  expected_reviewed_head_revision: ebfa82489c22160cf41ebf81b5eaa77b8c3fe9f2
 control_anchor: AGENTS.md
 status_owner_path: ehco.operation.yaml
 accepted_standing: 52/53
 active_operation:
-  operation_id: EHCOSYSTEM-PUBLIC-SOW010-HISTORY-CUTOVER-001
+  operation_id: EHCOSYSTEM-PUBLIC-PREPUBLISH-DISCLOSURE-GATE-ACCEPT-001
   state: COMPLETE
   authorization_mode: ACCEPT
-  bounded_outcome: Owner-accept and integrate the exact qualified SOW-010 clean-history cutover control projection so canonical source records the selected destructive remediation path, exact accepted source/tree, disclosure-safe ancestry anchor, technical-evidence preservation invariants, and provider ruleset boundary before the history rewrite itself.
+  bounded_outcome: Owner-accept and integrate exact terminal-green PR #62 reviewed head ebfa82489c22160cf41ebf81b5eaa77b8c3fe9f2 as the bounded EHCOsystem pre-publication disclosure-prevention control, limiting the post-acceptance delta to ehco.operation.yaml, then read back resulting accepted main. This acceptance does not constitute full EHCO-PUB-SOW-010 Public Launch Baseline v1 acceptance.
   remaining_bounded_work: []
   interaction_seams:
-    - Private Google Drive SOW-010 owns the zero-exposure objective, destructive-remediation decision law and prohibition on evidence demotion.
-    - EHCOnomics-Systems/EHCOsystem owns exact public Git history, tree/blob identities, refs, pull-request/provider state and repository rulesets.
-    - Existing owning technical evidence retains all established technical effects and claim ceilings; this acceptance does not recreate or demote that evidence.
-    - GitHub/provider rulesets own whether the selected non-fast-forward default-branch replacement is currently permitted.
+    - The current EHCO-PUB-SOW-010 Drive control owns the wider zero-private-topology and public-launch objective; this bounded acceptance integrates only the disclosure-prevention source candidate.
+    - Exact owner-accepted reviewed PUBLISH head is ebfa82489c22160cf41ebf81b5eaa77b8c3fe9f2 on PR #62.
+    - Reviewed head ebfa82489c22160cf41ebf81b5eaa77b8c3fe9f2 passed canonical public repository validation run 34772963928, CodeQL run 34772963927, and EHCO Assistant Operation Gate run 34772962474.
+    - EHCOnomics-Systems/EHCOsystem@ca895511ba284018feaa0922e88e437c519806fa remains the exact source base for PR #62.
+    - GitHub owns exact PR, workflow, merge and accepted-main repository state.
+    - Clone-local Git custody owns installation/use of the pre-push hook and local clearance receipt on each publisher clone.
+    - Existing owning technical evidence retains all established technical effects and claim ceilings.
     - INSTANTIATED_EHCO_RUNTIME retains Tier One Runtime authority and Runtime state.
   non_overlap:
-    - No accepted public-safe technical evidence, architecture, benchmark, proof result, verification machinery, reader-facing technical language or maturity statement is reduced by this acceptance.
+    - Total PR changed-path set remains exactly the established 14 paths declared in scope.
+    - Delta from owner-accepted reviewed PUBLISH head ebfa82489c22160cf41ebf81b5eaa77b8c3fe9f2 to final ACCEPT head is exactly ehco.operation.yaml.
+    - The other 13 accepted candidate paths remain byte-unchanged after owner acceptance.
+    - No destructive history rewrite, provider cache purge or repository replacement.
+    - No private repository, Drive-control or host locator is added to public detection source.
+    - No accepted technical evidence, architecture, benchmark, proof result, maturity or public claim is demoted.
+    - No full EHCO_PUBLIC_LAUNCH_BASELINE_V1_ACCEPTED receipt is created by this bounded PR acceptance.
     - No standing change from 52/53.
-    - No Runtime, deployment, release, authority or participation effect.
+    - No Runtime, deployment, production, release, authority, admission, participation or persistence effect.
     - No open-source conversion or proprietary implementation-source publication.
-    - No repository replacement/reseed unless separately selected after a proven failure of the selected clean-history rewrite path.
     - No automatic successor.
-    - No ruleset mutation, force update of main or provider purge is included in this ACCEPT integration.
   automatic_successor: PROHIBITED
   successor_operation: NOT_SELECTED
 execution_continuity:
@@ -70,16 +85,38 @@ execution_continuity:
 scope:
   permitted_paths:
     - ehco.operation.yaml
-  controlled_paths:
-    - ehco.operation.yaml
-  prohibited_paths:
     - AGENTS.md
-    - ehco.repository.yaml
-    - README.md
     - GOVERNANCE.md
     - SECURITY.md
-    - NOTICE.md
     - PROVENANCE.md
+    - verification/public_disclosure_policy.py
+    - verification/pre_publication_gate.py
+    - verification/install_publication_guard.py
+    - verification/validate_pre_publication_gate.py
+    - verification/verify_all_public.py
+    - verification/README.md
+    - .githooks/pre-push
+    - .github/pull_request_template.md
+    - .github/workflows/validate-public-evidence.yml
+  controlled_paths:
+    - ehco.operation.yaml
+    - AGENTS.md
+    - GOVERNANCE.md
+    - SECURITY.md
+    - PROVENANCE.md
+    - verification/public_disclosure_policy.py
+    - verification/pre_publication_gate.py
+    - verification/install_publication_guard.py
+    - verification/validate_pre_publication_gate.py
+    - verification/verify_all_public.py
+    - verification/README.md
+    - .githooks/pre-push
+    - .github/pull_request_template.md
+    - .github/workflows/validate-public-evidence.yml
+  prohibited_paths:
+    - ehco.repository.yaml
+    - README.md
+    - NOTICE.md
     - LIBRARY.md
     - ECOSYSTEM-DILIGENCE.md
     - TECHNICAL-DILIGENCE.md
@@ -90,8 +127,6 @@ scope:
     - range-reactor/**
     - runtime/**
     - dossiers/**
-    - verification/**
-    - .github/**
 change_control:
   control_change_declared: true
   delete_or_move_authorized: false
@@ -138,7 +173,7 @@ effects:
   external_effect: NONE
 bridge:
   applicability: NOT_APPLICABLE_NON_PARTICIPANT
-  non_applicability_reason: Public Git history/privacy remediation does not establish Tier One Runtime participation.
+  non_applicability_reason: Public-repository disclosure prevention does not establish Tier One Runtime participation.
   direct_invocation: PROHIBITED
   runtime_admission_status: NOT_ESTABLISHED
   participation_binding_status: NOT_ESTABLISHED
@@ -146,30 +181,29 @@ bridge:
 evidence:
   evidence_class: OWNER_ACCEPTANCE_RECORD
   required_checks:
-    - Reviewed PUBLISH head 3ae2c2ede828213cf6d9615653962b904700a4e7 passed canonical public repository validation.
-    - Reviewed PUBLISH head 3ae2c2ede828213cf6d9615653962b904700a4e7 passed CodeQL.
-    - Reviewed PUBLISH head 3ae2c2ede828213cf6d9615653962b904700a4e7 passed the EHCO Assistant Operation Gate.
-    - Reviewed PUBLISH diff changes only ehco.operation.yaml.
-    - Exact source base is accepted main 2cee336c6016a71ed5a1bde645643e3c19f7c8ad with source tree 77142b791be819ec3663be6c845d78538462f6c0.
-    - Established disclosure-safe repository root is a1fdf15fb91ce112548eee435aaadf48a92dc451.
-    - Canonical continuity receipt remains unchanged and preserves accepted public technical evidence/proof/language through history remediation.
+    - Exact owner-accepted reviewed PUBLISH head remains ebfa82489c22160cf41ebf81b5eaa77b8c3fe9f2 on PR #62.
+    - Reviewed head ebfa82489c22160cf41ebf81b5eaa77b8c3fe9f2 retains terminal-success canonical public repository validation run 34772963928, CodeQL run 34772963927, and EHCO Assistant Operation Gate run 34772962474.
+    - Exact source base remains EHCOnomics-Systems/EHCOsystem@ca895511ba284018feaa0922e88e437c519806fa.
+    - Total PR changed-path set remains exactly the 14 declared paths.
+    - Delta from reviewed PUBLISH head to final ACCEPT head is exactly ehco.operation.yaml.
+    - The other 13 accepted candidate paths remain byte-unchanged from the owner-accepted reviewed head.
+    - Final COMPLETE ACCEPT head passes canonical public repository validation, CodeQL and EHCO Assistant Operation Gate.
+    - Merge uses the exact qualified final ACCEPT head guard and accepted main is read back from GitHub.
     - Accepted numerical standing remains 52/53.
-    - No ruleset mutation, protected-main ref replacement or provider purge is created by this acceptance.
-    - No Runtime, deployment, release, authority, standing, participation or successor effect is created by this acceptance.
+    - No full Public Launch Baseline v1 acceptance, deployment, release, Runtime, authority, participation, standing or successor effect is created.
   proves:
-    - Owner-selected repository-source acceptance of the exact qualified SOW-010 destructive clean-history cutover control projection.
+    - Edward Henry explicitly accepted exact reviewed PR #62 head ebfa82489c22160cf41ebf81b5eaa77b8c3fe9f2.
+    - Successful integration establishes the bounded pre-publication disclosure-prevention control as accepted EHCOsystem public source.
+    - This bounded source acceptance does not itself establish the wider EHCO-PUB-SOW-010 Public Launch Baseline v1 acceptance state.
   evidence_not_created:
-    - Clean-history candidate construction
-    - Protected-main ref replacement
-    - Ruleset mutation or bypass
-    - Provider purge completion
-    - Whole-SOW zero-exposure completion
-    - New technical proof or Runtime state
-    - Deployment, production or release effect
-    - Authority, standing or Runtime participation change
+    - EHCO_PUBLIC_LAUNCH_BASELINE_V1_ACCEPTED
+    - Independent external third-party reproduction receipt for the full public launch baseline
+    - Provider-side deletion or garbage-collection evidence
+    - New Runtime realization or current Runtime-state observation
+    - New benchmark or technical capability result
+    - Deployment, production, release, authority, standing, admission or participation effect
     - Any successor operation
 stop_condition:
-  - Acceptance applies only to reviewed PUBLISH head 3ae2c2ede828213cf6d9615653962b904700a4e7 and its control-only ACCEPT transition.
-  - Provider integration must preserve the one-file cutover control under normal repository protections and exact-head merge protection.
-  - Canonical main readback must preserve accepted standing 52/53 and all Runtime, deployment, release, authority, standing, participation and successor effects as NONE or not established as applicable.
-  - This control acceptance closes before the destructive history rewrite, ruleset mutation, protected-main ref replacement or provider purge; those remain the already-selected next dependent operation and must execute only through lawful provider routes.
+  - Reverify the exact final COMPLETE ACCEPT head through canonical public repository validation, CodeQL and EHCO Assistant Operation Gate with total PR diff limited to the 14 established paths and post-acceptance delta limited exactly to ehco.operation.yaml.
+  - Mark PR #62 Ready only after exact-head qualification, merge only with exact qualified final ACCEPT head protection, and read back accepted EHCOsystem main.
+  - Stop this bounded ACCEPT operation before any full Public Launch Baseline v1 acceptance declaration, provider feature activation beyond this PR, deployment, release, Runtime action, authority/standing effect, proprietary-source transfer, or automatic successor activation.

@@ -9,14 +9,46 @@ python3 verification/verify_all_public.py
 The orchestrator runs the complete required validator set in a stable order:
 
 1. public repository integrity and disclosure boundaries;
-2. canonical public claim registry;
-3. accepted Runtime / Full Flex public representation;
-4. Language Model public snapshot;
-5. Range Reactor capability snapshot;
-6. Range Reactor operational-closure public result; and
-7. registered public release identity.
+2. pre-publication disclosure-gate synthetic regression behavior;
+3. canonical public claim registry;
+4. accepted Runtime / Full Flex public representation;
+5. Language Model public snapshot;
+6. Range Reactor capability snapshot;
+7. Range Reactor operational-closure public result; and
+8. registered public release identity.
 
 The required GitHub workflow runs this same entrypoint, so local reviewer instructions and repository CI describe the same validation surface.
+
+## Pre-publication disclosure gate
+
+Repository validation after a push is not the confidentiality boundary. For normal publisher transports, the candidate must be qualified before GitHub receives it.
+
+Install the clone-local pre-push guard once:
+
+```text
+python verification/install_publication_guard.py
+```
+
+The installed hook calls `verification/pre_publication_gate.py` for each pushed candidate ref. The gate compares the exact candidate to accepted public `main` and scans:
+
+- every newly reachable Git blob, including transient content later removed from the final tree;
+- commit messages;
+- provider-visible ref names;
+- repository paths;
+- high-confidence secret indicators; and
+- provider-facing metadata files supplied explicitly with `--metadata-file`.
+
+The gate does not echo matched protected values. It reports rule classes only. Successful local execution can write `.git/ehco-publication-clearance.json`, which remains outside the public tree and binds the exact candidate SHA/tree. Any candidate mutation requires a fresh clearance.
+
+Opaque archive and office-container additions fail closed rather than being treated as inspected public material.
+
+For provider-facing narrative that is not part of the Git candidate, place the proposed title/body/release text in a local file and run:
+
+```text
+python verification/pre_publication_gate.py --base origin/main --candidate HEAD --ref-name CANDIDATE_PUBLIC_REF --metadata-file LOCAL_METADATA_FILE --receipt .git/ehco-publication-clearance.json
+```
+
+Use public-safe placeholders such as `CANDIDATE_PUBLIC_REF` and `LOCAL_METADATA_FILE`; do not put protected identifiers into shell history merely to test the gate.
 
 ## What validation establishes
 
