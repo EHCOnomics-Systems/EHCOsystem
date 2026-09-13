@@ -15,9 +15,11 @@ selection:
   selected_by: Edward Henry
   selection_class: EXPLICIT_OWNER_DIRECTION
   durable_reference: |-
-    Edward Henry directed continuation of the already-selected EHCOsystem public-launch operation.
-    During continuation review, current public source was found to contain an unnecessary control-routing label in ehco.operation.yaml. The selected bounded corrective result is to remove that label while preserving the accepted Public Proof Kernel and accepted numerical standing 52/53.
+    Edward Henry directed continuation of the already-selected EHCOsystem public-launch operation through its lawful next steps.
+    Exact reviewed PUBLISH head b0d29782447fe640a94b8ef62116a25448b388ba for PR #64 changes only ehco.operation.yaml and passed exact-head canonical public repository validation, CodeQL, and EHCO Assistant Operation Gate qualification.
+    This bounded ACCEPT transition integrates only the disclosure correction: removal of an unnecessary public control-routing label from the operation record while preserving the accepted Public Proof Kernel and numerical standing 52/53.
     SOURCE_MAIN:c208cb7cd002d016359f39aba1e3aef3f820befc
+    REVIEWED_PUBLISH_HEAD:b0d29782447fe640a94b8ef62116a25448b388ba
     CHANGE_SCOPE:ehco.operation.yaml
     PRELAUNCH_BASELINE_REQUIRED_BEFORE_PUBLIC_GITHUB_WRITE=true
     PREPUBLICATION_DISCLOSURE_GATE_REQUIRED=true
@@ -33,28 +35,26 @@ selection:
     DEPLOYMENT_EFFECT=false
     AUTOMATIC_SUCCESSOR=false
   source_base_revision: c208cb7cd002d016359f39aba1e3aef3f820befc
-  expected_reviewed_head_revision: NOT_APPLICABLE_UNTIL_ACCEPT
+  expected_reviewed_head_revision: b0d29782447fe640a94b8ef62116a25448b388ba
 control_anchor: AGENTS.md
 status_owner_path: ehco.operation.yaml
 accepted_standing: 52/53
 active_operation:
-  operation_id: EHCOSYSTEM-PUBLIC-CONTROL-ROUTING-DISCLOSURE-CORRECTION-PUBLISH-001
-  state: ACTIVE
-  authorization_mode: PUBLISH
-  bounded_outcome: Publish an exact one-file corrective candidate that removes the unnecessary public control-routing label from ehco.operation.yaml without altering the accepted Public Proof Kernel, accepted standing, or any Runtime, deployment, release, authority, participation, or full public-launch acceptance state.
-  remaining_bounded_work:
-    - Obtain exact-head canonical public repository validation.
-    - Obtain exact-head CodeQL validation.
-    - Obtain exact-head EHCO Assistant Operation Gate validation.
-    - Reconcile any in-scope validation defect and reverify the exact candidate.
-    - Stop after the bounded draft PUBLISH candidate is qualified on its exact head.
+  operation_id: EHCOSYSTEM-PUBLIC-CONTROL-ROUTING-DISCLOSURE-CORRECTION-ACCEPT-001
+  state: COMPLETE
+  authorization_mode: ACCEPT
+  bounded_outcome: Accept and integrate the exact terminal-green one-file disclosure correction reviewed at b0d29782447fe640a94b8ef62116a25448b388ba, limiting the post-review delta to ehco.operation.yaml and preserving all Public Proof Kernel, Runtime, deployment, release, authority, standing, participation, and full public-launch acceptance boundaries.
+  remaining_bounded_work: []
   interaction_seams:
-    - The current owner-selected public-launch control owns the public disclosure boundary and selected public-launch objective.
-    - EHCOnomics-Systems/EHCOsystem owns exact public source, Git objects, refs, workflows, pull requests and repository-validation state.
+    - The current owner-selected public-launch control owns the wider public-launch objective and disclosure boundary.
+    - Exact reviewed PUBLISH head is b0d29782447fe640a94b8ef62116a25448b388ba on PR #64.
+    - EHCOnomics-Systems/EHCOsystem owns exact PR, workflow, merge and accepted-main repository state.
     - Existing owning technical evidence retains all established technical effects and claim ceilings.
     - The accepted Public Proof Kernel remains established by its accepted public Git history.
     - INSTANTIATED_EHCO_RUNTIME retains Tier One Runtime authority and Runtime state.
   non_overlap:
+    - Total PR changed-path set remains exactly ehco.operation.yaml.
+    - Delta from reviewed PUBLISH head to final ACCEPT head is exactly ehco.operation.yaml.
     - No change to ehco.repository.yaml or any accepted Public Proof Kernel file.
     - No private repository, host, credential, endpoint or protected source locator is added to public source.
     - No proprietary implementation source is copied or transferred.
@@ -131,21 +131,22 @@ change_control:
     - update_file
     - run_checks
   local_actions_prohibited:
+    - propose
     - create_file
     - move_file
     - delete_file
     - generate_artifact
   remote_actions_authorized:
+    - mark_pull_request_ready_for_review
+    - merge_pull_request
+    - record_owner_acceptance
+    - close_operation
+  remote_actions_prohibited:
     - create_branch
     - commit
     - push
     - open_draft_pull_request
     - update_draft_pull_request
-  remote_actions_prohibited:
-    - mark_pull_request_ready_for_review
-    - merge_pull_request
-    - record_owner_acceptance
-    - close_operation
     - activate_selected_successor
     - modify_repository_settings
     - modify_drive_controls
@@ -172,16 +173,18 @@ bridge:
   participation_binding_status: NOT_ESTABLISHED
   canonical_runtime_receipt_status: NOT_ESTABLISHED
 evidence:
-  evidence_class: REPOSITORY_SOURCE_AND_DIFF_VALIDATION
+  evidence_class: OWNER_ACCEPTANCE_RECORD
   required_checks:
-    - Exact candidate differs from accepted main only at ehco.operation.yaml.
-    - Exact candidate and provider metadata pass pre-provider disclosure qualification.
-    - Canonical public repository validation passes on the exact candidate head.
-    - CodeQL passes on the exact candidate head.
-    - EHCO Assistant Operation Gate passes on the exact candidate head.
+    - Exact reviewed PUBLISH head remains b0d29782447fe640a94b8ef62116a25448b388ba on PR #64.
+    - Reviewed head b0d29782447fe640a94b8ef62116a25448b388ba retains terminal-success canonical public repository validation, CodeQL and EHCO Assistant Operation Gate qualification.
+    - Exact source base remains c208cb7cd002d016359f39aba1e3aef3f820befc.
+    - Total PR changed-path set remains exactly ehco.operation.yaml.
+    - Delta from reviewed PUBLISH head to final ACCEPT head is exactly ehco.operation.yaml.
+    - Final COMPLETE ACCEPT head passes canonical public repository validation, CodeQL and EHCO Assistant Operation Gate.
+    - Merge uses the exact qualified final ACCEPT head guard and accepted main is read back from GitHub.
     - Accepted numerical standing remains 52/53.
   proves:
-    - Repository-source implementation of the bounded disclosure correction if the selected exact head qualifies.
+    - The bounded public disclosure correction is accepted if the exact final ACCEPT head qualifies and integrates.
   evidence_not_created:
     - New Public Proof Kernel technical evidence
     - Official comparative C1B result
@@ -190,6 +193,6 @@ evidence:
     - Runtime, deployment, production, release, authority, standing, admission or participation effect
     - Any successor operation
 stop_condition:
-  - Stop after the bounded draft PUBLISH candidate is qualified on its exact head and is ready for separately controlled acceptance.
-  - Do not mark Ready, merge, release, deploy, invoke Runtime, mutate authority/standing, issue full public-launch acceptance, or activate a successor in this bounded operation.
-  - Preserve accepted standing 52/53 and all Runtime, deployment, release, authority, participation and successor effects as NONE or not established as applicable.
+  - Reverify the exact final COMPLETE ACCEPT head through canonical public repository validation, CodeQL and EHCO Assistant Operation Gate with the total PR diff and post-review delta limited exactly to ehco.operation.yaml.
+  - Mark PR #64 Ready only after exact-head qualification, merge only with exact qualified final ACCEPT head protection, and read back accepted EHCOsystem main.
+  - Stop this bounded ACCEPT operation before full public-launch baseline acceptance, deployment, release, Runtime action, authority/standing effect, proprietary-source transfer, or automatic successor activation.
