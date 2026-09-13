@@ -13,13 +13,18 @@ source_owner:
   controlling_source_reference: OWNER_SELECTED_PUBLIC_LAUNCH_SCOPE
 selection:
   selected_by: Edward Henry
-  selection_class: CONTINUATION_OF_OWNER_SELECTED_PUBLIC_LAUNCH_OPERATION
+  selection_class: EXPLICIT_OWNER_DIRECTION
   durable_reference: |-
-    Edward Henry directed continuation of the already-selected public-launch work.
-    During continuation review, the current public operation record was found to contain a control-routing label that is unnecessary for public verification and inconsistent with the stricter public disclosure boundary.
-    This bounded corrective operation removes that routing label from the current public source while preserving the accepted Public Proof Kernel, accepted numerical standing 52/53, and all non-publication authority boundaries.
+    Edward Henry directed continuation of the already-selected EHCOsystem public-launch operation.
+    During continuation review, current public source was found to contain an unnecessary control-routing label in ehco.operation.yaml. The selected bounded corrective result is to remove that label while preserving the accepted Public Proof Kernel and accepted numerical standing 52/53.
     SOURCE_MAIN:c208cb7cd002d016359f39aba1e3aef3f820befc
     CHANGE_SCOPE:ehco.operation.yaml
+    PRELAUNCH_BASELINE_REQUIRED_BEFORE_PUBLIC_GITHUB_WRITE=true
+    PREPUBLICATION_DISCLOSURE_GATE_REQUIRED=true
+    EXACT_CANDIDATE_CLEARANCE_BINDING_REQUIRED=true
+    PROVIDER_NARRATIVE_PREPUBLICATION_SCAN_REQUIRED=true
+    POST_PUSH_CI_IS_DEFENSE_IN_DEPTH_NOT_CONFIDENTIALITY_BOUNDARY=true
+    PUBLIC_GITHUB_IS_POST_QUALIFICATION_DESTINATION=true
     TECHNICAL_EVIDENCE_DEMOTION=false
     CLAIM_WEAKENING=false
     STANDING_CHANGE=false
@@ -27,33 +32,34 @@ selection:
     DEPLOYMENT_EFFECT=false
     AUTOMATIC_SUCCESSOR=false
   source_base_revision: c208cb7cd002d016359f39aba1e3aef3f820befc
-  expected_reviewed_head_revision: NOT_APPLICABLE_UNTIL_PROVIDER_QUALIFICATION
+  expected_reviewed_head_revision: NOT_APPLICABLE_UNTIL_ACCEPT
 control_anchor: AGENTS.md
 status_owner_path: ehco.operation.yaml
 accepted_standing: 52/53
 active_operation:
-  operation_id: EHCOSYSTEM-PUBLIC-CONTROL-ROUTING-DISCLOSURE-CORRECTION-001
+  operation_id: EHCOSYSTEM-PUBLIC-CONTROL-ROUTING-DISCLOSURE-CORRECTION-PUBLISH-001
   state: ACTIVE
   authorization_mode: PUBLISH
-  bounded_outcome: Remove the unnecessary public control-routing label from ehco.operation.yaml, qualify the exact one-file corrective candidate, and integrate the correction without changing the accepted Public Proof Kernel or any Runtime, deployment, authority, standing, release, or successor state.
+  bounded_outcome: Publish an exact one-file corrective candidate that removes the unnecessary public control-routing label from ehco.operation.yaml without altering the accepted Public Proof Kernel, accepted standing, or any Runtime, deployment, release, authority, participation, or full public-launch acceptance state.
   remaining_bounded_work:
-    - Publish only the exact prequalified one-file correction candidate.
     - Obtain exact-head canonical public repository validation.
     - Obtain exact-head CodeQL validation.
     - Obtain exact-head EHCO Assistant Operation Gate validation.
-    - Reconcile any in-scope defect without weakening controls.
-    - Integrate the exact qualified corrective head and read back accepted main.
+    - Reconcile any in-scope validation defect and reverify the exact candidate.
+    - Stop after the bounded draft PUBLISH candidate is qualified on its exact head.
   interaction_seams:
+    - The current owner-selected public-launch control owns the public disclosure boundary and selected public-launch objective.
     - EHCOnomics-Systems/EHCOsystem owns exact public source, Git objects, refs, workflows, pull requests and repository-validation state.
     - Existing owning technical evidence retains all established technical effects and claim ceilings.
     - The accepted Public Proof Kernel remains established by its accepted public Git history.
     - INSTANTIATED_EHCO_RUNTIME retains Tier One Runtime authority and Runtime state.
   non_overlap:
-    - No change to ehco.repository.yaml or any Public Proof Kernel file.
+    - No change to ehco.repository.yaml or any accepted Public Proof Kernel file.
+    - No private repository, host, credential, endpoint or protected source locator is added to public source.
+    - No proprietary implementation source is copied or transferred.
     - No technical-evidence demotion or claim weakening.
-    - No proprietary implementation source publication.
     - No destructive history rewrite.
-    - No accepted numerical standing change from 52/53.
+    - No standing change from 52/53.
     - No Runtime, deployment, production, release, authority, admission, participation or persistence effect.
     - No full public-launch baseline acceptance effect.
     - No automatic successor.
@@ -72,10 +78,30 @@ execution_continuity:
 scope:
   permitted_paths:
     - ehco.operation.yaml
+    - AGENTS.md
+    - GOVERNANCE.md
+    - SECURITY.md
+    - PROVENANCE.md
   controlled_paths:
     - ehco.operation.yaml
+    - AGENTS.md
+    - GOVERNANCE.md
+    - SECURITY.md
+    - PROVENANCE.md
   prohibited_paths:
     - ehco.repository.yaml
+    - README.md
+    - NOTICE.md
+    - LIBRARY.md
+    - ECOSYSTEM-DILIGENCE.md
+    - TECHNICAL-DILIGENCE.md
+    - assurance/**
+    - architecture/**
+    - evidence/**
+    - language-model/**
+    - range-reactor/**
+    - runtime/**
+    - dossiers/**
     - proof/**
     - verification/**
     - .github/**
@@ -99,11 +125,14 @@ change_control:
     - push
     - open_draft_pull_request
     - update_draft_pull_request
+  remote_actions_prohibited:
     - mark_pull_request_ready_for_review
     - merge_pull_request
+    - record_owner_acceptance
     - close_operation
-  remote_actions_prohibited:
+    - activate_selected_successor
     - modify_repository_settings
+    - modify_drive_controls
     - publish_image
     - mutate_environment
     - deploy
@@ -118,7 +147,7 @@ effects:
   runtime_effect: NONE
   deployment_effect: NONE
   release_effect: NONE
-  external_effect: PUBLIC_SOURCE_CORRECTION_ONLY
+  external_effect: NONE
 bridge:
   applicability: NOT_APPLICABLE_NON_PARTICIPANT
   non_applicability_reason: Public source disclosure correction does not establish Tier One Runtime participation.
@@ -127,7 +156,7 @@ bridge:
   participation_binding_status: NOT_ESTABLISHED
   canonical_runtime_receipt_status: NOT_ESTABLISHED
 evidence:
-  evidence_class: REPOSITORY_SOURCE_AND_PROVIDER_VALIDATION
+  evidence_class: REPOSITORY_SOURCE_AND_DIFF_VALIDATION
   required_checks:
     - Exact candidate differs from accepted main only at ehco.operation.yaml.
     - Exact candidate and provider metadata pass pre-provider disclosure qualification.
@@ -136,14 +165,15 @@ evidence:
     - EHCO Assistant Operation Gate passes on the exact candidate head.
     - Accepted numerical standing remains 52/53.
   proves:
-    - The current public tip no longer carries the unnecessary control-routing label in ehco.operation.yaml if the exact candidate is integrated.
+    - Repository-source implementation of the bounded disclosure correction if the selected exact head qualifies.
   evidence_not_created:
     - New Public Proof Kernel technical evidence
-    - Official comparative result
-    - Independent reproduction receipt
+    - Official comparative C1B result
+    - Independent external third-party reproduction receipt
     - Full public-launch baseline acceptance
     - Runtime, deployment, production, release, authority, standing, admission or participation effect
     - Any successor operation
 stop_condition:
-  - Integrate only the exact qualified one-file corrective candidate and read back accepted main.
-  - Do not alter technical proof files, run the comparative proof, create full public-launch acceptance, deploy, release, mutate Runtime/authority/standing, or activate a successor.
+  - Stop after the bounded draft PUBLISH candidate is qualified on its exact head and is ready for separately controlled acceptance.
+  - Do not mark Ready, merge, release, deploy, invoke Runtime, mutate authority/standing, issue full public-launch acceptance, or activate a successor in this bounded operation.
+  - Preserve accepted standing 52/53 and all Runtime, deployment, release, authority, participation and successor effects as NONE or not established as applicable.
