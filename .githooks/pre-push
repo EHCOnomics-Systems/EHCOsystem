@@ -1,0 +1,27 @@
+#!/bin/sh
+set -eu
+
+remote_name="${1:-origin}"
+zero_sha="0000000000000000000000000000000000000000"
+
+if git show-ref --verify --quiet "refs/remotes/${remote_name}/main"; then
+  accepted_base="refs/remotes/${remote_name}/main"
+elif git show-ref --verify --quiet "refs/heads/main"; then
+  accepted_base="refs/heads/main"
+else
+  echo "FAIL EHCO pre-push guard: accepted public main ref is unavailable." >&2
+  exit 2
+fi
+
+while read -r local_ref local_sha remote_ref remote_sha
+do
+  if [ "${local_sha}" = "${zero_sha}" ]; then
+    continue
+  fi
+
+  python verification/pre_publication_gate.py \
+    --base "${accepted_base}" \
+    --candidate "${local_sha}" \
+    --ref-name "${remote_ref}" \
+    --receipt ".git/ehco-publication-clearance.json"
+done

@@ -15,6 +15,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 VALIDATORS = [
     ("PUBLIC_REPOSITORY_INTEGRITY", "verification/validate_public_evidence.py"),
+    ("PREPUBLICATION_DISCLOSURE_GATE", "verification/validate_pre_publication_gate.py"),
     ("PUBLIC_CLAIM_REGISTRY", "verification/validate_public_claim_registry.py"),
     ("CURRENT_RUNTIME_PUBLIC_EVIDENCE", "verification/validate_current_runtime_evidence.py"),
     ("LANGUAGE_MODEL_PUBLIC_SNAPSHOT", "verification/validate_public_lm_test_snapshot.py"),
