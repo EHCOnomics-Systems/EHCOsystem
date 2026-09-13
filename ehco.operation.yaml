@@ -82,12 +82,30 @@ scope:
     - GOVERNANCE.md
     - SECURITY.md
     - PROVENANCE.md
+    - verification/public_disclosure_policy.py
+    - verification/pre_publication_gate.py
+    - verification/install_publication_guard.py
+    - verification/validate_pre_publication_gate.py
+    - verification/verify_all_public.py
+    - verification/README.md
+    - .githooks/pre-push
+    - .github/pull_request_template.md
+    - .github/workflows/validate-public-evidence.yml
   controlled_paths:
     - ehco.operation.yaml
     - AGENTS.md
     - GOVERNANCE.md
     - SECURITY.md
     - PROVENANCE.md
+    - verification/public_disclosure_policy.py
+    - verification/pre_publication_gate.py
+    - verification/install_publication_guard.py
+    - verification/validate_pre_publication_gate.py
+    - verification/verify_all_public.py
+    - verification/README.md
+    - .githooks/pre-push
+    - .github/pull_request_template.md
+    - .github/workflows/validate-public-evidence.yml
   prohibited_paths:
     - ehco.repository.yaml
     - README.md
@@ -102,9 +120,6 @@ scope:
     - range-reactor/**
     - runtime/**
     - dossiers/**
-    - proof/**
-    - verification/**
-    - .github/**
 change_control:
   control_change_declared: true
   delete_or_move_authorized: false
