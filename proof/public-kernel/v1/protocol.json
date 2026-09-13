@@ -1,0 +1,43 @@
+{
+  "ambiguity_condition": "ambiguity_condition",
+  "authority_effect": "NONE",
+  "bounded_proposition": "Under this frozen synthetic public protocol, declared proof-relevant governing conditions are evaluated before an intelligence placeholder may execute; declared invalid, missing, ambiguous, unsupported, or integrity-invalid cases fail closed without invoking the placeholder; each run emits a nonce-bound machine-readable receipt.",
+  "candidate_status": "PRELAUNCH_NOT_ACCEPTED",
+  "deployment_effect": "NONE",
+  "deterministic_replay_class": "FULLY_DETERMINISTIC_SAME_INPUT_SAME_DISPOSITION_AND_MATERIAL_OUTPUT",
+  "dispositions": [
+    "PASS",
+    "WITHHOLD",
+    "RETAIN_AMBIGUITY",
+    "UNSUPPORTED_REQUEST",
+    "INTEGRITY_FAILURE",
+    "PROTOCOL_FAILURE"
+  ],
+  "evaluation_order": [
+    "INTEGRITY_AND_PROTOCOL_VALIDATION",
+    "REQUIRED_GOVERNING_CONDITION_VALIDATION",
+    "AMBIGUITY_RANGE_AND_SUPPORT_CHECKS",
+    "GOVERNED_DISPOSITION",
+    "ONLY_IF_PASS_INTELLIGENCE_PLACEHOLDER_INVOCATION",
+    "RECEIPT_FINALIZATION"
+  ],
+  "evidence_class": "FRESH_EXECUTABLE_PUBLIC_PROOF_OF_BOUNDED_PUBLIC_KERNEL",
+  "model_dependency_state": "ABSENT",
+  "network_dependency_class": "OFFLINE",
+  "proof_family_id": "EHCO-PUBLIC-PROOF-KERNEL-PREINTELLIGENCE-GATE-001",
+  "protocol_version": "1.0.0",
+  "required_conditions": [
+    "identity_condition",
+    "permission_condition",
+    "eligibility_condition",
+    "source_condition",
+    "range_condition",
+    "evidence_condition"
+  ],
+  "runtime_effect": "NONE",
+  "schema": "EHCO_PUBLIC_PROOF_KERNEL_PROTOCOL_V1",
+  "standing_effect": "NONE",
+  "supported_action_classes": [
+    "SYNTHETIC_PREINTELLIGENCE_GATE"
+  ]
+}

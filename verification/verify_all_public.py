@@ -17,13 +17,13 @@ VALIDATORS = [
     ("PUBLIC_REPOSITORY_INTEGRITY", "verification/validate_public_evidence.py"),
     ("PREPUBLICATION_DISCLOSURE_GATE", "verification/validate_pre_publication_gate.py"),
     ("PUBLIC_CLAIM_REGISTRY", "verification/validate_public_claim_registry.py"),
+    ("PUBLIC_PROOF_KERNEL", "verification/validate_public_proof_kernel.py"),
     ("CURRENT_RUNTIME_PUBLIC_EVIDENCE", "verification/validate_current_runtime_evidence.py"),
     ("LANGUAGE_MODEL_PUBLIC_SNAPSHOT", "verification/validate_public_lm_test_snapshot.py"),
     ("RANGE_REACTOR_CAPABILITY_SNAPSHOT", "verification/validate_public_range_reactor_snapshot.py"),
     ("RANGE_REACTOR_OPERATIONAL_CLOSURE", "verification/validate_public_range_reactor_operational_closure.py"),
     ("REGISTERED_RELEASE_IDENTITY", "verification/validate_release_identity.py"),
 ]
-
 
 def main() -> int:
     print("EHCOsystem public repository verification")
@@ -44,7 +44,6 @@ def main() -> int:
 
     print(f"PASS ALL ({len(VALIDATORS)}/{len(VALIDATORS)})")
     return 0
-
 
 if __name__ == "__main__":
     raise SystemExit(main())

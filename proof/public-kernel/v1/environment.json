@@ -1,0 +1,18 @@
+{
+  "concurrency_assumptions": "single process",
+  "cpu_architecture": "ANY_CPYTHON_SUPPORTED_ARCHITECTURE",
+  "hardware_acceleration_state": "NOT_REQUIRED",
+  "language_runtime_and_version": "CPython >=3.10",
+  "locale_encoding_timezone_dependencies_if_material": "UTF-8 JSON; locale independent; timezone does not affect governed disposition.",
+  "manifest_id": "EHCO-PUBLIC-PROOF-KERNEL-ENVIRONMENT-V1",
+  "material_dependency_versions": [],
+  "minimum_cpu_assumptions": "1 logical CPU",
+  "minimum_memory_assumptions": "64 MiB available",
+  "minimum_storage_assumptions": "10 MiB available",
+  "model_dependency_state": "ABSENT",
+  "network_dependency_class": "OFFLINE",
+  "operating_system_family": "CROSS_PLATFORM_PYTHON",
+  "operating_system_version_or_supported_range": "Windows/Linux/macOS with CPython 3.10+",
+  "schema": "EHCO_PUBLIC_PROOF_ENVIRONMENT_V1",
+  "time_or_clock_dependency_if_material": "UTC timestamps are contextual metadata only and are excluded from material deterministic output identity."
+}
