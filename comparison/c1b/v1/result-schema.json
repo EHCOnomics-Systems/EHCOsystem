@@ -1,0 +1,36 @@
+{
+  "case_required": [
+    "fixture_id",
+    "source_fixture_id",
+    "ehco",
+    "reference",
+    "classification",
+    "raw_output_identities",
+    "notes"
+  ],
+  "failure_and_omission_rule": "Every planned fixture must have exactly one case record. Missing, failed, timed-out, integrity-invalid, or unparsable operand outcomes remain explicit records and may not be omitted.",
+  "operand_required": [
+    "status",
+    "disposition",
+    "exit_status",
+    "output_sha256"
+  ],
+  "performance_metrics_in_schema": false,
+  "required": [
+    "protocol_id",
+    "protocol_version",
+    "preregistration_identity",
+    "preregistration_manifest_sha256",
+    "ehco_artifact_identity",
+    "reference_baseline_identity",
+    "fixture_set_identity",
+    "environment_identity_ehco",
+    "environment_identity_reference",
+    "cases",
+    "failure_and_omission_accounting",
+    "bounded_interpretation",
+    "what_this_proves",
+    "what_this_does_not_prove"
+  ],
+  "schema": "EHCO_C1B_RESULT_SCHEMA_V1"
+}

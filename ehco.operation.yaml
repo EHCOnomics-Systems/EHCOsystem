@@ -5,22 +5,27 @@ protocol_reference:
   profile_version: 1.0.0
   protocol_version: 1.0.0
 repository: EHCOnomics-Systems/EHCOsystem
-governed_object: EHCOSYSTEM_PUBLIC_CONTROL_ROUTING_DISCLOSURE_CORRECTION
+governed_object: EHCOSYSTEM_C1B_OPA_COMPARATIVE_PREREGISTRATION_V1
 source_owner:
   repository: EHCOnomics-Systems/EHCOsystem
-  revision: c208cb7cd002d016359f39aba1e3aef3f820befc
+  revision: 3938706f26d1ceaecb9c66e422898a3d52c91846
   repository_manifest_path: ehco.repository.yaml
   controlling_source_reference: OWNER_SELECTED_PUBLIC_LAUNCH_SCOPE
 selection:
   selected_by: Edward Henry
   selection_class: EXPLICIT_OWNER_DIRECTION
   durable_reference: |-
-    Edward Henry directed continuation of the already-selected EHCOsystem public-launch operation through its lawful next steps.
-    Exact reviewed PUBLISH head b0d29782447fe640a94b8ef62116a25448b388ba for PR #64 changes only ehco.operation.yaml and passed exact-head canonical public repository validation, CodeQL, and EHCO Assistant Operation Gate qualification.
-    This bounded ACCEPT transition integrates only the disclosure correction: removal of an unnecessary public control-routing label from the operation record while preserving the accepted Public Proof Kernel and numerical standing 52/53.
-    SOURCE_MAIN:c208cb7cd002d016359f39aba1e3aef3f820befc
-    REVIEWED_PUBLISH_HEAD:b0d29782447fe640a94b8ef62116a25448b388ba
-    CHANGE_SCOPE:ehco.operation.yaml
+    Edward Henry directed continuation of the already-selected EHCOsystem public-launch operation through the full lawful SOW loop.
+    The selected result for this bounded PUBLISH operation is to publish the exact pre-result C1B Open Policy Agent comparative protocol candidate at an immutable provider-resolvable Git identity after completed native reference qualification and exact pre-publication clearance.
+    Native OPA v1.20.2 qualification passed for the exact frozen candidate before this public transport. The official comparative result remains prohibited until this public preregistration identity exists.
+    SOURCE_MAIN:3938706f26d1ceaecb9c66e422898a3d52c91846
+    C1_ACCEPTED_IDENTITY:c208cb7cd002d016359f39aba1e3aef3f820befc
+    C1B_PROTOCOL_ID:EHCO-C1B-OPA-PUBLIC-PROOF-COMPARISON-001
+    C1B_PROTOCOL_VERSION:1.0.0
+    C1B_CANDIDATE_MANIFEST_SHA256:440ae3a567f0d7db29a2c3348d0a7eb296ca5eece0b31a78fb9b58932efba357
+    OPA_REFERENCE_VERSION:v1.20.2
+    OPA_REFERENCE_ASSET_SHA256:69da5179ee403d10fa11bab6cfb4ffb0d23dba5f9b682fa977db772a1da5670f
+    NATIVE_REFERENCE_QUALIFICATION:PASS
     PRELAUNCH_BASELINE_REQUIRED_BEFORE_PUBLIC_GITHUB_WRITE=true
     PREPUBLICATION_DISCLOSURE_GATE_REQUIRED=true
     EXACT_CANDIDATE_CLEARANCE_BINDING_REQUIRED=true
@@ -28,41 +33,58 @@ selection:
     POST_PUSH_CI_IS_DEFENSE_IN_DEPTH_NOT_CONFIDENTIALITY_BOUNDARY=true
     PUBLIC_GITHUB_IS_POST_QUALIFICATION_DESTINATION=true
     OPERATION_STABLE_ENVELOPE_CHANGE=true
+    NEW_PATH:comparison/c1b/v1/README.md
+    NEW_PATH:comparison/c1b/v1/environment.json
+    NEW_PATH:comparison/c1b/v1/manifest.json
+    NEW_PATH:comparison/c1b/v1/opa-reference.rego
+    NEW_PATH:comparison/c1b/v1/protocol.json
+    NEW_PATH:comparison/c1b/v1/reference-baseline.json
+    NEW_PATH:comparison/c1b/v1/result-schema.json
+    NEW_PATH:comparison/c1b/v1/run-plan.json
+    NEW_PATH:comparison/c1b/v1/run_comparison.py
+    NEW_PATH:comparison/c1b/v1/shared-fixtures.json
     TECHNICAL_EVIDENCE_DEMOTION=false
     CLAIM_WEAKENING=false
+    OFFICIAL_COMPARATIVE_RESULT_CREATED=false
     STANDING_CHANGE=false
     RUNTIME_EFFECT=false
     DEPLOYMENT_EFFECT=false
     AUTOMATIC_SUCCESSOR=false
-  source_base_revision: c208cb7cd002d016359f39aba1e3aef3f820befc
-  expected_reviewed_head_revision: b0d29782447fe640a94b8ef62116a25448b388ba
+  source_base_revision: 3938706f26d1ceaecb9c66e422898a3d52c91846
+  expected_reviewed_head_revision: NOT_APPLICABLE_UNTIL_ACCEPT
 control_anchor: AGENTS.md
 status_owner_path: ehco.operation.yaml
 accepted_standing: 52/53
 active_operation:
-  operation_id: EHCOSYSTEM-PUBLIC-CONTROL-ROUTING-DISCLOSURE-CORRECTION-ACCEPT-001
-  state: COMPLETE
-  authorization_mode: ACCEPT
-  bounded_outcome: Accept and integrate the exact terminal-green one-file disclosure correction reviewed at b0d29782447fe640a94b8ef62116a25448b388ba, limiting the post-review delta to ehco.operation.yaml and preserving all Public Proof Kernel, Runtime, deployment, release, authority, standing, participation, and full public-launch acceptance boundaries.
-  remaining_bounded_work: []
+  operation_id: EHCOSYSTEM-C1B-OPA-COMPARATIVE-PREREGISTRATION-PUBLISH-001
+  state: ACTIVE
+  authorization_mode: PUBLISH
+  bounded_outcome: Publish the exact disclosure-cleared pre-result C1B OPA comparative protocol v1 candidate at an immutable provider-resolvable Git identity, obtain exact-head provider qualification, and preserve the prohibition on official comparative execution until that preregistration identity exists.
+  remaining_bounded_work:
+    - Publish the exact pre-cleared candidate on a bounded public branch.
+    - Open the pre-cleared pull-request narrative against main.
+    - Obtain exact-head canonical public repository validation.
+    - Obtain exact-head CodeQL validation.
+    - Obtain exact-head EHCO Assistant Operation Gate validation.
+    - Read back the immutable candidate commit identity and provider state.
+    - Reconcile any in-scope validation defects and reverify the exact candidate.
   interaction_seams:
-    - The current owner-selected public-launch control owns the wider public-launch objective and disclosure boundary.
-    - Exact reviewed PUBLISH head is b0d29782447fe640a94b8ef62116a25448b388ba on PR #64.
-    - EHCOnomics-Systems/EHCOsystem owns exact PR, workflow, merge and accepted-main repository state.
+    - The current owner-selected public-launch control owns the wider objective, claim and evidence ceilings, comparative-proof sequence, disclosure boundary, independent-reproduction requirement, and Public Launch Baseline acceptance.
+    - EHCOnomics-Systems/EHCOsystem owns exact public source, Git objects, refs, workflows, pull requests and repository-validation state.
+    - The accepted C1 Public Proof Kernel remains bound to c208cb7cd002d016359f39aba1e3aef3f820befc.
+    - Open Policy Agent v1.20.2 is the frozen C1B reference only; reference qualification does not create an official comparative result.
     - Existing owning technical evidence retains all established technical effects and claim ceilings.
-    - The accepted Public Proof Kernel remains established by its accepted public Git history.
     - INSTANTIATED_EHCO_RUNTIME retains Tier One Runtime authority and Runtime state.
   non_overlap:
-    - Total PR changed-path set remains exactly ehco.operation.yaml.
-    - Delta from reviewed PUBLISH head to final ACCEPT head is exactly ehco.operation.yaml.
-    - No change to ehco.repository.yaml or any accepted Public Proof Kernel file.
-    - No private repository, host, credential, endpoint or protected source locator is added to public source.
+    - No destructive history rewrite, repository replacement or provider-control weakening.
+    - No private repository, Drive-control, host, credential, endpoint or protected source locator is added to public source.
     - No proprietary implementation source is copied or transferred.
-    - No technical-evidence demotion or claim weakening.
-    - No destructive history rewrite.
+    - No mutation to the accepted C1 Public Proof Kernel files or identity.
+    - No official C1B comparative result is created by this preregistration transport.
+    - No EHCO_PUBLIC_LAUNCH_BASELINE_V1_ACCEPTED receipt is created.
     - No standing change from 52/53.
     - No Runtime, deployment, production, release, authority, admission, participation or persistence effect.
-    - No full public-launch baseline acceptance effect.
+    - No open-source conversion or proprietary implementation-source publication.
     - No automatic successor.
   automatic_successor: PROHIBITED
   successor_operation: NOT_SELECTED
@@ -83,30 +105,36 @@ scope:
     - GOVERNANCE.md
     - SECURITY.md
     - PROVENANCE.md
-    - verification/public_disclosure_policy.py
-    - verification/pre_publication_gate.py
-    - verification/install_publication_guard.py
-    - verification/validate_pre_publication_gate.py
     - verification/verify_all_public.py
     - verification/README.md
-    - .githooks/pre-push
-    - .github/pull_request_template.md
-    - .github/workflows/validate-public-evidence.yml
+    - comparison/c1b/v1/README.md
+    - comparison/c1b/v1/environment.json
+    - comparison/c1b/v1/manifest.json
+    - comparison/c1b/v1/opa-reference.rego
+    - comparison/c1b/v1/protocol.json
+    - comparison/c1b/v1/reference-baseline.json
+    - comparison/c1b/v1/result-schema.json
+    - comparison/c1b/v1/run-plan.json
+    - comparison/c1b/v1/run_comparison.py
+    - comparison/c1b/v1/shared-fixtures.json
   controlled_paths:
     - ehco.operation.yaml
     - AGENTS.md
     - GOVERNANCE.md
     - SECURITY.md
     - PROVENANCE.md
-    - verification/public_disclosure_policy.py
-    - verification/pre_publication_gate.py
-    - verification/install_publication_guard.py
-    - verification/validate_pre_publication_gate.py
     - verification/verify_all_public.py
     - verification/README.md
-    - .githooks/pre-push
-    - .github/pull_request_template.md
-    - .github/workflows/validate-public-evidence.yml
+    - comparison/c1b/v1/README.md
+    - comparison/c1b/v1/environment.json
+    - comparison/c1b/v1/manifest.json
+    - comparison/c1b/v1/opa-reference.rego
+    - comparison/c1b/v1/protocol.json
+    - comparison/c1b/v1/reference-baseline.json
+    - comparison/c1b/v1/result-schema.json
+    - comparison/c1b/v1/run-plan.json
+    - comparison/c1b/v1/run_comparison.py
+    - comparison/c1b/v1/shared-fixtures.json
   prohibited_paths:
     - ehco.repository.yaml
     - README.md
@@ -128,25 +156,24 @@ change_control:
     - read_source
     - compare_source
     - audit
+    - create_file
     - update_file
     - run_checks
   local_actions_prohibited:
-    - propose
-    - create_file
     - move_file
     - delete_file
     - generate_artifact
   remote_actions_authorized:
-    - mark_pull_request_ready_for_review
-    - merge_pull_request
-    - record_owner_acceptance
-    - close_operation
-  remote_actions_prohibited:
     - create_branch
     - commit
     - push
     - open_draft_pull_request
     - update_draft_pull_request
+  remote_actions_prohibited:
+    - mark_pull_request_ready_for_review
+    - merge_pull_request
+    - record_owner_acceptance
+    - close_operation
     - activate_selected_successor
     - modify_repository_settings
     - modify_drive_controls
@@ -167,32 +194,35 @@ effects:
   external_effect: NONE
 bridge:
   applicability: NOT_APPLICABLE_NON_PARTICIPANT
-  non_applicability_reason: Public source disclosure correction does not establish Tier One Runtime participation.
+  non_applicability_reason: Comparative preregistration publication does not establish Tier One Runtime participation.
   direct_invocation: PROHIBITED
   runtime_admission_status: NOT_ESTABLISHED
   participation_binding_status: NOT_ESTABLISHED
   canonical_runtime_receipt_status: NOT_ESTABLISHED
 evidence:
-  evidence_class: OWNER_ACCEPTANCE_RECORD
+  evidence_class: REPOSITORY_SOURCE_AND_DIFF_VALIDATION
   required_checks:
-    - Exact reviewed PUBLISH head remains b0d29782447fe640a94b8ef62116a25448b388ba on PR #64.
-    - Reviewed head b0d29782447fe640a94b8ef62116a25448b388ba retains terminal-success canonical public repository validation, CodeQL and EHCO Assistant Operation Gate qualification.
-    - Exact source base remains c208cb7cd002d016359f39aba1e3aef3f820befc.
-    - Total PR changed-path set remains exactly ehco.operation.yaml.
-    - Delta from reviewed PUBLISH head to final ACCEPT head is exactly ehco.operation.yaml.
-    - Final COMPLETE ACCEPT head passes canonical public repository validation, CodeQL and EHCO Assistant Operation Gate.
-    - Merge uses the exact qualified final ACCEPT head guard and accepted main is read back from GitHub.
-    - Accepted numerical standing remains 52/53.
+    - Pre-publication disclosure qualification must cover the exact candidate bytes, paths, commit message, public ref and provider narrative before provider write.
+    - Exact C1B manifest and all manifest-bound file hashes must remain frozen.
+    - Native OPA qualification must remain bound to the exact frozen candidate.
+    - Canonical public repository validation must pass on the exact reviewed candidate head.
+    - CodeQL must pass on the exact reviewed candidate head.
+    - EHCO Assistant Operation Gate must pass on the exact reviewed candidate head.
+    - Public source must contain no real protected locator values or proprietary implementation source.
+    - Accepted numerical standing must remain 52/53.
   proves:
-    - The bounded public disclosure correction is accepted if the exact final ACCEPT head qualifies and integrates.
+    - Public provider publication of the exact pre-result C1B OPA comparative protocol candidate if the selected exact head qualifies.
+    - An immutable provider-resolvable preregistration identity exists once the candidate commit is publicly reachable and verified.
   evidence_not_created:
-    - New Public Proof Kernel technical evidence
     - Official comparative C1B result
     - Independent external third-party reproduction receipt
-    - Full public-launch baseline acceptance
-    - Runtime, deployment, production, release, authority, standing, admission or participation effect
+    - EHCO_PUBLIC_LAUNCH_BASELINE_V1_ACCEPTED
+    - New Runtime realization or current Runtime-state observation
+    - Deployment, production, release, authority, standing, admission or participation effect
     - Any successor operation
 stop_condition:
-  - Reverify the exact final COMPLETE ACCEPT head through canonical public repository validation, CodeQL and EHCO Assistant Operation Gate with the total PR diff and post-review delta limited exactly to ehco.operation.yaml.
-  - Mark PR #64 Ready only after exact-head qualification, merge only with exact qualified final ACCEPT head protection, and read back accepted EHCOsystem main.
-  - Stop this bounded ACCEPT operation before full public-launch baseline acceptance, deployment, release, Runtime action, authority/standing effect, proprietary-source transfer, or automatic successor activation.
+  - Stop this bounded PUBLISH phase only after the exact pre-result candidate is provider-resolvable, exact-head required checks are reconciled, and its immutable Git identity is read back.
+  - Do not execute the official comparison before the public preregistration identity exists.
+  - Do not mark Ready, merge, release, deploy, invoke Runtime, mutate authority or standing, issue Public Launch Baseline v1 acceptance, or activate a successor in this bounded operation.
+  - Do not weaken repository rulesets or use a provider route to bypass the pre-publication control.
+  - Preserve accepted standing 52/53 and all Runtime, deployment, release, authority, standing, participation and successor effects as NONE or not established as applicable.
