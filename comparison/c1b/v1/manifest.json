@@ -1,0 +1,43 @@
+{
+  "files": [
+    {
+      "path": "comparison/c1b/v1/README.md",
+      "sha256": "9a619b71cf007878caa3635273088e520fbac98eb99bee57bc635cbb4c8eedc8"
+    },
+    {
+      "path": "comparison/c1b/v1/environment.json",
+      "sha256": "b3e449f5db561d7b3010f4d71803e104bdc2c09d125bbb267fc193c50d1d79b0"
+    },
+    {
+      "path": "comparison/c1b/v1/opa-reference.rego",
+      "sha256": "c843f72eea30cf59f03001abfd3817b2cadeddd6e0c5064774a5f9bc98e497ad"
+    },
+    {
+      "path": "comparison/c1b/v1/protocol.json",
+      "sha256": "679eb069ebc4cde30ae28688cad78276b1311b50545f0afbf19677eca3fa410b"
+    },
+    {
+      "path": "comparison/c1b/v1/reference-baseline.json",
+      "sha256": "da95c45cdccb9498e2642c12b4fda08d271fa773701de5c62f44fc8f12e92bdc"
+    },
+    {
+      "path": "comparison/c1b/v1/result-schema.json",
+      "sha256": "4546965f393315fcce27d576bd9f312f682d6f01b8feed7ceca3fcc2015d1837"
+    },
+    {
+      "path": "comparison/c1b/v1/run-plan.json",
+      "sha256": "f4a8bf21ca5d78ef77a25baefe484de718feab3feaf5bcda370abd22a4d899f0"
+    },
+    {
+      "path": "comparison/c1b/v1/run_comparison.py",
+      "sha256": "396e535c59f2743bea9d36e149270a35827e77c01d80512af7d696e7c6b8e9a9"
+    },
+    {
+      "path": "comparison/c1b/v1/shared-fixtures.json",
+      "sha256": "65ff1a1e5d6be5b6a29dae6895f70120cb08e515e82969644a42c2ca23620f8d"
+    }
+  ],
+  "protocol_id": "EHCO-C1B-OPA-PUBLIC-PROOF-COMPARISON-001",
+  "protocol_version": "1.0.0",
+  "schema": "EHCO_C1B_PREREGISTRATION_MANIFEST_V1"
+}

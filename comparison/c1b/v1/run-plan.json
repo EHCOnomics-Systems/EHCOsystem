@@ -1,0 +1,34 @@
+{
+  "official_case_order": [
+    "C1B-VALID-001",
+    "C1B-MISSING-PERMISSION-001",
+    "C1B-ELIGIBILITY-001",
+    "C1B-AMBIGUOUS-001",
+    "C1B-UNSUPPORTED-001"
+  ],
+  "official_performance_metrics": false,
+  "official_run_sequence": [
+    "Resolve and record exact public preregistration identity and manifest digest.",
+    "Verify official OPA binary SHA-256 before execution.",
+    "Run each shared fixture exactly once in published fixture order with concurrency 1.",
+    "Run the EHCO public proof kernel with a run-bound challenge nonce.",
+    "Verify the EHCO native receipt.",
+    "Run OPA against the same material request values using the frozen Rego policy.",
+    "Retain raw public-safe outputs and errors for both operands.",
+    "Emit one machine-readable comparison receipt accounting for every planned case.",
+    "Do not rerun or discard a failed/unfavorable case except through a new protocol version where the frozen invalid-run rule requires it."
+  ],
+  "official_run_status": "PROHIBITED_UNTIL_PUBLIC_PREREGISTRATION_IDENTITY_EXISTS",
+  "pre_preregistration_qualification": [
+    "Verify package manifest hashes.",
+    "Verify frozen OPA release tag/commit/asset identities.",
+    "Native OPA parse check of opa-reference.rego.",
+    "Native OPA evaluation of every frozen shared fixture as qualification-only output.",
+    "Exercise comparison harness failure accounting without designating any output an official comparative result.",
+    "Run exact-candidate disclosure qualification including provider-facing metadata."
+  ],
+  "protocol_id": "EHCO-C1B-OPA-PUBLIC-PROOF-COMPARISON-001",
+  "protocol_version": "1.0.0",
+  "result_publication_rule": "Publish all planned case outcomes with equal fidelity, including EHCO failures, OPA advantages, ambiguity, unsupported cases, and environmental failures.",
+  "schema": "EHCO_C1B_RUN_PLAN_V1"
+}

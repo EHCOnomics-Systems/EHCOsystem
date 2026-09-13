@@ -1,0 +1,101 @@
+{
+  "asymmetry_law": {
+    "absence_of_ehco_specific_feature_is_not_automatic_reference_defect": true,
+    "ehco_native_nonce_bound_receipt": true,
+    "harness_hashing_is_native_opa_proof_capability": false,
+    "opa_native_policy_decision": true
+  },
+  "authority_effect": "NONE",
+  "classification_law": [
+    "NATIVE_CAPABILITY",
+    "PROTOCOL_LEVEL_POLICY",
+    "HARNESS_LEVEL_OBSERVATION",
+    "NOT_PROVIDED_WITH_REASON"
+  ],
+  "comparative_question": "Under the frozen synthetic inputs, conditions, dispositions, and observables defined by this protocol, what does each system establish, permit, withhold, record, and make independently verifiable?",
+  "deployment_effect": "NONE",
+  "ehco_operand": {
+    "accepted_git_identity": "c208cb7cd002d016359f39aba1e3aef3f820befc",
+    "entrypoint": "proof/public-kernel/v1/kernel.py",
+    "fixture_blob_sha": "7dc5ff965f51cae09295345b00562aafa1b191e9",
+    "identity": "EHCO-PUBLIC-PROOF-KERNEL-PREINTELLIGENCE-GATE-001",
+    "model_dependency_state": "ABSENT",
+    "network_dependency_class": "OFFLINE",
+    "receipt_verifier": "proof/public-kernel/v1/verify_receipt.py"
+  },
+  "failure_semantics": {
+    "environment_or_dependency_failure": "ENVIRONMENT_FAILURE_RETAINED_IN_OFFICIAL_ACCOUNTING",
+    "material_ambiguity": "RETAIN_AMBIGUITY",
+    "material_integrity_failure": "INTEGRITY_FAILURE_OR_EXPLICIT_NOT_PROVIDED_AS_APPLICABLE",
+    "missing_or_invalid_required_condition": "WITHHOLD",
+    "unsupported_action": "UNSUPPORTED_REQUEST"
+  },
+  "fixture_contract": {
+    "all_planned_cases_must_be_accounted_for": true,
+    "case_count": 5,
+    "ehco_source_fixture_mapping_frozen": true,
+    "shared_fixture_path": "comparison/c1b/v1/shared-fixtures.json"
+  },
+  "observables": [
+    "disposition",
+    "permitted_or_withheld",
+    "required_condition_treatment",
+    "ambiguity_handling",
+    "unsupported_input_handling",
+    "native_integrity_or_not_provided",
+    "decision_or_receipt_identity",
+    "native_replay_freshness_or_not_provided",
+    "output_identity",
+    "independent_verifiability"
+  ],
+  "official_run_authorized": false,
+  "preregistration_required_before_official_run": true,
+  "protocol_id": "EHCO-C1B-OPA-PUBLIC-PROOF-COMPARISON-001",
+  "protocol_version": "1.0.0",
+  "reference_acquisition": {
+    "asset_name": "opa_linux_amd64_static",
+    "independent_reviewer_obtains_reference_from_upstream": true,
+    "redistribution_required_by_ehcosystem": false,
+    "release_tag": "v1.20.2",
+    "route_class": "OFFICIAL_UPSTREAM_GITHUB_RELEASE",
+    "verify_sha256_before_execution": true
+  },
+  "reference_operand": {
+    "decision_query": "data.ehco_c1b.reference.result",
+    "license": "Apache-2.0",
+    "name": "Open Policy Agent",
+    "official_comparison_asset": "opa_linux_amd64_static",
+    "official_comparison_asset_sha256": "69da5179ee403d10fa11bab6cfb4ffb0d23dba5f9b682fa977db772a1da5670f",
+    "policy_path": "comparison/c1b/v1/opa-reference.rego",
+    "project_repository": "open-policy-agent/opa",
+    "release_immutable": true,
+    "source_commit": "b2c26708e9d55645d7f837db495031f7e4152594",
+    "version": "v1.20.2"
+  },
+  "result_retention": "ALL_PLANNED_CASES_ACCOUNTED_FOR_INCLUDING_FAILURES_AND_UNFAVORABLE_RESULTS",
+  "run_plan": {
+    "concurrency": 1,
+    "invalid_run_rule": "An operand execution that cannot start, times out, returns unparsable required output, or violates a frozen integrity/dependency identity is retained as an environmental or integrity failure for that case and is not silently discarded or rerun into a preferred result.",
+    "official_case_runs_per_fixture": 1,
+    "official_performance_metrics": false,
+    "run_order": "FIXTURE_ORDER_AS_PUBLISHED",
+    "summary_or_variance_statistics": "NOT_APPLICABLE_NO_OFFICIAL_PERFORMANCE_METRICS",
+    "timeout_seconds_per_operand_per_case": 30,
+    "warmup_runs": 0
+  },
+  "runtime_effect": "NONE",
+  "schema": "EHCO_C1B_PREREGISTRATION_PROTOCOL_V1",
+  "standing_effect": "NONE",
+  "status": "PRELAUNCH_CANDIDATE_NOT_PUBLICLY_PREREGISTERED",
+  "what_this_does_not_prove": [
+    "Universal superiority of EHCO over OPA or any other system.",
+    "Current Tier One Runtime state, authority, admission, binding, invocation, or participation.",
+    "Any change to accepted numerical standing 52/53.",
+    "Production deployment or independent certification.",
+    "That proprietary EHCO implementation source uses the same code or mechanics as the public proof kernel."
+  ],
+  "what_this_proves_if_official_run_completes": [
+    "The bounded observed behavior of the two frozen operands under the published synthetic comparison protocol.",
+    "Whether the published shared cases produce the recorded dispositions and public-safe evidence under the recorded environment."
+  ]
+}

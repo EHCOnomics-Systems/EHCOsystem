@@ -1,0 +1,35 @@
+{
+  "abbreviation": "OPA",
+  "acquisition_route": {
+    "project": "open-policy-agent/opa",
+    "provider": "GitHub",
+    "release_tag": "v1.20.2",
+    "reviewer_must_verify_sha256": true
+  },
+  "eligibility": {
+    "deliberately_weakened": false,
+    "exactly_pinned": true,
+    "independently_runnable_under_documented_terms": true,
+    "named": true,
+    "non_trivial_for_selected_proposition": true,
+    "publicly_inspectable_or_lawfully_obtainable": true
+  },
+  "license": "Apache-2.0",
+  "name": "Open Policy Agent",
+  "official_release_asset": {
+    "name": "opa_linux_amd64_static",
+    "platform": "linux_amd64_static",
+    "sha256": "69da5179ee403d10fa11bab6cfb4ffb0d23dba5f9b682fa977db772a1da5670f"
+  },
+  "reference_policy": {
+    "configuration_principle": "Use documented OPA policy evaluation without disabling relevant capability.",
+    "path": "comparison/c1b/v1/opa-reference.rego",
+    "query": "data.ehco_c1b.reference.result"
+  },
+  "release_immutable": true,
+  "schema": "EHCO_C1B_REFERENCE_BASELINE_V1",
+  "source_commit": "b2c26708e9d55645d7f837db495031f7e4152594",
+  "source_repository": "open-policy-agent/opa",
+  "tag_resolves_directly_to_source_commit": true,
+  "version": "v1.20.2"
+}
