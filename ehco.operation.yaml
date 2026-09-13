@@ -191,7 +191,7 @@ effects:
   runtime_effect: NONE
   deployment_effect: NONE
   release_effect: NONE
-  external_effect: PUBLIC_PREREGISTRATION_CANDIDATE_ONLY
+  external_effect: NONE
 bridge:
   applicability: NOT_APPLICABLE_NON_PARTICIPANT
   non_applicability_reason: Comparative preregistration publication does not establish Tier One Runtime participation.
