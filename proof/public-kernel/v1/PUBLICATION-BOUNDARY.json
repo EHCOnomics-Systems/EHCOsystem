@@ -1,0 +1,27 @@
+{
+  "accepted_standing_preserved": "52/53",
+  "authority_effect": "NONE",
+  "automatic_successor": "PROHIBITED",
+  "deployment_effect": "NONE",
+  "external_model_required": false,
+  "network_required": false,
+  "private_credentials_required": false,
+  "private_drive_access_required": false,
+  "private_repository_access_required": false,
+  "proof_family_id": "EHCO-PUBLIC-PROOF-KERNEL-PREINTELLIGENCE-GATE-001",
+  "proprietary_implementation_source_included": false,
+  "publication_state": "PRELAUNCH_CANDIDATE_NOT_YET_ACCEPTED",
+  "remaining_launch_gates": [
+    "PUBLIC_PROVIDER_QUALIFICATION",
+    "COMPARATIVE_PROTOCOL_PREREGISTRATION_AND_OFFICIAL_RESULTS",
+    "MACHINE_RESOLVABLE_VERIFICATION_DISCOVERY",
+    "README_AND_WIKI_REFERENCE_LAYER",
+    "INDEPENDENT_EXTERNAL_REPRODUCTION",
+    "DISCOVERY_AND_AI_EPISTEMIC_RECONSTRUCTION",
+    "PUBLIC_LAUNCH_BASELINE_V1_ACCEPTANCE",
+    "BROAD_DISTRIBUTION_AND_END_TO_END_LOOP"
+  ],
+  "runtime_effect": "NONE",
+  "schema": "EHCO_PUBLIC_PROOF_PUBLICATION_BOUNDARY_V1",
+  "standing_effect": "NONE"
+}

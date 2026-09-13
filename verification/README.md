@@ -11,11 +11,12 @@ The orchestrator runs the complete required validator set in a stable order:
 1. public repository integrity and disclosure boundaries;
 2. pre-publication disclosure-gate synthetic regression behavior;
 3. canonical public claim registry;
-4. accepted Runtime / Full Flex public representation;
-5. Language Model public snapshot;
-6. Range Reactor capability snapshot;
-7. Range Reactor operational-closure public result; and
-8. registered public release identity.
+4. bounded executable Public Proof Kernel;
+5. accepted Runtime / Full Flex public representation;
+6. Language Model public snapshot;
+7. Range Reactor capability snapshot;
+8. Range Reactor operational-closure public result; and
+9. registered public release identity.
 
 The required GitHub workflow runs this same entrypoint, so local reviewer instructions and repository CI describe the same validation surface.
 
@@ -50,11 +51,25 @@ python verification/pre_publication_gate.py --base origin/main --candidate HEAD 
 
 Use public-safe placeholders such as `CANDIDATE_PUBLIC_REF` and `LOCAL_METADATA_FILE`; do not put protected identifiers into shell history merely to test the gate.
 
+## Bounded executable Public Proof Kernel
+
+`proof/public-kernel/v1/` is an intentionally public, standard-library-only, offline, model-free proof/reference implementation of one synthetic pre-intelligence gating proposition. It is not the Tier One Runtime and does not reproduce proprietary implementation source.
+
+Run the candidate-specific validation:
+
+```text
+python3 verification/validate_public_proof_kernel.py
+```
+
+The validator exercises five official governed-disposition fixtures plus fixture, protocol, artifact, receipt, and nonce tamper/replay controls. The proof emits nonce-bound machine-readable receipts and preserves `PASS`, `WITHHOLD`, `RETAIN_AMBIGUITY`, `UNSUPPORTED_REQUEST`, and integrity/protocol failure semantics without promoting the result into Runtime authority, standing, deployment, Language Model qualification, or Range Reactor qualification.
+
+The proof package's manifest binds exact public proof bytes by SHA-256 but intentionally does not embed its own final Git commit SHA. Final launch-checkpoint identity is a separate later acceptance binding.
+
 ## What validation establishes
 
 A successful run establishes that the checked-out public repository is internally coherent for its exact revision: required files and links are present, public/private disclosure boundaries hold, selected public evidence records match their expected identities, component and Runtime terminology is consistent, and the reader-facing representation satisfies the repository's public validation rules.
 
-Repository validation qualifies the **public representation**. It does not reopen or replace the owning evidence that established Runtime operation, Full Flex, Range Reactor performance/semantic closure, Language Model artifact/release/staging state, deployment, authority, standing, or Runtime participation.
+Repository validation qualifies the **public representation**. The Public Proof Kernel additionally provides fresh bounded computation for its exact synthetic protocol. Neither layer reopens or replaces the owning evidence that established Runtime operation, Full Flex, Range Reactor performance/semantic closure, Language Model artifact/release/staging state, deployment, authority, standing, or Runtime participation.
 
 The public validation surface also enforces **durable public semantics** for the intended repository resting state: active reader-facing language must preserve evidence ownership, lifecycle dimensions, Runtime identity/authority separation, accepted evidence meaning, and historical/event-time scope without creating avoidable live-currentness obligations.
 
@@ -77,3 +92,5 @@ It also protects reader-facing semantics by rejecting residual Full Flex “synt
 ## Acceptance governance
 
 Pull-request acceptance uses the exact candidate plus the repository and organization protections that apply at review time, including repository validation, CodeQL, and the EHCO Assistant Operation Gate. Accepted numerical standing remains **52/53** unless separately changed by its owning authority.
+
+The Public Proof Kernel candidate does not issue `EHCO_PUBLIC_LAUNCH_BASELINE_V1_ACCEPTED`; comparative proof, machine-resolution, Wiki/reference, independent external reproduction, discovery/reconstruction, launch checkpoint, distribution, and full public-loop closure remain later SOW gates.

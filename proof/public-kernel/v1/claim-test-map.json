@@ -1,0 +1,89 @@
+{
+  "claim_evidence_class": "FRESH_EXECUTABLE_PUBLIC_PROOF_OF_BOUNDED_PUBLIC_KERNEL",
+  "claim_owner_domain": "PUBLIC_PROOF_KERNEL_PROTOCOL",
+  "map_version": "1.0.0",
+  "proof_family_id": "EHCO-PUBLIC-PROOF-KERNEL-PREINTELLIGENCE-GATE-001",
+  "public_claim_text": "Under the frozen synthetic public protocol, the EHCOsystem Public Proof Kernel evaluates declared proof-relevant governing conditions before an intelligence placeholder may execute, fails closed on declared invalid/ambiguous/unsupported/integrity-invalid cases, and emits a nonce-bound verifiable receipt.",
+  "public_rerun_route": "python3 proof/public-kernel/v1/kernel.py --fixture PK-VALID-001 --nonce <reviewer-nonce> --receipt-out <receipt.json>",
+  "schema": "EHCO_PUBLIC_PROOF_CLAIM_TEST_MAP_V1",
+  "scope_limitation": "The claim applies only to this deliberately public proof kernel and frozen synthetic fixtures/protocol. It is not a claim about current Tier One Runtime state or proprietary implementation internals.",
+  "status": "CANDIDATE_TEST_DESIGNED",
+  "tests": [
+    {
+      "expected_disposition": "PASS",
+      "falsification_condition": "valid frozen input does not produce PASS or invokes placeholder before PASS",
+      "fixture_ids": [
+        "PK-VALID-001"
+      ],
+      "pass_condition": "placeholder invoked exactly once after all governing conditions pass",
+      "test_id": "PK-T001-VALID"
+    },
+    {
+      "expected_disposition": "WITHHOLD",
+      "falsification_condition": "missing required permission produces PASS or placeholder invocation",
+      "fixture_ids": [
+        "PK-MISSING-PERMISSION-001"
+      ],
+      "pass_condition": "placeholder invocation count remains zero",
+      "test_id": "PK-T002-MISSING-PERMISSION"
+    },
+    {
+      "expected_disposition": "WITHHOLD",
+      "falsification_condition": "unsatisfied eligibility produces PASS or placeholder invocation",
+      "fixture_ids": [
+        "PK-ELIGIBILITY-NOT-SATISFIED-001"
+      ],
+      "pass_condition": "placeholder invocation count remains zero",
+      "test_id": "PK-T003-ELIGIBILITY-NOT-SATISFIED"
+    },
+    {
+      "expected_disposition": "RETAIN_AMBIGUITY",
+      "falsification_condition": "ambiguous state is silently converted to PASS or placeholder invocation",
+      "fixture_ids": [
+        "PK-AMBIGUOUS-001"
+      ],
+      "pass_condition": "ambiguity is retained and placeholder invocation count remains zero",
+      "test_id": "PK-T004-AMBIGUOUS"
+    },
+    {
+      "expected_disposition": "UNSUPPORTED_REQUEST",
+      "falsification_condition": "unsupported action produces PASS or placeholder invocation",
+      "fixture_ids": [
+        "PK-UNSUPPORTED-001"
+      ],
+      "pass_condition": "unsupported action does not invoke placeholder",
+      "test_id": "PK-T005-UNSUPPORTED"
+    },
+    {
+      "expected_disposition": "INTEGRITY_FAILURE",
+      "falsification_condition": "tampered fixture can produce an official PASS",
+      "fixture_ids": [],
+      "pass_condition": "one-byte fixture mutation blocks substantive execution",
+      "test_id": "PK-T006-TAMPER-FIXTURE"
+    },
+    {
+      "expected_disposition": "INTEGRITY_FAILURE",
+      "falsification_condition": "tampered protocol can produce an official PASS",
+      "fixture_ids": [],
+      "pass_condition": "protocol mutation blocks substantive execution",
+      "test_id": "PK-T007-TAMPER-PROTOCOL"
+    },
+    {
+      "expected_disposition": "INTEGRITY_FAILURE",
+      "falsification_condition": "tampered artifact can produce an official PASS",
+      "fixture_ids": [],
+      "pass_condition": "kernel source mutation blocks substantive execution",
+      "test_id": "PK-T008-TAMPER-ARTIFACT"
+    },
+    {
+      "expected_disposition": "VERIFIER_REJECTS_TAMPER_OR_NONCE_MISMATCH",
+      "falsification_condition": "receipt mutation or nonce replay verifies successfully",
+      "fixture_ids": [
+        "PK-VALID-001"
+      ],
+      "pass_condition": "mutated receipt and old receipt under a new nonce are rejected",
+      "test_id": "PK-T009-RECEIPT-INTEGRITY-AND-NONCE-REPLAY"
+    }
+  ],
+  "verification_method": "python3 verification/validate_public_proof_kernel.py"
+}

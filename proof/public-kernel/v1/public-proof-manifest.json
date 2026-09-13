@@ -1,0 +1,57 @@
+{
+  "artifact_class": "PUBLIC_SAFE_WRAPPER",
+  "artifact_name": "EHCOsystem Public Proof Kernel",
+  "artifact_version": "1",
+  "claim_ids": [
+    "EHCO-PUBLIC-PROOF-KERNEL-PREINTELLIGENCE-GATE-001"
+  ],
+  "deployment_effect": "NONE",
+  "environment_manifest_id": "EHCO-PUBLIC-PROOF-KERNEL-ENVIRONMENT-V1",
+  "evidence_class": "FRESH_EXECUTABLE_PUBLIC_PROOF_OF_BOUNDED_PUBLIC_KERNEL",
+  "files": [
+    {
+      "path": "kernel.py",
+      "role": "PUBLIC_SAFE_WRAPPER",
+      "sha256": "ef497581702c4929e0e32beef66e39250c95c450d2c90a64efef85c390cb3d31"
+    },
+    {
+      "path": "verify_receipt.py",
+      "role": "PUBLIC_RECEIPT_VERIFIER",
+      "sha256": "cedbfbbdce37d263829c83b61dbba347851fbebe4e305ad644af9be30238baf3"
+    },
+    {
+      "path": "protocol.json",
+      "role": "PROTOCOL",
+      "sha256": "e5c1cd450438fa0a7710fa6e542a2bfa8466a1dbe549c108f29a88b09dbc82e0"
+    },
+    {
+      "path": "environment.json",
+      "role": "ENVIRONMENT_CONTRACT",
+      "sha256": "ab65dd8af835d28ffde399250f843503dbcef5ee5000041df1aed4eb77a47310"
+    },
+    {
+      "path": "fixtures.json",
+      "role": "OFFICIAL_SYNTHETIC_FIXTURES",
+      "sha256": "04c44e5e09cbd0058877a84b19e4ab54a23f887abca75fa14b758a062a90986f"
+    },
+    {
+      "path": "claim-test-map.json",
+      "role": "CLAIM_TEST_FALSIFICATION_MAP",
+      "sha256": "ab61c2d31c6b3e95bcc2da97d2fdd6441e953fce60f9c819bb4f40f3a01df0f7"
+    },
+    {
+      "path": "threat-control-map.json",
+      "role": "THREAT_CONTROL_COVERAGE",
+      "sha256": "72575a219397495e3b7edd7718a8c1d5701ba6aea3611a0669fe6c47cbc32772"
+    }
+  ],
+  "final_git_commit_identity": "BOUND_LATER_BY_PROVIDER_CHECKPOINT_NOT_SELF_REFERENCED",
+  "network_dependency_class": "OFFLINE",
+  "model_dependency_state": "ABSENT",
+  "proof_family_id": "EHCO-PUBLIC-PROOF-KERNEL-PREINTELLIGENCE-GATE-001",
+  "protocol_version": "1.0.0",
+  "runtime_effect": "NONE",
+  "schema": "EHCO_PUBLIC_PROOF_MANIFEST_V1",
+  "source_public_base": "58f8a0375df7ca3ef19b25f0103d93c987854543",
+  "standing_effect": "NONE"
+}

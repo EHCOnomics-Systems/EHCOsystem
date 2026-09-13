@@ -1,0 +1,467 @@
+{
+  "map_version": "1.0.0",
+  "proof_family_id": "EHCO-PUBLIC-PROOF-KERNEL-PREINTELLIGENCE-GATE-001",
+  "schema": "EHCO_PUBLIC_PROOF_THREAT_CONTROL_MAP_V1",
+  "threats": [
+    {
+      "applicability": "APPLICABLE",
+      "control_mode": [
+        "PREVENT",
+        "DETECT"
+      ],
+      "control_object_ids": [
+        "CHALLENGE_NONCE",
+        "RUN_ID",
+        "RECEIPT_DIGEST"
+      ],
+      "public_limitation_if_any": "",
+      "residual_risk": "NONE_IDENTIFIED_WITHIN_BOUNDED_KERNEL_SCOPE",
+      "status": "CONTROLLED",
+      "threat_id": "T01-STATIC_RESULT_REPLAY",
+      "verification_test_ids": [
+        "PK-T009-RECEIPT-INTEGRITY-AND-NONCE-REPLAY"
+      ]
+    },
+    {
+      "applicability": "APPLICABLE",
+      "control_mode": [
+        "PREVENT",
+        "DETECT"
+      ],
+      "control_object_ids": [
+        "PUBLIC_PROOF_MANIFEST",
+        "KERNEL_SHA256_PREFLIGHT"
+      ],
+      "public_limitation_if_any": "",
+      "residual_risk": "NONE_IDENTIFIED_WITHIN_BOUNDED_KERNEL_SCOPE",
+      "status": "CONTROLLED",
+      "threat_id": "T02-ARTIFACT_SUBSTITUTION",
+      "verification_test_ids": [
+        "PK-T008-TAMPER-ARTIFACT"
+      ]
+    },
+    {
+      "applicability": "APPLICABLE",
+      "control_mode": [
+        "PREVENT",
+        "DETECT"
+      ],
+      "control_object_ids": [
+        "PUBLIC_PROOF_MANIFEST",
+        "FIXTURE_BUNDLE_SHA256"
+      ],
+      "public_limitation_if_any": "",
+      "residual_risk": "NONE_IDENTIFIED_WITHIN_BOUNDED_KERNEL_SCOPE",
+      "status": "CONTROLLED",
+      "threat_id": "T03-FIXTURE_OR_INPUT_SUBSTITUTION",
+      "verification_test_ids": [
+        "PK-T006-TAMPER-FIXTURE"
+      ]
+    },
+    {
+      "applicability": "APPLICABLE",
+      "control_mode": [
+        "PREVENT",
+        "DETECT",
+        "DISCLOSE"
+      ],
+      "control_object_ids": [
+        "PROTOCOL_SHA256",
+        "PUBLIC_PROOF_MANIFEST"
+      ],
+      "public_limitation_if_any": "Final provider preregistration/publication identity is established only after this prelaunch candidate crosses the qualified public boundary.",
+      "residual_risk": "NONE_IDENTIFIED_WITHIN_BOUNDED_KERNEL_SCOPE",
+      "status": "CONTROLLED_WITH_DISCLOSED_LIMITATION",
+      "threat_id": "T04-POST_RESULT_PROTOCOL_DRIFT",
+      "verification_test_ids": [
+        "PK-T007-TAMPER-PROTOCOL"
+      ]
+    },
+    {
+      "applicability": "APPLICABLE",
+      "control_mode": [
+        "PREVENT",
+        "DETECT",
+        "DISCLOSE"
+      ],
+      "control_object_ids": [
+        "ENVIRONMENT_MANIFEST",
+        "OFFLINE_ASSERTION",
+        "MODEL_ABSENT_ASSERTION"
+      ],
+      "public_limitation_if_any": "",
+      "residual_risk": "NONE_IDENTIFIED_WITHIN_BOUNDED_KERNEL_SCOPE",
+      "status": "CONTROLLED",
+      "threat_id": "T05-HIDDEN_DEPENDENCY",
+      "verification_test_ids": [
+        "VALIDATOR-NETWORK-MODEL-ASSERTION"
+      ]
+    },
+    {
+      "applicability": "APPLICABLE",
+      "control_mode": [
+        "PREVENT",
+        "DETECT"
+      ],
+      "control_object_ids": [
+        "PREPUBLICATION_DISCLOSURE_GATE",
+        "PUBLIC_SAFE_SYNTHETIC_FIXTURES"
+      ],
+      "public_limitation_if_any": "Final exact Git-object/ref/provider-narrative scan is performed in the publisher clone before push.",
+      "residual_risk": "NONE_IDENTIFIED_WITHIN_BOUNDED_KERNEL_SCOPE",
+      "status": "CONTROLLED_WITH_DISCLOSED_LIMITATION",
+      "threat_id": "T06-PRIVATE_SOURCE_TOPOLOGY_LEAKAGE",
+      "verification_test_ids": [
+        "HOST-EXACT-CANDIDATE-DISCLOSURE-GATE"
+      ]
+    },
+    {
+      "applicability": "NOT_APPLICABLE",
+      "control_mode": [
+        "LIMIT"
+      ],
+      "control_object_ids": [
+        "C1B_SEPARATE_FUTURE_CONTROL"
+      ],
+      "public_limitation_if_any": "This C1/C1A kernel candidate does not yet execute the mandatory C1B external comparison.",
+      "residual_risk": "NONE_IDENTIFIED_WITHIN_BOUNDED_KERNEL_SCOPE",
+      "status": "NOT_APPLICABLE_WITH_REASON",
+      "threat_id": "T07-REFERENCE_BASELINE_DRIFT",
+      "verification_test_ids": []
+    },
+    {
+      "applicability": "NOT_APPLICABLE",
+      "control_mode": [
+        "LIMIT"
+      ],
+      "control_object_ids": [
+        "C1B_SEPARATE_FUTURE_CONTROL"
+      ],
+      "public_limitation_if_any": "Comparative conditions are outside this bounded kernel candidate and remain a later SOW gate.",
+      "residual_risk": "NONE_IDENTIFIED_WITHIN_BOUNDED_KERNEL_SCOPE",
+      "status": "NOT_APPLICABLE_WITH_REASON",
+      "threat_id": "T08-ASYMMETRIC_COMPARATIVE_CONFIGURATION",
+      "verification_test_ids": []
+    },
+    {
+      "applicability": "APPLICABLE",
+      "control_mode": [
+        "PREVENT",
+        "DETECT",
+        "DISCLOSE"
+      ],
+      "control_object_ids": [
+        "FIXED_NINE_TEST_VALIDATOR"
+      ],
+      "public_limitation_if_any": "",
+      "residual_risk": "NONE_IDENTIFIED_WITHIN_BOUNDED_KERNEL_SCOPE",
+      "status": "CONTROLLED",
+      "threat_id": "T09-SELECTIVE_RESULT_OMISSION",
+      "verification_test_ids": [
+        "PK-T001-VALID",
+        "PK-T002-MISSING-PERMISSION",
+        "PK-T003-ELIGIBILITY-NOT-SATISFIED",
+        "PK-T004-AMBIGUOUS",
+        "PK-T005-UNSUPPORTED",
+        "PK-T006-TAMPER-FIXTURE",
+        "PK-T007-TAMPER-PROTOCOL",
+        "PK-T008-TAMPER-ARTIFACT",
+        "PK-T009-RECEIPT-INTEGRITY-AND-NONCE-REPLAY"
+      ]
+    },
+    {
+      "applicability": "APPLICABLE",
+      "control_mode": [
+        "PREVENT",
+        "DETECT"
+      ],
+      "control_object_ids": [
+        "FAIL_CLOSED_PREFLIGHT",
+        "NONPASS_NO_INVOCATION"
+      ],
+      "public_limitation_if_any": "",
+      "residual_risk": "NONE_IDENTIFIED_WITHIN_BOUNDED_KERNEL_SCOPE",
+      "status": "CONTROLLED",
+      "threat_id": "T10-INTEGRITY_BYPASS",
+      "verification_test_ids": [
+        "PK-T006-TAMPER-FIXTURE",
+        "PK-T007-TAMPER-PROTOCOL",
+        "PK-T008-TAMPER-ARTIFACT"
+      ]
+    },
+    {
+      "applicability": "APPLICABLE",
+      "control_mode": [
+        "PREVENT",
+        "DETECT",
+        "LIMIT"
+      ],
+      "control_object_ids": [
+        "CLAIM_TEST_MAP",
+        "README_PROVES_DOES_NOT_PROVE"
+      ],
+      "public_limitation_if_any": "",
+      "residual_risk": "NONE_IDENTIFIED_WITHIN_BOUNDED_KERNEL_SCOPE",
+      "status": "CONTROLLED",
+      "threat_id": "T11-CLAIM_SCOPE_INFLATION",
+      "verification_test_ids": [
+        "VALIDATOR-BOUNDARY-ASSERTION"
+      ]
+    },
+    {
+      "applicability": "APPLICABLE",
+      "control_mode": [
+        "PREVENT",
+        "DISCLOSE"
+      ],
+      "control_object_ids": [
+        "FRESH_EXECUTABLE_PUBLIC_PROOF_CLASS"
+      ],
+      "public_limitation_if_any": "",
+      "residual_risk": "NONE_IDENTIFIED_WITHIN_BOUNDED_KERNEL_SCOPE",
+      "status": "CONTROLLED",
+      "threat_id": "T12-EVIDENCE_CLASS_COLLAPSE",
+      "verification_test_ids": [
+        "VALIDATOR-EVIDENCE-CLASS"
+      ]
+    },
+    {
+      "applicability": "APPLICABLE",
+      "control_mode": [
+        "PREVENT",
+        "DETECT",
+        "DISCLOSE"
+      ],
+      "control_object_ids": [
+        "PRELAUNCH_NOT_ACCEPTED_IDENTITY",
+        "NO_RUNTIME_CURRENTNESS_CLAIM"
+      ],
+      "public_limitation_if_any": "",
+      "residual_risk": "NONE_IDENTIFIED_WITHIN_BOUNDED_KERNEL_SCOPE",
+      "status": "CONTROLLED",
+      "threat_id": "T13-CURRENTNESS_COLLAPSE",
+      "verification_test_ids": [
+        "VALIDATOR-BOUNDARY-ASSERTION"
+      ]
+    },
+    {
+      "applicability": "APPLICABLE",
+      "control_mode": [
+        "PREVENT",
+        "DISCLOSE",
+        "LIMIT"
+      ],
+      "control_object_ids": [
+        "ENVIRONMENT_MANIFEST"
+      ],
+      "public_limitation_if_any": "This bounded kernel validates logical disposition/replay, not performance; materially different unsupported Python environments remain outside scope.",
+      "residual_risk": "NONE_IDENTIFIED_WITHIN_BOUNDED_KERNEL_SCOPE",
+      "status": "CONTROLLED_WITH_DISCLOSED_LIMITATION",
+      "threat_id": "T14-ENVIRONMENTAL_NON_EQUIVALENCE",
+      "verification_test_ids": [
+        "VALIDATOR-ENVIRONMENT"
+      ]
+    },
+    {
+      "applicability": "APPLICABLE",
+      "control_mode": [
+        "DETECT",
+        "DISCLOSE",
+        "LIMIT"
+      ],
+      "control_object_ids": [
+        "DETERMINISTIC_REPLAY_CLASS"
+      ],
+      "public_limitation_if_any": "",
+      "residual_risk": "NONE_IDENTIFIED_WITHIN_BOUNDED_KERNEL_SCOPE",
+      "status": "CONTROLLED",
+      "threat_id": "T15-NONDETERMINISM_MASKING",
+      "verification_test_ids": [
+        "VALIDATOR-DETERMINISTIC-REPLAY"
+      ]
+    },
+    {
+      "applicability": "APPLICABLE",
+      "control_mode": [
+        "PREVENT",
+        "DETECT"
+      ],
+      "control_object_ids": [
+        "REVIEWER_NONCE",
+        "SHA256_NONCE_BINDING"
+      ],
+      "public_limitation_if_any": "",
+      "residual_risk": "NONE_IDENTIFIED_WITHIN_BOUNDED_KERNEL_SCOPE",
+      "status": "CONTROLLED",
+      "threat_id": "T16-FRESHNESS_TOKEN_WEAKNESS",
+      "verification_test_ids": [
+        "PK-T009-RECEIPT-INTEGRITY-AND-NONCE-REPLAY"
+      ]
+    },
+    {
+      "applicability": "APPLICABLE",
+      "control_mode": [
+        "DETECT",
+        "DISCLOSE"
+      ],
+      "control_object_ids": [
+        "OUTPUT_DIGEST",
+        "RECEIPT_CONTENT_DIGEST"
+      ],
+      "public_limitation_if_any": "",
+      "residual_risk": "NONE_IDENTIFIED_WITHIN_BOUNDED_KERNEL_SCOPE",
+      "status": "CONTROLLED",
+      "threat_id": "T17-OUTPUT_POST_PROCESSING_DISTORTION",
+      "verification_test_ids": [
+        "PK-T009-RECEIPT-INTEGRITY-AND-NONCE-REPLAY"
+      ]
+    },
+    {
+      "applicability": "APPLICABLE",
+      "control_mode": [
+        "PREVENT",
+        "DETECT"
+      ],
+      "control_object_ids": [
+        "STRUCTURED_PUBLIC_SAFE_DISPOSITIONS"
+      ],
+      "public_limitation_if_any": "Provider-level logs remain subject to the existing repository disclosure gate and provider readback.",
+      "residual_risk": "NONE_IDENTIFIED_WITHIN_BOUNDED_KERNEL_SCOPE",
+      "status": "CONTROLLED_WITH_DISCLOSED_LIMITATION",
+      "threat_id": "T18-UNSAFE_ERROR_OR_LOG_DISCLOSURE",
+      "verification_test_ids": [
+        "PK-T006-TAMPER-FIXTURE",
+        "PK-T007-TAMPER-PROTOCOL",
+        "PK-T008-TAMPER-ARTIFACT"
+      ]
+    },
+    {
+      "applicability": "NOT_APPLICABLE",
+      "control_mode": [
+        "PREVENT",
+        "DETECT"
+      ],
+      "control_object_ids": [
+        "PRELAUNCH_RUNBOOK_PROVIDER_GATE"
+      ],
+      "public_limitation_if_any": "Provider-surface qualification occurs only after exact prelaunch clearance and is not claimed by this private candidate.",
+      "residual_risk": "NONE_IDENTIFIED_WITHIN_BOUNDED_KERNEL_SCOPE",
+      "status": "NOT_APPLICABLE_WITH_REASON",
+      "threat_id": "T19-PROVIDER_SURFACE_DRIFT",
+      "verification_test_ids": []
+    },
+    {
+      "applicability": "NOT_APPLICABLE",
+      "control_mode": [
+        "LIMIT"
+      ],
+      "control_object_ids": [
+        "C2A_SEPARATE_FUTURE_WORKSTREAM"
+      ],
+      "public_limitation_if_any": "Root VERIFY.md and machine-readable launch verification manifest are later SOW C2A deliverables.",
+      "residual_risk": "NONE_IDENTIFIED_WITHIN_BOUNDED_KERNEL_SCOPE",
+      "status": "NOT_APPLICABLE_WITH_REASON",
+      "threat_id": "T20-BROKEN_MACHINE_RESOLUTION",
+      "verification_test_ids": []
+    },
+    {
+      "applicability": "APPLICABLE",
+      "control_mode": [
+        "PREVENT",
+        "LIMIT"
+      ],
+      "control_object_ids": [
+        "STANDARD_LIBRARY_ONLY",
+        "OFFLINE",
+        "NO_PRIVATE_DEPENDENCY"
+      ],
+      "public_limitation_if_any": "",
+      "residual_risk": "NONE_IDENTIFIED_WITHIN_BOUNDED_KERNEL_SCOPE",
+      "status": "CONTROLLED",
+      "threat_id": "T21-PRIVATE_IMPLEMENTATION_DEPENDENCE_DISGUISED_AS_DILIGENCE",
+      "verification_test_ids": [
+        "VALIDATOR-NETWORK-MODEL-ASSERTION"
+      ]
+    },
+    {
+      "applicability": "NOT_APPLICABLE",
+      "control_mode": [
+        "LIMIT"
+      ],
+      "control_object_ids": [
+        "C2_C2B_C6_SEPARATE_FUTURE_WORKSTREAMS"
+      ],
+      "public_limitation_if_any": "This candidate contains no social, search-ranking, or AI-retrieval claim.",
+      "residual_risk": "NONE_IDENTIFIED_WITHIN_BOUNDED_KERNEL_SCOPE",
+      "status": "NOT_APPLICABLE_WITH_REASON",
+      "threat_id": "T22-SOCIAL_OR_RETRIEVAL_SIGNAL_PROMOTION",
+      "verification_test_ids": []
+    },
+    {
+      "applicability": "NOT_APPLICABLE",
+      "control_mode": [
+        "LIMIT"
+      ],
+      "control_object_ids": [
+        "C1D_SEPARATE_FUTURE_GATE"
+      ],
+      "public_limitation_if_any": "Independent external reproduction is mandatory later and is not claimed by this candidate.",
+      "residual_risk": "NONE_IDENTIFIED_WITHIN_BOUNDED_KERNEL_SCOPE",
+      "status": "NOT_APPLICABLE_WITH_REASON",
+      "threat_id": "T23-THIRD_PARTY_REPRODUCTION_CONTAMINATION",
+      "verification_test_ids": []
+    },
+    {
+      "applicability": "APPLICABLE",
+      "control_mode": [
+        "PREVENT",
+        "DETECT"
+      ],
+      "control_object_ids": [
+        "TWO_PART_BINDING",
+        "MANIFEST_EXCLUDES_FINAL_COMMIT_SHA"
+      ],
+      "public_limitation_if_any": "",
+      "residual_risk": "NONE_IDENTIFIED_WITHIN_BOUNDED_KERNEL_SCOPE",
+      "status": "CONTROLLED",
+      "threat_id": "T24-BASELINE_IDENTITY_SELF_REFERENCE_OR_MISMATCH",
+      "verification_test_ids": [
+        "VALIDATOR-MANIFEST-SELF-REFERENCE"
+      ]
+    },
+    {
+      "applicability": "APPLICABLE",
+      "control_mode": [
+        "PREVENT",
+        "DETECT"
+      ],
+      "control_object_ids": [
+        "EXISTING_REPOSITORY_CONTROL_SPINE",
+        "NO_STABLE_REPOSITORY_MANIFEST_EDIT"
+      ],
+      "public_limitation_if_any": "",
+      "residual_risk": "NONE_IDENTIFIED_WITHIN_BOUNDED_KERNEL_SCOPE",
+      "status": "CONTROLLED",
+      "threat_id": "T25-CONTROL_WEAKENING_TO_GREEN_A_GATE",
+      "verification_test_ids": [
+        "HOST-CANONICAL-VALIDATION"
+      ]
+    },
+    {
+      "applicability": "APPLICABLE",
+      "control_mode": [
+        "DETECT"
+      ],
+      "control_object_ids": [
+        "THIS_COMPLETE_26_ENTRY_REGISTER"
+      ],
+      "public_limitation_if_any": "",
+      "residual_risk": "NONE_IDENTIFIED_WITHIN_BOUNDED_KERNEL_SCOPE",
+      "status": "CONTROLLED",
+      "threat_id": "T26-ACCEPTANCE_THREAT_MODEL_COVERAGE_REGISTER",
+      "verification_test_ids": [
+        "VALIDATOR-THREAT-COVERAGE"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "bundle_version": "1.0.0",
+  "fixtures": [
+    {
+      "expected_disposition": "PASS",
+      "expected_intelligence_invocation_count": 1,
+      "fixture_id": "PK-VALID-001",
+      "fixture_version": "1.0.0",
+      "input_class": "OFFICIAL_SYNTHETIC",
+      "request": {
+        "action_class": "SYNTHETIC_PREINTELLIGENCE_GATE",
+        "conditions": {
+          "ambiguity_condition": "CLEAR",
+          "eligibility_condition": "SATISFIED",
+          "evidence_condition": "SATISFIED",
+          "identity_condition": "SATISFIED",
+          "permission_condition": "SATISFIED",
+          "range_condition": "SATISFIED",
+          "source_condition": "SATISFIED"
+        },
+        "request_id": "REQ-VALID-001"
+      }
+    },
+    {
+      "expected_disposition": "WITHHOLD",
+      "expected_intelligence_invocation_count": 0,
+      "fixture_id": "PK-MISSING-PERMISSION-001",
+      "fixture_version": "1.0.0",
+      "input_class": "OFFICIAL_SYNTHETIC",
+      "request": {
+        "action_class": "SYNTHETIC_PREINTELLIGENCE_GATE",
+        "conditions": {
+          "ambiguity_condition": "CLEAR",
+          "eligibility_condition": "SATISFIED",
+          "evidence_condition": "SATISFIED",
+          "identity_condition": "SATISFIED",
+          "permission_condition": "MISSING",
+          "range_condition": "SATISFIED",
+          "source_condition": "SATISFIED"
+        },
+        "request_id": "REQ-MISSING-PERMISSION-001"
+      }
+    },
+    {
+      "expected_disposition": "WITHHOLD",
+      "expected_intelligence_invocation_count": 0,
+      "fixture_id": "PK-ELIGIBILITY-NOT-SATISFIED-001",
+      "fixture_version": "1.0.0",
+      "input_class": "OFFICIAL_SYNTHETIC",
+      "request": {
+        "action_class": "SYNTHETIC_PREINTELLIGENCE_GATE",
+        "conditions": {
+          "ambiguity_condition": "CLEAR",
+          "eligibility_condition": "NOT_SATISFIED",
+          "evidence_condition": "SATISFIED",
+          "identity_condition": "SATISFIED",
+          "permission_condition": "SATISFIED",
+          "range_condition": "SATISFIED",
+          "source_condition": "SATISFIED"
+        },
+        "request_id": "REQ-ELIGIBILITY-001"
+      }
+    },
+    {
+      "expected_disposition": "RETAIN_AMBIGUITY",
+      "expected_intelligence_invocation_count": 0,
+      "fixture_id": "PK-AMBIGUOUS-001",
+      "fixture_version": "1.0.0",
+      "input_class": "OFFICIAL_SYNTHETIC",
+      "request": {
+        "action_class": "SYNTHETIC_PREINTELLIGENCE_GATE",
+        "conditions": {
+          "ambiguity_condition": "AMBIGUOUS",
+          "eligibility_condition": "SATISFIED",
+          "evidence_condition": "SATISFIED",
+          "identity_condition": "SATISFIED",
+          "permission_condition": "SATISFIED",
+          "range_condition": "SATISFIED",
+          "source_condition": "SATISFIED"
+        },
+        "request_id": "REQ-AMBIGUOUS-001"
+      }
+    },
+    {
+      "expected_disposition": "UNSUPPORTED_REQUEST",
+      "expected_intelligence_invocation_count": 0,
+      "fixture_id": "PK-UNSUPPORTED-001",
+      "fixture_version": "1.0.0",
+      "input_class": "OFFICIAL_SYNTHETIC",
+      "request": {
+        "action_class": "SYNTHETIC_UNSUPPORTED_ACTION",
+        "conditions": {
+          "ambiguity_condition": "CLEAR",
+          "eligibility_condition": "SATISFIED",
+          "evidence_condition": "SATISFIED",
+          "identity_condition": "SATISFIED",
+          "permission_condition": "SATISFIED",
+          "range_condition": "SATISFIED",
+          "source_condition": "SATISFIED"
+        },
+        "request_id": "REQ-UNSUPPORTED-001"
+      }
+    }
+  ],
+  "schema": "EHCO_PUBLIC_PROOF_FIXTURE_BUNDLE_V1"
+}
