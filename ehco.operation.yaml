@@ -16,9 +16,10 @@ selection:
   selection_class: EXPLICIT_OWNER_DIRECTION
   durable_reference: |-
     Edward Henry directed continuation of the already-selected EHCOsystem public-launch SOW after a full audit of SOW-10 against the exact public repository/provider state.
-    This bounded remediation operation corrects only the acceptance blockers established by that audit while preserving the frozen C1B official-result facts, independent-reproduction boundary, proprietary-source boundary, Runtime authority boundary, and accepted standing 52/53.
+    This bounded remediation operation corrects the acceptance blockers established by that audit and hardens the selected Wiki/C1D public-review route while preserving the frozen C1B official-result facts, independent-reproduction boundary, proprietary-source boundary, Runtime authority boundary, and accepted standing 52/53.
     SOURCE_MAIN:3938706f26d1ceaecb9c66e422898a3d52c91846
     AUDITED_PUBLIC_CANDIDATE_HEAD:cabbcc730bf3a7e7325f80a2ed7da4c96da910b2
+    PRIOR_QUALIFIED_HEAD:70170cf438d1abe11bdfc55fb91d807f6274bc8c
     C1_ACCEPTED_IDENTITY:c208cb7cd002d016359f39aba1e3aef3f820befc
     C1B_PREREGISTRATION_IDENTITY:8a1a05b4865eaefa716e77cbe669e819e7d6e5b3
     C1B_PROTOCOL_MANIFEST_SHA256:440ae3a567f0d7db29a2c3348d0a7eb296ca5eece0b31a78fb9b58932efba357
@@ -33,6 +34,10 @@ selection:
     OPERATION_STABLE_ENVELOPE_CHANGE=true
     RESTORE_PREREGISTRATION_BYTES=true
     OFFICIAL_COMPARATIVE_RUN_RERUN=false
+    WIKI_PROVIDER_FEATURE_ENABLED=true
+    WIKI_PAGES_MATERIALIZED=NOT_ESTABLISHED
+    C1D_PUBLIC_INSTRUCTIONS_HARDENED=true
+    C1D_RECEIPT_STRUCTURAL_SELF_HASH_VALIDATION_AVAILABLE=true
     INDEPENDENT_EXTERNAL_REPRODUCTION_RECEIPT=NOT_ESTABLISHED
     PUBLIC_LAUNCH_BASELINE_ACCEPTANCE=false
     STANDING_CHANGE=false
@@ -96,32 +101,30 @@ active_operation:
   operation_id: EHCOSYSTEM-SOW010-LAUNCH-INTEGRITY-REMEDIATION-001
   state: ACTIVE
   authorization_mode: PUBLISH
-  bounded_outcome: Correct the established SOW-10 public-launch acceptance blockers on the existing draft PR #66 candidate by restoring preregistered C1B byte identity, extending canonical verification to the launch candidate estate, adding launch-level comparative threat/failure coverage, reconciling the public operation projection, and removing the superseded competing public claim PR surface without accepting Public Launch Baseline v1.
+  bounded_outcome: Close the established repository-side SOW-10 public-launch audit defects on draft PR #66, reconcile the selected GitHub Wiki/reference route, and harden the public C1D reproduction contract against independently established environment, evidence-binding, receipt and attribution ambiguity without accepting Public Launch Baseline v1.
   remaining_bounded_work:
-    - Restore comparison/c1b/v1/README.md exactly to the public preregistration bytes at 8a1a05b4865eaefa716e77cbe669e819e7d6e5b3.
-    - Add a launch-level public threat/failure model that explicitly covers C1B baseline drift and asymmetric comparative configuration without mutating the accepted C1 proof package.
-    - Add a dedicated public-launch candidate validator and wire it into verification/verify_all_public.py.
-    - Update machine verification discovery and Public Launch Baseline candidate bindings to the extended verifier/threat-model state.
-    - Reconcile verification documentation with the actual canonical validator set.
-    - Close the superseded competing public claim draft PR #61 while preserving its public history.
-    - Obtain exact-head canonical public repository validation, CodeQL, EHCO Assistant Operation Gate, and provider readback for the corrected candidate.
+    - Materialize the selected GitHub Wiki/reference pages from the qualified source-controlled reference layer and obtain provider readback; Wiki enablement alone does not establish page materialization.
+    - Obtain exact-head canonical public repository validation, CodeQL, EHCO Assistant Operation Gate, and provider readback after the latest audit-remediation mutations.
     - Preserve C1D as NOT_ESTABLISHED until an owning independent external reproduction receipt is received and validated.
+    - Do not execute discovery/reconstruction, final launch acceptance, tag/Release checkpoint, broader distribution or end-to-end public-loop closure before C1D and the downstream SOW gates permit them.
   interaction_seams:
-    - The current owner-selected public-launch control owns the wider objective, claim and evidence ceilings, comparative-proof sequence, disclosure boundary, independent-reproduction requirement, and Public Launch Baseline acceptance.
+    - The current owner-selected public-launch control owns the wider objective, claim and evidence ceilings, comparative-proof sequence, disclosure boundary, independent-reproduction requirement, Wiki/reference requirement, and Public Launch Baseline acceptance.
     - EHCOnomics-Systems/EHCOsystem owns exact public source, Git objects, refs, workflows, pull requests and repository-validation state.
+    - The GitHub Wiki provider surface owns public Wiki page materialization; source-controlled reference pages remain the qualified content source and do not become a competing evidence owner.
     - Public preregistration identity 8a1a05b4865eaefa716e77cbe669e819e7d6e5b3 owns the frozen nine-file C1B pre-result package identity.
     - Owning one-shot execution evidence owns the official comparative execution/result facts; this remediation validates and preserves those facts but may not rerun or regenerate them.
     - Independent external reproduction remains separately required and cannot be created by repository remediation.
     - INSTANTIATED_EHCO_RUNTIME retains Tier One Runtime authority and Runtime state.
   non_overlap:
     - No destructive history rewrite, repository replacement or provider-control weakening.
-    - No semantic mutation to the nine manifest-bound preregistered C1B protocol files; comparison/c1b/v1/README.md is restored byte-for-byte to the preregistered content and then remains frozen.
+    - No semantic mutation to the nine manifest-bound preregistered C1B protocol files; comparison/c1b/v1/README.md remains byte-identical to the preregistered content.
     - No rerun, suppression, replacement or preferred-result regeneration of the official comparison.
     - No mutation to the accepted C1 proof package.
     - No private repository, Drive-control, host, credential, endpoint or protected source locator is added to public source.
     - No proprietary implementation source is copied or transferred.
     - No EHCO_PUBLIC_LAUNCH_BASELINE_V1_ACCEPTED receipt is created.
     - No independent external reproduction receipt is claimed.
+    - No external reviewer is selected by this operation projection.
     - No standing change from 52/53.
     - No Runtime, deployment, production, release, authority, admission, participation or persistence effect.
     - No open-source conversion or proprietary implementation-source publication.
@@ -311,11 +314,15 @@ bridge:
 evidence:
   evidence_class: REPOSITORY_SOURCE_AND_DIFF_VALIDATION
   required_checks:
-    - The nine manifest-bound C1B protocol files must be byte-identical to preregistration identity 8a1a05b4865eaefa716e77cbe669e819e7d6e5b3 after restoration.
+    - The nine manifest-bound C1B protocol files must remain byte-identical to preregistration identity 8a1a05b4865eaefa716e77cbe669e819e7d6e5b3.
     - The exact official comparison result SHA-256 must remain 0010b0f2f0369d9328d34e23d44e7117c038038ce4260a14cb51d0b1ad71e38b and no official rerun may occur.
     - The canonical public verifier must validate C1B preregistration package integrity, official result-manifest closure, machine verification discovery, launch-baseline candidate cross-bindings, reproduction contract state, launch-level threat-model coverage, and required public routes.
     - The launch-level threat/failure model must explicitly cover static replay, artifact/fixture substitution, post-result protocol drift, hidden dependency, reference-baseline drift, asymmetric comparative configuration, selective result omission, integrity bypass, and claim-scope inflation with controls or disclosed limitations.
     - Machine-readable verification discovery and Public Launch Baseline candidate hashes must match the exact corrected verifier/threat-model bytes.
+    - The selected GitHub Wiki feature must be enabled; Wiki page materialization remains separately required and must not be inferred from enablement alone.
+    - The source-controlled reader reference must not falsely state that Wiki is disabled and must preserve subordinate evidence ownership.
+    - C1D public instructions must state the exact Linux x86-64 / CPython / frozen OPA environment requirements, exact-revision binding, privacy/attribution semantics and no-unpublished-intervention boundary.
+    - The public launch validator must be able to structurally validate a returned C1D receipt and verify its canonical receipt SHA-256 without treating structural validity as C1D acceptance.
     - Independent external reproduction must remain NOT_ESTABLISHED until owning reviewer evidence is received and validated.
     - Canonical public repository validation must pass on the exact corrected candidate head.
     - CodeQL must pass on the exact corrected candidate head.
@@ -326,7 +333,9 @@ evidence:
     - The corrected public launch candidate closes the established repository-integrity and canonical-verifier acceptance blockers if the exact reviewed head qualifies.
     - The official C1B result remains bound to the immutable pre-result preregistration identity without rewriting the official result.
     - Launch-level threat/failure coverage is explicit without mutating the accepted C1 proof package.
+    - The public C1D package exposes its exact environment, evidence-binding, receipt-integrity and attribution boundaries without claiming external reproduction.
   evidence_not_created:
+    - Materialized GitHub Wiki page set until provider readback establishes it
     - Independent external third-party reproduction receipt
     - EHCO_PUBLIC_LAUNCH_BASELINE_V1_ACCEPTED
     - Final provider tag or Release checkpoint
@@ -334,7 +343,8 @@ evidence:
     - Deployment, production, release, authority, standing, admission or participation effect
     - Any successor operation
 stop_condition:
-  - Stop this remediation phase only after the exact corrected PR #66 head is provider-resolvable, the superseded competing public claim PR #61 is closed, and all required exact-head provider checks are reconciled.
-  - Do not mark PR #66 Ready, merge it, release, deploy, invoke Runtime, mutate authority or standing, issue Public Launch Baseline v1 acceptance, execute post-C1D discovery/reconstruction, or activate a successor in this remediation.
-  - Preserve the C1B preregistered package by restoring the README to preregistered bytes and prohibiting further mutation to the nine-file frozen set.
+  - Stop this repository-remediation pass only after the latest PR #66 head is provider-resolvable and all required exact-head provider checks are reconciled, or at a proven provider capability boundary for the separately required Wiki page materialization.
+  - Do not treat Wiki feature enablement alone as completion of the selected Wiki/reference surface.
+  - Do not mark PR #66 Ready, merge it, release, deploy, invoke Runtime, mutate authority or standing, issue Public Launch Baseline v1 acceptance, execute post-C1D discovery/reconstruction, select a replacement external reviewer, or activate a successor in this remediation.
+  - Preserve the C1B preregistered nine-file package without further mutation.
   - Preserve accepted standing 52/53 and all Runtime, deployment, release, authority, standing, participation and successor effects as NONE or not established as applicable.
