@@ -87,6 +87,16 @@ python3 verification/validate_public_launch_candidate.py
 
 The launch validator is also child 10 of `verification/verify_all_public.py`, so the repository workflow cannot report canonical success while those launch bindings are inconsistent.
 
+### C1D receipt structural and self-hash check
+
+A reviewer who has produced a machine-readable C1D receipt can validate the published receipt contract and canonical self-hash using the same standard-library-only validator:
+
+```text
+python3 verification/validate_public_launch_candidate.py --reproduction-receipt /path/to/receipt.json
+```
+
+This optional mode checks the receipt against the repository's published schema contract and verifies `receipt_sha256` over canonical JSON excluding the digest field itself. It is intentionally not an acceptance oracle: a structurally valid receipt does not establish reviewer independence, eligible execution environment, public-material-only execution, result correctness, or C1D acceptance by itself.
+
 ## What validation establishes
 
 A successful run establishes that the checked-out public repository is internally coherent for its exact revision: required files and links are present, public/private disclosure boundaries hold, selected public evidence records match their expected identities, component and Runtime terminology is consistent, and the reader-facing representation satisfies the repository's public validation rules.
