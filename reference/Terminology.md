@@ -1,5 +1,7 @@
 # Terminology
 
+A short glossary for terms used throughout the public technical record.
+
 ## Instantiated AI
 The architectural category in which intelligence operates inside explicit computational conditions for identity, authority, state, memory, source, permissible range, evidence, release, and consequence.
 
@@ -19,10 +21,10 @@ The accepted numerical Runtime standing corridor under the EHCO standing framewo
 Code that checks the public repository representation and intentionally public proof objects.
 
 ## Proprietary implementation
-Controlled implementation source/mechanics not selected for public distribution.
+Controlled implementation source and mechanics that have not been selected for public distribution.
 
 ## Public proof
-A bounded, intentionally public computation designed to let an independent reviewer test a published proposition without receiving proprietary implementation source.
+A bounded, intentionally public computation that lets an independent reviewer test a published proposition without receiving proprietary implementation source.
 
 ## Public Launch Baseline v1
-The future exact accepted public publication checkpoint after all applicable SOW-10 gates pass. It is not yet established while this candidate remains prelaunch.
+The exact public publication checkpoint that will be established only after the applicable SOW-10 launch gates pass. It has not yet been accepted while this repository remains a prelaunch candidate.
