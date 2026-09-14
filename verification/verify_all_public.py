@@ -23,6 +23,7 @@ VALIDATORS = [
     ("RANGE_REACTOR_CAPABILITY_SNAPSHOT", "verification/validate_public_range_reactor_snapshot.py"),
     ("RANGE_REACTOR_OPERATIONAL_CLOSURE", "verification/validate_public_range_reactor_operational_closure.py"),
     ("REGISTERED_RELEASE_IDENTITY", "verification/validate_release_identity.py"),
+    ("PUBLIC_LAUNCH_CANDIDATE_BINDINGS", "verification/validate_public_launch_candidate.py"),
 ]
 
 def main() -> int:
