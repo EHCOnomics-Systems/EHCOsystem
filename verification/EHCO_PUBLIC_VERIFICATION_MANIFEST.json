@@ -3,6 +3,58 @@
   "canonical_human_entrypoint": "VERIFY.md",
   "canonical_verifier": {
     "child_validator_count": 10,
+    "child_validators": [
+      {
+        "id": "PUBLIC_REPOSITORY_INTEGRITY",
+        "path": "verification/validate_public_evidence.py",
+        "git_blob_sha": "cbf1730ccc17779d5d55e1f5d70dc00d39e401cf"
+      },
+      {
+        "id": "PREPUBLICATION_DISCLOSURE_GATE",
+        "path": "verification/validate_pre_publication_gate.py",
+        "git_blob_sha": "cea25e9b4750685f24bae684e6e3c1d22455e773"
+      },
+      {
+        "id": "PUBLIC_CLAIM_REGISTRY",
+        "path": "verification/validate_public_claim_registry.py",
+        "git_blob_sha": "017aa3bd8c007fbd13378a5a1d7639529ed0fbbd"
+      },
+      {
+        "id": "PUBLIC_PROOF_KERNEL",
+        "path": "verification/validate_public_proof_kernel.py",
+        "git_blob_sha": "81dfd96aeaa65a9399275a7bdb2b2a54786a3618"
+      },
+      {
+        "id": "CURRENT_RUNTIME_PUBLIC_EVIDENCE",
+        "path": "verification/validate_current_runtime_evidence.py",
+        "git_blob_sha": "1379f3c29ccd4e1ecd490e698cfdd76faccf6b42"
+      },
+      {
+        "id": "LANGUAGE_MODEL_PUBLIC_SNAPSHOT",
+        "path": "verification/validate_public_lm_test_snapshot.py",
+        "git_blob_sha": "a4029620683491604baa8c7aaead6bc7fb722917"
+      },
+      {
+        "id": "RANGE_REACTOR_CAPABILITY_SNAPSHOT",
+        "path": "verification/validate_public_range_reactor_snapshot.py",
+        "git_blob_sha": "3be8b89bf5e1dd64230b54df020795daf357fe20"
+      },
+      {
+        "id": "RANGE_REACTOR_OPERATIONAL_CLOSURE",
+        "path": "verification/validate_public_range_reactor_operational_closure.py",
+        "git_blob_sha": "6030377601af8cc01219754434e21fed14c3e0c4"
+      },
+      {
+        "id": "REGISTERED_RELEASE_IDENTITY",
+        "path": "verification/validate_release_identity.py",
+        "git_blob_sha": "1a374925d5a4f8ce539f8b840a1cfac175516bcf"
+      },
+      {
+        "id": "PUBLIC_LAUNCH_CANDIDATE_BINDINGS",
+        "path": "verification/validate_public_launch_candidate.py",
+        "git_blob_sha": "8573041d9b57abf65608524acf0bdbc61dedae6e"
+      }
+    ],
     "execution_command": "python3 verification/verify_all_public.py",
     "git_blob_sha": "020abd8f6d3430374b97399e4c99e6fa530a5e84",
     "path": "verification/verify_all_public.py",
