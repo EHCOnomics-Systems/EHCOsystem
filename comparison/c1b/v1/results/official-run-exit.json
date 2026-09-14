@@ -1,0 +1,10 @@
+{
+    "schema":  "EHCO_C1B_OFFICIAL_RUN_EXIT_V1",
+    "preregistration_identity":  "8a1a05b4865eaefa716e77cbe669e819e7d6e5b3",
+    "challenge_nonce":  "4442a131d69e49f49e1506ee0fe794c3",
+    "harness_exit_status":  0,
+    "result_file_present":  true,
+    "result_sha256":  "0010b0f2f0369d9328d34e23d44e7117c038038ce4260a14cb51d0b1ad71e38b",
+    "run_failure_case_count":  0,
+    "completed_at_utc":  "2026-09-14T00:00:57.9282546Z"
+}

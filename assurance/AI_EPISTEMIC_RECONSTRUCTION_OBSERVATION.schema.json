@@ -1,0 +1,66 @@
+{
+  "$id": "EHCO_AI_EPISTEMIC_RECONSTRUCTION_OBSERVATION_V1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "controlled_surface_correction_needed": {
+      "type": "boolean"
+    },
+    "expected_elements_present": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "missing_linkage": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "notes": {
+      "type": "string"
+    },
+    "query_id": {
+      "type": "string"
+    },
+    "response_digest_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "retrieved_public_sources": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "schema": {
+      "const": "EHCO_AI_EPISTEMIC_RECONSTRUCTION_OBSERVATION_V1"
+    },
+    "system_identity": {
+      "type": "string"
+    },
+    "timestamp_utc": {
+      "type": "string"
+    },
+    "unsupported_inference": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    }
+  },
+  "required": [
+    "schema",
+    "system_identity",
+    "timestamp_utc",
+    "query_id",
+    "response_digest_sha256",
+    "retrieved_public_sources",
+    "expected_elements_present",
+    "unsupported_inference",
+    "missing_linkage",
+    "controlled_surface_correction_needed"
+  ],
+  "type": "object"
+}

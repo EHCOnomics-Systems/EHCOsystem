@@ -1,0 +1,20 @@
+{
+  "result": [
+    {
+      "expressions": [
+        {
+          "value": {
+            "disposition": "PASS",
+            "permitted": true,
+            "reason": "ALL_FROZEN_CONDITIONS_SATISFIED"
+          },
+          "text": "data.ehco_c1b.reference.result",
+          "location": {
+            "row": 1,
+            "col": 1
+          }
+        }
+      ]
+    }
+  ]
+}

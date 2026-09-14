@@ -1,0 +1,59 @@
+{
+  "$id": "EHCO_INDEPENDENT_REPRODUCTION_RECEIPT_V1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "comparative_proof": {
+      "type": "object"
+    },
+    "environment": {
+      "type": "object"
+    },
+    "limitations": {
+      "type": "array"
+    },
+    "observations": {
+      "type": "array"
+    },
+    "public_preregistration_identity": {
+      "type": "string"
+    },
+    "public_proof": {
+      "type": "object"
+    },
+    "public_verifier": {
+      "type": "object"
+    },
+    "receipt_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "repository_identity": {
+      "type": "string"
+    },
+    "reviewer_independence_attestation": {
+      "type": "object"
+    },
+    "schema": {
+      "const": "EHCO_INDEPENDENT_REPRODUCTION_RECEIPT_V1"
+    },
+    "timestamp_utc": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "schema",
+    "reviewer_independence_attestation",
+    "timestamp_utc",
+    "repository_identity",
+    "public_preregistration_identity",
+    "environment",
+    "public_verifier",
+    "public_proof",
+    "comparative_proof",
+    "observations",
+    "receipt_sha256"
+  ],
+  "title": "EHCOsystem Independent Reproduction Receipt",
+  "type": "object"
+}

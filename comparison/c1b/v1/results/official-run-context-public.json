@@ -1,0 +1,33 @@
+{
+  "accepted_c1_identity": "c208cb7cd002d016359f39aba1e3aef3f820befc",
+  "c1b_manifest_sha256": "440ae3a567f0d7db29a2c3348d0a7eb296ca5eece0b31a78fb9b58932efba357",
+  "c1b_shared_fixtures_sha256": "65ff1a1e5d6be5b6a29dae6895f70120cb08e515e82969644a42c2ca23620f8d",
+  "challenge_nonce": "4442a131d69e49f49e1506ee0fe794c3",
+  "created_at_utc": "2026-09-14T00:00:47.5019534Z",
+  "docker_server": "linux|x86_64",
+  "environment_preflight_output": [
+    "Linux x86_64",
+    "Python 3.11.16",
+    "Version: 1.20.2",
+    "Build Commit: b2c26708e9d55645d7f837db495031f7e4152594-dirty",
+    "Build Timestamp: 2026-09-03T20:35:14Z",
+    "Build Hostname: ",
+    "Go Version: go1.27.1",
+    "Platform: linux/amd64",
+    "Rego Version: v1",
+    "WebAssembly: available"
+  ],
+  "interpretation": "This public-safe representation preserves the material execution facts and binds the exact owning run-context bytes by SHA-256. It omits the local Docker context name because the repository disclosure policy classifies the source value structurally as a private host locator.",
+  "local_docker_context_name_published": false,
+  "network_state_during_evaluation": "OFFLINE_DOCKER_NETWORK_NONE",
+  "official_case_count": 5,
+  "official_run_attempt": 1,
+  "opa_binary_sha256": "69da5179ee403d10fa11bab6cfb4ffb0d23dba5f9b682fa977db772a1da5670f",
+  "preregistration_identity": "8a1a05b4865eaefa716e77cbe669e819e7d6e5b3",
+  "python_image_id": "sha256:a630a63cdb314e2d138a2fca3e375e319e8568346ffafac5b980f888630ac4f1",
+  "rerun_on_unfavorable_result": false,
+  "schema": "EHCO_C1B_OFFICIAL_RUN_CONTEXT_PUBLIC_V1",
+  "source_run_context_disclosure_classification": "PRIVATE_HOST_LOCATOR_STRUCTURAL_MATCH",
+  "source_run_context_publication_status": "WITHHELD_FROM_PUBLIC_SURFACE_BY_DISCLOSURE_POLICY",
+  "source_run_context_sha256": "68e16581945a3e282735dc7d21a7d85ab69558daad37b18a6be9ead1ad3ecfb7"
+}

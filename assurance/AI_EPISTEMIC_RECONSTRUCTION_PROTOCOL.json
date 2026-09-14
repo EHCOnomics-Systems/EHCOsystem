@@ -1,0 +1,84 @@
+{
+  "acceptance_rule": "Record observations; correct only EHCOnomics-controlled defects; retrieval failure or model error does not demote owning technical evidence.",
+  "observation_not_authority": true,
+  "purpose": "Test whether independent search/retrieval/AI systems can reconstruct the public category, mechanism, evidence boundaries, implementation relationship, and attribution from the public estate without EHCO-specific coaching.",
+  "query_families": [
+    {
+      "expected_public_elements": [
+        "Instantiated AI",
+        "governing computational conditions",
+        "proof before consequential participation"
+      ],
+      "id": "Q1-CATEGORY",
+      "prompt": "What architecture makes AI actions conditional on explicit computational identity, authority, source, range, evidence and consequence?"
+    },
+    {
+      "expected_public_elements": [
+        "EHCOnomics",
+        "reference implementation or implementation",
+        "Instantiated AI ecosystem"
+      ],
+      "id": "Q2-IMPLEMENTATION",
+      "prompt": "What is EHCOsystem and how does it relate to Instantiated AI?"
+    },
+    {
+      "expected_public_elements": [
+        "EHCO AI-OS is Tier One Runtime system identity",
+        "INSTANTIATED_EHCO_RUNTIME owns Runtime authority and state"
+      ],
+      "id": "Q3-AUTHORITY",
+      "prompt": "What is the difference between EHCO AI-OS and INSTANTIATED_EHCO_RUNTIME?"
+    },
+    {
+      "expected_public_elements": [
+        "public verifier",
+        "Public Proof Kernel",
+        "synthetic",
+        "public-safe",
+        "proprietary source not required"
+      ],
+      "id": "Q4-PROOF",
+      "prompt": "How can an independent reviewer verify a bounded EHCOsystem proposition without proprietary source?"
+    },
+    {
+      "expected_public_elements": [
+        "Open Policy Agent",
+        "OPA v1.20.2",
+        "bounded comparison",
+        "not universal superiority"
+      ],
+      "id": "Q5-COMPARISON",
+      "prompt": "What external reference is used in the EHCOsystem comparative public proof and what does the comparison claim?"
+    },
+    {
+      "expected_public_elements": [
+        "numerical Runtime standing corridor",
+        "not benchmark percentage",
+        "not deployment percentage",
+        "not public-release percentage"
+      ],
+      "id": "Q6-STANDING",
+      "prompt": "What does EHCO's accepted 52/53 standing mean, and what does it not mean?"
+    }
+  ],
+  "record_per_observation": [
+    "system_identity",
+    "timestamp_utc",
+    "query_id",
+    "verbatim_or_digest_bound_response",
+    "retrieved_public_sources",
+    "expected_elements_present",
+    "unsupported_inference",
+    "missing_linkage",
+    "correction_needed_on_ehconomics_controlled_surface"
+  ],
+  "runtime_effect": "NONE",
+  "schema": "EHCO_AI_EPISTEMIC_RECONSTRUCTION_PROTOCOL_V1",
+  "standing_effect": "NONE",
+  "status": "PUBLIC_CANDIDATE_OBSERVATIONS_NOT_YET_EXECUTED",
+  "systems_to_observe": [
+    "GENERAL_WEB_SEARCH",
+    "INDEPENDENT_RETRIEVAL_SYSTEM",
+    "GENERAL_AI_ASSISTANT_WITHOUT_EHCO_SPECIFIC_PROMPTING"
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "artifact_identity": {
+    "class": "PUBLIC_SAFE_WRAPPER",
+    "digest": "ef497581702c4929e0e32beef66e39250c95c450d2c90a64efef85c390cb3d31",
+    "digest_algorithm": "SHA256",
+    "name": "EHCOsystem Public Proof Kernel",
+    "version": "1"
+  },
+  "challenge": {
+    "nonce_digest": "4fca0e28ff0af12bb3ca985667182f8648231b0824443764d9b8bc0d9f67fc23",
+    "source": "REVIEWER_SUPPLIED"
+  },
+  "claim_ids": [
+    "EHCO-PUBLIC-PROOF-KERNEL-PREINTELLIGENCE-GATE-001"
+  ],
+  "environment_identity": {
+    "manifest_digest": "ab65dd8af835d28ffde399250f843503dbcef5ee5000041df1aed4eb77a47310",
+    "manifest_id": "EHCO-PUBLIC-PROOF-KERNEL-ENVIRONMENT-V1",
+    "observed_material_values": {
+      "model_dependency_state": "ABSENT",
+      "network_dependency_class": "OFFLINE"
+    }
+  },
+  "evaluation_trace_public_safe": [
+    {
+      "rule_id": "REQUIRED:identity_condition",
+      "status": "PASS"
+    },
+    {
+      "rule_id": "REQUIRED:permission_condition",
+      "status": "PASS"
+    },
+    {
+      "rule_id": "REQUIRED:eligibility_condition",
+      "status": "PASS"
+    },
+    {
+      "rule_id": "REQUIRED:source_condition",
+      "status": "PASS"
+    },
+    {
+      "rule_id": "REQUIRED:range_condition",
+      "status": "PASS"
+    },
+    {
+      "rule_id": "REQUIRED:evidence_condition",
+      "status": "PASS"
+    },
+    {
+      "rule_id": "AMBIGUITY",
+      "status": "CLEAR"
+    },
+    {
+      "rule_id": "SUPPORTED_ACTION",
+      "status": "FAIL"
+    }
+  ],
+  "fixtures": [
+    {
+      "expected_digest": "04c44e5e09cbd0058877a84b19e4ab54a23f887abca75fa14b758a062a90986f",
+      "fixture_id": "PK-UNSUPPORTED-001",
+      "integrity_status": "PASS",
+      "observed_digest": "04c44e5e09cbd0058877a84b19e4ab54a23f887abca75fa14b758a062a90986f",
+      "selected_fixture_digest": "95697ed6928fbff6b71bbe72b00ac85541acd44386c347e11d5b6e9b1da76fc6"
+    }
+  ],
+  "integrity_checks": [
+    {
+      "check_id": "FILE_DIGEST:kernel.py",
+      "status": "PASS"
+    },
+    {
+      "check_id": "FILE_DIGEST:verify_receipt.py",
+      "status": "PASS"
+    },
+    {
+      "check_id": "FILE_DIGEST:protocol.json",
+      "status": "PASS"
+    },
+    {
+      "check_id": "FILE_DIGEST:environment.json",
+      "status": "PASS"
+    },
+    {
+      "check_id": "FILE_DIGEST:fixtures.json",
+      "status": "PASS"
+    },
+    {
+      "check_id": "FILE_DIGEST:claim-test-map.json",
+      "status": "PASS"
+    },
+    {
+      "check_id": "FILE_DIGEST:threat-control-map.json",
+      "status": "PASS"
+    }
+  ],
+  "intelligence_invocation_count": 0,
+  "intelligence_invoked": false,
+  "limitations": [
+    "Current Tier One Runtime state, authority, admission, binding, invocation, or participation.",
+    "Any change to accepted numerical standing 52/53.",
+    "That proprietary EHCO implementation source uses identical code or internal mechanics.",
+    "Production deployment, independent certification, or universal superiority.",
+    "Language Model or Range Reactor requalification.",
+    "Security properties or capability outside the frozen public proof protocol."
+  ],
+  "manifest_digest": "c175d4b8c9bd643b92ec5996e3272073cd528fb20af306595ceebf9c967ddbcb",
+  "output_digest": null,
+  "outputs": [],
+  "placeholder_output": null,
+  "proof_family_id": "EHCO-PUBLIC-PROOF-KERNEL-PREINTELLIGENCE-GATE-001",
+  "proof_protocol_digest": "e5c1cd450438fa0a7710fa6e542a2bfa8466a1dbe549c108f29a88b09dbc82e0",
+  "proof_protocol_version": "1.0.0",
+  "public_launch_identity": "PRELAUNCH_CANDIDATE_NOT_YET_ACCEPTED",
+  "receipt_content_digest": "95947a4f9308f2f0de0f89b8ab4588a75a84b912b646ac732114b150b6e697ff",
+  "receipt_version": 1,
+  "run": {
+    "completed_at": "2026-09-14T00:00:56.895395+00:00",
+    "deterministic_replay_class": "FULLY_DETERMINISTIC_SAME_INPUT_SAME_DISPOSITION_AND_MATERIAL_OUTPUT",
+    "disposition": "UNSUPPORTED_REQUEST",
+    "exit_status": 0,
+    "run_id": "6108d49d09d543b30e460440ad4cf63ca6fffb6a607966738eb5529a46c1806a",
+    "started_at": "2026-09-14T00:00:56.887906+00:00"
+  },
+  "schema": "EHCO_PUBLIC_PROOF_RUN_RECEIPT_V1",
+  "what_this_does_not_prove": [
+    "Current Tier One Runtime state, authority, admission, binding, invocation, or participation.",
+    "Any change to accepted numerical standing 52/53.",
+    "That proprietary EHCO implementation source uses identical code or internal mechanics.",
+    "Production deployment, independent certification, or universal superiority.",
+    "Language Model or Range Reactor requalification.",
+    "Security properties or capability outside the frozen public proof protocol."
+  ],
+  "what_this_proves": [
+    "For the frozen synthetic protocol, declared proof-relevant conditions are evaluated before the intelligence placeholder may execute.",
+    "Declared invalid, missing, ambiguous, unsupported, or integrity-invalid cases do not invoke the intelligence placeholder.",
+    "A fresh challenge nonce is bound into the machine-readable run receipt."
+  ]
+}

@@ -1,0 +1,155 @@
+{
+  "artifact_identity": {
+    "class": "PUBLIC_SAFE_WRAPPER",
+    "digest": "ef497581702c4929e0e32beef66e39250c95c450d2c90a64efef85c390cb3d31",
+    "digest_algorithm": "SHA256",
+    "name": "EHCOsystem Public Proof Kernel",
+    "version": "1"
+  },
+  "challenge": {
+    "nonce_digest": "c80f4cf286cf55c7425f0d8946bb07a8a75e88b71d0c86559042563c0b680ba2",
+    "source": "REVIEWER_SUPPLIED"
+  },
+  "claim_ids": [
+    "EHCO-PUBLIC-PROOF-KERNEL-PREINTELLIGENCE-GATE-001"
+  ],
+  "environment_identity": {
+    "manifest_digest": "ab65dd8af835d28ffde399250f843503dbcef5ee5000041df1aed4eb77a47310",
+    "manifest_id": "EHCO-PUBLIC-PROOF-KERNEL-ENVIRONMENT-V1",
+    "observed_material_values": {
+      "model_dependency_state": "ABSENT",
+      "network_dependency_class": "OFFLINE"
+    }
+  },
+  "evaluation_trace_public_safe": [
+    {
+      "rule_id": "REQUIRED:identity_condition",
+      "status": "PASS"
+    },
+    {
+      "rule_id": "REQUIRED:permission_condition",
+      "status": "PASS"
+    },
+    {
+      "rule_id": "REQUIRED:eligibility_condition",
+      "status": "PASS"
+    },
+    {
+      "rule_id": "REQUIRED:source_condition",
+      "status": "PASS"
+    },
+    {
+      "rule_id": "REQUIRED:range_condition",
+      "status": "PASS"
+    },
+    {
+      "rule_id": "REQUIRED:evidence_condition",
+      "status": "PASS"
+    },
+    {
+      "rule_id": "AMBIGUITY",
+      "status": "CLEAR"
+    },
+    {
+      "rule_id": "SUPPORTED_ACTION",
+      "status": "PASS"
+    },
+    {
+      "rule_id": "INTELLIGENCE_PLACEHOLDER",
+      "status": "INVOKED_AFTER_PASS"
+    }
+  ],
+  "fixtures": [
+    {
+      "expected_digest": "04c44e5e09cbd0058877a84b19e4ab54a23f887abca75fa14b758a062a90986f",
+      "fixture_id": "PK-VALID-001",
+      "integrity_status": "PASS",
+      "observed_digest": "04c44e5e09cbd0058877a84b19e4ab54a23f887abca75fa14b758a062a90986f",
+      "selected_fixture_digest": "eed7d7d0e5ac4117aeb4a7de829a9e9ab352dfc19909f8faaa129b868dea39aa"
+    }
+  ],
+  "integrity_checks": [
+    {
+      "check_id": "FILE_DIGEST:kernel.py",
+      "status": "PASS"
+    },
+    {
+      "check_id": "FILE_DIGEST:verify_receipt.py",
+      "status": "PASS"
+    },
+    {
+      "check_id": "FILE_DIGEST:protocol.json",
+      "status": "PASS"
+    },
+    {
+      "check_id": "FILE_DIGEST:environment.json",
+      "status": "PASS"
+    },
+    {
+      "check_id": "FILE_DIGEST:fixtures.json",
+      "status": "PASS"
+    },
+    {
+      "check_id": "FILE_DIGEST:claim-test-map.json",
+      "status": "PASS"
+    },
+    {
+      "check_id": "FILE_DIGEST:threat-control-map.json",
+      "status": "PASS"
+    }
+  ],
+  "intelligence_invocation_count": 1,
+  "intelligence_invoked": true,
+  "limitations": [
+    "Current Tier One Runtime state, authority, admission, binding, invocation, or participation.",
+    "Any change to accepted numerical standing 52/53.",
+    "That proprietary EHCO implementation source uses identical code or internal mechanics.",
+    "Production deployment, independent certification, or universal superiority.",
+    "Language Model or Range Reactor requalification.",
+    "Security properties or capability outside the frozen public proof protocol."
+  ],
+  "manifest_digest": "c175d4b8c9bd643b92ec5996e3272073cd528fb20af306595ceebf9c967ddbcb",
+  "output_digest": "f0f6e5056860b22e13338cffa0bdfe323b541300d3f6d303d6a4cb64682384dc",
+  "outputs": [
+    {
+      "digest": "f0f6e5056860b22e13338cffa0bdfe323b541300d3f6d303d6a4cb64682384dc",
+      "digest_algorithm": "SHA256",
+      "media_or_schema_type": "application/json",
+      "output_id": "PLACEHOLDER_OUTPUT",
+      "public_interpretation_role": "Shows the deterministic placeholder executed only after PASS."
+    }
+  ],
+  "placeholder_output": {
+    "action_class": "SYNTHETIC_PREINTELLIGENCE_GATE",
+    "placeholder": "DETERMINISTIC_INTELLIGENCE_PLACEHOLDER_EXECUTED",
+    "request_id": "REQ-VALID-001"
+  },
+  "proof_family_id": "EHCO-PUBLIC-PROOF-KERNEL-PREINTELLIGENCE-GATE-001",
+  "proof_protocol_digest": "e5c1cd450438fa0a7710fa6e542a2bfa8466a1dbe549c108f29a88b09dbc82e0",
+  "proof_protocol_version": "1.0.0",
+  "public_launch_identity": "PRELAUNCH_CANDIDATE_NOT_YET_ACCEPTED",
+  "receipt_content_digest": "f406c406babb4a889794cd9a0286a92ed2ed3c0396bfb9e9edd557791a099d93",
+  "receipt_version": 1,
+  "run": {
+    "completed_at": "2026-09-14T00:00:51.580718+00:00",
+    "deterministic_replay_class": "FULLY_DETERMINISTIC_SAME_INPUT_SAME_DISPOSITION_AND_MATERIAL_OUTPUT",
+    "disposition": "PASS",
+    "exit_status": 0,
+    "run_id": "fd942745bc4479cb4bad6a685cda8673991e9d33561fe969b6cdc04c60762277",
+    "started_at": "2026-09-14T00:00:51.572578+00:00"
+  },
+  "schema": "EHCO_PUBLIC_PROOF_RUN_RECEIPT_V1",
+  "what_this_does_not_prove": [
+    "Current Tier One Runtime state, authority, admission, binding, invocation, or participation.",
+    "Any change to accepted numerical standing 52/53.",
+    "That proprietary EHCO implementation source uses identical code or internal mechanics.",
+    "Production deployment, independent certification, or universal superiority.",
+    "Language Model or Range Reactor requalification.",
+    "Security properties or capability outside the frozen public proof protocol."
+  ],
+  "what_this_proves": [
+    "For the frozen synthetic protocol, declared proof-relevant conditions are evaluated before the intelligence placeholder may execute.",
+    "Declared invalid, missing, ambiguous, unsupported, or integrity-invalid cases do not invoke the intelligence placeholder.",
+    "A fresh challenge nonce is bound into the machine-readable run receipt."
+  ]
+}

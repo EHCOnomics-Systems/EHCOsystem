@@ -1,0 +1,12 @@
+{
+  "action_class": "SYNTHETIC_PREINTELLIGENCE_GATE",
+  "conditions": {
+    "ambiguity_condition": "AMBIGUOUS",
+    "eligibility_condition": "SATISFIED",
+    "evidence_condition": "SATISFIED",
+    "identity_condition": "SATISFIED",
+    "permission_condition": "SATISFIED",
+    "range_condition": "SATISFIED",
+    "source_condition": "SATISFIED"
+  }
+}

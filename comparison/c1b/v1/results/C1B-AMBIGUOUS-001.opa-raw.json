@@ -1,0 +1,20 @@
+{
+  "result": [
+    {
+      "expressions": [
+        {
+          "value": {
+            "disposition": "RETAIN_AMBIGUITY",
+            "permitted": false,
+            "reason": "AMBIGUOUS_REQUIRED_STATE"
+          },
+          "text": "data.ehco_c1b.reference.result",
+          "location": {
+            "row": 1,
+            "col": 1
+          }
+        }
+      ]
+    }
+  ]
+}
