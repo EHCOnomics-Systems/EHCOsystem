@@ -1,6 +1,8 @@
 # EHCOsystem Reader Reference
 
-This repository-native reference layer is the public reader route for EHCOsystem. It exists because the current GitHub repository has Wiki disabled; it is subordinate to canonical repository evidence and does not originate technical truth.
+This repository-native reference layer is the source-controlled public reader route for EHCOsystem and remains subordinate to canonical repository evidence; it does not originate technical truth.
+
+GitHub Wiki is enabled as the selected SOW-10 launch-baseline reader reference surface. Until the Wiki pages are materialized and provider-read back, these repository-native pages remain the current source-controlled reader route. Wiki publication must preserve the same bounded claims, evidence ownership, verification routes, limitations, and proprietary-custody boundaries rather than becoming a competing evidence owner.
 
 ## Start here
 
