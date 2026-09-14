@@ -1,0 +1,64 @@
+{
+  "schema": "EHCO_PUBLIC_LAUNCH_THREAT_MODEL_V1",
+  "status": "PUBLIC_LAUNCH_CANDIDATE_CONTROL_MODEL",
+  "scope": "EHCO-PUB-SOW-010 public launch candidate, including C1/C1A executable proof and C1B comparative proof.",
+  "runtime_effect": "NONE",
+  "standing_effect": "NONE",
+  "deployment_effect": "NONE",
+  "accepted_standing": "52/53",
+  "frozen_c1b_preregistration_identity": "8a1a05b4865eaefa716e77cbe669e819e7d6e5b3",
+  "official_c1b_result_sha256": "0010b0f2f0369d9328d34e23d44e7117c038038ce4260a14cb51d0b1ad71e38b",
+  "independent_external_reproduction_status": "NOT_ESTABLISHED",
+  "threats": [
+    {
+      "id": "STATIC_REPLAY",
+      "status": "CONTROLLED",
+      "control": "C1 receipts are nonce-bound and launch verification checks the frozen proof/result identities; C1D independently requires a fresh public-only reproduction."
+    },
+    {
+      "id": "ARTIFACT_OR_FIXTURE_SUBSTITUTION",
+      "status": "CONTROLLED",
+      "control": "C1 and C1B manifests bind exact public files by SHA-256; the canonical launch validator recomputes those digests."
+    },
+    {
+      "id": "POST_RESULT_PROTOCOL_DRIFT",
+      "status": "CONTROLLED",
+      "control": "The C1B nine-file preregistration manifest is immutable for v1.0.0; the canonical launch validator requires every bound file to match its preregistered digest."
+    },
+    {
+      "id": "HIDDEN_DEPENDENCY",
+      "status": "CONTROLLED",
+      "control": "The public proof is offline/standard-library-only; C1B publishes its environment/reference acquisition contract and public result context while protected host details remain outside the public tree."
+    },
+    {
+      "id": "REFERENCE_BASELINE_DRIFT",
+      "status": "CONTROLLED",
+      "control": "C1B binds OPA v1.20.2, source commit b2c26708e9d55645d7f837db495031f7e4152594 and asset SHA-256 69da5179ee403d10fa11bab6cfb4ffb0d23dba5f9b682fa977db772a1da5670f."
+    },
+    {
+      "id": "ASYMMETRIC_COMPARATIVE_CONFIGURATION",
+      "status": "CONTROLLED",
+      "control": "The preregistered protocol defines the shared fixture contract, asymmetry law, native-capability classification, one-run-per-case rule and published environment/reference conditions."
+    },
+    {
+      "id": "SELECTIVE_RESULT_OMISSION",
+      "status": "CONTROLLED",
+      "control": "The public result manifest requires five planned and five recorded cases, empty omission and run-failure lists, published per-case outputs, and no preferred-result rerun."
+    },
+    {
+      "id": "INTEGRITY_BYPASS",
+      "status": "CONTROLLED",
+      "control": "The canonical public verifier validates preregistration and result hash closure plus launch-discovery and baseline cross-bindings; GitHub provider checks remain additional acceptance gates."
+    },
+    {
+      "id": "CLAIM_SCOPE_INFLATION",
+      "status": "CONTROLLED",
+      "control": "Public result and baseline limitations reject universal superiority, Runtime/authority/standing effects, deployment, proprietary same-code identity and independent certification."
+    }
+  ],
+  "limitations": [
+    "This control model does not establish independent external reproduction.",
+    "It does not accept EHCOsystem Public Launch Baseline v1.",
+    "It does not replace owning technical evidence or create Tier One Runtime state, authority, admission, participation, deployment, release, or standing effects."
+  ]
+}
