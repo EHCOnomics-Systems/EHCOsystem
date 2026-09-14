@@ -15,4 +15,4 @@ The repository remains the canonical technical record. These reference pages exp
 
 For direct verification of the current publication candidate, use [`../VERIFY.md`](../VERIFY.md).
 
-GitHub Wiki is enabled as the selected public reader-reference surface for this launch. Until the Wiki pages are published and read back from GitHub, these source-controlled pages remain the reference source. Wiki pages must preserve the same claims, evidence boundaries, verification routes, and limitations.
+The GitHub Wiki mirrors this source-controlled reference for easier public navigation. The repository remains canonical, and the Wiki should preserve the same claims, evidence boundaries, verification routes, and limitations.
