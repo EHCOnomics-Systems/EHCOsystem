@@ -17,6 +17,19 @@ RESULT_SHA256 = "0010b0f2f0369d9328d34e23d44e7117c038038ce4260a14cb51d0b1ad71e38
 RESULT_MANIFEST_SHA256 = "a961891144ff43cf1772bc9bef775eaa723347ec276892a31bcf64a73cffd35c"
 C1_ID = "c208cb7cd002d016359f39aba1e3aef3f820befc"
 
+EXPECTED_CHILD_VALIDATORS = [
+    ("PUBLIC_REPOSITORY_INTEGRITY", "verification/validate_public_evidence.py"),
+    ("PREPUBLICATION_DISCLOSURE_GATE", "verification/validate_pre_publication_gate.py"),
+    ("PUBLIC_CLAIM_REGISTRY", "verification/validate_public_claim_registry.py"),
+    ("PUBLIC_PROOF_KERNEL", "verification/validate_public_proof_kernel.py"),
+    ("CURRENT_RUNTIME_PUBLIC_EVIDENCE", "verification/validate_current_runtime_evidence.py"),
+    ("LANGUAGE_MODEL_PUBLIC_SNAPSHOT", "verification/validate_public_lm_test_snapshot.py"),
+    ("RANGE_REACTOR_CAPABILITY_SNAPSHOT", "verification/validate_public_range_reactor_snapshot.py"),
+    ("RANGE_REACTOR_OPERATIONAL_CLOSURE", "verification/validate_public_range_reactor_operational_closure.py"),
+    ("REGISTERED_RELEASE_IDENTITY", "verification/validate_release_identity.py"),
+    ("PUBLIC_LAUNCH_CANDIDATE_BINDINGS", "verification/validate_public_launch_candidate.py"),
+]
+
 
 def fail(message: str) -> None:
     raise AssertionError(message)
@@ -249,15 +262,29 @@ def main() -> int:
     require_equal(canonical.get("path"), "verification/verify_all_public.py", "canonical verifier path")
     require_equal(canonical.get("execution_command"), "python3 verification/verify_all_public.py", "canonical verifier command")
     require_equal(canonical.get("git_blob_sha"), git_blob_sha("verification/verify_all_public.py"), "canonical verifier Git blob")
-    if canonical.get("child_validator_count", 0) < 10:
-        fail("canonical verifier does not include launch-candidate validation")
+    require_equal(canonical.get("child_validator_count"), len(EXPECTED_CHILD_VALIDATORS), "canonical child validator count")
+    children = canonical.get("child_validators")
+    if not isinstance(children, list):
+        fail("verification discovery does not enumerate canonical child validators")
+    require_equal(len(children), len(EXPECTED_CHILD_VALIDATORS), "enumerated child validator count")
+    for index, ((expected_id, expected_path), item) in enumerate(zip(EXPECTED_CHILD_VALIDATORS, children)):
+        if not isinstance(item, dict):
+            fail(f"child validator entry {index} is not an object")
+        require_equal(item.get("id"), expected_id, f"child validator {index} id")
+        require_equal(item.get("path"), expected_path, f"child validator {expected_id} path")
+        require_equal(item.get("git_blob_sha"), git_blob_sha(expected_path), f"child validator {expected_id} Git blob")
+
     routes = discovery.get("machine_routes", {})
     for key, path in {
+        "claim_evidence_matrix": "assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md",
+        "claim_registry": "assurance/PUBLIC-CLAIM-REGISTRY.json",
         "comparative_protocol_manifest": prereg_path,
         "comparative_result_manifest": result_manifest_path,
+        "executable_proof_manifest": "proof/public-kernel/v1/public-proof-manifest.json",
         "independent_reproduction_instructions": "reproduction/INDEPENDENT-REPRODUCTION.md",
         "launch_baseline_manifest": "PUBLIC_LAUNCH_BASELINE.json",
         "launch_threat_model": threat_path,
+        "reader_reference": "reference/Home.md",
     }.items():
         require_equal(routes.get(key), path, f"machine route {key}")
         read(path)
@@ -267,6 +294,7 @@ def main() -> int:
     require_equal(baseline.get("status"), "RESULT_PUBLICATION_CANDIDATE_NOT_ACCEPTED", "launch baseline acceptance state")
     require_equal(baseline.get("final_git_commit"), "BOUND_BY_FINAL_ACCEPTANCE_CHECKPOINT_AFTER_COMMIT", "final Git binding state")
     require_equal(baseline.get("provider_publication_identity"), "PENDING_FINAL_PROVIDER_TAG_OR_RELEASE_CHECKPOINT", "provider checkpoint state")
+    require_equal(baseline.get("publication_date"), "PENDING_ACCEPTANCE", "launch baseline publication date state")
     require_equal(baseline.get("independent_reproduction", {}).get("receipt_identity"), "NOT_ESTABLISHED", "baseline C1D state")
     require_equal(baseline.get("comparative_proof", {}).get("preregistration_identity"), PREREG_ID, "baseline C1B preregistration identity")
     require_equal(baseline.get("comparative_proof", {}).get("candidate_manifest_sha256"), PREREG_MANIFEST_SHA256, "baseline C1B preregistration manifest")
@@ -276,6 +304,12 @@ def main() -> int:
     require_equal(baseline.get("public_verifier", {}).get("discovery_manifest_sha256"), sha256(discovery_path), "baseline discovery SHA-256")
     require_equal(baseline.get("launch_threat_model", {}).get("path"), threat_path, "baseline threat-model path")
     require_equal(baseline.get("launch_threat_model", {}).get("sha256"), sha256(threat_path), "baseline threat-model SHA-256")
+
+    citation = read("CITATION.cff").decode("utf-8")
+    if 'version: "1.0.0-prelaunch"' not in citation:
+        fail("prelaunch citation identity must remain version 1.0.0-prelaunch before baseline acceptance")
+    if "date-released:" in citation:
+        fail("prelaunch citation metadata must not claim a release date before Public Launch Baseline acceptance")
 
     for required in [
         "VERIFY.md",
