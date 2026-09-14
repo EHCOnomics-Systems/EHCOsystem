@@ -1,55 +1,52 @@
-# C1B OPA comparative proof
+# C1B OPA comparative proof preregistration candidate
 
-Status: **protocol preregistered; official one-shot result complete; independent external reproduction pending.**
+Status: **prelaunch candidate**. No official comparative result exists.
 
-The exact pre-result protocol remains permanently bound to public preregistration identity:
+This package freezes a proposed fair comparison between the accepted EHCOsystem Public Proof Kernel and Open Policy Agent (OPA) v1.20.2. It is designed to become a public preregistration **before** any official result run.
 
-`8a1a05b4865eaefa716e77cbe669e819e7d6e5b3`
-
-The nine files bound by `manifest.json` remain the frozen v1.0.0 comparison protocol. The official result does not mutate that preregistered protocol.
+The comparison does not ask whether EHCO is universally better. It asks what each operand establishes, permits, withholds, records, and makes independently verifiable under the same frozen synthetic scenarios.
 
 ## Frozen operands
 
 - EHCO: `EHCO-PUBLIC-PROOF-KERNEL-PREINTELLIGENCE-GATE-001`, accepted at Git identity `c208cb7cd002d016359f39aba1e3aef3f820befc`.
 - Reference: Open Policy Agent `v1.20.2`, source commit `b2c26708e9d55645d7f837db495031f7e4152594`.
-- Official reference asset: upstream `opa_linux_amd64_static`, SHA-256 `69da5179ee403d10fa11bab6cfb4ffb0d23dba5f9b682fa977db772a1da5670f`.
-- OPA licensing: Apache-2.0. The reference binary is obtained from the official upstream release; EHCOsystem does not redistribute it.
+- Official reference asset for protocol v1.0.0: upstream `opa_linux_amd64_static`, SHA-256 `69da5179ee403d10fa11bab6cfb4ffb0d23dba5f9b682fa977db772a1da5670f`.
+- OPA licensing: Apache-2.0. The reference binary is obtained from the official upstream release; EHCOsystem does not need to redistribute it.
 
 ## Frozen comparison policy
 
-`opa-reference.rego` implements the reference-side decision semantics for the five shared synthetic fixtures using documented OPA policy evaluation. The policy digest remains bound by `manifest.json`.
+`opa-reference.rego` implements the reference-side decision semantics for the five shared synthetic fixtures using documented OPA policy evaluation. The policy digest is bound by `manifest.json`.
 
 Features that are not natively supplied by an operand are classified as `NOT_PROVIDED_WITH_REASON` or as harness-level observations; they are not fabricated as native capability.
 
-## Official result
+## Pre-preregistration qualification
 
-The one-shot official comparison was executed only after the preregistration identity above existed.
+Before this package may cross the public preregistration boundary, the exact candidate must pass:
 
-Official result SHA-256:
+1. manifest and package-integrity validation;
+2. frozen OPA tag/commit/release-asset identity validation;
+3. native OPA parsing of `opa-reference.rego`;
+4. native OPA evaluation of every shared fixture as **qualification-only**, not as the official comparison result;
+5. comparison-harness/failure-accounting checks;
+6. disclosure qualification over the exact candidate plus proposed provider-visible ref and pull-request narrative.
 
-`0010b0f2f0369d9328d34e23d44e7117c038038ce4260a14cb51d0b1ad71e38b`
+The qualification mode is:
 
-Result route:
+```text
+python3 comparison/c1b/v1/run_comparison.py --opa /path/to/opa_linux_amd64_static --qualify-reference --qualification-out qualification.json
+```
 
-[`results/`](results/)
+That qualification output is not an official comparative result.
 
-All five planned cases were retained. Five were recorded, zero were omitted, zero had run failures, and every EHCO receipt verification exited `0`. The five recorded disposition pairs were:
+## Official run boundary
 
-- `C1B-VALID-001`: `PASS` / `PASS`
-- `C1B-MISSING-PERMISSION-001`: `WITHHOLD` / `WITHHOLD`
-- `C1B-ELIGIBILITY-001`: `WITHHOLD` / `WITHHOLD`
-- `C1B-AMBIGUOUS-001`: `RETAIN_AMBIGUITY` / `RETAIN_AMBIGUITY`
-- `C1B-UNSUPPORTED-001`: `UNSUPPORTED_REQUEST` / `UNSUPPORTED_REQUEST`
+An official comparison run is prohibited until the protocol is publicly preregistered at an exact immutable or provider-resolvable identity. The official run must bind that exact identity:
 
-No official case was rerun to obtain a preferred result.
+```text
+python3 comparison/c1b/v1/run_comparison.py --opa /path/to/opa_linux_amd64_static --preregistration-identity <PUBLIC_PREREGISTRATION_IDENTITY> --nonce <FRESH_CHALLENGE> --output-dir comparison-results
+```
 
-## Reproduction
-
-Independent external reproduction is separately required. See:
-
-[`../../../reproduction/INDEPENDENT-REPRODUCTION.md`](../../../reproduction/INDEPENDENT-REPRODUCTION.md)
-
-The required independent reproduction receipt is not yet established.
+All five planned cases must be retained. Failures, timeouts, ambiguity, unsupported cases, OPA advantages, and unfavorable EHCO outcomes may not be silently omitted or rerun into a preferred result.
 
 ## Scope boundary
 
