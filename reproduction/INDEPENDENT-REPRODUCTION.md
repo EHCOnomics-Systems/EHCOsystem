@@ -14,6 +14,20 @@ The reviewer must:
 
 Prior exposure to other EHCOnomics material does not satisfy or defeat this receipt by itself. The reproduction record must state whether any prior private material was actually used for this reproduction and whether any unpublished EHCOnomics intervention was required.
 
+## Exact environment required for a full C1D reproduction
+
+The current frozen comparative protocol uses the official OPA v1.20.2 **Linux x86-64 static** asset. A full C1D reproduction of this exact protocol therefore requires:
+
+- a clean non-EHCOnomics **Linux** execution environment;
+- **x86-64 / amd64** CPU architecture for the frozen OPA asset;
+- **CPython 3.10 or later** for the EHCO public proof and repository validators;
+- independent acquisition of the official `opa_linux_amd64_static` v1.20.2 asset and verification of its frozen SHA-256 before use; and
+- offline evaluation after any required source/reference acquisition.
+
+A materially different operating-system or CPU environment may still produce useful feedback, but it does **not** satisfy the current full C1D reproduction contract unless the frozen protocol itself is separately versioned and changed before the run. Do not silently substitute another OPA platform asset and call it the same reproduction. Record an environment mismatch as a limitation or deviation.
+
+The minimum execution-sufficiency assumptions and exact environment fields to retain are published in `comparison/c1b/v1/environment.json`.
+
 ## Fixed identities
 
 - Public C1B preregistration identity: `8a1a05b4865eaefa716e77cbe669e819e7d6e5b3`
@@ -28,16 +42,24 @@ The preregistration identity is the protocol authority. A later result-publicati
 ## Clean-environment procedure
 
 1. Resolve the public preregistration identity above and inspect `comparison/c1b/v1/`.
-2. Obtain the public repository result-bearing candidate at the exact provider-resolvable revision supplied by the result-publication PR/checkpoint and record that exact Git commit in the receipt.
-3. Run `python3 verification/verify_all_public.py`.
-4. Run the bounded Public Proof Kernel using a reviewer-chosen or locally generated fresh nonce and verify its receipt.
-5. Obtain Open Policy Agent v1.20.2 from the official upstream release.
-6. Verify the OPA Linux x86-64 static binary SHA-256 equals `69da5179ee403d10fa11bab6cfb4ffb0d23dba5f9b682fa977db772a1da5670f`.
-7. Run the published C1B comparison exactly as instructed by the preregistered protocol using a fresh reviewer nonce and retain every outcome.
-8. Do not suppress, replace, or rerun an unfavorable/failed case to obtain a preferred result.
-9. Compare the independently reproduced result to the published original result without treating equality as a prerequisite for recording the reproduction.
-10. Record the environment, commands, public artifact identities, run/result identities, output hashes, every material failure or deviation, and whether unpublished EHCOnomics intervention was required.
-11. Produce the machine-readable reproduction receipt using `reproduction/INDEPENDENT_REPRODUCTION_RECEIPT.schema.json`.
+2. Obtain the public repository result-bearing candidate at the exact provider-resolvable revision supplied by the result-publication PR/checkpoint and record that exact Git commit in the receipt. Do not substitute mutable `main` for the exact target revision.
+3. Confirm the environment satisfies the full-C1D requirements above and record the observed OS, CPU architecture, Python version, OPA version/platform and network state.
+4. Run `python3 verification/verify_all_public.py` and retain its output and exit status.
+5. Run the bounded Public Proof Kernel using a reviewer-chosen or locally generated fresh nonce and verify its receipt.
+6. Obtain Open Policy Agent v1.20.2 independently from the official upstream release.
+7. Verify the OPA Linux x86-64 static binary SHA-256 equals `69da5179ee403d10fa11bab6cfb4ffb0d23dba5f9b682fa977db772a1da5670f`.
+8. Run the published C1B comparison exactly as instructed by the preregistered protocol using a separate fresh reviewer nonce and retain every outcome.
+9. Do not suppress, replace, or rerun an unfavorable/failed case to obtain a preferred result.
+10. Compare the independently reproduced result to the published original result without treating equality as a prerequisite for recording the reproduction.
+11. Record the environment, commands, public artifact identities, run/result identities, output hashes, every material failure or deviation, and whether unpublished EHCOnomics intervention was required.
+12. Produce the machine-readable reproduction receipt using `reproduction/INDEPENDENT_REPRODUCTION_RECEIPT.schema.json`.
+13. Before returning the receipt, run the public structural/self-hash check:
+
+```text
+python3 verification/validate_public_launch_candidate.py --reproduction-receipt /path/to/receipt.json
+```
+
+This check uses only the Python standard library. It validates the published receipt structure and canonical `receipt_sha256` calculation. A passing structural/self-hash check does **not** by itself establish C1D acceptance; the returned receipt still has to satisfy the independence, environment, identity, execution and no-unpublished-intervention requirements.
 
 ## Receipt binding requirements
 
@@ -55,6 +77,15 @@ The receipt schema is intentionally stricter than a narrative checklist. It requ
 - the receipt's own integrity digest.
 
 Record what actually happened. Do not change a false, failed, contaminated, divergent or incomplete observation merely to make the receipt appear successful. Schema validity establishes structural completeness only; it does not by itself establish C1D acceptance.
+
+## Receipt use, privacy and attribution
+
+The reproduction record may become part of the SOW-10 launch evidence if it is accepted for C1D. That does **not** mean the reviewer is endorsing, certifying or validating the proprietary EHCO implementation.
+
+- A reviewer's name, organization, logo, quoted endorsement, or identifying attribution will not be published as part of this route without the reviewer's explicit permission.
+- If attribution is not permitted, the launch evidence may use a privacy-preserving reproduction receipt and disclose only the minimum reviewer description needed to establish independence.
+- Technical failures, deviations and limitations remain part of the evidence and are not removed merely because a privacy-preserving form is used.
+- A reviewer may return feedback that is not eligible for C1D; such feedback remains useful but must not be represented as the mandatory independent reproduction receipt.
 
 ## Receipt SHA-256
 
