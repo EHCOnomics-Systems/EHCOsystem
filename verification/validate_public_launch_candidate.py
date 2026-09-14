@@ -3,8 +3,10 @@
 
 from __future__ import annotations
 
+import argparse
 import hashlib
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -15,14 +17,17 @@ RESULT_SHA256 = "0010b0f2f0369d9328d34e23d44e7117c038038ce4260a14cb51d0b1ad71e38
 RESULT_MANIFEST_SHA256 = "a961891144ff43cf1772bc9bef775eaa723347ec276892a31bcf64a73cffd35c"
 C1_ID = "c208cb7cd002d016359f39aba1e3aef3f820befc"
 
+
 def fail(message: str) -> None:
     raise AssertionError(message)
+
 
 def read(path: str) -> bytes:
     target = ROOT / path
     if not target.is_file():
         fail(f"missing required file: {path}")
     return target.read_bytes()
+
 
 def load(path: str) -> dict:
     try:
@@ -31,21 +36,148 @@ def load(path: str) -> dict:
         fail(f"invalid JSON {path}: {exc}")
     raise AssertionError("unreachable")
 
+
 def sha256_bytes(data: bytes) -> str:
     return hashlib.sha256(data).hexdigest()
 
+
 def sha256(path: str) -> str:
     return sha256_bytes(read(path))
+
 
 def git_blob_sha(path: str) -> str:
     data = read(path)
     return hashlib.sha1(f"blob {len(data)}\0".encode() + data).hexdigest()
 
+
 def require_equal(actual, expected, label: str) -> None:
     if actual != expected:
         fail(f"{label}: expected {expected!r}, got {actual!r}")
 
+
+def _resolve_local_ref(root_schema: dict, ref: str) -> dict:
+    if not ref.startswith("#/"):
+        fail(f"C1D receipt schema uses unsupported non-local reference {ref!r}")
+    current = root_schema
+    for token in ref[2:].split("/"):
+        token = token.replace("~1", "/").replace("~0", "~")
+        if not isinstance(current, dict) or token not in current:
+            fail(f"C1D receipt schema reference cannot be resolved: {ref!r}")
+        current = current[token]
+    if not isinstance(current, dict):
+        fail(f"C1D receipt schema reference does not resolve to an object: {ref!r}")
+    return current
+
+
+def _validate_schema_value(value, schema: dict, root_schema: dict, path: str = "$") -> None:
+    if "$ref" in schema:
+        _validate_schema_value(value, _resolve_local_ref(root_schema, schema["$ref"]), root_schema, path)
+        return
+
+    if "const" in schema and value != schema["const"]:
+        fail(f"C1D receipt {path}: expected constant {schema['const']!r}, got {value!r}")
+    if "enum" in schema and value not in schema["enum"]:
+        fail(f"C1D receipt {path}: value {value!r} is not in {schema['enum']!r}")
+
+    expected_type = schema.get("type")
+    if expected_type == "object":
+        if not isinstance(value, dict):
+            fail(f"C1D receipt {path}: expected object")
+        properties = schema.get("properties", {})
+        for required in schema.get("required", []):
+            if required not in value:
+                fail(f"C1D receipt {path}: missing required property {required!r}")
+        if schema.get("additionalProperties") is False:
+            unexpected = sorted(set(value) - set(properties))
+            if unexpected:
+                fail(f"C1D receipt {path}: unexpected properties {unexpected!r}")
+        for key, child in value.items():
+            if key in properties:
+                _validate_schema_value(child, properties[key], root_schema, f"{path}.{key}")
+        return
+
+    if expected_type == "array":
+        if not isinstance(value, list):
+            fail(f"C1D receipt {path}: expected array")
+        if len(value) < schema.get("minItems", 0):
+            fail(f"C1D receipt {path}: fewer than {schema['minItems']} items")
+        item_schema = schema.get("items")
+        if isinstance(item_schema, dict):
+            for index, item in enumerate(value):
+                _validate_schema_value(item, item_schema, root_schema, f"{path}[{index}]")
+        return
+
+    if expected_type == "string":
+        if not isinstance(value, str):
+            fail(f"C1D receipt {path}: expected string")
+        if len(value) < schema.get("minLength", 0):
+            fail(f"C1D receipt {path}: shorter than minimum length {schema['minLength']}")
+        pattern = schema.get("pattern")
+        if pattern is not None and re.search(pattern, value) is None:
+            fail(f"C1D receipt {path}: value does not match required pattern")
+        return
+
+    if expected_type == "integer":
+        if not isinstance(value, int) or isinstance(value, bool):
+            fail(f"C1D receipt {path}: expected integer")
+        minimum = schema.get("minimum")
+        if minimum is not None and value < minimum:
+            fail(f"C1D receipt {path}: value is below minimum {minimum}")
+        return
+
+    if expected_type == "boolean":
+        if not isinstance(value, bool):
+            fail(f"C1D receipt {path}: expected boolean")
+        return
+
+
+def validate_reproduction_receipt(receipt_path: Path, receipt_schema: dict) -> None:
+    try:
+        raw_text = receipt_path.read_text(encoding="utf-8")
+    except OSError as exc:
+        fail(f"cannot read C1D receipt {receipt_path}: {exc}")
+
+    try:
+        receipt = json.loads(
+            raw_text,
+            parse_constant=lambda value: (_ for _ in ()).throw(
+                ValueError(f"non-standard JSON constant {value!r}")
+            ),
+        )
+    except (json.JSONDecodeError, ValueError) as exc:
+        fail(f"invalid C1D receipt JSON {receipt_path}: {exc}")
+
+    _validate_schema_value(receipt, receipt_schema, receipt_schema)
+
+    claimed = receipt.get("receipt_sha256")
+    payload = dict(receipt)
+    payload.pop("receipt_sha256", None)
+    canonical = json.dumps(
+        payload,
+        sort_keys=True,
+        separators=(",", ":"),
+        ensure_ascii=False,
+        allow_nan=False,
+    ).encode("utf-8")
+    actual = hashlib.sha256(canonical).hexdigest()
+    require_equal(claimed, actual, "C1D receipt canonical self-hash")
+
+
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(
+        description="Validate SOW-10 launch bindings and optionally a returned C1D reproduction receipt."
+    )
+    parser.add_argument(
+        "--reproduction-receipt",
+        type=Path,
+        help="Optional path to a C1D receipt to validate structurally and verify its canonical SHA-256 self-hash.",
+    )
+    return parser.parse_args()
+
+
 def main() -> int:
+    args = parse_args()
+
     prereg_path = "comparison/c1b/v1/manifest.json"
     require_equal(sha256(prereg_path), PREREG_MANIFEST_SHA256, "C1B preregistration manifest SHA-256")
     prereg = load(prereg_path)
@@ -162,7 +294,14 @@ def main() -> int:
     print(f"official_result_sha256={RESULT_SHA256}")
     print("independent_external_reproduction=NOT_ESTABLISHED")
     print("public_launch_baseline_v1=NOT_ACCEPTED")
+
+    if args.reproduction_receipt is not None:
+        validate_reproduction_receipt(args.reproduction_receipt, receipt_schema)
+        print(f"PASS C1D reproduction receipt structure_and_self_hash={args.reproduction_receipt}")
+        print("c1d_acceptance=NOT_ESTABLISHED_BY_STRUCTURAL_RECEIPT_VALIDATION")
+
     return 0
+
 
 if __name__ == "__main__":
     try:
