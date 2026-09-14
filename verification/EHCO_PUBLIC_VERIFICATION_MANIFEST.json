@@ -2,9 +2,9 @@
   "accepted_c1_identity": "c208cb7cd002d016359f39aba1e3aef3f820befc",
   "canonical_human_entrypoint": "VERIFY.md",
   "canonical_verifier": {
-    "child_validator_count": 9,
+    "child_validator_count": 10,
     "execution_command": "python3 verification/verify_all_public.py",
-    "git_blob_sha": "cd90da6ac2eb81f1f1792c99e5a7a2c6da6f4371",
+    "git_blob_sha": "020abd8f6d3430374b97399e4c99e6fa530a5e84",
     "path": "verification/verify_all_public.py",
     "status": "ESTABLISHED_PUBLIC_VERIFIER_ENTRYPOINT"
   },
@@ -31,6 +31,7 @@
     "executable_proof_manifest": "proof/public-kernel/v1/public-proof-manifest.json",
     "independent_reproduction_instructions": "reproduction/INDEPENDENT-REPRODUCTION.md",
     "launch_baseline_manifest": "PUBLIC_LAUNCH_BASELINE.json",
+    "launch_threat_model": "assurance/PUBLIC_LAUNCH_THREAT_MODEL.json",
     "reader_reference": "reference/Home.md"
   },
   "proprietary_implementation_evaluator_class": "NOT_DISTRIBUTED_BY_THIS_PUBLICATION",
