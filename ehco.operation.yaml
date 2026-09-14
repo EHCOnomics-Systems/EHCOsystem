@@ -5,139 +5,76 @@ protocol_reference:
   profile_version: 1.0.0
   protocol_version: 1.0.0
 repository: EHCOnomics-Systems/EHCOsystem
-governed_object: EHCOSYSTEM_C1B_OFFICIAL_RESULT_PUBLICATION_V1
+governed_object: EHCOSYSTEM_SOW010_PUBLIC_LAUNCH_INTEGRITY_REMEDIATION_V1
 source_owner:
   repository: EHCOnomics-Systems/EHCOsystem
-  revision: 3938706f26d1ceaecb9c66e422898a3d52c91846
+  revision: cabbcc730bf3a7e7325f80a2ed7da4c96da910b2
   repository_manifest_path: ehco.repository.yaml
   controlling_source_reference: OWNER_SELECTED_PUBLIC_LAUNCH_SCOPE
 selection:
   selected_by: Edward Henry
   selection_class: EXPLICIT_OWNER_DIRECTION
   durable_reference: |-
-    Edward Henry directed continuation of the already-selected EHCOsystem public-launch operation through the full lawful SOW loop.
-    This bounded PUBLISH operation publishes the exact one-shot C1B official comparison result and its public-safe machine-resolution/reference/reproduction candidate only after the pre-result protocol was publicly preregistered and the official result was preserved.
-    The preregistered nine-file protocol remains frozen. The result publication binds back to that exact pre-result identity and does not rerun or rewrite the official comparison.
+    Edward Henry directed continuation of the already-selected EHCOsystem public-launch SOW after a full audit of SOW-10 against the exact public repository/provider state.
+    This bounded remediation operation corrects only the acceptance blockers established by that audit while preserving the frozen C1B official-result facts, independent-reproduction boundary, proprietary-source boundary, Runtime authority boundary, and accepted standing 52/53.
     SOURCE_MAIN:3938706f26d1ceaecb9c66e422898a3d52c91846
+    AUDITED_PUBLIC_CANDIDATE_HEAD:cabbcc730bf3a7e7325f80a2ed7da4c96da910b2
     C1_ACCEPTED_IDENTITY:c208cb7cd002d016359f39aba1e3aef3f820befc
     C1B_PREREGISTRATION_IDENTITY:8a1a05b4865eaefa716e77cbe669e819e7d6e5b3
     C1B_PROTOCOL_MANIFEST_SHA256:440ae3a567f0d7db29a2c3348d0a7eb296ca5eece0b31a78fb9b58932efba357
     C1B_OFFICIAL_RESULT_SHA256:0010b0f2f0369d9328d34e23d44e7117c038038ce4260a14cb51d0b1ad71e38b
     C1B_PUBLIC_RESULT_MANIFEST_SHA256:a961891144ff43cf1772bc9bef775eaa723347ec276892a31bcf64a73cffd35c
-    C1B_RAW_RUN_CONTEXT_SHA256:68e16581945a3e282735dc7d21a7d85ab69558daad37b18a6be9ead1ad3ecfb7
-    C1B_PUBLIC_RUN_CONTEXT_SHA256:7b4a4fd2fbf1d7b114d640486e28c8c496c23ffb2d968c548b1bd07b4e15018b
-    OFFICIAL_COMPARATIVE_RUN_ATTEMPT_COUNT:1
-    OFFICIAL_COMPARATIVE_RUN_RETRY_PERFORMED=false
-    PRELAUNCH_BASELINE_REQUIRED_BEFORE_PUBLIC_GITHUB_WRITE=true
-    PREPUBLICATION_DISCLOSURE_GATE_REQUIRED=true
-    EXACT_CANDIDATE_CLEARANCE_BINDING_REQUIRED=true
-    PROVIDER_NARRATIVE_PREPUBLICATION_SCAN_REQUIRED=true
-    POST_PUSH_CI_IS_DEFENSE_IN_DEPTH_NOT_CONFIDENTIALITY_BOUNDARY=true
-    PUBLIC_GITHUB_IS_POST_QUALIFICATION_DESTINATION=true
-    OPERATION_STABLE_ENVELOPE_CHANGE=true
-    RAW_RUN_CONTEXT_PUBLICATION_WITHHELD_BY_DISCLOSURE_POLICY=true
-    TECHNICAL_EVIDENCE_DEMOTION=false
-    CLAIM_WEAKENING=false
+    AUDIT_FINDING:C1B_POST_PREREGISTRATION_MANIFEST_BOUND_FILE_MUTATION
+    AUDIT_FINDING:CANONICAL_VERIFIER_LAUNCH_BINDING_COVERAGE_GAP
+    AUDIT_FINDING:LAUNCH_THREAT_MODEL_C1B_COVERAGE_STALE
+    AUDIT_FINDING:PUBLIC_OPERATION_PROJECTION_STALE_AND_CONTRADICTED
+    AUDIT_FINDING:SUPERSEDE_OR_CLOSE_COMPETING_PUBLIC_CLAIM_PR
+    RESTORE_PREREGISTRATION_BYTES=true
+    OFFICIAL_COMPARATIVE_RUN_RERUN=false
+    INDEPENDENT_EXTERNAL_REPRODUCTION_RECEIPT=NOT_ESTABLISHED
     PUBLIC_LAUNCH_BASELINE_ACCEPTANCE=false
     STANDING_CHANGE=false
     RUNTIME_EFFECT=false
     DEPLOYMENT_EFFECT=false
     AUTOMATIC_SUCCESSOR=false
-    NEW_PATH:.github/ISSUE_TEMPLATE/technical-challenge.yml
-    NEW_PATH:CITATION.cff
-    NEW_PATH:PUBLIC_LAUNCH_BASELINE.json
-    NEW_PATH:VERIFY.md
-    NEW_PATH:assurance/AI_EPISTEMIC_RECONSTRUCTION_OBSERVATION.schema.json
-    NEW_PATH:assurance/AI_EPISTEMIC_RECONSTRUCTION_PROTOCOL.json
-    NEW_PATH:comparison/c1b/v1/README.md
-    NEW_PATH:comparison/c1b/v1/environment.json
-    NEW_PATH:comparison/c1b/v1/manifest.json
-    NEW_PATH:comparison/c1b/v1/opa-reference.rego
-    NEW_PATH:comparison/c1b/v1/protocol.json
-    NEW_PATH:comparison/c1b/v1/reference-baseline.json
-    NEW_PATH:comparison/c1b/v1/result-schema.json
-    NEW_PATH:comparison/c1b/v1/results/C1B-AMBIGUOUS-001.ehco.json
-    NEW_PATH:comparison/c1b/v1/results/C1B-AMBIGUOUS-001.opa-input.json
-    NEW_PATH:comparison/c1b/v1/results/C1B-AMBIGUOUS-001.opa-raw.json
-    NEW_PATH:comparison/c1b/v1/results/C1B-ELIGIBILITY-001.ehco.json
-    NEW_PATH:comparison/c1b/v1/results/C1B-ELIGIBILITY-001.opa-input.json
-    NEW_PATH:comparison/c1b/v1/results/C1B-ELIGIBILITY-001.opa-raw.json
-    NEW_PATH:comparison/c1b/v1/results/C1B-MISSING-PERMISSION-001.ehco.json
-    NEW_PATH:comparison/c1b/v1/results/C1B-MISSING-PERMISSION-001.opa-input.json
-    NEW_PATH:comparison/c1b/v1/results/C1B-MISSING-PERMISSION-001.opa-raw.json
-    NEW_PATH:comparison/c1b/v1/results/C1B-UNSUPPORTED-001.ehco.json
-    NEW_PATH:comparison/c1b/v1/results/C1B-UNSUPPORTED-001.opa-input.json
-    NEW_PATH:comparison/c1b/v1/results/C1B-UNSUPPORTED-001.opa-raw.json
-    NEW_PATH:comparison/c1b/v1/results/C1B-VALID-001.ehco.json
-    NEW_PATH:comparison/c1b/v1/results/C1B-VALID-001.opa-input.json
-    NEW_PATH:comparison/c1b/v1/results/C1B-VALID-001.opa-raw.json
-    NEW_PATH:comparison/c1b/v1/results/README.md
-    NEW_PATH:comparison/c1b/v1/results/comparison-result.json
-    NEW_PATH:comparison/c1b/v1/results/official-run-context-public.json
-    NEW_PATH:comparison/c1b/v1/results/official-run-exit.json
-    NEW_PATH:comparison/c1b/v1/results/result-manifest.json
-    NEW_PATH:comparison/c1b/v1/run-plan.json
-    NEW_PATH:comparison/c1b/v1/run_comparison.py
-    NEW_PATH:comparison/c1b/v1/shared-fixtures.json
-    NEW_PATH:reference/Architecture.md
-    NEW_PATH:reference/Comparative-Proof.md
-    NEW_PATH:reference/Diligence-and-Challenge.md
-    NEW_PATH:reference/Home.md
-    NEW_PATH:reference/Proof-and-Verification.md
-    NEW_PATH:reference/Publication-History.md
-    NEW_PATH:reference/Terminology.md
-    NEW_PATH:reproduction/INDEPENDENT-REPRODUCTION.md
-    NEW_PATH:reproduction/INDEPENDENT_REPRODUCTION_RECEIPT.schema.json
-    NEW_PATH:verification/EHCO_PUBLIC_VERIFICATION_MANIFEST.json
+    NEW_PATH:assurance/PUBLIC_LAUNCH_THREAT_MODEL.json
+    NEW_PATH:verification/validate_public_launch_candidate.py
   source_base_revision: 3938706f26d1ceaecb9c66e422898a3d52c91846
   expected_reviewed_head_revision: NOT_APPLICABLE_UNTIL_ACCEPT
 control_anchor: AGENTS.md
 status_owner_path: ehco.operation.yaml
 accepted_standing: 52/53
 active_operation:
-  operation_id: EHCOSYSTEM-C1B-OFFICIAL-RESULT-PUBLISH-001
+  operation_id: EHCOSYSTEM-SOW010-LAUNCH-INTEGRITY-REMEDIATION-001
   state: ACTIVE
   authorization_mode: PUBLISH
-  bounded_outcome: Publish the exact disclosure-cleared one-shot C1B official result and public-safe result-binding candidate
-    on a bounded public branch, obtain exact-head provider qualification, and expose the public instructions required for
-    independent external reproduction without accepting the Public Launch Baseline or creating Runtime, deployment, authority
-    or standing effects.
+  bounded_outcome: Correct the established SOW-10 public-launch acceptance blockers on the existing draft PR #66 candidate by restoring preregistered C1B byte identity, extending canonical verification to the launch candidate estate, adding a launch-level comparative threat/failure model, reconciling the public operation projection, and removing the superseded competing public claim PR surface without accepting Public Launch Baseline v1.
   remaining_bounded_work:
-  - Publish the exact pre-cleared result-bearing candidate on a bounded public branch.
-  - Open the pre-cleared draft pull-request narrative against main.
-  - Obtain exact-head canonical public repository validation.
-  - Obtain exact-head CodeQL validation.
-  - Obtain exact-head EHCO Assistant Operation Gate validation.
-  - Read back the exact candidate commit identity, tree identity, changed-path set and provider state.
-  - Reconcile any in-scope validation defect without mutating the preregistered protocol or rerunning the official comparison.
+  - Restore comparison/c1b/v1/README.md exactly to the public preregistration bytes at 8a1a05b4865eaefa716e77cbe669e819e7d6e5b3.
+  - Add a launch-level public threat/failure model that carries C1/C1A controls forward and explicitly covers C1B baseline drift and asymmetric comparative configuration without mutating the accepted C1 proof package.
+  - Add a dedicated public-launch candidate validator and wire it into verification/verify_all_public.py.
+  - Update machine verification discovery and Public Launch Baseline candidate bindings to the extended verifier/threat-model state.
+  - Reconcile verification documentation with the actual canonical validator set.
+  - Close the superseded competing public claim draft PR #61 while preserving its public history.
+  - Obtain exact-head canonical repository validation, CodeQL, EHCO Assistant Operation Gate, and provider readback for the corrected candidate.
+  - Preserve C1D as NOT_ESTABLISHED until an owning independent external reproduction receipt is received and validated.
   interaction_seams:
-  - The current owner-selected public-launch control owns the wider objective, claim and evidence ceilings, comparative-proof
-    sequence, disclosure boundary, independent-reproduction requirement, and Public Launch Baseline acceptance.
-  - EHCOnomics-Systems/EHCOsystem owns exact public source, Git objects, refs, workflows, pull requests and repository-validation
-    state.
-  - Owning one-shot host evidence owns the official comparative execution/result facts; the public result files preserve or
-    derive only public-safe representations of those facts.
-  - The C1B pre-result protocol remains bound to public preregistration identity 8a1a05b4865eaefa716e77cbe669e819e7d6e5b3.
-  - The accepted C1 Public Proof Kernel remains bound to c208cb7cd002d016359f39aba1e3aef3f820befc.
-  - Independent external reproduction remains separately required and is not created by this publication transport.
+  - The current owner-selected SOW owns the wider objective, claim/evidence ceilings, disclosure boundary, independent-reproduction requirement, launch acceptance sequence, and broader-distribution boundary.
+  - EHCOnomics-Systems/EHCOsystem owns exact public source, Git objects, refs, workflows, pull requests, and repository-validation state.
+  - Public preregistration identity 8a1a05b4865eaefa716e77cbe669e819e7d6e5b3 owns the frozen nine-file C1B pre-result package identity.
+  - Owning one-shot execution evidence owns the official C1B result facts; this remediation may validate and preserve those facts but may not rerun or regenerate them.
+  - Independent external reproduction remains separately required and cannot be created by repository remediation.
   - INSTANTIATED_EHCO_RUNTIME retains Tier One Runtime authority and Runtime state.
   non_overlap:
-  - No destructive history rewrite, repository replacement or provider-control weakening.
-  - No mutation to the nine manifest-bound preregistered C1B protocol files.
-  - No rerun, suppression, replacement or preferred-result regeneration of the official comparison.
-  - The raw owning run-context file is not published because current repository disclosure policy classifies one local context
-    value as a private host locator; its SHA-256 is preserved and a public-safe hash-bound context representation is published
-    instead.
-  - Root README changes are limited to the pre-authored verification/discovery launch overlay; all pre-existing Runtime, Language
-    Model, Range Reactor, evidence, diligence, governance, security and provenance routes remain preserved at their existing
-    evidence ceilings.
-  - No private repository, Drive-control, host, credential, endpoint or protected source locator is added to public source.
-  - No proprietary implementation source is copied or transferred.
-  - No EHCO_PUBLIC_LAUNCH_BASELINE_V1_ACCEPTED receipt is created.
-  - No independent external reproduction receipt is claimed.
+  - No destructive history rewrite, repository replacement, or provider-control weakening.
+  - No semantic mutation of the preregistered nine-file C1B protocol package; the only authorized edit inside that set is byte-for-byte restoration of the mutated README to its preregistered content.
+  - No rerun, suppression, replacement, or preferred-result regeneration of the official comparison.
+  - No mutation of accepted C1 proof-kernel package bytes or their accepted identity.
+  - No private repository, Drive-control route, credential, endpoint, protected host locator, or proprietary implementation source may be added to public source.
+  - No EHCO_PUBLIC_LAUNCH_BASELINE_V1_ACCEPTED receipt, tag, release, or publication checkpoint is created in this remediation.
+  - No independent external reproduction receipt is claimed or synthesized.
   - No standing change from 52/53.
-  - No Runtime, deployment, production, release, authority, admission, participation or persistence effect.
-  - No open-source conversion or proprietary implementation-source publication.
+  - No Runtime, deployment, production, release, authority, admission, participation, or persistence effect.
   - No automatic successor.
   automatic_successor: PROHIBITED
   successor_operation: NOT_SELECTED
@@ -153,103 +90,25 @@ execution_continuity:
   local_override: MAY_TIGHTEN_NOT_WEAKEN
 scope:
   permitted_paths:
-  - .github/ISSUE_TEMPLATE/technical-challenge.yml
-  - CITATION.cff
   - PUBLIC_LAUNCH_BASELINE.json
-  - README.md
   - VERIFY.md
-  - assurance/AI_EPISTEMIC_RECONSTRUCTION_OBSERVATION.schema.json
-  - assurance/AI_EPISTEMIC_RECONSTRUCTION_PROTOCOL.json
+  - assurance/PUBLIC_LAUNCH_THREAT_MODEL.json
   - comparison/c1b/v1/README.md
-  - comparison/c1b/v1/environment.json
-  - comparison/c1b/v1/manifest.json
-  - comparison/c1b/v1/opa-reference.rego
-  - comparison/c1b/v1/protocol.json
-  - comparison/c1b/v1/reference-baseline.json
-  - comparison/c1b/v1/result-schema.json
-  - comparison/c1b/v1/results/C1B-AMBIGUOUS-001.ehco.json
-  - comparison/c1b/v1/results/C1B-AMBIGUOUS-001.opa-input.json
-  - comparison/c1b/v1/results/C1B-AMBIGUOUS-001.opa-raw.json
-  - comparison/c1b/v1/results/C1B-ELIGIBILITY-001.ehco.json
-  - comparison/c1b/v1/results/C1B-ELIGIBILITY-001.opa-input.json
-  - comparison/c1b/v1/results/C1B-ELIGIBILITY-001.opa-raw.json
-  - comparison/c1b/v1/results/C1B-MISSING-PERMISSION-001.ehco.json
-  - comparison/c1b/v1/results/C1B-MISSING-PERMISSION-001.opa-input.json
-  - comparison/c1b/v1/results/C1B-MISSING-PERMISSION-001.opa-raw.json
-  - comparison/c1b/v1/results/C1B-UNSUPPORTED-001.ehco.json
-  - comparison/c1b/v1/results/C1B-UNSUPPORTED-001.opa-input.json
-  - comparison/c1b/v1/results/C1B-UNSUPPORTED-001.opa-raw.json
-  - comparison/c1b/v1/results/C1B-VALID-001.ehco.json
-  - comparison/c1b/v1/results/C1B-VALID-001.opa-input.json
-  - comparison/c1b/v1/results/C1B-VALID-001.opa-raw.json
-  - comparison/c1b/v1/results/README.md
-  - comparison/c1b/v1/results/comparison-result.json
-  - comparison/c1b/v1/results/official-run-context-public.json
-  - comparison/c1b/v1/results/official-run-exit.json
-  - comparison/c1b/v1/results/result-manifest.json
-  - comparison/c1b/v1/run-plan.json
-  - comparison/c1b/v1/run_comparison.py
-  - comparison/c1b/v1/shared-fixtures.json
   - ehco.operation.yaml
-  - reference/Architecture.md
-  - reference/Comparative-Proof.md
-  - reference/Diligence-and-Challenge.md
-  - reference/Home.md
-  - reference/Proof-and-Verification.md
-  - reference/Publication-History.md
-  - reference/Terminology.md
-  - reproduction/INDEPENDENT-REPRODUCTION.md
-  - reproduction/INDEPENDENT_REPRODUCTION_RECEIPT.schema.json
   - verification/EHCO_PUBLIC_VERIFICATION_MANIFEST.json
+  - verification/README.md
+  - verification/validate_public_launch_candidate.py
+  - verification/verify_all_public.py
   controlled_paths:
-  - .github/ISSUE_TEMPLATE/technical-challenge.yml
-  - CITATION.cff
   - PUBLIC_LAUNCH_BASELINE.json
-  - README.md
   - VERIFY.md
-  - assurance/AI_EPISTEMIC_RECONSTRUCTION_OBSERVATION.schema.json
-  - assurance/AI_EPISTEMIC_RECONSTRUCTION_PROTOCOL.json
+  - assurance/PUBLIC_LAUNCH_THREAT_MODEL.json
   - comparison/c1b/v1/README.md
-  - comparison/c1b/v1/environment.json
-  - comparison/c1b/v1/manifest.json
-  - comparison/c1b/v1/opa-reference.rego
-  - comparison/c1b/v1/protocol.json
-  - comparison/c1b/v1/reference-baseline.json
-  - comparison/c1b/v1/result-schema.json
-  - comparison/c1b/v1/results/C1B-AMBIGUOUS-001.ehco.json
-  - comparison/c1b/v1/results/C1B-AMBIGUOUS-001.opa-input.json
-  - comparison/c1b/v1/results/C1B-AMBIGUOUS-001.opa-raw.json
-  - comparison/c1b/v1/results/C1B-ELIGIBILITY-001.ehco.json
-  - comparison/c1b/v1/results/C1B-ELIGIBILITY-001.opa-input.json
-  - comparison/c1b/v1/results/C1B-ELIGIBILITY-001.opa-raw.json
-  - comparison/c1b/v1/results/C1B-MISSING-PERMISSION-001.ehco.json
-  - comparison/c1b/v1/results/C1B-MISSING-PERMISSION-001.opa-input.json
-  - comparison/c1b/v1/results/C1B-MISSING-PERMISSION-001.opa-raw.json
-  - comparison/c1b/v1/results/C1B-UNSUPPORTED-001.ehco.json
-  - comparison/c1b/v1/results/C1B-UNSUPPORTED-001.opa-input.json
-  - comparison/c1b/v1/results/C1B-UNSUPPORTED-001.opa-raw.json
-  - comparison/c1b/v1/results/C1B-VALID-001.ehco.json
-  - comparison/c1b/v1/results/C1B-VALID-001.opa-input.json
-  - comparison/c1b/v1/results/C1B-VALID-001.opa-raw.json
-  - comparison/c1b/v1/results/README.md
-  - comparison/c1b/v1/results/comparison-result.json
-  - comparison/c1b/v1/results/official-run-context-public.json
-  - comparison/c1b/v1/results/official-run-exit.json
-  - comparison/c1b/v1/results/result-manifest.json
-  - comparison/c1b/v1/run-plan.json
-  - comparison/c1b/v1/run_comparison.py
-  - comparison/c1b/v1/shared-fixtures.json
   - ehco.operation.yaml
-  - reference/Architecture.md
-  - reference/Comparative-Proof.md
-  - reference/Diligence-and-Challenge.md
-  - reference/Home.md
-  - reference/Proof-and-Verification.md
-  - reference/Publication-History.md
-  - reference/Terminology.md
-  - reproduction/INDEPENDENT-REPRODUCTION.md
-  - reproduction/INDEPENDENT_REPRODUCTION_RECEIPT.schema.json
   - verification/EHCO_PUBLIC_VERIFICATION_MANIFEST.json
+  - verification/README.md
+  - verification/validate_public_launch_candidate.py
+  - verification/verify_all_public.py
   prohibited_paths:
   - ehco.repository.yaml
   - NOTICE.md
@@ -263,6 +122,17 @@ scope:
   - runtime/**
   - dossiers/**
   - publication/**
+  - proof/public-kernel/v1/**
+  - comparison/c1b/v1/environment.json
+  - comparison/c1b/v1/manifest.json
+  - comparison/c1b/v1/opa-reference.rego
+  - comparison/c1b/v1/protocol.json
+  - comparison/c1b/v1/reference-baseline.json
+  - comparison/c1b/v1/result-schema.json
+  - comparison/c1b/v1/run-plan.json
+  - comparison/c1b/v1/run_comparison.py
+  - comparison/c1b/v1/shared-fixtures.json
+  - comparison/c1b/v1/results/**
 change_control:
   control_change_declared: true
   delete_or_move_authorized: false
@@ -278,10 +148,10 @@ change_control:
   - delete_file
   - generate_artifact
   remote_actions_authorized:
-  - create_branch
   - commit
   - push
-  - open_draft_pull_request
+  - create_file
+  - update_file
   - update_draft_pull_request
   remote_actions_prohibited:
   - mark_pull_request_ready_for_review
@@ -308,7 +178,7 @@ effects:
   external_effect: NONE
 bridge:
   applicability: NOT_APPLICABLE_NON_PARTICIPANT
-  non_applicability_reason: Public comparative-result publication does not establish Tier One Runtime participation.
+  non_applicability_reason: Public launch-integrity remediation does not establish Tier One Runtime participation.
   direct_invocation: PROHIBITED
   runtime_admission_status: NOT_ESTABLISHED
   participation_binding_status: NOT_ESTABLISHED
@@ -316,36 +186,30 @@ bridge:
 evidence:
   evidence_class: REPOSITORY_SOURCE_AND_DIFF_VALIDATION
   required_checks:
-  - Pre-publication disclosure qualification must cover the exact result-bearing candidate bytes, paths, commit message, public
-    ref and provider narrative before provider write.
-  - The nine manifest-bound C1B protocol files must remain byte-identical to preregistration identity 8a1a05b4865eaefa716e77cbe669e819e7d6e5b3.
-  - The exact official comparison result SHA-256 must remain 0010b0f2f0369d9328d34e23d44e7117c038038ce4260a14cb51d0b1ad71e38b.
-  - All five planned official cases and their public-safe raw outputs must remain represented without omission.
-  - The raw owning run-context SHA-256 must remain 68e16581945a3e282735dc7d21a7d85ab69558daad37b18a6be9ead1ad3ecfb7 and must
-    not cross the public disclosure boundary while the structural finding remains.
-  - Root README must preserve the existing established technical routes and add only the cleared verification/discovery launch
-    overlay with Public Launch Baseline v1 explicitly not accepted.
-  - Canonical public repository validation must pass on the exact reviewed candidate head.
-  - CodeQL must pass on the exact reviewed candidate head.
-  - EHCO Assistant Operation Gate must pass on the exact reviewed candidate head.
-  - Public source must contain no real protected locator values or proprietary implementation source.
+  - The nine manifest-bound C1B protocol files must be byte-identical to preregistration identity 8a1a05b4865eaefa716e77cbe669e819e7d6e5b3 after restoration.
+  - The exact official comparison result SHA-256 must remain 0010b0f2f0369d9328d34e23d44e7117c038038ce4260a14cb51d0b1ad71e38b and no official rerun may occur.
+  - The canonical public verifier must validate C1B preregistration package integrity, official result-manifest closure, machine verification discovery, launch-baseline candidate cross-bindings, reproduction contract state, launch-level threat-model coverage, and required public routes.
+  - The launch-level threat/failure model must explicitly cover static replay, artifact/fixture substitution, post-result protocol drift, hidden dependency, reference-baseline drift, asymmetric comparative configuration, selective result omission, integrity bypass, and claim-scope inflation with controls or disclosed limitations.
+  - Machine-readable verification discovery and Public Launch Baseline candidate hashes must match the exact corrected verifier/threat-model bytes.
+  - Independent external reproduction must remain NOT_ESTABLISHED until owning reviewer evidence is received and validated.
+  - Canonical public repository validation must pass on the exact corrected candidate head.
+  - CodeQL must pass on the exact corrected candidate head.
+  - EHCO Assistant Operation Gate must pass on the exact corrected candidate head.
+  - Public source must contain no protected private locator values or proprietary implementation source.
   - Accepted numerical standing must remain 52/53.
   proves:
-  - Public provider publication of the exact C1B official result and result-binding candidate if the selected exact head qualifies.
-  - The official result remains bound to the immutable pre-result preregistration identity and is publicly resolvable without
-    publishing protected host context.
+  - The corrected public launch candidate closes the established repository-integrity and canonical-verifier acceptance blockers if the exact reviewed head qualifies.
+  - The official C1B result remains bound to the immutable pre-result preregistration identity without rewriting the official result.
+  - Launch-level threat/failure coverage is explicit without mutating the accepted C1 proof package.
   evidence_not_created:
   - Independent external third-party reproduction receipt
   - EHCO_PUBLIC_LAUNCH_BASELINE_V1_ACCEPTED
+  - Final provider tag or Release checkpoint
   - New Runtime realization or current Runtime-state observation
-  - Deployment, production, release, authority, standing, admission or participation effect
+  - Deployment, production, release, authority, standing, admission, or participation effect
   - Any successor operation
 stop_condition:
-- Stop this bounded PUBLISH phase only after the exact result-bearing candidate is provider-resolvable, exact-head required
-  checks are reconciled, and its immutable Git identity is read back.
-- Do not mark Ready, merge, release, deploy, invoke Runtime, mutate authority or standing, issue Public Launch Baseline v1
-  acceptance, or activate a successor in this bounded operation.
-- Do not mutate the preregistered nine-file C1B protocol set or rerun the one-shot official comparison.
-- Do not weaken repository rulesets or use a provider route to bypass the pre-publication control.
-- Preserve accepted standing 52/53 and all Runtime, deployment, release, authority, standing, participation and successor
-  effects as NONE or not established as applicable.
+- Stop this remediation phase only after the exact corrected PR #66 head is provider-resolvable, the superseded competing public claim PR #61 is closed, and all required exact-head provider checks are reconciled.
+- Do not mark PR #66 Ready, merge it, release, deploy, invoke Runtime, mutate authority or standing, issue Public Launch Baseline v1 acceptance, execute post-C1D discovery/reconstruction, or activate a successor in this remediation.
+- Preserve the C1B preregistered package by restoring the README to preregistered bytes and prohibiting further mutation to the nine-file frozen set.
+- Preserve accepted standing 52/53 and all Runtime, deployment, release, authority, standing, participation, and successor effects as NONE or not established as applicable.
