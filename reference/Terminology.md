@@ -27,4 +27,4 @@ Controlled implementation source and mechanics that have not been selected for p
 A bounded, intentionally public computation that lets an independent reviewer test a published proposition without receiving proprietary implementation source.
 
 ## Public Launch Baseline v1
-The exact public publication checkpoint that will be established only after the applicable SOW-10 launch gates pass. It has not yet been accepted while this repository remains a prelaunch candidate.
+The exact public publication checkpoint that will be established only after the applicable launch gates pass. It has not yet been accepted while this repository remains a prelaunch candidate.
