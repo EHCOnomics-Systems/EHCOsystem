@@ -36,8 +36,11 @@ This page records the public proof and publication sequence without treating lat
 The provider checkpoint is a public technical/evidence publication object. It is not deployment, Runtime realization, standing change, authority change, open-source conversion, proprietary-source distribution, or independent certification.
 
 ## Public Launch Baseline v1
-Public Launch Baseline v1 is bound to the immutable provider checkpoint above. Authoritative acceptance state is the copy of [`EHCO_PUBLIC_LAUNCH_BASELINE_V1_ACCEPTED.json`](../EHCO_PUBLIC_LAUNCH_BASELINE_V1_ACCEPTED.json) established on canonical `main` through the governed ACCEPT lifecycle; a copy on a non-canonical branch or candidate commit does not itself originate acceptance.
+**Public Launch Baseline v1 is accepted** and is bound to the immutable provider checkpoint above. Authoritative acceptance state is the copy of [`EHCO_PUBLIC_LAUNCH_BASELINE_V1_ACCEPTED.json`](../EHCO_PUBLIC_LAUNCH_BASELINE_V1_ACCEPTED.json) established on canonical `main` through the governed ACCEPT lifecycle.
 
-Independent external reproduction remains `NOT_ESTABLISHED / OPTIONAL_SUPPLEMENTAL_EVIDENCE`, is not a blocking gate under the owner-amended SOW-10 standard, and is not represented as independent certification.
+## Optional external corroboration
+The public clean-environment reproduction route is available at [`reproduction/INDEPENDENT-REPRODUCTION.md`](../reproduction/INDEPENDENT-REPRODUCTION.md). Baseline v1 does not include a third-party reproduction receipt, so no third-party certification or external corroboration is claimed. A qualifying later reproduction may augment the continuing evidence lineage as a separate supplemental evidence class; it is not an unresolved validation or launch requirement.
+
+Historical proof/comparison artifacts retain their exact event-time provenance. Earlier event-time wording about external reproduction does not supersede the current accepted Baseline v1 state or convert optional corroboration into a present blocking gate.
 
 The machine-readable baseline binding is [`PUBLIC_LAUNCH_BASELINE.json`](../PUBLIC_LAUNCH_BASELINE.json).
