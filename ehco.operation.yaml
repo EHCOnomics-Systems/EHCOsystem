@@ -8,65 +8,74 @@ repository: EHCOnomics-Systems/EHCOsystem
 governed_object: EHCOSYSTEM_SOW010_PUBLIC_LAUNCH_INTEGRITY_REMEDIATION_V1
 source_owner:
   repository: EHCOnomics-Systems/EHCOsystem
-  revision: bdc333f530f73bdeb636c5e88126939a7fb18967
+  revision: 547843798cadd548251b03a7ee1343423a2e1da9
   repository_manifest_path: ehco.repository.yaml
   controlling_source_reference: OWNER_SELECTED_PUBLIC_LAUNCH_SCOPE
 selection:
   selected_by: Edward Henry
   selection_class: EXPLICIT_OWNER_DIRECTION
   durable_reference: |-
-    Post-merge canonical-main readback established one bounded MUST_FIX_BEFORE_ACCEPTANCE public-semantics defect: current reader-facing launch surfaces still described C1D independent external reproduction as mandatory after Edward's amendment made C1D OPTIONAL_SUPPLEMENTAL and non-blocking for Public Launch Baseline v1 acceptance.
-    The exact corrective PUBLISH head f98faa2385a1d728f44a9fe999644a1e93d93ca0 is fully qualified: repository validation PASS, CodeQL PASS, and EHCO Assistant Operation Gate PASS. This operation-record-only transition advances that exact reviewed correction to ACCEPT.
+    Edward Henry directed continuation of the owner-amended SOW-10 public-launch plan through the remaining provider-visible Public Launch Baseline v1 checkpoint. Workstreams L and M are established in the selected scope. C1D independent external reproduction remains NOT_ESTABLISHED / OPTIONAL_SUPPLEMENTAL and non-blocking.
+    The exact Workstream N PUBLISH head 4cf88953950ad8cb377fbaf063debd1b18d5ee7f is fully qualified: canonical public repository validation PASS, CodeQL PASS, and EHCO Assistant Operation Gate PASS. This operation-record-only transition advances that reviewed provider-checkpoint operation to ACCEPT.
     OPERATION_STABLE_ENVELOPE_CHANGE=true
-    SOURCE_MAIN:bdc333f530f73bdeb636c5e88126939a7fb18967
-    REVIEWED_PUBLISH_HEAD:f98faa2385a1d728f44a9fe999644a1e93d93ca0
+    SOURCE_MAIN:547843798cadd548251b03a7ee1343423a2e1da9
+    REVIEWED_PUBLISH_HEAD:4cf88953950ad8cb377fbaf063debd1b18d5ee7f
+    WORKSTREAM_L_STATUS=ESTABLISHED
+    WORKSTREAM_M_STATUS=ESTABLISHED
     C1_ACCEPTED_IDENTITY:c208cb7cd002d016359f39aba1e3aef3f820befc
     C1B_PREREGISTRATION_IDENTITY:8a1a05b4865eaefa716e77cbe669e819e7d6e5b3
+    C1B_PROTOCOL_MANIFEST_SHA256:440ae3a567f0d7db29a2c3348d0a7eb296ca5eece0b31a78fb9b58932efba357
     C1B_OFFICIAL_RESULT_SHA256:0010b0f2f0369d9328d34e23d44e7117c038038ce4260a14cb51d0b1ad71e38b
+    C1B_PUBLIC_RESULT_MANIFEST_SHA256:a961891144ff43cf1772bc9bef775eaa723347ec276892a31bcf64a73cffd35c
     INDEPENDENT_EXTERNAL_REPRODUCTION_RECEIPT=NOT_ESTABLISHED
     C1D_EXTERNAL_REPRODUCTION_CLASS=OPTIONAL_SUPPLEMENTAL_EVIDENCE
     C1D_ABSENCE_BLOCKS_BASELINE_ACCEPTANCE=false
     C1D_ABSENCE_BLOCKS_PROMOTION=false
-    MUST_FIX_BEFORE_ACCEPTANCE_CURRENT_COUNT=0
+    PROVIDER_CHECKPOINT_TARGET_REVISION=BOUND_BY_POST_MERGE_CANONICAL_MAIN
+    PROVIDER_TAG_NAME=v1.0.0-public
+    PROVIDER_RELEASE_TITLE=EHCOsystem Public Architecture and Evidence Baseline v1.0.0
+    PROVIDER_TAG_OR_RELEASE_CHECKPOINT=NOT_ESTABLISHED
     PUBLIC_LAUNCH_BASELINE_ACCEPTANCE=false
     OFFICIAL_COMPARATIVE_RUN_RERUN=false
     STANDING_CHANGE=false
     RUNTIME_EFFECT=false
     DEPLOYMENT_EFFECT=false
     AUTOMATIC_SUCCESSOR=false
-  source_base_revision: bdc333f530f73bdeb636c5e88126939a7fb18967
-  expected_reviewed_head_revision: f98faa2385a1d728f44a9fe999644a1e93d93ca0
+  source_base_revision: 547843798cadd548251b03a7ee1343423a2e1da9
+  expected_reviewed_head_revision: 4cf88953950ad8cb377fbaf063debd1b18d5ee7f
 control_anchor: AGENTS.md
 status_owner_path: ehco.operation.yaml
 accepted_standing: 52/53
 active_operation:
-  operation_id: EHCOSYSTEM-SOW010-WORKSTREAM-L-RECONSTRUCTION-001
+  operation_id: EHCOSYSTEM-SOW010-LAUNCH-INTEGRITY-REMEDIATION-001
   state: ACTIVE
   authorization_mode: ACCEPT
-  bounded_outcome: Accept the exact reviewed C1D public-semantics correction through the pull-request lifecycle, then return to Workstream N provider-checkpoint binding without claiming baseline acceptance before the required provider-visible checkpoint exists.
+  bounded_outcome: Accept the exact reviewed Workstream N provider-checkpoint operation through the pull-request lifecycle and bind the resulting canonical main revision as the source target for the separately controlled REALIZE provider-checkpoint phase. Do not create the provider tag/Release or declare EHCO_PUBLIC_LAUNCH_BASELINE_V1_ACCEPTED in this ACCEPT phase.
   remaining_bounded_work:
-    - Verify this ACCEPT transition changes only ehco.operation.yaml relative to reviewed PUBLISH head f98faa2385a1d728f44a9fe999644a1e93d93ca0 and exact-head required checks pass.
-    - Mark PR #67 ready only after exact-head gate readback succeeds.
-    - Squash-merge PR #67 to canonical main with exact expected head and read back the resulting main revision.
-    - Re-audit current reader-facing C1D semantics from canonical main and establish zero remaining current-state mandatory-gate contradiction.
-    - Resume Workstream N provider publication checkpoint binding only after corrected main is established.
-    - Preserve C1D as NOT_ESTABLISHED / OPTIONAL_SUPPLEMENTAL unless qualifying external evidence is later received.
+    - Verify this ACCEPT transition changes only ehco.operation.yaml relative to reviewed PUBLISH head 4cf88953950ad8cb377fbaf063debd1b18d5ee7f and exact-head required checks pass.
+    - Mark PR #68 ready only after exact-head gate readback succeeds.
+    - Squash-merge PR #68 to canonical main with the exact expected ACCEPT head and read back the resulting canonical main revision.
+    - Preserve registered provider tag v1.0.0-public and registered Release title EHCOsystem Public Architecture and Evidence Baseline v1.0.0 as the next provider-checkpoint identities.
+    - After merge/readback, transition the operation projection separately to REALIZE for the bounded provider tag/Release materialization against that exact canonical main revision.
+    - Keep C1D NOT_ESTABLISHED / OPTIONAL_SUPPLEMENTAL and disclose that no independent certification or third-party corroboration is established.
+    - Do not record Public Launch Baseline v1 acceptance until the later REALIZE provider checkpoint exists and has been independently read back and bound.
   interaction_seams:
-    - Drive-owned SOW-10 and the owner C1D amendment own current launch acceptance meaning.
-    - Exact reviewed correction head f98faa2385a1d728f44a9fe999644a1e93d93ca0 owns the qualified current-surface correction bytes.
-    - GitHub owns PR lifecycle, merge result and canonical main identity.
-    - Historical accepted C1 proof artifacts retain their event-time wording and are not rewritten by this correction.
-    - Provider tag/GitHub Release checkpoint remains a later Workstream N publication effect and is not created by this ACCEPT transition.
+    - Drive-owned SOW-10 and its owner C1D amendment own public-launch acceptance meaning and the requirement for a provider-visible publication checkpoint.
+    - EHCOnomics-Systems/EHCOsystem owns exact public source, Git objects, refs, workflow state, canonical main identity, registered release identity, tag identity and GitHub Release state.
+    - releases/PUBLIC-RELEASE-REGISTER.md owns the repository-registered provider publication identity v1.0.0-public / EHCOsystem Public Architecture and Evidence Baseline v1.0.0; provider materialization remains distinct until GitHub exposes the corresponding tag and Release objects.
+    - PUBLIC_LAUNCH_BASELINE.json remains the machine-readable candidate manifest and must remain RESULT_PUBLICATION_CANDIDATE_NOT_ACCEPTED until post-checkpoint acceptance binding.
+    - The provider tag and GitHub Release are public technical/evidence publication checkpoint objects only; they do not create software deployment, Runtime realization, Runtime authority, standing change or independent certification.
     - INSTANTIATED_EHCO_RUNTIME retains Tier One Runtime authority and Runtime state.
   non_overlap:
-    - No substantive correction bytes change in this ACCEPT transition; only ehco.operation.yaml changes.
+    - No substantive public technical/evidence bytes change in this ACCEPT transition; only ehco.operation.yaml changes relative to the reviewed PUBLISH head.
     - No mutation to proof/public-kernel/v1 historical accepted proof artifacts.
     - No mutation to frozen C1B preregistration or official comparative result.
+    - No official comparison rerun, suppression, replacement or preferred-result regeneration.
     - No independent external reproduction receipt is claimed.
-    - No Public Launch Baseline v1 acceptance is issued before provider checkpoint readback.
-    - No proprietary implementation source transfer.
+    - No provider tag or GitHub Release is created in this ACCEPT phase.
+    - No EHCO_PUBLIC_LAUNCH_BASELINE_V1_ACCEPTED receipt is created before provider checkpoint readback.
     - No standing change from 52/53.
-    - No Runtime, deployment, production, authority, admission or participation effect.
+    - No Runtime, deployment, production, authority, admission, participation or proprietary-source-transfer effect.
     - No broader distribution and no automatic successor.
   automatic_successor: PROHIBITED
   successor_operation: NOT_SELECTED
@@ -82,23 +91,19 @@ execution_continuity:
   local_override: MAY_TIGHTEN_NOT_WEAKEN
 scope:
   permitted_paths:
-    - README.md
-    - VERIFY.md
-    - assurance/PUBLIC_LAUNCH_THREAT_MODEL.json
     - ehco.operation.yaml
-    - reproduction/INDEPENDENT-REPRODUCTION.md
-    - PUBLIC_LAUNCH_BASELINE.json
   controlled_paths:
-    - README.md
-    - VERIFY.md
-    - assurance/PUBLIC_LAUNCH_THREAT_MODEL.json
     - ehco.operation.yaml
-    - reproduction/INDEPENDENT-REPRODUCTION.md
-    - PUBLIC_LAUNCH_BASELINE.json
   prohibited_paths:
     - ehco.repository.yaml
     - proof/public-kernel/v1/**
     - comparison/c1b/v1/**
+    - README.md
+    - VERIFY.md
+    - PUBLIC_LAUNCH_BASELINE.json
+    - assurance/**
+    - reference/**
+    - reproduction/**
     - architecture/**
     - evidence/**
     - language-model/**
@@ -150,7 +155,7 @@ effects:
   external_effect: NONE
 bridge:
   applicability: NOT_APPLICABLE_NON_PARTICIPANT
-  non_applicability_reason: Public launch wording correction acceptance does not establish Tier One Runtime participation.
+  non_applicability_reason: Public technical/evidence publication checkpoint preparation does not establish Tier One Runtime participation.
   direct_invocation: PROHIBITED
   runtime_admission_status: NOT_ESTABLISHED
   participation_binding_status: NOT_ESTABLISHED
@@ -158,25 +163,27 @@ bridge:
 evidence:
   evidence_class: REPOSITORY_SOURCE_AND_DIFF_VALIDATION
   required_checks:
-    - Exact reviewed PUBLISH correction head f98faa2385a1d728f44a9fe999644a1e93d93ca0 has repository validation PASS, CodeQL PASS and EHCO Assistant Operation Gate PASS.
-    - This ACCEPT transition changes only ehco.operation.yaml relative to the exact reviewed correction head.
-    - Current README, VERIFY and independent-reproduction instructions describe C1D as NOT_ESTABLISHED / OPTIONAL_SUPPLEMENTAL and non-blocking for Public Launch Baseline v1 acceptance.
-    - Launch threat model preserves freshness/integrity controls and exposes the optional-supplemental C1D classification.
-    - PUBLIC_LAUNCH_BASELINE.json binds the corrected threat-model SHA-256 while retaining candidate-not-accepted state.
+    - Exact reviewed PUBLISH head 4cf88953950ad8cb377fbaf063debd1b18d5ee7f has canonical public repository validation PASS, CodeQL PASS and EHCO Assistant Operation Gate PASS.
+    - This ACCEPT transition changes only ehco.operation.yaml relative to exact reviewed PUBLISH head 4cf88953950ad8cb377fbaf063debd1b18d5ee7f.
+    - The registered provider tag name v1.0.0-public and registered Release title EHCOsystem Public Architecture and Evidence Baseline v1.0.0 remain unchanged from the canonical public publication register.
+    - Final provider checkpoint source target is the exact canonical main revision returned after PR #68 merge and provider readback.
+    - PUBLIC_LAUNCH_BASELINE.json remains candidate-not-accepted until post-checkpoint acceptance binding.
+    - C1D remains NOT_ESTABLISHED / OPTIONAL_SUPPLEMENTAL and no independent certification is claimed.
     - Frozen proof/comparison identities and official result SHA-256 remain unchanged and no rerun occurs.
     - Accepted numerical standing remains 52/53.
   proves:
-    - The current-state C1D semantics defect was corrected and fully qualified before acceptance lifecycle actions.
-    - Acceptance of this corrective PR does not itself create the Public Launch Baseline provider checkpoint or final baseline acceptance.
+    - The exact reviewed Workstream N transition is accepted before the separately controlled REALIZE provider-publication phase.
+    - The post-merge canonical main revision can be used as the exact source target for the later provider checkpoint.
+    - Provider checkpoint creation remains distinct from final EHCO_PUBLIC_LAUNCH_BASELINE_V1_ACCEPTED determination.
   evidence_not_created:
-    - Independent external reproduction receipt
     - Provider tag or GitHub Release checkpoint
+    - Independent external reproduction receipt
     - EHCO_PUBLIC_LAUNCH_BASELINE_V1_ACCEPTED receipt
     - Runtime, deployment, authority, standing, admission or participation effect
     - Broader distribution completion
     - Any successor operation
 stop_condition:
-  - Stop if this operation-record-only ACCEPT transition fails exact-head checks or PR #67 no longer resolves to the expected reviewed correction object set.
-  - After successful merge, resume Workstream N but do not claim Public Launch Baseline v1 acceptance unless the required provider-visible publication checkpoint is actually materialized and read back.
+  - Stop if this operation-record-only ACCEPT transition fails exact-head checks or PR #68 no longer resolves to the expected reviewed PUBLISH object set plus only this operation-record delta.
+  - After successful merge/readback, transition separately to REALIZE for the bounded provider tag/Release checkpoint; do not create those provider objects under ACCEPT.
   - Preserve C1D as NOT_ESTABLISHED / OPTIONAL_SUPPLEMENTAL unless qualifying external evidence is actually received.
   - Do not deploy, invoke Runtime, mutate authority or standing, distribute broadly before baseline acceptance, or activate a successor.
