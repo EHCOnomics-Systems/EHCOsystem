@@ -1,0 +1,69 @@
+{
+  "authority_effect": "NONE",
+  "baseline_id": "EHCO_PUBLIC_LAUNCH_BASELINE_V1",
+  "canonical_public_claim_registry": {
+    "current_public_blob_sha_at_design": "ac13018c64a20a73ce87125620a2abc036b9972d",
+    "path": "assurance/PUBLIC-CLAIM-REGISTRY.json"
+  },
+  "citation_identity": "CITATION.cff",
+  "claim_evidence_matrix": {
+    "current_public_blob_sha_at_design": "4e27ac92c7e0d43df28f895ff92426cfd89b0c72",
+    "path": "assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md"
+  },
+  "comparative_proof": {
+    "candidate_manifest_sha256": "440ae3a567f0d7db29a2c3348d0a7eb296ca5eece0b31a78fb9b58932efba357",
+    "official_result_manifest_identity": {
+      "path": "comparison/c1b/v1/results/result-manifest.json",
+      "sha256": "a961891144ff43cf1772bc9bef775eaa723347ec276892a31bcf64a73cffd35c"
+    },
+    "official_result_sha256": "0010b0f2f0369d9328d34e23d44e7117c038038ce4260a14cb51d0b1ad71e38b",
+    "preregistration_identity": "8a1a05b4865eaefa716e77cbe669e819e7d6e5b3",
+    "protocol_id": "EHCO-C1B-OPA-PUBLIC-PROOF-COMPARISON-001",
+    "reference": {
+      "asset": "opa_linux_amd64_static",
+      "asset_sha256": "69da5179ee403d10fa11bab6cfb4ffb0d23dba5f9b682fa977db772a1da5670f",
+      "name": "Open Policy Agent",
+      "source_commit": "b2c26708e9d55645d7f837db495031f7e4152594",
+      "version": "v1.20.2"
+    }
+  },
+  "deployment_effect": "NONE",
+  "disclosure_boundary": "MAXIMUM_PUBLIC_SAFE_TECHNICAL_TRUTH_MINIMUM_NECESSARY_DISCLOSURE_ZERO_PRIVATE_SOURCE_TOPOLOGY",
+  "executable_proof": {
+    "accepted_identity": "c208cb7cd002d016359f39aba1e3aef3f820befc",
+    "manifest_path": "proof/public-kernel/v1/public-proof-manifest.json",
+    "proof_family_id": "EHCO-PUBLIC-PROOF-KERNEL-PREINTELLIGENCE-GATE-001"
+  },
+  "final_git_commit": "BOUND_BY_FINAL_ACCEPTANCE_CHECKPOINT_AFTER_COMMIT",
+  "independent_reproduction": {
+    "classification": "OPTIONAL_SUPPLEMENTAL_EVIDENCE",
+    "receipt_identity": "NOT_ESTABLISHED",
+    "required": false
+  },
+  "launch_threat_model": {
+    "path": "assurance/PUBLIC_LAUNCH_THREAT_MODEL.json",
+    "sha256": "8be3b541719c0e373024e8902b99599d2e153eff54b1cbb1fd4263b3017d4aa5"
+  },
+  "provider_publication_identity": "PENDING_FINAL_PROVIDER_TAG_OR_RELEASE_CHECKPOINT",
+  "public_verifier": {
+    "discovery_manifest": "verification/EHCO_PUBLIC_VERIFICATION_MANIFEST.json",
+    "discovery_manifest_sha256": "eb2b2bbb7f561a1aa4253fe6a22d134c68e40f1ef8be0c187f4a02017daecdbd",
+    "entrypoint": "verification/verify_all_public.py",
+    "status": "RESULT_PUBLICATION_CANDIDATE"
+  },
+  "publication_date": "PENDING_ACCEPTANCE",
+  "reference_route": "reference/Home.md",
+  "repository": "EHCOnomics-Systems/EHCOsystem",
+  "runtime_effect": "NONE",
+  "schema": "EHCO_PUBLIC_LAUNCH_BASELINE_MANIFEST_V1",
+  "scope_limitations": [
+    "Public launch baseline does not create Tier One Runtime authority or Runtime state.",
+    "Public launch baseline does not change accepted numerical standing 52/53.",
+    "Public proof does not establish proprietary same-code identity.",
+    "Comparative proof does not establish universal superiority.",
+    "Independent external reproduction is not established and remains optional supplemental evidence.",
+    "Publication is not deployment or independent certification."
+  ],
+  "standing_effect": "NONE",
+  "status": "RESULT_PUBLICATION_CANDIDATE_NOT_ACCEPTED"
+}

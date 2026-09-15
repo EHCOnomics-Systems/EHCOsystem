@@ -5,22 +5,25 @@ protocol_reference:
   profile_version: 1.0.0
   protocol_version: 1.0.0
 repository: EHCOnomics-Systems/EHCOsystem
-governed_object: EHCOSYSTEM_PUBLIC_CONTROL_ROUTING_DISCLOSURE_CORRECTION
+governed_object: EHCOSYSTEM_SOW010_PUBLIC_LAUNCH_INTEGRITY_REMEDIATION_V1
 source_owner:
   repository: EHCOnomics-Systems/EHCOsystem
-  revision: c208cb7cd002d016359f39aba1e3aef3f820befc
+  revision: 3938706f26d1ceaecb9c66e422898a3d52c91846
   repository_manifest_path: ehco.repository.yaml
   controlling_source_reference: OWNER_SELECTED_PUBLIC_LAUNCH_SCOPE
 selection:
   selected_by: Edward Henry
   selection_class: EXPLICIT_OWNER_DIRECTION
   durable_reference: |-
-    Edward Henry directed continuation of the already-selected EHCOsystem public-launch operation through its lawful next steps.
-    Exact reviewed PUBLISH head b0d29782447fe640a94b8ef62116a25448b388ba for PR #64 changes only ehco.operation.yaml and passed exact-head canonical public repository validation, CodeQL, and EHCO Assistant Operation Gate qualification.
-    This bounded ACCEPT transition integrates only the disclosure correction: removal of an unnecessary public control-routing label from the operation record while preserving the accepted Public Proof Kernel and numerical standing 52/53.
-    SOURCE_MAIN:c208cb7cd002d016359f39aba1e3aef3f820befc
-    REVIEWED_PUBLISH_HEAD:b0d29782447fe640a94b8ef62116a25448b388ba
-    CHANGE_SCOPE:ehco.operation.yaml
+    Edward Henry directed continuation of the already-selected EHCOsystem public-launch SOW and explicitly superseded the prior requirement that external C1D reproduction block Public Launch Baseline v1 acceptance.
+    Workstreams L and M are established in the selected scope. This operation-record-only lifecycle transition advances the same SOW-10 operation from qualified PUBLISH state to ACCEPT against the exact reviewed substantive head 45dbf14ccde42364594ad594d8a846796051c2fb.
+    SOURCE_MAIN:3938706f26d1ceaecb9c66e422898a3d52c91846
+    REVIEWED_PUBLISH_HEAD:45dbf14ccde42364594ad594d8a846796051c2fb
+    C1_ACCEPTED_IDENTITY:c208cb7cd002d016359f39aba1e3aef3f820befc
+    C1B_PREREGISTRATION_IDENTITY:8a1a05b4865eaefa716e77cbe669e819e7d6e5b3
+    C1B_PROTOCOL_MANIFEST_SHA256:440ae3a567f0d7db29a2c3348d0a7eb296ca5eece0b31a78fb9b58932efba357
+    C1B_OFFICIAL_RESULT_SHA256:0010b0f2f0369d9328d34e23d44e7117c038038ce4260a14cb51d0b1ad71e38b
+    C1B_PUBLIC_RESULT_MANIFEST_SHA256:a961891144ff43cf1772bc9bef775eaa723347ec276892a31bcf64a73cffd35c
     PRELAUNCH_BASELINE_REQUIRED_BEFORE_PUBLIC_GITHUB_WRITE=true
     PREPUBLICATION_DISCLOSURE_GATE_REQUIRED=true
     EXACT_CANDIDATE_CLEARANCE_BINDING_REQUIRED=true
@@ -28,41 +31,119 @@ selection:
     POST_PUSH_CI_IS_DEFENSE_IN_DEPTH_NOT_CONFIDENTIALITY_BOUNDARY=true
     PUBLIC_GITHUB_IS_POST_QUALIFICATION_DESTINATION=true
     OPERATION_STABLE_ENVELOPE_CHANGE=true
-    TECHNICAL_EVIDENCE_DEMOTION=false
-    CLAIM_WEAKENING=false
+    OFFICIAL_COMPARATIVE_RUN_RERUN=false
+    WIKI_PROVIDER_FEATURE_ENABLED=true
+    WIKI_PAGES_MATERIALIZED=ESTABLISHED
+    WIKI_PROVIDER_READBACK=ESTABLISHED
+    WIKI_NAVIGATION=ESTABLISHED
+    WIKI_REFERENCE_ALIGNMENT=ESTABLISHED
+    WIKI_PROVIDER_PAGE_IDENTITY_NORMALIZATION=U+2010_OBSERVATION_ONLY
+    SOCIAL_PREVIEW_READINESS=ESTABLISHED
+    SOCIAL_PREVIEW_PROVIDER_READBACK=ESTABLISHED
+    SOCIAL_PREVIEW_EXACT_DEFECT=NONE
+    WORKSTREAM_J_STATUS=ESTABLISHED
+    WORKSTREAM_L_STATUS=ESTABLISHED_IN_SELECTED_SCOPE
+    WORKSTREAM_M_STATUS=ESTABLISHED_IN_SELECTED_SCOPE
+    PUBLIC_REPOSITORY_EXACT_CANDIDATE_QUALIFIED=ESTABLISHED
+    FIRST_PARTY_CLEAN_PUBLIC_ROUTE_VALIDATION=ESTABLISHED
+    INDEPENDENT_EXTERNAL_REPRODUCTION_RECEIPT=NOT_ESTABLISHED
+    C1D_EXTERNAL_REPRODUCTION_REQUIRED_FOR_PUBLIC_LAUNCH_BASELINE_V1=false
+    C1D_EXTERNAL_REPRODUCTION_CLASS=OPTIONAL_SUPPLEMENTAL_EVIDENCE
+    C1D_ABSENCE_MUST_BE_DISCLOSED=true
+    C1D_ABSENCE_BLOCKS_BASELINE_ACCEPTANCE=false
+    C1D_ABSENCE_BLOCKS_PROMOTION=false
+    WORKSTREAM_N_STATUS=IN_PROGRESS
+    PUBLIC_LAUNCH_BASELINE_ACCEPTANCE=false
     STANDING_CHANGE=false
     RUNTIME_EFFECT=false
     DEPLOYMENT_EFFECT=false
     AUTOMATIC_SUCCESSOR=false
-  source_base_revision: c208cb7cd002d016359f39aba1e3aef3f820befc
-  expected_reviewed_head_revision: b0d29782447fe640a94b8ef62116a25448b388ba
+    NEW_PATH:.github/ISSUE_TEMPLATE/technical-challenge.yml
+    NEW_PATH:CITATION.cff
+    NEW_PATH:PUBLIC_LAUNCH_BASELINE.json
+    NEW_PATH:README.md
+    NEW_PATH:VERIFY.md
+    NEW_PATH:assurance/AI_EPISTEMIC_RECONSTRUCTION_OBSERVATION.schema.json
+    NEW_PATH:assurance/AI_EPISTEMIC_RECONSTRUCTION_PROTOCOL.json
+    NEW_PATH:assurance/PUBLIC_LAUNCH_THREAT_MODEL.json
+    NEW_PATH:comparison/c1b/v1/README.md
+    NEW_PATH:comparison/c1b/v1/environment.json
+    NEW_PATH:comparison/c1b/v1/manifest.json
+    NEW_PATH:comparison/c1b/v1/opa-reference.rego
+    NEW_PATH:comparison/c1b/v1/protocol.json
+    NEW_PATH:comparison/c1b/v1/reference-baseline.json
+    NEW_PATH:comparison/c1b/v1/result-schema.json
+    NEW_PATH:comparison/c1b/v1/results/C1B-AMBIGUOUS-001.ehco.json
+    NEW_PATH:comparison/c1b/v1/results/C1B-AMBIGUOUS-001.opa-input.json
+    NEW_PATH:comparison/c1b/v1/results/C1B-AMBIGUOUS-001.opa-raw.json
+    NEW_PATH:comparison/c1b/v1/results/C1B-ELIGIBILITY-001.ehco.json
+    NEW_PATH:comparison/c1b/v1/results/C1B-ELIGIBILITY-001.opa-input.json
+    NEW_PATH:comparison/c1b/v1/results/C1B-ELIGIBILITY-001.opa-raw.json
+    NEW_PATH:comparison/c1b/v1/results/C1B-MISSING-PERMISSION-001.ehco.json
+    NEW_PATH:comparison/c1b/v1/results/C1B-MISSING-PERMISSION-001.opa-input.json
+    NEW_PATH:comparison/c1b/v1/results/C1B-MISSING-PERMISSION-001.opa-raw.json
+    NEW_PATH:comparison/c1b/v1/results/C1B-UNSUPPORTED-001.ehco.json
+    NEW_PATH:comparison/c1b/v1/results/C1B-UNSUPPORTED-001.opa-input.json
+    NEW_PATH:comparison/c1b/v1/results/C1B-UNSUPPORTED-001.opa-raw.json
+    NEW_PATH:comparison/c1b/v1/results/C1B-VALID-001.ehco.json
+    NEW_PATH:comparison/c1b/v1/results/C1B-VALID-001.opa-input.json
+    NEW_PATH:comparison/c1b/v1/results/C1B-VALID-001.opa-raw.json
+    NEW_PATH:comparison/c1b/v1/results/README.md
+    NEW_PATH:comparison/c1b/v1/results/comparison-result.json
+    NEW_PATH:comparison/c1b/v1/results/official-run-context-public.json
+    NEW_PATH:comparison/c1b/v1/results/official-run-exit.json
+    NEW_PATH:comparison/c1b/v1/results/result-manifest.json
+    NEW_PATH:comparison/c1b/v1/run-plan.json
+    NEW_PATH:comparison/c1b/v1/run_comparison.py
+    NEW_PATH:comparison/c1b/v1/shared-fixtures.json
+    NEW_PATH:ehco.operation.yaml
+    NEW_PATH:reference/Architecture.md
+    NEW_PATH:reference/Comparative-Proof.md
+    NEW_PATH:reference/Diligence-and-Challenge.md
+    NEW_PATH:reference/Home.md
+    NEW_PATH:reference/Proof-and-Verification.md
+    NEW_PATH:reference/Publication-History.md
+    NEW_PATH:reference/Terminology.md
+    NEW_PATH:reproduction/INDEPENDENT-REPRODUCTION.md
+    NEW_PATH:reproduction/INDEPENDENT_REPRODUCTION_RECEIPT.schema.json
+    NEW_PATH:verification/EHCO_PUBLIC_VERIFICATION_MANIFEST.json
+    NEW_PATH:verification/README.md
+    NEW_PATH:verification/validate_public_launch_candidate.py
+    NEW_PATH:verification/verify_all_public.py
+  source_base_revision: 3938706f26d1ceaecb9c66e422898a3d52c91846
+  expected_reviewed_head_revision: 45dbf14ccde42364594ad594d8a846796051c2fb
 control_anchor: AGENTS.md
 status_owner_path: ehco.operation.yaml
 accepted_standing: 52/53
 active_operation:
-  operation_id: EHCOSYSTEM-PUBLIC-CONTROL-ROUTING-DISCLOSURE-CORRECTION-ACCEPT-001
-  state: COMPLETE
+  operation_id: EHCOSYSTEM-SOW010-WORKSTREAM-L-RECONSTRUCTION-001
+  state: ACTIVE
   authorization_mode: ACCEPT
-  bounded_outcome: Accept and integrate the exact terminal-green one-file disclosure correction reviewed at b0d29782447fe640a94b8ef62116a25448b388ba, limiting the post-review delta to ehco.operation.yaml and preserving all Public Proof Kernel, Runtime, deployment, release, authority, standing, participation, and full public-launch acceptance boundaries.
-  remaining_bounded_work: []
+  bounded_outcome: Accept the exact reviewed SOW-10 public launch candidate through the authorized pull-request lifecycle only after exact provider readback; preserve the two-part checkpoint binding, explicit C1D optional-supplemental status, and all Runtime, standing, deployment, proprietary-source and successor boundaries.
+  remaining_bounded_work:
+    - Verify this ACCEPT transition is an operation-record-only delta from exact reviewed PUBLISH head 45dbf14ccde42364594ad594d8a846796051c2fb and all required provider checks remain green.
+    - Mark PR #66 ready for review only after exact-head operation-gate readback passes.
+    - Merge PR #66 to canonical main using the repository-supported merge method and bind the resulting canonical main revision.
+    - Materialize the SOW-required provider-visible Public Launch Baseline v1 publication checkpoint through a lawful provider route after the final main identity exists.
+    - Record authoritative baseline acceptance only after the provider checkpoint identity is established and exact public object bindings are read back.
+    - Preserve C1D external reproduction as NOT_ESTABLISHED / OPTIONAL_SUPPLEMENTAL unless qualifying external evidence is later received and validated.
+    - Do not begin broader distribution until Public Launch Baseline v1 acceptance is established.
   interaction_seams:
-    - The current owner-selected public-launch control owns the wider public-launch objective and disclosure boundary.
-    - Exact reviewed PUBLISH head is b0d29782447fe640a94b8ef62116a25448b388ba on PR #64.
-    - EHCOnomics-Systems/EHCOsystem owns exact PR, workflow, merge and accepted-main repository state.
-    - Existing owning technical evidence retains all established technical effects and claim ceilings.
-    - The accepted Public Proof Kernel remains established by its accepted public Git history.
+    - The Drive-owned SOW and owner amendment own the Public Launch Baseline v1 acceptance standard and the C1D optional-supplemental classification.
+    - Exact reviewed substantive source is head 45dbf14ccde42364594ad594d8a846796051c2fb; this ACCEPT transition changes operation state only.
+    - GitHub owns exact PR lifecycle, merge result, canonical main identity and provider checkpoint state.
+    - The authoritative acceptance/checkpoint receipt owns the post-commit binding of final main SHA and provider publication identity under the runbook two-part self-reference rule.
+    - Public GitHub Release/tag checkpoint semantics are technical/evidence publication semantics, not Tier One Runtime realization or software-source distribution.
     - INSTANTIATED_EHCO_RUNTIME retains Tier One Runtime authority and Runtime state.
   non_overlap:
-    - Total PR changed-path set remains exactly ehco.operation.yaml.
-    - Delta from reviewed PUBLISH head to final ACCEPT head is exactly ehco.operation.yaml.
-    - No change to ehco.repository.yaml or any accepted Public Proof Kernel file.
-    - No private repository, host, credential, endpoint or protected source locator is added to public source.
-    - No proprietary implementation source is copied or transferred.
-    - No technical-evidence demotion or claim weakening.
-    - No destructive history rewrite.
+    - No substantive proof, comparison, verifier, claim, evidence, Wiki, citation, reader-reference or result bytes are changed by this ACCEPT transition.
+    - No destructive history rewrite or repository replacement.
+    - No rerun or replacement of the one-shot official comparison.
+    - No independent external reproduction receipt is claimed.
+    - No proprietary implementation source is copied, transferred or implied available.
     - No standing change from 52/53.
-    - No Runtime, deployment, production, release, authority, admission, participation or persistence effect.
-    - No full public-launch baseline acceptance effect.
+    - No Runtime, deployment, production, authority, admission or participation effect.
+    - No broader website, LinkedIn or other distribution before baseline acceptance.
     - No automatic successor.
   automatic_successor: PROHIBITED
   successor_operation: NOT_SELECTED
@@ -78,49 +159,124 @@ execution_continuity:
   local_override: MAY_TIGHTEN_NOT_WEAKEN
 scope:
   permitted_paths:
+    - .github/ISSUE_TEMPLATE/technical-challenge.yml
+    - CITATION.cff
+    - PUBLIC_LAUNCH_BASELINE.json
+    - README.md
+    - VERIFY.md
+    - assurance/AI_EPISTEMIC_RECONSTRUCTION_OBSERVATION.schema.json
+    - assurance/AI_EPISTEMIC_RECONSTRUCTION_PROTOCOL.json
+    - assurance/PUBLIC_LAUNCH_THREAT_MODEL.json
+    - comparison/c1b/v1/README.md
+    - comparison/c1b/v1/environment.json
+    - comparison/c1b/v1/manifest.json
+    - comparison/c1b/v1/opa-reference.rego
+    - comparison/c1b/v1/protocol.json
+    - comparison/c1b/v1/reference-baseline.json
+    - comparison/c1b/v1/result-schema.json
+    - comparison/c1b/v1/results/C1B-AMBIGUOUS-001.ehco.json
+    - comparison/c1b/v1/results/C1B-AMBIGUOUS-001.opa-input.json
+    - comparison/c1b/v1/results/C1B-AMBIGUOUS-001.opa-raw.json
+    - comparison/c1b/v1/results/C1B-ELIGIBILITY-001.ehco.json
+    - comparison/c1b/v1/results/C1B-ELIGIBILITY-001.opa-input.json
+    - comparison/c1b/v1/results/C1B-ELIGIBILITY-001.opa-raw.json
+    - comparison/c1b/v1/results/C1B-MISSING-PERMISSION-001.ehco.json
+    - comparison/c1b/v1/results/C1B-MISSING-PERMISSION-001.opa-input.json
+    - comparison/c1b/v1/results/C1B-MISSING-PERMISSION-001.opa-raw.json
+    - comparison/c1b/v1/results/C1B-UNSUPPORTED-001.ehco.json
+    - comparison/c1b/v1/results/C1B-UNSUPPORTED-001.opa-input.json
+    - comparison/c1b/v1/results/C1B-UNSUPPORTED-001.opa-raw.json
+    - comparison/c1b/v1/results/C1B-VALID-001.ehco.json
+    - comparison/c1b/v1/results/C1B-VALID-001.opa-input.json
+    - comparison/c1b/v1/results/C1B-VALID-001.opa-raw.json
+    - comparison/c1b/v1/results/README.md
+    - comparison/c1b/v1/results/comparison-result.json
+    - comparison/c1b/v1/results/official-run-context-public.json
+    - comparison/c1b/v1/results/official-run-exit.json
+    - comparison/c1b/v1/results/result-manifest.json
+    - comparison/c1b/v1/run-plan.json
+    - comparison/c1b/v1/run_comparison.py
+    - comparison/c1b/v1/shared-fixtures.json
     - ehco.operation.yaml
-    - AGENTS.md
-    - GOVERNANCE.md
-    - SECURITY.md
-    - PROVENANCE.md
-    - verification/public_disclosure_policy.py
-    - verification/pre_publication_gate.py
-    - verification/install_publication_guard.py
-    - verification/validate_pre_publication_gate.py
-    - verification/verify_all_public.py
+    - reference/Architecture.md
+    - reference/Comparative-Proof.md
+    - reference/Diligence-and-Challenge.md
+    - reference/Home.md
+    - reference/Proof-and-Verification.md
+    - reference/Publication-History.md
+    - reference/Terminology.md
+    - reproduction/INDEPENDENT-REPRODUCTION.md
+    - reproduction/INDEPENDENT_REPRODUCTION_RECEIPT.schema.json
+    - verification/EHCO_PUBLIC_VERIFICATION_MANIFEST.json
     - verification/README.md
-    - .githooks/pre-push
-    - .github/pull_request_template.md
-    - .github/workflows/validate-public-evidence.yml
+    - verification/validate_public_launch_candidate.py
+    - verification/verify_all_public.py
   controlled_paths:
+    - .github/ISSUE_TEMPLATE/technical-challenge.yml
+    - CITATION.cff
+    - PUBLIC_LAUNCH_BASELINE.json
+    - README.md
+    - VERIFY.md
+    - assurance/AI_EPISTEMIC_RECONSTRUCTION_OBSERVATION.schema.json
+    - assurance/AI_EPISTEMIC_RECONSTRUCTION_PROTOCOL.json
+    - assurance/PUBLIC_LAUNCH_THREAT_MODEL.json
+    - comparison/c1b/v1/README.md
+    - comparison/c1b/v1/environment.json
+    - comparison/c1b/v1/manifest.json
+    - comparison/c1b/v1/opa-reference.rego
+    - comparison/c1b/v1/protocol.json
+    - comparison/c1b/v1/reference-baseline.json
+    - comparison/c1b/v1/result-schema.json
+    - comparison/c1b/v1/results/C1B-AMBIGUOUS-001.ehco.json
+    - comparison/c1b/v1/results/C1B-AMBIGUOUS-001.opa-input.json
+    - comparison/c1b/v1/results/C1B-AMBIGUOUS-001.opa-raw.json
+    - comparison/c1b/v1/results/C1B-ELIGIBILITY-001.ehco.json
+    - comparison/c1b/v1/results/C1B-ELIGIBILITY-001.opa-input.json
+    - comparison/c1b/v1/results/C1B-ELIGIBILITY-001.opa-raw.json
+    - comparison/c1b/v1/results/C1B-MISSING-PERMISSION-001.ehco.json
+    - comparison/c1b/v1/results/C1B-MISSING-PERMISSION-001.opa-input.json
+    - comparison/c1b/v1/results/C1B-MISSING-PERMISSION-001.opa-raw.json
+    - comparison/c1b/v1/results/C1B-UNSUPPORTED-001.ehco.json
+    - comparison/c1b/v1/results/C1B-UNSUPPORTED-001.opa-input.json
+    - comparison/c1b/v1/results/C1B-UNSUPPORTED-001.opa-raw.json
+    - comparison/c1b/v1/results/C1B-VALID-001.ehco.json
+    - comparison/c1b/v1/results/C1B-VALID-001.opa-input.json
+    - comparison/c1b/v1/results/C1B-VALID-001.opa-raw.json
+    - comparison/c1b/v1/results/README.md
+    - comparison/c1b/v1/results/comparison-result.json
+    - comparison/c1b/v1/results/official-run-context-public.json
+    - comparison/c1b/v1/results/official-run-exit.json
+    - comparison/c1b/v1/results/result-manifest.json
+    - comparison/c1b/v1/run-plan.json
+    - comparison/c1b/v1/run_comparison.py
+    - comparison/c1b/v1/shared-fixtures.json
     - ehco.operation.yaml
-    - AGENTS.md
-    - GOVERNANCE.md
-    - SECURITY.md
-    - PROVENANCE.md
-    - verification/public_disclosure_policy.py
-    - verification/pre_publication_gate.py
-    - verification/install_publication_guard.py
-    - verification/validate_pre_publication_gate.py
-    - verification/verify_all_public.py
+    - reference/Architecture.md
+    - reference/Comparative-Proof.md
+    - reference/Diligence-and-Challenge.md
+    - reference/Home.md
+    - reference/Proof-and-Verification.md
+    - reference/Publication-History.md
+    - reference/Terminology.md
+    - reproduction/INDEPENDENT-REPRODUCTION.md
+    - reproduction/INDEPENDENT_REPRODUCTION_RECEIPT.schema.json
+    - verification/EHCO_PUBLIC_VERIFICATION_MANIFEST.json
     - verification/README.md
-    - .githooks/pre-push
-    - .github/pull_request_template.md
-    - .github/workflows/validate-public-evidence.yml
+    - verification/validate_public_launch_candidate.py
+    - verification/verify_all_public.py
   prohibited_paths:
     - ehco.repository.yaml
-    - README.md
     - NOTICE.md
     - LIBRARY.md
     - ECOSYSTEM-DILIGENCE.md
     - TECHNICAL-DILIGENCE.md
-    - assurance/**
     - architecture/**
     - evidence/**
     - language-model/**
     - range-reactor/**
     - runtime/**
     - dossiers/**
+    - publication/**
 change_control:
   control_change_declared: true
   delete_or_move_authorized: false
@@ -140,13 +296,13 @@ change_control:
     - mark_pull_request_ready_for_review
     - merge_pull_request
     - record_owner_acceptance
-    - close_operation
   remote_actions_prohibited:
     - create_branch
     - commit
     - push
     - open_draft_pull_request
     - update_draft_pull_request
+    - close_operation
     - activate_selected_successor
     - modify_repository_settings
     - modify_drive_controls
@@ -167,32 +323,35 @@ effects:
   external_effect: NONE
 bridge:
   applicability: NOT_APPLICABLE_NON_PARTICIPANT
-  non_applicability_reason: Public source disclosure correction does not establish Tier One Runtime participation.
+  non_applicability_reason: Public launch acceptance does not establish Tier One Runtime participation.
   direct_invocation: PROHIBITED
   runtime_admission_status: NOT_ESTABLISHED
   participation_binding_status: NOT_ESTABLISHED
   canonical_runtime_receipt_status: NOT_ESTABLISHED
 evidence:
-  evidence_class: OWNER_ACCEPTANCE_RECORD
+  evidence_class: REPOSITORY_SOURCE_AND_DIFF_VALIDATION
   required_checks:
-    - Exact reviewed PUBLISH head remains b0d29782447fe640a94b8ef62116a25448b388ba on PR #64.
-    - Reviewed head b0d29782447fe640a94b8ef62116a25448b388ba retains terminal-success canonical public repository validation, CodeQL and EHCO Assistant Operation Gate qualification.
-    - Exact source base remains c208cb7cd002d016359f39aba1e3aef3f820befc.
-    - Total PR changed-path set remains exactly ehco.operation.yaml.
-    - Delta from reviewed PUBLISH head to final ACCEPT head is exactly ehco.operation.yaml.
-    - Final COMPLETE ACCEPT head passes canonical public repository validation, CodeQL and EHCO Assistant Operation Gate.
-    - Merge uses the exact qualified final ACCEPT head guard and accepted main is read back from GitHub.
+    - Exact reviewed substantive head 45dbf14ccde42364594ad594d8a846796051c2fb has repository validation PASS, CodeQL PASS and EHCO Assistant Operation Gate PASS.
+    - This ACCEPT transition must change only ehco.operation.yaml relative to the exact reviewed substantive head.
+    - The canonical public verifier, proof-kernel, comparative result and disclosure checks remain bound to the reviewed substantive head.
+    - The nine manifest-bound C1B protocol files remain byte-identical to preregistration identity 8a1a05b4865eaefa716e77cbe669e819e7d6e5b3.
+    - Official comparison SHA-256 remains 0010b0f2f0369d9328d34e23d44e7117c038038ce4260a14cb51d0b1ad71e38b and no official rerun occurs.
+    - C1D remains NOT_ESTABLISHED / OPTIONAL_SUPPLEMENTAL and no independent certification is claimed.
+    - Public source contains no real protected locator values or proprietary implementation source.
     - Accepted numerical standing remains 52/53.
   proves:
-    - The bounded public disclosure correction is accepted if the exact final ACCEPT head qualifies and integrates.
+    - The exact substantive public launch candidate was qualified before the ACCEPT lifecycle transition.
+    - The ACCEPT transition binds provider lifecycle actions to the exact reviewed substantive head without silently moving the accepted proof/comparison object set.
+    - Any eventual Public Launch Baseline acceptance remains conditional on final canonical-main and provider-checkpoint readback.
   evidence_not_created:
-    - New Public Proof Kernel technical evidence
-    - Official comparative C1B result
+    - Provider tag or GitHub Release checkpoint
+    - EHCO_PUBLIC_LAUNCH_BASELINE_V1_ACCEPTED receipt
     - Independent external third-party reproduction receipt
-    - Full public-launch baseline acceptance
-    - Runtime, deployment, production, release, authority, standing, admission or participation effect
+    - Runtime, deployment, standing, authority, admission or participation effect
+    - Broader distribution completion
     - Any successor operation
 stop_condition:
-  - Reverify the exact final COMPLETE ACCEPT head through canonical public repository validation, CodeQL and EHCO Assistant Operation Gate with the total PR diff and post-review delta limited exactly to ehco.operation.yaml.
-  - Mark PR #64 Ready only after exact-head qualification, merge only with exact qualified final ACCEPT head protection, and read back accepted EHCOsystem main.
-  - Stop this bounded ACCEPT operation before full public-launch baseline acceptance, deployment, release, Runtime action, authority/standing effect, proprietary-source transfer, or automatic successor activation.
+  - Stop this ACCEPT phase if the operation-record-only transition fails canonical/provider checks or if PR #66 no longer resolves to the expected reviewed substantive object set.
+  - After successful merge, stop before claiming Public Launch Baseline v1 acceptance unless the required provider-visible publication checkpoint is actually materialized and read back through a lawful route.
+  - Preserve C1D as NOT_ESTABLISHED / OPTIONAL_SUPPLEMENTAL unless qualifying external evidence is actually received.
+  - Do not deploy, invoke Runtime, mutate authority or standing, distribute broadly before baseline acceptance, or activate a successor.

@@ -1,0 +1,37 @@
+name: Technical proof or verification challenge
+description: Challenge a public proof, verification route, evidence mapping, or reproducibility claim using public-safe information.
+title: "[Technical challenge] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form only for public-safe technical challenges. Do not publish vulnerabilities, credentials, private implementation details, private repository/source locators, privileged endpoints, or protected infrastructure information. Use SECURITY.md for sensitive reporting.
+  - type: input
+    id: object
+    attributes:
+      label: Public object or claim
+      description: Identify the public path, claim ID, proof ID, protocol ID, receipt, or publication identity.
+    validations:
+      required: true
+  - type: textarea
+    id: challenge
+    attributes:
+      label: Challenge
+      description: State the reproducibility, protocol, evidence, interpretation, or verification concern precisely.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Public-safe reproduction details
+      description: Provide commands, environment facts, hashes, outputs, or public evidence sufficient to assess the challenge.
+  - type: dropdown
+    id: effect
+    attributes:
+      label: Does this report itself establish a Runtime, authority, standing, deployment, or lifecycle change?
+      options:
+        - No
+        - Unsure — requires controlled review
+    validations:
+      required: true

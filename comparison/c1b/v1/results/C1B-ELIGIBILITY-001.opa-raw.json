@@ -1,0 +1,20 @@
+{
+  "result": [
+    {
+      "expressions": [
+        {
+          "value": {
+            "disposition": "WITHHOLD",
+            "permitted": false,
+            "reason": "REQUIRED_CONDITION_NOT_SATISFIED"
+          },
+          "text": "data.ehco_c1b.reference.result",
+          "location": {
+            "row": 1,
+            "col": 1
+          }
+        }
+      ]
+    }
+  ]
+}

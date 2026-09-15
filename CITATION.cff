@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If you use or discuss this prelaunch public technical publication, cite the exact provider-visible revision or the later accepted EHCOsystem publication checkpoint."
+title: "EHCOsystem: Public Technical Architecture and Evidence for an Instantiated AI Ecosystem"
+type: software
+authors:
+  - name: "EHCOnomics"
+repository-code: "https://github.com/EHCOnomics-Systems/EHCOsystem"
+url: "https://www.ehconomics.com/"
+version: "1.0.0-prelaunch"
+abstract: >-
+  EHCOsystem is EHCOnomics' public technical architecture and evidence surface
+  for an Instantiated AI ecosystem. This citation object identifies the public
+  technical publication; it does not license or distribute proprietary
+  implementation source and does not create Runtime authority or standing.

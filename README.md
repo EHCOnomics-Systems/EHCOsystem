@@ -2,6 +2,21 @@
 
 **EHCOnomics' public technical architecture and evidence for an Instantiated AI ecosystem.**
 
+## Why this exists
+
+Consequential intelligence should carry a proof burden proportional to the consequence it may create. EHCOsystem publishes a technically inspectable, evidence-backed implementation of Instantiated AI: governing computational conditions are established before intelligence is permitted to act, remain proof-relevant while it participates, and leave durable evidence afterward.
+
+## Verify first
+
+- **[Human verification front door](VERIFY.md)**
+- **[Machine-readable verification discovery](verification/EHCO_PUBLIC_VERIFICATION_MANIFEST.json)**
+- **[Bounded executable public proof](proof/public-kernel/v1/)**
+- **[Preregistered fair comparative proof and official result](comparison/c1b/v1/)**
+- **[Reader reference](reference/Home.md)**
+- **[Citation metadata](CITATION.cff)**
+
+> **Launch state:** EHCOsystem Public Launch Baseline v1 is **not yet accepted**. The official C1B result is included in this bounded launch-candidate proof object; independent external reproduction and final launch acceptance remain separate required gates.
+
 ## What EHCOsystem is
 
 **Instantiated AI** is the architectural category: intelligence operates inside explicit computational conditions for identity, authority, state, memory, source, permissible range, evidence, release, and consequence.

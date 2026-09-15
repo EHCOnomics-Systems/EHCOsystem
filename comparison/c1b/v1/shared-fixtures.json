@@ -1,0 +1,92 @@
+{
+  "bundle_version": "1.0.0",
+  "fixtures": [
+    {
+      "expected_class": "PERMIT",
+      "fixture_id": "C1B-VALID-001",
+      "request": {
+        "action_class": "SYNTHETIC_PREINTELLIGENCE_GATE",
+        "conditions": {
+          "ambiguity_condition": "CLEAR",
+          "eligibility_condition": "SATISFIED",
+          "evidence_condition": "SATISFIED",
+          "identity_condition": "SATISFIED",
+          "permission_condition": "SATISFIED",
+          "range_condition": "SATISFIED",
+          "source_condition": "SATISFIED"
+        }
+      },
+      "source_fixture_id": "PK-VALID-001"
+    },
+    {
+      "expected_class": "WITHHOLD",
+      "fixture_id": "C1B-MISSING-PERMISSION-001",
+      "request": {
+        "action_class": "SYNTHETIC_PREINTELLIGENCE_GATE",
+        "conditions": {
+          "ambiguity_condition": "CLEAR",
+          "eligibility_condition": "SATISFIED",
+          "evidence_condition": "SATISFIED",
+          "identity_condition": "SATISFIED",
+          "permission_condition": "MISSING",
+          "range_condition": "SATISFIED",
+          "source_condition": "SATISFIED"
+        }
+      },
+      "source_fixture_id": "PK-MISSING-PERMISSION-001"
+    },
+    {
+      "expected_class": "WITHHOLD",
+      "fixture_id": "C1B-ELIGIBILITY-001",
+      "request": {
+        "action_class": "SYNTHETIC_PREINTELLIGENCE_GATE",
+        "conditions": {
+          "ambiguity_condition": "CLEAR",
+          "eligibility_condition": "NOT_SATISFIED",
+          "evidence_condition": "SATISFIED",
+          "identity_condition": "SATISFIED",
+          "permission_condition": "SATISFIED",
+          "range_condition": "SATISFIED",
+          "source_condition": "SATISFIED"
+        }
+      },
+      "source_fixture_id": "PK-ELIGIBILITY-NOT-SATISFIED-001"
+    },
+    {
+      "expected_class": "RETAIN_AMBIGUITY",
+      "fixture_id": "C1B-AMBIGUOUS-001",
+      "request": {
+        "action_class": "SYNTHETIC_PREINTELLIGENCE_GATE",
+        "conditions": {
+          "ambiguity_condition": "AMBIGUOUS",
+          "eligibility_condition": "SATISFIED",
+          "evidence_condition": "SATISFIED",
+          "identity_condition": "SATISFIED",
+          "permission_condition": "SATISFIED",
+          "range_condition": "SATISFIED",
+          "source_condition": "SATISFIED"
+        }
+      },
+      "source_fixture_id": "PK-AMBIGUOUS-001"
+    },
+    {
+      "expected_class": "UNSUPPORTED_REQUEST",
+      "fixture_id": "C1B-UNSUPPORTED-001",
+      "request": {
+        "action_class": "SYNTHETIC_UNSUPPORTED_ACTION",
+        "conditions": {
+          "ambiguity_condition": "CLEAR",
+          "eligibility_condition": "SATISFIED",
+          "evidence_condition": "SATISFIED",
+          "identity_condition": "SATISFIED",
+          "permission_condition": "SATISFIED",
+          "range_condition": "SATISFIED",
+          "source_condition": "SATISFIED"
+        }
+      },
+      "source_fixture_id": "PK-UNSUPPORTED-001"
+    }
+  ],
+  "schema": "EHCO_C1B_SHARED_FIXTURE_BUNDLE_V1",
+  "source_c1_fixture_blob_sha": "7dc5ff965f51cae09295345b00562aafa1b191e9"
+}

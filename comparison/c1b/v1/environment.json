@@ -1,0 +1,53 @@
+{
+  "actual_run_environment_recording_required": [
+    "operating_system",
+    "cpu_architecture",
+    "python_version",
+    "opa_version_output",
+    "opa_binary_sha256",
+    "network_state_during_evaluation"
+  ],
+  "common": {
+    "concurrency": 1,
+    "cpu_architecture_for_official_run": "x86_64",
+    "hardware_acceleration_state": "NOT_REQUIRED",
+    "measured_runs_per_case": 1,
+    "minimum_cpu_assumption": "1 logical CPU",
+    "minimum_memory_assumption": "512 MiB available operational allowance; not a measured performance requirement",
+    "minimum_storage_assumption": "128 MiB free excluding the separately acquired OPA binary",
+    "operating_system_family_for_official_run": "LINUX",
+    "performance_metrics_official": false,
+    "resource_interpretation": "CPU, memory, and storage are execution sufficiency assumptions only. No performance conclusion is drawn from timing or resource use in protocol v1.0.0.",
+    "timeout_seconds_per_operand_per_case": 30,
+    "warmup_runs": 0
+  },
+  "ehco": {
+    "accepted_artifact_git_identity": "c208cb7cd002d016359f39aba1e3aef3f820befc",
+    "entrypoint": "proof/public-kernel/v1/kernel.py",
+    "external_model": "ABSENT",
+    "language_runtime_and_version": "CPython >=3.10",
+    "material_dependencies": "PYTHON_STANDARD_LIBRARY_ONLY",
+    "receipt_verifier": "proof/public-kernel/v1/verify_receipt.py"
+  },
+  "network": {
+    "ehco_evaluation": "OFFLINE",
+    "official_evaluation": "OFFLINE",
+    "opa_evaluation": "OFFLINE",
+    "reference_acquisition": "NETWORK_REQUIRED_BEFORE_RUN_TO_OBTAIN_FROZEN_UPSTREAM_ASSET_IF_NOT_ALREADY_PRESENT"
+  },
+  "reference": {
+    "decision_query": "data.ehco_c1b.reference.result",
+    "engine": "Open Policy Agent",
+    "license": "Apache-2.0",
+    "official_asset": "opa_linux_amd64_static",
+    "official_asset_sha256": "69da5179ee403d10fa11bab6cfb4ffb0d23dba5f9b682fa977db772a1da5670f",
+    "policy_path": "comparison/c1b/v1/opa-reference.rego",
+    "source_commit": "b2c26708e9d55645d7f837db495031f7e4152594",
+    "version": "v1.20.2"
+  },
+  "schema": "EHCO_C1B_ENVIRONMENT_CONTRACT_V1",
+  "unavoidable_asymmetry": [
+    "EHCO emits its native nonce-bound proof receipt; OPA emits its native policy decision result. Harness hashing may bind both outputs but is not attributed as native OPA proof capability.",
+    "The EHCO operand is a bounded public proof kernel rather than the proprietary Tier One Runtime. The comparison is therefore limited to the frozen public proposition and does not compare full product/system scope."
+  ]
+}

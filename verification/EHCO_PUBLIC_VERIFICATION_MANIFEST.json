@@ -1,0 +1,101 @@
+{
+  "accepted_c1_identity": "c208cb7cd002d016359f39aba1e3aef3f820befc",
+  "canonical_human_entrypoint": "VERIFY.md",
+  "canonical_verifier": {
+    "child_validator_count": 10,
+    "child_validators": [
+      {
+        "id": "PUBLIC_REPOSITORY_INTEGRITY",
+        "path": "verification/validate_public_evidence.py",
+        "git_blob_sha": "cbf1730ccc17779d5d55e1f5d70dc00d39e401cf"
+      },
+      {
+        "id": "PREPUBLICATION_DISCLOSURE_GATE",
+        "path": "verification/validate_pre_publication_gate.py",
+        "git_blob_sha": "cea25e9b4750685f24bae684e6e3c1d22455e773"
+      },
+      {
+        "id": "PUBLIC_CLAIM_REGISTRY",
+        "path": "verification/validate_public_claim_registry.py",
+        "git_blob_sha": "017aa3bd8c007fbd13378a5a1d7639529ed0fbbd"
+      },
+      {
+        "id": "PUBLIC_PROOF_KERNEL",
+        "path": "verification/validate_public_proof_kernel.py",
+        "git_blob_sha": "81dfd96aeaa65a9399275a7bdb2b2a54786a3618"
+      },
+      {
+        "id": "CURRENT_RUNTIME_PUBLIC_EVIDENCE",
+        "path": "verification/validate_current_runtime_evidence.py",
+        "git_blob_sha": "1379f3c29ccd4e1ecd490e698cfdd76faccf6b42"
+      },
+      {
+        "id": "LANGUAGE_MODEL_PUBLIC_SNAPSHOT",
+        "path": "verification/validate_public_lm_test_snapshot.py",
+        "git_blob_sha": "a4029620683491604baa8c7aaead6bc7fb722917"
+      },
+      {
+        "id": "RANGE_REACTOR_CAPABILITY_SNAPSHOT",
+        "path": "verification/validate_public_range_reactor_snapshot.py",
+        "git_blob_sha": "3be8b89bf5e1dd64230b54df020795daf357fe20"
+      },
+      {
+        "id": "RANGE_REACTOR_OPERATIONAL_CLOSURE",
+        "path": "verification/validate_public_range_reactor_operational_closure.py",
+        "git_blob_sha": "6030377601af8cc01219754434e21fed14c3e0c4"
+      },
+      {
+        "id": "REGISTERED_RELEASE_IDENTITY",
+        "path": "verification/validate_release_identity.py",
+        "git_blob_sha": "1a374925d5a4f8ce539f8b840a1cfac175516bcf"
+      },
+      {
+        "id": "PUBLIC_LAUNCH_CANDIDATE_BINDINGS",
+        "path": "verification/validate_public_launch_candidate.py",
+        "git_blob_sha": "da810eb34cd9f284907276a7c40a7a68d1aea1ec"
+      }
+    ],
+    "execution_command": "python3 verification/verify_all_public.py",
+    "git_blob_sha": "020abd8f6d3430374b97399e4c99e6fa530a5e84",
+    "path": "verification/verify_all_public.py",
+    "status": "ESTABLISHED_PUBLIC_VERIFIER_ENTRYPOINT"
+  },
+  "comparative_proof": {
+    "independent_external_reproduction_status": "NOT_ESTABLISHED",
+    "official_result_path": "comparison/c1b/v1/results/comparison-result.json",
+    "official_result_sha256": "0010b0f2f0369d9328d34e23d44e7117c038038ce4260a14cb51d0b1ad71e38b",
+    "preregistration_identity": "8a1a05b4865eaefa716e77cbe669e819e7d6e5b3",
+    "preregistration_manifest_sha256": "440ae3a567f0d7db29a2c3348d0a7eb296ca5eece0b31a78fb9b58932efba357",
+    "protocol_id": "EHCO-C1B-OPA-PUBLIC-PROOF-COMPARISON-001",
+    "protocol_version": "1.0.0",
+    "public_result_manifest_path": "comparison/c1b/v1/results/result-manifest.json",
+    "public_result_manifest_sha256": "a961891144ff43cf1772bc9bef775eaa723347ec276892a31bcf64a73cffd35c"
+  },
+  "deployment_effect": "NONE",
+  "evidence_scope": "Public repository representation plus bounded public executable/comparative proof; underlying owning technical evidence retains technical-effect ownership.",
+  "final_launch_revision_binding": "BOUND_BY_FINAL_ACCEPTANCE_CHECKPOINT_AFTER_COMMIT",
+  "independent_third_party_certification": "NOT_CLAIMED",
+  "machine_routes": {
+    "claim_evidence_matrix": "assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md",
+    "claim_registry": "assurance/PUBLIC-CLAIM-REGISTRY.json",
+    "comparative_protocol_manifest": "comparison/c1b/v1/manifest.json",
+    "comparative_result_manifest": "comparison/c1b/v1/results/result-manifest.json",
+    "executable_proof_manifest": "proof/public-kernel/v1/public-proof-manifest.json",
+    "independent_reproduction_instructions": "reproduction/INDEPENDENT-REPRODUCTION.md",
+    "launch_baseline_manifest": "PUBLIC_LAUNCH_BASELINE.json",
+    "launch_threat_model": "assurance/PUBLIC_LAUNCH_THREAT_MODEL.json",
+    "reader_reference": "reference/Home.md"
+  },
+  "proprietary_implementation_evaluator_class": "NOT_DISTRIBUTED_BY_THIS_PUBLICATION",
+  "public_boundary": "No private implementation source, private repository/source topology, private control routing, credentials, privileged endpoints, or protected operational topology.",
+  "public_verifier_class": "PUBLIC_REPOSITORY_AND_PUBLIC_PROOF_VERIFIER",
+  "repository": "EHCOnomics-Systems/EHCOsystem",
+  "runtime_effect": "NONE",
+  "schema": "EHCO_PUBLIC_VERIFICATION_MANIFEST_V1",
+  "standing_effect": "NONE",
+  "status": "RESULT_PUBLICATION_CANDIDATE_NOT_LAUNCH_ACCEPTED",
+  "supported_public_proof_ids": [
+    "EHCO-PUBLIC-PROOF-KERNEL-PREINTELLIGENCE-GATE-001",
+    "EHCO-C1B-OPA-PUBLIC-PROOF-COMPARISON-001"
+  ]
+}

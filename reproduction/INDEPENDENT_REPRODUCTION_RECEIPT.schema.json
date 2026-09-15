@@ -1,0 +1,421 @@
+{
+  "$id": "EHCO_INDEPENDENT_REPRODUCTION_RECEIPT_V1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "EHCOsystem Independent Reproduction Receipt",
+  "type": "object",
+  "additionalProperties": false,
+  "$defs": {
+    "sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "git_commit_sha": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{40}$"
+    },
+    "output_hash": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "output_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sha256": {
+          "$ref": "#/$defs/sha256"
+        }
+      },
+      "required": [
+        "output_id",
+        "sha256"
+      ]
+    }
+  },
+  "properties": {
+    "schema": {
+      "const": "EHCO_INDEPENDENT_REPRODUCTION_RECEIPT_V1"
+    },
+    "timestamp_utc": {
+      "type": "string",
+      "format": "date-time",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(?:\\.\\d+)?Z$"
+    },
+    "repository_identity": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "repository": {
+          "const": "EHCOnomics-Systems/EHCOsystem"
+        },
+        "revision": {
+          "$ref": "#/$defs/git_commit_sha"
+        },
+        "revision_class": {
+          "const": "EXACT_GIT_COMMIT"
+        }
+      },
+      "required": [
+        "repository",
+        "revision",
+        "revision_class"
+      ]
+    },
+    "public_preregistration_identity": {
+      "const": "8a1a05b4865eaefa716e77cbe669e819e7d6e5b3"
+    },
+    "reviewer_independence_attestation": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "did_not_implement_public_proof_harness": {
+          "type": "boolean"
+        },
+        "operated_outside_ehconomics_development_environment": {
+          "type": "boolean"
+        },
+        "no_private_ehconomics_credentials_used": {
+          "type": "boolean"
+        },
+        "public_material_only": {
+          "type": "boolean"
+        },
+        "prior_private_material_used_for_reproduction": {
+          "type": "boolean"
+        },
+        "unpublished_ehconomics_intervention_required": {
+          "type": "boolean"
+        },
+        "notes": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "did_not_implement_public_proof_harness",
+        "operated_outside_ehconomics_development_environment",
+        "no_private_ehconomics_credentials_used",
+        "public_material_only",
+        "prior_private_material_used_for_reproduction",
+        "unpublished_ehconomics_intervention_required",
+        "notes"
+      ]
+    },
+    "environment": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "clean_non_ehconomics_environment": {
+          "type": "boolean"
+        },
+        "environment_class": {
+          "type": "string",
+          "minLength": 1
+        },
+        "operating_system": {
+          "type": "string",
+          "minLength": 1
+        },
+        "cpu_architecture": {
+          "type": "string",
+          "minLength": 1
+        },
+        "python_version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "opa_version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "opa_platform": {
+          "type": "string",
+          "minLength": 1
+        },
+        "network_state": {
+          "type": "string",
+          "minLength": 1
+        },
+        "commands": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "required": [
+        "clean_non_ehconomics_environment",
+        "environment_class",
+        "operating_system",
+        "cpu_architecture",
+        "python_version",
+        "opa_version",
+        "opa_platform",
+        "network_state",
+        "commands"
+      ]
+    },
+    "public_verifier": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "command": {
+          "const": "python3 verification/verify_all_public.py"
+        },
+        "exit_status": {
+          "type": "integer"
+        },
+        "status": {
+          "enum": [
+            "PASS",
+            "FAIL"
+          ]
+        },
+        "output_sha256": {
+          "$ref": "#/$defs/sha256"
+        }
+      },
+      "required": [
+        "command",
+        "exit_status",
+        "status",
+        "output_sha256"
+      ]
+    },
+    "public_proof": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "proof_family_id": {
+          "const": "EHCO-PUBLIC-PROOF-KERNEL-PREINTELLIGENCE-GATE-001"
+        },
+        "accepted_identity": {
+          "const": "c208cb7cd002d016359f39aba1e3aef3f820befc"
+        },
+        "artifact_name": {
+          "const": "EHCOsystem Public Proof Kernel"
+        },
+        "artifact_version": {
+          "const": "1"
+        },
+        "artifact_digest_algorithm": {
+          "const": "SHA256"
+        },
+        "artifact_digest": {
+          "const": "ef497581702c4929e0e32beef66e39250c95c450d2c90a64efef85c390cb3d31"
+        },
+        "challenge_nonce": {
+          "type": "string",
+          "minLength": 16
+        },
+        "challenge_nonce_source": {
+          "enum": [
+            "REVIEWER_SUPPLIED",
+            "LOCALLY_GENERATED"
+          ]
+        },
+        "run_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "run_receipt_sha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "receipt_verifier_exit_status": {
+          "type": "integer"
+        },
+        "disposition": {
+          "enum": [
+            "PASS",
+            "WITHHOLD",
+            "RETAIN_AMBIGUITY",
+            "UNSUPPORTED_REQUEST",
+            "INTEGRITY_FAILURE",
+            "PROTOCOL_FAILURE"
+          ]
+        },
+        "command": {
+          "type": "string",
+          "minLength": 1
+        },
+        "output_hashes": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/output_hash"
+          }
+        }
+      },
+      "required": [
+        "proof_family_id",
+        "accepted_identity",
+        "artifact_name",
+        "artifact_version",
+        "artifact_digest_algorithm",
+        "artifact_digest",
+        "challenge_nonce",
+        "challenge_nonce_source",
+        "run_id",
+        "run_receipt_sha256",
+        "receipt_verifier_exit_status",
+        "disposition",
+        "command",
+        "output_hashes"
+      ]
+    },
+    "comparative_proof": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "protocol_id": {
+          "const": "EHCO-C1B-OPA-PUBLIC-PROOF-COMPARISON-001"
+        },
+        "protocol_version": {
+          "const": "1.0.0"
+        },
+        "preregistration_identity": {
+          "const": "8a1a05b4865eaefa716e77cbe669e819e7d6e5b3"
+        },
+        "candidate_manifest_sha256": {
+          "const": "440ae3a567f0d7db29a2c3348d0a7eb296ca5eece0b31a78fb9b58932efba357"
+        },
+        "reference_baseline": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "name": {
+              "const": "Open Policy Agent"
+            },
+            "version": {
+              "const": "v1.20.2"
+            },
+            "source_commit": {
+              "const": "b2c26708e9d55645d7f837db495031f7e4152594"
+            },
+            "asset_name": {
+              "const": "opa_linux_amd64_static"
+            },
+            "asset_sha256": {
+              "const": "69da5179ee403d10fa11bab6cfb4ffb0d23dba5f9b682fa977db772a1da5670f"
+            }
+          },
+          "required": [
+            "name",
+            "version",
+            "source_commit",
+            "asset_name",
+            "asset_sha256"
+          ]
+        },
+        "challenge_nonce": {
+          "type": "string",
+          "minLength": 16
+        },
+        "challenge_nonce_source": {
+          "enum": [
+            "REVIEWER_SUPPLIED",
+            "LOCALLY_GENERATED"
+          ]
+        },
+        "run_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "result_sha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "original_official_result_sha256": {
+          "const": "0010b0f2f0369d9328d34e23d44e7117c038038ce4260a14cb51d0b1ad71e38b"
+        },
+        "case_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "failure_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "rerun_for_preferred_result": {
+          "type": "boolean"
+        },
+        "comparison_summary": {
+          "type": "string",
+          "minLength": 1
+        },
+        "command": {
+          "type": "string",
+          "minLength": 1
+        },
+        "output_hashes": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/output_hash"
+          }
+        },
+        "deviations": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "protocol_id",
+        "protocol_version",
+        "preregistration_identity",
+        "candidate_manifest_sha256",
+        "reference_baseline",
+        "challenge_nonce",
+        "challenge_nonce_source",
+        "run_id",
+        "result_sha256",
+        "original_official_result_sha256",
+        "case_count",
+        "failure_count",
+        "rerun_for_preferred_result",
+        "comparison_summary",
+        "command",
+        "output_hashes",
+        "deviations"
+      ]
+    },
+    "observations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "receipt_hash_algorithm": {
+      "const": "SHA256"
+    },
+    "receipt_hash_scope": {
+      "const": "CANONICAL_JSON_EXCLUDING_RECEIPT_SHA256"
+    },
+    "receipt_sha256": {
+      "$ref": "#/$defs/sha256"
+    }
+  },
+  "required": [
+    "schema",
+    "timestamp_utc",
+    "repository_identity",
+    "public_preregistration_identity",
+    "reviewer_independence_attestation",
+    "environment",
+    "public_verifier",
+    "public_proof",
+    "comparative_proof",
+    "observations",
+    "limitations",
+    "receipt_hash_algorithm",
+    "receipt_hash_scope",
+    "receipt_sha256"
+  ]
+}
