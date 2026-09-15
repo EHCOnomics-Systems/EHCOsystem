@@ -1,8 +1,8 @@
 # Independent Reproduction Instructions
 
-Status: **optional supplemental public reproduction route; independent reproduction receipt not yet established.**
+Status: **public self-serve reproduction route available; optional external corroboration; no third-party reproduction receipt included in Public Launch Baseline v1.**
 
-These instructions are intended for a technically competent reviewer who is independent of the EHCOnomics implementation/development environment and uses only public material. Under the current owner-selected SOW-10 standard, this external reproduction is optional supplemental evidence and is not required for Public Launch Baseline v1 acceptance.
+These instructions let a technically competent reviewer independently reproduce the bounded public procedure using only public material. Public Launch Baseline v1 is already accepted on its published verifier, executable proof, preregistered comparative proof, integrity controls, and exact provider checkpoint. A qualifying independent reproduction would add a separate supplemental corroboration evidence class; it is not an unresolved technical-validation, launch-acceptance, Runtime, standing, or promotion requirement. EHCOnomics does not claim third-party certification or external corroboration for Baseline v1.
 
 ## Reviewer eligibility
 
@@ -80,7 +80,7 @@ Record what actually happened. Do not change a false, failed, contaminated, dive
 
 ## Receipt use, privacy and attribution
 
-A qualifying reproduction record may be added later to the continuing SOW-10 public evidence estate as optional supplemental C1D evidence. Its absence does not block Public Launch Baseline v1 acceptance under the current owner-selected SOW-10 standard. A receipt does **not** mean the reviewer is endorsing, certifying or validating the proprietary EHCO implementation.
+A qualifying reproduction record may be added later to the continuing SOW-10 public evidence estate as optional supplemental C1D corroboration. It augments the accepted baseline; it is not required to cure or complete Baseline v1. A receipt does **not** mean the reviewer is endorsing, certifying, or validating the proprietary EHCO implementation.
 
 - A reviewer's name, organization, logo, quoted endorsement, or identifying attribution will not be published as part of this route without the reviewer's explicit permission.
 - If attribution is not permitted, the public evidence may use a privacy-preserving reproduction receipt and disclose only the minimum reviewer description needed to establish independence.

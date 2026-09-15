@@ -15,7 +15,7 @@ Consequential intelligence should carry a proof burden proportional to the conse
 - **[Reader reference](reference/Home.md)**
 - **[Citation metadata](CITATION.cff)**
 
-> **Launch state:** the Public Launch Baseline v1 provider checkpoint is tag `v1.0.0-public`, resolving to exact revision `666634a271b2254fdefa8076dcb8f960ff2e9e4b`, with GitHub Release ID `388874688`. Authoritative baseline-acceptance state is carried by [`EHCO_PUBLIC_LAUNCH_BASELINE_V1_ACCEPTED.json`](EHCO_PUBLIC_LAUNCH_BASELINE_V1_ACCEPTED.json) on canonical `main` after the governed ACCEPT lifecycle; a copy on a non-canonical branch or candidate commit does not itself originate acceptance. Independent external reproduction is **not established** and remains **optional supplemental evidence**; no independent certification is claimed and its absence is non-blocking under the owner-amended SOW-10 standard.
+> **Launch state:** **Public Launch Baseline v1 is accepted.** Its provider checkpoint is tag `v1.0.0-public`, resolving to exact revision `666634a271b2254fdefa8076dcb8f960ff2e9e4b`, with GitHub Release ID `388874688`; authoritative acceptance state is carried by [`EHCO_PUBLIC_LAUNCH_BASELINE_V1_ACCEPTED.json`](EHCO_PUBLIC_LAUNCH_BASELINE_V1_ACCEPTED.json) on canonical `main`. The repository publishes a clean-environment reproduction procedure for optional external corroboration. Baseline v1 does not include a third-party reproduction receipt, so EHCOnomics makes no claim of third-party certification or external corroboration. That separate evidence class is supplemental, not an unresolved technical-validation, launch-acceptance, Runtime, standing, or promotion requirement.
 
 ## What EHCOsystem is
 

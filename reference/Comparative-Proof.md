@@ -43,8 +43,10 @@ The recorded dispositions were:
 
 Read the [result index](../comparison/c1b/v1/results/README.md), [machine result](../comparison/c1b/v1/results/comparison-result.json), and [result manifest](../comparison/c1b/v1/results/result-manifest.json).
 
-## Reproduce it
-The clean independent route is published in [`reproduction/INDEPENDENT-REPRODUCTION.md`](../reproduction/INDEPENDENT-REPRODUCTION.md). Independent external reproduction remains pending.
+## Optional external corroboration
+The clean public reproduction route is published in [`reproduction/INDEPENDENT-REPRODUCTION.md`](../reproduction/INDEPENDENT-REPRODUCTION.md). It is available to an independent reviewer using only public material. Public Launch Baseline v1 does not include a third-party reproduction receipt, so no third-party certification or external corroboration is claimed. A qualifying later reproduction would add a separate supplemental evidence class; it is not an unresolved validation or launch requirement.
+
+Historical result artifacts retain the exact event-time state under which they were originally published. Any earlier event-time wording about external reproduction does not override the current accepted Baseline v1 state or convert optional corroboration into a present blocking gate.
 
 ## How to read the result
 The comparison establishes bounded observed behavior under the frozen synthetic protocol. It does not establish universal superiority, production readiness, Tier One Runtime authority or state, deployment, proprietary same-code identity, or independent certification.

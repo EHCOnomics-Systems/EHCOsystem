@@ -10,9 +10,9 @@ This reference is the short public route for readers evaluating AI runtime gover
 2. **How does EHCOsystem fit together?** Use [Architecture](Architecture.md) for the Tier One Runtime, shared downstream components, and public system map.
 3. **What do the terms mean?** Use [Terminology](Terminology.md) for standing, authority, source and memory standing, permissible range, evidence, consequence, withholding, continuity, and mutual computational proof.
 4. **How can I verify the public record?** Use [Proof and Verification](Proof-and-Verification.md) and the canonical [`VERIFY.md`](../VERIFY.md) front door.
-5. **What was compared?** Use [Comparative Proof](Comparative-Proof.md) for the frozen EHCO-vs-OPA protocol, fairness rules, official result, and reproduction route.
+5. **What was compared?** Use [Comparative Proof](Comparative-Proof.md) for the frozen EHCO-vs-OPA protocol, fairness rules, official result, and optional external-corroboration route.
 6. **How do I challenge or inspect it more deeply?** Use [Diligence and Challenge](Diligence-and-Challenge.md).
-7. **What has been published, and what is still pending?** Use [Publication History](Publication-History.md).
+7. **What has been published?** Use [Publication History](Publication-History.md).
 
 ## Canonical technical routes
 
@@ -26,6 +26,8 @@ This reference is the short public route for readers evaluating AI runtime gover
 
 ## Current publication state
 
-The accepted bounded Public Proof Kernel and preregistered C1B comparison result are public. The Public Launch Baseline v1 provider checkpoint is tag `v1.0.0-public`, resolving to exact revision `666634a271b2254fdefa8076dcb8f960ff2e9e4b`, with GitHub Release ID `388874688`. Authoritative baseline-acceptance state is the copy of [`EHCO_PUBLIC_LAUNCH_BASELINE_V1_ACCEPTED.json`](../EHCO_PUBLIC_LAUNCH_BASELINE_V1_ACCEPTED.json) established on canonical `main` through the governed ACCEPT lifecycle; a copy on a non-canonical branch or candidate commit does not itself originate acceptance. Independent external reproduction remains `NOT_ESTABLISHED / OPTIONAL_SUPPLEMENTAL_EVIDENCE`, is non-blocking under the owner-amended SOW-10 standard, and is not represented as independent certification. The machine-readable baseline binding is [`PUBLIC_LAUNCH_BASELINE.json`](../PUBLIC_LAUNCH_BASELINE.json).
+**Public Launch Baseline v1 is accepted.** The accepted bounded Public Proof Kernel and preregistered C1B comparison result are public. The provider checkpoint is tag `v1.0.0-public`, resolving to exact revision `666634a271b2254fdefa8076dcb8f960ff2e9e4b`, with GitHub Release ID `388874688`; authoritative acceptance state is carried by [`EHCO_PUBLIC_LAUNCH_BASELINE_V1_ACCEPTED.json`](../EHCO_PUBLIC_LAUNCH_BASELINE_V1_ACCEPTED.json) on canonical `main`.
+
+The repository also publishes a clean public reproduction procedure for optional external corroboration. Baseline v1 does not include a third-party reproduction receipt, and EHCOnomics does not claim third-party certification or external corroboration. A later qualifying reproduction would add a separate supplemental evidence class; it is not an unresolved technical-validation, launch-acceptance, Runtime, standing, or promotion requirement. The machine-readable baseline binding is [`PUBLIC_LAUNCH_BASELINE.json`](../PUBLIC_LAUNCH_BASELINE.json).
 
 The GitHub Wiki is a reader-facing projection of this source-controlled reference. If the Wiki and repository reference differ, the repository record and the evidence it routes to remain canonical.
