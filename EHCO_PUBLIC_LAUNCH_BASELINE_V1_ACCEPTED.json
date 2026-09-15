@@ -1,0 +1,47 @@
+{
+  "schema": "EHCO_PUBLIC_LAUNCH_BASELINE_ACCEPTANCE_RECEIPT_V1",
+  "receipt_id": "EHCO_PUBLIC_LAUNCH_BASELINE_V1_ACCEPTED",
+  "status": "ACCEPTANCE_READY_NOT_YET_ACCEPTED",
+  "baseline_id": "EHCO_PUBLIC_LAUNCH_BASELINE_V1",
+  "repository": "EHCOnomics-Systems/EHCOsystem",
+  "accepted_baseline_revision": "666634a271b2254fdefa8076dcb8f960ff2e9e4b",
+  "provider_checkpoint": {
+    "tag": "v1.0.0-public",
+    "tag_resolved_revision": "666634a271b2254fdefa8076dcb8f960ff2e9e4b",
+    "release_id": 388874688,
+    "release_title": "EHCOsystem Public Architecture and Evidence Baseline v1.0.0",
+    "release_url": "https://github.com/EHCOnomics-Systems/EHCOsystem/releases/tag/v1.0.0-public",
+    "published_at": "2026-09-15T04:51:05Z",
+    "draft": false,
+    "prerelease": false,
+    "manually_uploaded_assets": []
+  },
+  "publication_date": "2026-09-15",
+  "executable_proof": {
+    "accepted_identity": "c208cb7cd002d016359f39aba1e3aef3f820befc",
+    "proof_family_id": "EHCO-PUBLIC-PROOF-KERNEL-PREINTELLIGENCE-GATE-001"
+  },
+  "comparative_proof": {
+    "protocol_id": "EHCO-C1B-OPA-PUBLIC-PROOF-COMPARISON-001",
+    "preregistration_identity": "8a1a05b4865eaefa716e77cbe669e819e7d6e5b3",
+    "preregistration_manifest_sha256": "440ae3a567f0d7db29a2c3348d0a7eb296ca5eece0b31a78fb9b58932efba357",
+    "official_result_sha256": "0010b0f2f0369d9328d34e23d44e7117c038038ce4260a14cb51d0b1ad71e38b",
+    "public_result_manifest_sha256": "a961891144ff43cf1772bc9bef775eaa723347ec276892a31bcf64a73cffd35c",
+    "official_rerun_performed": false
+  },
+  "independent_reproduction": {
+    "status": "NOT_ESTABLISHED",
+    "classification": "OPTIONAL_SUPPLEMENTAL_EVIDENCE",
+    "blocks_acceptance": false,
+    "independent_certification_claimed": false
+  },
+  "accepted_numerical_standing": "52/53",
+  "disclosure_boundary": "MAXIMUM_PUBLIC_SAFE_TECHNICAL_TRUTH_MINIMUM_NECESSARY_DISCLOSURE_ZERO_PRIVATE_SOURCE_TOPOLOGY",
+  "runtime_effect": "NONE",
+  "deployment_effect": "NONE",
+  "authority_effect": "NONE",
+  "standing_effect": "NONE",
+  "proprietary_source_transfer_effect": "NONE",
+  "broader_distribution_performed": false,
+  "acceptance_note": "This machine-facing receipt is staged as acceptance-ready in the PUBLISH candidate. It becomes the authoritative EHCO_PUBLIC_LAUNCH_BASELINE_V1_ACCEPTED receipt only when the exact reviewed candidate is advanced through the governed ACCEPT lifecycle."
+}
