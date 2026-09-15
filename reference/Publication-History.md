@@ -23,10 +23,21 @@ This page records the public proof and publication sequence without treating lat
 - Official rerun performed: false
 - Public result route: [comparison/c1b/v1/results/](../comparison/c1b/v1/results/README.md)
 
-## Current public-launch candidate
-The repository is still in prelaunch qualification. The current machine-readable candidate state is published in [`PUBLIC_LAUNCH_BASELINE.json`](../PUBLIC_LAUNCH_BASELINE.json), and the canonical verification route begins at [`VERIFY.md`](../VERIFY.md).
+## Provider publication checkpoint
+- Registered/public tag: `v1.0.0-public`
+- Tag target: `666634a271b2254fdefa8076dcb8f960ff2e9e4b`
+- GitHub Release ID: `388874688`
+- Release title: `EHCOsystem Public Architecture and Evidence Baseline v1.0.0`
+- Published: `2026-09-15T04:51:05Z`
+- Draft: false
+- Prerelease: false
+- Manually uploaded assets: none
+
+The provider checkpoint is a public technical/evidence publication object. It is not deployment, Runtime realization, standing change, authority change, open-source conversion, proprietary-source distribution, or independent certification.
 
 ## Public Launch Baseline v1
-Not yet accepted. Independent external reproduction, final exact-candidate qualification, provider checkpoint identity, launch-baseline acceptance receipt, and end-to-end public-loop closure remain pending.
+The exact provider-visible checkpoint required for Public Launch Baseline v1 is now materialized. This branch is the governed post-checkpoint acceptance-binding candidate. `EHCO_PUBLIC_LAUNCH_BASELINE_V1_ACCEPTED` has not yet been issued until the exact reviewed candidate completes the ACCEPT lifecycle.
 
-When Public Launch Baseline v1 is accepted, its publication checkpoint must bind the exact accepted Git identity, evidence and verification routes, Wiki/reference identity, citation identity, provider tag/Release identity, publication date, limitations, and proprietary-source boundary. Until then, no prelaunch candidate should be cited as the accepted launch baseline.
+Independent external reproduction remains `NOT_ESTABLISHED / OPTIONAL_SUPPLEMENTAL_EVIDENCE` and is not a blocking gate under the current owner-amended SOW-10 standard.
+
+The machine-readable baseline binding is published in [`PUBLIC_LAUNCH_BASELINE.json`](../PUBLIC_LAUNCH_BASELINE.json), and the staged machine-facing acceptance receipt is [`EHCO_PUBLIC_LAUNCH_BASELINE_V1_ACCEPTED.json`](../EHCO_PUBLIC_LAUNCH_BASELINE_V1_ACCEPTED.json).
