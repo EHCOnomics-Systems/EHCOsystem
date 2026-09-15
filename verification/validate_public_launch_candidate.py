@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate EHCO-PUB-SOW-010 launch bindings without creating acceptance."""
+"""Validate EHCO-PUB-SOW-010 launch bindings without originating acceptance."""
 
 from __future__ import annotations
 
@@ -266,7 +266,7 @@ def main() -> int:
 
     baseline = load("PUBLIC_LAUNCH_BASELINE.json")
     require_equal(baseline.get("schema"), "EHCO_PUBLIC_LAUNCH_BASELINE_MANIFEST_V1", "launch baseline schema")
-    require_equal(baseline.get("status"), "PUBLIC_LAUNCH_BASELINE_V1_ACCEPTANCE_READY", "launch baseline acceptance state")
+    require_equal(baseline.get("status"), "EHCO_PUBLIC_LAUNCH_BASELINE_V1_ACCEPTED", "launch baseline acceptance state")
     require_equal(baseline.get("final_git_commit"), BASELINE_REVISION, "final Git binding")
     provider = baseline.get("provider_publication_identity", {})
     require_equal(provider.get("tag"), PROVIDER_TAG, "provider checkpoint tag")
@@ -290,7 +290,7 @@ def main() -> int:
     acceptance = load("EHCO_PUBLIC_LAUNCH_BASELINE_V1_ACCEPTED.json")
     require_equal(acceptance.get("schema"), "EHCO_PUBLIC_LAUNCH_BASELINE_ACCEPTANCE_RECEIPT_V1", "acceptance receipt schema")
     require_equal(acceptance.get("receipt_id"), "EHCO_PUBLIC_LAUNCH_BASELINE_V1_ACCEPTED", "acceptance receipt id")
-    require_equal(acceptance.get("status"), "ACCEPTANCE_READY_NOT_YET_ACCEPTED", "acceptance receipt state")
+    require_equal(acceptance.get("status"), "EHCO_PUBLIC_LAUNCH_BASELINE_V1_ACCEPTED", "acceptance receipt state")
     require_equal(acceptance.get("accepted_baseline_revision"), BASELINE_REVISION, "acceptance baseline revision")
     require_equal(acceptance.get("provider_checkpoint", {}).get("tag"), PROVIDER_TAG, "acceptance provider tag")
     require_equal(acceptance.get("provider_checkpoint", {}).get("tag_resolved_revision"), BASELINE_REVISION, "acceptance provider tag revision")
@@ -317,14 +317,14 @@ def main() -> int:
     if not any(operation_id in operation for operation_id in VALID_SOW10_OPERATION_IDS):
         fail("public operation projection is not a recognized SOW-10 launch operation")
 
-    print("PASS SOW-10 public launch acceptance-ready bindings")
+    print("PASS SOW-10 public launch acceptance receipt bindings")
     print(f"baseline_revision={BASELINE_REVISION}")
     print(f"provider_tag={PROVIDER_TAG}")
     print(f"provider_release_id={PROVIDER_RELEASE_ID}")
     print(f"preregistration_identity={PREREG_ID}")
     print(f"official_result_sha256={RESULT_SHA256}")
     print("independent_external_reproduction=NOT_ESTABLISHED")
-    print("public_launch_baseline_v1=ACCEPTANCE_READY_NOT_YET_ACCEPTED")
+    print("public_launch_baseline_v1=EHCO_PUBLIC_LAUNCH_BASELINE_V1_ACCEPTED")
 
     if args.reproduction_receipt is not None:
         validate_reproduction_receipt(args.reproduction_receipt, receipt_schema)
@@ -337,5 +337,5 @@ if __name__ == "__main__":
     try:
         raise SystemExit(main())
     except (AssertionError, KeyError, TypeError) as exc:
-        print(f"FAIL SOW-10 public launch acceptance-ready bindings: {exc}", file=sys.stderr)
+        print(f"FAIL SOW-10 public launch acceptance receipt bindings: {exc}", file=sys.stderr)
         raise SystemExit(1)
