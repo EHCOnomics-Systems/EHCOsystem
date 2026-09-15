@@ -1,7 +1,7 @@
 {
   "schema": "EHCO_PUBLIC_LAUNCH_BASELINE_ACCEPTANCE_RECEIPT_V1",
   "receipt_id": "EHCO_PUBLIC_LAUNCH_BASELINE_V1_ACCEPTED",
-  "status": "ACCEPTANCE_READY_NOT_YET_ACCEPTED",
+  "status": "EHCO_PUBLIC_LAUNCH_BASELINE_V1_ACCEPTED",
   "baseline_id": "EHCO_PUBLIC_LAUNCH_BASELINE_V1",
   "repository": "EHCOnomics-Systems/EHCOsystem",
   "accepted_baseline_revision": "666634a271b2254fdefa8076dcb8f960ff2e9e4b",
@@ -43,5 +43,5 @@
   "standing_effect": "NONE",
   "proprietary_source_transfer_effect": "NONE",
   "broader_distribution_performed": false,
-  "acceptance_note": "This machine-facing receipt is staged as acceptance-ready in the PUBLISH candidate. It becomes the authoritative EHCO_PUBLIC_LAUNCH_BASELINE_V1_ACCEPTED receipt only when the exact reviewed candidate is advanced through the governed ACCEPT lifecycle."
+  "acceptance_note": "These bytes are the final intended machine-facing acceptance receipt. A candidate branch or commit does not itself originate acceptance; the receipt becomes authoritative only when the exact reviewed candidate completes the governed ACCEPT lifecycle and is established on canonical main."
 }
