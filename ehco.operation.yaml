@@ -141,11 +141,11 @@ change_control:
     - read_source
     - compare_source
     - audit
+    - update_file
     - run_checks
   local_actions_prohibited:
     - propose
     - create_file
-    - update_file
     - move_file
     - delete_file
     - generate_artifact
