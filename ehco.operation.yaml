@@ -335,7 +335,7 @@ bridge:
   participation_binding_status: NOT_ESTABLISHED
   canonical_runtime_receipt_status: NOT_ESTABLISHED
 evidence:
-  evidence_class: REPOSITORY_AND_PUBLIC_RETRIEVAL_OBSERVATION_VALIDATION
+  evidence_class: REPOSITORY_SOURCE_AND_DIFF_VALIDATION
   required_checks:
     - The nine manifest-bound C1B protocol files must remain byte-identical to preregistration identity 8a1a05b4865eaefa716e77cbe669e819e7d6e5b3.
     - The exact official comparison result SHA-256 must remain 0010b0f2f0369d9328d34e23d44e7117c038038ce4260a14cb51d0b1ad71e38b and no official rerun may occur.
