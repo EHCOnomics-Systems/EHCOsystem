@@ -54,4 +54,4 @@ Controlled implementation source and mechanics that have not been selected for p
 A bounded, intentionally public computation that lets an independent reviewer test a published proposition without receiving proprietary implementation source.
 
 ## Public Launch Baseline v1
-The exact public publication checkpoint that will be established only after the applicable launch gates pass. It has not yet been accepted while this repository remains a prelaunch candidate. Current candidate state is published in [`PUBLIC_LAUNCH_BASELINE.json`](../PUBLIC_LAUNCH_BASELINE.json).
+The versioned public technical/evidence publication baseline whose immutable provider checkpoint is tag `v1.0.0-public` at exact revision `666634a271b2254fdefa8076dcb8f960ff2e9e4b`, with GitHub Release ID `388874688` published on 2026-09-15. In this PUBLISH candidate, the provider checkpoint is established and the final governed acceptance binding is staged but `EHCO_PUBLIC_LAUNCH_BASELINE_V1_ACCEPTED` has not yet been issued. Current machine-readable state is in [`PUBLIC_LAUNCH_BASELINE.json`](../PUBLIC_LAUNCH_BASELINE.json).
