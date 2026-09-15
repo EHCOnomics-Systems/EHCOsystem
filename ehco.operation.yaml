@@ -41,6 +41,10 @@ selection:
     WIKI_REFERENCE_ALIGNMENT=ESTABLISHED
     WIKI_PROVIDER_PAGE_IDENTITY_NORMALIZATION=U+2010_OBSERVATION_ONLY
     WIKI_SOURCE_PROJECTION_HEAD=82b9aaf27d1bf8b40c3440f07089b9a47ba2fca1
+    SOCIAL_PREVIEW_READINESS=ESTABLISHED
+    SOCIAL_PREVIEW_PROVIDER_READBACK=ESTABLISHED
+    SOCIAL_PREVIEW_EXACT_DEFECT=NONE
+    WORKSTREAM_J_STATUS=ESTABLISHED
     C1D_PUBLIC_INSTRUCTIONS_HARDENED=true
     C1D_RECEIPT_STRUCTURAL_SELF_HASH_VALIDATION_AVAILABLE=true
     INDEPENDENT_EXTERNAL_REPRODUCTION_RECEIPT=NOT_ESTABLISHED
@@ -108,7 +112,7 @@ active_operation:
   authorization_mode: PUBLISH
   bounded_outcome: Close the established repository-side SOW-10 public-launch audit defects on draft PR #66, reconcile the selected GitHub Wiki/reference route, and harden the public C1D reproduction contract against independently established environment, evidence-binding, receipt and attribution ambiguity without accepting Public Launch Baseline v1.
   remaining_bounded_work:
-    - Preserve the established GitHub Wiki/reference materialization, provider readback, navigation, and source alignment; provider U+2010 page-identity normalization is observation-only and not an acceptance blocker.
+    - Preserve established Workstream J public reference/discovery/provider surfaces, including Wiki/reference and social-preview readiness/readback.
     - Obtain exact-head canonical public repository validation, CodeQL, EHCO Assistant Operation Gate, and provider readback after the latest audit-remediation mutations.
     - Preserve C1D as NOT_ESTABLISHED until an owning independent external reproduction receipt is received and validated.
     - Do not execute discovery/reconstruction, final launch acceptance, tag/Release checkpoint, broader distribution or end-to-end public-loop closure before C1D and the downstream SOW gates permit them.
@@ -116,6 +120,7 @@ active_operation:
     - The current owner-selected public-launch control owns the wider objective, claim and evidence ceilings, comparative-proof sequence, disclosure boundary, independent-reproduction requirement, Wiki/reference requirement, and Public Launch Baseline acceptance.
     - EHCOnomics-Systems/EHCOsystem owns exact public source, Git objects, refs, workflows, pull requests and repository-validation state.
     - The GitHub Wiki provider surface owns public Wiki page materialization; source-controlled reference pages remain the qualified content source and do not become a competing evidence owner.
+    - GitHub provider metadata/social-preview surfaces own their rendered provider state; repository source remains the technical claim/evidence authority.
     - Public preregistration identity 8a1a05b4865eaefa716e77cbe669e819e7d6e5b3 owns the frozen nine-file C1B pre-result package identity.
     - Owning one-shot execution evidence owns the official comparative execution/result facts; this remediation validates and preserves those facts but may not rerun or regenerate them.
     - Independent external reproduction remains separately required and cannot be created by repository remediation.
@@ -325,6 +330,7 @@ evidence:
     - The launch-level threat/failure model must explicitly cover static replay, artifact/fixture substitution, post-result protocol drift, hidden dependency, reference-baseline drift, asymmetric comparative configuration, selective result omission, integrity bypass, and claim-scope inflation with controls or disclosed limitations.
     - Machine-readable verification discovery and Public Launch Baseline candidate hashes must match the exact corrected verifier/threat-model bytes.
     - The selected GitHub Wiki feature must be enabled and the reader-reference layer must have established page materialization, provider readback, working navigation, and reference alignment; GitHub U+2010 page-identity normalization is provider behavior and not by itself an acceptance defect.
+    - Social-preview readiness and direct provider readback must be established with no exact defect before Workstream J is treated as complete.
     - The source-controlled reader reference must not falsely state that Wiki is disabled and must preserve subordinate evidence ownership.
     - C1D public instructions must state the exact Linux x86-64 / CPython / frozen OPA environment requirements, exact-revision binding, privacy/attribution semantics and no-unpublished-intervention boundary.
     - The public launch validator must be able to structurally validate a returned C1D receipt and verify its canonical receipt SHA-256 without treating structural validity as C1D acceptance.
@@ -340,6 +346,7 @@ evidence:
     - Launch-level threat/failure coverage is explicit without mutating the accepted C1 proof package.
     - The public C1D package exposes its exact environment, evidence-binding, receipt-integrity and attribution boundaries without claiming external reproduction.
     - The selected Wiki/reference layer is materialized, directly read back, navigable, and aligned to its qualified source projection; GitHub U+2010 page-identity normalization is retained as observation-only provider behavior.
+    - Workstream J public reference/discovery/provider surfaces are established, including social-preview readiness and provider readback with no exact defect.
   evidence_not_created:
     - Independent external third-party reproduction receipt
     - EHCO_PUBLIC_LAUNCH_BASELINE_V1_ACCEPTED
@@ -348,8 +355,8 @@ evidence:
     - Deployment, production, release, authority, standing, admission or participation effect
     - Any successor operation
 stop_condition:
-  - Stop this repository-remediation pass only after the latest PR #66 head is provider-resolvable and all required exact-head provider checks are reconciled; the selected Wiki/reference materialization and readback are already established.
-  - Preserve the established Wiki materialization, provider readback, navigation and reference alignment; GitHub U+2010 page-identity normalization remains observation-only.
+  - Stop this repository-remediation pass only after the latest PR #66 head is provider-resolvable and all required exact-head provider checks are reconciled; Workstream J provider/reference/discovery surfaces are established.
+  - Preserve established Wiki materialization, provider readback, navigation, reference alignment and social-preview readiness/readback; GitHub U+2010 page-identity normalization remains observation-only.
   - Do not mark PR #66 Ready, merge it, release, deploy, invoke Runtime, mutate authority or standing, issue Public Launch Baseline v1 acceptance, execute post-C1D discovery/reconstruction, select a replacement external reviewer, or activate a successor in this remediation.
   - Preserve the C1B preregistered nine-file package without further mutation.
   - Preserve accepted standing 52/53 and all Runtime, deployment, release, authority, standing, participation and successor effects as NONE or not established as applicable.
