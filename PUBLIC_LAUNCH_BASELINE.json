@@ -42,7 +42,7 @@
   },
   "launch_threat_model": {
     "path": "assurance/PUBLIC_LAUNCH_THREAT_MODEL.json",
-    "sha256": "8be3b541719c0e373024e8902b99599d2e153eff54b1cbb1fd4263b3017d4aa5"
+    "sha256": "40c17a8ecadfbdb0f3d8fc1341e079e318ffa8fea25c7379cfed7d6d327b958d"
   },
   "provider_publication_identity": "PENDING_FINAL_PROVIDER_TAG_OR_RELEASE_CHECKPOINT",
   "public_verifier": {
