@@ -17,7 +17,7 @@ The orchestrator runs the complete required validator set in a stable order:
 7. Range Reactor capability snapshot;
 8. Range Reactor operational-closure public result;
 9. registered public release identity; and
-10. SOW-10 Public Launch candidate bindings, including C1B frozen-protocol integrity, result-manifest closure, launch threat/failure coverage, machine verification discovery, baseline candidate cross-bindings, public reproduction contract state, and required public routes.
+10. SOW-10 Public Launch bindings, including C1B frozen-protocol integrity, result-manifest closure, launch threat/failure coverage, machine verification discovery, provider-bound baseline cross-bindings, public reproduction contract state, acceptance-receipt state, and required public routes.
 
 The required GitHub workflow runs this same entrypoint, so local reviewer instructions and repository CI describe the same validation surface.
 
@@ -64,11 +64,11 @@ python3 verification/validate_public_proof_kernel.py
 
 The validator exercises five official governed-disposition fixtures plus fixture, protocol, artifact, receipt, and nonce tamper/replay controls. The proof emits nonce-bound machine-readable receipts and preserves `PASS`, `WITHHOLD`, `RETAIN_AMBIGUITY`, `UNSUPPORTED_REQUEST`, and integrity/protocol failure semantics without promoting the result into Runtime authority, standing, deployment, Language Model qualification, or Range Reactor qualification.
 
-The proof package's manifest binds exact public proof bytes by SHA-256 but intentionally does not embed its own final Git commit SHA. Final launch-checkpoint identity is a separate later acceptance binding.
+The proof package's manifest binds exact public proof bytes by SHA-256 but intentionally does not embed its own final Git commit SHA. Final launch-checkpoint identity is a separate acceptance binding.
 
-## SOW-10 Public Launch candidate bindings
+## SOW-10 Public Launch bindings
 
-`verification/validate_public_launch_candidate.py` is the canonical launch-candidate integrity layer. It does not create Public Launch Baseline acceptance. It validates the currently published candidate state by requiring:
+`verification/validate_public_launch_candidate.py` is the canonical launch integrity layer. It does not originate Public Launch Baseline acceptance. It validates the currently published binding state by requiring:
 
 - byte-for-byte SHA-256 closure of all nine files in the C1B preregistration manifest;
 - the exact preregistration identity `8a1a05b4865eaefa716e77cbe669e819e7d6e5b3` and manifest SHA-256 `440ae3a567f0d7db29a2c3348d0a7eb296ca5eece0b31a78fb9b58932efba357`;
@@ -76,8 +76,9 @@ The proof package's manifest binds exact public proof bytes by SHA-256 but inten
 - closure of every file published by the C1B result manifest, with five planned / five recorded cases, zero omissions, zero recorded run failures, and no preferred-result rerun;
 - launch-level threat/failure coverage for static replay, artifact/fixture substitution, post-result protocol drift, hidden dependency, reference-baseline drift, asymmetric comparative configuration, selective omission, integrity bypass, and claim-scope inflation;
 - canonical-verifier Git-blob identity and machine-route consistency;
-- Public Launch Baseline candidate cross-bindings to the verification-discovery and launch-threat-model digests; and
-- independent external reproduction remaining `NOT_ESTABLISHED` until an owning third-party receipt is received and validated.
+- Public Launch Baseline cross-bindings to the verification-discovery and launch-threat-model digests;
+- exact baseline revision `666634a271b2254fdefa8076dcb8f960ff2e9e4b`, provider tag `v1.0.0-public`, Release ID `388874688`, publication timestamp/date, and machine acceptance-receipt route; and
+- independent external reproduction remaining `NOT_ESTABLISHED / OPTIONAL_SUPPLEMENTAL_EVIDENCE` unless owning third-party evidence is later received and validated.
 
 Run it directly with:
 
@@ -101,7 +102,7 @@ This optional mode checks the receipt against the repository's published schema 
 
 A successful run establishes that the checked-out public repository is internally coherent for its exact revision: required files and links are present, public/private disclosure boundaries hold, selected public evidence records match their expected identities, component and Runtime terminology is consistent, and the reader-facing representation satisfies the repository's public validation rules.
 
-Repository validation qualifies the **public representation**. The Public Proof Kernel additionally provides fresh bounded computation for its exact synthetic protocol. The C1B launch-candidate validator verifies published protocol/result/binding integrity. None of those layers reopens or replaces the owning evidence that established Runtime operation, Full Flex, Range Reactor performance/semantic closure, Language Model artifact/release/staging state, deployment, authority, standing, or Runtime participation.
+Repository validation qualifies the **public representation**. The Public Proof Kernel additionally provides fresh bounded computation for its exact synthetic protocol. The C1B launch validator verifies published protocol/result/binding integrity. None of those layers reopens or replaces the owning evidence that established Runtime operation, Full Flex, Range Reactor performance/semantic closure, Language Model artifact/release/staging state, deployment, authority, standing, or Runtime participation.
 
 The public validation surface also enforces **durable public semantics** for the intended repository resting state: active reader-facing language must preserve evidence ownership, lifecycle dimensions, Runtime identity/authority separation, accepted evidence meaning, and historical/event-time scope without creating avoidable live-currentness obligations.
 
@@ -125,4 +126,4 @@ It also protects reader-facing semantics by rejecting residual Full Flex “synt
 
 Pull-request acceptance uses the exact candidate plus the repository and organization protections that apply at review time, including repository validation, CodeQL, and the EHCO Assistant Operation Gate. Accepted numerical standing remains **52/53** unless separately changed by its owning authority.
 
-The current result-publication candidate does not issue `EHCO_PUBLIC_LAUNCH_BASELINE_V1_ACCEPTED`. Independent external reproduction remains separately required; discovery/reconstruction, final exact-candidate qualification, launch checkpoint, broader distribution, and end-to-end public-loop closure remain downstream SOW gates.
+The Public Launch Baseline v1 provider checkpoint is `v1.0.0-public` / Release ID `388874688`, bound to exact baseline revision `666634a271b2254fdefa8076dcb8f960ff2e9e4b`. Authoritative baseline-acceptance state is the copy of `EHCO_PUBLIC_LAUNCH_BASELINE_V1_ACCEPTED.json` established on canonical `main` through the governed ACCEPT lifecycle; a copy on a non-canonical branch or candidate commit does not itself originate acceptance. Independent external reproduction remains `NOT_ESTABLISHED / OPTIONAL_SUPPLEMENTAL_EVIDENCE`, is not a blocking gate, and is not represented as independent certification.

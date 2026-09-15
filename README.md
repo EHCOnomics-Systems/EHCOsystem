@@ -15,7 +15,7 @@ Consequential intelligence should carry a proof burden proportional to the conse
 - **[Reader reference](reference/Home.md)**
 - **[Citation metadata](CITATION.cff)**
 
-> **Launch state:** EHCOsystem Public Launch Baseline v1 is **not yet accepted**. The official C1B result is included in this bounded launch-candidate proof object. Independent external reproduction is **not established** and is **optional supplemental evidence**; its absence does not block Public Launch Baseline v1 acceptance under the current owner-selected SOW-10 standard.
+> **Launch state:** the Public Launch Baseline v1 provider checkpoint is tag `v1.0.0-public`, resolving to exact revision `666634a271b2254fdefa8076dcb8f960ff2e9e4b`, with GitHub Release ID `388874688`. Authoritative baseline-acceptance state is carried by [`EHCO_PUBLIC_LAUNCH_BASELINE_V1_ACCEPTED.json`](EHCO_PUBLIC_LAUNCH_BASELINE_V1_ACCEPTED.json) on canonical `main` after the governed ACCEPT lifecycle; a copy on a non-canonical branch or candidate commit does not itself originate acceptance. Independent external reproduction is **not established** and remains **optional supplemental evidence**; no independent certification is claimed and its absence is non-blocking under the owner-amended SOW-10 standard.
 
 ## What EHCOsystem is
 

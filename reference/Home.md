@@ -26,6 +26,6 @@ This reference is the short public route for readers evaluating AI runtime gover
 
 ## Current publication state
 
-The accepted bounded Public Proof Kernel and the preregistered C1B comparison result are public. Independent external reproduction remains pending, and **Public Launch Baseline v1 has not been accepted**. The machine-readable candidate state is in [`PUBLIC_LAUNCH_BASELINE.json`](../PUBLIC_LAUNCH_BASELINE.json).
+The accepted bounded Public Proof Kernel and preregistered C1B comparison result are public. The Public Launch Baseline v1 provider checkpoint is tag `v1.0.0-public`, resolving to exact revision `666634a271b2254fdefa8076dcb8f960ff2e9e4b`, with GitHub Release ID `388874688`. Authoritative baseline-acceptance state is the copy of [`EHCO_PUBLIC_LAUNCH_BASELINE_V1_ACCEPTED.json`](../EHCO_PUBLIC_LAUNCH_BASELINE_V1_ACCEPTED.json) established on canonical `main` through the governed ACCEPT lifecycle; a copy on a non-canonical branch or candidate commit does not itself originate acceptance. Independent external reproduction remains `NOT_ESTABLISHED / OPTIONAL_SUPPLEMENTAL_EVIDENCE`, is non-blocking under the owner-amended SOW-10 standard, and is not represented as independent certification. The machine-readable baseline binding is [`PUBLIC_LAUNCH_BASELINE.json`](../PUBLIC_LAUNCH_BASELINE.json).
 
 The GitHub Wiki is a reader-facing projection of this source-controlled reference. If the Wiki and repository reference differ, the repository record and the evidence it routes to remain canonical.
