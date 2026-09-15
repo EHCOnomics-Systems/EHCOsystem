@@ -49,7 +49,7 @@ active_operation:
   operation_id: EHCOSYSTEM-SOW010-LAUNCH-INTEGRITY-REMEDIATION-001
   state: ACTIVE
   authorization_mode: REALIZE
-  bounded_outcome: Materialize the repository-registered GitHub provider publication checkpoint only: tag v1.0.0-public and Release EHCOsystem Public Architecture and Evidence Baseline v1.0.0, targeting the exact canonical main revision that carries this accepted REALIZE control. Obtain provider readback. Do not deploy, invoke Runtime, change standing or authority, transfer proprietary source, claim independent certification, perform broader distribution, or declare EHCO_PUBLIC_LAUNCH_BASELINE_V1_ACCEPTED in this REALIZE operation.
+  bounded_outcome: Materialize the repository-registered GitHub provider publication checkpoint consisting only of tag v1.0.0-public and Release EHCOsystem Public Architecture and Evidence Baseline v1.0.0, targeting the exact canonical main revision that carries this accepted REALIZE control. Obtain provider readback. Do not deploy, invoke Runtime, change standing or authority, transfer proprietary source, claim independent certification, perform broader distribution, or declare EHCO_PUBLIC_LAUNCH_BASELINE_V1_ACCEPTED in this REALIZE operation.
   remaining_bounded_work:
     - Qualify this operation-record-only REALIZE candidate through canonical public repository validation, CodeQL and EHCO Assistant Operation Gate.
     - Accept this exact reviewed REALIZE candidate through the existing owner-selected acceptance boundary and read back the resulting canonical main revision.
