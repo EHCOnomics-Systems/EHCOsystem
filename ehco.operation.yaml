@@ -186,7 +186,7 @@ bridge:
   participation_binding_status: NOT_ESTABLISHED
   canonical_runtime_receipt_status: NOT_ESTABLISHED
 evidence:
-  evidence_class: REPOSITORY_SOURCE_PROVIDER_READBACK_AND_DIFF_VALIDATION
+  evidence_class: REPOSITORY_SOURCE_AND_DIFF_VALIDATION
   required_checks:
     - Exact reviewed PUBLISH head a34a18dbc75ad8d4efe90dc40ce24e3002404de7 has canonical public repository validation PASS, CodeQL PASS and EHCO Assistant Operation Gate PASS.
     - The bounded Work provider-session report records Home, Comparative‐Proof, Proof‐and‐Verification and Publication‐History aligned to exact reviewed source revision a34a18dbc75ad8d4efe90dc40ce24e3002404de7, provider-normalized identities reused, 32 material links tested, zero failures, no duplicate page, no unrelated Wiki edits, and no Git/tag/Release/Runtime/deployment/authority/standing/broader-distribution effect.
