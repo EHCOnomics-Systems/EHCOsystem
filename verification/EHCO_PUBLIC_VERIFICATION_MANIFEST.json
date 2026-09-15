@@ -52,7 +52,7 @@
       {
         "id": "PUBLIC_LAUNCH_CANDIDATE_BINDINGS",
         "path": "verification/validate_public_launch_candidate.py",
-        "git_blob_sha": "444a809da14fb7cb6d28790b52b1db2af02b7669"
+        "git_blob_sha": "5a245e68e82b7979cad8f596fec8f7194b21afd2"
       }
     ],
     "execution_command": "python3 verification/verify_all_public.py",
@@ -94,7 +94,7 @@
   "runtime_effect": "NONE",
   "schema": "EHCO_PUBLIC_VERIFICATION_MANIFEST_V1",
   "standing_effect": "NONE",
-  "status": "PUBLIC_LAUNCH_BASELINE_V1_ACCEPTANCE_READY",
+  "status": "EHCO_PUBLIC_LAUNCH_BASELINE_V1_ACCEPTED",
   "supported_public_proof_ids": [
     "EHCO-PUBLIC-PROOF-KERNEL-PREINTELLIGENCE-GATE-001",
     "EHCO-C1B-OPA-PUBLIC-PROOF-COMPARISON-001"
