@@ -1,12 +1,12 @@
 # Independent Reproduction Instructions
 
-Status: **public-candidate instructions; independent reproduction receipt not yet established.**
+Status: **optional supplemental public reproduction route; independent reproduction receipt not yet established.**
 
-These instructions are intended for a technically competent reviewer who is independent of the EHCOnomics implementation/development environment and uses only public material.
+These instructions are intended for a technically competent reviewer who is independent of the EHCOnomics implementation/development environment and uses only public material. Under the current owner-selected SOW-10 standard, this external reproduction is optional supplemental evidence and is not required for Public Launch Baseline v1 acceptance.
 
 ## Reviewer eligibility
 
-The reviewer must:
+For a reproduction to qualify as independent supplemental C1D evidence, the reviewer must:
 - not have implemented the selected EHCOsystem public proof harness;
 - operate outside the EHCOnomics implementation/development environment;
 - have no private EHCOnomics repository, Drive, implementation, or Runtime credentials for this reproduction; and
@@ -59,7 +59,7 @@ The preregistration identity is the protocol authority. A later result-publicati
 python3 verification/validate_public_launch_candidate.py --reproduction-receipt /path/to/receipt.json
 ```
 
-This check uses only the Python standard library. It validates the published receipt structure and canonical `receipt_sha256` calculation. A passing structural/self-hash check does **not** by itself establish C1D acceptance; the returned receipt still has to satisfy the independence, environment, identity, execution and no-unpublished-intervention requirements.
+This check uses only the Python standard library. It validates the published receipt structure and canonical `receipt_sha256` calculation. A passing structural/self-hash check does **not** by itself establish qualifying independent reproduction evidence; the returned receipt still has to satisfy the independence, environment, identity, execution and no-unpublished-intervention requirements.
 
 ## Receipt binding requirements
 
@@ -76,16 +76,16 @@ The receipt schema is intentionally stricter than a narrative checklist. It requ
 - all deviations, observations and limitations; and
 - the receipt's own integrity digest.
 
-Record what actually happened. Do not change a false, failed, contaminated, divergent or incomplete observation merely to make the receipt appear successful. Schema validity establishes structural completeness only; it does not by itself establish C1D acceptance.
+Record what actually happened. Do not change a false, failed, contaminated, divergent or incomplete observation merely to make the receipt appear successful. Schema validity establishes structural completeness only; it does not by itself establish qualifying independent reproduction evidence.
 
 ## Receipt use, privacy and attribution
 
-The reproduction record may become part of the SOW-10 launch evidence if it is accepted for C1D. That does **not** mean the reviewer is endorsing, certifying or validating the proprietary EHCO implementation.
+A qualifying reproduction record may be added later to the continuing SOW-10 public evidence estate as optional supplemental C1D evidence. Its absence does not block Public Launch Baseline v1 acceptance under the current owner-selected SOW-10 standard. A receipt does **not** mean the reviewer is endorsing, certifying or validating the proprietary EHCO implementation.
 
 - A reviewer's name, organization, logo, quoted endorsement, or identifying attribution will not be published as part of this route without the reviewer's explicit permission.
-- If attribution is not permitted, the launch evidence may use a privacy-preserving reproduction receipt and disclose only the minimum reviewer description needed to establish independence.
+- If attribution is not permitted, the public evidence may use a privacy-preserving reproduction receipt and disclose only the minimum reviewer description needed to establish independence.
 - Technical failures, deviations and limitations remain part of the evidence and are not removed merely because a privacy-preserving form is used.
-- A reviewer may return feedback that is not eligible for C1D; such feedback remains useful but must not be represented as the mandatory independent reproduction receipt.
+- A reviewer may return feedback that is not eligible for qualifying C1D evidence; such feedback remains useful but must not be represented as independent corroboration or certification.
 
 ## Receipt SHA-256
 
@@ -102,6 +102,6 @@ The hash rule deliberately excludes the digest field itself so the receipt does 
 
 A reproduction receipt establishes what the independent reviewer actually reproduced from the public instructions and artifacts. It must retain failures and deviations and must not overstate them.
 
-A returned receipt remains subject to C1D intake validation against the exact public identities and independence conditions. In particular, schema-valid evidence is not launch acceptance when the record shows private-material use, unpublished intervention, a preferred-result rerun, an ineligible environment, identity mismatch, integrity failure, or another material unresolved deviation.
+A returned receipt remains subject to C1D intake validation against the exact public identities and independence conditions before it may be represented as qualifying supplemental evidence. In particular, schema-valid evidence is not independent corroboration when the record shows private-material use, unpublished intervention, a preferred-result rerun, an ineligible environment, identity mismatch, integrity failure, or another material unresolved deviation.
 
 A successful receipt does not create Runtime authority, change standing 52/53, certify proprietary same-code identity, prove production deployment, or establish universal superiority.
