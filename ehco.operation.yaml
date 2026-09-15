@@ -17,6 +17,7 @@ selection:
   durable_reference: |-
     Post-merge canonical-main readback established one bounded MUST_FIX_BEFORE_ACCEPTANCE public-semantics defect: current reader-facing launch surfaces still describe C1D independent external reproduction as mandatory even though Edward's owner amendment makes C1D OPTIONAL_SUPPLEMENTAL and non-blocking for Public Launch Baseline v1 acceptance.
     This PUBLISH correction changes only present launch-state representation and its dependent machine hash binding. Historical/event-time accepted proof artifacts remain unchanged.
+    OPERATION_STABLE_ENVELOPE_CHANGE=true
     SOURCE_MAIN:bdc333f530f73bdeb636c5e88126939a7fb18967
     PRIOR_REVIEWED_PUBLISH_HEAD:45dbf14ccde42364594ad594d8a846796051c2fb
     C1_ACCEPTED_IDENTITY:c208cb7cd002d016359f39aba1e3aef3f820befc
