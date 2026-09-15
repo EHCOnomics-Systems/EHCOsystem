@@ -36,8 +36,8 @@ This page records the public proof and publication sequence without treating lat
 The provider checkpoint is a public technical/evidence publication object. It is not deployment, Runtime realization, standing change, authority change, open-source conversion, proprietary-source distribution, or independent certification.
 
 ## Public Launch Baseline v1
-The exact provider-visible checkpoint required for Public Launch Baseline v1 is now materialized. This branch is the governed post-checkpoint acceptance-binding candidate. `EHCO_PUBLIC_LAUNCH_BASELINE_V1_ACCEPTED` has not yet been issued until the exact reviewed candidate completes the ACCEPT lifecycle.
+Public Launch Baseline v1 is bound to the immutable provider checkpoint above. Authoritative acceptance state is the copy of [`EHCO_PUBLIC_LAUNCH_BASELINE_V1_ACCEPTED.json`](../EHCO_PUBLIC_LAUNCH_BASELINE_V1_ACCEPTED.json) established on canonical `main` through the governed ACCEPT lifecycle; a copy on a non-canonical branch or candidate commit does not itself originate acceptance.
 
-Independent external reproduction remains `NOT_ESTABLISHED / OPTIONAL_SUPPLEMENTAL_EVIDENCE` and is not a blocking gate under the current owner-amended SOW-10 standard.
+Independent external reproduction remains `NOT_ESTABLISHED / OPTIONAL_SUPPLEMENTAL_EVIDENCE`, is not a blocking gate under the owner-amended SOW-10 standard, and is not represented as independent certification.
 
-The machine-readable baseline binding is published in [`PUBLIC_LAUNCH_BASELINE.json`](../PUBLIC_LAUNCH_BASELINE.json), and the staged machine-facing acceptance receipt is [`EHCO_PUBLIC_LAUNCH_BASELINE_V1_ACCEPTED.json`](../EHCO_PUBLIC_LAUNCH_BASELINE_V1_ACCEPTED.json).
+The machine-readable baseline binding is [`PUBLIC_LAUNCH_BASELINE.json`](../PUBLIC_LAUNCH_BASELINE.json).
