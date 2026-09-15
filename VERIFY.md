@@ -88,7 +88,7 @@ An independent external reproduction receipt is **not established**. Under the c
 - Security / responsible disclosure: `SECURITY.md`
 - Citation metadata: `CITATION.cff`
 - Launch-baseline manifest: `PUBLIC_LAUNCH_BASELINE.json`
-- Launch acceptance receipt candidate: `EHCO_PUBLIC_LAUNCH_BASELINE_V1_ACCEPTED.json`
+- Launch acceptance receipt: `EHCO_PUBLIC_LAUNCH_BASELINE_V1_ACCEPTED.json`
 
 ## Public / proprietary boundary
 
@@ -98,4 +98,4 @@ Private implementation source, private repository/source topology, private contr
 
 ## Launch state
 
-The provider-visible publication checkpoint is established at tag `v1.0.0-public`, resolving to exact revision `666634a271b2254fdefa8076dcb8f960ff2e9e4b`, with GitHub Release ID `388874688` published on `2026-09-15`. This PUBLISH candidate binds that checkpoint into the machine-readable baseline and stages the final acceptance receipt. `EHCO_PUBLIC_LAUNCH_BASELINE_V1_ACCEPTED` has **not yet** been issued until the exact reviewed candidate completes the governed ACCEPT lifecycle. Independent external reproduction remains optional supplemental evidence and is not a blocking gate.
+The Public Launch Baseline v1 provider checkpoint is tag `v1.0.0-public`, resolving to exact revision `666634a271b2254fdefa8076dcb8f960ff2e9e4b`, with GitHub Release ID `388874688` published on `2026-09-15`. Authoritative baseline-acceptance state is the copy of `EHCO_PUBLIC_LAUNCH_BASELINE_V1_ACCEPTED.json` established on canonical `main` through the governed ACCEPT lifecycle; a copy on a non-canonical branch or candidate commit does not itself originate acceptance. Independent external reproduction remains `NOT_ESTABLISHED / OPTIONAL_SUPPLEMENTAL_EVIDENCE`, is not a blocking gate, and is not represented as independent certification.
