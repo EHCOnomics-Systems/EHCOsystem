@@ -1,6 +1,6 @@
 # Proof and Verification
 
-EHCOsystem separates repository checks, executable proof, comparative proof, evidence ownership, and independent reproduction. They answer different questions and should not be treated as interchangeable evidence.
+EHCOsystem separates repository checks, executable proof, comparative proof, evidence ownership, and optional external corroboration. They answer different questions and should not be treated as interchangeable evidence.
 
 ## Start with the canonical verifier
 
@@ -26,9 +26,11 @@ The official one-shot comparison is complete. The machine result SHA-256 is `001
 
 Use [Comparative Proof](Comparative-Proof.md) for the protocol, fairness rules, official result, and interpretation limits.
 
-## Independent reproduction
+## Optional external corroboration
 
-[`reproduction/INDEPENDENT-REPRODUCTION.md`](../reproduction/INDEPENDENT-REPRODUCTION.md) defines the clean external reproduction procedure. An independent external reproduction receipt has not yet been established.
+[`reproduction/INDEPENDENT-REPRODUCTION.md`](../reproduction/INDEPENDENT-REPRODUCTION.md) publishes a clean public reproduction procedure for a technically competent independent reviewer using only public material.
+
+Public Launch Baseline v1 is already accepted on its published verifier, executable proof, preregistered comparative proof, integrity controls, and exact provider checkpoint. Baseline v1 does not include a third-party reproduction receipt, so EHCOnomics makes no claim of third-party certification or external corroboration. A qualifying later reproduction would add a distinct supplemental evidence class; it is not an unresolved technical-validation, launch-acceptance, Runtime, standing, or promotion requirement.
 
 ## Evidence reading guide
 
@@ -37,6 +39,6 @@ Read every public proposition through four questions:
 1. **What exact claim is being made?** Use the [public claim registry](../assurance/PUBLIC-CLAIM-REGISTRY.json).
 2. **Which evidence domain owns it?** Use the [claim-to-evidence matrix](../assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md).
 3. **What can the public verifier actually establish?** Repository validation establishes coherence of the public repository and intentionally public proof objects.
-4. **What does the evidence not establish?** Public proof does not by itself create Runtime authority, Runtime state, deployment, standing changes, or proprietary same-code identity.
+4. **What does the evidence not establish?** Public proof does not by itself create Runtime authority, Runtime state, deployment, standing changes, proprietary same-code identity, or third-party certification.
 
 The Public Proof Kernel and comparative protocol establish only their bounded published propositions. None of these artifacts reissues or replaces the evidence that owns Runtime or component state.
