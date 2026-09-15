@@ -20,6 +20,7 @@ selection:
     The authorized Work provider session reports exact-source synchronization of the only three changed Wiki reference pages from reviewed source revision e471d57fd275efc977420b15079b97b0c36f0847: Home ESTABLISHED, Publication‐History ESTABLISHED with the existing U+2010 page identity reused, Terminology ESTABLISHED, 23 material links tested with zero failures, no duplicate Wiki page created, no other Wiki page modified, and no Git/tag/Release/Runtime/deployment/authority/standing effect. This ACCEPT transition relies on that bounded provider-session readback for the provider-only Wiki surface; the EHCO1 GitHub API connection does not expose Wiki page bytes directly.
     This operation-record-only transition advances the exact reviewed acceptance object set to ACCEPT. Candidate branch presence does not itself originate acceptance; EHCO_PUBLIC_LAUNCH_BASELINE_V1_ACCEPTED becomes authoritative only when this exact reviewed object set completes the governed ACCEPT lifecycle onto canonical main and post-merge readback establishes the result.
     OPERATION_STABLE_ENVELOPE_CHANGE=true
+    NEW_PATH:EHCO_PUBLIC_LAUNCH_BASELINE_V1_ACCEPTED.json
     SOURCE_MAIN=666634a271b2254fdefa8076dcb8f960ff2e9e4b
     REVIEWED_PUBLISH_HEAD=e471d57fd275efc977420b15079b97b0c36f0847
     BASELINE_ACCEPTED_REVISION=666634a271b2254fdefa8076dcb8f960ff2e9e4b
