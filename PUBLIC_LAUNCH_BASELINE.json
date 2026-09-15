@@ -55,9 +55,9 @@
   },
   "public_verifier": {
     "discovery_manifest": "verification/EHCO_PUBLIC_VERIFICATION_MANIFEST.json",
-    "discovery_manifest_sha256": "b4bf5bbfa5da494449a03d06ebea2b12146fb14daafb950d2979c4e23bfdee52",
+    "discovery_manifest_sha256": "9af7ac0cceb4b9ac8429fdf903c92fa33465c961d96d295cfed5e8d8ff5373a7",
     "entrypoint": "verification/verify_all_public.py",
-    "status": "PUBLIC_LAUNCH_BASELINE_V1_ACCEPTANCE_READY"
+    "status": "EHCO_PUBLIC_LAUNCH_BASELINE_V1_ACCEPTED"
   },
   "publication_date": "2026-09-15",
   "reference_route": "reference/Home.md",
@@ -73,5 +73,5 @@
     "Publication is not deployment or independent certification."
   ],
   "standing_effect": "NONE",
-  "status": "PUBLIC_LAUNCH_BASELINE_V1_ACCEPTANCE_READY"
+  "status": "EHCO_PUBLIC_LAUNCH_BASELINE_V1_ACCEPTED"
 }
