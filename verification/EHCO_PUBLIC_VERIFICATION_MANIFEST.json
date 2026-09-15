@@ -52,7 +52,7 @@
       {
         "id": "PUBLIC_LAUNCH_CANDIDATE_BINDINGS",
         "path": "verification/validate_public_launch_candidate.py",
-        "git_blob_sha": "da810eb34cd9f284907276a7c40a7a68d1aea1ec"
+        "git_blob_sha": "444a809da14fb7cb6d28790b52b1db2af02b7669"
       }
     ],
     "execution_command": "python3 verification/verify_all_public.py",
@@ -73,7 +73,7 @@
   },
   "deployment_effect": "NONE",
   "evidence_scope": "Public repository representation plus bounded public executable/comparative proof; underlying owning technical evidence retains technical-effect ownership.",
-  "final_launch_revision_binding": "BOUND_BY_FINAL_ACCEPTANCE_CHECKPOINT_AFTER_COMMIT",
+  "final_launch_revision_binding": "666634a271b2254fdefa8076dcb8f960ff2e9e4b",
   "independent_third_party_certification": "NOT_CLAIMED",
   "machine_routes": {
     "claim_evidence_matrix": "assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md",
@@ -84,7 +84,8 @@
     "independent_reproduction_instructions": "reproduction/INDEPENDENT-REPRODUCTION.md",
     "launch_baseline_manifest": "PUBLIC_LAUNCH_BASELINE.json",
     "launch_threat_model": "assurance/PUBLIC_LAUNCH_THREAT_MODEL.json",
-    "reader_reference": "reference/Home.md"
+    "reader_reference": "reference/Home.md",
+    "launch_acceptance_receipt": "EHCO_PUBLIC_LAUNCH_BASELINE_V1_ACCEPTED.json"
   },
   "proprietary_implementation_evaluator_class": "NOT_DISTRIBUTED_BY_THIS_PUBLICATION",
   "public_boundary": "No private implementation source, private repository/source topology, private control routing, credentials, privileged endpoints, or protected operational topology.",
@@ -93,7 +94,7 @@
   "runtime_effect": "NONE",
   "schema": "EHCO_PUBLIC_VERIFICATION_MANIFEST_V1",
   "standing_effect": "NONE",
-  "status": "RESULT_PUBLICATION_CANDIDATE_NOT_LAUNCH_ACCEPTED",
+  "status": "PUBLIC_LAUNCH_BASELINE_V1_ACCEPTANCE_READY",
   "supported_public_proof_ids": [
     "EHCO-PUBLIC-PROOF-KERNEL-PREINTELLIGENCE-GATE-001",
     "EHCO-C1B-OPA-PUBLIC-PROOF-COMPARISON-001"
