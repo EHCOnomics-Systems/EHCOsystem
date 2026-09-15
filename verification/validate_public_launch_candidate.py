@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate EHCO-PUB-SOW-010 launch-candidate bindings without creating acceptance."""
+"""Validate EHCO-PUB-SOW-010 launch bindings without creating acceptance."""
 
 from __future__ import annotations
 
@@ -16,6 +16,12 @@ PREREG_MANIFEST_SHA256 = "440ae3a567f0d7db29a2c3348d0a7eb296ca5eece0b31a78fb9b58
 RESULT_SHA256 = "0010b0f2f0369d9328d34e23d44e7117c038038ce4260a14cb51d0b1ad71e38b"
 RESULT_MANIFEST_SHA256 = "a961891144ff43cf1772bc9bef775eaa723347ec276892a31bcf64a73cffd35c"
 C1_ID = "c208cb7cd002d016359f39aba1e3aef3f820befc"
+BASELINE_REVISION = "666634a271b2254fdefa8076dcb8f960ff2e9e4b"
+PROVIDER_TAG = "v1.0.0-public"
+PROVIDER_RELEASE_ID = 388874688
+PROVIDER_RELEASE_TITLE = "EHCOsystem Public Architecture and Evidence Baseline v1.0.0"
+PROVIDER_PUBLICATION_TIMESTAMP = "2026-09-15T04:51:05Z"
+PUBLICATION_DATE = "2026-09-15"
 
 EXPECTED_CHILD_VALIDATORS = [
     ("PUBLIC_REPOSITORY_INTEGRITY", "verification/validate_public_evidence.py"),
@@ -91,12 +97,10 @@ def _validate_schema_value(value, schema: dict, root_schema: dict, path: str = "
     if "$ref" in schema:
         _validate_schema_value(value, _resolve_local_ref(root_schema, schema["$ref"]), root_schema, path)
         return
-
     if "const" in schema and value != schema["const"]:
         fail(f"C1D receipt {path}: expected constant {schema['const']!r}, got {value!r}")
     if "enum" in schema and value not in schema["enum"]:
         fail(f"C1D receipt {path}: value {value!r} is not in {schema['enum']!r}")
-
     expected_type = schema.get("type")
     if expected_type == "object":
         if not isinstance(value, dict):
@@ -113,7 +117,6 @@ def _validate_schema_value(value, schema: dict, root_schema: dict, path: str = "
             if key in properties:
                 _validate_schema_value(child, properties[key], root_schema, f"{path}.{key}")
         return
-
     if expected_type == "array":
         if not isinstance(value, list):
             fail(f"C1D receipt {path}: expected array")
@@ -124,7 +127,6 @@ def _validate_schema_value(value, schema: dict, root_schema: dict, path: str = "
             for index, item in enumerate(value):
                 _validate_schema_value(item, item_schema, root_schema, f"{path}[{index}]")
         return
-
     if expected_type == "string":
         if not isinstance(value, str):
             fail(f"C1D receipt {path}: expected string")
@@ -134,7 +136,6 @@ def _validate_schema_value(value, schema: dict, root_schema: dict, path: str = "
         if pattern is not None and re.search(pattern, value) is None:
             fail(f"C1D receipt {path}: value does not match required pattern")
         return
-
     if expected_type == "integer":
         if not isinstance(value, int) or isinstance(value, bool):
             fail(f"C1D receipt {path}: expected integer")
@@ -142,7 +143,6 @@ def _validate_schema_value(value, schema: dict, root_schema: dict, path: str = "
         if minimum is not None and value < minimum:
             fail(f"C1D receipt {path}: value is below minimum {minimum}")
         return
-
     if expected_type == "boolean":
         if not isinstance(value, bool):
             fail(f"C1D receipt {path}: expected boolean")
@@ -154,48 +154,27 @@ def validate_reproduction_receipt(receipt_path: Path, receipt_schema: dict) -> N
         raw_text = receipt_path.read_text(encoding="utf-8")
     except OSError as exc:
         fail(f"cannot read C1D receipt {receipt_path}: {exc}")
-
     try:
-        receipt = json.loads(
-            raw_text,
-            parse_constant=lambda value: (_ for _ in ()).throw(
-                ValueError(f"non-standard JSON constant {value!r}")
-            ),
-        )
+        receipt = json.loads(raw_text, parse_constant=lambda value: (_ for _ in ()).throw(ValueError(f"non-standard JSON constant {value!r}")))
     except (json.JSONDecodeError, ValueError) as exc:
         fail(f"invalid C1D receipt JSON {receipt_path}: {exc}")
-
     _validate_schema_value(receipt, receipt_schema, receipt_schema)
-
     claimed = receipt.get("receipt_sha256")
     payload = dict(receipt)
     payload.pop("receipt_sha256", None)
-    canonical = json.dumps(
-        payload,
-        sort_keys=True,
-        separators=(",", ":"),
-        ensure_ascii=False,
-        allow_nan=False,
-    ).encode("utf-8")
+    canonical = json.dumps(payload, sort_keys=True, separators=(",", ":"), ensure_ascii=False, allow_nan=False).encode("utf-8")
     actual = hashlib.sha256(canonical).hexdigest()
     require_equal(claimed, actual, "C1D receipt canonical self-hash")
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(
-        description="Validate SOW-10 launch bindings and optionally a returned C1D reproduction receipt."
-    )
-    parser.add_argument(
-        "--reproduction-receipt",
-        type=Path,
-        help="Optional path to a C1D receipt to validate structurally and verify its canonical SHA-256 self-hash.",
-    )
+    parser = argparse.ArgumentParser(description="Validate SOW-10 launch bindings and optionally a returned C1D reproduction receipt.")
+    parser.add_argument("--reproduction-receipt", type=Path, help="Optional path to a C1D receipt to validate structurally and verify its canonical SHA-256 self-hash.")
     return parser.parse_args()
 
 
 def main() -> int:
     args = parse_args()
-
     prereg_path = "comparison/c1b/v1/manifest.json"
     require_equal(sha256(prereg_path), PREREG_MANIFEST_SHA256, "C1B preregistration manifest SHA-256")
     prereg = load(prereg_path)
@@ -234,17 +213,7 @@ def main() -> int:
     require_equal(threat.get("frozen_c1b_preregistration_identity"), PREREG_ID, "threat-model C1B preregistration identity")
     require_equal(threat.get("official_c1b_result_sha256"), RESULT_SHA256, "threat-model C1B result identity")
     require_equal(threat.get("independent_external_reproduction_status"), "NOT_ESTABLISHED", "threat-model C1D state")
-    required_threats = {
-        "STATIC_REPLAY",
-        "ARTIFACT_OR_FIXTURE_SUBSTITUTION",
-        "POST_RESULT_PROTOCOL_DRIFT",
-        "HIDDEN_DEPENDENCY",
-        "REFERENCE_BASELINE_DRIFT",
-        "ASYMMETRIC_COMPARATIVE_CONFIGURATION",
-        "SELECTIVE_RESULT_OMISSION",
-        "INTEGRITY_BYPASS",
-        "CLAIM_SCOPE_INFLATION",
-    }
+    required_threats = {"STATIC_REPLAY", "ARTIFACT_OR_FIXTURE_SUBSTITUTION", "POST_RESULT_PROTOCOL_DRIFT", "HIDDEN_DEPENDENCY", "REFERENCE_BASELINE_DRIFT", "ASYMMETRIC_COMPARATIVE_CONFIGURATION", "SELECTIVE_RESULT_OMISSION", "INTEGRITY_BYPASS", "CLAIM_SCOPE_INFLATION"}
     observed = {item.get("id") for item in threat.get("threats", []) if item.get("status") in {"CONTROLLED", "DISCLOSED_LIMITATION"}}
     missing = sorted(required_threats - observed)
     if missing:
@@ -290,17 +259,25 @@ def main() -> int:
         "launch_baseline_manifest": "PUBLIC_LAUNCH_BASELINE.json",
         "launch_threat_model": threat_path,
         "reader_reference": "reference/Home.md",
+        "launch_acceptance_receipt": "EHCO_PUBLIC_LAUNCH_BASELINE_V1_ACCEPTED.json",
     }.items():
         require_equal(routes.get(key), path, f"machine route {key}")
         read(path)
 
     baseline = load("PUBLIC_LAUNCH_BASELINE.json")
     require_equal(baseline.get("schema"), "EHCO_PUBLIC_LAUNCH_BASELINE_MANIFEST_V1", "launch baseline schema")
-    require_equal(baseline.get("status"), "RESULT_PUBLICATION_CANDIDATE_NOT_ACCEPTED", "launch baseline acceptance state")
-    require_equal(baseline.get("final_git_commit"), "BOUND_BY_FINAL_ACCEPTANCE_CHECKPOINT_AFTER_COMMIT", "final Git binding state")
-    require_equal(baseline.get("provider_publication_identity"), "PENDING_FINAL_PROVIDER_TAG_OR_RELEASE_CHECKPOINT", "provider checkpoint state")
-    require_equal(baseline.get("publication_date"), "PENDING_ACCEPTANCE", "launch baseline publication date state")
+    require_equal(baseline.get("status"), "PUBLIC_LAUNCH_BASELINE_V1_ACCEPTANCE_READY", "launch baseline acceptance state")
+    require_equal(baseline.get("final_git_commit"), BASELINE_REVISION, "final Git binding")
+    provider = baseline.get("provider_publication_identity", {})
+    require_equal(provider.get("tag"), PROVIDER_TAG, "provider checkpoint tag")
+    require_equal(provider.get("release_id"), PROVIDER_RELEASE_ID, "provider Release id")
+    require_equal(provider.get("release_title"), PROVIDER_RELEASE_TITLE, "provider Release title")
+    require_equal(provider.get("published_at"), PROVIDER_PUBLICATION_TIMESTAMP, "provider publication timestamp")
+    require_equal(baseline.get("publication_date"), PUBLICATION_DATE, "launch baseline publication date")
+    require_equal(baseline.get("acceptance_receipt"), "EHCO_PUBLIC_LAUNCH_BASELINE_V1_ACCEPTED.json", "acceptance receipt route")
     require_equal(baseline.get("independent_reproduction", {}).get("receipt_identity"), "NOT_ESTABLISHED", "baseline C1D state")
+    require_equal(baseline.get("independent_reproduction", {}).get("classification"), "OPTIONAL_SUPPLEMENTAL_EVIDENCE", "baseline C1D classification")
+    require_equal(baseline.get("independent_reproduction", {}).get("required"), False, "baseline C1D required flag")
     require_equal(baseline.get("comparative_proof", {}).get("preregistration_identity"), PREREG_ID, "baseline C1B preregistration identity")
     require_equal(baseline.get("comparative_proof", {}).get("candidate_manifest_sha256"), PREREG_MANIFEST_SHA256, "baseline C1B preregistration manifest")
     require_equal(baseline.get("comparative_proof", {}).get("official_result_sha256"), RESULT_SHA256, "baseline C1B result")
@@ -310,35 +287,49 @@ def main() -> int:
     require_equal(baseline.get("launch_threat_model", {}).get("path"), threat_path, "baseline threat-model path")
     require_equal(baseline.get("launch_threat_model", {}).get("sha256"), sha256(threat_path), "baseline threat-model SHA-256")
 
-    citation = read("CITATION.cff").decode("utf-8")
-    if 'version: "1.0.0-prelaunch"' not in citation:
-        fail("prelaunch citation identity must remain version 1.0.0-prelaunch before baseline acceptance")
-    if "date-released:" in citation:
-        fail("prelaunch citation metadata must not claim a release date before Public Launch Baseline acceptance")
+    acceptance = load("EHCO_PUBLIC_LAUNCH_BASELINE_V1_ACCEPTED.json")
+    require_equal(acceptance.get("schema"), "EHCO_PUBLIC_LAUNCH_BASELINE_ACCEPTANCE_RECEIPT_V1", "acceptance receipt schema")
+    require_equal(acceptance.get("receipt_id"), "EHCO_PUBLIC_LAUNCH_BASELINE_V1_ACCEPTED", "acceptance receipt id")
+    require_equal(acceptance.get("status"), "ACCEPTANCE_READY_NOT_YET_ACCEPTED", "acceptance receipt state")
+    require_equal(acceptance.get("accepted_baseline_revision"), BASELINE_REVISION, "acceptance baseline revision")
+    require_equal(acceptance.get("provider_checkpoint", {}).get("tag"), PROVIDER_TAG, "acceptance provider tag")
+    require_equal(acceptance.get("provider_checkpoint", {}).get("tag_resolved_revision"), BASELINE_REVISION, "acceptance provider tag revision")
+    require_equal(acceptance.get("provider_checkpoint", {}).get("release_id"), PROVIDER_RELEASE_ID, "acceptance Release id")
+    require_equal(acceptance.get("provider_checkpoint", {}).get("release_title"), PROVIDER_RELEASE_TITLE, "acceptance Release title")
+    require_equal(acceptance.get("provider_checkpoint", {}).get("published_at"), PROVIDER_PUBLICATION_TIMESTAMP, "acceptance provider timestamp")
+    require_equal(acceptance.get("independent_reproduction", {}).get("status"), "NOT_ESTABLISHED", "acceptance C1D state")
+    require_equal(acceptance.get("independent_reproduction", {}).get("classification"), "OPTIONAL_SUPPLEMENTAL_EVIDENCE", "acceptance C1D classification")
+    require_equal(acceptance.get("independent_reproduction", {}).get("blocks_acceptance"), False, "acceptance C1D blocking flag")
+    require_equal(acceptance.get("accepted_numerical_standing"), "52/53", "acceptance standing")
+    for effect in ("runtime_effect", "deployment_effect", "authority_effect", "standing_effect", "proprietary_source_transfer_effect"):
+        require_equal(acceptance.get(effect), "NONE", f"acceptance {effect}")
 
-    for required in [
-        "VERIFY.md",
-        "CITATION.cff",
-        "reference/Home.md",
-        ".github/ISSUE_TEMPLATE/technical-challenge.yml",
-    ]:
+    citation = read("CITATION.cff").decode("utf-8")
+    if 'version: "1.0.0"' not in citation:
+        fail("launch citation identity must be version 1.0.0")
+    if 'date-released: "2026-09-15"' not in citation:
+        fail("launch citation metadata must bind publication date 2026-09-15")
+
+    for required in ["VERIFY.md", "CITATION.cff", "reference/Home.md", ".github/ISSUE_TEMPLATE/technical-challenge.yml", "EHCO_PUBLIC_LAUNCH_BASELINE_V1_ACCEPTED.json"]:
         read(required)
 
     operation = read("ehco.operation.yaml").decode("utf-8")
     if not any(operation_id in operation for operation_id in VALID_SOW10_OPERATION_IDS):
         fail("public operation projection is not a recognized SOW-10 launch operation")
 
-    print("PASS SOW-10 public launch candidate bindings")
+    print("PASS SOW-10 public launch acceptance-ready bindings")
+    print(f"baseline_revision={BASELINE_REVISION}")
+    print(f"provider_tag={PROVIDER_TAG}")
+    print(f"provider_release_id={PROVIDER_RELEASE_ID}")
     print(f"preregistration_identity={PREREG_ID}")
     print(f"official_result_sha256={RESULT_SHA256}")
     print("independent_external_reproduction=NOT_ESTABLISHED")
-    print("public_launch_baseline_v1=NOT_ACCEPTED")
+    print("public_launch_baseline_v1=ACCEPTANCE_READY_NOT_YET_ACCEPTED")
 
     if args.reproduction_receipt is not None:
         validate_reproduction_receipt(args.reproduction_receipt, receipt_schema)
         print(f"PASS C1D reproduction receipt structure_and_self_hash={args.reproduction_receipt}")
         print("c1d_acceptance=NOT_ESTABLISHED_BY_STRUCTURAL_RECEIPT_VALIDATION")
-
     return 0
 
 
@@ -346,5 +337,5 @@ if __name__ == "__main__":
     try:
         raise SystemExit(main())
     except (AssertionError, KeyError, TypeError) as exc:
-        print(f"FAIL SOW-10 public launch candidate bindings: {exc}", file=sys.stderr)
+        print(f"FAIL SOW-10 public launch acceptance-ready bindings: {exc}", file=sys.stderr)
         raise SystemExit(1)
