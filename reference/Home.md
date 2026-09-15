@@ -1,18 +1,31 @@
 # EHCOsystem Reader Reference
 
-EHCOsystem is EHCOnomics' implementation of Instantiated AI. This reference is a practical guide to the public architecture, AI runtime-governance model, technical evidence, executable proof, and review routes published in this repository.
+EHCOsystem is EHCOnomics' implementation of **Instantiated AI**: an architecture in which identity, authority, state, source and memory standing, permissible range, evidence, release, and consequence are established as computational conditions around intelligence rather than delegated to model behavior alone.
 
-The repository remains the canonical technical record. These reference pages explain how to navigate it; where a claim matters, follow the linked repository record, evidence object, or verification route.
+This reference is the short public route for readers evaluating AI runtime governance, deterministic AI, AI assurance, model-independent governance, and reproducible technical evidence. The repository remains the canonical technical record; these pages explain how to navigate it.
 
-## Where to start
+## Five-minute orientation
 
-1. **[Terminology](Terminology.md)** — the small set of terms needed to read the public technical record accurately.
-2. **[Architecture](Architecture.md)** — how Instantiated AI, EHCOsystem, EHCO AI-OS, shared technologies, and downstream applications relate to one another.
-3. **[Proof and Verification](Proof-and-Verification.md)** — the difference between repository validation, executable proof, comparative proof, evidence, and independent reproduction.
-4. **[Comparative Proof](Comparative-Proof.md)** — the frozen EHCO-vs-OPA comparison protocol, fairness rules, and official result.
-5. **[Diligence and Challenge](Diligence-and-Challenge.md)** — routes for deeper technical review, corrections, security reports, and reproducibility challenges.
-6. **[Publication History](Publication-History.md)** — the dated proof and publication sequence, including what is established and what remains pending.
+1. **What is Instantiated AI?** Read the [canonical architecture definition](../architecture/INSTANTIATED-AI.md).
+2. **How does EHCOsystem fit together?** Use [Architecture](Architecture.md) for the Tier One Runtime, shared downstream components, and public system map.
+3. **What do the terms mean?** Use [Terminology](Terminology.md) for standing, authority, source and memory standing, permissible range, evidence, consequence, withholding, continuity, and mutual computational proof.
+4. **How can I verify the public record?** Use [Proof and Verification](Proof-and-Verification.md) and the canonical [`VERIFY.md`](../VERIFY.md) front door.
+5. **What was compared?** Use [Comparative Proof](Comparative-Proof.md) for the frozen EHCO-vs-OPA protocol, fairness rules, official result, and reproduction route.
+6. **How do I challenge or inspect it more deeply?** Use [Diligence and Challenge](Diligence-and-Challenge.md).
+7. **What has been published, and what is still pending?** Use [Publication History](Publication-History.md).
 
-For direct verification of the current publication candidate, use [`../VERIFY.md`](../VERIFY.md).
+## Canonical technical routes
 
-The GitHub Wiki mirrors this source-controlled reference for easier public navigation. The repository remains canonical, and the Wiki should preserve the same claims, evidence boundaries, verification routes, and limitations.
+- [Instantiated AI](../architecture/INSTANTIATED-AI.md)
+- [EHCOsystem Technology Estate](../architecture/EHCO-TECHNOLOGY-ESTATE.md)
+- [Ecosystem Components and Runtime Relationships](../architecture/ecosystem-components-and-participation.md)
+- [Public Claim Registry](../assurance/PUBLIC-CLAIM-REGISTRY.json)
+- [Claim-to-Evidence Matrix](../assurance/ECOSYSTEM-CLAIM-EVIDENCE-MATRIX.md)
+- [Public Verification](../verification/README.md)
+- [Ecosystem Technical Diligence](../ECOSYSTEM-DILIGENCE.md)
+
+## Current publication state
+
+The accepted bounded Public Proof Kernel and the preregistered C1B comparison result are public. Independent external reproduction remains pending, and **Public Launch Baseline v1 has not been accepted**. The machine-readable candidate state is in [`PUBLIC_LAUNCH_BASELINE.json`](../PUBLIC_LAUNCH_BASELINE.json).
+
+The GitHub Wiki is a reader-facing projection of this source-controlled reference. If the Wiki and repository reference differ, the repository record and the evidence it routes to remain canonical.
