@@ -36,8 +36,9 @@
   },
   "final_git_commit": "BOUND_BY_FINAL_ACCEPTANCE_CHECKPOINT_AFTER_COMMIT",
   "independent_reproduction": {
+    "classification": "OPTIONAL_SUPPLEMENTAL_EVIDENCE",
     "receipt_identity": "NOT_ESTABLISHED",
-    "required": true
+    "required": false
   },
   "launch_threat_model": {
     "path": "assurance/PUBLIC_LAUNCH_THREAT_MODEL.json",
@@ -46,7 +47,7 @@
   "provider_publication_identity": "PENDING_FINAL_PROVIDER_TAG_OR_RELEASE_CHECKPOINT",
   "public_verifier": {
     "discovery_manifest": "verification/EHCO_PUBLIC_VERIFICATION_MANIFEST.json",
-    "discovery_manifest_sha256": "6f8186d30bd0299ed51bd5fb4a5f4da915bfa25f06d40f7dbb519761fb2e6117",
+    "discovery_manifest_sha256": "eb2b2bbb7f561a1aa4253fe6a22d134c68e40f1ef8be0c187f4a02017daecdbd",
     "entrypoint": "verification/verify_all_public.py",
     "status": "RESULT_PUBLICATION_CANDIDATE"
   },
@@ -60,6 +61,7 @@
     "Public launch baseline does not change accepted numerical standing 52/53.",
     "Public proof does not establish proprietary same-code identity.",
     "Comparative proof does not establish universal superiority.",
+    "Independent external reproduction is not established and remains optional supplemental evidence.",
     "Publication is not deployment or independent certification."
   ],
   "standing_effect": "NONE",
