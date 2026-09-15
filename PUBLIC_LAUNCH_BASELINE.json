@@ -34,7 +34,8 @@
     "manifest_path": "proof/public-kernel/v1/public-proof-manifest.json",
     "proof_family_id": "EHCO-PUBLIC-PROOF-KERNEL-PREINTELLIGENCE-GATE-001"
   },
-  "final_git_commit": "BOUND_BY_FINAL_ACCEPTANCE_CHECKPOINT_AFTER_COMMIT",
+  "final_git_commit": "666634a271b2254fdefa8076dcb8f960ff2e9e4b",
+  "acceptance_receipt": "EHCO_PUBLIC_LAUNCH_BASELINE_V1_ACCEPTED.json",
   "independent_reproduction": {
     "classification": "OPTIONAL_SUPPLEMENTAL_EVIDENCE",
     "receipt_identity": "NOT_ESTABLISHED",
@@ -44,14 +45,21 @@
     "path": "assurance/PUBLIC_LAUNCH_THREAT_MODEL.json",
     "sha256": "40c17a8ecadfbdb0f3d8fc1341e079e318ffa8fea25c7379cfed7d6d327b958d"
   },
-  "provider_publication_identity": "PENDING_FINAL_PROVIDER_TAG_OR_RELEASE_CHECKPOINT",
+  "provider_publication_identity": {
+    "tag": "v1.0.0-public",
+    "tag_resolved_revision": "666634a271b2254fdefa8076dcb8f960ff2e9e4b",
+    "release_id": 388874688,
+    "release_title": "EHCOsystem Public Architecture and Evidence Baseline v1.0.0",
+    "release_url": "https://github.com/EHCOnomics-Systems/EHCOsystem/releases/tag/v1.0.0-public",
+    "published_at": "2026-09-15T04:51:05Z"
+  },
   "public_verifier": {
     "discovery_manifest": "verification/EHCO_PUBLIC_VERIFICATION_MANIFEST.json",
-    "discovery_manifest_sha256": "eb2b2bbb7f561a1aa4253fe6a22d134c68e40f1ef8be0c187f4a02017daecdbd",
+    "discovery_manifest_sha256": "b4bf5bbfa5da494449a03d06ebea2b12146fb14daafb950d2979c4e23bfdee52",
     "entrypoint": "verification/verify_all_public.py",
-    "status": "RESULT_PUBLICATION_CANDIDATE"
+    "status": "PUBLIC_LAUNCH_BASELINE_V1_ACCEPTANCE_READY"
   },
-  "publication_date": "PENDING_ACCEPTANCE",
+  "publication_date": "2026-09-15",
   "reference_route": "reference/Home.md",
   "repository": "EHCOnomics-Systems/EHCOsystem",
   "runtime_effect": "NONE",
@@ -65,5 +73,5 @@
     "Publication is not deployment or independent certification."
   ],
   "standing_effect": "NONE",
-  "status": "RESULT_PUBLICATION_CANDIDATE_NOT_ACCEPTED"
+  "status": "PUBLIC_LAUNCH_BASELINE_V1_ACCEPTANCE_READY"
 }
