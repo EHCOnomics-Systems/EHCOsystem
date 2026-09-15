@@ -68,13 +68,15 @@ All five planned cases were recorded with zero omissions and zero run failures. 
 
 This is a bounded synthetic result, not universal superiority and not independent certification.
 
-## Independent reproduction
+## Optional external corroboration
 
-Instructions:
+Public Launch Baseline v1 is accepted on the basis of its published verifier, executable proof, preregistered comparative proof, integrity controls, and exact provider checkpoint.
+
+The clean public reproduction route is published at:
 
 `reproduction/INDEPENDENT-REPRODUCTION.md`
 
-An independent external reproduction receipt is **not established**. Under the current owner-selected SOW-10 standard, C1D is **optional supplemental evidence** and its absence does not block Public Launch Baseline v1 acceptance. If later obtained, a qualifying receipt may be added to the continuing evidence lineage without being represented as Runtime authority or independent certification of proprietary implementation.
+That route allows a technically competent independent reviewer to reproduce the bounded public procedure using only public material. Baseline v1 does not include a third-party reproduction receipt, so EHCOnomics makes no claim of third-party certification or external corroboration. A later qualifying reproduction would add a separate supplemental evidence class; it is not an unresolved technical-validation, launch-acceptance, Runtime, standing, or promotion requirement.
 
 ## Direct public routes
 
@@ -98,4 +100,4 @@ Private implementation source, private repository/source topology, private contr
 
 ## Launch state
 
-The Public Launch Baseline v1 provider checkpoint is tag `v1.0.0-public`, resolving to exact revision `666634a271b2254fdefa8076dcb8f960ff2e9e4b`, with GitHub Release ID `388874688` published on `2026-09-15`. Authoritative baseline-acceptance state is the copy of `EHCO_PUBLIC_LAUNCH_BASELINE_V1_ACCEPTED.json` established on canonical `main` through the governed ACCEPT lifecycle; a copy on a non-canonical branch or candidate commit does not itself originate acceptance. Independent external reproduction remains `NOT_ESTABLISHED / OPTIONAL_SUPPLEMENTAL_EVIDENCE`, is not a blocking gate, and is not represented as independent certification.
+**Public Launch Baseline v1 is accepted.** The provider checkpoint is tag `v1.0.0-public`, resolving to exact revision `666634a271b2254fdefa8076dcb8f960ff2e9e4b`, with GitHub Release ID `388874688` published on `2026-09-15`. Authoritative baseline-acceptance state is the copy of `EHCO_PUBLIC_LAUNCH_BASELINE_V1_ACCEPTED.json` established on canonical `main`. The public self-serve reproduction route is available; third-party corroboration is not claimed and remains a separate optional supplemental evidence class.
