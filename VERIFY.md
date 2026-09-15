@@ -74,7 +74,7 @@ Instructions:
 
 `reproduction/INDEPENDENT-REPRODUCTION.md`
 
-The mandatory independent external reproduction receipt is **not yet established**.
+An independent external reproduction receipt is **not established**. Under the current owner-selected SOW-10 standard, C1D is **optional supplemental evidence** and its absence does not block Public Launch Baseline v1 acceptance. If later obtained, a qualifying receipt may be added to the continuing evidence lineage without being represented as Runtime authority or independent certification of proprietary implementation.
 
 ## Direct public routes
 
@@ -97,4 +97,4 @@ Private implementation source, private repository/source topology, private contr
 
 ## Launch state
 
-`EHCO_PUBLIC_LAUNCH_BASELINE_V1_ACCEPTED` has **not** been issued. Independent reproduction, final launch qualification, provider checkpoint, and acceptance remain separate gates.
+`EHCO_PUBLIC_LAUNCH_BASELINE_V1_ACCEPTED` has **not** been issued. Final launch qualification, the provider publication checkpoint, and authoritative acceptance binding remain the current launch gates. Independent external reproduction remains available as optional supplemental evidence and is not a blocking gate under the current owner-selected SOW-10 standard.
