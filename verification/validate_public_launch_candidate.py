@@ -30,6 +30,11 @@ EXPECTED_CHILD_VALIDATORS = [
     ("PUBLIC_LAUNCH_CANDIDATE_BINDINGS", "verification/validate_public_launch_candidate.py"),
 ]
 
+VALID_SOW10_OPERATION_IDS = {
+    "EHCOSYSTEM-SOW010-LAUNCH-INTEGRITY-REMEDIATION-001",
+    "EHCOSYSTEM-SOW010-WORKSTREAM-L-RECONSTRUCTION-001",
+}
+
 
 def fail(message: str) -> None:
     raise AssertionError(message)
@@ -320,8 +325,8 @@ def main() -> int:
         read(required)
 
     operation = read("ehco.operation.yaml").decode("utf-8")
-    if "EHCOSYSTEM-SOW010-LAUNCH-INTEGRITY-REMEDIATION-001" not in operation:
-        fail("public operation projection is not the SOW-10 launch-integrity remediation operation")
+    if not any(operation_id in operation for operation_id in VALID_SOW10_OPERATION_IDS):
+        fail("public operation projection is not a recognized SOW-10 launch operation")
 
     print("PASS SOW-10 public launch candidate bindings")
     print(f"preregistration_identity={PREREG_ID}")
@@ -340,6 +345,6 @@ def main() -> int:
 if __name__ == "__main__":
     try:
         raise SystemExit(main())
-    except AssertionError as exc:
+    except (AssertionError, KeyError, TypeError) as exc:
         print(f"FAIL SOW-10 public launch candidate bindings: {exc}", file=sys.stderr)
         raise SystemExit(1)
