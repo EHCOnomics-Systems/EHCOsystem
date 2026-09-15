@@ -18,6 +18,7 @@ selection:
     Edward Henry directed continuation of the owner-amended SOW-10 public-launch plan through completion. The GitHub provider checkpoint is now independently established: tag v1.0.0-public resolves to exact baseline revision 666634a271b2254fdefa8076dcb8f960ff2e9e4b; GitHub Release ID 388874688 is published, non-draft, non-prerelease, carries the registered title, has no manually uploaded assets, and was published at 2026-09-15T04:51:05Z. Canonical main remains 666634a271b2254fdefa8076dcb8f960ff2e9e4b.
     This PUBLISH phase creates the post-checkpoint machine-readable acceptance binding and reconciles active public current-state surfaces. The immutable baseline revision/tag/Release are not moved or rewritten.
     OPERATION_STABLE_ENVELOPE_CHANGE=true
+    NEW_PATH:EHCO_PUBLIC_LAUNCH_BASELINE_V1_ACCEPTED.json
     BASELINE_ACCEPTED_REVISION=666634a271b2254fdefa8076dcb8f960ff2e9e4b
     PROVIDER_TAG_NAME=v1.0.0-public
     PROVIDER_RELEASE_ID=388874688
