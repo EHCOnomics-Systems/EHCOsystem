@@ -9,11 +9,13 @@
   "frozen_c1b_preregistration_identity": "8a1a05b4865eaefa716e77cbe669e819e7d6e5b3",
   "official_c1b_result_sha256": "0010b0f2f0369d9328d34e23d44e7117c038038ce4260a14cb51d0b1ad71e38b",
   "independent_external_reproduction_status": "NOT_ESTABLISHED",
+  "independent_external_reproduction_classification": "OPTIONAL_SUPPLEMENTAL_EVIDENCE",
+  "independent_external_reproduction_blocks_baseline_acceptance": false,
   "threats": [
     {
       "id": "STATIC_REPLAY",
       "status": "CONTROLLED",
-      "control": "C1 receipts are nonce-bound and launch verification checks the frozen proof/result identities; C1D independently requires a fresh public-only reproduction."
+      "control": "C1 receipts are nonce-bound and launch verification checks the frozen proof/result identities; any later qualifying C1D supplemental reproduction independently requires a fresh public-only reproduction."
     },
     {
       "id": "ARTIFACT_OR_FIXTURE_SUBSTITUTION",
@@ -58,6 +60,7 @@
   ],
   "limitations": [
     "This control model does not establish independent external reproduction.",
+    "Independent external reproduction is optional supplemental evidence under the current owner-selected SOW-10 standard and its absence does not block Public Launch Baseline v1 acceptance.",
     "It does not accept EHCOsystem Public Launch Baseline v1.",
     "It does not replace owning technical evidence or create Tier One Runtime state, authority, admission, participation, deployment, release, or standing effects."
   ]
