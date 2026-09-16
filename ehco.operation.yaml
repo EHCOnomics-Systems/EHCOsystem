@@ -17,6 +17,7 @@ selection:
   durable_reference: |-
     Edward Henry explicitly selected continuation into EHCO-PUB-SOW-010 Workstream O and directed EHCO1 to establish and execute the public distribution strategy point by point, with Instantiated AI as the architectural category and EHCOsystem as EHCOnomics' reference implementation and evidence-bearing example.
     Public Launch Baseline v1 is already accepted. This operation is the bounded Workstream O PUBLISH envelope for website/LinkedIn/citation/broader technical distribution, source-grounded outreach through lawful routes, public challenge/correction/diligence-path exercise, provider readback, and Workstream O closure evidence.
+    Edward subsequently selected the dependent repair of the exact PR #72 SOW-10 operation-validation contract so the new Workstream O operation is recognized by the existing public verifier without masquerading as a prior SOW-10 operation and without weakening the validation gate. That repair may update only the exact operation-recognition validator and its mechanically dependent discovery/baseline hash binding.
     The operation does not reopen the accepted technical proof estate, does not alter the immutable v1.0.0-public checkpoint, does not create independent certification or external corroboration, and does not authorize proprietary implementation-source transfer, deployment, Runtime mutation, Runtime authority mutation, or standing mutation.
     SOURCE_MAIN=34a12c9408c04338a551a72bb7d00f9e98592fa3
     PUBLIC_LAUNCH_BASELINE_ACCEPTANCE=true
@@ -31,6 +32,7 @@ selection:
     C1D_ABSENCE_BLOCKS_PROMOTION=false
     INDEPENDENT_CERTIFICATION_CLAIMED=false
     WORKSTREAM_O_EXTERNAL_DISTRIBUTION_SELECTED=true
+    WORKSTREAM_O_VALIDATOR_RECOGNITION_REPAIR_SELECTED=true
     AUTOMATIC_SUCCESSOR=false
   source_base_revision: 34a12c9408c04338a551a72bb7d00f9e98592fa3
   expected_reviewed_head_revision: NOT_APPLICABLE_UNTIL_ACCEPT
@@ -44,6 +46,7 @@ active_operation:
   bounded_outcome: Execute the selected SOW-10 Workstream O public distribution around the already accepted Public Launch Baseline v1, establishing Instantiated AI as the primary architectural category across selected outward surfaces, routing readers to EHCOsystem public proof/reference/citation/diligence, exercising the public challenge/correction/diligence path, recording provider readbacks, and stopping after Workstream O closure before Workstream P end-to-end loop acceptance.
   remaining_bounded_work:
     - Preserve the Drive-owned Workstream O category/distribution master as the publication-meaning source and keep Instantiated AI as the category noun across selected outward surfaces.
+    - Reconcile the exact SOW-10 operation-recognition validator so the Workstream O operation ID is explicitly recognized, then refresh only the mechanically dependent verifier-discovery hash and current baseline-manifest discovery hash binding required to keep the canonical public verifier self-consistent; do not alter accepted baseline identity or technical proof content.
     - Establish the lawful provider route and publish the permanent EHCOnomics Instantiated AI website/category surface; read back the live provider state and verify links, metadata, claim ceilings, and disclosure boundary.
     - Publish the selected LinkedIn category, proof, and participation/challenge sequence through a lawful provider route; read back the resulting public objects.
     - Execute selected source-grounded broader technical distribution only to real existing normal-program audiences through lawful communication routes; do not invent recipients or mass-spam.
@@ -57,13 +60,15 @@ active_operation:
     - The Drive-owned Workstream O category/distribution master owns publication wording, category hierarchy, provider copy, CTA/link map, and publication/readback checklist for this operation.
     - Canonical semantic controls own the meaning of Instantiation, Runtime, standing, authority, participation, evidence, and related terms.
     - EHCOnomics-Systems/EHCOsystem canonical main owns current public repository representation; tag v1.0.0-public and Release ID 388874688 retain the immutable Baseline v1 publication identity.
+    - verification/validate_public_launch_candidate.py owns the exact static recognition set used by the SOW-10 launch-binding validator; verification/EHCO_PUBLIC_VERIFICATION_MANIFEST.json owns the canonical verifier child-validator blob binding; PUBLIC_LAUNCH_BASELINE.json carries the current discovery-manifest SHA-256 binding. Any update across these three paths in this operation is limited to preserving verifier consistency for the explicitly selected Workstream O operation ID.
     - Website, LinkedIn, Gmail, GitHub, and any other selected provider own their exact external object existence, URL, timestamp, and provider state after publication.
     - Owning technical evidence retains technical-effect authority; public/social/provider observations do not replace it.
     - INSTANTIATED_EHCO_RUNTIME retains Tier One Runtime authority and Runtime state.
   non_overlap:
     - No reopening or rerun of the accepted public proof/comparison program solely for Workstream O distribution.
     - No movement, deletion, overwrite, or recreation of tag v1.0.0-public or Release ID 388874688.
-    - No mutation to EHCO_PUBLIC_LAUNCH_BASELINE_V1_ACCEPTED.json or PUBLIC_LAUNCH_BASELINE.json merely to record distribution.
+    - No mutation to EHCO_PUBLIC_LAUNCH_BASELINE_V1_ACCEPTED.json.
+    - No semantic mutation to accepted Baseline v1 identity, result identity, proof identity, provider checkpoint, publication date, standing, or evidence ceilings. PUBLIC_LAUNCH_BASELINE.json may change only in the exact discovery-manifest SHA-256 field mechanically required by the selected validator-recognition repair.
     - No proprietary implementation source, private repository/source topology, private control routing, credentials, privileged endpoints, or protected infrastructure publication.
     - No representation that EHCOsystem is open source.
     - No claim of independent third-party certification, external corroboration, industry recognition, regulatory recognition, or standards-body recognition absent separately established evidence.
@@ -86,12 +91,17 @@ execution_continuity:
 scope:
   permitted_paths:
     - ehco.operation.yaml
+    - verification/validate_public_launch_candidate.py
+    - verification/EHCO_PUBLIC_VERIFICATION_MANIFEST.json
+    - PUBLIC_LAUNCH_BASELINE.json
   controlled_paths:
     - ehco.operation.yaml
+    - verification/validate_public_launch_candidate.py
+    - verification/EHCO_PUBLIC_VERIFICATION_MANIFEST.json
+    - PUBLIC_LAUNCH_BASELINE.json
   prohibited_paths:
     - ehco.repository.yaml
     - EHCO_PUBLIC_LAUNCH_BASELINE_V1_ACCEPTED.json
-    - PUBLIC_LAUNCH_BASELINE.json
     - CITATION.cff
     - proof/public-kernel/v1/**
     - comparison/c1b/v1/**
@@ -154,6 +164,7 @@ evidence:
   evidence_class: PUBLIC_PROVIDER_DISTRIBUTION_AND_READBACK
   required_checks:
     - Public Launch Baseline v1 remains accepted at its immutable checkpoint and canonical main remains the current public representation source.
+    - The SOW-10 launch-binding validator explicitly recognizes EHCOSYSTEM-SOW010-WORKSTREAM-O-PUBLIC-DISTRIBUTION-001 without relying on a historical operation ID, and the canonical verifier/discovery hash chain remains internally consistent after the repair.
     - Instantiated AI is used as the architectural category and EHCOsystem as EHCOnomics' reference implementation/evidence-bearing example across selected Workstream O outward surfaces.
     - Every material provider publication is read back at its public provider location and checked for exact wording, destination links, metadata where applicable, disclosure boundary, and claim ceilings.
     - Website and social/provider publication observations remain separate from technical evidence and cannot mutate Runtime state, standing, authority, deployment, admission, participation, release, or certification state.
@@ -161,6 +172,7 @@ evidence:
     - The public challenge/correction/diligence route is exercised once and accurately labeled as controlled first-party route testing unless qualifying real external interaction supplies that exercise.
     - Accepted numerical standing remains 52/53.
   proves:
+    - Successful validator reconciliation establishes only that the existing SOW-10 public verifier can recognize and validate the explicitly selected Workstream O operation projection while preserving the already accepted baseline bindings.
     - Successful provider publication/readback establishes only that the selected Workstream O public distribution objects exist and route coherently to the accepted public technical estate.
     - Successful challenge-route exercise establishes only that the selected public participation route can be used as published within the exercised scope.
     - Workstream O closure may establish the selected public distribution and participation footprint without creating technical proof beyond the evidence already owned by the technical domains.
