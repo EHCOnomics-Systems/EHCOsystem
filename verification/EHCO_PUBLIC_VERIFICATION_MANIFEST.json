@@ -52,7 +52,7 @@
       {
         "id": "PUBLIC_LAUNCH_CANDIDATE_BINDINGS",
         "path": "verification/validate_public_launch_candidate.py",
-        "git_blob_sha": "5a245e68e82b7979cad8f596fec8f7194b21afd2"
+        "git_blob_sha": "a6ee1906b79cfde1a1bf5e2f617e9dc0e86624a9"
       }
     ],
     "execution_command": "python3 verification/verify_all_public.py",
