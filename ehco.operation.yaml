@@ -19,6 +19,7 @@ selection:
     Public Launch Baseline v1 is already accepted. This operation is the bounded Workstream O PUBLISH envelope for website/LinkedIn/citation/broader technical distribution, source-grounded outreach through lawful routes, public challenge/correction/diligence-path exercise, provider readback, and Workstream O closure evidence.
     Edward subsequently selected the dependent repair of the exact PR #72 SOW-10 operation-validation contract so the new Workstream O operation is recognized by the existing public verifier without masquerading as a prior SOW-10 operation and without weakening the validation gate. That repair may update only the exact operation-recognition validator and its mechanically dependent discovery/baseline hash binding.
     The operation does not reopen the accepted technical proof estate, does not alter the immutable v1.0.0-public checkpoint, does not create independent certification or external corroboration, and does not authorize proprietary implementation-source transfer, deployment, Runtime mutation, Runtime authority mutation, or standing mutation.
+    OPERATION_STABLE_ENVELOPE_CHANGE=true
     SOURCE_MAIN=34a12c9408c04338a551a72bb7d00f9e98592fa3
     PUBLIC_LAUNCH_BASELINE_ACCEPTANCE=true
     BASELINE_ACCEPTED_REVISION=666634a271b2254fdefa8076dcb8f960ff2e9e4b
@@ -130,11 +131,11 @@ change_control:
     - push
     - open_draft_pull_request
     - update_draft_pull_request
+  remote_actions_prohibited:
     - mark_pull_request_ready_for_review
     - merge_pull_request
     - record_owner_acceptance
     - close_operation
-  remote_actions_prohibited:
     - activate_selected_successor
     - modify_repository_settings
     - modify_drive_controls
@@ -152,7 +153,7 @@ effects:
   runtime_effect: NONE
   deployment_effect: NONE
   release_effect: NONE
-  external_effect: EXPLICITLY_AUTHORIZED
+  external_effect: NONE
 bridge:
   applicability: NOT_APPLICABLE_NON_PARTICIPANT
   non_applicability_reason: Public distribution and provider publication do not establish Tier One Runtime participation.
