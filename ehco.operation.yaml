@@ -162,7 +162,7 @@ bridge:
   participation_binding_status: NOT_ESTABLISHED
   canonical_runtime_receipt_status: NOT_ESTABLISHED
 evidence:
-  evidence_class: PUBLIC_PROVIDER_DISTRIBUTION_AND_READBACK
+  evidence_class: REPOSITORY_SOURCE_AND_DIFF_VALIDATION
   required_checks:
     - Public Launch Baseline v1 remains accepted at its immutable checkpoint and canonical main remains the current public representation source.
     - The SOW-10 launch-binding validator explicitly recognizes EHCOSYSTEM-SOW010-WORKSTREAM-O-PUBLIC-DISTRIBUTION-001 without relying on a historical operation ID, and the canonical verifier/discovery hash chain remains internally consistent after the repair.
