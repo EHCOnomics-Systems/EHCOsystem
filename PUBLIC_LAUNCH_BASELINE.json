@@ -55,7 +55,7 @@
   },
   "public_verifier": {
     "discovery_manifest": "verification/EHCO_PUBLIC_VERIFICATION_MANIFEST.json",
-    "discovery_manifest_sha256": "9af7ac0cceb4b9ac8429fdf903c92fa33465c961d96d295cfed5e8d8ff5373a7",
+    "discovery_manifest_sha256": "0f9c0189d2d5c3f6bbf7daf3403b5893579f27131beaf052a85a2f2549414dab",
     "entrypoint": "verification/verify_all_public.py",
     "status": "EHCO_PUBLIC_LAUNCH_BASELINE_V1_ACCEPTED"
   },
